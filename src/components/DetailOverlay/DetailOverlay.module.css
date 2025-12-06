@@ -1,0 +1,122 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 480px;
+  background: var(--color-bg-surface);
+  border-left: 1px solid var(--color-border);
+  transform: translateX(100%);
+  transition: transform var(--duration-normal) var(--ease-spring);
+  z-index: 200;
+  overflow-y: auto;
+  box-shadow: -4px 0 24px rgb(0 0 0 / 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--color-bg-surface);
+  padding: var(--space-4);
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--color-border);
+  z-index: 10;
+}
+
+.closeButton {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all var(--duration-fast);
+}
+
+.closeButton:hover {
+  background: var(--color-bg-surface-hover);
+  color: var(--color-text-primary);
+}
+
+.content {
+  padding: var(--space-6);
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: var(--space-6);
+  background: var(--color-bg-canvas);
+}
+
+.date {
+  color: var(--color-text-accent);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.description {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-6);
+}
+
+.metaSection {
+  background: var(--color-bg-canvas);
+  padding: var(--space-4);
+  border-radius: 8px;
+  margin-top: var(--space-4);
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.metaRow:last-child {
+  border-bottom: none;
+}
+
+.metaLabel {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.metaValue {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  text-align: right;
+}
+
+.link {
+  display: inline-block;
+  margin-top: var(--space-4);
+  margin-right: var(--space-4);
+  color: var(--color-text-accent);
+  text-decoration: none;
+  font-size: var(--text-sm);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
