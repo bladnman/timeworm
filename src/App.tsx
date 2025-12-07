@@ -6,6 +6,7 @@ import { TimelineProvider } from './context/TimelineProvider';
 import { ComicView } from './views/Comic/ComicView';
 import { DepthRoad } from './views/DepthRoad/DepthRoad';
 import { HorizontalView } from './views/Horizontal/HorizontalView';
+import { MosaicView } from './views/Mosaic/MosaicView';
 import { RiverPathView } from './views/RiverPath/RiverPathView';
 import { VerticalView } from './views/Vertical/VerticalView';
 
@@ -18,6 +19,7 @@ const ViewManager = () => {
     if (viewMode === 'vertical') return <VerticalView />;
     if (viewMode === 'river') return <RiverPathView />;
     if (viewMode === 'depthroad') return <DepthRoad />;
+    if (viewMode === 'mosaic') return <MosaicView />;
     return <HorizontalView />;
 };
 

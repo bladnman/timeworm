@@ -44,7 +44,7 @@ export interface TimelineData {
   events: TimelineEvent[];
 }
 
-export type ViewMode = 'vertical' | 'horizontal' | 'comic' | 'river' | 'depthroad';
+export type ViewMode = 'vertical' | 'horizontal' | 'comic' | 'river' | 'depthroad' | 'mosaic';
 
 export interface TimelineContextType {
   data: TimelineData | null;

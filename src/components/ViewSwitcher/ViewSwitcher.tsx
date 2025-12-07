@@ -37,6 +37,12 @@ export const ViewSwitcher = () => {
       >
         Depth Road
       </button>
+      <button
+        className={classNames(styles.button, { [styles.active]: viewMode === 'mosaic' })}
+        onClick={() => setViewMode('mosaic')}
+      >
+        Mosaic View
+      </button>
     </div>
   );
 };
