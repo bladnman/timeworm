@@ -1,0 +1,104 @@
+.markerGroup {
+  cursor: pointer;
+  transition: transform var(--duration-fast) var(--ease-spring);
+}
+
+.markerGroup:hover {
+  transform: scale(1.05);
+}
+
+.connector {
+  fill: none;
+  stroke: var(--color-text-secondary);
+  stroke-width: 1.5;
+  opacity: 0.4;
+  transition: opacity var(--duration-fast);
+}
+
+.markerGroup:hover .connector,
+.markerGroup[data-selected="true"] .connector {
+  opacity: 0.8;
+  stroke: var(--color-text-accent);
+}
+
+.anchor {
+  fill: var(--color-bg-surface);
+  stroke: var(--color-text-accent);
+  stroke-width: 2;
+  opacity: 0.6;
+  transition: opacity var(--duration-fast);
+}
+
+.markerGroup:hover .anchor,
+.markerGroup[data-selected="true"] .anchor {
+  opacity: 1;
+}
+
+.marker {
+  fill: var(--color-bg-surface);
+  stroke: var(--color-text-accent);
+  stroke-width: 2;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  transition: all var(--duration-fast) var(--ease-spring);
+}
+
+.markerGroup:hover .marker,
+.markerGroup[data-selected="true"] .marker {
+  fill: var(--color-text-accent);
+  stroke: var(--color-text-primary);
+  filter: drop-shadow(0 4px 8px rgba(56, 189, 248, 0.4));
+}
+
+.markerInner {
+  fill: var(--color-text-accent);
+  opacity: 0.5;
+  transition: opacity var(--duration-fast);
+}
+
+.markerGroup:hover .markerInner,
+.markerGroup[data-selected="true"] .markerInner {
+  fill: var(--color-text-primary);
+  opacity: 0.8;
+}
+
+.labelGroup {
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn var(--duration-fast) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.labelBg {
+  fill: var(--color-bg-surface);
+  stroke: var(--color-border);
+  stroke-width: 1;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+.labelDate {
+  fill: var(--color-text-accent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.labelTitle {
+  fill: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Side-specific adjustments */
+.markerGroup[data-side="left"] .labelGroup {
+  transform-origin: right center;
+}
+
+.markerGroup[data-side="right"] .labelGroup {
+  transform-origin: left center;
+}
