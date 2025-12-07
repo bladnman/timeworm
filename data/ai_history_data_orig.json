@@ -40,6 +40,39 @@
     ],
     "events": [
         {
+            "id": "evt_antikythera",
+            "title": "The Antikythera Mechanism",
+            "date_display": "Circa 150–100 BCE",
+            "date_start": "-0150-01-01",
+            "date_end": "-0100-01-01",
+            "group_ids": [
+                "grp_ancient"
+            ],
+            "type": "Hardware / Artifact",
+            "innovator": "Unknown (Hellenistic Greece)",
+            "innovation": "Analog Astronomical Computer / Pin-and-Slot Mechanism",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/cc/NAMA_Machine_d%27Anticyth%C3%A8re_1.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/e/e8/Antikythera_mechanism_fragment.jpg"
+            ],
+            "description": "Discovered in a shipwreck off the coast of Greece in 1901, the Antikythera Mechanism is widely regarded as the world's first analog computer. Far more than a simple calendar, it utilized a complex system of at least 30 interlocking bronze gears to calculate and predict astronomical positions and eclipses for decades in advance. Its most stunning feature was a revolutionary 'pin-and-slot' mechanism that allowed it to model the moon’s variable angular velocity (following Kepler's Second Law) as it moved through its elliptical orbit—a mathematical concept that would not be formally described by astronomers for another thousand years. It demonstrates that the concept of mechanizing the prediction of the natural world is ancient.",
+            "metrics": {
+                "components": "30+ Bronze Gears",
+                "function": "Predictive Engine",
+                "complexity": "Models lunar anomaly"
+            },
+            "links": [
+                {
+                    "title": "Antikythera Mechanism Research Project",
+                    "url": "http://www.antikythera-mechanism.gr/"
+                },
+                {
+                    "title": "Nature: The Clockwork Computer",
+                    "url": "https://www.nature.com/articles/454561a"
+                }
+            ]
+        },
+        {
             "id": "evt_jacquard",
             "title": "The Jacquard Loom",
             "date_display": "1804",
