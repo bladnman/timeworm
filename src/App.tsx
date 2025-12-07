@@ -3,6 +3,7 @@ import { DetailOverlay } from './components/DetailOverlay/DetailOverlay';
 import { ViewSwitcher } from './components/ViewSwitcher/ViewSwitcher';
 import { TimelineContext } from './context/TimelineContext';
 import { TimelineProvider } from './context/TimelineProvider';
+import { BranchingTree } from './views/BranchingTree/BranchingTree';
 import { ComicView } from './views/Comic/ComicView';
 import { HorizontalView } from './views/Horizontal/HorizontalView';
 import { VerticalView } from './views/Vertical/VerticalView';
@@ -14,6 +15,7 @@ const ViewManager = () => {
 
     if (viewMode === 'comic') return <ComicView />;
     if (viewMode === 'vertical') return <VerticalView />;
+    if (viewMode === 'tree') return <BranchingTree />;
     return <HorizontalView />;
 };
 
