@@ -34,7 +34,7 @@ export function BikeRideView() {
     totalWidth,
     canvasHeight,
     pixelsPerYear,
-    setPixelsPerYear,
+    setPixelsPerYear: _setPixelsPerYear,
     zoomIn,
     zoomOut,
     resetZoom,
@@ -49,7 +49,7 @@ export function BikeRideView() {
     setPlaybackSpeed,
     minYear,
     maxYear,
-    totalYears,
+    totalYears: _totalYears,
     getCurrentYear,
     selectedEventId,
     selectEvent,
@@ -57,8 +57,8 @@ export function BikeRideView() {
     setHoveredEventId,
     viewportOffset,
     setViewportOffset,
-    scrollToTime,
-    scrollToEvent,
+    scrollToTime: _scrollToTime,
+    scrollToEvent: _scrollToEvent,
   } = useBikeRideView();
 
   // Track viewport dimensions

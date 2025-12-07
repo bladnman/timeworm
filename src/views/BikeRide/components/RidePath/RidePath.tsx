@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { GeneratedPath } from '../../hooks/usePathGenerator';
+import type { GeneratedPath } from '../../hooks/usePathGenerator';
 import { BIKE_RIDE_CONFIG } from '../../hooks/constants';
 import styles from './RidePath.module.css';
 

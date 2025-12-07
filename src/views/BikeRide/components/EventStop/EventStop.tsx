@@ -1,5 +1,5 @@
 import { memo, useCallback } from 'react';
-import { BikeRideEvent } from '../../hooks/useBikeRideView';
+import type { BikeRideEvent } from '../../hooks/useBikeRideView';
 import { BIKE_RIDE_CONFIG } from '../../hooks/constants';
 import styles from './EventStop.module.css';
 

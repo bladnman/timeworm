@@ -1,5 +1,5 @@
-import { memo, useCallback, useRef, MouseEvent } from 'react';
-import { BikeRideEvent } from '../../hooks/useBikeRideView';
+import { memo, useCallback, useRef, type MouseEvent } from 'react';
+import type { BikeRideEvent } from '../../hooks/useBikeRideView';
 import { BIKE_RIDE_CONFIG } from '../../hooks/constants';
 import styles from './MiniMap.module.css';
 

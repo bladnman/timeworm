@@ -1,5 +1,4 @@
-import { memo, useCallback, useRef, MouseEvent } from 'react';
-import { BIKE_RIDE_CONFIG } from '../../hooks/constants';
+import { memo, useCallback, useRef, type MouseEvent } from 'react';
 import styles from './TimeScrubber.module.css';
 
 interface TimeScrubberProps {
@@ -35,8 +34,8 @@ export const TimeScrubber = memo(function TimeScrubber({
   currentYear,
   playbackSpeed,
   onTimeChange,
-  onPlay,
-  onPause,
+  onPlay: _onPlay,
+  onPause: _onPause,
   onTogglePlayback,
   onSpeedChange,
 }: TimeScrubberProps) {

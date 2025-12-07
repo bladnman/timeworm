@@ -17,18 +17,6 @@ export interface GeneratedPath {
 }
 
 /**
- * Attempt to use a seeded random for consistent path generation.
- * Falls back to Math.random if crypto is unavailable.
- */
-function seededRandom(seed: number): () => number {
-  let state = seed;
-  return () => {
-    state = (state * 1103515245 + 12345) & 0x7fffffff;
-    return state / 0x7fffffff;
-  };
-}
-
-/**
  * Attempt to generate smooth noise using multiple sine waves.
  * This creates a more natural-looking path than pure random noise.
  */
@@ -113,7 +101,7 @@ export function usePathGenerator(
         svgPath += ` L ${curr.x} ${curr.y}`;
       } else {
         // Use quadratic bezier for smooth curves
-        const prevPrev = points[i - 2];
+        // Note: prevPrev not needed for quadratic bezier, kept for future Catmull-Rom
 
         // Control point is at the previous point
         // This creates a smooth curve through all points

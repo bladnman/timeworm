@@ -1,9 +1,9 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { useTimeline } from '../../../hooks/useTimeline';
 import { useTimeScale } from '../../../hooks/useTimeScale';
-import { usePathGenerator, GeneratedPath } from './usePathGenerator';
+import { usePathGenerator, type GeneratedPath } from './usePathGenerator';
 import { parseISOExtended, differenceInYears } from '../../../utils/dateUtils';
-import { TimelineEvent } from '../../../types/timeline';
+import type { TimelineEvent } from '../../../types/timeline';
 import { BIKE_RIDE_CONFIG } from './constants';
 
 export interface BikeRideEvent {
@@ -85,7 +85,7 @@ export function useBikeRideView(): BikeRideViewState {
   const lastTimeRef = useRef<number>(0);
 
   // Get time scale from events
-  const timeScale = useTimeScale(data?.events ?? [], pixelsPerYear);
+  const timeScale = useTimeScale(data ?? null, { pixelsPerYear });
 
   // Calculate total width based on time scale
   const totalWidth = useMemo(() => {
@@ -231,11 +231,8 @@ export function useBikeRideView(): BikeRideViewState {
   const scrollToTime = useCallback((t: number) => {
     const clampedT = Math.max(0, Math.min(1, t));
     setCurrentTime(clampedT);
-
-    // Also scroll viewport to center on this position
-    const targetX = clampedT * totalWidth;
-    // This would be handled by the container scroll
-  }, [totalWidth]);
+    // Viewport scrolling handled by the container
+  }, []);
 
   // Scroll to specific event
   const scrollToEvent = useCallback((eventId: string) => {
