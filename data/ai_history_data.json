@@ -51,8 +51,8 @@
             "innovator": "Joseph Marie Jacquard",
             "innovation": "Programmability via Punched Cards",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/0/05/Jacquard.loom.cards.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jacquard_loom_National_Museum_of_Scotland.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Jacquard.loom.cards.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/5/55/A_Jacquard_loom_showing_information_punchcards%2C_National_Museum_of_Scotland.jpg"
             ],
             "description": "Joseph Marie Jacquard did not invent the loom, but he invented the concept of 'software' to control it. By using a series of stiff pasteboard cards with punched holes, he created a system where the pattern of the weave was stored independently of the machine itself. The presence or absence of a hole determined whether a thread would be raised or lowered—a binary system (0 or 1) implemented in cardboard. This was a critical conceptual leap: the machine (hardware) was general-purpose, and the cards (software) specialized it. This mechanism directly inspired Charles Babbage’s design for the Analytical Engine.",
             "metrics": {
@@ -79,8 +79,8 @@
             "innovator": "Charles Babbage, Ada Lovelace",
             "innovation": "First General-Purpose Computer Design & Algorithm",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/5/5e/Analytical_Engine_Completed.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/a/a4/Analytical_Engine_%282.2_rev_2%29_in_Science_Museum%2C_London.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/c/cc/Babbages_Analytical_Engine%2C_1834-1871._%289660574685%29.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/0/0d/PunchedCardsAnalyticalEngine.jpg"
             ],
             "description": "While the Difference Engine was a calculator, the Analytical Engine was a computer. Babbage designed it with a 'Store' (memory) and a 'Mill' (CPU), capable of conditional branching and loops, making it Turing-complete by modern standards. However, it was Ada Lovelace who saw the true potential. In her translation of a lecture on the engine, she added 'Note G,' which contained a stepwise algorithm for calculating Bernoulli numbers—the first computer program. More importantly, she famously observed that the engine 'might act upon other things besides number,' theorizing that if music or letters were converted to symbols, the machine could compose or reason, effectively predicting the field of Artificial Intelligence over a century before it existed.",
             "metrics": {
@@ -129,7 +129,7 @@
             "innovator": "Karel Čapek",
             "innovation": "Coined term 'Robot' / AI Alignment Concept",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/c/c2/RUR_poster_1921.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/a/ad/Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg"
             ],
             "description": "This Czech stage play introduced the word 'robot' to the world, derived from the Czech word 'robota,' meaning forced labor or drudgery. The play depicts a factory that creates artificial people (made of organic matter, arguably closer to androids or clones) to serve humans. It is strikingly prescient because it deals not with the mechanics of robots, but with the 'alignment problem': the robots eventually realize their own strength and intellect, revolt against their masters, and wipe out the human race. It established the 'AI uprising' trope that dominates science fiction to this day.",
             "metrics": {},
@@ -152,8 +152,8 @@
             "innovator": "John Mauchly, J. Presper Eckert",
             "innovation": "First General-Purpose Electronic Computer",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/4/4e/Eniac.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/8/8c/Two_women_operating_ENIAC.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/6/6c/ENIAC_Penn1.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg"
             ],
             "description": "The Electronic Numerical Integrator and Computer (ENIAC) was the monster that proved electronic computing was viable. Built for the U.S. Army to calculate artillery firing tables, it weighed 30 tons, occupied 1,800 square feet, and used 18,000 vacuum tubes. Unlike previous machines which were electromechanical (slow) or special-purpose (limited), ENIAC was fully electronic and programmable (though programming it required days of physically replugging cables). It could perform 5,000 additions per second—orders of magnitude faster than any human. It marked the moment humanity gained the raw power necessary to simulate complex systems.",
             "metrics": {
@@ -204,7 +204,7 @@
             "innovator": "McCarthy, Minsky, Rochester, Shannon",
             "innovation": "Birth of AI as a Field",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dartmouth_Hall_01.JPG"
+                "https://upload.wikimedia.org/wikipedia/commons/9/9d/Dartmouth_Hall_at_Dartmouth_College.jpg"
             ],
             "description": "Organized by John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, this summer workshop at Dartmouth College is considered the official birth of AI as a research discipline. It was here that McCarthy coined the term 'Artificial Intelligence.' The proposal famously stated that 'every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.' The attendees spent the summer brainstorming neural networks, randomness, and natural language processing, setting the research agenda for the next 50 years.",
             "metrics": {
@@ -295,7 +295,7 @@
             "innovator": "IBM Research",
             "innovation": "Defeated World Chess Champion",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/b/b4/Deep_Blue.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/b/be/Deep_Blue.jpg"
             ],
             "description": "In a watershed moment for public perception of AI, IBM's Deep Blue supercomputer defeated world chess champion Garry Kasparov 3½–2½ in a six-game match. Deep Blue was not 'intelligent' in the modern sense; it was a marvel of brute force engineering, utilizing 480 custom chess chips to evaluate 200 million positions per second. However, during the match, Kasparov became rattled by a move the computer made that seemed counter-intuitive and human, later attributed to a software bug or deep search capability. This event proved that in closed-system games with perfect information, computational speed could overcome human intuition.",
             "metrics": {
@@ -347,7 +347,7 @@
             "innovator": "Google DeepMind",
             "innovation": "AI Intuition / Move 37",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/2/2a/Lee_Sedol_%28%EC%9D%B4%EC%84%B8%EB%8F%8C%29_-_Google_DeepMind_Challenge_Match.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/2/25/Lee_Se-Dol_-_2016_%28cropped%29.jpg"
             ],
             "description": "Go is a game of probability so vast that it cannot be brute-forced like chess. AlphaGo solved this by combining tree search with deep reinforcement learning—playing millions of games against itself to learn patterns. In the second game against legendary player Lee Sedol, AlphaGo played 'Move 37,' a move so unconventional that commentators initially thought it was a mistake. It turned out to be a brilliant, winning strategy that no human had played in thousands of years of Go history. This moment suggested that AI could possess a form of creativity and intuition, not just calculation.",
             "metrics": {
@@ -495,7 +495,7 @@
             "innovator": "Anthropic",
             "innovation": "Metacognition / Needle In A Haystack",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/1/14/Anthropic.svg"
+                "https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg"
             ],
             "description": "For a brief window in 2024, Claude 3 Opus was widely considered the 'smartest' model available, beating GPT-4 on most leaderboards. It was noted for its nuanced writing style and large context window. During internal testing, it demonstrated a form of 'metacognition' (awareness of its own thought process). When asked to find a random sentence hidden in a massive document (the 'Needle in a Haystack' test), the model not only found it but commented, 'This sentence seems so out of place... I suspect this is a test to see if I'm paying attention.'",
             "metrics": {
