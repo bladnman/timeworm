@@ -1,21 +1,40 @@
-import { useMemo, useState } from 'react';
-import { eachYearOfInterval } from 'date-fns';
+import { useMemo, useState, useCallback, useLayoutEffect, useRef } from 'react';
 import { useSwimlanes } from '../../../hooks/useSwimlanes';
 import { useTimeline } from '../../../hooks/useTimeline';
 import { useTimeScale } from '../../../hooks/useTimeScale';
 import { HORIZONTAL_VIEW_CONFIG } from './constants';
 
 export interface Tick {
-  date: Date;
+  year: number;
   label: string;
   major: boolean;
 }
 
+const VIEWPORT_PADDING = 100; // Padding on each side when auto-fitting
+
+const computeAutoFitZoom = (totalYears: number): number => {
+  const viewportWidth = window.innerWidth - VIEWPORT_PADDING * 2;
+  return Math.max(
+    HORIZONTAL_VIEW_CONFIG.zoomMin,
+    Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, viewportWidth / totalYears)
+  );
+};
+
 export const useHorizontalView = () => {
   const { data, selectEvent } = useTimeline();
   const [pixelsPerYear, setPixelsPerYear] = useState<number>(HORIZONTAL_VIEW_CONFIG.defaultPixelsPerYear);
+  const hasAutoFitRef = useRef(false);
 
-  const { totalWidth, getPosition, minDate, maxDate } = useTimeScale(data, { pixelsPerYear });
+  const { totalWidth, getPosition, minDate, totalYears, years } = useTimeScale(data, { pixelsPerYear });
+
+  // Auto-fit zoom on initial load using useLayoutEffect for synchronous update before paint
+  useLayoutEffect(() => {
+    if (!hasAutoFitRef.current && data && totalYears > 0) {
+      hasAutoFitRef.current = true;
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional one-time sync before paint
+      setPixelsPerYear(computeAutoFitZoom(totalYears));
+    }
+  }, [data, totalYears]);
 
   const { events, maxLane } = useSwimlanes(data, {
     cardWidth: HORIZONTAL_VIEW_CONFIG.cardWidth,
@@ -24,28 +43,36 @@ export const useHorizontalView = () => {
   });
 
   const ticks = useMemo((): Tick[] => {
-    if (!minDate || !maxDate) return [];
+    if (years.length === 0) return [];
+
     // If super zoomed out (< 10px/yr), show Decades
     if (pixelsPerYear < 10) {
-      return eachYearOfInterval({ start: minDate, end: maxDate })
-        .filter(d => d.getFullYear() % 10 === 0)
-        .map(d => ({
-          date: d,
-          label: d.getFullYear().toString(),
+      return years
+        .filter(y => y % 10 === 0)
+        .map(y => ({
+          year: y,
+          label: y.toString(),
           major: true
         }));
     }
-    // Otherwise show Years
-    return eachYearOfInterval({ start: minDate, end: maxDate }).map(d => ({
-      date: d,
-      label: d.getFullYear().toString(),
-      major: d.getFullYear() % 10 === 0
-    }));
-  }, [minDate, maxDate, pixelsPerYear]);
 
-  const handleZoomChange = (value: number) => {
+    // Otherwise show Years, with decades as major
+    return years.map(y => ({
+      year: y,
+      label: y.toString(),
+      major: y % 10 === 0
+    }));
+  }, [years, pixelsPerYear]);
+
+  const handleZoomChange = useCallback((value: number) => {
     setPixelsPerYear(value);
-  };
+  }, []);
+
+  // Get position for a year number (for tick rendering)
+  const getYearPosition = useCallback((year: number): number => {
+    const yearsFromMin = year - minDate.year;
+    return yearsFromMin * pixelsPerYear;
+  }, [minDate.year, pixelsPerYear]);
 
   return {
     // State
@@ -59,6 +86,7 @@ export const useHorizontalView = () => {
     handleZoomChange,
     selectEvent,
     getPosition,
+    getYearPosition,
     // Config
     cardHeight: HORIZONTAL_VIEW_CONFIG.cardHeight,
     zoomMin: HORIZONTAL_VIEW_CONFIG.zoomMin,

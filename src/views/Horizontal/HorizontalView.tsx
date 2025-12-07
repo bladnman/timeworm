@@ -11,7 +11,7 @@ export const HorizontalView = () => {
     maxLane,
     handleZoomChange,
     selectEvent,
-    getPosition,
+    getYearPosition,
     cardHeight,
     zoomMin,
     zoomMax,
@@ -44,10 +44,10 @@ export const HorizontalView = () => {
         <div className={styles.axis} />
 
         {ticks.map((t) => {
-          const pos = getPosition(t.date.toISOString());
+          const pos = getYearPosition(t.year);
           return (
             <div
-              key={t.date.toString()}
+              key={t.year}
               className={styles.tick}
               style={{
                 left: `${pos}px`,
