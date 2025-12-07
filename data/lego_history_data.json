@@ -1,0 +1,820 @@
+{
+    "meta": {
+        "title": "Brick by Brick: A History of LEGO",
+        "version": "1.0.0",
+        "generated_date": "2025-12-06",
+        "overview": "From a Depression-era Danish carpenter's workshop to the world's largest toy company, LEGO transformed simple plastic bricks into a creative system that has captivated billions of children and adults alike. The story includes near-bankruptcy, a pivot to licensed properties, and the emergence of adult fans who have elevated the brick to an art medium. Today, LEGO represents something rare: a product that genuinely makes people more creative.",
+        "attribution": "Historical research compiled from LEGO company archives, toy industry analysis, and design history."
+    },
+    "groups": [
+        {
+            "id": "grp_origins",
+            "title": "Part I: Origins",
+            "date_range": "1932 – 1957",
+            "description": "LEGO began as a wooden toy workshop during the Great Depression, pivoting to plastic after World War II. The company experimented with interlocking bricks before perfecting the design that would become iconic—the brick with 'clutch power.'"
+        },
+        {
+            "id": "grp_system",
+            "title": "Part II: The Brick System",
+            "date_range": "1958 – 1977",
+            "description": "The modern LEGO brick was patented in 1958, establishing a 'system of play' where all bricks from any era could connect. This period saw expansion through wheels, trains, the LEGOLAND park, and early minifigure concepts."
+        },
+        {
+            "id": "grp_golden",
+            "title": "Part III: The Golden Age",
+            "date_range": "1978 – 1997",
+            "description": "The introduction of the modern minifigure in 1978 transformed LEGO from building system to storytelling medium. Iconic themes emerged—Space, Castle, Pirates—and Technic brought mechanical complexity. LEGO became the dominant construction toy worldwide."
+        },
+        {
+            "id": "grp_crisis",
+            "title": "Part IV: Crisis & Turnaround",
+            "date_range": "1998 – 2009",
+            "description": "LEGO nearly collapsed after overexpanding into video games, clothing, and theme parks while neglecting core products. New leadership refocused on the brick, launched transformative licenses like Star Wars, and rebuilt the company through disciplined innovation."
+        },
+        {
+            "id": "grp_phenomenon",
+            "title": "Part V: Cultural Phenomenon",
+            "date_range": "2010 – 2025",
+            "description": "LEGO became the world's largest toy company by embracing adult fans, creating acclaimed movies, and launching ambitious sets with thousands of pieces. The brick transcended childhood toys to become a legitimate creative medium and cultural force."
+        }
+    ],
+    "events": [
+        {
+            "id": "evt_workshop",
+            "title": "Ole Kirk Christiansen Starts Workshop",
+            "date_display": "1932",
+            "date_start": "1932-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Company Founding",
+            "innovator": "Ole Kirk Christiansen",
+            "innovation": "Wooden Toy Workshop",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "Danish carpenter Ole Kirk Christiansen opened a small workshop in Billund, Denmark, during the depths of the Great Depression. Initially making furniture and household goods, he pivoted to wooden toys as economic conditions worsened and demand for furniture collapsed.\n\nChristiansen's craftsmanship and attention to quality would define LEGO's culture for generations. His motto, 'Only the best is good enough,' remains on signs in LEGO facilities today.",
+            "metrics": {
+                "location": "Billund, Denmark",
+                "motto": "'Only the best is good enough'"
+            }
+        },
+        {
+            "id": "evt_name",
+            "title": "Company Named 'LEGO'",
+            "date_display": "1934",
+            "date_start": "1934-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Branding",
+            "innovator": "Ole Kirk Christiansen",
+            "innovation": "Brand Name",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "Christiansen named his company LEGO, derived from the Danish words 'leg godt' meaning 'play well.' The name coincidentally means 'I put together' in Latin, though this wasn't intentional. The simple, memorable name would become one of the world's most recognized brands.\n\nThe company held a naming contest among employees, with Christiansen choosing his own submission. The name appeared on wooden toys for the next 15 years before plastic bricks were invented.",
+            "metrics": {
+                "meaning": "'Leg godt' (play well) in Danish"
+            }
+        },
+        {
+            "id": "evt_fire",
+            "title": "Factory Fire and Rebuild",
+            "date_display": "1942",
+            "date_start": "1942-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Disaster",
+            "innovation": "Resilience",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "A fire destroyed the LEGO factory, along with all plans and models. Ole Kirk Christiansen rebuilt, demonstrating the determination that would characterize the company. World War II constrained operations, but the company survived.\n\nThe fire's destruction of historical records means some early LEGO history is incomplete. The company's survival through disaster and war prepared it for later challenges.",
+            "metrics": {
+                "outcome": "Rebuilt and survived"
+            }
+        },
+        {
+            "id": "evt_plastic",
+            "title": "First Plastic Injection Molding Machine",
+            "date_display": "1947",
+            "date_start": "1947-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Technology",
+            "innovation": "Pivot to Plastic",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO became one of the first companies in Denmark to purchase a plastic injection molding machine. The expensive equipment was a gamble—plastic toys were considered cheap and inferior to wooden ones—but it enabled entirely new types of products.\n\nThe pivot to plastic initially disappointed traditionalists who valued wooden craftsmanship. But plastic's precision and consistency would prove essential for interlocking building bricks.",
+            "metrics": {
+                "significance": "Among first in Denmark"
+            }
+        },
+        {
+            "id": "evt_binding_bricks",
+            "title": "Automatic Binding Bricks Introduced",
+            "date_display": "1949",
+            "date_start": "1949-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Product Launch",
+            "innovation": "Interlocking Plastic Bricks",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "LEGO introduced 'Automatic Binding Bricks'—hollow plastic bricks with studs on top and rectangular slots on the bottom. The bricks could stack but didn't hold together firmly. The design was based on British Kiddicraft bricks invented by Hilary Fisher Page.\n\nThese early bricks were crude by later standards—they separated easily and models fell apart. But the concept of interlocking construction toys was established, awaiting refinement.",
+            "metrics": {
+                "inspiration": "Kiddicraft bricks (UK)"
+            }
+        },
+        {
+            "id": "evt_mursten",
+            "title": "Bricks Renamed 'LEGO Mursten'",
+            "date_display": "1953",
+            "date_start": "1953-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Branding",
+            "innovation": "LEGO Bricks Brand",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "The Automatic Binding Bricks were renamed 'LEGO Mursten' (LEGO Bricks). The company began emphasizing the LEGO brand name and the systematic nature of the building blocks—pieces from different sets could combine.\n\nThis 'system' concept would become crucial to LEGO's value proposition. Unlike toys that stood alone, LEGO bricks accumulated value as collections grew.",
+            "metrics": {
+                "concept": "'System of play'"
+            }
+        },
+        {
+            "id": "evt_system_play",
+            "title": "'System of Play' Concept Launched",
+            "date_display": "1955",
+            "date_start": "1955-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Marketing",
+            "innovator": "Godtfred Kirk Christiansen",
+            "innovation": "Systematic Construction",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "Godtfred Kirk Christiansen (Ole Kirk's son) formalized the 'System of Play' concept: all LEGO sets should work together, encouraging open-ended creative building rather than single-purpose construction. This philosophy differentiated LEGO from competitors.\n\nThe system approach meant every purchase expanded creative possibilities. Sets weren't consumed and discarded—they became permanent additions to a child's building capabilities.",
+            "metrics": {
+                "principle": "All bricks compatible"
+            }
+        },
+        {
+            "id": "evt_brick_patent",
+            "title": "Modern LEGO Brick Patented",
+            "date_display": "January 28, 1958",
+            "date_start": "1958-01-28",
+            "group_ids": ["grp_system"],
+            "type": "Patent",
+            "innovator": "Godtfred Kirk Christiansen",
+            "innovation": "Clutch Power Design",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "LEGO patented the brick design still used today. The innovation: adding tubes inside the brick that created friction against the studs of bricks below. This 'clutch power' allowed bricks to connect firmly while remaining easy to separate.\n\nThe patent (expired in 1978) protected LEGO during its crucial growth years. The design was so refined that bricks manufactured today remain compatible with 1958 bricks. A 67-year-old brick still clicks perfectly with one made yesterday.",
+            "metrics": {
+                "patent_date": "January 28, 1958",
+                "patent_expired": "1978"
+            }
+        },
+        {
+            "id": "evt_wheel",
+            "title": "First LEGO Wheel Element",
+            "date_display": "1961",
+            "date_start": "1961-01-01",
+            "group_ids": ["grp_system"],
+            "type": "Product Innovation",
+            "innovation": "Wheels for Vehicles",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "LEGO introduced wheel elements, dramatically expanding building possibilities. Children could now create moving vehicles. The wheel became one of LEGO's most popular elements—the company is reportedly the world's largest tire manufacturer by unit volume.\n\nWheels demonstrated LEGO's commitment to expanding the system while maintaining compatibility. Each new element type increased what could be built without obsoleting existing pieces.",
+            "metrics": {
+                "fact": "LEGO: world's largest tire manufacturer (by unit)"
+            }
+        },
+        {
+            "id": "evt_instructions",
+            "title": "First Instruction Booklets Included",
+            "date_display": "1964",
+            "date_start": "1964-01-01",
+            "group_ids": ["grp_system"],
+            "type": "Product Innovation",
+            "innovation": "Building Instructions",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "LEGO began including step-by-step building instructions with sets. The wordless pictorial instructions—using only images to show each step—could be followed by children worldwide regardless of language.\n\nThe instruction format became iconic, with each step clearly showing which pieces to add. Modern LEGO instructions maintain this approach, having perfected visual communication across decades.",
+            "metrics": {
+                "format": "Wordless pictorial instructions"
+            }
+        },
+        {
+            "id": "evt_train",
+            "title": "First LEGO Train Set",
+            "date_display": "1966",
+            "date_start": "1966-01-01",
+            "group_ids": ["grp_system"],
+            "type": "Product Line",
+            "innovation": "Powered LEGO Trains",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "LEGO introduced battery-powered trains with blue tracks, beginning one of the company's most enduring themes. Train sets demonstrated that LEGO could incorporate motors and electronics while remaining a building system.\n\nLEGO trains evolved through 4.5V, 12V, and 9V systems before the current Power Functions and Powered Up systems. The train enthusiast community remains among the most dedicated LEGO fan groups.",
+            "metrics": {
+                "power": "Battery powered"
+            }
+        },
+        {
+            "id": "evt_legoland_billund",
+            "title": "First LEGOLAND Park Opens",
+            "date_display": "June 7, 1968",
+            "date_start": "1968-06-07",
+            "group_ids": ["grp_system"],
+            "type": "Park Opening",
+            "innovation": "LEGO Theme Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3f/Legoland_Billund.jpg"
+            ],
+            "description": "LEGOLAND Billund opened adjacent to the LEGO factory in Denmark, featuring LEGO sculptures, rides, and Miniland—detailed models of cities built from LEGO bricks. The park attracted 625,000 visitors in its first year.\n\nLEGOLAND established LEGO as more than a toy company—it was a destination. The park expanded over decades and spawned additional LEGOLAND parks worldwide, though later parks would be operated by Merlin Entertainments rather than LEGO directly.",
+            "metrics": {
+                "first_year_visitors": "625,000"
+            }
+        },
+        {
+            "id": "evt_duplo",
+            "title": "DUPLO Introduced",
+            "date_display": "1969",
+            "date_start": "1969-01-01",
+            "group_ids": ["grp_system"],
+            "type": "Product Line",
+            "innovation": "Toddler-Safe Large Bricks",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/87/DUPLO_Brick_2_4_10_Colour.jpg"
+            ],
+            "description": "LEGO introduced DUPLO bricks—twice the dimensions of standard LEGO bricks in each direction (8 times the volume). Designed for toddlers, DUPLO bricks were too large to swallow and easier for small hands to manipulate.\n\nCrucially, DUPLO bricks remain compatible with standard LEGO—DUPLO studs fit LEGO tubes. This maintained the 'system of play' philosophy while serving a new age group.",
+            "metrics": {
+                "scale": "2x standard LEGO dimensions"
+            }
+        },
+        {
+            "id": "evt_minifig_proto",
+            "title": "First Minifigure Prototype",
+            "date_display": "1974",
+            "date_start": "1974-01-01",
+            "group_ids": ["grp_system"],
+            "type": "Design Development",
+            "innovation": "Human Figure Concept",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lego_minifig.png"
+            ],
+            "description": "LEGO introduced early human figures without movable limbs—solid pieces with simple printed faces. These 'maxifigures' and building figures were static but represented LEGO's first systematic approach to including human characters.\n\nThe early figures lacked the personality and poseability of the later minifigure design. But they demonstrated demand for human characters in LEGO play scenarios.",
+            "metrics": {
+                "features": "No movable limbs"
+            }
+        },
+        {
+            "id": "evt_technic",
+            "title": "LEGO Technic Introduced",
+            "date_display": "1977",
+            "date_start": "1977-01-01",
+            "group_ids": ["grp_system"],
+            "type": "Product Line",
+            "innovation": "Mechanical Building System",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO Technic (originally 'Expert Builder') introduced beams with holes, pins, gears, and axles that enabled functional mechanical models. Motors, pneumatics, and later computer control would follow. Technic attracted older builders seeking engineering challenges.\n\nTechnic expanded LEGO's audience beyond young children while maintaining system compatibility. Complex models could include working steering, transmissions, and suspensions.",
+            "metrics": {
+                "original_name": "'Expert Builder'"
+            }
+        },
+        {
+            "id": "evt_minifigure",
+            "title": "Modern Minifigure Introduced",
+            "date_display": "1978",
+            "date_start": "1978-01-01",
+            "group_ids": ["grp_golden"],
+            "type": "Product Launch",
+            "innovator": "Jens Nygaard Knudsen",
+            "innovation": "Poseable Human Figure",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lego_minifig.png"
+            ],
+            "description": "LEGO introduced the minifigure with movable arms, rotating hands that could grip accessories, and the iconic yellow skin and simple smiling face. Designer Jens Nygaard Knudsen created a design so perfect it has remained essentially unchanged for over 45 years.\n\nThe minifigure transformed LEGO from construction system to storytelling medium. With characters to inhabit their creations, children could create narratives, not just structures. The minifigure may be LEGO's most important innovation after the brick itself.",
+            "metrics": {
+                "designer": "Jens Nygaard Knudsen",
+                "features": "Movable arms, gripping hands"
+            }
+        },
+        {
+            "id": "evt_castle",
+            "title": "LEGO Castle Theme Launches",
+            "date_display": "1978",
+            "date_start": "1978-01-01",
+            "group_ids": ["grp_golden"],
+            "type": "Theme Launch",
+            "innovation": "Medieval Fantasy Theme",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "LEGO Castle introduced medieval themes with knights, horses, and fortifications. The theme provided context for minifigure adventures—defenders holding castles against attackers, tournaments, and fantasy adventures.\n\nCastle became one of LEGO's longest-running themes, evolving through various factions (Black Falcons, Black Knights, Dragon Masters) and fantasy variants. The theme demonstrated LEGO's ability to create compelling play narratives.",
+            "metrics": {
+                "longevity": "One of longest-running themes"
+            }
+        },
+        {
+            "id": "evt_space",
+            "title": "LEGO Space Theme Launches",
+            "date_display": "1979",
+            "date_start": "1979-01-01",
+            "group_ids": ["grp_golden"],
+            "type": "Theme Launch",
+            "innovation": "Science Fiction Theme",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "Classic Space launched with astronaut minifigures in blue, white, red, yellow, and black, building spaceships and moon bases. The theme captured post-Apollo space enthusiasm and introduced LEGO's first transparent elements.\n\nClassic Space's friendly astronauts—all smiling, all cooperating—represented an optimistic vision of humanity in space. The theme remains beloved by adult fans who grew up with it, with regular nostalgic reissues.",
+            "metrics": {
+                "colors": "Blue, white, red, yellow, black spacemen"
+            }
+        },
+        {
+            "id": "evt_black_falcons",
+            "title": "LEGO Castle Black Falcons",
+            "date_display": "1984",
+            "date_start": "1984-01-01",
+            "group_ids": ["grp_golden"],
+            "type": "Theme Expansion",
+            "innovation": "Castle Factions",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "The Black Falcons became Castle's first distinct faction with matching shield designs, establishing the template for rival groups within themes. Children could build opposing forces and stage battles.\n\nFaction-based play encouraged larger collections—you needed multiple sets to create meaningful conflicts. The approach proved so successful that factions became standard across themes.",
+            "metrics": {
+                "innovation": "First distinct Castle faction"
+            }
+        },
+        {
+            "id": "evt_pirates",
+            "title": "LEGO Pirates Theme Launches",
+            "date_display": "1989",
+            "date_start": "1989-01-01",
+            "group_ids": ["grp_golden"],
+            "type": "Theme Launch",
+            "innovation": "Pirate Adventure Theme",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "LEGO Pirates introduced facial expressions beyond the standard smile—pirates sported eyepatches, beards, and snarls. The 6285 Black Seas Barracuda became an iconic set, and pirates battled Imperial soldiers across islands and seas.\n\nPirates represented LEGO's first theme with clearly defined 'good guys' and 'bad guys' (though which was which remained ambiguous). The theme demonstrated that LEGO could handle more dramatic storytelling.",
+            "metrics": {
+                "innovation": "First varied facial expressions"
+            }
+        },
+        {
+            "id": "evt_mindstorms",
+            "title": "LEGO Mindstorms Announced",
+            "date_display": "1998",
+            "date_start": "1998-01-01",
+            "group_ids": ["grp_golden"],
+            "type": "Product Launch",
+            "innovator": "LEGO, MIT Media Lab",
+            "innovation": "Programmable Robotics",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO Mindstorms RCX, developed with MIT Media Lab, enabled building and programming robots. The product targeted education and hobbyists, demonstrating that LEGO could incorporate sophisticated technology while maintaining building focus.\n\nMindstorms found unexpected audiences in schools, robotics competitions, and adult hobbyists. Subsequent versions (NXT, EV3) improved capabilities, and Mindstorms influenced STEM education worldwide.",
+            "metrics": {
+                "development_partner": "MIT Media Lab"
+            }
+        },
+        {
+            "id": "evt_aquazone",
+            "title": "LEGO Aquazone Theme",
+            "date_display": "1995",
+            "date_start": "1995-01-01",
+            "group_ids": ["grp_golden"],
+            "type": "Theme Launch",
+            "innovation": "Underwater Theme",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "Aquazone took LEGO underwater with submarines, diving equipment, and underwater bases. The theme featured transparent elements and introduced more complex storytelling with competing factions harvesting underwater crystals.\n\nAquazone represented LEGO's mid-90s push into elaborate themed narratives. While not as enduring as Castle or Space, it demonstrated willingness to explore unusual settings.",
+            "metrics": {
+                "setting": "Underwater"
+            }
+        },
+        {
+            "id": "evt_legoland_windsor",
+            "title": "LEGOLAND Windsor Opens",
+            "date_display": "March 29, 1996",
+            "date_start": "1996-03-29",
+            "group_ids": ["grp_golden"],
+            "type": "Park Opening",
+            "innovation": "First LEGOLAND Outside Denmark",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3f/Legoland_Billund.jpg"
+            ],
+            "description": "LEGOLAND Windsor opened as the first LEGOLAND park outside Denmark. The UK location proved the LEGOLAND concept could succeed internationally, attracting millions of visitors to its Miniland, rides, and building experiences.\n\nThe park's success encouraged further expansion, though later parks would be licensed to Merlin Entertainments rather than operated by LEGO directly.",
+            "metrics": {
+                "location": "Windsor, UK"
+            }
+        },
+        {
+            "id": "evt_website",
+            "title": "First LEGO Website Launched",
+            "date_display": "1996",
+            "date_start": "1996-01-01",
+            "group_ids": ["grp_golden"],
+            "type": "Digital Launch",
+            "innovation": "Online Presence",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO launched its first website, beginning its digital presence. The site featured product information, games, and building ideas. LEGO would become one of the most-visited children's websites as internet adoption grew.\n\nDigital engagement would become increasingly important to LEGO's strategy, eventually including video games, apps, and online communities.",
+            "metrics": {
+                "significance": "First LEGO.com"
+            }
+        },
+        {
+            "id": "evt_first_loss",
+            "title": "First Operating Loss",
+            "date_display": "1998",
+            "date_start": "1998-01-01",
+            "group_ids": ["grp_crisis"],
+            "type": "Financial Crisis",
+            "innovation": "Crisis Recognition",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO reported its first operating loss after 66 years of profitability. The company had overexpanded into theme parks, clothing, and video games while neglecting core brick products. Competition from video games and declining birth rates in key markets added pressure.\n\nThe 1998 loss signaled deep problems that would worsen before improving. LEGO faced an existential crisis that required fundamental rethinking of strategy.",
+            "metrics": {
+                "significance": "First loss in 66 years"
+            }
+        },
+        {
+            "id": "evt_star_wars",
+            "title": "Star Wars License Acquired",
+            "date_display": "1999",
+            "date_start": "1999-01-01",
+            "group_ids": ["grp_crisis"],
+            "type": "License Deal",
+            "innovator": "LEGO, Lucasfilm",
+            "innovation": "First Major Movie License",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg"
+            ],
+            "description": "LEGO secured licensing rights to Star Wars, launching sets timed with 'The Phantom Menace.' The move was controversial internally—LEGO had never done licensed properties, priding itself on original creativity. But Star Wars became LEGO's best-selling theme.\n\nThe license proved transformative. Star Wars attracted older fans and demonstrated that LEGO could succeed with established intellectual properties. Licensed themes would eventually comprise a significant portion of LEGO's business.",
+            "metrics": {
+                "significance": "First major movie license",
+                "result": "Best-selling theme ever"
+            }
+        },
+        {
+            "id": "evt_toy_century",
+            "title": "LEGO Named 'Toy of the Century'",
+            "date_display": "2000",
+            "date_start": "2000-01-01",
+            "group_ids": ["grp_crisis"],
+            "type": "Award",
+            "innovation": "Industry Recognition",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "The British Association of Toy Retailers named LEGO the 'Toy of the Century,' and Fortune magazine agreed. The recognition came ironically as LEGO faced its worst financial crisis, validating the brand's cultural significance even as the company struggled.\n\nThe awards highlighted the gap between LEGO's cultural status and its business performance. The brand was beloved; the company was floundering.",
+            "metrics": {
+                "award": "'Toy of the Century'"
+            }
+        },
+        {
+            "id": "evt_bionicle",
+            "title": "Bionicle Launches",
+            "date_display": "2001",
+            "date_start": "2001-01-01",
+            "group_ids": ["grp_crisis"],
+            "type": "Product Line",
+            "innovation": "Buildable Action Figures",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "Bionicle introduced buildable action figures with elaborate storylines told through comics, books, movies, and online content. The theme targeted boys aged 8-12 who might otherwise age out of LEGO. It became a massive hit, credited with saving the company.\n\nBionicle generated $160 million in its first year—LEGO's best-selling product line. The constraction (construction action figure) format spawned Hero Factory and other lines.",
+            "metrics": {
+                "first_year_revenue": "$160 million",
+                "impact": "Credited with saving company"
+            }
+        },
+        {
+            "id": "evt_harry_potter",
+            "title": "Harry Potter Theme Launches",
+            "date_display": "2001",
+            "date_start": "2001-01-01",
+            "group_ids": ["grp_crisis"],
+            "type": "License Launch",
+            "innovation": "Fantasy Book License",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO Harry Potter launched alongside the first film, capitalizing on the book series' enormous popularity. Hogwarts sets allowed fans to build locations from the beloved franchise, combining LEGO's building system with established emotional connections.\n\nHarry Potter demonstrated that Star Wars' success could be replicated with other properties. Licensed themes became central to LEGO strategy.",
+            "metrics": {
+                "timing": "Aligned with first film"
+            }
+        },
+        {
+            "id": "evt_near_bankruptcy",
+            "title": "Near-Bankruptcy Crisis",
+            "date_display": "2003",
+            "date_start": "2003-01-01",
+            "group_ids": ["grp_crisis"],
+            "type": "Financial Crisis",
+            "innovation": "Survival Struggle",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO reached its nadir, losing nearly $1 million per day. The company had expanded into too many areas—theme parks, clothing, video games—while the core brick business suffered from unfocused product lines and excessive complexity. Bankruptcy seemed possible.\n\nThe Kristiansen family brought in turnaround expert Jørgen Vig Knudstorp to diagnose problems. His analysis identified thousands of unique brick elements (complicating manufacturing) and lack of strategic focus.",
+            "metrics": {
+                "losses": "~$1 million per day"
+            }
+        },
+        {
+            "id": "evt_knudstorp",
+            "title": "Jørgen Vig Knudstorp Becomes CEO",
+            "date_display": "October 2004",
+            "date_start": "2004-10-01",
+            "group_ids": ["grp_crisis"],
+            "type": "Leadership Change",
+            "innovator": "Jørgen Vig Knudstorp",
+            "innovation": "Turnaround Leadership",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "Jørgen Vig Knudstorp became LEGO's first non-family CEO, charged with saving the company. His strategy: return to the core brick business, reduce product complexity, sell off theme parks and factories, and focus ruthlessly on what made LEGO special.\n\nKnudstorp's turnaround became a business school case study. By 2005, LEGO was profitable again. By 2015, it was the world's largest toy company.",
+            "metrics": {
+                "significance": "First non-family CEO"
+            }
+        },
+        {
+            "id": "evt_lego_star_wars_game",
+            "title": "LEGO Star Wars Video Game",
+            "date_display": "March 29, 2005",
+            "date_start": "2005-03-29",
+            "group_ids": ["grp_crisis"],
+            "type": "Video Game Launch",
+            "innovator": "TT Games",
+            "innovation": "LEGO Video Game Format",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO Star Wars: The Video Game established the template for LEGO video games: cooperative gameplay, family-friendly humor, and characters breaking apart into LEGO pieces. The game was a surprise hit, spawning dozens of sequels covering various franchises.\n\nThe video game success demonstrated that LEGO could succeed in digital media while reinforcing the physical product. Games encouraged LEGO purchases rather than replacing them.",
+            "metrics": {
+                "developer": "TT Games",
+                "format": "LEGO humor + licensed property"
+            }
+        },
+        {
+            "id": "evt_architecture",
+            "title": "LEGO Architecture Introduced",
+            "date_display": "2008",
+            "date_start": "2008-01-01",
+            "group_ids": ["grp_crisis"],
+            "type": "Product Line",
+            "innovator": "Adam Reed Tucker",
+            "innovation": "Adult-Focused Building",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "LEGO Architecture launched with models of famous buildings designed by architect Adam Reed Tucker. The line explicitly targeted adults with sophisticated packaging and challenging builds, acknowledging that LEGO wasn't just for children.\n\nArchitecture helped legitimize adult LEGO collecting. The sets were displayable, challenging, and appropriate for offices and homes without seeming juvenile.",
+            "metrics": {
+                "target": "Adult collectors"
+            }
+        },
+        {
+            "id": "evt_ideas",
+            "title": "LEGO Ideas Platform Launched",
+            "date_display": "2008",
+            "date_start": "2008-01-01",
+            "group_ids": ["grp_crisis"],
+            "type": "Platform Launch",
+            "innovator": "LEGO",
+            "innovation": "Fan-Designed Products",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO Ideas (originally CUUSOO) allowed fans to submit designs and vote for favorites. Sets reaching 10,000 supporters would be considered for production, with designers receiving royalties. The platform crowdsourced creativity while engaging the fan community.\n\nIdeas produced hits like the NASA Saturn V, Women of NASA, and the Ship in a Bottle. The platform demonstrated LEGO's willingness to embrace fan creativity rather than seeing it as competition.",
+            "metrics": {
+                "threshold": "10,000 supporters for consideration"
+            }
+        },
+        {
+            "id": "evt_ninjago",
+            "title": "LEGO Ninjago Launches",
+            "date_display": "January 2011",
+            "date_start": "2011-01-01",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Theme Launch",
+            "innovation": "Original IP with Media",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "Ninjago combined buildable spinner toys with an original ninja storyline supported by a TV series. Unlike licensed themes dependent on external properties, Ninjago was wholly LEGO-owned—if successful, all profits stayed with LEGO.\n\nNinjago became LEGO's most successful original theme, with the TV series running hundreds of episodes. It proved LEGO could create compelling original IP, not just build on others' franchises.",
+            "metrics": {
+                "status": "Most successful original theme"
+            }
+        },
+        {
+            "id": "evt_lego_movie",
+            "title": "The LEGO Movie Released",
+            "date_display": "February 7, 2014",
+            "date_start": "2014-02-07",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Film Release",
+            "innovator": "Phil Lord, Christopher Miller",
+            "innovation": "Theatrical LEGO Film",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "The LEGO Movie surprised everyone by being genuinely great—a witty, visually stunning film that celebrated creativity while gently satirizing corporate conformity. The film grossed $469 million worldwide and introduced LEGO to audiences who hadn't bought bricks in decades.\n\n'Everything Is Awesome' became an earworm phenomenon. The film's success launched a franchise including The LEGO Batman Movie, The LEGO Ninjago Movie, and The LEGO Movie 2.",
+            "metrics": {
+                "box_office": "$469 million",
+                "directors": "Phil Lord, Christopher Miller"
+            }
+        },
+        {
+            "id": "evt_dimensions",
+            "title": "LEGO Dimensions Video Game",
+            "date_display": "September 27, 2015",
+            "date_start": "2015-09-27",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Video Game Launch",
+            "innovator": "TT Games, Warner Bros.",
+            "innovation": "Toys-to-Life Format",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO Dimensions combined video gaming with physical LEGO builds—players placed constructed minifigures on a portal pad to bring characters into the game. The format merged physical and digital play.\n\nDespite strong reviews, Dimensions was discontinued in 2017 as the toys-to-life category collapsed. It represented LEGO's ambitious but ultimately unsuccessful attempt at the format.",
+            "metrics": {
+                "format": "Toys-to-life",
+                "status": "Discontinued 2017"
+            }
+        },
+        {
+            "id": "evt_batman_movie",
+            "title": "The LEGO Batman Movie",
+            "date_display": "February 10, 2017",
+            "date_start": "2017-02-10",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Film Release",
+            "innovation": "LEGO Spin-off Film",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "The LEGO Batman Movie spun off the character from The LEGO Movie into a hilarious sendup of Batman mythology. The film grossed $312 million and received strong reviews for its humor and surprising emotional depth.\n\nThe Batman spin-off demonstrated that LEGO films could work as franchises. The meta-humor about Batman's ego and loneliness resonated with adult fans of both LEGO and superhero cinema.",
+            "metrics": {
+                "box_office": "$312 million"
+            }
+        },
+        {
+            "id": "evt_saturn_v",
+            "title": "LEGO Ideas Saturn V",
+            "date_display": "June 1, 2017",
+            "date_start": "2017-06-01",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Product Launch",
+            "innovation": "Fan-Designed Hit",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "The NASA Apollo Saturn V, designed by fans Felix Stiessen and Valérie Roche through LEGO Ideas, became one of LEGO's most successful adult-targeted sets. The 1,969-piece (matching the moon landing year) model stood over 3 feet tall.\n\nThe Saturn V demonstrated the potential of LEGO Ideas and the appetite for large, detailed models among adult fans. It repeatedly sold out and was eventually retired, becoming a collector's item.",
+            "metrics": {
+                "pieces": "1,969",
+                "height": "Over 3 feet"
+            }
+        },
+        {
+            "id": "evt_largest_toy",
+            "title": "LEGO Becomes World's Largest Toy Company",
+            "date_display": "2015",
+            "date_start": "2015-01-01",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Industry Milestone",
+            "innovation": "Market Leadership",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO surpassed Mattel to become the world's largest toy company by revenue. The company that nearly went bankrupt in 2003 had completed one of the most remarkable turnarounds in corporate history.\n\nThe achievement validated Knudstorp's strategy of focusing on the core brick business while carefully expanding into movies, games, and licensed themes that reinforced rather than distracted from LEGO's core product.",
+            "metrics": {
+                "position": "#1 toy company globally"
+            }
+        },
+        {
+            "id": "evt_colosseum",
+            "title": "LEGO Colosseum: Largest Set Ever",
+            "date_display": "November 27, 2020",
+            "date_start": "2020-11-27",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Product Launch",
+            "innovation": "Record-Breaking Set",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "The LEGO Roman Colosseum launched with 9,036 pieces—the largest LEGO set ever produced. The model took over 19 hours to build and retailed for $550, targeting adult collectors seeking challenging builds and impressive displays.\n\nThe Colosseum represented LEGO's confidence in the adult market. At $550 for a toy, it succeeded because adults valued the building experience and finished display piece.",
+            "metrics": {
+                "pieces": "9,036",
+                "retail_price": "$549.99"
+            }
+        },
+        {
+            "id": "evt_botanical",
+            "title": "LEGO Botanical Collection",
+            "date_display": "January 1, 2021",
+            "date_start": "2021-01-01",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Product Line",
+            "innovation": "Adult Lifestyle Products",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Lego_Color_Bricks.jpg"
+            ],
+            "description": "The Botanical Collection launched with buildable flower bouquets and bonsai trees—LEGO as home décor. The line attracted adult buyers, particularly women, who wanted creative building experiences and attractive display pieces.\n\nBotanical demonstrated LEGO's expansion beyond traditional play themes into lifestyle products. Subsequent releases included orchids, succulents, and other plant-based builds.",
+            "metrics": {
+                "target": "Adult home décor"
+            }
+        },
+        {
+            "id": "evt_titanic",
+            "title": "LEGO Titanic",
+            "date_display": "November 8, 2021",
+            "date_start": "2021-11-08",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Product Launch",
+            "innovation": "Record-Breaking Ship",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "The LEGO Titanic briefly became the largest set ever at 9,090 pieces (surpassing the Colosseum). The 4.5-foot model featured recreated interiors including the grand staircase, dining saloon, and engine room.\n\nThe Titanic represented peak adult LEGO—complex, expensive, time-consuming, and impressive. The set demonstrated demand for ultra-premium LEGO experiences.",
+            "metrics": {
+                "pieces": "9,090",
+                "length": "4.5 feet"
+            }
+        },
+        {
+            "id": "evt_revenue_9b",
+            "title": "LEGO Revenues Exceed $9 Billion",
+            "date_display": "2023",
+            "date_start": "2023-01-01",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Financial Milestone",
+            "innovation": "Revenue Growth",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO's annual revenues exceeded $9 billion, continuing growth that had persisted through the pandemic and beyond. The company had successfully navigated supply chain challenges and maintained premium pricing.\n\nThe revenue milestone confirmed LEGO's position as a dominant toy company. Growth continued across regions and demographics, with particular strength in adult sets.",
+            "metrics": {
+                "revenue": "$9+ billion"
+            }
+        },
+        {
+            "id": "evt_fortnite",
+            "title": "LEGO Fortnite Collaboration",
+            "date_display": "December 7, 2023",
+            "date_start": "2023-12-07",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Digital Launch",
+            "innovator": "LEGO, Epic Games",
+            "innovation": "Game-Within-Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO Fortnite launched as a survival crafting game within Fortnite, featuring LEGO minifigure versions of Fortnite characters. The collaboration brought LEGO to Fortnite's massive player base while creating a persistent LEGO gaming experience.\n\nThe Fortnite collaboration represented LEGO's continued digital strategy—using games to reinforce the brand rather than replace physical products.",
+            "metrics": {
+                "platform": "Within Fortnite"
+            }
+        },
+        {
+            "id": "evt_icons_rebrand",
+            "title": "LEGO Icons Adult Rebrand",
+            "date_display": "2024",
+            "date_start": "2024-01-01",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Brand Strategy",
+            "innovation": "Adult-Focused Branding",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO consolidated adult-targeted product lines under the 'Icons' brand, replacing confusing designations like Creator Expert. The rebrand explicitly acknowledged that adults were a major market segment deserving dedicated branding.\n\nThe Icons rebrand formalized LEGO's dual-market strategy: family-friendly licensed themes for children, sophisticated display-worthy sets for adults.",
+            "metrics": {
+                "target": "Adults 18+"
+            }
+        },
+        {
+            "id": "evt_sustainable_bricks",
+            "title": "Sustainable Brick Materials",
+            "date_display": "2025",
+            "date_start": "2025-01-01",
+            "group_ids": ["grp_phenomenon"],
+            "type": "Sustainability Initiative",
+            "innovation": "Recycled and Bio-Based Materials",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/24/Lego_logo.svg"
+            ],
+            "description": "LEGO expanded production of bricks from recycled PET bottles and bio-based materials. The company committed to sustainable materials across its product line while maintaining the quality and compatibility that defined LEGO bricks.\n\nSustainability represented LEGO's response to environmental concerns without compromising the product. Finding materials that matched ABS plastic's performance proved challenging but essential for LEGO's future.",
+            "metrics": {
+                "goal": "Sustainable materials by 2030"
+            }
+        }
+    ]
+}

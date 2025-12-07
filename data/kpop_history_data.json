@@ -1,0 +1,827 @@
+{
+    "meta": {
+        "title": "Factory-Engineered Fandom: A History of K-Pop",
+        "version": "1.0.0",
+        "generated_date": "2025-12-06",
+        "overview": "K-Pop is not just a music genre—it's an industrial complex, a cultural export strategy, and a template for manufacturing global stardom. From Seo Taiji's revolutionary debut in 1992 to BTS speaking at the United Nations, Korean pop music has evolved from domestic entertainment into one of the world's most sophisticated cultural products, complete with trainee systems, fan armies, and streaming optimization strategies.",
+        "attribution": "Historical research compiled from Korean music industry archives, cultural analysis, and entertainment journalism."
+    },
+    "groups": [
+        {
+            "id": "grp_pre_kpop",
+            "title": "Part I: Pre-K-Pop Era",
+            "date_range": "1950s – 1991",
+            "description": "Before K-Pop, Korean popular music consisted of trot (a style influenced by Japanese enka), ballads, and rock music that emerged under military dictatorships and censorship. American military presence introduced Western pop influences that would later combine with Korean sensibilities."
+        },
+        {
+            "id": "grp_first_gen",
+            "title": "Part II: First Generation",
+            "date_range": "1992 – 2002",
+            "description": "Seo Taiji and Boys' fusion of hip-hop, rock, and dance forever changed Korean music. The major entertainment agencies formed—SM, YG, JYP—establishing the 'idol' training system that would define the industry. The first generation idols like H.O.T. and S.E.S. created the template."
+        },
+        {
+            "id": "grp_second_gen",
+            "title": "Part III: Second Generation",
+            "date_range": "2003 – 2012",
+            "description": "The Hallyu (Korean Wave) went international as groups like TVXQ, Big Bang, and Girls' Generation built fanbases across Asia. Social media began enabling direct fan engagement, and PSY's 'Gangnam Style' proved K-Pop could achieve global viral success."
+        },
+        {
+            "id": "grp_third_gen",
+            "title": "Part IV: Third Generation",
+            "date_range": "2013 – 2019",
+            "description": "BTS and BLACKPINK led K-Pop's Western breakthrough, achieving Billboard charts and stadium tours. Social media mastery, authentic fan relationships, and sophisticated visual storytelling distinguished third-generation success."
+        },
+        {
+            "id": "grp_fourth_gen",
+            "title": "Part V: Fourth Generation & Global Era",
+            "date_range": "2020 – 2025",
+            "description": "The pandemic accelerated K-Pop's digital transformation. Fourth-generation groups debuted into a globalized industry where chart positions, streaming numbers, and social media engagement measured success. The industry became a multi-billion dollar export."
+        }
+    ],
+    "events": [
+        {
+            "id": "evt_trot_era",
+            "title": "Korean Trot Music Peaks",
+            "date_display": "1960s",
+            "date_start": "1961-01-01",
+            "group_ids": ["grp_pre_kpop"],
+            "type": "Musical Era",
+            "innovation": "Korean Popular Music Foundation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Trot (or 'ppongjjak'), influenced by Japanese enka, dominated Korean popular music from the 1960s through the 1980s. The style featured emotional vocals, pentatonic scales, and sentimental lyrics about love and heartbreak. Trot remains popular among older Koreans today.\n\nMilitary governments used music for propaganda but also censored Western influences and anything deemed morally corrupting. This cultural control would eventually spark rebellion in the form of youth-oriented pop music.",
+            "metrics": {
+                "style": "Japanese enka-influenced"
+            }
+        },
+        {
+            "id": "evt_korean_rock",
+            "title": "Korean Folk/Rock Scene Emerges",
+            "date_display": "1970s",
+            "date_start": "1970-01-01",
+            "group_ids": ["grp_pre_kpop"],
+            "type": "Musical Movement",
+            "innovator": "Shin Joong-hyun",
+            "innovation": "Korean Rock Music",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Shin Joong-hyun, the 'Godfather of Korean Rock,' pioneered psychedelic and rock music in Korea during the 1970s. His career was cut short when he refused to write pro-government songs and was subsequently blacklisted and imprisoned.\n\nThe suppression of artists like Shin demonstrated the obstacles Korean musicians faced under authoritarian rule. Underground music scenes would continue developing despite censorship.",
+            "metrics": {
+                "legacy": "'Godfather of Korean Rock'"
+            }
+        },
+        {
+            "id": "evt_music_videos",
+            "title": "Korean Music Video Era Begins",
+            "date_display": "1985",
+            "date_start": "1985-01-01",
+            "group_ids": ["grp_pre_kpop"],
+            "type": "Industry Development",
+            "innovation": "Visual Music Production",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "The introduction of color television and dedicated music programs created demand for music videos in Korea. Artists began incorporating visual elements and choreography into their performances, laying groundwork for K-Pop's visual emphasis.\n\nTelevision music programs became the primary promotional vehicle for artists, establishing the performance-based marketing model K-Pop agencies would perfect.",
+            "metrics": {
+                "platform": "Television music programs"
+            }
+        },
+        {
+            "id": "evt_seo_taiji",
+            "title": "Seo Taiji and Boys Debut",
+            "date_display": "April 11, 1992",
+            "date_start": "1992-04-11",
+            "group_ids": ["grp_first_gen"],
+            "type": "Debut",
+            "innovator": "Seo Taiji and Boys",
+            "innovation": "Modern K-Pop Format",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Seo Taiji and Boys' debut on a television talent show received the lowest score from judges—but audiences went wild. Their fusion of hip-hop, New Jack Swing, rock, and Korean lyrics with synchronized choreography was unlike anything Korean audiences had seen.\n\nApril 11, 1992 is considered the birthday of K-Pop. The group's success proved that Korean youth wanted Western-influenced music performed by Korean artists. Seo Taiji also tackled social issues in his lyrics, challenging both the music industry and government censorship.",
+            "metrics": {
+                "significance": "'Day K-Pop Was Born'",
+                "talent_show_score": "Lowest from judges"
+            }
+        },
+        {
+            "id": "evt_sm_founded",
+            "title": "SM Entertainment Founded",
+            "date_display": "February 14, 1995",
+            "date_start": "1995-02-14",
+            "group_ids": ["grp_first_gen"],
+            "type": "Company Founding",
+            "innovator": "Lee Soo-man",
+            "innovation": "Idol Training System",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1b/SM_Entertainment_logo.svg"
+            ],
+            "description": "Former singer Lee Soo-man founded SM Entertainment with a vision of systematically producing pop stars. He developed the 'Cultural Technology' (CT) approach: recruit trainees young, train them for years in singing, dancing, and foreign languages, then debut them as perfected idols.\n\nSM's trainee system became the industry template. Trainees typically spend 3-7 years in rigorous training before debut, with no guarantee of success. SM would produce some of K-Pop's biggest acts: H.O.T., S.E.S., TVXQ, Girls' Generation, EXO, and NCT.",
+            "metrics": {
+                "founder": "Lee Soo-man",
+                "approach": "'Cultural Technology' (CT)"
+            }
+        },
+        {
+            "id": "evt_hot",
+            "title": "H.O.T. Debuts",
+            "date_display": "September 7, 1996",
+            "date_start": "1996-09-07",
+            "group_ids": ["grp_first_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "First K-Pop Idol Group",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "H.O.T. (High-five Of Teenagers) was SM Entertainment's first idol group, debuting with aggressive choreography and socially conscious lyrics. The group created the template for K-Pop boy bands: synchronized dancing, variety show appearances, dedicated fanclub (they had 'White Angels'), and carefully managed images.\n\nH.O.T.'s massive success validated the idol system. Their fans organized into structured fandoms with colors, lightsticks, and coordinated support—traditions that continue in K-Pop today.",
+            "metrics": {
+                "fanclub": "White Angels",
+                "agency": "SM Entertainment"
+            }
+        },
+        {
+            "id": "evt_yg_founded",
+            "title": "YG Entertainment Founded",
+            "date_display": "February 24, 1996",
+            "date_start": "1996-02-24",
+            "group_ids": ["grp_first_gen"],
+            "type": "Company Founding",
+            "innovator": "Yang Hyun-suk",
+            "innovation": "Hip-Hop Focused Agency",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/88/YG_Entertainment_logo.svg"
+            ],
+            "description": "Former Seo Taiji and Boys member Yang Hyun-suk founded YG Entertainment with an emphasis on hip-hop and R&B. YG's aesthetic would contrast with SM's polished perfection—favoring 'cooler,' edgier images and giving artists more creative input.\n\nYG would produce Big Bang, 2NE1, BLACKPINK, and PSY. The agency's identity centered on artistic credibility and 'swag,' attracting artists who wanted involvement in their music production.",
+            "metrics": {
+                "founder": "Yang Hyun-suk",
+                "style": "Hip-hop/R&B focused"
+            }
+        },
+        {
+            "id": "evt_ses",
+            "title": "S.E.S. Debuts",
+            "date_display": "November 1, 1997",
+            "date_start": "1997-11-01",
+            "group_ids": ["grp_first_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "First K-Pop Girl Group Idols",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "S.E.S. (Sea, Eugene, Shoo—named after members' stage names) was SM Entertainment's first girl group, establishing the template for female idols. The trio's success proved that the idol system worked for both genders.\n\nS.E.S. competed with rivals Fin.K.L. in what became Korea's first major girl group rivalry. Their synchronized performances, coordinated fashion, and carefully curated images set standards for subsequent generations.",
+            "metrics": {
+                "agency": "SM Entertainment",
+                "format": "Trio"
+            }
+        },
+        {
+            "id": "evt_jyp_founded",
+            "title": "JYP Entertainment Founded",
+            "date_display": "April 1997",
+            "date_start": "1997-04-01",
+            "group_ids": ["grp_first_gen"],
+            "type": "Company Founding",
+            "innovator": "Park Jin-young",
+            "innovation": "Third Major Agency",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/36/JYP_Entertainment_logo.svg"
+            ],
+            "description": "Singer-producer Park Jin-young (known as 'JYP') founded his own agency after SM's model proved successful. JYP Entertainment would eventually produce Wonder Girls, 2PM, Miss A, GOT7, TWICE, and Stray Kids.\n\nWith SM, YG, and JYP, the 'Big Three' agencies dominated the K-Pop industry. Each developed distinct identities and artist development philosophies that would shape the industry for decades.",
+            "metrics": {
+                "founder": "Park Jin-young",
+                "status": "Completed 'Big Three'"
+            }
+        },
+        {
+            "id": "evt_shinhwa",
+            "title": "Shinhwa Debuts",
+            "date_display": "March 24, 1998",
+            "date_start": "1998-03-24",
+            "group_ids": ["grp_first_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "Longevity Template",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Shinhwa ('myth' in Korean) debuted as a six-member boy band under SM Entertainment. Unlike H.O.T., which disbanded amid contract disputes, Shinhwa negotiated to stay together, eventually moving agencies as a group.\n\nShinhwa became the longest-running K-Pop boy band, demonstrating that groups could maintain careers for decades. Their successful navigation of contract negotiations would inform future artists' business decisions.",
+            "metrics": {
+                "longevity": "Longest-running K-Pop boy band"
+            }
+        },
+        {
+            "id": "evt_boa",
+            "title": "BoA Debuts",
+            "date_display": "August 25, 2000",
+            "date_start": "2000-08-25",
+            "group_ids": ["grp_first_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "Solo Idol Model",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Thirteen-year-old BoA debuted after training since age 11. SM positioned her for the Japanese market from the start, and she became the first K-Pop artist to break through in Japan, eventually topping Oricon charts—previously unthinkable for a Korean artist.\n\nBoA's Japanese success proved K-Pop's export potential and established Japan as a crucial market. Her solo idol model showed that individuals could succeed alongside groups in the system.",
+            "metrics": {
+                "debut_age": "13",
+                "achievement": "First K-Pop artist to top Japan's Oricon"
+            }
+        },
+        {
+            "id": "evt_hot_disbands",
+            "title": "H.O.T. Disbands",
+            "date_display": "May 2001",
+            "date_start": "2001-05-01",
+            "group_ids": ["grp_first_gen"],
+            "type": "Disbandment",
+            "innovation": "Contract Controversy",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "H.O.T. disbanded after contract disputes with SM Entertainment, devastating fans who had invested intensely in the group. The disbandment revealed the harsh business realities underlying the idol system and sparked discussions about artist treatment.\n\nFans' traumatic response to H.O.T.'s end demonstrated the emotional intensity of K-Pop fandom. The incident also led to increased scrutiny of 'slave contracts' binding idols to agencies.",
+            "metrics": {
+                "cause": "Contract disputes"
+            }
+        },
+        {
+            "id": "evt_tvxq",
+            "title": "TVXQ Debuts",
+            "date_display": "December 26, 2003",
+            "date_start": "2003-12-26",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "Vocal-Focused Group",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "TVXQ (Tong Vfang Xien Qi, meaning 'Rising Gods of the East') debuted as a five-member vocal group emphasizing harmonies and powerful singing over rap. Their fanclub Cassiopeia would become one of K-Pop's largest and most organized fandoms.\n\nTVXQ's 2008 split (three members sued SM over contract terms) became a watershed moment, leading to industry reforms. The remaining duo continued as TVXQ while the departed members formed JYJ.",
+            "metrics": {
+                "fanclub": "Cassiopeia",
+                "members": "5 (later 2 after 2009 split)"
+            }
+        },
+        {
+            "id": "evt_super_junior",
+            "title": "Super Junior Debuts",
+            "date_display": "November 6, 2005",
+            "date_start": "2005-11-06",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "Large Group Format",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Super Junior debuted with twelve members (later thirteen), pioneering the large-group format that would become common in K-Pop. The group's size allowed for subunits (Super Junior-K.R.Y., Super Junior-M) targeting different markets and musical styles.\n\nSuper Junior's international subunit Super Junior-M recorded in Mandarin for Chinese audiences, establishing models for market-specific content that later groups would adopt.",
+            "metrics": {
+                "members": "13 at peak",
+                "innovation": "Subunit system"
+            }
+        },
+        {
+            "id": "evt_big_bang",
+            "title": "Big Bang Debuts",
+            "date_display": "August 19, 2006",
+            "date_start": "2006-08-19",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "YG Entertainment",
+            "innovation": "Self-Producing Idols",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Big Bang brought YG Entertainment's hip-hop aesthetic to idol pop, with members G-Dragon and T.O.P. heavily involved in songwriting and production. Their involvement distinguished them from groups who performed agency-provided material.\n\nBig Bang became one of the best-selling boy bands in history and established K-Pop's credibility in fashion and trendsetting. G-Dragon's fashion influence extended far beyond music.",
+            "metrics": {
+                "members": "5",
+                "agency": "YG Entertainment"
+            }
+        },
+        {
+            "id": "evt_girls_generation",
+            "title": "Girls' Generation Debuts",
+            "date_display": "August 5, 2007",
+            "date_start": "2007-08-05",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "'Nation's Girl Group'",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Girls' Generation (SNSD, So Nyeo Shi Dae) debuted as a nine-member girl group that would become K-Pop's most successful girl group of the second generation. Their 2009 hit 'Gee' became a cultural phenomenon with its 'cute' concept and synchronized choreography.\n\nGirls' Generation were dubbed the 'Nation's Girl Group' for their widespread popularity across demographics. They achieved significant success in Japan and helped establish the visual and performance standards for girl groups.",
+            "metrics": {
+                "members": "9 (later 8)",
+                "title": "'Nation's Girl Group'"
+            }
+        },
+        {
+            "id": "evt_wonder_girls",
+            "title": "Wonder Girls Debuts",
+            "date_display": "February 10, 2007",
+            "date_start": "2007-02-10",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "JYP Entertainment",
+            "innovation": "US Market Push",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "JYP Entertainment's Wonder Girls debuted with retro concepts and became hugely popular in Korea. More significantly, their 2009 push into the US market (opening for Jonas Brothers, charting 'Nobody' at #76 on Billboard Hot 100) was the first serious K-Pop attempt at American success.\n\nWhile the US push ultimately stalled their Korean momentum, Wonder Girls proved K-Pop could gain American attention and set the stage for later Western breakthroughs.",
+            "metrics": {
+                "billboard_hot_100": "#76 ('Nobody', 2009)"
+            }
+        },
+        {
+            "id": "evt_nobody",
+            "title": "Wonder Girls 'Nobody' Charts in US",
+            "date_display": "October 2009",
+            "date_start": "2009-10-01",
+            "group_ids": ["grp_second_gen"],
+            "type": "Chart Achievement",
+            "innovator": "Wonder Girls",
+            "innovation": "First K-Pop Billboard Hot 100 Entry",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "'Nobody' by Wonder Girls became the first K-Pop song to chart on the Billboard Hot 100, reaching #76. The achievement demonstrated that K-Pop could penetrate the American market—even if sustaining success remained challenging.\n\nThe single's chart placement validated years of effort to export K-Pop globally. It would take another decade before K-Pop groups would reach the chart's upper reaches.",
+            "metrics": {
+                "position": "#76 Billboard Hot 100"
+            }
+        },
+        {
+            "id": "evt_2ne1",
+            "title": "2NE1 Debuts",
+            "date_display": "May 6, 2009",
+            "date_start": "2009-05-06",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "YG Entertainment",
+            "innovation": "Girl Crush Concept",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "2NE1 brought YG's edgier aesthetic to girl groups with bold fashion, hip-hop influences, and 'girl crush' concepts (cool rather than cute). The group challenged prevailing norms about how female idols should present themselves.\n\n2NE1's influence on girl group concepts persisted long after their 2016 disbandment. BLACKPINK, also from YG, would later carry forward their 'girl crush' legacy.",
+            "metrics": {
+                "members": "4",
+                "concept": "'Girl crush'"
+            }
+        },
+        {
+            "id": "evt_shinee",
+            "title": "SHINee Debuts",
+            "date_display": "May 25, 2008",
+            "date_start": "2008-05-25",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "'Contemporary Band'",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "SHINee debuted with the 'contemporary band' concept emphasizing synchronized dancing and fashion-forward styling. Their intricate choreography set new standards for performance complexity.\n\nSHINee maintained consistent quality and artistic growth over their career. The tragic death of member Jonghyun in 2017 highlighted mental health issues in the demanding idol industry.",
+            "metrics": {
+                "members": "5",
+                "concept": "'Contemporary band'"
+            }
+        },
+        {
+            "id": "evt_2pm_2am",
+            "title": "2PM and 2AM Debut",
+            "date_display": "September 4, 2008",
+            "date_start": "2008-09-04",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debuts",
+            "innovator": "JYP Entertainment",
+            "innovation": "Day/Night Concept Groups",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "JYP Entertainment debuted two groups from the same trainee pool with contrasting concepts: 2PM as an athletic, 'beastly idol' group and 2AM as a vocal-focused ballad group. The strategy maximized trainee investment while targeting different market segments.\n\n2PM gained fame for their 'beastly' image and intense choreography, with member Taecyeon becoming an acting star. 2AM showcased pure vocals without the typical idol dancing. The dual-debut strategy demonstrated the industry's increasingly sophisticated market segmentation.",
+            "metrics": {
+                "concept": "Day (2PM athletic) / Night (2AM ballads)"
+            }
+        },
+        {
+            "id": "evt_fx",
+            "title": "f(x) Debuts",
+            "date_display": "September 5, 2009",
+            "date_start": "2009-09-05",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "Experimental K-Pop",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "f(x) debuted with an eclectic, experimental sound that pushed against K-Pop conventions. The five-member group (including Chinese-American member Amber and Chinese member Victoria) explored electronic dance music, nu-disco, and avant-garde concepts uncommon in mainstream idol music.\n\nThe group developed a devoted following among fans who appreciated their artistic risk-taking. Albums like 'Pink Tape' and 'Red Light' received critical acclaim for their cohesive artistic vision. f(x) influenced later groups willing to experiment beyond safe pop formulas.",
+            "metrics": {
+                "members": "5 (multi-national)",
+                "style": "Experimental/electronic"
+            }
+        },
+        {
+            "id": "evt_hallyu",
+            "title": "'Hallyu' Term Goes Mainstream",
+            "date_display": "2011",
+            "date_start": "2011-01-01",
+            "group_ids": ["grp_second_gen"],
+            "type": "Cultural Recognition",
+            "innovation": "Korean Wave Naming",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "'Hallyu' (Korean Wave) became the mainstream term for Korean cultural exports including K-Pop, K-dramas, and Korean films. Chinese journalists coined the term in the late 1990s, but by 2011 it was being used globally.\n\nThe Korean government embraced Hallyu as soft power, investing in cultural industries as economic and diplomatic tools. K-Pop became central to Korea's international brand.",
+            "metrics": {
+                "meaning": "Korean Wave",
+                "origin": "Chinese journalists (1990s)"
+            }
+        },
+        {
+            "id": "evt_gangnam_style",
+            "title": "PSY 'Gangnam Style' Goes Viral",
+            "date_display": "July 15, 2012",
+            "date_start": "2012-07-15",
+            "group_ids": ["grp_second_gen"],
+            "type": "Viral Hit",
+            "innovator": "PSY",
+            "innovation": "First Video to 1 Billion Views",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f1/PSY_GangnamStyle.jpg"
+            ],
+            "description": "PSY's 'Gangnam Style' became the first YouTube video to reach 1 billion views, introducing K-Pop to millions who had never heard of the genre. The satirical song about Seoul's wealthy Gangnam district went viral through its catchy hook and absurd horse-dance choreography.\n\nPSY's success was both breakthrough and anomaly—he was a comedic artist, not a typical idol. The music industry learned that K-Pop could achieve global virality, even if the path remained unclear.",
+            "metrics": {
+                "youtube_views": "First to 1 billion",
+                "chart_peak": "#2 Billboard Hot 100"
+            }
+        },
+        {
+            "id": "evt_exo",
+            "title": "EXO Debuts",
+            "date_display": "April 8, 2012",
+            "date_start": "2012-04-08",
+            "group_ids": ["grp_second_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment",
+            "innovation": "Dual Unit System",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "EXO debuted as a twelve-member group split into two units: EXO-K (Korean) and EXO-M (Mandarin). The elaborate sci-fi concept and intense choreography positioned them as SM's next-generation flagship act.\n\nEXO became the first K-Pop group since TVXQ to sell over 1 million albums in Korea, revitalizing physical album sales in the streaming era. Their massive Chinese fanbase demonstrated the market's potential.",
+            "metrics": {
+                "members": "12 (split K/M units)",
+                "achievement": "First million-selling album since TVXQ"
+            }
+        },
+        {
+            "id": "evt_bts_debut",
+            "title": "BTS Debuts",
+            "date_display": "June 13, 2013",
+            "date_start": "2013-06-13",
+            "group_ids": ["grp_third_gen"],
+            "type": "Debut",
+            "innovator": "Big Hit Entertainment",
+            "innovation": "Social Media Connection",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BTS_logo_%282017%29.png/800px-BTS_logo_%282017%29.png"
+            ],
+            "description": "BTS (Bangtan Sonyeondan, 'Bulletproof Boy Scouts') debuted from the small Big Hit Entertainment with hip-hop-influenced music addressing youth struggles, mental health, and social pressure. Without the marketing budgets of Big Three agencies, BTS relied on direct fan engagement through social media.\n\nBTS would become the biggest K-Pop act in history, but their beginnings were humble. The group's authenticity and willingness to discuss difficult topics built an intensely loyal global fanbase (ARMY).",
+            "metrics": {
+                "agency": "Big Hit Entertainment",
+                "fanclub": "ARMY"
+            }
+        },
+        {
+            "id": "evt_winner_ikon",
+            "title": "WINNER and iKON Debut",
+            "date_display": "2014-2015",
+            "date_start": "2014-08-01",
+            "group_ids": ["grp_third_gen"],
+            "type": "Debuts",
+            "innovator": "YG Entertainment",
+            "innovation": "Survival Show Format",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "YG Entertainment launched WINNER and iKON through survival reality shows (WIN: Who is Next and Mix & Match), letting audiences watch trainees compete for debut spots. The format built fanbases before groups even debuted.\n\nSurvival shows became crucial to K-Pop marketing. The emotional investment viewers made in contestants translated to loyal fandom, though the format raised ethical concerns about exploiting young trainees.",
+            "metrics": {
+                "format": "Survival reality shows"
+            }
+        },
+        {
+            "id": "evt_twice",
+            "title": "TWICE Debuts",
+            "date_display": "October 20, 2015",
+            "date_start": "2015-10-20",
+            "group_ids": ["grp_third_gen"],
+            "type": "Debut",
+            "innovator": "JYP Entertainment",
+            "innovation": "Multi-National Girl Group",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "TWICE formed through the survival show SIXTEEN, debuting with nine members including three Japanese and one Taiwanese member. Their catchy songs and synchronized choreography, especially 'Cheer Up' and 'TT,' made them the dominant girl group of the third generation.\n\nTWICE's multi-national composition reflected K-Pop's increasingly international trainee pools and target markets. Their Japanese members helped cement massive success in that market.",
+            "metrics": {
+                "members": "9 (Korean, Japanese, Taiwanese)",
+                "agency": "JYP Entertainment"
+            }
+        },
+        {
+            "id": "evt_produce_101",
+            "title": "Produce 101 Survival Show Format",
+            "date_display": "January 22, 2016",
+            "date_start": "2016-01-22",
+            "group_ids": ["grp_third_gen"],
+            "type": "Television Format",
+            "innovator": "Mnet",
+            "innovation": "Fan-Voted Group Formation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Produce 101 took the survival show format further by having viewers vote to determine which trainees would debut in a temporary group. The format created unprecedented fan engagement—and later, a major voting manipulation scandal.\n\nThe show spawned I.O.I., Wanna One, IZ*ONE, and X1, plus international versions in Japan and China. The 2019 vote-rigging scandal led to criminal charges but didn't end the format's popularity.",
+            "metrics": {
+                "format": "Fan-voted debut lineup",
+                "controversy": "Vote manipulation scandal (2019)"
+            }
+        },
+        {
+            "id": "evt_blackpink",
+            "title": "BLACKPINK Debuts",
+            "date_display": "August 8, 2016",
+            "date_start": "2016-08-08",
+            "group_ids": ["grp_third_gen"],
+            "type": "Debut",
+            "innovator": "YG Entertainment",
+            "innovation": "Global-First Strategy",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "BLACKPINK debuted as YG's first girl group in seven years, carrying 2NE1's 'girl crush' legacy with higher fashion positioning. Their debut tracks 'Whistle' and 'Boombayah' showcased the blend of hip-hop and EDM that would define their sound.\n\nBLACKPINK would become the highest-charting female Korean act in the US and UK. Their Coachella 2019 performance marked a major mainstream milestone for K-Pop in America.",
+            "metrics": {
+                "members": "4",
+                "agency": "YG Entertainment"
+            }
+        },
+        {
+            "id": "evt_bts_billboard",
+            "title": "BTS Wins Billboard Music Award",
+            "date_display": "May 21, 2017",
+            "date_start": "2017-05-21",
+            "group_ids": ["grp_third_gen"],
+            "type": "Award",
+            "innovator": "BTS",
+            "innovation": "First K-Pop Billboard Award",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BTS_logo_%282017%29.png/800px-BTS_logo_%282017%29.png"
+            ],
+            "description": "BTS won Top Social Artist at the 2017 Billboard Music Awards, the first K-Pop group to win a major American music award. ARMY's coordinated voting demonstrated the power of organized K-Pop fandoms in Western award systems.\n\nThe win marked BTS's transition from K-Pop success story to global phenomenon. American media began paying serious attention to K-Pop beyond novelty coverage.",
+            "metrics": {
+                "award": "Top Social Artist",
+                "significance": "First K-Pop Billboard Award win"
+            }
+        },
+        {
+            "id": "evt_bts_love_yourself",
+            "title": "BTS 'Love Yourself: Tear' Tops Billboard 200",
+            "date_display": "May 27, 2018",
+            "date_start": "2018-05-27",
+            "group_ids": ["grp_third_gen"],
+            "type": "Chart Achievement",
+            "innovator": "BTS",
+            "innovation": "First K-Pop Album to Top Billboard 200",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BTS_logo_%282017%29.png/800px-BTS_logo_%282017%29.png"
+            ],
+            "description": "BTS's 'Love Yourself: Tear' debuted at #1 on the Billboard 200, the first K-Pop album to top the chart. The achievement marked K-Pop's definitive arrival in the American market.\n\nThe album's success wasn't a viral accident like 'Gangnam Style'—it represented sustained fandom building and strategic releases. BTS had cracked the formula for sustained Western success.",
+            "metrics": {
+                "position": "#1 Billboard 200"
+            }
+        },
+        {
+            "id": "evt_blackpink_coachella",
+            "title": "BLACKPINK Performs at Coachella",
+            "date_display": "April 12, 2019",
+            "date_start": "2019-04-12",
+            "group_ids": ["grp_third_gen"],
+            "type": "Performance",
+            "innovator": "BLACKPINK",
+            "innovation": "First K-Pop Girl Group at Coachella",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "BLACKPINK became the first K-Pop girl group to perform at Coachella, one of America's most prestigious music festivals. Their high-energy set introduced their music to mainstream American audiences.\n\nThe Coachella performance symbolized K-Pop's acceptance in Western music culture—no longer a novelty but a legitimate part of the global pop landscape.",
+            "metrics": {
+                "event": "Coachella 2019"
+            }
+        },
+        {
+            "id": "evt_superm",
+            "title": "SuperM Debuts",
+            "date_display": "October 4, 2019",
+            "date_start": "2019-10-04",
+            "group_ids": ["grp_third_gen"],
+            "type": "Debut",
+            "innovator": "SM Entertainment, Capitol Records",
+            "innovation": "'Avengers of K-Pop'",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "SuperM assembled members from SHINee, EXO, NCT, and WayV into a 'supergroup' designed specifically for American market penetration. Their debut album topped the Billboard 200, demonstrating coordinated label strategy.\n\nCritics noted that SuperM's chart success benefited from bundling albums with concert tickets and merchandise—practices that prompted later chart rule changes.",
+            "metrics": {
+                "concept": "'Avengers of K-Pop' supergroup",
+                "chart": "#1 Billboard 200 debut"
+            }
+        },
+        {
+            "id": "evt_dynamite",
+            "title": "BTS 'Dynamite' Tops Billboard Hot 100",
+            "date_display": "September 5, 2020",
+            "date_start": "2020-09-05",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Chart Achievement",
+            "innovator": "BTS",
+            "innovation": "First Korean Act to Top Hot 100",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BTS_logo_%282017%29.png/800px-BTS_logo_%282017%29.png"
+            ],
+            "description": "'Dynamite,' BTS's first fully English-language song, debuted at #1 on the Billboard Hot 100—the first song by an all-Korean act to top the chart. The disco-pop track was designed for maximum accessibility to English-speaking audiences.\n\nThe achievement represented the culmination of years of building toward this moment. BTS had proven that K-Pop acts could compete at the highest levels of Western pop.",
+            "metrics": {
+                "position": "#1 Billboard Hot 100",
+                "significance": "First all-Korean act to top Hot 100"
+            }
+        },
+        {
+            "id": "evt_fourth_gen_debuts",
+            "title": "Fourth Generation Debuts",
+            "date_display": "2020",
+            "date_start": "2020-01-01",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Industry Development",
+            "innovation": "Post-Pandemic Generation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "2020 saw debuts of groups classified as 'fourth generation': TREASURE (YG), aespa (SM), ENHYPEN (Belift), and others. These groups debuted into a pandemic-altered industry where virtual concerts and digital engagement replaced physical events.\n\nFourth-generation groups faced unique challenges—building fandoms without concerts or fan meetings—but also opportunities in global streaming and social media reach.",
+            "metrics": {
+                "notable_debuts": "TREASURE, aespa, ENHYPEN"
+            }
+        },
+        {
+            "id": "evt_bts_un",
+            "title": "BTS UN General Assembly Speech",
+            "date_display": "September 20, 2021",
+            "date_start": "2021-09-20",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Diplomatic Event",
+            "innovator": "BTS",
+            "innovation": "K-Pop as Soft Power",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BTS_logo_%282017%29.png/800px-BTS_logo_%282017%29.png"
+            ],
+            "description": "BTS addressed the UN General Assembly as Special Presidential Envoys for South Korea, speaking about youth resilience during the pandemic. The invitation demonstrated K-Pop's elevation from entertainment to cultural diplomacy.\n\nThe UN appearance (their second, following 2018) showed how far K-Pop had come from niche Asian entertainment to global cultural force. South Korea explicitly leveraged BTS as soft power.",
+            "metrics": {
+                "role": "Special Presidential Envoys"
+            }
+        },
+        {
+            "id": "evt_hybe_ithaca",
+            "title": "HYBE Acquires Ithaca Holdings",
+            "date_display": "April 2, 2021",
+            "date_start": "2021-04-02",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Acquisition",
+            "innovator": "HYBE (Big Hit)",
+            "innovation": "K-Pop Industry Consolidation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "HYBE (formerly Big Hit Entertainment) acquired Scooter Braun's Ithaca Holdings for $1.05 billion, gaining management of artists including Justin Bieber and Ariana Grande. The deal represented K-Pop's ambition to become a global entertainment power.\n\nThe acquisition signaled that Korean entertainment companies would pursue global expansion through Western assets, not just Korean artist exports.",
+            "metrics": {
+                "price": "$1.05 billion",
+                "acquired_artists": "Justin Bieber, Ariana Grande"
+            }
+        },
+        {
+            "id": "evt_bts_hiatus",
+            "title": "BTS Announces Hiatus for Military Service",
+            "date_display": "June 14, 2022",
+            "date_start": "2022-06-14",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Industry Event",
+            "innovator": "BTS",
+            "innovation": "Military Service Impact",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BTS_logo_%282017%29.png/800px-BTS_logo_%282017%29.png"
+            ],
+            "description": "BTS announced they would focus on solo projects as members began mandatory South Korean military service. The announcement shocked fans and raised questions about the industry's sustainability given military requirements.\n\nSouth Korea's mandatory military service (typically 18-21 months) affects all K-Pop male idols. Debates about exemptions for BTS highlighted the cultural significance of K-Pop to national image.",
+            "metrics": {
+                "service_length": "18-21 months per member"
+            }
+        },
+        {
+            "id": "evt_newjeans",
+            "title": "NewJeans Debuts",
+            "date_display": "July 22, 2022",
+            "date_start": "2022-07-22",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Debut",
+            "innovator": "ADOR (HYBE subsidiary)",
+            "innovation": "Viral Marketing Strategy",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "NewJeans debuted with unconventional Y2K aesthetics and a surprise release strategy that bypassed typical K-Pop promotion patterns. Their retro sound and fresh approach made them an immediate viral sensation.\n\nNewJeans' success demonstrated that even established formulas could be disrupted. Their producer Min Hee-jin's artistic vision proved that distinct creative direction could cut through K-Pop's sameness.",
+            "metrics": {
+                "agency": "ADOR (HYBE)",
+                "style": "Y2K/retro revival"
+            }
+        },
+        {
+            "id": "evt_ive_le_sserafim",
+            "title": "IVE and LE SSERAFIM Emerge",
+            "date_display": "2022",
+            "date_start": "2022-01-01",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Industry Development",
+            "innovation": "Post-Produce Groups",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "IVE (Starship) and LE SSERAFIM (Source Music/HYBE) emerged as major fourth-generation girl groups, both featuring members from disbanded Produce groups. Their immediate success demonstrated the lasting value of survival show exposure.\n\nThese groups competed with NewJeans for fourth-generation dominance, showing that the girl group market remained fiercely competitive.",
+            "metrics": {
+                "origin": "Former Produce group members"
+            }
+        },
+        {
+            "id": "evt_fifty_fifty",
+            "title": "Fifty Fifty 'Cupid' Viral Success",
+            "date_display": "March 2023",
+            "date_start": "2023-03-01",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Viral Hit",
+            "innovator": "Fifty Fifty",
+            "innovation": "TikTok-Driven Success",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "'Cupid' by rookie group Fifty Fifty became a viral TikTok hit, charting surprisingly high on Billboard Hot 100 (#17 peak). The song's success came from organic social media spread rather than organized fan campaigns.\n\nThe viral success was followed by contractual disputes and lineup changes, highlighting the volatility of social media-driven fame in K-Pop.",
+            "metrics": {
+                "billboard_peak": "#17 Hot 100",
+                "platform": "TikTok viral"
+            }
+        },
+        {
+            "id": "evt_stray_kids",
+            "title": "Stray Kids Stadium Tour Success",
+            "date_display": "2023",
+            "date_start": "2023-01-01",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Touring Achievement",
+            "innovator": "Stray Kids",
+            "innovation": "Stadium-Level Touring",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "Stray Kids (JYP Entertainment) achieved stadium-level touring in the US with their Maniac world tour, demonstrating that post-BTS acts could achieve similar concert scale. Their self-produced music and intense performances built dedicated fandom.\n\nStray Kids' success showed that K-Pop's global touring potential wasn't unique to BTS—the market could support multiple stadium-touring Korean acts.",
+            "metrics": {
+                "tour": "Stadium venues in US"
+            }
+        },
+        {
+            "id": "evt_bts_military_completion",
+            "title": "BTS Members Complete Military Service",
+            "date_display": "2024-2025",
+            "date_start": "2024-01-01",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Industry Event",
+            "innovation": "Group Reformation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BTS_logo_%282017%29.png/800px-BTS_logo_%282017%29.png"
+            ],
+            "description": "BTS members progressively completed their mandatory military service, with the full group expected to reunite by 2025. The industry and fans anticipated their return with enormous commercial expectations.\n\nBTS's military service period tested whether their fandom would maintain engagement during extended hiatus. ARMY's continued activity suggested the reunion would be a major industry event.",
+            "metrics": {
+                "reunion_expected": "2025"
+            }
+        },
+        {
+            "id": "evt_market_10b",
+            "title": "K-Pop Global Market Exceeds $10B",
+            "date_display": "2025",
+            "date_start": "2025-01-01",
+            "group_ids": ["grp_fourth_gen"],
+            "type": "Industry Milestone",
+            "innovation": "Market Scale",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Korea.svg"
+            ],
+            "description": "The global K-Pop market exceeded $10 billion in annual revenue, encompassing music sales, streaming, concerts, merchandise, and licensing. Korea's cultural export strategy had succeeded beyond early ambitions.\n\nK-Pop had transformed from national music industry to global entertainment infrastructure, with training academies, production companies, and distribution networks spanning the world.",
+            "metrics": {
+                "market_size": "$10+ billion globally"
+            }
+        }
+    ]
+}

@@ -1,0 +1,463 @@
+{
+    "meta": {
+        "title": "The Misattributed Treat: A History of the Fortune Cookie",
+        "version": "1.0.0",
+        "generated_date": "2025-12-07",
+        "overview": "The fortune cookie is perhaps America's most misunderstood cultural artifact—a treat universally associated with Chinese restaurants that actually originated in Japan and was popularized by Japanese-American bakers in California. Its story reveals how cultural exchange, wartime displacement, and marketing mythology can reshape an object's identity entirely.",
+        "attribution": "Historical research compiled from food history archives, Japanese-American cultural studies, and culinary journalism."
+    },
+    "groups": [
+        {
+            "id": "grp_japanese_origins",
+            "title": "Part I: Japanese Origins",
+            "date_range": "1870s – 1900s",
+            "description": "The fortune cookie's ancestor is the Japanese tsujiura senbei (fortune cracker), a larger, less sweet cracker containing paper fortunes. These were associated with temples and tea houses in Kyoto, where the tradition of enclosing written fortunes in crackers dates back centuries."
+        },
+        {
+            "id": "grp_san_francisco",
+            "title": "Part II: San Francisco and Early American History",
+            "date_range": "1900 – 1941",
+            "description": "Japanese immigrants brought fortune cracker traditions to California, where bakers adapted the recipe and served them at tea gardens and restaurants. The cookies became associated with San Francisco's Japanese community and began appearing in Chinese restaurants in the Bay Area."
+        },
+        {
+            "id": "grp_wwii_transition",
+            "title": "Part III: World War II and Chinese-American Adoption",
+            "date_range": "1942 – 1970s",
+            "description": "Japanese internment during World War II devastated Japanese-American businesses, including bakeries that produced fortune cookies. Chinese-American entrepreneurs filled the void, and by war's end, fortune cookies had become indelibly associated with Chinese restaurants across America."
+        },
+        {
+            "id": "grp_industrialization",
+            "title": "Part IV: Industrialization",
+            "date_range": "1970s – 2000s",
+            "description": "Mass production transformed fortune cookies from handmade treats to factory products. Wonton Food Inc. in Brooklyn became the industry giant, shipping millions of cookies daily to restaurants nationwide. Automation made fortunes ubiquitous and standardized."
+        },
+        {
+            "id": "grp_modern",
+            "title": "Part V: Modern Era",
+            "date_range": "2000s – 2025",
+            "description": "Fortune cookies entered global pop culture as symbols of American Chinese restaurants, even as awareness of their Japanese origins spread. Custom fortune services, viral lottery number incidents, and attempts to introduce the cookie to China revealed the treat's uniquely American identity."
+        }
+    ],
+    "events": [
+        {
+            "id": "evt_tsujiura_senbei",
+            "title": "Tsujiura Senbei Documented in Kyoto",
+            "date_display": "1870s",
+            "date_start": "1870-01-01",
+            "group_ids": ["grp_japanese_origins"],
+            "type": "Cultural Practice",
+            "innovation": "Fortune Cracker Tradition",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/eb/Tsujiura_senbei.jpg"
+            ],
+            "description": "Japanese confectioners in Kyoto produced tsujiura senbei—crackers containing paper fortunes (omikuji). These larger, less sweet crackers were flavored with miso and sesame, distinctly different from the American fortune cookie but sharing the core concept of hidden written fortunes.\n\nThe tradition connected to Shinto shrine practices where visitors drew fortune slips. Confectioners created edible versions that combined the spiritual practice with culinary craft.",
+            "metrics": {
+                "location": "Kyoto, Japan",
+                "flavor": "Miso and sesame"
+            }
+        },
+        {
+            "id": "evt_sobando",
+            "title": "Sōbandō Bakery Reference in Japanese Literature",
+            "date_display": "1878",
+            "date_start": "1878-01-01",
+            "group_ids": ["grp_japanese_origins"],
+            "type": "Historical Documentation",
+            "innovation": "Written Evidence",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/65/Tokaido34_Yoshida.jpg"
+            ],
+            "description": "Japanese literature referenced the Sōbandō bakery in Kyoto, which produced fortune crackers in the tsujiura senbei style. This documentation provides evidence of the cookie's Japanese origins decades before its appearance in America.\n\nThe bakery tradition continued in Kyoto's Fushimi Inari shrine area, where similar fortune crackers can still be found today—a living connection to the fortune cookie's true ancestry.",
+            "metrics": {
+                "bakery": "Sōbandō",
+                "significance": "Early documentation"
+            }
+        },
+        {
+            "id": "evt_tea_house_tradition",
+            "title": "Japanese Tea Houses Serve Fortune Crackers",
+            "date_display": "1890s",
+            "date_start": "1890-01-01",
+            "group_ids": ["grp_japanese_origins"],
+            "type": "Cultural Practice",
+            "innovation": "Tea House Service",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/75/Japanese_tea_house.jpg"
+            ],
+            "description": "Japanese tea houses incorporated fortune crackers as part of the tea service experience. Guests would receive crackers containing playful fortunes or poems as accompaniment to tea.\n\nThis practice would travel with Japanese immigrants to America, where tea gardens became important cultural spaces in cities like San Francisco.",
+            "metrics": {
+                "setting": "Tea houses",
+                "purpose": "Tea service accompaniment"
+            }
+        },
+        {
+            "id": "evt_hagiwara_tea_garden",
+            "title": "Makoto Hagiwara Establishes Japanese Tea Garden",
+            "date_display": "1894",
+            "date_start": "1894-01-01",
+            "group_ids": ["grp_san_francisco"],
+            "type": "Business Establishment",
+            "innovator": "Makoto Hagiwara",
+            "innovation": "Japanese Tea Garden",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/4f/Japanese_Tea_Garden%2C_San_Francisco.jpg"
+            ],
+            "description": "Makoto Hagiwara took over management of the Japanese Tea Garden in San Francisco's Golden Gate Park, which had been created for the 1894 California Midwinter International Exposition. He would transform it into a beloved permanent attraction.\n\nHagiwara's tea garden became a center of Japanese-American culture in San Francisco and a likely origin point for fortune cookies in America, though the exact timeline remains disputed.",
+            "metrics": {
+                "location": "Golden Gate Park, San Francisco",
+                "event": "California Midwinter International Exposition"
+            }
+        },
+        {
+            "id": "evt_fugetsu_do",
+            "title": "Suyeichi Okamura Opens Fugetsu-Do Bakery",
+            "date_display": "1907",
+            "date_start": "1907-01-01",
+            "group_ids": ["grp_san_francisco"],
+            "type": "Business Opening",
+            "innovator": "Suyeichi Okamura",
+            "innovation": "Japanese Confectionery",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/87/Little_Tokyo%2C_Los_Angeles%2C_CA.jpg"
+            ],
+            "description": "Suyeichi Okamura opened Fugetsu-Do bakery in Los Angeles' Little Tokyo neighborhood, producing traditional Japanese confections including fortune crackers. The bakery remains in operation today, making it one of the oldest businesses in Little Tokyo.\n\nOkamura's family claims he invented the American fortune cookie, creating the machinery to fold fortunes into the cookies. The competing claims between Fugetsu-Do and the Hagiwara family have never been definitively resolved.",
+            "metrics": {
+                "location": "Little Tokyo, Los Angeles",
+                "status": "Still operating"
+            }
+        },
+        {
+            "id": "evt_hagiwara_cookies",
+            "title": "Hagiwara Begins Serving Cookies at Tea Garden",
+            "date_display": "1914",
+            "date_start": "1914-01-01",
+            "group_ids": ["grp_san_francisco"],
+            "type": "Product Introduction",
+            "innovator": "Makoto Hagiwara",
+            "innovation": "Fortune Cookie Service",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/4f/Japanese_Tea_Garden%2C_San_Francisco.jpg"
+            ],
+            "description": "Makoto Hagiwara reportedly began serving fortune cookies at his Japanese Tea Garden in Golden Gate Park. According to his descendants, he commissioned the cookies from a San Francisco bakery (possibly Benkyodo) to serve to guests.\n\nThe cookies served as a gesture of hospitality, continuing the Japanese tradition of fortune-bearing treats while adapting them for American tastes.",
+            "metrics": {
+                "location": "Japanese Tea Garden, San Francisco"
+            }
+        },
+        {
+            "id": "evt_panama_pacific",
+            "title": "Panama-Pacific Exposition Spreads Cookies",
+            "date_display": "1915",
+            "date_start": "1915-01-01",
+            "group_ids": ["grp_san_francisco"],
+            "type": "Cultural Exposure",
+            "innovation": "Wide Distribution",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3c/Tower_of_Jewels%2C_PPIE%2C_1915.jpg"
+            ],
+            "description": "The Panama-Pacific International Exposition in San Francisco attracted millions of visitors who experienced the Japanese Tea Garden and its fortune cookies. The fair spread awareness of the treats beyond San Francisco's local population.\n\nThe exposition's legacy included broader familiarity with Japanese-American food traditions throughout California and beyond.",
+            "metrics": {
+                "event": "Panama-Pacific International Exposition",
+                "attendance": "Millions"
+            }
+        },
+        {
+            "id": "evt_chinese_restaurants",
+            "title": "Fortune Cookies Appear in Bay Area Chinese Restaurants",
+            "date_display": "1920s",
+            "date_start": "1920-01-01",
+            "group_ids": ["grp_san_francisco"],
+            "type": "Cultural Crossover",
+            "innovation": "Chinese Restaurant Adoption",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/89/San_Francisco_Chinatown.jpg"
+            ],
+            "description": "Chinese restaurants in the San Francisco Bay Area began offering fortune cookies to customers, likely sourcing them from Japanese-American bakeries. The cookies' novelty and American customers' appetite for after-dinner treats drove adoption.\n\nThis period marks the beginning of fortune cookies' association with Chinese food, even as Japanese-American bakers continued to dominate production.",
+            "metrics": {
+                "region": "San Francisco Bay Area"
+            }
+        },
+        {
+            "id": "evt_american_literature",
+            "title": "Fortune Cookie Referenced in American Literature",
+            "date_display": "1934",
+            "date_start": "1934-01-01",
+            "group_ids": ["grp_san_francisco"],
+            "type": "Cultural Reference",
+            "innovation": "Literary Documentation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "Fortune cookies appeared in American literature, documenting their growing cultural presence. The references typically associated the cookies with Chinese restaurants, already reflecting the cultural misattribution that would persist.\n\nThe literary references help historians establish that fortune cookies were well-established in American dining culture before World War II.",
+            "metrics": {
+                "significance": "Pre-WWII documentation"
+            }
+        },
+        {
+            "id": "evt_internment",
+            "title": "Japanese Internment Closes Japanese Bakeries",
+            "date_display": "1942",
+            "date_start": "1942-02-19",
+            "group_ids": ["grp_wwii_transition"],
+            "type": "Historical Event",
+            "innovation": "Forced Business Closure",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/2d/Japanese-American_Internment.jpg"
+            ],
+            "description": "Executive Order 9066 forced Japanese Americans into internment camps, devastating Japanese-owned businesses including the bakeries that produced fortune cookies. With Japanese-American bakers incarcerated, a production vacuum emerged.\n\nThe internment represents a tragic chapter in American history and a pivotal moment in fortune cookie history—the crisis that severed the cookie from its Japanese-American creators.",
+            "metrics": {
+                "event": "Executive Order 9066",
+                "impact": "Japanese-American businesses closed"
+            }
+        },
+        {
+            "id": "evt_chinese_adoption",
+            "title": "Chinese-American Bakeries Adopt Fortune Cookie Production",
+            "date_display": "1942-1945",
+            "date_start": "1942-01-01",
+            "date_end": "1945-12-31",
+            "group_ids": ["grp_wwii_transition"],
+            "type": "Business Transition",
+            "innovation": "Production Shift",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "With Japanese-American bakeries closed due to internment, Chinese-American entrepreneurs began producing fortune cookies to meet restaurant demand. The transition was natural—Chinese restaurants wanted cookies, and Chinese bakers filled the void.\n\nBy war's end, fortune cookies had become primarily a Chinese-American product, and their Japanese origins began fading from public memory.",
+            "metrics": {
+                "transition": "Japanese to Chinese-American production"
+            }
+        },
+        {
+            "id": "evt_postwar_standard",
+            "title": "Fortune Cookies Become Chinese Restaurant Standard",
+            "date_display": "1946",
+            "date_start": "1946-01-01",
+            "group_ids": ["grp_wwii_transition"],
+            "type": "Cultural Establishment",
+            "innovation": "Universal Adoption",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/89/San_Francisco_Chinatown.jpg"
+            ],
+            "description": "In the postwar period, fortune cookies became expected accompaniments to Chinese restaurant meals across America. Their association with Chinese food was now firmly established, with few Americans aware of the Japanese origins.\n\nThe cookies served multiple functions: ending the meal on a light note, providing conversation starters, and creating memories that kept customers returning.",
+            "metrics": {
+                "status": "Universal Chinese restaurant accompaniment"
+            }
+        },
+        {
+            "id": "evt_wonton_food",
+            "title": "Wonton Food Inc. Begins Mass Production",
+            "date_display": "1960s",
+            "date_start": "1960-01-01",
+            "group_ids": ["grp_industrialization"],
+            "type": "Industrial Development",
+            "innovator": "Wonton Food Inc.",
+            "innovation": "Mass Production",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "Wonton Food Inc., established in Brooklyn, began large-scale fortune cookie production. The company would grow to dominate the industry, eventually producing over 4 million cookies daily from its Queens facility.\n\nIndustrial production standardized fortunes and transformed cookies from artisanal products to mass-market commodities. The fortune cookie's identity as cheap, ubiquitous, and slightly mysterious solidified.",
+            "metrics": {
+                "location": "Brooklyn/Queens, New York",
+                "scale": "Industrial"
+            }
+        },
+        {
+            "id": "evt_nakamachi_research",
+            "title": "Yasuko Nakamachi Documents Japanese Origin",
+            "date_display": "1973",
+            "date_start": "1973-01-01",
+            "group_ids": ["grp_industrialization"],
+            "type": "Historical Research",
+            "innovator": "Yasuko Nakamachi",
+            "innovation": "Origin Documentation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/eb/Tsujiura_senbei.jpg"
+            ],
+            "description": "Japanese researcher Yasuko Nakamachi conducted extensive research documenting the fortune cookie's Japanese origins, tracing connections between American fortune cookies and Japanese tsujiura senbei. Her work challenged the assumption of Chinese origins.\n\nNakamachi's research found cracker-making families near Fushimi Inari shrine still producing traditional fortune crackers nearly identical to the original fortune cookie concept.",
+            "metrics": {
+                "finding": "Japanese origin confirmed"
+            }
+        },
+        {
+            "id": "evt_automated_folding",
+            "title": "Automated Fortune Insertion Machines Developed",
+            "date_display": "1974",
+            "date_start": "1974-01-01",
+            "group_ids": ["grp_industrialization"],
+            "type": "Technology",
+            "innovation": "Automated Production",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "Automated machines capable of inserting fortunes into cookies during the folding process transformed production efficiency. Previously, fortune insertion required significant manual labor, limiting production scale.\n\nAutomation enabled the massive production volumes that would make fortune cookies economically viable for even the smallest restaurants to offer free with meals.",
+            "metrics": {
+                "impact": "Mass production enabled"
+            }
+        },
+        {
+            "id": "evt_court_ruling",
+            "title": "Court of Historical Review Rules San Francisco Origin",
+            "date_display": "1983",
+            "date_start": "1983-01-01",
+            "group_ids": ["grp_industrialization"],
+            "type": "Legal Proceeding",
+            "innovation": "Official Determination",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/4f/Japanese_Tea_Garden%2C_San_Francisco.jpg"
+            ],
+            "description": "San Francisco's mock 'Court of Historical Review' ruled that the fortune cookie was invented in San Francisco, settling (humorously if not definitively) the dispute between San Francisco and Los Angeles claimants. The ruling favored the Hagiwara family's claim.\n\nLos Angeles's representative protested by crumbling a fortune cookie and storming out. The proceeding highlighted ongoing interest in the cookie's disputed origins.",
+            "metrics": {
+                "ruling": "San Francisco origin",
+                "nature": "Mock court proceeding"
+            }
+        },
+        {
+            "id": "evt_louie_machine",
+            "title": "Edward Louie Invents Automated Folding Machine",
+            "date_display": "1989",
+            "date_start": "1989-01-01",
+            "group_ids": ["grp_industrialization"],
+            "type": "Invention",
+            "innovator": "Edward Louie",
+            "innovation": "Folding Technology",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "Edward Louie of Wonton Food Inc. developed improved automated folding machinery that further increased production capacity. His innovations helped Wonton Food dominate the fortune cookie industry.\n\nThe machinery could produce thousands of cookies per hour while maintaining the characteristic fold that distinguished fortune cookies from ordinary cookies.",
+            "metrics": {
+                "company": "Wonton Food Inc."
+            }
+        },
+        {
+            "id": "evt_china_introduction",
+            "title": "Fortune Cookies Introduced to China",
+            "date_display": "1992",
+            "date_start": "1992-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Cultural Exchange",
+            "innovation": "Export to China",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/27/Peking_China.jpg"
+            ],
+            "description": "Wonton Food and other American manufacturers attempted to introduce fortune cookies to China, marketing them as 'genuine American fortune cookies.' Chinese consumers largely rejected them, finding the concept foreign and the cookies too sweet.\n\nThe failed introduction highlighted the fortune cookie's purely American identity—Chinese people had never seen fortune cookies before American companies tried to export them 'back.'",
+            "metrics": {
+                "result": "Largely rejected by Chinese consumers"
+            }
+        },
+        {
+            "id": "evt_powerball",
+            "title": "Fortune Cookie Numbers Win Powerball for 110 Players",
+            "date_display": "March 30, 2005",
+            "date_start": "2005-03-30",
+            "group_ids": ["grp_modern"],
+            "type": "Cultural Event",
+            "innovation": "Lottery Phenomenon",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "In a Powerball drawing, 110 players won second-place prizes of $100,000-$500,000 using numbers from fortune cookies—far more second-place winners than probability predicted. Wonton Food had distributed cookies containing the lucky numbers nationwide.\n\nThe incident made international news, with lottery officials initially suspecting fraud before discovering the cookie connection. It demonstrated fortune cookies' surprising reach into American daily life.",
+            "metrics": {
+                "winners": "110",
+                "prizes": "$100,000-$500,000 each"
+            }
+        },
+        {
+            "id": "evt_daily_production",
+            "title": "Wonton Food Ships 4 Million Cookies Daily",
+            "date_display": "2008",
+            "date_start": "2008-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Industry Milestone",
+            "innovator": "Wonton Food Inc.",
+            "innovation": "Production Scale",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "Wonton Food's Queens facility shipped approximately 4 million fortune cookies daily to restaurants across America. The company controlled an estimated 70% of the market, making it the dominant force in fortune cookie production.\n\nThe scale of production meant the same fortunes appeared in restaurants nationwide, creating shared cultural experiences for millions of Americans opening cookies after Chinese meals.",
+            "metrics": {
+                "daily_production": "4 million cookies",
+                "market_share": "~70%"
+            }
+        },
+        {
+            "id": "evt_hong_kong_spread",
+            "title": "Fortune Cookies Appear in Hong Kong Restaurants",
+            "date_display": "2011",
+            "date_start": "2011-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Cultural Spread",
+            "innovation": "Asian Adoption",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/58/Hong_Kong_Victoria_Harbour.jpg"
+            ],
+            "description": "Fortune cookies began appearing in some Hong Kong restaurants, often as novelties for tourists or Western-influenced establishments. The spread represented a curious reverse cultural flow—American tradition finally reaching Chinese populations.\n\nMost Chinese people still encountered fortune cookies primarily in Western contexts rather than adopting them as local tradition.",
+            "metrics": {
+                "context": "Tourist and Western-influenced venues"
+            }
+        },
+        {
+            "id": "evt_emoji_proposal",
+            "title": "Fortune Cookie Emoji Proposed",
+            "date_display": "2013",
+            "date_start": "2013-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Cultural Recognition",
+            "innovation": "Digital Representation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "Proposals emerged for including a fortune cookie emoji in the Unicode Standard, recognizing the cookie's cultural significance. The fortune cookie emoji would eventually be approved, joining other food symbols in digital communication.\n\nThe emoji debate highlighted questions about cultural representation—should a fortune cookie be grouped with Chinese food symbols despite its Japanese origins and American identity?",
+            "metrics": {
+                "platform": "Unicode Standard"
+            }
+        },
+        {
+            "id": "evt_american_identity",
+            "title": "'Fortune Cookies Are American' Awareness Spreads",
+            "date_display": "2017",
+            "date_start": "2017-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Cultural Awareness",
+            "innovation": "Origin Awareness",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "Food journalism and viral articles increasingly spread awareness that fortune cookies are American creations with Japanese origins, not Chinese imports. The 'fortune cookies aren't Chinese' fact became a popular piece of culinary trivia.\n\nThe growing awareness reflected broader interest in food history and the complex origins of 'ethnic' foods in America.",
+            "metrics": {
+                "trend": "Food history awareness"
+            }
+        },
+        {
+            "id": "evt_custom_industry",
+            "title": "Custom Fortune Cookie Industry Grows",
+            "date_display": "2020",
+            "date_start": "2020-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Industry Development",
+            "innovation": "Personalization Services",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fortune_cookies.jpg"
+            ],
+            "description": "Custom fortune cookie services expanded, allowing businesses and individuals to order cookies with personalized messages for weddings, corporate events, and marketing campaigns. The customization trend reflected broader desire for personalized experiences.\n\nGourmet fortune cookies with flavored batters and elaborate decorations also emerged, elevating the humble cookie into gift-worthy confections.",
+            "metrics": {
+                "applications": "Weddings, corporate events, marketing"
+            }
+        },
+        {
+            "id": "evt_china_absent",
+            "title": "Fortune Cookies Remain Absent from Mainland China",
+            "date_display": "2024",
+            "date_start": "2024-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Cultural Note",
+            "innovation": "American Identity Confirmed",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/27/Peking_China.jpg"
+            ],
+            "description": "Fortune cookies remain essentially absent from Chinese cuisine in mainland China, appearing only occasionally in Western-oriented venues. The cookie's American identity is now firmly established in culinary scholarship.\n\nThe fortune cookie's story serves as a reminder that 'ethnic' foods often tell more about the adopting culture than the culture of supposed origin—fortune cookies are thoroughly, completely American.",
+            "metrics": {
+                "status": "Absent from Chinese cuisine",
+                "identity": "American"
+            }
+        }
+    ]
+}

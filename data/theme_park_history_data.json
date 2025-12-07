@@ -1,0 +1,921 @@
+{
+    "meta": {
+        "title": "The Engineering of Joy: A History of Theme Parks",
+        "version": "1.0.0",
+        "generated_date": "2025-12-06",
+        "overview": "Theme parks represent humanity's most elaborate efforts to manufacture happiness—places where architecture, technology, and storytelling converge to create immersive experiences that transport guests beyond ordinary reality. From the pleasure gardens of Europe to the billion-dollar immersive lands of today, these engineered worlds reflect our evolving dreams of escape and wonder.",
+        "attribution": "Historical research compiled from theme park industry archives, entertainment history, and architectural analysis."
+    },
+    "groups": [
+        {
+            "id": "grp_precursors",
+            "title": "Part I: Precursors and Pleasure Gardens",
+            "date_range": "1583 – 1954",
+            "description": "Before Disneyland, people sought outdoor amusement at pleasure gardens, World's Fairs, and seaside amusement parks. These precursors established many conventions—rides, spectacle, escape from daily life—that Walt Disney would later refine and elevate."
+        },
+        {
+            "id": "grp_disney_revolution",
+            "title": "Part II: The Disneyland Revolution",
+            "date_range": "1955 – 1971",
+            "description": "Walt Disney didn't just build a park; he invented a new form of entertainment. Disneyland introduced themed lands, Audio-Animatronics, and the concept of 'placemaking'—using architecture and design to tell stories without words. The template he created still defines the industry."
+        },
+        {
+            "id": "grp_global_expansion",
+            "title": "Part III: Global Expansion",
+            "date_range": "1971 – 1989",
+            "description": "Walt Disney World's opening demonstrated that theme parks could be destination resorts. The concept spread globally—Tokyo Disneyland proved the model worked internationally, while regional parks like Six Flags made thrills accessible to local audiences."
+        },
+        {
+            "id": "grp_thrill_era",
+            "title": "Part IV: The Thrill Ride Era",
+            "date_range": "1990 – 2009",
+            "description": "The 1990s and 2000s saw 'coaster wars' between regional parks competing for the tallest, fastest, and most extreme rides. Universal Studios emerged as a serious competitor to Disney with simulator technology and intellectual property-based attractions."
+        },
+        {
+            "id": "grp_immersive",
+            "title": "Part V: The Immersive Experience Era",
+            "date_range": "2010 – 2025",
+            "description": "Modern theme parks emphasize total immersion—lands where every detail reinforces the story, where guests become participants rather than observers. The Wizarding World of Harry Potter set a new standard that Galaxy's Edge and Epic Universe push even further."
+        }
+    ],
+    "events": [
+        {
+            "id": "evt_bakken",
+            "title": "Bakken Opens in Denmark",
+            "date_display": "1583",
+            "date_start": "1583-01-01",
+            "group_ids": ["grp_precursors"],
+            "type": "Park Opening",
+            "innovation": "Oldest Operating Amusement Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bakken_Copenhagen.jpg"
+            ],
+            "description": "Bakken, located in Klampenborg, Denmark, is the world's oldest operating amusement park. It began as an area around a natural spring believed to have healing properties, which attracted visitors who then attracted entertainers and vendors.\n\nOver 400 years later, Bakken still operates with over 30 rides, restaurants, and games. Its evolution from healing spring to amusement destination illustrates how leisure spaces develop organically before formalized planning.",
+            "metrics": {
+                "age": "440+ years",
+                "rides": "30+"
+            }
+        },
+        {
+            "id": "evt_tivoli",
+            "title": "Tivoli Gardens Opens",
+            "date_display": "August 15, 1843",
+            "date_start": "1843-08-15",
+            "group_ids": ["grp_precursors"],
+            "type": "Park Opening",
+            "innovator": "Georg Carstensen",
+            "innovation": "Pleasure Garden Model",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/7a/Tivoli_Gardens_1843.jpg"
+            ],
+            "description": "Georg Carstensen convinced King Christian VIII to grant him a charter for Tivoli Gardens with the argument: 'When the people are amusing themselves, they do not think about politics.' The park combined gardens, theaters, restaurants, and mechanical rides into a cohesive entertainment experience.\n\nWalt Disney visited Tivoli in 1951 and was deeply influenced by its charm, cleanliness, and family atmosphere. Many consider Tivoli the spiritual ancestor of Disneyland—a place where landscaping, entertainment, and hospitality combined into something greater than an amusement park.",
+            "metrics": {
+                "annual_visitors": "~4 million"
+            }
+        },
+        {
+            "id": "evt_coney_coaster",
+            "title": "First Roller Coaster at Coney Island",
+            "date_display": "June 16, 1884",
+            "date_start": "1884-06-16",
+            "group_ids": ["grp_precursors"],
+            "type": "Ride Opening",
+            "innovator": "LaMarcus Thompson",
+            "innovation": "Gravity-Powered Entertainment",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a7/LaMarcus_Thompson%27s_Switchback_Railway_1884.jpg"
+            ],
+            "description": "LaMarcus Adna Thompson's Switchback Railway became the first roller coaster at Coney Island, charging five cents for a ride that reached six miles per hour. Riders had to climb a tower, coast down a gentle decline, then walk to another tower while the car was switched to a return track.\n\nDespite its modest thrills, the Switchback Railway was immediately popular, earning $600 per day when the average daily wage was under $2. Thompson's success sparked a wave of imitators and established Coney Island as America's premier amusement destination.",
+            "metrics": {
+                "speed": "6 mph",
+                "fare": "5 cents",
+                "daily_revenue": "$600"
+            }
+        },
+        {
+            "id": "evt_ferris_wheel",
+            "title": "First Ferris Wheel at Chicago World's Fair",
+            "date_display": "June 21, 1893",
+            "date_start": "1893-06-21",
+            "group_ids": ["grp_precursors"],
+            "type": "Ride Debut",
+            "innovator": "George Washington Gale Ferris Jr.",
+            "innovation": "Observation Wheel",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a3/Ferris-wheel.jpg"
+            ],
+            "description": "Engineer George Ferris created the original Ferris Wheel as America's answer to the Eiffel Tower, which had debuted at the 1889 Paris World's Fair. Standing 264 feet tall with 36 cars that could each hold 60 people, it was the largest attraction at the World's Columbian Exposition in Chicago.\n\nThe wheel carried 1.4 million passengers during the fair, cementing the observation wheel as a permanent feature of amusement parks worldwide. The original was demolished in 1906, but its descendants spin in every major city.",
+            "metrics": {
+                "height": "264 feet",
+                "capacity": "2,160 passengers",
+                "fair_ridership": "1.4 million"
+            }
+        },
+        {
+            "id": "evt_sea_lion_park",
+            "title": "Sea Lion Park Opens",
+            "date_display": "1895",
+            "date_start": "1895-01-01",
+            "group_ids": ["grp_precursors"],
+            "type": "Park Opening",
+            "innovator": "Paul Boyton",
+            "innovation": "First Enclosed Amusement Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/bb/Coney_Island_-_Sea_Lion_Park.jpg"
+            ],
+            "description": "Captain Paul Boyton's Sea Lion Park was the first enclosed amusement park in America, charging admission to enter and then offering rides and attractions inside. This business model—gate admission controlling a defined experience—would become standard for theme parks.\n\nThe park featured trained sea lions (hence the name), a 'Shoot the Chutes' water ride, and the Flip Flap Railway, one of the first looping coasters. Sea Lion Park closed in 1902, replaced by Luna Park, but its enclosed model persisted.",
+            "metrics": {
+                "significance": "First enclosed amusement park in US"
+            }
+        },
+        {
+            "id": "evt_steeplechase",
+            "title": "Steeplechase Park Opens at Coney Island",
+            "date_display": "1897",
+            "date_start": "1897-01-01",
+            "group_ids": ["grp_precursors"],
+            "type": "Park Opening",
+            "innovator": "George C. Tilyou",
+            "innovation": "Mechanical Ride Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/08/Steeplechase_Park_Coney_Island_1901.jpg"
+            ],
+            "description": "George Tilyou's Steeplechase Park brought the mechanical amusement ride to Coney Island, featuring his signature Steeplechase Horses—wooden horses that raced down parallel undulating tracks. Tilyou also introduced the 'Funny Face' logo that became iconic to Coney Island.\n\nThe park pioneered the concept of rides as the primary attraction rather than spectacle or exhibition. When fire destroyed the park in 1907, Tilyou famously posted a sign: 'I had troubles yesterday that I have not today. On this site will be built a bigger, better Steeplechase Park.' He rebuilt within months.",
+            "metrics": {
+                "signature_ride": "Steeplechase Horses"
+            }
+        },
+        {
+            "id": "evt_luna_park",
+            "title": "Luna Park Opens at Coney Island",
+            "date_display": "May 16, 1903",
+            "date_start": "1903-05-16",
+            "group_ids": ["grp_precursors"],
+            "type": "Park Opening",
+            "innovator": "Frederic Thompson, Elmer Dundy",
+            "innovation": "Electric Spectacle",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/51/Coney_Island_Luna_Park.jpg"
+            ],
+            "description": "Luna Park dazzled visitors with 250,000 electric lights—an astounding display when many homes still used gas lighting. The park's fantastical architecture, painted white and illuminated at night, created a dreamlike environment that seemed to exist outside normal reality.\n\nLuna Park popularized the idea of the amusement park as spectacle and escape. Its influence spread worldwide—'Luna Park' became a generic name for amusement parks in Australia, Russia, and beyond.",
+            "metrics": {
+                "lights": "250,000 electric bulbs"
+            }
+        },
+        {
+            "id": "evt_dreamland",
+            "title": "Dreamland Opens at Coney Island",
+            "date_display": "May 14, 1904",
+            "date_start": "1904-05-14",
+            "group_ids": ["grp_precursors"],
+            "type": "Park Opening",
+            "innovator": "William H. Reynolds",
+            "innovation": "Spectacle Architecture",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c9/Dreamland_Tower_Coney_Island_1905.jpg"
+            ],
+            "description": "Dreamland represented Coney Island's most ambitious amusement park, built to be more respectable and grandiose than its neighbors. The park featured a 375-foot central tower, a million incandescent lights, and attractions including the 'Incubator Babies' exhibit that actually saved hundreds of premature infants' lives.\n\nDreamland burned spectacularly in 1911, with witnesses reporting escaped circus animals running through the streets. The fire marked the beginning of Coney Island's decline as the premier American amusement destination. Steeplechase Park was the only major survivor.",
+            "metrics": {
+                "tower_height": "375 feet",
+                "destruction": "1911 fire"
+            }
+        },
+        {
+            "id": "evt_wooden_coaster_age",
+            "title": "Wooden Coaster Golden Age Peaks",
+            "date_display": "1929",
+            "date_start": "1929-01-01",
+            "group_ids": ["grp_precursors"],
+            "type": "Era Peak",
+            "innovation": "Roller Coaster Design Innovation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c3/Coney_Island_Cyclone_cars.jpg"
+            ],
+            "description": "By 1929, approximately 1,500 wooden roller coasters operated across America—the peak of the wooden coaster era. Designers like John Miller developed safety innovations (upstop wheels, deep-groove wheels) that allowed for faster, more thrilling rides without derailment.\n\nThe Cyclone at Coney Island (1927) remains one of the most famous survivors of this era, still operating nearly a century later. The Great Depression devastated the amusement industry, with hundreds of parks and coasters demolished. Few wooden coasters from this golden age survive.",
+            "metrics": {
+                "coasters_in_operation": "~1,500 (US, 1929)"
+            }
+        },
+        {
+            "id": "evt_disneyland_opens",
+            "title": "Disneyland Opens",
+            "date_display": "July 17, 1955",
+            "date_start": "1955-07-17",
+            "group_ids": ["grp_disney_revolution"],
+            "type": "Park Opening",
+            "innovator": "Walt Disney",
+            "innovation": "Themed Entertainment",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f4/Disneyland_aerial_view%2C_1963.jpg"
+            ],
+            "description": "Walt Disney mortgaged his life insurance, leveraged his studio, and convinced ABC to invest in what many considered a foolish venture: a theme park in an orange grove in Anaheim, California. On 'Black Sunday,' as insiders called opening day, everything went wrong—rides broke down, the asphalt was soft, a plumbers' strike meant working water fountains or bathrooms but not both.\n\nYet Disneyland succeeded spectacularly. Walt's vision was revolutionary: a park organized into themed 'lands' where every element—architecture, landscaping, employee costumes, background music—reinforced a coherent story. This wasn't an amusement park with disconnected rides; it was an immersive world. Within seven weeks, one million guests had visited.",
+            "metrics": {
+                "cost": "$17 million",
+                "first_year_attendance": "3.6 million"
+            }
+        },
+        {
+            "id": "evt_matterhorn",
+            "title": "Matterhorn Bobsleds Opens",
+            "date_display": "June 14, 1959",
+            "date_start": "1959-06-14",
+            "group_ids": ["grp_disney_revolution"],
+            "type": "Ride Opening",
+            "innovator": "Arrow Development, Disney Imagineering",
+            "innovation": "First Tubular Steel Roller Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1e/Matterhorn_Bobsleds%2C_Disneyland.jpg"
+            ],
+            "description": "The Matterhorn Bobsleds was the world's first tubular steel roller coaster—a technology that would revolutionize coaster design. Unlike wooden coasters with flat steel rails, the tubular steel track allowed for smooth curves, loops, and corkscrews that wood couldn't achieve.\n\nThe ride's 147-foot mountain became Disneyland's first significant addition after opening and established that the park would continue evolving. The Matterhorn also pioneered the concept of a themed coaster, where the ride exists within a narrative framework rather than as pure thrill.",
+            "metrics": {
+                "height": "147 feet",
+                "innovation": "First tubular steel coaster"
+            }
+        },
+        {
+            "id": "evt_tiki_room",
+            "title": "Enchanted Tiki Room Opens",
+            "date_display": "June 23, 1963",
+            "date_start": "1963-06-23",
+            "group_ids": ["grp_disney_revolution"],
+            "type": "Attraction Opening",
+            "innovator": "Walt Disney, WED Enterprises",
+            "innovation": "First Audio-Animatronics Show",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/73/Enchanted_Tiki_Room_2013.jpg"
+            ],
+            "description": "The Enchanted Tiki Room debuted Disney's Audio-Animatronics technology—robotic figures synchronized to pre-recorded sound that could perform complex, lifelike movements. The show featured over 200 animated tropical birds, flowers, and tiki gods performing a musical revue.\n\nWalt Disney had developed the technology for a proposed Chinese restaurant with an animatronic Confucius host. When that project stalled, the tech found its home in the Tiki Room. Audio-Animatronics would transform attractions like Pirates of the Caribbean, The Haunted Mansion, and eventually entire theme parks.",
+            "metrics": {
+                "animatronic_figures": "200+"
+            }
+        },
+        {
+            "id": "evt_small_world_fair",
+            "title": "It's a Small World at World's Fair",
+            "date_display": "April 22, 1964",
+            "date_start": "1964-04-22",
+            "group_ids": ["grp_disney_revolution"],
+            "type": "Attraction Debut",
+            "innovator": "Mary Blair, Walt Disney",
+            "innovation": "UNICEF Partnership",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5d/Its_a_small_world_Paris.jpg"
+            ],
+            "description": "Walt Disney designed 'it's a small world' for the 1964-65 New York World's Fair, sponsored by UNICEF and Pepsi-Cola to promote global harmony. Designer Mary Blair's distinctive visual style—flat geometric shapes, bold colors—created a whimsical world of singing children representing nations worldwide.\n\nThe attraction was so popular it later moved to Disneyland, where its relentlessly catchy theme song ('It's a Small World After All') has annoyed and delighted millions. The Fair demonstrated Disney's ability to create compelling attractions for corporate sponsors—a business model still central to theme parks.",
+            "metrics": {
+                "fair_attendance": "10+ million rides",
+                "animatronics": "300+"
+            }
+        },
+        {
+            "id": "evt_pirates",
+            "title": "Pirates of the Caribbean Opens",
+            "date_display": "March 18, 1967",
+            "date_start": "1967-03-18",
+            "group_ids": ["grp_disney_revolution"],
+            "type": "Attraction Opening",
+            "innovator": "Walt Disney, Marc Davis, Claude Coats",
+            "innovation": "Dark Ride as Narrative Experience",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/4e/Pirates_of_Caribbean_Captain_Jack_figure.jpg"
+            ],
+            "description": "Pirates of the Caribbean was the last major attraction Walt Disney personally supervised before his death in December 1966. The ride transformed the dark ride concept from simple scares into a fully realized world—a burning Caribbean town where guests boat through scenes of pirate revelry.\n\nThe attraction featured breakthrough Audio-Animatronics, including figures that appeared to breathe and make eye contact. It set a new standard for themed entertainment that arguably hasn't been surpassed. Decades later, it spawned a billion-dollar film franchise.",
+            "metrics": {
+                "duration": "~15 minutes",
+                "animatronics": "120+"
+            }
+        },
+        {
+            "id": "evt_haunted_mansion",
+            "title": "The Haunted Mansion Opens",
+            "date_display": "August 9, 1969",
+            "date_start": "1969-08-09",
+            "group_ids": ["grp_disney_revolution"],
+            "type": "Attraction Opening",
+            "innovator": "Marc Davis, Claude Coats, X Atencio",
+            "innovation": "Practical Effects Showcase",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/73/Haunted_Mansion_exterior_MK.jpg"
+            ],
+            "description": "The Haunted Mansion took 17 years to develop as Imagineers debated whether it should be scary or funny. The final result threaded the needle with 'grim grinning ghosts'—playful spooks presented through groundbreaking practical effects like Pepper's Ghost projections and the Doom Buggy ride system.\n\nThe attraction's exterior was designed to match New Orleans Square, with the 'show building' hidden behind the berm. This technique—maintaining the themed facade while housing massive ride systems out of sight—became standard practice.",
+            "metrics": {
+                "development_time": "17 years",
+                "ghosts": "999 (according to lore)"
+            }
+        },
+        {
+            "id": "evt_six_flags",
+            "title": "Six Flags Over Texas Opens",
+            "date_display": "August 1, 1961",
+            "date_start": "1961-08-01",
+            "group_ids": ["grp_global_expansion"],
+            "type": "Park Opening",
+            "innovator": "Angus Wynne",
+            "innovation": "Regional Theme Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f7/Six_Flags_Texas_2007.jpg"
+            ],
+            "description": "Developer Angus Wynne, inspired by a visit to Disneyland, created Six Flags Over Texas—themed around the six nations whose flags have flown over Texas. The park proved that the Disney formula could work on a regional scale, attracting families who couldn't afford California trips.\n\nSix Flags pioneered the regional theme park model that would spread across America. Unlike destination parks, regional parks catered to repeat visitors within driving distance. The Six Flags brand eventually expanded to become the largest regional theme park chain in the world.",
+            "metrics": {
+                "themed_sections": "6 (for 6 flags)"
+            }
+        },
+        {
+            "id": "evt_wdw_opens",
+            "title": "Walt Disney World Opens",
+            "date_display": "October 1, 1971",
+            "date_start": "1971-10-01",
+            "group_ids": ["grp_global_expansion"],
+            "type": "Resort Opening",
+            "innovator": "Walt Disney, WED Enterprises",
+            "innovation": "Destination Resort Model",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0f/Cinderella_Castle%2C_Magic_Kingdom.jpg"
+            ],
+            "description": "Walt Disney died before seeing his Florida 'Vacation Kingdom' completed, but his vision was realized on 27,000 acres—roughly the size of San Francisco. Unlike Disneyland, which was surrounded by motels and businesses, Disney World controlled enough land to create a self-contained resort world.\n\nThe Magic Kingdom was joined by two hotels and the Contemporary Resort's monorail station. But this was just the beginning—EPCOT, Hollywood Studios, Animal Kingdom, two water parks, and dozens of hotels would follow. Disney World became the most visited vacation destination on Earth.",
+            "metrics": {
+                "acreage": "~27,000",
+                "first_year_attendance": "10.7 million"
+            }
+        },
+        {
+            "id": "evt_space_mountain_wdw",
+            "title": "Space Mountain Opens at Walt Disney World",
+            "date_display": "January 15, 1975",
+            "date_start": "1975-01-15",
+            "group_ids": ["grp_global_expansion"],
+            "type": "Ride Opening",
+            "innovator": "John Hench, Bill Watkins",
+            "innovation": "Indoor Coaster Experience",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b9/Space_Mountain_at_Magic_Kingdom.jpg"
+            ],
+            "description": "Space Mountain enclosed a roller coaster in complete darkness, transforming a relatively mild coaster into a thrilling journey through 'space.' The Florida version featured two tracks side by side, and its distinctive geodesic dome became a Magic Kingdom icon.\n\nThe ride demonstrated that controlled environments could enhance perceived speed and intensity. In darkness, a 28-mph coaster felt like hyperspeed travel. The concept spawned versions at every Disney resort worldwide.",
+            "metrics": {
+                "top_speed": "28 mph",
+                "perceived_speed": "Much faster"
+            }
+        },
+        {
+            "id": "evt_space_mountain_dl",
+            "title": "Space Mountain Opens at Disneyland",
+            "date_display": "May 27, 1977",
+            "date_start": "1977-05-27",
+            "group_ids": ["grp_global_expansion"],
+            "type": "Ride Opening",
+            "innovator": "John Hench, George McGinnis",
+            "innovation": "West Coast Space Mountain",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/35/Space_Mountain_%28Disneyland%29.jpg"
+            ],
+            "description": "Two years after its Walt Disney World debut, Space Mountain opened at Disneyland with a different track layout and single-rail cars. The California version's tighter, more aggressive layout and iconic cone-shaped building became essential to Tomorrowland's identity.\n\nThe Disneyland Space Mountain featured synchronized lighting effects and sound that created a convincing illusion of space travel. Its success confirmed that major attractions could be adapted across Disney parks while maintaining local character.",
+            "metrics": {
+                "track_difference": "Single-track vs. dual-track (WDW)"
+            }
+        },
+        {
+            "id": "evt_cedar_point_corkscrew",
+            "title": "Cedar Point Installs Corkscrew",
+            "date_display": "May 15, 1976",
+            "date_start": "1976-05-15",
+            "group_ids": ["grp_global_expansion"],
+            "type": "Ride Opening",
+            "innovator": "Arrow Development",
+            "innovation": "Modern Looping Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/e8/Corkscrew_at_Cedar_Point.jpg"
+            ],
+            "description": "Cedar Point's Corkscrew was the first roller coaster with three inversions, launching the modern era of looping coasters. Arrow Development's steel track technology made comfortable inversions possible—previous loop designs subjected riders to punishing g-forces.\n\nThe Corkscrew began Cedar Point's transformation from a traditional amusement park into the 'Roller Coaster Capital of the World.' The Ohio park would accumulate world records in coaster height, speed, and inversions over the following decades.",
+            "metrics": {
+                "inversions": "3"
+            }
+        },
+        {
+            "id": "evt_epcot",
+            "title": "EPCOT Center Opens",
+            "date_display": "October 1, 1982",
+            "date_start": "1982-10-01",
+            "group_ids": ["grp_global_expansion"],
+            "type": "Park Opening",
+            "innovator": "Marty Sklar, John Hench",
+            "innovation": "Edutainment Theme Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/38/SpaceshipEarth-2.jpg"
+            ],
+            "description": "Walt Disney had envisioned EPCOT (Experimental Prototype Community of Tomorrow) as an actual working city showcasing future technologies. After his death, the concept evolved into a theme park in two halves: Future World (corporate-sponsored pavillions about technology and innovation) and World Showcase (international pavilions representing eleven countries).\n\nEPCOT represented theme parks as permanent World's Fairs—places where guests could experience other cultures and glimpse tomorrow. The park's centerpiece, Spaceship Earth (a geodesic sphere housing a dark ride through human communication history), became Disney's most architecturally distinctive icon.",
+            "metrics": {
+                "world_showcase_countries": "11",
+                "future_world_pavilions": "8 (original)"
+            }
+        },
+        {
+            "id": "evt_tokyo_disneyland",
+            "title": "Tokyo Disneyland Opens",
+            "date_display": "April 15, 1983",
+            "date_start": "1983-04-15",
+            "group_ids": ["grp_global_expansion"],
+            "type": "Park Opening",
+            "innovator": "Oriental Land Company, Walt Disney Imagineering",
+            "innovation": "First Disney Park Outside US",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/eb/Tokyo_Disneyland_Cinderella_Castle.jpg"
+            ],
+            "description": "Tokyo Disneyland was the first Disney theme park built outside the United States, operated by the Oriental Land Company under license. Rather than adapting the park to Japanese culture, designers created an almost exact replica of the American experience—betting that Japanese guests wanted authentic Disney.\n\nThe bet paid off spectacularly. Tokyo Disneyland became the most visited theme park outside the US and proved Disney's formula transcended cultures. Its success paved the way for Paris, Hong Kong, and Shanghai parks.",
+            "metrics": {
+                "annual_attendance": "17+ million (peak years)"
+            }
+        },
+        {
+            "id": "evt_disney_mgm",
+            "title": "Disney-MGM Studios Opens",
+            "date_display": "May 1, 1989",
+            "date_start": "1989-05-01",
+            "group_ids": ["grp_global_expansion"],
+            "type": "Park Opening",
+            "innovator": "Michael Eisner, Marty Sklar",
+            "innovation": "Working Studio Theme Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/84/Hollywood_Tower_Hotel_-_WDW_%282011%29.jpg"
+            ],
+            "description": "Disney-MGM Studios (later Hollywood Studios) combined theme park attractions with a working film and television production facility. Guests could ride the Great Movie Ride through classic film scenes, watch live shows, and potentially witness actual production.\n\nThe park opened in direct competition with the Universal Studios Florida announcement. This marked the beginning of a theme park rivalry that would drive both companies to greater innovation. The 'working studio' aspect faded over time, but the park evolved into a major attraction hub.",
+            "metrics": {
+                "opening_attractions": "Handful (expanded rapidly)"
+            }
+        },
+        {
+            "id": "evt_legoland_windsor",
+            "title": "LEGOLAND Windsor Opens",
+            "date_display": "March 29, 1996",
+            "date_start": "1996-03-29",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Park Opening",
+            "innovator": "LEGO Group",
+            "innovation": "First LEGOLAND Outside Denmark",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5e/Legoland_Windsor_Miniland.jpg"
+            ],
+            "description": "LEGOLAND Windsor became the first LEGOLAND theme park outside Denmark's original Billund location. The park combined classic LEGO attractions—Miniland recreations of landmarks, building activities—with family-friendly rides.\n\nThe Windsor opening launched LEGOLAND as a global brand, eventually expanding to California, Germany, Japan, Dubai, and other locations. LEGOLAND parks carved out a distinct niche: less thrilling than regional parks, more ride-focused than educational, perfectly targeted at families with children under 12.",
+            "metrics": {
+                "expansion": "First outside Denmark"
+            }
+        },
+        {
+            "id": "evt_usf_opens",
+            "title": "Universal Studios Florida Opens",
+            "date_display": "June 7, 1990",
+            "date_start": "1990-06-07",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Park Opening",
+            "innovator": "MCA, Universal",
+            "innovation": "Ride-Through Movies",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a3/Universal_Studios_Florida_-_Kong_Skull_Island%2C_December_2016.jpg"
+            ],
+            "description": "Universal Studios Florida brought Hollywood movie magic to Orlando with attractions based on films like E.T., Jaws, and Back to the Future. The park's pitch: guests could 'ride the movies' rather than just watch scenes featuring Audio-Animatronics.\n\nOpening day was plagued with technical problems—Jaws and Kong broke down repeatedly—but Universal eventually refined its attractions. The park established Universal as Disney's primary competitor and introduced a more thrill-oriented, teenage-and-up demographic focus.",
+            "metrics": {
+                "film_based_attractions": "Multiple major IPs"
+            }
+        },
+        {
+            "id": "evt_euro_disney",
+            "title": "Euro Disneyland Opens",
+            "date_display": "April 12, 1992",
+            "date_start": "1992-04-12",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Park Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "European Disney Resort",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/9/94/Disneyland_Paris%2C_Sleeping_Beauty_Castle.jpg"
+            ],
+            "description": "Euro Disneyland (later Disneyland Paris) opened to French protests calling it a 'cultural Chernobyl' and criticism of American cultural imperialism. Cold weather, cultural missteps (no wine served initially), and a European recession made early years difficult.\n\nYet the park eventually found its footing, becoming Europe's most visited tourist attraction. Its Sleeping Beauty Castle, designed in a distinctive pink hue with darker themes inspired by European fairy tales, is considered by many the most beautiful of all Disney castles.",
+            "metrics": {
+                "castle_height": "Tallest Disney castle"
+            }
+        },
+        {
+            "id": "evt_tower_of_terror",
+            "title": "Tower of Terror Opens",
+            "date_display": "July 22, 1994",
+            "date_start": "1994-07-22",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Attraction Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "Themed Drop Tower",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tower_of_Terror.jpg"
+            ],
+            "description": "The Twilight Zone Tower of Terror transformed a drop tower ride into a masterpiece of themed entertainment. The attraction's 199-foot Art Deco hotel, based on the Hollywood Tower Hotel myth, featured elaborate pre-show experiences, random drop sequences, and a story that justified the thrills.\n\nThe Tower proved that even extreme thrill rides could benefit from Disney's storytelling approach. The attraction's popularity at Disney-MGM Studios led to versions in California, Paris, and Tokyo (though Tokyo later rethemed to Guardians of the Galaxy).",
+            "metrics": {
+                "drop_height": "~130 feet",
+                "tower_height": "199 feet"
+            }
+        },
+        {
+            "id": "evt_magnum_xl",
+            "title": "Magnum XL-200 Opens",
+            "date_display": "May 6, 1989",
+            "date_start": "1989-05-06",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Ride Opening",
+            "innovator": "Arrow Dynamics, Cedar Point",
+            "innovation": "First Hypercoaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3d/Magnum_XL-200_from_Soak_City.jpg"
+            ],
+            "description": "Cedar Point's Magnum XL-200 became the first roller coaster to exceed 200 feet in height, creating the 'hypercoaster' category. The ride's 205-foot drop delivered unprecedented airtime—moments of weightlessness that became coaster enthusiasts' holy grail.\n\nMagnum sparked the 'coaster wars' of the 1990s as parks competed to break records in height, speed, and inversions. Cedar Point would set and break its own records repeatedly over the following decades.",
+            "metrics": {
+                "height": "205 feet",
+                "top_speed": "72 mph"
+            }
+        },
+        {
+            "id": "evt_islands_adventure",
+            "title": "Islands of Adventure Opens",
+            "date_display": "May 28, 1999",
+            "date_start": "1999-05-28",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Park Opening",
+            "innovator": "Universal Creative",
+            "innovation": "Island-Themed Experience",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d3/Islands_of_Adventure.jpg"
+            ],
+            "description": "Universal's second Orlando gate organized attractions around themed 'islands' including Marvel Super Hero Island, Jurassic Park, and Seuss Landing. The park's flagship attraction, The Amazing Adventures of Spider-Man, combined 3D film, physical sets, and motion simulation in groundbreaking ways.\n\nIslands of Adventure raised the bar for theme park attractions and gave Universal a true competitor to Disney's parks. The infrastructure laid here would later house the Wizarding World of Harry Potter.",
+            "metrics": {
+                "themed_islands": "8 (at opening)"
+            }
+        },
+        {
+            "id": "evt_millennium_force",
+            "title": "Millennium Force Opens",
+            "date_display": "May 13, 2000",
+            "date_start": "2000-05-13",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Ride Opening",
+            "innovator": "Intamin, Cedar Point",
+            "innovation": "First Giga Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/39/Millennium_Force.jpg"
+            ],
+            "description": "Millennium Force at Cedar Point became the first 'giga coaster'—exceeding 300 feet in height. The ride's 310-foot drop at an 80-degree angle reached 93 mph, making it the tallest and fastest coaster in the world at opening.\n\nThe coaster's cable lift system (rather than traditional chain lift) allowed for faster ascents and throughput. Millennium Force topped enthusiast polls as the world's best coaster for years and remains a benchmark for airtime-focused experiences.",
+            "metrics": {
+                "height": "310 feet",
+                "top_speed": "93 mph"
+            }
+        },
+        {
+            "id": "evt_california_adventure",
+            "title": "Disney's California Adventure Opens",
+            "date_display": "February 8, 2001",
+            "date_start": "2001-02-08",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Park Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "Regional Theme Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/6f/Disney_California_Adventure_entrance.jpg"
+            ],
+            "description": "Disney's California Adventure opened as a second Disneyland gate celebrating California culture and Disney film history. Critics and fans immediately noted the park felt cheap and unfinished compared to Disney standards—the entrance resembled a mall parking lot.\n\nThe park underwent a billion-dollar transformation over the following decade, adding Cars Land and revamping the entrance. The troubled opening became a cautionary tale about cutting corners at Disney, and the eventual resurrection proved rehabilitation was possible.",
+            "metrics": {
+                "renovation_cost": "$1.1 billion"
+            }
+        },
+        {
+            "id": "evt_expedition_everest",
+            "title": "Expedition Everest Opens",
+            "date_display": "April 7, 2006",
+            "date_start": "2006-04-07",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Ride Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "Backward-Drop Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/18/Expedition_Everest.jpg"
+            ],
+            "description": "Expedition Everest at Disney's Animal Kingdom cost $100 million, making it the most expensive roller coaster ever built at the time. The ride features a 200-foot man-made mountain, a hairy Yeti Audio-Animatronic, and a thrilling backwards sequence when the train encounters 'destroyed' track.\n\nThe attraction exemplified Disney's approach: rather than just building a coaster, they created an elaborately themed experience including a detailed queue through a Himalayan village. The mountain became Animal Kingdom's visual icon.",
+            "metrics": {
+                "cost": "$100 million",
+                "height": "200 feet (man-made mountain)"
+            }
+        },
+        {
+            "id": "evt_hong_kong_disney",
+            "title": "Hong Kong Disneyland Opens",
+            "date_display": "September 12, 2005",
+            "date_start": "2005-09-12",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Park Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "First Disney Park in China",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/fc/Hong_Kong_Disneyland_entrance.jpg"
+            ],
+            "description": "Hong Kong Disneyland opened as Disney's first park in China, sized small with room for expansion. Feng shui consultants adjusted the park design—the entrance was angled to prevent good fortune from escaping, and certain numbers were avoided.\n\nInitial criticism focused on the park's small size compared to other Disney resorts. Subsequent expansions added Grizzly Gulch, Mystic Point, and other lands, transforming it into a unique park with attractions found nowhere else.",
+            "metrics": {
+                "size_at_opening": "Smallest Magic Kingdom-style park"
+            }
+        },
+        {
+            "id": "evt_animal_kingdom",
+            "title": "Disney's Animal Kingdom Opens",
+            "date_display": "April 22, 1998",
+            "date_start": "1998-04-22",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Park Opening",
+            "innovator": "Joe Rohde, Walt Disney Imagineering",
+            "innovation": "Conservation Theme Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/e9/Tree_of_Life_at_Disney%27s_Animal_Kingdom.jpg"
+            ],
+            "description": "Disney's Animal Kingdom opened as Walt Disney World's fourth gate, combining theme park attractions with genuine animal exhibits in a conservation-focused environment. The 500-acre park was Disney's largest theme park by area and featured the iconic Tree of Life.\n\nJoe Rohde led the design team, insisting on authentic cultural detail and environmental messaging. The park initially struggled with limited attractions and early closures but eventually expanded into Avatar and other properties.",
+            "metrics": {
+                "acreage": "500 (largest Disney park by area)",
+                "icon": "Tree of Life"
+            }
+        },
+        {
+            "id": "evt_busch_gardens_sheikra",
+            "title": "SheiKra Opens at Busch Gardens Tampa",
+            "date_display": "May 21, 2005",
+            "date_start": "2005-05-21",
+            "group_ids": ["grp_thrill_era"],
+            "type": "Ride Opening",
+            "innovator": "Bolliger & Mabillard",
+            "innovation": "First North American Dive Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/57/SheiKra_at_Busch_Gardens_Tampa_Bay.jpg"
+            ],
+            "description": "SheiKra introduced the dive coaster concept to North America: riders are held suspended at the top of a 90-degree, 200-foot drop before being released to plunge straight down. The unique suspense element added psychological thrill beyond traditional drops.\n\nDive coasters became popular worldwide, with Cedar Point, SeaWorld, and other parks adding their own versions. The format proved that innovation could still transform the roller coaster experience.",
+            "metrics": {
+                "drop_height": "200 feet",
+                "angle": "90 degrees"
+            }
+        },
+        {
+            "id": "evt_wizarding_world",
+            "title": "Wizarding World of Harry Potter Opens",
+            "date_display": "June 18, 2010",
+            "date_start": "2010-06-18",
+            "group_ids": ["grp_immersive"],
+            "type": "Land Opening",
+            "innovator": "Universal Creative, Warner Bros.",
+            "innovation": "IP-Based Immersive Land",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/ee/Hogwarts_at_Wizarding_World_of_Harry_Potter.jpg"
+            ],
+            "description": "The Wizarding World of Harry Potter at Islands of Adventure set a new standard for themed entertainment. Every detail—the snow on Hogsmeade rooftops, the interactive wands that cast 'spells,' the food and drink (Butterbeer became iconic)—created an experience fans described as 'stepping into the books.'\n\nThe land featured Harry Potter and the Forbidden Journey, a revolutionary dark ride combining robotic arm motion with 3D projection. Attendance at Islands of Adventure increased by approximately 66% in the following year. Universal had found its Disney-killer formula.",
+            "metrics": {
+                "attendance_increase": "~66% at Islands of Adventure"
+            }
+        },
+        {
+            "id": "evt_cars_land",
+            "title": "Cars Land Opens at Disney California Adventure",
+            "date_display": "June 15, 2012",
+            "date_start": "2012-06-15",
+            "group_ids": ["grp_immersive"],
+            "type": "Land Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "Pixar World Immersion",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a4/Radiator_Springs_Racers_at_Disney_California_Adventure.jpg"
+            ],
+            "description": "Cars Land transformed the struggling California Adventure into a must-see destination. The 12-acre land recreated Radiator Springs from the Pixar film with stunning fidelity—at night, the neon signs of the Cozy Cone Motel and Flo's V8 Cafe create a magical Route 66 atmosphere.\n\nRadiator Springs Racers combined trackless vehicle technology with slot car racing for a thrilling finale. Cars Land proved that Disney could match Universal's immersive lands and helped justify DCA's expensive renovation.",
+            "metrics": {
+                "size": "12 acres"
+            }
+        },
+        {
+            "id": "evt_diagon_alley",
+            "title": "Diagon Alley Opens",
+            "date_display": "July 8, 2014",
+            "date_start": "2014-07-08",
+            "group_ids": ["grp_immersive"],
+            "type": "Land Opening",
+            "innovator": "Universal Creative",
+            "innovation": "Cross-Park Expansion",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1e/Gringotts_Bank_-_Diagon_Alley.jpg"
+            ],
+            "description": "Universal expanded the Wizarding World to Universal Studios Florida with Diagon Alley, connected to Hogsmeade via the Hogwarts Express train (requiring park-to-park tickets). The expansion recreated the London-side of Harry Potter's world, including the labyrinthine shopping alley and Gringotts Bank.\n\nHarry Potter and the Escape from Gringotts combined a multi-dimensional thrill ride with 3D film sequences. The two Wizarding Worlds became reason alone to visit Universal Orlando, fundamentally shifting the competitive landscape.",
+            "metrics": {
+                "connection": "Hogwarts Express to Hogsmeade"
+            }
+        },
+        {
+            "id": "evt_shanghai_disney",
+            "title": "Shanghai Disneyland Opens",
+            "date_display": "June 16, 2016",
+            "date_start": "2016-06-16",
+            "group_ids": ["grp_immersive"],
+            "type": "Park Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "China-Specific Disney",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/63/Enchanted_Storybook_Castle_at_Shanghai_Disneyland.jpg"
+            ],
+            "description": "Shanghai Disneyland represented Disney's largest single international investment—$5.5 billion for the resort. Unlike Tokyo's clone approach or Hong Kong's small scale, Shanghai was designed from scratch with unique attractions and the tallest Disney castle ever built.\n\nPirates of the Caribbean - Battle for the Sunken Treasure reimagined the classic attraction with boat-riding technology and digital projection, creating a wholly new experience. TRON Lightcycle Power Run offered Disney's most thrilling in-house coaster. Shanghai demonstrated Disney could still innovate.",
+            "metrics": {
+                "investment": "$5.5 billion",
+                "castle_height": "Tallest Disney castle"
+            }
+        },
+        {
+            "id": "evt_pandora",
+            "title": "Pandora - The World of Avatar Opens",
+            "date_display": "May 27, 2017",
+            "date_start": "2017-05-27",
+            "group_ids": ["grp_immersive"],
+            "type": "Land Opening",
+            "innovator": "Walt Disney Imagineering, James Cameron",
+            "innovation": "Bioluminescent Environment",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b7/Pandora_-_The_World_of_Avatar_%2834263040713%29.jpg"
+            ],
+            "description": "Despite skepticism about Avatar's theme park viability (the 2009 film felt culturally forgotten by 2017), Pandora at Animal Kingdom delivered. The land's floating mountains, bioluminescent plants (spectacular at night), and alien botany created an otherworldly environment unlike anything in theme parks.\n\nFlight of Passage, a motion simulator where guests 'link' to fly a banshee, immediately became one of Disney's most acclaimed attractions, with wait times regularly exceeding three hours. Pandora proved that environmental immersion could compensate for modest IP enthusiasm.",
+            "metrics": {
+                "average_wait_time": "3+ hours (Flight of Passage, peak)"
+            }
+        },
+        {
+            "id": "evt_galaxys_edge",
+            "title": "Star Wars: Galaxy's Edge Opens",
+            "date_display": "May 31, 2019",
+            "date_start": "2019-05-31",
+            "group_ids": ["grp_immersive"],
+            "type": "Land Opening",
+            "innovator": "Walt Disney Imagineering, Lucasfilm",
+            "innovation": "Total IP Immersion",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3f/Smugglers_Run%2C_Galaxy%27s_Edge_%28May_31%2C_2019%29.jpg"
+            ],
+            "description": "Galaxy's Edge represented Disney's most ambitious themed land ever—14 acres of immersive Star Wars environment where guests weren't tourists but visitors to the remote planet Batuu. Every detail reinforced the world: cast members stayed 'in universe,' Coca-Cola bottles were redesigned to fit the aesthetic, and the food had Star Wars-appropriate names.\n\nThe Millennium Falcon: Smugglers Run attraction let guests actually pilot the famous ship. Rise of the Resistance, opening later in 2019, combined multiple ride systems into an 18-minute experience widely called the most impressive theme park attraction ever built.",
+            "metrics": {
+                "size": "14 acres",
+                "investment": "$1 billion per land"
+            }
+        },
+        {
+            "id": "evt_rise_resistance",
+            "title": "Rise of the Resistance Opens",
+            "date_display": "December 5, 2019",
+            "date_start": "2019-12-05",
+            "group_ids": ["grp_immersive"],
+            "type": "Attraction Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "Multi-System Attraction",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8c/Star_Wars_Rise_of_the_Resistance.jpg"
+            ],
+            "description": "Rise of the Resistance combined a pre-show, two ride systems (motion simulator and trackless dark ride), live actors, multiple massive sets, and 50+ Audio-Animatronics into an 18-minute experience. Guests are 'captured' by the First Order, placed in holding cells, and must escape through a Star Destroyer.\n\nThe attraction represented unprecedented scale and complexity for a theme park ride. Its frequent technical difficulties (given the systems involved) didn't diminish enthusiasm—it's consistently rated among the greatest theme park attractions ever created.",
+            "metrics": {
+                "duration": "~18 minutes",
+                "animatronics": "50+"
+            }
+        },
+        {
+            "id": "evt_avengers_campus",
+            "title": "Avengers Campus Opens",
+            "date_display": "June 4, 2021",
+            "date_start": "2021-06-04",
+            "group_ids": ["grp_immersive"],
+            "type": "Land Opening",
+            "innovator": "Walt Disney Imagineering, Marvel",
+            "innovation": "Marvel Theme Park Land",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d7/Avengers_Campus_at_Disney_California_Adventure_Park.jpg"
+            ],
+            "description": "Avengers Campus at Disney California Adventure brought the Marvel Cinematic Universe to a Disney-operated theme park (rights complications prevented this at Disney World). The land featured WEB SLINGERS: A Spider-Man Adventure, where guests use gestures to sling virtual webs.\n\nA swinging Spider-Man 'Stuntronics' robot and roaming character actors created a living superhero environment. A more elaborate version opened at Disneyland Paris, and further Marvel expansions continue at Disney parks worldwide.",
+            "metrics": {
+                "headline_attraction": "WEB SLINGERS"
+            }
+        },
+        {
+            "id": "evt_hagrid_motorbike",
+            "title": "Hagrid's Magical Creatures Motorbike Adventure Opens",
+            "date_display": "June 13, 2019",
+            "date_start": "2019-06-13",
+            "group_ids": ["grp_immersive"],
+            "type": "Ride Opening",
+            "innovator": "Universal Creative, Intamin",
+            "innovation": "Story-Driven Roller Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/ce/Hagrid%27s_Magical_Creatures_Motorbike_Adventure.jpg"
+            ],
+            "description": "Hagrid's Motorbike Adventure combined a highly themed roller coaster with seven launches, a free-fall drop, and elaborate creature encounters. The ride's capacity issues (guests waited 10+ hours on opening day) demonstrated the insatiable demand for quality Harry Potter attractions.\n\nThe coaster featured both forward and backward motorbike vehicles, with different experiences in each seat. Despite its coaster foundation, the attraction felt more like an adventure than a thrill ride, proving that story and theming could enhance even traditional ride formats.",
+            "metrics": {
+                "launches": "7",
+                "opening_day_wait": "10+ hours"
+            }
+        },
+        {
+            "id": "evt_super_nintendo_world",
+            "title": "Super Nintendo World Opens in Japan",
+            "date_display": "March 18, 2021",
+            "date_start": "2021-03-18",
+            "group_ids": ["grp_immersive"],
+            "type": "Land Opening",
+            "innovator": "Universal Creative, Nintendo",
+            "innovation": "Interactive Gaming Land",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b3/Super_Nintendo_World_at_Universal_Studios_Japan.jpg"
+            ],
+            "description": "Super Nintendo World at Universal Studios Japan brought the Mushroom Kingdom to life with remarkable fidelity. Guests wearing 'Power-Up Bands' could punch Question Blocks, collect virtual coins, and compete in mini-games throughout the land.\n\nThe Mario Kart: Koopa's Challenge attraction used AR goggles to overlay digital effects onto physical sets. The land's success accelerated Nintendo expansions to Hollywood and Orlando, establishing Nintendo as a premium theme park IP alongside Harry Potter and Star Wars.",
+            "metrics": {
+                "headline_attraction": "Mario Kart: Koopa's Challenge",
+                "interactive_element": "Power-Up Bands"
+            }
+        },
+        {
+            "id": "evt_cosmic_rewind",
+            "title": "Guardians of the Galaxy: Cosmic Rewind Opens",
+            "date_display": "May 27, 2022",
+            "date_start": "2022-05-27",
+            "group_ids": ["grp_immersive"],
+            "type": "Attraction Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "Reverse-Launch Indoor Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0a/Guardians_of_the_Galaxy_Cosmic_Rewind_%28May_2022%29.jpg"
+            ],
+            "description": "Guardians of the Galaxy: Cosmic Rewind at EPCOT featured the first reverse-launch on a Disney coaster and one of the longest enclosed coasters in the world. The ride vehicles rotate 360 degrees to face the action, synchronized to a random selection of 1970s/80s songs from the film franchise's soundtrack.\n\nThe attraction replaced the beloved Universe of Energy pavilion, representing EPCOT's ongoing transformation from future-focused edutainment to IP-based entertainment. Reception was strong, though some mourned EPCOT's original vision.",
+            "metrics": {
+                "length": "One of longest enclosed coasters",
+                "songs": "Multiple random selections"
+            }
+        },
+        {
+            "id": "evt_tron_magic_kingdom",
+            "title": "TRON Lightcycle Run Opens at Magic Kingdom",
+            "date_display": "April 4, 2023",
+            "date_start": "2023-04-04",
+            "group_ids": ["grp_immersive"],
+            "type": "Attraction Opening",
+            "innovator": "Walt Disney Imagineering",
+            "innovation": "Motorcycle Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/81/TRON_Lightcycle_Run.jpg"
+            ],
+            "description": "TRON Lightcycle Run, a clone of Shanghai's popular attraction, finally opened at Magic Kingdom after years of construction delays (including pandemic interruptions). Guests board motorcycle-style vehicles for a high-speed race through the digital world of TRON.\n\nThe ride's canopy, which glows with grid-like patterns at night, added a striking new element to Tomorrowland's skyline. The attraction represented Disney's ongoing effort to add thrill rides to appeal to broader demographics.",
+            "metrics": {
+                "top_speed": "59 mph",
+                "duration": "~2 minutes"
+            }
+        },
+        {
+            "id": "evt_velocicoaster",
+            "title": "VelociCoaster Opens at Islands of Adventure",
+            "date_display": "June 10, 2021",
+            "date_start": "2021-06-10",
+            "group_ids": ["grp_immersive"],
+            "type": "Ride Opening",
+            "innovator": "Universal Creative, Intamin",
+            "innovation": "Premier Theme Park Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0f/VelociCoaster.jpg"
+            ],
+            "description": "VelociCoaster instantly earned acclaim as one of the world's best roller coasters, combining intense thrills with Jurassic World theming. The ride features a 155-foot top hat, four inversions, and a terrifying zero-gravity stall that turns riders upside down mere feet above the lagoon.\n\nCrucially, VelociCoaster proved that theme parks could deliver world-class coaster experiences without sacrificing theming. The elaborate queue through the velociraptor paddock and the ride's near-miss encounters with animatronic raptors elevated it beyond pure thrill machine.",
+            "metrics": {
+                "top_speed": "70 mph",
+                "inversions": "4"
+            }
+        },
+        {
+            "id": "evt_iron_gwazi",
+            "title": "Iron Gwazi Opens at Busch Gardens Tampa",
+            "date_display": "March 11, 2022",
+            "date_start": "2022-03-11",
+            "group_ids": ["grp_immersive"],
+            "type": "Ride Opening",
+            "innovator": "Rocky Mountain Construction",
+            "innovation": "Hybrid RMC Coaster",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d2/Iron_Gwazi_%28cropped%29.jpg"
+            ],
+            "description": "Iron Gwazi, a 'hybrid' coaster converting the defunct wooden Gwazi into a steel-tracked marvel, became the world's tallest and fastest hybrid coaster at opening. Rocky Mountain Construction's hybrid conversions had transformed dated wooden coasters worldwide into best-in-class experiences.\n\nThe coaster delivered 12 moments of airtime and demonstrated that older parks could rejuvenate classic rides rather than demolishing them. Iron Gwazi represented the maturation of the RMC hybrid formula.",
+            "metrics": {
+                "height": "206 feet",
+                "top_speed": "76 mph"
+            }
+        },
+        {
+            "id": "evt_epic_universe",
+            "title": "Epic Universe Set to Open",
+            "date_display": "May 22, 2025",
+            "date_start": "2025-05-22",
+            "group_ids": ["grp_immersive"],
+            "type": "Park Opening",
+            "innovator": "Universal Creative",
+            "innovation": "Multi-IP Mega Park",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/02/Universal_Epic_Universe_Logo.png"
+            ],
+            "description": "Universal's Epic Universe is set to be the largest and most ambitious theme park opening in decades. The park will feature five themed worlds including Super Nintendo World, the Wizarding World's Ministry of Magic, and Universal's Classic Monsters. A celestial-themed hub connects the lands.\n\nWith rumors of revolutionary attractions including a Mario Kart ride and Dark Universe horror experiences, Epic Universe represents Universal's most aggressive challenge to Disney's Orlando dominance. The park's opening is expected to reshape the competitive landscape of the entire industry.",
+            "metrics": {
+                "themed_worlds": "5",
+                "status": "Opening May 2025"
+            }
+        }
+    ]
+}

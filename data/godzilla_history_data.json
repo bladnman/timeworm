@@ -1,0 +1,743 @@
+{
+    "meta": {
+        "title": "King of the Monsters: A History of Godzilla",
+        "version": "1.0.0",
+        "generated_date": "2025-12-06",
+        "overview": "Godzilla is more than a monster—he is a mirror. Born from Japan's atomic trauma in 1954, this towering reptile has spent seven decades reflecting society's deepest fears back at itself: nuclear annihilation, environmental destruction, government incompetence, and the hubris of technology. From somber allegory to campy hero to CGI spectacle, Godzilla has been reinvented for every generation while remaining cinema's most enduring kaiju.",
+        "attribution": "Historical research compiled from Toho Studios archives, film history, and cultural analysis."
+    },
+    "groups": [
+        {
+            "id": "grp_birth",
+            "title": "Part I: Birth of a Monster",
+            "date_range": "1954 – 1955",
+            "description": "Godzilla emerged from Japan's nuclear trauma—the bombings of Hiroshima and Nagasaki, and the Lucky Dragon No. 5 incident where a fishing boat was contaminated by American hydrogen bomb tests. The original film was deadly serious, a horror movie that gave form to an entire nation's fear."
+        },
+        {
+            "id": "grp_showa",
+            "title": "Part II: The Showa Era",
+            "date_range": "1955 – 1975",
+            "description": "Over two decades, Toho produced fifteen Godzilla films that gradually transformed the monster from terrifying threat to defender of Earth. As budgets shrank and the target audience skewed younger, Godzilla became a hero who protected Japan from alien invaders and fellow monsters."
+        },
+        {
+            "id": "grp_heisei",
+            "title": "Part III: The Heisei Era",
+            "date_range": "1984 – 1995",
+            "description": "After a nine-year hiatus, Godzilla returned as a serious threat in films that ignored the campy sequels. This era featured improved special effects, darker themes, and a continuous storyline that culminated in Godzilla's death—setting the stage for an American remake."
+        },
+        {
+            "id": "grp_millennium",
+            "title": "Part IV: The Millennium Era",
+            "date_range": "1999 – 2004",
+            "description": "Toho took an anthology approach, with each film existing as a standalone sequel to the 1954 original. This allowed filmmakers to reimagine Godzilla's relationship with humanity without being constrained by previous sequels."
+        },
+        {
+            "id": "grp_american",
+            "title": "Part V: American Attempts & MonsterVerse",
+            "date_range": "1998 – 2024",
+            "description": "Hollywood's relationship with Godzilla has been complicated. The 1998 remake was widely rejected by fans, but Legendary Pictures' 2014 reboot successfully launched the MonsterVerse, bringing Godzilla to global audiences and pitting him against Kong."
+        },
+        {
+            "id": "grp_reiwa",
+            "title": "Part VI: The Reiwa Era",
+            "date_range": "2016 – 2025",
+            "description": "Japanese productions reclaimed Godzilla's serious roots. Hideaki Anno's 'Shin Godzilla' used the monster to critique government dysfunction, while 'Godzilla Minus One' returned to the post-war setting and won an Academy Award for Visual Effects."
+        }
+    ],
+    "events": [
+        {
+            "id": "evt_lucky_dragon",
+            "title": "Lucky Dragon No. 5 Incident",
+            "date_display": "March 1, 1954",
+            "date_start": "1954-03-01",
+            "group_ids": ["grp_birth"],
+            "type": "Historical Event",
+            "innovation": "Nuclear Inspiration for Godzilla",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/54/Castle_Bravo_Blast.jpg"
+            ],
+            "description": "The Japanese fishing boat Daigo Fukuryu Maru (Lucky Dragon No. 5) was caught in the fallout from the Castle Bravo hydrogen bomb test at Bikini Atoll. All 23 crew members suffered acute radiation syndrome, and radio operator Aikichi Kuboyama died seven months later.\n\nThe incident reignited Japan's nuclear trauma and sparked international outrage. Producer Tomoyuki Tanaka, stuck on a flight home after a film project fell through, conceived of a monster movie that would channel this national anxiety. Within months, Godzilla was in production.",
+            "metrics": {
+                "casualties": "1 death, 22 injured",
+                "bomb_yield": "15 megatons"
+            }
+        },
+        {
+            "id": "evt_original_gojira",
+            "title": "Original Gojira Premiere",
+            "date_display": "November 3, 1954",
+            "date_start": "1954-11-03",
+            "group_ids": ["grp_birth"],
+            "type": "Film Release",
+            "innovator": "Ishiro Honda, Tomoyuki Tanaka, Eiji Tsuburaya",
+            "innovation": "Suitmation Special Effects",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/43/Gojira_1954_Japanese_poster.jpg"
+            ],
+            "description": "Toho Studios released 'Gojira,' directed by Ishiro Honda with special effects by Eiji Tsuburaya. The film depicted a prehistoric sea creature mutated and awakened by hydrogen bomb tests, which proceeds to destroy Tokyo. The tone was somber, the destruction horrifying—audiences who had lived through the firebombings watched their city leveled again.\n\nThe film was a massive hit, selling 9.6 million tickets in Japan. Critics recognized it as more than a monster movie; it was a meditation on nuclear weapons and Japan's place in the atomic age. The monster's name combined 'gorira' (gorilla) and 'kujira' (whale), though legend claims it was the nickname of a large Toho employee.",
+            "metrics": {
+                "box_office": "9.6 million tickets (Japan)",
+                "budget": "¥100 million"
+            }
+        },
+        {
+            "id": "evt_haruo_nakajima",
+            "title": "Haruo Nakajima: First Suit Actor",
+            "date_display": "1954",
+            "date_start": "1954-01-01",
+            "group_ids": ["grp_birth"],
+            "type": "Behind the Scenes",
+            "innovator": "Haruo Nakajima",
+            "innovation": "Suitmation Performance",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Godzilla_statue_at_Toho.jpg"
+            ],
+            "description": "Stuntman Haruo Nakajima became the first person to wear the Godzilla suit, a role he would reprise for twelve films over twenty years. The original suit weighed over 200 pounds, made of concrete and covered in latex. Nakajima could only remain inside for minutes at a time before nearly passing out from heat.\n\nNakajima brought personality to Godzilla through physicality—the way the monster moved, turned its head, and reacted to attacks. His performance established Godzilla as a character, not just a special effect. The art of 'suitmation' he pioneered would define Japanese tokusatsu (special effects) filmmaking for decades.",
+            "metrics": {
+                "suit_weight": "200+ pounds",
+                "films": "12 as Godzilla"
+            }
+        },
+        {
+            "id": "evt_akira_ifukube",
+            "title": "Akira Ifukube Composes Iconic Score",
+            "date_display": "1954",
+            "date_start": "1954-01-01",
+            "group_ids": ["grp_birth"],
+            "type": "Music",
+            "innovator": "Akira Ifukube",
+            "innovation": "Godzilla Theme",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f3/Akira_Ifukube.jpg"
+            ],
+            "description": "Composer Akira Ifukube created the thunderous march that would become synonymous with Godzilla. The main theme's pounding rhythm and brass fanfares conveyed both the monster's unstoppable power and the military's futile resistance. Ifukube also designed Godzilla's roar by rubbing a resin-coated leather glove along the loosened strings of a contrabass.\n\nIfukube would score many subsequent Godzilla films, and his themes became inseparable from the character. Even non-Ifukube Godzilla scores often quote his motifs, acknowledging that his music IS Godzilla's musical identity.",
+            "metrics": {
+                "godzilla_films_scored": "11"
+            }
+        },
+        {
+            "id": "evt_godzilla_raids_again",
+            "title": "Godzilla Raids Again",
+            "date_display": "April 24, 1955",
+            "date_start": "1955-04-24",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Motoyoshi Oda",
+            "innovation": "First Monster Battle",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/63/Godzilla_Raids_Again_poster.jpg"
+            ],
+            "description": "The first sequel introduced Anguirus, a giant ankylosaur, creating the template for monster-versus-monster battles that would define the franchise. The film was rushed into production to capitalize on the original's success, and the reduced budget showed in the effects work.\n\nIn America, the film was released as 'Gigantis, the Fire Monster,' with distributors bizarrely pretending it featured a different creature entirely. This began a long tradition of American distributors mishandling Godzilla films.",
+            "metrics": {
+                "new_monster": "Anguirus"
+            }
+        },
+        {
+            "id": "evt_king_of_monsters",
+            "title": "Godzilla, King of the Monsters (American Re-edit)",
+            "date_display": "April 27, 1956",
+            "date_start": "1956-04-27",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Terry Morse",
+            "innovation": "American Localization",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/9/90/Godzilla%2C_King_of_the_Monsters%21_%281956%29_theatrical_poster.jpg"
+            ],
+            "description": "American distributors heavily re-edited 'Gojira,' removing approximately 40 minutes of footage and inserting new scenes with Raymond Burr as American reporter Steve Martin. Much of the nuclear allegory was stripped out, transforming the film into a straightforward monster movie.\n\nDespite the butchering, this version introduced Godzilla to American audiences and was a box office success. For decades, many Western viewers only knew this compromised version. The original Japanese cut wasn't widely available in America until 2004.",
+            "metrics": {
+                "footage_removed": "~40 minutes",
+                "footage_added": "~20 minutes (Burr scenes)"
+            }
+        },
+        {
+            "id": "evt_king_kong_vs_godzilla",
+            "title": "King Kong vs. Godzilla",
+            "date_display": "August 11, 1962",
+            "date_start": "1962-08-11",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Ishiro Honda",
+            "innovation": "Crossover Event Film",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/13/King_Kong_vs._Godzilla_%281962%29_Japanese_theatrical_poster.jpg"
+            ],
+            "description": "The first Godzilla film in color pitted him against cinema's other iconic giant monster in a corporate-satire comedy. The film was Toho's biggest hit ever, selling 11.2 million tickets in Japan—a record for the franchise that still stands.\n\nThe production licensed Kong from RKO, beginning a complex rights situation that would take decades to untangle. The American version added different footage and music, making the two versions significantly different experiences. Contrary to popular myth, both versions feature the same ambiguous ending.",
+            "metrics": {
+                "box_office": "11.2 million tickets (Japan record)"
+            }
+        },
+        {
+            "id": "evt_mothra_vs_godzilla",
+            "title": "Mothra vs. Godzilla",
+            "date_display": "April 29, 1964",
+            "date_start": "1964-04-29",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Ishiro Honda",
+            "innovation": "Monster Team-Up Format",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8e/Mothra_vs._Godzilla_poster.jpg"
+            ],
+            "description": "Generally considered one of the best Showa-era films, 'Mothra vs. Godzilla' featured strong human characters, social commentary about corporate greed, and spectacular monster battles. Mothra, the benevolent giant moth, was already an established Toho character with her own mythology.\n\nThe film marked the beginning of Godzilla's transformation from pure villain to antihero. While still a menace to humanity, Godzilla was now fighting other monsters, setting up his eventual role as Earth's defender.",
+            "metrics": {
+                "rating": "Consistently ranked top 5 Godzilla films"
+            }
+        },
+        {
+            "id": "evt_ghidorah",
+            "title": "Ghidorah, the Three-Headed Monster",
+            "date_display": "December 20, 1964",
+            "date_start": "1964-12-20",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Ishiro Honda",
+            "innovation": "Godzilla as Hero",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f5/Ghidorah_the_Three-Headed_Monster_poster.jpg"
+            ],
+            "description": "This film introduced King Ghidorah, a golden three-headed dragon from space who would become Godzilla's greatest recurring enemy. More significantly, it marked the turning point where Godzilla became a protector rather than a threat, teaming with Rodan and Mothra to defend Earth.\n\nThe shift was controversial among fans who preferred Godzilla as a force of destruction, but it proved commercially successful. Godzilla as defender of Earth would define the franchise for the next decade.",
+            "metrics": {
+                "new_monster": "King Ghidorah"
+            }
+        },
+        {
+            "id": "evt_invasion_astro_monster",
+            "title": "Invasion of Astro-Monster",
+            "date_display": "December 19, 1965",
+            "date_start": "1965-12-19",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Ishiro Honda",
+            "innovation": "Science Fiction Elements",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/4d/Invasion_of_Astro-Monster_poster.jpg"
+            ],
+            "description": "Also known as 'Monster Zero,' this film introduced alien invaders who borrow Godzilla and Rodan to fight Ghidorah on Planet X, only to use mind control to turn all three monsters against Earth. The science fiction elements—space travel, alien diplomacy—expanded the franchise's scope.\n\nNick Adams became the first American actor to appear in a Japanese Godzilla production (as opposed to insert footage), reflecting Toho's increasing interest in international markets.",
+            "metrics": {
+                "setting": "First Godzilla film with space scenes"
+            }
+        },
+        {
+            "id": "evt_son_of_godzilla",
+            "title": "Son of Godzilla",
+            "date_display": "December 16, 1967",
+            "date_start": "1967-12-16",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Jun Fukuda",
+            "innovation": "Child-Friendly Direction",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/45/Son_of_Godzilla_1967.jpg"
+            ],
+            "description": "This film introduced Minilla (Minya in some translations), Godzilla's son—a cartoonish baby monster designed to appeal to children. The franchise's shift toward younger audiences was now explicit. Godzilla was no longer a metaphor for nuclear destruction; he was a father teaching his child to blow atomic breath.\n\nThe film's lighter tone and tropical setting (shot on location in Guam) marked a significant departure from the franchise's origins. Critics derided the direction, but children loved Minilla.",
+            "metrics": {
+                "new_character": "Minilla (Godzilla's son)"
+            }
+        },
+        {
+            "id": "evt_destroy_all_monsters",
+            "title": "Destroy All Monsters",
+            "date_display": "August 1, 1968",
+            "date_start": "1968-08-01",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Ishiro Honda",
+            "innovation": "Kaiju Ensemble Film",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3c/Destroy_All_Monsters_1968.jpg"
+            ],
+            "description": "Intended as a finale for the franchise, 'Destroy All Monsters' assembled eleven Toho monsters for an apocalyptic battle against King Ghidorah. Set in 1999, the film imagined a future where all monsters live peacefully on 'Monsterland' until alien invaders unleash them on Earth's capitals.\n\nThe climactic battle—all monsters versus Ghidorah—remains one of the most spectacular sequences in the franchise. Akira Ifukube's triumphant score elevated the monster-mash into something genuinely exciting.",
+            "metrics": {
+                "monsters_featured": "11"
+            }
+        },
+        {
+            "id": "evt_hedorah",
+            "title": "Godzilla vs. Hedorah (The Smog Monster)",
+            "date_display": "July 24, 1971",
+            "date_start": "1971-07-24",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Yoshimitsu Banno",
+            "innovation": "Environmental Message",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/85/Godzilla_vs._Hedorah_1971.jpg"
+            ],
+            "description": "One of the strangest entries in the franchise, 'Godzilla vs. Hedorah' featured a pollution monster that feeds on smog and industrial waste. The film's psychedelic style—including animated sequences and a nightclub scene—reflected early 1970s counterculture.\n\nProducer Tomoyuki Tanaka reportedly hated the film so much that he told director Yoshimitsu Banno he had 'ruined Godzilla' and banned him from directing another entry. Yet the film's environmental message proved prescient, and it has been reassessed as one of the more ambitious Showa entries.",
+            "metrics": {
+                "theme": "Pollution and environmental destruction"
+            }
+        },
+        {
+            "id": "evt_megalon",
+            "title": "Godzilla vs. Megalon",
+            "date_display": "March 17, 1973",
+            "date_start": "1973-03-17",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Jun Fukuda",
+            "innovation": "Jet Jaguar Introduction",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Godzilla_statue_at_Toho.jpg"
+            ],
+            "description": "Godzilla vs. Megalon featured Godzilla teaming with Jet Jaguar, a size-changing robot designed by a child in a TV contest, to battle the underground Seatopian civilization's monster Megalon. Produced in just three weeks on a minimal budget, the film represented the Showa era's cheapest and campiest entry.\n\nDespite—or because of—its low production values, the film became a cult classic. Its infamous flying kick scene (Godzilla sliding on his tail) became a meme decades later. The film's reputation as gloriously terrible introduced many Western fans to Godzilla through late-night television.",
+            "metrics": {
+                "production_time": "3 weeks",
+                "cult_status": "Camp classic"
+            }
+        },
+        {
+            "id": "evt_mechagodzilla",
+            "title": "Godzilla vs. MechaGodzilla",
+            "date_display": "March 21, 1974",
+            "date_start": "1974-03-21",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Jun Fukuda",
+            "innovation": "Robot Doppelganger",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1f/Godzilla_vs._Mechagodzilla_1974.jpg"
+            ],
+            "description": "Alien invaders create a robot duplicate of Godzilla, leading to one of the franchise's most iconic antagonists. MechaGodzilla's sleek metallic design—bristling with missiles, eye lasers, and finger rockets—captured children's imaginations and became a merchandising bonanza.\n\nThe film injected James Bond-style spy elements into the kaiju formula, with secret bases and alien infiltration plots. MechaGodzilla would return repeatedly throughout the franchise's history, always as a formidable opponent.",
+            "metrics": {
+                "new_monster": "MechaGodzilla"
+            }
+        },
+        {
+            "id": "evt_terror_mechagodzilla",
+            "title": "Terror of MechaGodzilla",
+            "date_display": "March 15, 1975",
+            "date_start": "1975-03-15",
+            "group_ids": ["grp_showa"],
+            "type": "Film Release",
+            "innovator": "Ishiro Honda",
+            "innovation": "Showa Era Finale",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5e/Terror_of_Mechagodzilla_poster.jpg"
+            ],
+            "description": "Ishiro Honda returned to direct what would be the final Showa-era Godzilla film. The franchise had been in decline—this entry sold fewer tickets than any previous Godzilla movie—and Toho put the series on hiatus. The Showa era ended not with a bang but with diminishing returns.\n\nThe film featured a surprisingly dark story involving a cyborg woman and her scientist father, harkening back to the tragedy of Honda's earlier work. It would be nine years before Godzilla returned to screens.",
+            "metrics": {
+                "box_office": "Lowest of Showa era"
+            }
+        },
+        {
+            "id": "evt_first_video_game",
+            "title": "First Godzilla Video Game Released",
+            "date_display": "1983",
+            "date_start": "1983-01-01",
+            "group_ids": ["grp_showa"],
+            "type": "Video Game",
+            "innovation": "Interactive Godzilla Media",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Godzilla_statue_at_Toho.jpg"
+            ],
+            "description": "The first Godzilla video game was released for the Commodore 64 and other home computers, allowing players to control the King of the Monsters for the first time. This simple game laid the foundation for dozens of Godzilla games across every subsequent platform.\n\nThe gaming industry would prove crucial for keeping Godzilla relevant during periods between films. From fighting games to city destruction simulators, Godzilla games allowed fans to experience the monster's power interactively.",
+            "metrics": {
+                "platform": "Commodore 64, early home computers"
+            }
+        },
+        {
+            "id": "evt_return_godzilla",
+            "title": "The Return of Godzilla (Heisei Reboot)",
+            "date_display": "December 15, 1984",
+            "date_start": "1984-12-15",
+            "group_ids": ["grp_heisei"],
+            "type": "Film Release",
+            "innovator": "Koji Hashimoto",
+            "innovation": "Continuity Reboot",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5f/The_Return_of_Godzilla_1984.jpg"
+            ],
+            "description": "After nine years, Godzilla returned in a direct sequel to the 1954 original that ignored all intervening films. The tone was once again serious—Godzilla was a terrifying force of destruction, not a lovable hero. Cold War tensions informed the plot, with both American and Soviet forces threatening nuclear responses.\n\nThe new suit was significantly larger and more menacing than Showa-era designs. Toho marketed the film as a return to Godzilla's roots, appealing to adults who had grown up with the character. It was a box office success, launching a new era.",
+            "metrics": {
+                "box_office": "Successful relaunch"
+            }
+        },
+        {
+            "id": "evt_biollante",
+            "title": "Godzilla vs. Biollante",
+            "date_display": "December 16, 1989",
+            "date_start": "1989-12-16",
+            "group_ids": ["grp_heisei"],
+            "type": "Film Release",
+            "innovator": "Kazuki Omori",
+            "innovation": "Biotechnology Themes",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/75/Godzilla_vs._Biollante_1989.jpg"
+            ],
+            "description": "A scientist combines Godzilla's cells with those of a rose and his deceased daughter, creating Biollante—a tragic plant-monster hybrid. The film explored genetic engineering and biotechnology themes, contemporary anxieties in late 1980s Japan.\n\nBiollante's design—a massive rose with tentacles and a toothed maw—was unlike anything in the franchise. The film performed modestly at the box office, leading Toho to return to classic monsters for subsequent entries.",
+            "metrics": {
+                "new_monster": "Biollante"
+            }
+        },
+        {
+            "id": "evt_king_ghidorah_time",
+            "title": "Godzilla vs. King Ghidorah",
+            "date_display": "December 14, 1991",
+            "date_start": "1991-12-14",
+            "group_ids": ["grp_heisei"],
+            "type": "Film Release",
+            "innovator": "Kazuki Omori",
+            "innovation": "Time Travel Plot",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/10/Godzilla_vs._King_Ghidorah_1991.jpg"
+            ],
+            "description": "Time travelers from the 23rd century attempt to erase Godzilla from history, replacing him with their own monster: King Ghidorah. The convoluted plot involved World War II, a dinosaur surviving the atomic bomb, and a cyborg Ghidorah. American critics noted some seemingly anti-American elements in the WWII sequences.\n\nDespite narrative confusion, the film was a massive hit, validating Toho's decision to bring back classic monsters. The redesigned King Ghidorah looked spectacular.",
+            "metrics": {
+                "box_office": "Major success"
+            }
+        },
+        {
+            "id": "evt_mechagodzilla_ii",
+            "title": "Godzilla vs. MechaGodzilla II",
+            "date_display": "December 11, 1993",
+            "date_start": "1993-12-11",
+            "group_ids": ["grp_heisei"],
+            "type": "Film Release",
+            "innovator": "Takao Okawara",
+            "innovation": "Government Mecha",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c7/Godzilla_vs._Mechagodzilla_II_1993.jpg"
+            ],
+            "description": "Unlike the alien-built Showa MechaGodzilla, this version was constructed by the United Nations Godzilla Countermeasures Center using technology reverse-engineered from the future Mecha-King Ghidorah. The film also introduced Baby Godzilla, a more naturalistic infant than the cartoonish Minilla.\n\nThe climactic battle featured impressive special effects, with MechaGodzilla combined with the flying Garuda to form Super MechaGodzilla. The film performed well, continuing the Heisei era's commercial success.",
+            "metrics": {
+                "new_mecha": "Super MechaGodzilla"
+            }
+        },
+        {
+            "id": "evt_spacegodzilla",
+            "title": "Godzilla vs. SpaceGodzilla",
+            "date_display": "December 10, 1994",
+            "date_start": "1994-12-10",
+            "group_ids": ["grp_heisei"],
+            "type": "Film Release",
+            "innovator": "Kensho Yamashita",
+            "innovation": "Cosmic Godzilla Variant",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Godzilla_statue_at_Toho.jpg"
+            ],
+            "description": "SpaceGodzilla, a crystalline monster created when Godzilla's cells were carried into space and merged with a black hole's energy, attacked Earth. The film introduced MOGUERA, a rebuilt MechaGodzilla spinoff, and featured Little Godzilla (the evolved Baby Godzilla) prominently.\n\nThe film explored the cosmic expansion of Godzilla's biology—cells from Biollante or Mothra having reached space to create this doppelganger. While not among the Heisei era's most acclaimed entries, it demonstrated the franchise's willingness to explore increasingly science-fiction concepts.",
+            "metrics": {
+                "new_monster": "SpaceGodzilla",
+                "new_mecha": "MOGUERA"
+            }
+        },
+        {
+            "id": "evt_destoroyah",
+            "title": "Godzilla vs. Destoroyah (Godzilla Dies)",
+            "date_display": "December 9, 1995",
+            "date_start": "1995-12-09",
+            "group_ids": ["grp_heisei"],
+            "type": "Film Release",
+            "innovator": "Takao Okawara",
+            "innovation": "Death of Godzilla",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/50/Godzilla_vs._Destoroyah_1995.jpg"
+            ],
+            "description": "Toho decided to kill Godzilla to clear the field for an American remake. The film brought the franchise full circle: Destoroyah is a monster evolved from the Oxygen Destroyer that killed the original 1954 Godzilla. Meanwhile, Godzilla himself suffers a nuclear meltdown, his body unable to contain his power.\n\nGodzilla's death scene—his flesh melting away, Akira Ifukube's mournful score playing—was surprisingly emotional for longtime fans. The Heisei era ended on a high note, with Godzilla Junior absorbing his father's energy to become the new Godzilla.",
+            "metrics": {
+                "significance": "First on-screen Godzilla death"
+            }
+        },
+        {
+            "id": "evt_emmerich_godzilla",
+            "title": "Roland Emmerich's American Godzilla",
+            "date_display": "May 20, 1998",
+            "date_start": "1998-05-20",
+            "group_ids": ["grp_american"],
+            "type": "Film Release",
+            "innovator": "Roland Emmerich, Dean Devlin",
+            "innovation": "Hollywood Remake Attempt",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/25/Godzilla_%281998_film%29_poster.jpg"
+            ],
+            "description": "TriStar Pictures released an American Godzilla that bore little resemblance to the Japanese original. The creature was redesigned as a mutated iguana that laid eggs and could be killed by conventional missiles. Director Roland Emmerich and producer Dean Devlin openly admitted they weren't fans of the original films.\n\nFans derisively nicknamed the creature 'GINO' (Godzilla In Name Only). While commercially successful ($379 million worldwide), the film was critically panned and rejected by Godzilla purists. Toho later rebranded the creature as 'Zilla,' saying the American production 'took the God out of Godzilla.'",
+            "metrics": {
+                "box_office": "$379 million worldwide",
+                "fan_reception": "Widely rejected"
+            }
+        },
+        {
+            "id": "evt_godzilla_2000",
+            "title": "Godzilla 2000: Millennium",
+            "date_display": "December 11, 1999",
+            "date_start": "1999-12-11",
+            "group_ids": ["grp_millennium"],
+            "type": "Film Release",
+            "innovator": "Takao Okawara",
+            "innovation": "Millennium Era Launch",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c8/Godzilla_2000_Millennium_poster.jpg"
+            ],
+            "description": "Toho quickly reclaimed Godzilla with a new Japanese production following the American film's poor reception among fans. The Millennium era began with an anthology approach—each film was a standalone sequel to the 1954 original, ignoring all other continuity.\n\nThe new Godzilla design featured jagged dorsal spines and a more aggressive appearance. The film was well-received in Japan and even got a limited American theatrical release through TriStar.",
+            "metrics": {
+                "approach": "Standalone anthology"
+            }
+        },
+        {
+            "id": "evt_gmk",
+            "title": "GMK: Giant Monsters All-Out Attack",
+            "date_display": "December 15, 2001",
+            "date_start": "2001-12-15",
+            "group_ids": ["grp_millennium"],
+            "type": "Film Release",
+            "innovator": "Shusuke Kaneko",
+            "innovation": "Supernatural Horror Take",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/7c/Godzilla%2C_Mothra_and_King_Ghidorah_-_Giant_Monsters_All-Out_Attack_%282001%29.jpg"
+            ],
+            "description": "Director Shusuke Kaneko, famous for revitalizing the Gamera franchise, brought a supernatural horror sensibility to Godzilla. In this version, Godzilla is possessed by the souls of Pacific War victims seeking revenge on Japan for forgetting their sacrifice. The 'Guardian Monsters'—Baragon, Mothra, and a heroic King Ghidorah—defend Japan.\n\nThe role reversal (Ghidorah as hero, Godzilla as villain) was controversial, but the film's craft and thematic depth won critical praise. Many consider it the best Millennium-era entry.",
+            "metrics": {
+                "critical_reception": "Best Millennium film"
+            }
+        },
+        {
+            "id": "evt_tokyo_sos",
+            "title": "Godzilla: Tokyo SOS",
+            "date_display": "December 13, 2003",
+            "date_start": "2003-12-13",
+            "group_ids": ["grp_millennium"],
+            "type": "Film Release",
+            "innovator": "Masaaki Tezuka",
+            "innovation": "Kiryu Returns",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Godzilla_statue_at_Toho.jpg"
+            ],
+            "description": "The only direct sequel in the Millennium era, Tokyo SOS continued the story of Kiryu (MechaGodzilla) and brought back Mothra for a team-up against Godzilla. The film featured impressive kaiju battles and explored the ethics of using the original Godzilla's bones as MechaGodzilla's framework.\n\nMothra's twin fairies (the Shobijin) warned that using Godzilla's remains violated natural law. The film balanced spectacle with ecological themes, a callback to the original film's serious undertones amidst increasingly fantastical battles.",
+            "metrics": {
+                "returning_monster": "Mothra",
+                "continuity": "Direct sequel to Godzilla Against MechaGodzilla"
+            }
+        },
+        {
+            "id": "evt_final_wars",
+            "title": "Godzilla: Final Wars",
+            "date_display": "December 4, 2004",
+            "date_start": "2004-12-04",
+            "group_ids": ["grp_millennium"],
+            "type": "Film Release",
+            "innovator": "Ryuhei Kitamura",
+            "innovation": "50th Anniversary Spectacular",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/4f/Godzilla_Final_Wars_2004.jpg"
+            ],
+            "description": "For Godzilla's 50th anniversary, Toho produced an over-the-top action spectacular featuring nearly every monster from the franchise's history. Director Ryuhei Kitamura, known for action films, staged elaborate martial arts sequences alongside monster battles.\n\nThe film famously dispatched the American 'Zilla' in about thirteen seconds—Toho's revenge for the 1998 film. Despite the spectacle, 'Final Wars' underperformed at the box office, and Toho announced another hiatus for the franchise.",
+            "metrics": {
+                "monsters_featured": "15",
+                "anniversary": "50th"
+            }
+        },
+        {
+            "id": "evt_legendary_godzilla",
+            "title": "Legendary Pictures Godzilla",
+            "date_display": "May 16, 2014",
+            "date_start": "2014-05-16",
+            "group_ids": ["grp_american"],
+            "type": "Film Release",
+            "innovator": "Gareth Edwards",
+            "innovation": "MonsterVerse Launch",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/7e/Godzilla_%282014%29_poster.jpg"
+            ],
+            "description": "After a decade-long hiatus, Legendary Pictures rebooted Godzilla for American audiences with a film that respected the character's origins. Director Gareth Edwards treated Godzilla with awe, keeping him partially hidden for much of the film—a choice that divided audiences but gave the monster's reveal tremendous impact.\n\nThe film was a massive commercial success ($529 million worldwide), launching the 'MonsterVerse' shared universe. This Godzilla was a force of nature that restored balance by fighting other monsters (the MUTOs), establishing him as an ambiguous protector rather than simple hero or villain.",
+            "metrics": {
+                "box_office": "$529 million worldwide",
+                "franchise": "MonsterVerse launch"
+            }
+        },
+        {
+            "id": "evt_tourism_ambassador",
+            "title": "Godzilla Named Tourism Ambassador",
+            "date_display": "April 9, 2015",
+            "date_start": "2015-04-09",
+            "group_ids": ["grp_reiwa"],
+            "type": "Cultural Honor",
+            "innovation": "Municipal Mascot Status",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Godzilla_statue_at_Toho.jpg"
+            ],
+            "description": "Tokyo's Shinjuku Ward appointed Godzilla as its official tourism ambassador, unveiling a massive Godzilla head sculpture atop the Toho Building in Kabukicho. Visitors could visit a terrace to stand at eye level with the iconic monster—complete with scheduled roars and smoke effects.\n\nThe appointment recognized Godzilla's contribution to Japanese pop culture and tourism. Shinjuku, home to Toho Studios' headquarters and the famous Godzilla intersection, had long been associated with the monster. The honor made Godzilla's cultural significance official.",
+            "metrics": {
+                "location": "Shinjuku Ward, Tokyo",
+                "attraction": "Godzilla Head terrace"
+            }
+        },
+        {
+            "id": "evt_shin_godzilla",
+            "title": "Shin Godzilla",
+            "date_display": "July 29, 2016",
+            "date_start": "2016-07-29",
+            "group_ids": ["grp_reiwa"],
+            "type": "Film Release",
+            "innovator": "Hideaki Anno, Shinji Higuchi",
+            "innovation": "Post-Fukushima Allegory",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8b/Shin_Godzilla_%28Japanese_poster%29.jpg"
+            ],
+            "description": "Evangelion creator Hideaki Anno and special effects director Shinji Higuchi reimagined Godzilla for the post-Fukushima era. The film is largely about government bureaucracy—endless meetings, jurisdictional disputes, approval processes—while a mutating Godzilla devastates Tokyo. It's a scathing critique of Japanese governmental dysfunction during the 2011 nuclear disaster.\n\nShin Godzilla's design was disturbing: a creature in constant, painful evolution, with tiny arms, dead eyes, and eventually dorsal spines that shoot atomic beams. The film was Japan's highest-grossing live-action film of 2016 and won seven Japan Academy Prizes.",
+            "metrics": {
+                "awards": "7 Japan Academy Prizes",
+                "box_office": "Highest-grossing Japanese film of 2016"
+            }
+        },
+        {
+            "id": "evt_anime_trilogy",
+            "title": "Godzilla Anime Trilogy",
+            "date_display": "November 17, 2017",
+            "date_start": "2017-11-17",
+            "group_ids": ["grp_reiwa"],
+            "type": "Film Series",
+            "innovator": "Kobun Shizuno, Hiroyuki Seshita",
+            "innovation": "Animated Godzilla",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f7/Godzilla_Planet_of_the_Monsters_poster.jpg"
+            ],
+            "description": "Toho released a trilogy of animated Godzilla films on Netflix, set 20,000 years in the future after Godzilla has conquered Earth and humanity has fled to space. The films featured a massive Godzilla design and science fiction world-building, but received mixed reviews for their slow pacing and anticlimactic battles.\n\nThe trilogy represented Toho's first animated Godzilla theatrical films and an experiment in expanding the franchise's formats.",
+            "metrics": {
+                "films": "3 (Planet of the Monsters, City on the Edge, Planet Eater)"
+            }
+        },
+        {
+            "id": "evt_king_of_monsters_2019",
+            "title": "Godzilla: King of the Monsters",
+            "date_display": "May 31, 2019",
+            "date_start": "2019-05-31",
+            "group_ids": ["grp_american"],
+            "type": "Film Release",
+            "innovator": "Michael Dougherty",
+            "innovation": "Classic Monster Introductions",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f6/Godzilla_King_of_the_Monsters_poster.jpg"
+            ],
+            "description": "The MonsterVerse sequel introduced Toho's classic monsters—Mothra, Rodan, and King Ghidorah—to American audiences in spectacular fashion. Director Michael Dougherty, a lifelong Godzilla fan, treated the monsters with reverence and delivered large-scale destruction.\n\nCritics were lukewarm on the human story, but monster fans praised the kaiju action. The film underperformed compared to its predecessor ($386 million), but set up the anticipated Kong crossover.",
+            "metrics": {
+                "box_office": "$386 million worldwide",
+                "classic_monsters": "Mothra, Rodan, King Ghidorah"
+            }
+        },
+        {
+            "id": "evt_singular_point",
+            "title": "Godzilla Singular Point Anime",
+            "date_display": "March 25, 2021",
+            "date_start": "2021-03-25",
+            "group_ids": ["grp_reiwa"],
+            "type": "Anime Series",
+            "innovator": "Bones, Orange",
+            "innovation": "Science Fiction Godzilla",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Godzilla_statue_at_Toho.jpg"
+            ],
+            "description": "Godzilla Singular Point, a 13-episode anime series, took a radically different approach to the franchise—centering on theoretical physics, multidimensional mathematics, and hard science fiction concepts. The series featured a unique Godzilla design that evolved throughout the show.\n\nThe anime was produced by studios Bones and Orange and featured an original story unconnected to previous Godzilla continuity. While divisive among fans who found its scientific dialogue dense, Singular Point demonstrated Godzilla's ability to anchor ambitious, unconventional storytelling.",
+            "metrics": {
+                "episodes": "13",
+                "platform": "Netflix/Tokyo MX"
+            }
+        },
+        {
+            "id": "evt_godzilla_vs_kong",
+            "title": "Godzilla vs. Kong",
+            "date_display": "March 24, 2021",
+            "date_start": "2021-03-24",
+            "group_ids": ["grp_american"],
+            "type": "Film Release",
+            "innovator": "Adam Wingard",
+            "innovation": "MonsterVerse Crossover",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/6b/Godzilla_vs._Kong_%28poster%29.jpg"
+            ],
+            "description": "The long-awaited rematch between cinema's two most famous monsters delivered spectacular battles in Hong Kong and the Hollow Earth. Released simultaneously in theaters and on HBO Max during the pandemic, the film became a much-needed hit, grossing $468 million worldwide.\n\nThe film wisely didn't declare a definitive winner, allowing both fan bases to claim victory. It proved the MonsterVerse had legs beyond Godzilla alone.",
+            "metrics": {
+                "box_office": "$468 million worldwide",
+                "release": "Theatrical + HBO Max"
+            }
+        },
+        {
+            "id": "evt_minus_one",
+            "title": "Godzilla Minus One",
+            "date_display": "November 3, 2023",
+            "date_start": "2023-11-03",
+            "group_ids": ["grp_reiwa"],
+            "type": "Film Release",
+            "innovator": "Takashi Yamazaki",
+            "innovation": "Post-War Setting Return",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/23/Godzilla_Minus_One.jpg"
+            ],
+            "description": "Director Takashi Yamazaki set his Godzilla film in immediate post-war Japan, returning the franchise to its roots while telling a personal story of a traumatized kamikaze pilot. The title 'Minus One' refers to Japan at zero after the war, reduced to minus one by Godzilla's attack.\n\nFilmed on a reported $15 million budget (a fraction of Hollywood kaiju films), 'Minus One' achieved stunning visual effects that rivaled any blockbuster. It became the highest-grossing live-action Japanese film ever released in America.",
+            "metrics": {
+                "budget": "$15 million (reported)",
+                "reception": "Critical and commercial success"
+            }
+        },
+        {
+            "id": "evt_oscar_win",
+            "title": "Godzilla Minus One Wins Oscar",
+            "date_display": "March 10, 2024",
+            "date_start": "2024-03-10",
+            "group_ids": ["grp_reiwa"],
+            "type": "Award",
+            "innovator": "Takashi Yamazaki",
+            "innovation": "First Japanese Kaiju Oscar",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/08/Oscarstatuette2.jpg"
+            ],
+            "description": "Seventy years after the original 'Gojira,' a Godzilla film won an Academy Award for Best Visual Effects. 'Godzilla Minus One' defeated Hollywood productions with far larger budgets, including 'The Creator,' 'Guardians of the Galaxy Vol. 3,' and 'Napoleon.'\n\nThe victory validated decades of Japanese tokusatsu craftsmanship and proved that strong storytelling could elevate effects work regardless of budget. Director Takashi Yamazaki also served as VFX supervisor, demonstrating how integrated creative vision produced superior results.",
+            "metrics": {
+                "award": "Academy Award for Best Visual Effects",
+                "competition": "Defeated $80-200M Hollywood productions"
+            }
+        },
+        {
+            "id": "evt_godzilla_kong_new_empire",
+            "title": "Godzilla x Kong: The New Empire",
+            "date_display": "March 29, 2024",
+            "date_start": "2024-03-29",
+            "group_ids": ["grp_american"],
+            "type": "Film Release",
+            "innovator": "Adam Wingard",
+            "innovation": "MonsterVerse Continuation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1c/Godzilla_x_Kong_%E2%80%93_The_New_Empire_logo.png"
+            ],
+            "description": "The MonsterVerse continued with Godzilla and Kong as unlikely allies against a new threat from the Hollow Earth. The film leaned into spectacle and humor, featuring a pink-powered Godzilla and Kong with a mechanical arm.\n\nCritical reception was mixed, but the film was a commercial success, proving audiences still wanted kaiju action. The MonsterVerse's future remained viable.",
+            "metrics": {
+                "box_office": "Commercial success"
+            }
+        },
+        {
+            "id": "evt_walk_of_fame",
+            "title": "Godzilla Hollywood Walk of Fame Star",
+            "date_display": "November 29, 2004",
+            "date_start": "2004-11-29",
+            "group_ids": ["grp_millennium"],
+            "type": "Cultural Honor",
+            "innovation": "First Fictional Monster Honored",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0a/Hollywood_Walk_of_Fame_-_Godzilla.jpg"
+            ],
+            "description": "Godzilla became the first fictional monster to receive a star on the Hollywood Walk of Fame, joining elite company of entertainment legends. The star was placed at 6925 Hollywood Boulevard during the franchise's 50th anniversary celebrations.\n\nThe honor recognized Godzilla's cultural impact beyond Japan—proof that a monster born from nuclear trauma had become a beloved global icon.",
+            "metrics": {
+                "location": "6925 Hollywood Boulevard"
+            }
+        },
+        {
+            "id": "evt_70th_anniversary",
+            "title": "Godzilla 70th Anniversary",
+            "date_display": "November 3, 2024",
+            "date_start": "2024-11-03",
+            "group_ids": ["grp_reiwa"],
+            "type": "Milestone",
+            "innovation": "Seven Decades of Cultural Impact",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Godzilla_statue_at_Toho.jpg"
+            ],
+            "description": "November 3, 2024 marked exactly 70 years since the original 'Gojira' premiered in Tokyo. In that time, Godzilla had appeared in 37 Japanese films and multiple American productions, becoming the longest-running film franchise in history.\n\nFrom atomic allegory to cosmic warrior to Oscar winner, Godzilla proved endlessly adaptable to each generation's anxieties. The King of the Monsters showed no signs of retiring.",
+            "metrics": {
+                "japanese_films": "37",
+                "american_productions": "5+",
+                "years_active": "70"
+            }
+        }
+    ]
+}

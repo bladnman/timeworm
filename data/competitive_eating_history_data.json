@@ -1,0 +1,544 @@
+{
+    "meta": {
+        "title": "Sport or Spectacle? A History of Competitive Eating",
+        "version": "1.0.0",
+        "generated_date": "2025-12-07",
+        "overview": "Competitive eating occupies a strange space in American culture—part sport, part spectacle, part celebration of excess. From county fair pie-eating contests to ESPN-broadcast hot dog championships, the act of consuming vast quantities of food at speed has evolved from local tradition to international phenomenon, complete with professional athletes, training regimens, and bitter rivalries.",
+        "attribution": "Historical research compiled from Major League Eating archives, sports journalism, and competitive eating history."
+    },
+    "groups": [
+        {
+            "id": "grp_early",
+            "title": "Part I: Early Contests",
+            "date_range": "1793 – 1970s",
+            "description": "Eating contests existed long before they became formalized sport. County fairs, community celebrations, and tavern wagers featured speed-eating challenges for centuries. Nathan's Famous established its Coney Island presence, though the founding myth of the 1916 contest would later be debunked."
+        },
+        {
+            "id": "grp_nathans",
+            "title": "Part II: The Nathan's Era",
+            "date_range": "1972 – 2000",
+            "description": "Nathan's Famous Hot Dog Eating Contest became America's signature competitive eating event, transforming from local Coney Island tradition to nationally televised Fourth of July spectacle. Records climbed gradually as American eaters dominated the field."
+        },
+        {
+            "id": "grp_kobayashi",
+            "title": "Part III: The Kobayashi Revolution",
+            "date_range": "2001 – 2007",
+            "description": "Takeru Kobayashi revolutionized competitive eating with scientific training methods and new techniques. His dominance brought international attention to the sport and forced competitors to professionalize their approach."
+        },
+        {
+            "id": "grp_modern",
+            "title": "Part IV: Modern Era",
+            "date_range": "2008 – 2025",
+            "description": "Joey Chestnut emerged as competitive eating's greatest champion, dominating the Nathan's contest for over a decade. Major League Eating formalized the sport while controversies over contracts and streaming rights shaped its future."
+        }
+    ],
+    "events": [
+        {
+            "id": "evt_first_recorded",
+            "title": "First Recorded Eating Contest",
+            "date_display": "1793",
+            "date_start": "1793-01-01",
+            "group_ids": ["grp_early"],
+            "type": "Historical Event",
+            "innovation": "Documented Competition",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/bb/Homemade_apple_pie.jpg"
+            ],
+            "description": "The first documented eating contest took place in England, featuring competitors racing to consume fruit pies. While eating challenges undoubtedly existed before this date, the 1793 contest represents the earliest written record of formalized competition.\n\nThese early contests served as entertainment at fairs and festivals, with prizes typically modest—bragging rights and perhaps a small purse. The format would remain essentially unchanged for two centuries: eat the most in a set time, or eat a set amount fastest.",
+            "metrics": {
+                "food": "Fruit pies",
+                "location": "England"
+            }
+        },
+        {
+            "id": "evt_beer_drinking",
+            "title": "European Beer Drinking Contests Documented",
+            "date_display": "1867",
+            "date_start": "1867-01-01",
+            "group_ids": ["grp_early"],
+            "type": "Cultural Practice",
+            "innovation": "Drinking Competition Format",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/e8/Beer_mug.jpg"
+            ],
+            "description": "German beer halls and festivals formalized speed-drinking competitions, with documented contests appearing by the mid-19th century. These events established templates for timed consumption challenges that would influence later eating contests.\n\nBeer drinking contests remained popular throughout Europe, eventually spreading to American beer halls. The competitive element added excitement to festival gatherings and demonstrated the universal appeal of consumption-based competition.",
+            "metrics": {
+                "beverage": "Beer",
+                "setting": "Festivals, beer halls"
+            }
+        },
+        {
+            "id": "evt_nathans_founding",
+            "title": "Nathan's Famous Opens on Coney Island",
+            "date_display": "1916",
+            "date_start": "1916-01-01",
+            "group_ids": ["grp_early"],
+            "type": "Business Opening",
+            "innovator": "Nathan Handwerker",
+            "innovation": "Iconic Hot Dog Stand",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nathans_Famous_Coney_Island.jpg"
+            ],
+            "description": "Polish immigrant Nathan Handwerker opened his hot dog stand at Coney Island, undercutting competitor Feltman's by charging five cents per frankfurter instead of ten. His stand became a Coney Island institution, eventually growing into a franchise empire.\n\nNathan's Famous would become synonymous with competitive eating through its July 4th hot dog contest. For decades, the company claimed the contest dated to 1916, with four immigrants competing to prove their patriotism—a story later revealed to be marketing myth.",
+            "metrics": {
+                "original_price": "5 cents",
+                "location": "Coney Island"
+            }
+        },
+        {
+            "id": "evt_county_fair_tradition",
+            "title": "Pie-Eating Contests Become County Fair Staple",
+            "date_display": "1920s",
+            "date_start": "1920-01-01",
+            "group_ids": ["grp_early"],
+            "type": "Cultural Tradition",
+            "innovation": "Americana Entertainment",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/13/Blueberry_pie_with_lattice_top%2C_August_2008.jpg"
+            ],
+            "description": "Pie-eating contests became fixtures at American county fairs throughout the 1920s and 1930s. The format was simple and photogenic: contestants, often children, faced hands-behind-back into pies, emerging covered in filling.\n\nThese contests represented wholesome American entertainment, distinct from the professional spectacle competitive eating would become. The imagery—competitors with pie-covered faces—established lasting visual associations with eating competitions.",
+            "metrics": {
+                "format": "Hands-behind-back",
+                "common_food": "Fruit pies"
+            }
+        },
+        {
+            "id": "evt_nathans_formalized",
+            "title": "Nathan's Hot Dog Contest Formalized",
+            "date_display": "1972",
+            "date_start": "1972-07-04",
+            "group_ids": ["grp_nathans"],
+            "type": "Competition Establishment",
+            "innovator": "Nathan's Famous",
+            "innovation": "Annual July 4th Tradition",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nathans_Famous_Coney_Island.jpg"
+            ],
+            "description": "While Nathan's later claimed its contest dated to 1916, historians have debunked this myth—no contemporary records support contests before the 1970s. The 1972 contest represents the first verifiable organized Nathan's competition, established as a July 4th publicity event.\n\nThe choice of Independence Day proved brilliant marketing. The contest became associated with American celebration, patriotism, and summer tradition. Over subsequent decades, it would grow from local curiosity to nationally televised event.",
+            "metrics": {
+                "date": "July 4th (annual)",
+                "myth_debunked": "1916 origin story fabricated"
+            }
+        },
+        {
+            "id": "evt_wing_bowl",
+            "title": "First Wing Bowl in Philadelphia",
+            "date_display": "January 29, 1993",
+            "date_start": "1993-01-29",
+            "group_ids": ["grp_nathans"],
+            "type": "Competition Founded",
+            "innovator": "WIP Radio",
+            "innovation": "Wing Eating Championship",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b8/Buffalo_wings.jpg"
+            ],
+            "description": "Philadelphia sports radio station WIP created Wing Bowl as a consolation event when the Eagles failed to make the Super Bowl. The competition, held on the Friday before the Super Bowl, featured competitive eaters consuming buffalo wings in increasingly outrageous settings.\n\nWing Bowl grew into a massive event attracting over 20,000 attendees, known as much for its raucous atmosphere and 'Wingettes' as for the eating itself. The event ran until 2018, becoming a Philadelphia institution.",
+            "metrics": {
+                "setting": "Philadelphia",
+                "peak_attendance": "20,000+"
+            }
+        },
+        {
+            "id": "evt_official_records",
+            "title": "First Official Nathan's Records Kept",
+            "date_display": "1997",
+            "date_start": "1997-07-04",
+            "group_ids": ["grp_nathans"],
+            "type": "Record Keeping",
+            "innovation": "Formalized Documentation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nathans_Famous_Coney_Island.jpg"
+            ],
+            "description": "Nathan's began officially tracking contest records, bringing professional standards to what had been a casual promotional event. The 1997 record was approximately 25 hot dogs in 12 minutes—numbers that would soon seem quaint.\n\nSystematic record-keeping enabled year-over-year comparisons and helped build narratives around competitors. The sport was professionalizing, even if no one yet realized how dramatically records would soon be shattered.",
+            "metrics": {
+                "1997_record": "~25 hot dogs (12 minutes)"
+            }
+        },
+        {
+            "id": "evt_kobayashi_doubles_record",
+            "title": "Takeru Kobayashi Doubles the World Record",
+            "date_display": "July 4, 2001",
+            "date_start": "2001-07-04",
+            "group_ids": ["grp_kobayashi"],
+            "type": "Record Breaking",
+            "innovator": "Takeru Kobayashi",
+            "innovation": "Scientific Eating Technique",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8b/Takeru_Kobayashi_2007.jpg"
+            ],
+            "description": "Japanese competitive eater Takeru Kobayashi shattered the Nathan's record by consuming 50 hot dogs and buns in 12 minutes—nearly doubling the previous record of 25.5. The 131-pound Japanese man's victory over much larger American competitors stunned the crowd.\n\nKobayashi had trained scientifically, developing the 'Solomon Method' (breaking hot dogs in half) and practicing stomach expansion. His approach proved that technique and training mattered more than body size. Competitive eating would never be the same.",
+            "metrics": {
+                "hot_dogs": "50",
+                "previous_record": "25.5",
+                "improvement": "Nearly 100%"
+            }
+        },
+        {
+            "id": "evt_ifoce_founded",
+            "title": "IFOCE (Major League Eating) Gains Prominence",
+            "date_display": "2002",
+            "date_start": "2002-01-01",
+            "group_ids": ["grp_kobayashi"],
+            "type": "Organization",
+            "innovator": "George and Richard Shea",
+            "innovation": "Professional Eating League",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nathans_Famous_Coney_Island.jpg"
+            ],
+            "description": "The International Federation of Competitive Eating (IFOCE), later rebranded as Major League Eating, established itself as the governing body of competitive eating. The Shea brothers professionalized the sport with rankings, contracts, and organized competitions.\n\nMLE sanctioned events beyond Nathan's, creating a circuit of competitions featuring various foods—wings, ribs, pumpkin pies, and more. Exclusive contracts would later become controversial, but the organization brought structure to what had been chaotic local events.",
+            "metrics": {
+                "founders": "George and Richard Shea",
+                "events_sanctioned": "Multiple annually"
+            }
+        },
+        {
+            "id": "evt_kobayashi_three_peat",
+            "title": "Kobayashi Wins Third Consecutive Nathan's",
+            "date_display": "July 4, 2003",
+            "date_start": "2003-07-04",
+            "group_ids": ["grp_kobayashi"],
+            "type": "Competition",
+            "innovator": "Takeru Kobayashi",
+            "innovation": "Dynasty Established",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8b/Takeru_Kobayashi_2007.jpg"
+            ],
+            "description": "Kobayashi secured his third consecutive Nathan's championship, cementing his status as competitive eating's dominant force. His continued victories attracted media attention and elevated the sport's profile.\n\nAmerican competitors struggled to match Kobayashi's technique and training intensity. The Japanese champion's dominance spurred others to adopt professional approaches to what had been an amateur pursuit.",
+            "metrics": {
+                "consecutive_wins": "3"
+            }
+        },
+        {
+            "id": "evt_black_widow",
+            "title": "Sonya 'Black Widow' Thomas Emerges",
+            "date_display": "2004",
+            "date_start": "2004-01-01",
+            "group_ids": ["grp_kobayashi"],
+            "type": "Competitor Rise",
+            "innovator": "Sonya Thomas",
+            "innovation": "Female Competitive Eating",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5e/Sonya_Thomas.jpg"
+            ],
+            "description": "Sonya Thomas, a 105-pound Burger King manager from Virginia, became competitive eating's most prominent female competitor. Nicknamed the 'Black Widow' for defeating much larger opponents, Thomas held dozens of eating records across various foods.\n\nThomas proved that stomach capacity and technique mattered more than overall body size. Her success challenged assumptions about competitive eating and brought additional attention to the sport.",
+            "metrics": {
+                "weight": "105 pounds",
+                "nickname": "The Black Widow"
+            }
+        },
+        {
+            "id": "evt_kobayashi_record_53",
+            "title": "Kobayashi Sets 53.5 Hot Dog Record",
+            "date_display": "July 4, 2005",
+            "date_start": "2005-07-04",
+            "group_ids": ["grp_kobayashi"],
+            "type": "Record",
+            "innovator": "Takeru Kobayashi",
+            "innovation": "New Record",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8b/Takeru_Kobayashi_2007.jpg"
+            ],
+            "description": "Kobayashi pushed his own record to 53.5 hot dogs and buns in 12 minutes, winning his fifth consecutive Nathan's title. The half-hot-dog precision reflected how competitive eating had evolved—every fraction counted.\n\nCritics questioned whether the records could keep climbing, but Kobayashi's dominance showed no signs of ending. American competitors continued developing, however, and a challenge was brewing.",
+            "metrics": {
+                "hot_dogs": "53.5",
+                "consecutive_wins": "5"
+            }
+        },
+        {
+            "id": "evt_espn_broadcast",
+            "title": "ESPN Begins Nathan's Broadcast",
+            "date_display": "July 4, 2006",
+            "date_start": "2006-07-04",
+            "group_ids": ["grp_kobayashi"],
+            "type": "Media Coverage",
+            "innovator": "ESPN",
+            "innovation": "National Television Coverage",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/82/ESPN_wordmark.svg"
+            ],
+            "description": "ESPN's coverage of the Nathan's Hot Dog Eating Contest brought competitive eating to a national audience. The broadcast treated the event as legitimate sport, with commentary, graphics, and analysis.\n\nTelevision exposure transformed competitive eating from Coney Island curiosity to Fourth of July tradition for millions of viewers. The spectacle—competitors cramming hot dogs while crowds chanted—became part of American holiday culture.",
+            "metrics": {
+                "network": "ESPN",
+                "holiday": "July 4th programming"
+            }
+        },
+        {
+            "id": "evt_chestnut_beats_kobayashi",
+            "title": "Joey Chestnut Defeats Kobayashi",
+            "date_display": "July 4, 2007",
+            "date_start": "2007-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Competition",
+            "innovator": "Joey Chestnut",
+            "innovation": "American Champion",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c0/Joey_Chestnut_2015.jpg"
+            ],
+            "description": "San Jose native Joey Chestnut ended Kobayashi's six-year reign by consuming 66 hot dogs to Kobayashi's 63. The American had trained obsessively, studying Kobayashi's technique and developing his own improvements.\n\nChestnut's victory was framed as American triumph—the returning of the Mustard Yellow Belt to its home country. The rivalry between Chestnut and Kobayashi would drive competitive eating's popularity for years.",
+            "metrics": {
+                "chestnut_total": "66 hot dogs",
+                "kobayashi_total": "63 hot dogs"
+            }
+        },
+        {
+            "id": "evt_mle_incorporated",
+            "title": "Major League Eating Officially Incorporated",
+            "date_display": "2008",
+            "date_start": "2008-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Organization",
+            "innovator": "George and Richard Shea",
+            "innovation": "Formalized League Structure",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nathans_Famous_Coney_Island.jpg"
+            ],
+            "description": "Major League Eating formally incorporated as the governing body for professional competitive eating in the United States. The organization implemented rankings, exclusive contracts, and standardized rules across sanctioned events.\n\nThe corporate structure brought stability but also controversy. Exclusive contracts prevented top eaters from competing in non-MLE events, leading to disputes that would later explode publicly.",
+            "metrics": {
+                "status": "Official incorporation"
+            }
+        },
+        {
+            "id": "evt_rivalry_peaks",
+            "title": "Kobayashi-Chestnut Rivalry Peaks",
+            "date_display": "July 4, 2008",
+            "date_start": "2008-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Competition",
+            "innovation": "Competitive Eating's Greatest Rivalry",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c0/Joey_Chestnut_2015.jpg"
+            ],
+            "description": "The 2008 Nathan's contest went to a five-hot-dog overtime 'eat-off' after both Chestnut and Kobayashi finished regulation with 59. Chestnut won the overtime, but the dramatic finish crystallized the rivalry that had made competitive eating must-see television.\n\nThe head-to-head battle, broadcast live on ESPN, drew the sport's largest television audience. Competitive eating had found its defining narrative: the American champion versus the Japanese pioneer.",
+            "metrics": {
+                "regulation_tie": "59 each",
+                "result": "Overtime victory for Chestnut"
+            }
+        },
+        {
+            "id": "evt_chestnut_68",
+            "title": "Chestnut Eats 68 Hot Dogs",
+            "date_display": "July 4, 2009",
+            "date_start": "2009-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Record",
+            "innovator": "Joey Chestnut",
+            "innovation": "New World Record",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c0/Joey_Chestnut_2015.jpg"
+            ],
+            "description": "Joey Chestnut set a new world record with 68 hot dogs and buns, extending his dominance and pushing the sport's limits further. The contest format had changed to 10 minutes, making direct comparisons to earlier records complex.\n\nChestnut's methodical approach—dunking buns in water, separating hot dog and bun consumption—had been refined to mechanical precision. His records seemed to defy human physiology.",
+            "metrics": {
+                "hot_dogs": "68",
+                "time": "10 minutes"
+            }
+        },
+        {
+            "id": "evt_kobayashi_arrested",
+            "title": "Kobayashi Arrested at Nathan's Contest",
+            "date_display": "July 4, 2010",
+            "date_start": "2010-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Controversy",
+            "innovator": "Takeru Kobayashi",
+            "innovation": "Contract Dispute",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8b/Takeru_Kobayashi_2007.jpg"
+            ],
+            "description": "Takeru Kobayashi was arrested for trespassing and resisting arrest after storming the Nathan's stage following the contest. Unable to compete due to a contract dispute with MLE, Kobayashi attempted to protest during Joey Chestnut's victory celebration.\n\nThe incident highlighted tensions between top competitors and the organizing body. Kobayashi's refusal to sign an exclusive MLE contract had barred him from competing, ending what could have been competitive eating's greatest rivalry.",
+            "metrics": {
+                "charges": "Trespassing, resisting arrest",
+                "cause": "MLE contract dispute"
+            }
+        },
+        {
+            "id": "evt_womens_division",
+            "title": "Women's Division Formalized",
+            "date_display": "2011",
+            "date_start": "2011-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Competition Structure",
+            "innovation": "Separate Women's Championship",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5e/Sonya_Thomas.jpg"
+            ],
+            "description": "Nathan's established a separate women's division for the July 4th contest, recognizing female competitors with their own championship. The division provided a platform for women who couldn't match the absolute quantities of top male competitors.\n\nSonya Thomas and later Miki Sudo would dominate the women's division, setting their own impressive records and building dedicated fan bases.",
+            "metrics": {
+                "format": "Separate women's championship"
+            }
+        },
+        {
+            "id": "evt_matt_stonie",
+            "title": "Matt Stonie Emerges as Contender",
+            "date_display": "2013",
+            "date_start": "2013-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Competitor Rise",
+            "innovator": "Matt Stonie",
+            "innovation": "YouTube Competitive Eater",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/6e/Matt_Stonie_2014.jpg"
+            ],
+            "description": "California native Matt Stonie rose through competitive eating ranks while building a massive YouTube following. His combination of competitive success and social media presence represented a new model for professional eaters.\n\nStonie's youth (he was in his early 20s) and smaller frame challenged assumptions about competitive eating. His challenge videos attracted millions of views, bringing new audiences to the sport.",
+            "metrics": {
+                "platform": "YouTube",
+                "subscribers": "Millions"
+            }
+        },
+        {
+            "id": "evt_stonie_upsets_chestnut",
+            "title": "Matt Stonie Defeats Chestnut",
+            "date_display": "July 4, 2015",
+            "date_start": "2015-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Competition",
+            "innovator": "Matt Stonie",
+            "innovation": "Upset Victory",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/6e/Matt_Stonie_2014.jpg"
+            ],
+            "description": "Matt Stonie ended Joey Chestnut's eight-year winning streak by consuming 62 hot dogs to Chestnut's 60. The upset proved that Chestnut was mortal and injected new drama into the Nathan's contest.\n\nStonie's victory, his only Nathan's title, demonstrated that younger competitors could challenge the established champion. However, Chestnut would return stronger the following year.",
+            "metrics": {
+                "stonie_total": "62 hot dogs",
+                "chestnut_total": "60 hot dogs"
+            }
+        },
+        {
+            "id": "evt_chestnut_70",
+            "title": "Chestnut Reclaims Title with 70 Hot Dogs",
+            "date_display": "July 4, 2016",
+            "date_start": "2016-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Record",
+            "innovator": "Joey Chestnut",
+            "innovation": "70 Hot Dog Barrier Broken",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c0/Joey_Chestnut_2015.jpg"
+            ],
+            "description": "Motivated by his loss the previous year, Joey Chestnut returned with a record-setting 70 hot dogs—breaking the 70 barrier for the first time. The emphatic victory reasserted his dominance and began another multi-year winning streak.\n\nChestnut's ability to improve after a loss demonstrated the mental aspect of competitive eating. His record would continue climbing in subsequent years.",
+            "metrics": {
+                "hot_dogs": "70",
+                "milestone": "First to 70"
+            }
+        },
+        {
+            "id": "evt_covid_contest",
+            "title": "COVID Empty-Stadium Nathan's Contest",
+            "date_display": "July 4, 2020",
+            "date_start": "2020-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Competition",
+            "innovation": "Pandemic Adaptation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c0/Joey_Chestnut_2015.jpg"
+            ],
+            "description": "The 2020 Nathan's contest proceeded without spectators due to COVID-19 restrictions. The eerily quiet event, held at a private location rather than Coney Island, highlighted the surreal nature of the pandemic year.\n\nChestnut won his 13th title, setting a new record of 75 hot dogs in the empty arena. The record received asterisks from some observers due to the unusual conditions.",
+            "metrics": {
+                "hot_dogs": "75",
+                "setting": "No spectators"
+            }
+        },
+        {
+            "id": "evt_chestnut_76",
+            "title": "Chestnut Sets Current Record at 76",
+            "date_display": "July 4, 2021",
+            "date_start": "2021-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Record",
+            "innovator": "Joey Chestnut",
+            "innovation": "Current World Record",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c0/Joey_Chestnut_2015.jpg"
+            ],
+            "description": "Joey Chestnut consumed 76 hot dogs and buns in 10 minutes, setting the current world record. The achievement came as crowds returned to Coney Island following the pandemic, with Chestnut maintaining his dominance in his mid-30s.\n\nThe record represented over three times the total that had won contests before Kobayashi's revolution. Whether anyone could challenge Chestnut's supremacy remained competitive eating's central question.",
+            "metrics": {
+                "hot_dogs": "76",
+                "time": "10 minutes"
+            }
+        },
+        {
+            "id": "evt_miki_sudo_record",
+            "title": "Miki Sudo Sets Women's Record",
+            "date_display": "July 4, 2022",
+            "date_start": "2022-07-04",
+            "group_ids": ["grp_modern"],
+            "type": "Record",
+            "innovator": "Miki Sudo",
+            "innovation": "Women's World Record",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nathans_Famous_Coney_Island.jpg"
+            ],
+            "description": "Miki Sudo set the women's hot dog eating record at 48.5, dominating the women's division as thoroughly as Chestnut dominated the men's. The Las Vegas-based competitor had become the face of women's competitive eating.\n\nSudo's record demonstrated that women's competitive eating had reached its own high level of professionalism, even if the absolute numbers differed from the men's division.",
+            "metrics": {
+                "hot_dogs": "48.5",
+                "division": "Women's"
+            }
+        },
+        {
+            "id": "evt_health_debate",
+            "title": "Competitive Eating Health Concerns Debated",
+            "date_display": "2023",
+            "date_start": "2023-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Controversy",
+            "innovation": "Medical Discussion",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nathans_Famous_Coney_Island.jpg"
+            ],
+            "description": "Medical professionals increasingly questioned competitive eating's long-term health effects. Studies suggested potential risks including stomach rupture, aspiration, and long-term digestive damage, though professional eaters argued their training minimized risks.\n\nThe debate reflected broader questions about extreme sports and bodily limits. MLE maintained safety protocols, but critics questioned whether any amount of regulation could make speed-eating genuinely safe.",
+            "metrics": {
+                "concerns": "Stomach damage, aspiration risk"
+            }
+        },
+        {
+            "id": "evt_unfinished_beef",
+            "title": "Kobayashi vs. Chestnut 'Unfinished Beef' Netflix Event",
+            "date_display": "September 2, 2024",
+            "date_start": "2024-09-02",
+            "group_ids": ["grp_modern"],
+            "type": "Special Event",
+            "innovation": "Streaming Platform Competition",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c0/Joey_Chestnut_2015.jpg"
+            ],
+            "description": "Netflix broadcast 'Unfinished Beef,' a head-to-head hot dog eating competition between Joey Chestnut and Takeru Kobayashi—their first direct competition in over a decade. The event revisited competitive eating's greatest rivalry in a streaming format.\n\nThe match generated significant viewership and proved that competitive eating could succeed outside traditional broadcast. It also demonstrated the enduring appeal of the Chestnut-Kobayashi narrative.",
+            "metrics": {
+                "platform": "Netflix",
+                "format": "Head-to-head competition"
+            }
+        },
+        {
+            "id": "evt_chestnut_banned",
+            "title": "Chestnut Banned from Nathan's Over Sponsorship",
+            "date_display": "2024",
+            "date_start": "2024-06-01",
+            "group_ids": ["grp_modern"],
+            "type": "Controversy",
+            "innovator": "Major League Eating",
+            "innovation": "Sponsorship Conflict",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c0/Joey_Chestnut_2015.jpg"
+            ],
+            "description": "Joey Chestnut was banned from the 2024 Nathan's contest after signing a sponsorship deal with Impossible Foods, a plant-based meat company that MLE deemed competitive with Nathan's beef hot dogs. The ban removed competitive eating's greatest champion from its signature event.\n\nThe controversy highlighted the sport's dependence on corporate relationships and the tensions between athlete freedom and organizational control. Some viewed the ban as MLE shooting itself in the foot; others supported protecting sponsor relationships.",
+            "metrics": {
+                "cause": "Impossible Foods sponsorship",
+                "result": "Banned from Nathan's 2024"
+            }
+        },
+        {
+            "id": "evt_streaming_future",
+            "title": "Competitive Eating Streaming Platforms Emerge",
+            "date_display": "2025",
+            "date_start": "2025-01-01",
+            "group_ids": ["grp_modern"],
+            "type": "Industry Development",
+            "innovation": "Digital Distribution",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nathans_Famous_Coney_Island.jpg"
+            ],
+            "description": "Competitive eating increasingly moved to streaming platforms, with various services hosting exclusive eating competitions. The Netflix Kobayashi-Chestnut match demonstrated viable audiences existed for streaming competitive eating events.\n\nThe shift away from traditional ESPN broadcast reflected broader changes in sports media consumption. Whether streaming could sustain competitive eating's popularity remained to be seen.",
+            "metrics": {
+                "trend": "Streaming platform events"
+            }
+        }
+    ]
+}

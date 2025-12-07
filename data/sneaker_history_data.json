@@ -1,0 +1,757 @@
+{
+    "meta": {
+        "title": "The Sole Revolution: A History of the Sneaker",
+        "version": "1.0.0",
+        "generated_date": "2025-12-06",
+        "overview": "The sneaker began as humble athletic footwear—a practical solution for sports and exercise—but evolved into one of the most powerful cultural symbols of the 20th and 21st centuries. From vulcanized rubber soles to billion-dollar resale markets, the history of sneakers traces the intersection of technology, sports, music, fashion, and identity. What we wear on our feet has become a statement of who we are.",
+        "attribution": "Historical research compiled from industry archives, sports history, and cultural analysis."
+    },
+    "groups": [
+        {
+            "id": "grp_origins",
+            "title": "Part I: Origins & Early Athletic Footwear",
+            "date_range": "1839 – 1959",
+            "description": "The foundation of modern sneakers lies in the vulcanization of rubber and the subsequent development of canvas-topped, rubber-soled shoes for sports and leisure. This era established the basic sneaker form that would persist for over a century."
+        },
+        {
+            "id": "grp_running",
+            "title": "Part II: The Rise of Running Culture",
+            "date_range": "1960 – 1979",
+            "description": "The jogging boom of the 1970s transformed sneakers from specialized sports equipment into everyday footwear. Nike's founding and innovative waffle sole designs revolutionized running shoe technology and marketing."
+        },
+        {
+            "id": "grp_basketball_hiphop",
+            "title": "Part III: Basketball & Hip-Hop Revolution",
+            "date_range": "1980 – 1989",
+            "description": "The 1980s witnessed the collision of sports and culture that would define sneakers forever. Michael Jordan's partnership with Nike and hip-hop's embrace of Adidas transformed sneakers into status symbols and cultural artifacts."
+        },
+        {
+            "id": "grp_technology",
+            "title": "Part IV: The Technology Era",
+            "date_range": "1990 – 2009",
+            "description": "Sneaker companies competed through technological innovation—visible air units, pump systems, and exotic materials. This era also saw the birth of sneaker collecting as a serious hobby and the emergence of limited releases."
+        },
+        {
+            "id": "grp_hype",
+            "title": "Part V: Streetwear & Hype Culture",
+            "date_range": "2010 – 2025",
+            "description": "The modern sneaker industry is defined by scarcity, collaboration, and resale. Designer partnerships, celebrity lines, and algorithmic drops have created a multi-billion dollar secondary market where sneakers function as both fashion and investment."
+        }
+    ],
+    "events": [
+        {
+            "id": "evt_goodyear_vulcanization",
+            "title": "Charles Goodyear Vulcanizes Rubber",
+            "date_display": "1839",
+            "date_start": "1839-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Innovation",
+            "innovator": "Charles Goodyear",
+            "innovation": "Vulcanized Rubber Process",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/42/Charles_Goodyear%2C_1891.jpg"
+            ],
+            "description": "Charles Goodyear's discovery of vulcanization—the process of treating rubber with sulfur and heat to make it durable, flexible, and resistant to temperature changes—laid the foundation for modern sneakers. Before vulcanization, natural rubber became sticky in heat and brittle in cold, making it impractical for footwear.\n\nGoodyear's process created a material that could be bonded to fabric and shaped into soles that wouldn't fall apart. Though Goodyear died in poverty, his name would become synonymous with rubber products, and his invention enabled an entire industry of rubber-soled athletic shoes.",
+            "metrics": {
+                "impact": "Foundation of rubber footwear industry"
+            }
+        },
+        {
+            "id": "evt_plimsolls",
+            "title": "Plimsolls: The First Mass-Produced Sneakers",
+            "date_display": "1870s",
+            "date_start": "1870-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Product",
+            "innovation": "Canvas and Rubber Footwear",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Black_Plimsolls.jpg"
+            ],
+            "description": "The Liverpool Rubber Company began producing 'plimsolls' in the 1870s—simple canvas shoes with rubber soles designed for beach wear and light exercise. The name came from the 'Plimsoll line' on ships; if the wearer went too deep in water, they'd get wet, just like an overloaded ship.\n\nThese were the first mass-produced sneakers, though they wouldn't be called that for decades. Their key innovation was simplicity: a flat rubber sole bonded to a fabric upper. This basic construction remained the template for casual sneakers well into the 20th century.",
+            "metrics": {
+                "original_use": "Beach and leisure wear"
+            }
+        },
+        {
+            "id": "evt_keds_founding",
+            "title": "Keds: America's First Sneaker Brand",
+            "date_display": "1916",
+            "date_start": "1916-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Brand Launch",
+            "innovator": "U.S. Rubber Company",
+            "innovation": "Mass-Market Canvas Sneaker",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/9/91/Kedswomen.jpg"
+            ],
+            "description": "The U.S. Rubber Company launched Keds as America's first mass-marketed canvas sneaker. The name was chosen because it sounded like 'kids' (their target market) and 'ped' (Latin for foot). An advertising agency also coined the term 'sneakers' for these shoes because the rubber soles allowed wearers to walk quietly—to sneak.\n\nKeds became the standard American casual shoe for decades, worn by everyone from children to college students. Their simplicity and affordability made them ubiquitous, and the brand became synonymous with wholesome, athletic American youth culture.",
+            "metrics": {
+                "significance": "First use of term 'sneakers'"
+            }
+        },
+        {
+            "id": "evt_converse_allstar",
+            "title": "Converse All-Star Introduced",
+            "date_display": "1917",
+            "date_start": "1917-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Product Launch",
+            "innovator": "Converse Rubber Shoe Company",
+            "innovation": "First Performance Basketball Shoe",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8f/Chucks.jpg"
+            ],
+            "description": "The Converse Rubber Shoe Company introduced the All-Star basketball shoe, featuring a canvas upper, rubber sole, and distinctive ankle patch. The shoe was designed specifically for the emerging sport of basketball, which required traction on wooden courts and ankle support for jumping and pivoting.\n\nThe All-Star's design was revolutionary for its time, but its cultural impact would come later. For decades, it was simply the default basketball shoe—worn by nearly every professional and amateur player in America. Its transformation from athletic equipment to cultural icon would take another sixty years.",
+            "metrics": {
+                "original_price": "$0.75"
+            }
+        },
+        {
+            "id": "evt_chuck_taylor",
+            "title": "Chuck Taylor Joins Converse",
+            "date_display": "1921",
+            "date_start": "1921-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Partnership",
+            "innovator": "Chuck Taylor",
+            "innovation": "Athlete as Brand Ambassador",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b6/ChuckTaylorAllStarLogo.png"
+            ],
+            "description": "Semi-professional basketball player Chuck Taylor joined Converse as a salesman and product ambassador. Taylor traveled the country promoting the All-Star, teaching basketball clinics, and gathering feedback from players to improve the shoe's design. His suggestions led to enhanced ankle support and a more flexible sole.\n\nIn 1932, Converse added Taylor's signature to the ankle patch, creating the 'Chuck Taylor All-Star.' This was one of the first examples of athlete endorsement in footwear—a model that would later define the entire industry. Taylor's name remains on the shoe to this day, over 50 years after his death.",
+            "metrics": {
+                "legacy": "First major athlete shoe endorsement"
+            }
+        },
+        {
+            "id": "evt_dassler_brothers",
+            "title": "Dassler Brothers Start Making Sports Shoes",
+            "date_display": "1924",
+            "date_start": "1924-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Company Founding",
+            "innovator": "Adolf and Rudolf Dassler",
+            "innovation": "Specialized Athletic Footwear",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1c/Adidas_originals_logo.png"
+            ],
+            "description": "In the small German town of Herzogenaurach, brothers Adolf (Adi) and Rudolf Dassler began making sports shoes in their mother's laundry room. Adolf was the craftsman, experimenting with different materials and designs; Rudolf was the salesman, building relationships with athletes and coaches.\n\nTheir big break came at the 1936 Berlin Olympics, where they convinced American sprinter Jesse Owens to wear their hand-crafted spikes. Owens won four gold medals, providing the Dasslers with invaluable publicity. After World War II, a bitter family feud would split the brothers, with Adolf founding Adidas and Rudolf founding Puma—creating two of the world's largest sportswear companies from a single laundry room.",
+            "metrics": {
+                "location": "Herzogenaurach, Germany"
+            }
+        },
+        {
+            "id": "evt_jesse_owens",
+            "title": "Jesse Owens Wins in Dassler Shoes",
+            "date_display": "August 1936",
+            "date_start": "1936-08-01",
+            "group_ids": ["grp_origins"],
+            "type": "Sports Event",
+            "innovator": "Jesse Owens",
+            "innovation": "Athletic Footwear Performance Marketing",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1c/Jesse_Owens_1936.jpg"
+            ],
+            "description": "At the 1936 Berlin Olympics, African American sprinter Jesse Owens won four gold medals wearing hand-made track spikes from the Dassler brothers. In an Olympics designed by Nazi Germany to showcase Aryan superiority, Owens's victories were a powerful repudiation—and the shoes on his feet would go on to build an empire.\n\nThis was one of the earliest examples of athletic performance driving shoe sales. The Dasslers recognized that Olympic success was the ultimate marketing, a lesson that would shape the entire industry. Four gold medals in Dassler shoes was worth more than any advertisement.",
+            "metrics": {
+                "gold_medals": "4"
+            }
+        },
+        {
+            "id": "evt_adidas_puma_split",
+            "title": "Adidas and Puma Split",
+            "date_display": "1948",
+            "date_start": "1948-01-01",
+            "group_ids": ["grp_origins"],
+            "type": "Company Split",
+            "innovator": "Adolf and Rudolf Dassler",
+            "innovation": "Creation of Two Rival Sportswear Giants",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a7/Puma_Logo.png"
+            ],
+            "description": "A bitter family feud—fueled by suspicions of Nazi collaboration, romantic jealousy, and business disputes—split the Dassler brothers permanently. Adolf stayed in the original factory and founded Adidas (from 'Adi Dassler'), while Rudolf crossed the Aurach River to establish Puma.\n\nThe town of Herzogenaurach was divided for decades, with residents identifying as Adidas or Puma families. Workers from rival companies wouldn't socialize or intermarry. This intense competition pushed both companies to constant innovation, ultimately benefiting consumers worldwide. The sibling rivalry became one of the most productive feuds in business history.",
+            "metrics": {
+                "result": "Two Fortune 500 companies"
+            }
+        },
+        {
+            "id": "evt_blue_ribbon_sports",
+            "title": "Blue Ribbon Sports Founded (Future Nike)",
+            "date_display": "January 25, 1964",
+            "date_start": "1964-01-25",
+            "group_ids": ["grp_running"],
+            "type": "Company Founding",
+            "innovator": "Phil Knight, Bill Bowerman",
+            "innovation": "Japanese Manufacturing Partnership",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/48/Knight-Bowerman_Shoe_by_JMM.jpg"
+            ],
+            "description": "Stanford MBA graduate Phil Knight and his former track coach Bill Bowerman founded Blue Ribbon Sports with $500 each. Their initial business model was simple: import high-quality, low-cost running shoes from Japan (Onitsuka Tiger, now ASICS) to sell in America.\n\nKnight sold shoes out of his car at track meets while Bowerman, obsessed with making runners faster, began modifying the Japanese shoes and sending design suggestions back to the manufacturer. This partnership between an ambitious businessman and an innovative coach would eventually create the world's largest sportswear company.",
+            "metrics": {
+                "initial_investment": "$1,000 total"
+            }
+        },
+        {
+            "id": "evt_nike_swoosh",
+            "title": "The Nike Swoosh Designed",
+            "date_display": "June 18, 1971",
+            "date_start": "1971-06-18",
+            "group_ids": ["grp_running"],
+            "type": "Design",
+            "innovator": "Carolyn Davidson",
+            "innovation": "Iconic Brand Logo",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png"
+            ],
+            "description": "Portland State University graphic design student Carolyn Davidson was paid $35 to design a logo for Blue Ribbon Sports' new line of shoes. Phil Knight wanted something that conveyed motion and speed. Davidson presented several options; Knight chose the curved checkmark, reportedly saying 'I don't love it, but it will grow on me.'\n\nThe 'Swoosh' has become one of the most recognized logos in the world, requiring no accompanying text to identify the brand. Years later, Nike gave Davidson company stock and a diamond ring to thank her for her contribution. The $35 logo is now worth billions.",
+            "metrics": {
+                "original_payment": "$35"
+            }
+        },
+        {
+            "id": "evt_nike_cortez",
+            "title": "Nike Cortez Released",
+            "date_display": "1972",
+            "date_start": "1972-01-01",
+            "group_ids": ["grp_running"],
+            "type": "Product Launch",
+            "innovator": "Bill Bowerman",
+            "innovation": "Cushioned Running Shoe",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1b/Nike_Cortez_Basic_white.jpg"
+            ],
+            "description": "The Nike Cortez was designed by Bill Bowerman as a long-distance running shoe with full-length foam cushioning. It debuted just before the 1972 Munich Olympics, worn by several athletes. The shoe's clean design and comfort made it an immediate hit beyond the track.\n\nThe Cortez would later become iconic in Southern California lowrider and Chicano culture, and appeared prominently in films like 'Forrest Gump.' Its versatility—functional for running, stylish for the street—established a template that Nike would follow for decades: make performance shoes that people want to wear everywhere.",
+            "metrics": {
+                "cultural_impact": "Adopted by LA street culture"
+            }
+        },
+        {
+            "id": "evt_waffle_trainer",
+            "title": "Nike Waffle Trainer",
+            "date_display": "1974",
+            "date_start": "1974-01-01",
+            "group_ids": ["grp_running"],
+            "type": "Product Launch",
+            "innovator": "Bill Bowerman",
+            "innovation": "Waffle-Pattern Rubber Sole",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/78/Nike_Air_Max_1_Parra.jpg"
+            ],
+            "description": "The legend goes that Bill Bowerman poured liquid rubber into his wife's waffle iron, creating a textured sole pattern that provided superior traction on various surfaces. Whether or not this kitchen origin story is entirely accurate, the Waffle Trainer's innovative sole design became Nike's first major hit.\n\nThe shoe offered better grip than any running shoe on the market, particularly on grass and soft surfaces. It was lighter than competitors and became the best-selling training shoe in America by 1974. The Waffle Trainer established Nike as an innovator rather than just an importer, setting the stage for the company's explosive growth.",
+            "metrics": {
+                "achievement": "Best-selling training shoe in America"
+            }
+        },
+        {
+            "id": "evt_jogging_boom",
+            "title": "The American Jogging Boom",
+            "date_display": "1977",
+            "date_start": "1977-01-01",
+            "group_ids": ["grp_running"],
+            "type": "Cultural Shift",
+            "innovation": "Running as Mass Exercise",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/2b/Oregon22_10000.jpg"
+            ],
+            "description": "Jim Fixx's bestselling book 'The Complete Book of Running' helped transform jogging from an eccentric habit into a national obsession. Suddenly, millions of Americans began running for exercise, creating unprecedented demand for quality running shoes.\n\nNike, perfectly positioned with its innovative designs and grassroots marketing at running events, captured this wave. By the end of the 1970s, running shoes had transitioned from specialized athletic equipment to everyday footwear worn by non-athletes. The sneaker had begun its transformation from functional object to lifestyle product.",
+            "metrics": {
+                "impact": "25 million Americans took up running"
+            }
+        },
+        {
+            "id": "evt_air_force_1",
+            "title": "Nike Air Force 1",
+            "date_display": "1982",
+            "date_start": "1982-01-01",
+            "group_ids": ["grp_basketball_hiphop"],
+            "type": "Product Launch",
+            "innovator": "Bruce Kilgore",
+            "innovation": "First Basketball Shoe with Air Technology",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d2/Nike_Air_Force_1_low_white.jpg"
+            ],
+            "description": "Designer Bruce Kilgore created the Air Force 1, the first basketball shoe to feature Nike Air technology in the sole. Named after the presidential aircraft, the shoe's chunky silhouette and clean design made it a favorite among NBA players—and soon, hip-hop artists and street fashion enthusiasts.\n\nThe Air Force 1 was initially discontinued in 1984 but brought back by popular demand after Baltimore retailers rallied to keep it alive. It became the foundation of Nike's basketball business and one of the best-selling shoes of all time. The 'Uptowns,' as they're known in New York, have remained in continuous production for over 40 years.",
+            "metrics": {
+                "units_sold": "Billions worldwide"
+            }
+        },
+        {
+            "id": "evt_air_jordan_1",
+            "title": "Air Jordan 1 Launch",
+            "date_display": "April 1985",
+            "date_start": "1985-04-01",
+            "group_ids": ["grp_basketball_hiphop"],
+            "type": "Product Launch",
+            "innovator": "Nike, Michael Jordan, Peter Moore",
+            "innovation": "Athlete Signature Shoe Line",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/02/Michael_Jordan_%28Washington_Wizards%29.jpg"
+            ],
+            "description": "Nike took a massive gamble on a rookie from the University of North Carolina named Michael Jordan, signing him to an unprecedented $2.5 million deal over five years and creating an entire sub-brand around him. The Air Jordan 1, designed by Peter Moore in the Chicago Bulls' black and red colors, was unlike anything on basketball courts—so bold that the NBA initially banned it for violating uniform rules.\n\nNike turned the ban into marketing gold, running ads claiming 'The NBA threw them out of the game. Fortunately, the NBA can't stop you from wearing them.' Jordan wore them anyway, paying the $5,000 per-game fines. In its first year, the Air Jordan line generated $126 million in sales, far exceeding Nike's initial $3 million projection.",
+            "metrics": {
+                "first_year_sales": "$126 million",
+                "contract_value": "$2.5 million over 5 years"
+            }
+        },
+        {
+            "id": "evt_adidas_superstar",
+            "title": "Adidas Superstar Peaks with Hip-Hop",
+            "date_display": "1985",
+            "date_start": "1985-01-01",
+            "group_ids": ["grp_basketball_hiphop"],
+            "type": "Cultural Event",
+            "innovator": "Adidas",
+            "innovation": "Hip-Hop Fashion Crossover",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f7/Adidas_Superstar_shoes_pair.jpg"
+            ],
+            "description": "The Adidas Superstar, originally a basketball shoe from 1969 with its distinctive shell toe, found new life in the 1980s hip-hop scene. Artists throughout New York's boroughs adopted the shoe, often worn without laces as a style statement. The Superstar became as much a part of hip-hop fashion as gold chains and Kangol hats.\n\nThis organic adoption by the hip-hop community demonstrated that sneaker culture could emerge from the streets rather than from marketing departments. The Superstar's journey from basketball court to b-boy cipher showed brands the power of cultural authenticity—a lesson that would reshape the entire industry.",
+            "metrics": {
+                "cultural_significance": "Iconic hip-hop footwear"
+            }
+        },
+        {
+            "id": "evt_run_dmc_adidas",
+            "title": "Run-DMC 'My Adidas' & Adidas Deal",
+            "date_display": "1986",
+            "date_start": "1986-07-01",
+            "group_ids": ["grp_basketball_hiphop"],
+            "type": "Cultural Event / Partnership",
+            "innovator": "Run-DMC, Adidas",
+            "innovation": "Hip-Hop Brand Endorsement",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/4e/Run-DMC_Live_in_London_2008.jpg"
+            ],
+            "description": "Hip-hop group Run-DMC released 'My Adidas,' an anthem celebrating their Superstar sneakers worn without laces. At a Madison Square Garden concert, Run told the crowd to hold up their Adidas—a sea of three-striped shoes rose into the air. An Adidas executive in attendance was so impressed he signed the group to a $1.6 million endorsement deal.\n\nThis was the first non-athlete endorsement deal in sneaker history and marked the collision of hip-hop and sportswear that would reshape both industries. Run-DMC proved that cultural credibility could sell as many shoes as athletic performance, opening the door for decades of artist collaborations to come.",
+            "metrics": {
+                "deal_value": "$1.6 million",
+                "significance": "First non-athlete sneaker endorsement"
+            }
+        },
+        {
+            "id": "evt_air_max_1",
+            "title": "Nike Air Max 1: Visible Air",
+            "date_display": "March 26, 1987",
+            "date_start": "1987-03-26",
+            "group_ids": ["grp_basketball_hiphop"],
+            "type": "Product Launch",
+            "innovator": "Tinker Hatfield",
+            "innovation": "Visible Air Cushioning",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1d/Paris_-_Pair_of_sneakers_-_1626.jpg"
+            ],
+            "description": "Designer Tinker Hatfield, inspired by the exposed structural elements of the Centre Pompidou in Paris, created a running shoe with a visible air bubble in the heel. For the first time, consumers could see the technology they were paying for. Nike's Air cushioning technology had existed since 1979, but making it visible transformed it from engineering into fashion.\n\nThe Air Max 1 was initially polarizing—some thought the visible air was ugly, others worried it would pop. But it became iconic, launching the Air Max line that continues to generate billions in revenue. Air Max Day (March 26) is now an annual celebration among sneaker enthusiasts.",
+            "metrics": {
+                "inspiration": "Centre Pompidou architecture"
+            }
+        },
+        {
+            "id": "evt_reebok_pump",
+            "title": "Reebok Pump",
+            "date_display": "November 1989",
+            "date_start": "1989-11-01",
+            "group_ids": ["grp_basketball_hiphop"],
+            "type": "Product Launch",
+            "innovator": "Reebok, Paul Litchfield",
+            "innovation": "Inflatable Fit Technology",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/be/Reebok_Pump_Twilight_Zone.jpg"
+            ],
+            "description": "Reebok introduced a revolutionary—and some would say gimmicky—feature: a basketball button on the tongue that inflated internal chambers to create a custom fit. The technology was developed by Paul Litchfield and cost Reebok over $10 million to develop.\n\nThe Pump became a cultural phenomenon, boosted when Boston Celtic Dee Brown pumped up his shoes before winning the 1991 NBA Slam Dunk Contest. At $170 (over $400 in today's dollars), it was the most expensive basketball shoe ever, yet it sold out repeatedly. The Pump proved that consumers would pay premium prices for visible technology, setting the stage for the 'sneaker wars' of the 1990s.",
+            "metrics": {
+                "retail_price": "$170",
+                "development_cost": "$10 million"
+            }
+        },
+        {
+            "id": "evt_air_jordan_v",
+            "title": "Air Jordan V",
+            "date_display": "February 1990",
+            "date_start": "1990-02-01",
+            "group_ids": ["grp_technology"],
+            "type": "Product Launch",
+            "innovator": "Tinker Hatfield",
+            "innovation": "Clear Rubber Outsole",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f1/Air_Jordan_V.jpg"
+            ],
+            "description": "The Air Jordan V, designed by Tinker Hatfield, introduced several innovations: a clear rubber outsole, reflective tongue, and fighter jet-inspired shark teeth on the midsole. Hatfield drew inspiration from WWII fighter planes, giving the shoe an aggressive, aerodynamic aesthetic.\n\nThe Jordan V was the first sneaker to really embrace storytelling through design. Each element had a meaning, a reference, a reason. This approach—treating sneakers as wearable narratives—would influence the entire industry and set the template for how signature shoes would be designed going forward.",
+            "metrics": {
+                "design_inspiration": "WWII P-51 Mustang fighter plane"
+            }
+        },
+        {
+            "id": "evt_dee_brown_slam_dunk",
+            "title": "Dee Brown Pumps Up at Slam Dunk Contest",
+            "date_display": "February 9, 1991",
+            "date_start": "1991-02-09",
+            "group_ids": ["grp_technology"],
+            "type": "Sports Event",
+            "innovator": "Dee Brown",
+            "innovation": "Iconic Marketing Moment",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f0/NBA_All-Star_Game_2018.jpg"
+            ],
+            "description": "Before his final dunk at the 1991 NBA All-Star Slam Dunk Contest, Boston Celtics guard Dee Brown bent down and dramatically pumped up his Reebok Pump shoes on national television. He then covered his eyes with his forearm and threw down a 'no-look' dunk to win the contest.\n\nThe moment was worth millions in free advertising for Reebok. Brown's theatrical pump became one of the most memorable marketing moments in sneaker history, demonstrating how sports spectacles could drive consumer desire. Reebok sales spiked immediately after the broadcast.",
+            "metrics": {
+                "event": "1991 NBA Slam Dunk Contest"
+            }
+        },
+        {
+            "id": "evt_air_max_95",
+            "title": "Nike Air Max 95",
+            "date_display": "1995",
+            "date_start": "1995-01-01",
+            "group_ids": ["grp_technology"],
+            "type": "Product Launch",
+            "innovator": "Sergio Lozano",
+            "innovation": "Human Anatomy-Inspired Design",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8a/2015_Nike_Air_Max_95_OG.jpg"
+            ],
+            "description": "Designer Sergio Lozano created the Air Max 95 based on human anatomy—the spine inspired the lacing, the ribs inspired the graduated side panels, the muscles inspired the mesh upper. The shoe featured multiple visible Air units and a bold, futuristic aesthetic that was unlike anything on the market.\n\nThe Air Max 95 became a cultural phenomenon, particularly in Japan where it sparked a sneaker craze. Prices reached $1,000 on the secondary market, and the shoe was nicknamed 'those yellow ones' for its distinctive neon colorway. It proved that sneakers could be art objects worthy of collection and investment.",
+            "metrics": {
+                "resale_prices": "Up to $1,000 (1995 Japan)"
+            }
+        },
+        {
+            "id": "evt_air_jordan_xi",
+            "title": "Air Jordan XI: Patent Leather and Space Jam",
+            "date_display": "1996",
+            "date_start": "1996-01-01",
+            "group_ids": ["grp_technology"],
+            "type": "Product Launch",
+            "innovator": "Tinker Hatfield, Michael Jordan",
+            "innovation": "Patent Leather Basketball Shoe",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/9/9b/Air_Jordan_11_%22Concord%22_%282011%29.jpg"
+            ],
+            "description": "The Air Jordan XI broke all conventions of basketball shoe design. Michael Jordan wanted something he could wear with a suit, so Tinker Hatfield incorporated patent leather—a formal material never before used on athletic shoes. The shoe also featured a carbon fiber spring plate and a clean, minimal silhouette.\n\nJordan wore the XI when he led the Bulls to a 72-10 record and fourth championship. It also appeared in the film 'Space Jam,' becoming inseparable from Jordan's cultural mythology. The 'Concord' and 'Bred' colorways became grail shoes for collectors. The XI is consistently ranked among the greatest sneakers ever designed.",
+            "metrics": {
+                "championship": "1996 NBA Finals"
+            }
+        },
+        {
+            "id": "evt_jordan_brand",
+            "title": "Jordan Brand Becomes Separate Division",
+            "date_display": "1997",
+            "date_start": "1997-01-01",
+            "group_ids": ["grp_technology"],
+            "type": "Brand Launch",
+            "innovator": "Nike, Michael Jordan",
+            "innovation": "Athlete as Independent Brand",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg"
+            ],
+            "description": "Nike spun off Air Jordan into its own separate brand with its own distinct identity, the Jumpman logo. This was more than organizational restructuring—it was recognition that Michael Jordan had transcended endorsement to become a brand unto himself.\n\nBy this point, Jordan had won five NBA championships and countless MVP awards while wearing his signature shoes. The Air Jordan brand generated over $2 billion in annual revenue, more than many standalone sneaker companies. The Jordan Brand model—athlete as independent brand—would later be applied to LeBron James, Kevin Durant, and others.",
+            "metrics": {
+                "annual_revenue": "$2+ billion"
+            }
+        },
+        {
+            "id": "evt_nike_shox",
+            "title": "Nike Shox Technology",
+            "date_display": "2000",
+            "date_start": "2000-01-01",
+            "group_ids": ["grp_technology"],
+            "type": "Product Launch",
+            "innovator": "Nike",
+            "innovation": "Mechanical Cushioning System",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/32/Nike_Shox.jpg"
+            ],
+            "description": "After 16 years of development, Nike released Shox technology—visible foam columns in the heel that provided mechanical cushioning through compression. The technology was marketed as delivering a 'boing' effect, returning energy with each step.\n\nVince Carter's legendary 2000 Olympic dunk over 7'2\" French center Frédéric Weis while wearing Shox became one of basketball's most iconic moments. The visible springs made for compelling advertising, and Shox became a popular choice for basketball and running shoes throughout the 2000s.",
+            "metrics": {
+                "development_time": "16 years"
+            }
+        },
+        {
+            "id": "evt_nike_dunk_sb",
+            "title": "Nike SB Dunk Launches",
+            "date_display": "2002",
+            "date_start": "2002-01-01",
+            "group_ids": ["grp_technology"],
+            "type": "Product Line Launch",
+            "innovator": "Nike SB, Sandy Bodecker",
+            "innovation": "Skateboarding Lifestyle Shoe",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/59/NIKE_Dunk_Low_Pro_SB_Supreme_Cement.jpg"
+            ],
+            "description": "Nike had previously failed to crack the skateboarding market, seen as inauthentic by core skaters. With Nike SB (Skateboarding), the company adopted a new strategy: limited releases, collaborations with respected skate shops, and distribution only through skateboarding retailers.\n\nThe SB Dunk became a collector's item almost immediately. Limited colorways sold out and appeared on eBay for multiples of retail. Nike had accidentally invented the 'hype' model—scarcity plus cultural credibility equals demand. The lessons learned with SB Dunks would later be applied across Nike's entire product line.",
+            "metrics": {
+                "distribution": "Skateboard shops only"
+            }
+        },
+        {
+            "id": "evt_crocs_debut",
+            "title": "Crocs Debuts Foam Clogs",
+            "date_display": "2002",
+            "date_start": "2002-01-01",
+            "group_ids": ["grp_technology"],
+            "type": "Product Launch",
+            "innovator": "Crocs, Inc.",
+            "innovation": "Foam Clog Footwear",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/73/Classic_Yellow_Crocs.jpg"
+            ],
+            "description": "Originally designed as a boating shoe, the Crocs clog—made from a proprietary closed-cell resin called Croslite—became an unlikely footwear phenomenon. The shoes were comfortable, durable, waterproof, and aggressively ugly.\n\nCrocs polarized the public like few shoes before or since. Fashion critics declared them an abomination; healthcare workers and chefs adopted them en masse. After years of being a joke, Crocs became a fashion statement in the 2020s, collaborating with luxury brands like Balenciaga and celebrities like Post Malone. The shoe that shouldn't exist now generates over $3 billion in annual revenue.",
+            "metrics": {
+                "annual_revenue": "$3+ billion (2023)"
+            }
+        },
+        {
+            "id": "evt_adidas_reebok",
+            "title": "Adidas Acquires Reebok",
+            "date_display": "August 2005",
+            "date_start": "2005-08-01",
+            "group_ids": ["grp_technology"],
+            "type": "Acquisition",
+            "innovator": "Adidas",
+            "innovation": "Industry Consolidation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1c/Adidas_originals_logo.png"
+            ],
+            "description": "Adidas acquired Reebok for $3.8 billion, attempting to create a combined entity that could better compete with Nike's dominance in the American market. The deal gave Adidas access to Reebok's NBA and NFL licensing deals.\n\nThe acquisition proved difficult to integrate. Reebok's brand identity became muddled, and many of its innovations were folded into Adidas. In 2021, Adidas sold Reebok to Authentic Brands Group for only $2.5 billion, acknowledging that the merger had not achieved its goals. The deal became a cautionary tale about the challenges of brand consolidation.",
+            "metrics": {
+                "acquisition_price": "$3.8 billion",
+                "sale_price": "$2.5 billion (2021)"
+            }
+        },
+        {
+            "id": "evt_kanye_nike_yeezy",
+            "title": "Kanye West Air Yeezy Release",
+            "date_display": "April 2009",
+            "date_start": "2009-04-01",
+            "group_ids": ["grp_technology"],
+            "type": "Collaboration Launch",
+            "innovator": "Kanye West, Nike",
+            "innovation": "Non-Athlete Fashion Collaboration",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/e1/Kanye_West_Lollapalooza_Chile_2011_2.jpg"
+            ],
+            "description": "Rapper and fashion aspirant Kanye West released the Air Yeezy, a high-top sneaker designed in collaboration with Nike. Unlike Run-DMC's deal, which put an artist's name on existing shoes, the Air Yeezy was a ground-up design reflecting West's fashion sensibilities.\n\nThe release was limited to a few thousand pairs, which sold out instantly and resold for thousands of dollars. The Air Yeezy proved that musicians could create genuine sneaker culture, not just endorse it. However, tensions between West and Nike over royalties and creative control would eventually push him to Adidas, where he would reshape the entire industry.",
+            "metrics": {
+                "resale_premium": "10x+ retail"
+            }
+        },
+        {
+            "id": "evt_nike_flyknit",
+            "title": "Nike Flyknit Debuts",
+            "date_display": "2012",
+            "date_start": "2012-01-01",
+            "group_ids": ["grp_hype"],
+            "type": "Technology Launch",
+            "innovator": "Nike",
+            "innovation": "Knit Upper Construction",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/e/e7/Nike_Free_4.0_Flyknit_%2815826513876%29.jpg"
+            ],
+            "description": "Nike introduced Flyknit technology, using computer-controlled knitting machines to create seamless, lightweight uppers from high-strength fibers. The technology reduced waste by 80% compared to traditional cut-and-sew construction and allowed for precision fit zones within a single piece of fabric.\n\nFlyknit represented a genuine manufacturing innovation that also happened to produce aesthetically striking shoes. The technology would be applied across Nike's lineup and spawned competitors like Adidas's Primeknit. It demonstrated that sustainability and performance could align with style.",
+            "metrics": {
+                "waste_reduction": "80% compared to traditional construction"
+            }
+        },
+        {
+            "id": "evt_adidas_boost",
+            "title": "Adidas Boost Technology",
+            "date_display": "2013",
+            "date_start": "2013-01-01",
+            "group_ids": ["grp_hype"],
+            "type": "Technology Launch",
+            "innovator": "Adidas, BASF",
+            "innovation": "TPU Foam Cushioning",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/9/99/Adidas_Ultraboost_20.jpg"
+            ],
+            "description": "Adidas's Boost technology, developed in partnership with chemical company BASF, used thousands of thermoplastic polyurethane (TPU) pellets fused together to create a cushioning system that was more responsive than traditional EVA foam. The distinctive pebbled appearance of the Boost midsole became instantly recognizable.\n\nBoost technology would underpin Adidas's resurgence in the mid-2010s, appearing in both performance and lifestyle shoes. Combined with the Yeezy partnership, Boost helped Adidas close the gap with Nike in the lifestyle sneaker market.",
+            "metrics": {
+                "technology": "TPU foam pellet cushioning"
+            }
+        },
+        {
+            "id": "evt_yeezy_adidas",
+            "title": "Adidas Yeezy Boost 350",
+            "date_display": "February 2015",
+            "date_start": "2015-02-01",
+            "group_ids": ["grp_hype"],
+            "type": "Collaboration Launch",
+            "innovator": "Kanye West, Adidas",
+            "innovation": "Primeknit + Boost Technology",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f0/Yeezy_Boost_350.jpg"
+            ],
+            "description": "After leaving Nike over disputes about royalties and creative control, Kanye West signed with Adidas for an unprecedented deal that gave him ownership of his designs and a reported $15 million salary plus royalties. The Yeezy Boost 350 combined Adidas's Boost foam technology with a knit upper and West's distinctive aesthetic.\n\nThe Yeezy line transformed Adidas. Within three years, it generated over $1.5 billion in annual revenue and made Kanye West a billionaire. The 'Yeezy effect' also revitalized Adidas's entire brand, making the German company competitive with Nike for the first time in years.",
+            "metrics": {
+                "peak_annual_revenue": "$1.5+ billion"
+            }
+        },
+        {
+            "id": "evt_ultra_boost",
+            "title": "Adidas Ultra Boost",
+            "date_display": "February 2015",
+            "date_start": "2015-02-01",
+            "group_ids": ["grp_hype"],
+            "type": "Product Launch",
+            "innovator": "Adidas",
+            "innovation": "Premium Running Lifestyle Shoe",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/9/99/Adidas_Ultraboost_20.jpg"
+            ],
+            "description": "The Adidas Ultra Boost was designed as a premium running shoe but became a streetwear essential when Kanye West was frequently photographed wearing them. The combination of Primeknit upper and full-length Boost midsole created what many called the most comfortable shoe ever made.\n\nThe Ultra Boost's crossover success—loved by both runners and fashion enthusiasts—exemplified the blurring line between performance and lifestyle in modern sneaker culture. It demonstrated that comfort could be a fashion statement.",
+            "metrics": {
+                "comfort_rating": "Widely called 'most comfortable shoe'"
+            }
+        },
+        {
+            "id": "evt_stockx",
+            "title": "StockX Launches",
+            "date_display": "2016",
+            "date_start": "2016-01-01",
+            "group_ids": ["grp_hype"],
+            "type": "Platform Launch",
+            "innovator": "Josh Luber, Dan Gilbert",
+            "innovation": "Stock Market for Sneakers",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c1/StockX_Wordmark_GREEN_%28002%29.png"
+            ],
+            "description": "StockX launched as a 'stock market of things,' bringing transparency and authentication to sneaker resale. Rather than eBay-style auctions or fixed prices, StockX used bid/ask spreads like a stock exchange. All transactions were authenticated by the company, reducing fraud.\n\nThe platform legitimized sneaker resale as an asset class. Users could track historical prices, see market trends, and trade sneakers like commodities. By 2020, StockX was valued at $3.8 billion, processing over 7.5 million transactions annually.",
+            "metrics": {
+                "peak_valuation": "$3.8 billion"
+            }
+        },
+        {
+            "id": "evt_nike_vaporfly",
+            "title": "Nike Vaporfly Breaking2 Attempt",
+            "date_display": "May 6, 2017",
+            "date_start": "2017-05-06",
+            "group_ids": ["grp_hype"],
+            "type": "Athletic Event / Technology",
+            "innovator": "Nike, Eliud Kipchoge",
+            "innovation": "Carbon Fiber Plate Running Shoe",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/36/Eliud_Kipchoge_in_Berlin_-_2017_%28cropped%29.jpg"
+            ],
+            "description": "Nike organized 'Breaking2,' an attempt to run a marathon in under two hours—a feat thought impossible. Kenyan runner Eliud Kipchoge wore the Nike Vaporfly Elite, featuring a revolutionary carbon fiber plate embedded in thick ZoomX foam.\n\nWhile Kipchoge missed the two-hour barrier by 25 seconds under controlled conditions, he would later break it in a non-record-eligible run in 2019. The Vaporfly technology proved so effective that World Athletics eventually had to create rules limiting shoe stack height and carbon plate usage.",
+            "metrics": {
+                "performance_improvement": "4% running economy",
+                "time": "2:00:25 (unofficial)"
+            }
+        },
+        {
+            "id": "evt_off_white_nike",
+            "title": "Off-White x Nike 'The Ten'",
+            "date_display": "September 2017",
+            "date_start": "2017-09-01",
+            "group_ids": ["grp_hype"],
+            "type": "Collaboration Launch",
+            "innovator": "Virgil Abloh, Nike",
+            "innovation": "Deconstructed Design Aesthetic",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/69/Virgil_Abloh_Paris_Fashion_Week_Autumn_Winter_2019_%28cropped%29.jpg"
+            ],
+            "description": "Louis Vuitton artistic director (and Off-White founder) Virgil Abloh reimagined ten iconic Nike silhouettes with his signature deconstructed aesthetic. The designs featured exposed foam, visible stitching, zip ties, and hand-written text like 'AIR' in quotation marks on the Air Jordan 1's midsole.\n\nThe collaboration was instantly legendary. Each shoe from 'The Ten' sold out within minutes and resold for ten to twenty times retail. Abloh's approach—treating sneakers as art objects to be commented upon—influenced every major sneaker collaboration that followed.",
+            "metrics": {
+                "resale_value": "10-20x retail"
+            }
+        },
+        {
+            "id": "evt_nike_adapt",
+            "title": "Nike Adapt Self-Lacing Technology",
+            "date_display": "January 2019",
+            "date_start": "2019-01-01",
+            "group_ids": ["grp_hype"],
+            "type": "Product Launch",
+            "innovator": "Nike",
+            "innovation": "Electronic Self-Lacing",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nike_Mag_Back_to_the_Future_%28by_Ricardo_Macias%29.jpg"
+            ],
+            "description": "Nike released the Adapt BB, a basketball shoe with electronic self-lacing controlled by a smartphone app. The technology, refined from the limited 2016 HyperAdapt release, used a motor in the sole to tighten or loosen the fit on demand.\n\nThe Adapt system delivered on the promise of Nike's 2011 'Back to the Future' Nike Mag—power laces for the masses. While the technology added weight and required charging, it represented Nike's continued push to merge electronics with footwear.",
+            "metrics": {
+                "retail_price": "$350"
+            }
+        },
+        {
+            "id": "evt_resale_market_10b",
+            "title": "Sneaker Resale Market Hits $10 Billion",
+            "date_display": "2020",
+            "date_start": "2020-01-01",
+            "group_ids": ["grp_hype"],
+            "type": "Market Milestone",
+            "innovation": "Sneakers as Investment Assets",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/da/Air_Jordan_1_Retro_High_OG_%22Chicago%22.jpg"
+            ],
+            "description": "The global sneaker resale market reached an estimated $10 billion in value, with projections of $30 billion by 2030. Limited releases, often selling out in seconds to bots, immediately appeared on resale platforms for multiples of their retail price.\n\nThis financialization changed how people thought about sneakers. They were no longer just shoes—they were investments. Collectors kept pairs 'deadstock' (unworn, in original packaging) for years, waiting for values to appreciate.",
+            "metrics": {
+                "market_size": "$10 billion",
+                "projected_2030": "$30 billion"
+            }
+        },
+        {
+            "id": "evt_covid_casual",
+            "title": "Pandemic Drives Casual Footwear Boom",
+            "date_display": "2020",
+            "date_start": "2020-03-01",
+            "group_ids": ["grp_hype"],
+            "type": "Market Shift",
+            "innovation": "Work-From-Home Footwear Trend",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/9/91/New_Balance_574.jpg"
+            ],
+            "description": "The COVID-19 pandemic transformed footwear habits. With offices closed and formal occasions cancelled, demand for dress shoes collapsed while sneaker sales surged. Comfortable, casual footwear became the default.\n\nBrands that emphasized comfort—New Balance, HOKA, On Running—saw unprecedented growth. Even as the pandemic waned, the shift persisted. Office dress codes relaxed permanently, making sneakers acceptable in environments that once required leather shoes.",
+            "metrics": {
+                "impact": "Permanent casual footwear shift"
+            }
+        },
+        {
+            "id": "evt_adidas_yeezy_end",
+            "title": "Adidas Terminates Yeezy Partnership",
+            "date_display": "October 25, 2022",
+            "date_start": "2022-10-25",
+            "group_ids": ["grp_hype"],
+            "type": "Partnership Termination",
+            "innovator": "Adidas",
+            "innovation": "Ethics Over Revenue Decision",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1c/Adidas_originals_logo.png"
+            ],
+            "description": "Following Kanye West's increasingly erratic behavior and antisemitic statements, Adidas terminated its partnership with him and halted production of Yeezy products. The decision cost Adidas an estimated $250 million in net income for 2022 alone, with the company holding approximately $530 million in unsold Yeezy inventory.\n\nThe termination marked the end of the most financially successful celebrity sneaker partnership in history. Adidas eventually decided to sell remaining Yeezy inventory at cost and donate proceeds to organizations fighting antisemitism and racism.",
+            "metrics": {
+                "financial_impact": "$250 million loss (2022)"
+            }
+        },
+        {
+            "id": "evt_ai_design",
+            "title": "AI-Assisted Sneaker Design Emerges",
+            "date_display": "2023",
+            "date_start": "2023-01-01",
+            "group_ids": ["grp_hype"],
+            "type": "Technology Trend",
+            "innovation": "Generative AI in Footwear Design",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/87/DALL-E_Sample.png"
+            ],
+            "description": "Major footwear brands began experimenting with generative AI tools for sneaker design. Nike acquired RTFKT, a digital fashion company specializing in virtual sneakers and AI-assisted design. Other brands used tools like Midjourney and DALL-E to rapidly prototype concepts.\n\nThe technology raised questions about creativity and authorship in design. As of 2025, AI remained a tool for human designers rather than a replacement, but the boundary continued to blur.",
+            "metrics": {
+                "acquisition": "Nike acquired RTFKT"
+            }
+        },
+        {
+            "id": "evt_sustainability",
+            "title": "Sustainability Becomes Industry Priority",
+            "date_display": "2024",
+            "date_start": "2024-01-01",
+            "group_ids": ["grp_hype"],
+            "type": "Industry Shift",
+            "innovation": "Recycled Materials and Circular Design",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/80/Adidas_Ultraboost_21_Primeblue.jpg"
+            ],
+            "description": "Facing pressure from consumers and regulators, major sneaker brands accelerated sustainability initiatives. Nike's 'Move to Zero' program aimed for zero carbon and zero waste. Adidas expanded its Parley line made from ocean plastic. Allbirds marketed carbon footprint labels on every shoe.\n\nThe industry grappled with the tension between sustainability and its hype-driven business model—after all, limited releases encouraged buying multiple pairs to resell, hardly an environmentally friendly practice.",
+            "metrics": {
+                "trend": "Recycled materials becoming standard"
+            }
+        }
+    ]
+}

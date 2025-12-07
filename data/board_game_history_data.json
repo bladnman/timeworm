@@ -1,0 +1,1037 @@
+{
+    "meta": {
+        "title": "Roll for History: A History of Board Games",
+        "version": "1.0.0",
+        "generated_date": "2025-12-06",
+        "overview": "Board games are among humanity's oldest forms of structured play, with archaeological evidence dating back 5,000 years. From ancient games of strategy and chance to modern hobby gaming's explosion of creativity, the history of board games reflects changing attitudes about leisure, education, competition, and social bonding. Today's tabletop gaming renaissance represents the medium's richest period of innovation and cultural impact.",
+        "attribution": "Historical research compiled from gaming history archives, industry analysis, and cultural studies."
+    },
+    "groups": [
+        {
+            "id": "grp_ancient",
+            "title": "Part I: Ancient Games",
+            "date_range": "3500 BCE – 500 CE",
+            "description": "The earliest known board games emerged in ancient civilizations across the globe, serving purposes beyond entertainment—ritual divination, military training, social bonding, and teaching strategic thinking. Many ancient games survive in modified forms today."
+        },
+        {
+            "id": "grp_classical",
+            "title": "Part II: Medieval & Classical Period",
+            "date_range": "500 – 1800",
+            "description": "Chess spread from India through Persia to Europe, becoming the 'game of kings' and a test of intellect. Meanwhile, regional games developed across cultures, and the first commercial board games emerged from European publishers."
+        },
+        {
+            "id": "grp_mass_production",
+            "title": "Part III: Mass Production Era",
+            "date_range": "1800s – 1970s",
+            "description": "The industrial revolution enabled mass-produced games marketed to middle-class families. This era established the 'roll-and-move' formula and produced enduring classics like Monopoly, Scrabble, and Clue—games that defined 'board game' for generations."
+        },
+        {
+            "id": "grp_rpg",
+            "title": "Part IV: The Role-Playing Revolution",
+            "date_range": "1974 – 1993",
+            "description": "Dungeons & Dragons created an entirely new category of gaming—collaborative storytelling without boards or winners. The RPG explosion changed how people thought about games and laid groundwork for video game RPGs and the hobby gaming mentality."
+        },
+        {
+            "id": "grp_eurogame",
+            "title": "Part V: The Eurogame Revolution",
+            "date_range": "1993 – 2007",
+            "description": "German designers pioneered a new approach: elegant mechanics, limited luck, no player elimination, and themes secondary to gameplay. Settlers of Catan brought 'eurogames' to international audiences, demonstrating that board games could be sophisticated adult entertainment."
+        },
+        {
+            "id": "grp_renaissance",
+            "title": "Part VI: The Modern Renaissance",
+            "date_range": "2008 – 2025",
+            "description": "Kickstarter democratized game publishing while YouTube and streaming brought board games to new audiences. The industry exploded with innovation—legacy games, app integration, narrative experiences—creating the richest era in board game history."
+        }
+    ],
+    "events": [
+        {
+            "id": "evt_senet",
+            "title": "Senet in Ancient Egypt",
+            "date_display": "c. 3500 BCE",
+            "date_start": "-3500-01-01",
+            "group_ids": ["grp_ancient"],
+            "type": "Game Origin",
+            "innovation": "Earliest Known Board Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a8/Senet_board_Rosicrucian.jpg"
+            ],
+            "description": "Senet is the oldest known board game, with artifacts found in Egyptian tombs dating to around 3500 BCE. The game used a 30-square board and throwing sticks as dice. Over time, Senet evolved from pure game to religious ritual—representations in tombs suggest it symbolized the journey to the afterlife.\n\nThe rules of Senet must be reconstructed from incomplete evidence, but it clearly involved racing pieces across the board with consequences for landing on certain squares. Egyptian pharaohs were buried with Senet boards, demonstrating the game's importance in their culture.",
+            "metrics": {
+                "age": "~5,500 years",
+                "squares": "30"
+            }
+        },
+        {
+            "id": "evt_royal_ur",
+            "title": "The Royal Game of Ur",
+            "date_display": "c. 3000 BCE",
+            "date_start": "-3000-01-01",
+            "group_ids": ["grp_ancient"],
+            "type": "Game Origin",
+            "innovation": "Mesopotamian Racing Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c9/British_Museum_Royal_Game_of_Ur.jpg"
+            ],
+            "description": "Discovered in the Royal Tombs of Ur in modern-day Iraq, this 20-square racing game was played throughout the ancient Near East for thousands of years. A cuneiform tablet from 177 BCE provides partial rules, making it one of the few ancient games whose rules can be reconstructed with reasonable confidence.\n\nThe game involves racing seven pieces across the board, with rosette squares providing safe spaces and extra turns. The Royal Game of Ur demonstrates that sophisticated game design existed at the dawn of civilization.",
+            "metrics": {
+                "discovery": "1920s, Royal Tombs of Ur"
+            }
+        },
+        {
+            "id": "evt_backgammon_origins",
+            "title": "Backgammon Ancestors Emerge",
+            "date_display": "c. 2000 BCE",
+            "date_start": "-2000-01-01",
+            "group_ids": ["grp_ancient"],
+            "type": "Game Origin",
+            "innovation": "Race and Capture Mechanics",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/29/Backgammon_board.jpg"
+            ],
+            "description": "Racing games involving dice and piece capture appeared in various cultures around 2000 BCE, eventually evolving into modern backgammon. The Roman game Tabula, Persian game Nard, and similar games spread along trade routes.\n\nBackgammon's combination of luck (dice) and skill (movement choices) created enduring appeal. The game has been played continuously for millennia and remains popular today, with competitive play and gambling throughout the world.",
+            "metrics": {
+                "type": "Race game with capture"
+            }
+        },
+        {
+            "id": "evt_go_emerges",
+            "title": "Go Emerges in China",
+            "date_display": "c. 500 BCE",
+            "date_start": "-0500-01-01",
+            "group_ids": ["grp_ancient"],
+            "type": "Game Origin",
+            "innovation": "Abstract Strategy Perfection",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/2a/FloorGoban.JPG"
+            ],
+            "description": "Go (Weiqi in Chinese) emerged in ancient China and spread to Korea and Japan, where it became deeply embedded in culture and education. The game uses simple rules—black and white stones placed on a 19x19 grid, surrounding territory—but produces staggering complexity.\n\nGo has more possible game positions than atoms in the observable universe. It remained the last major board game where human masters defeated computers until AlphaGo's 2016 victory. The game is considered one of the four essential arts of Chinese scholars.",
+            "metrics": {
+                "complexity": "More positions than atoms in universe",
+                "board_size": "19x19"
+            }
+        },
+        {
+            "id": "evt_pachisi",
+            "title": "Pachisi Develops in India",
+            "date_display": "c. 400 BCE",
+            "date_start": "-0400-01-01",
+            "group_ids": ["grp_ancient"],
+            "type": "Game Origin",
+            "innovation": "Cross-and-Circle Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/36/Pachisi.jpg"
+            ],
+            "description": "Pachisi, the 'national game of India,' used a cross-shaped cloth board and cowrie shells as dice. Four players raced pieces around the board, with capture mechanics adding strategic depth. The game was played by Mughal emperors using human pieces on courtyard-sized boards.\n\nPachisi's design influenced countless descendants: Parcheesi, Ludo, and Sorry! all derive from this ancient game. The cross-and-circle track design appears in games worldwide, demonstrating Pachisi's foundational influence.",
+            "metrics": {
+                "descendants": "Parcheesi, Ludo, Sorry!"
+            }
+        },
+        {
+            "id": "evt_mancala",
+            "title": "Mancala Family Develops",
+            "date_display": "c. 200 BCE",
+            "date_start": "-0200-01-01",
+            "group_ids": ["grp_ancient"],
+            "type": "Game Origin",
+            "innovation": "Seed-Counting Game System",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/de/Mancala_Bao.jpg"
+            ],
+            "description": "Mancala refers to a family of 'count-and-capture' games played throughout Africa and Asia for millennia. Players distribute seeds (or stones) from cups on a board, capturing opponent seeds according to various rules. Over 200 mancala variants exist worldwide.\n\nMancala games require only a board with holes and seeds—making them accessible across economic conditions. The games develop mathematical thinking and appear in cultures from Ethiopia to Southeast Asia, demonstrating parallel development or ancient trade route transmission.",
+            "metrics": {
+                "variants": "200+ worldwide"
+            }
+        },
+        {
+            "id": "evt_chess_india",
+            "title": "Chess Develops in India",
+            "date_display": "c. 600 CE",
+            "date_start": "0600-01-01",
+            "group_ids": ["grp_classical"],
+            "type": "Game Origin",
+            "innovator": "Indian Culture",
+            "innovation": "Asymmetric Piece Powers",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d5/ChessStartingPosition.jpg"
+            ],
+            "description": "Chess emerged in India as Chaturanga, a four-player war game representing the Indian army: infantry (pawns), cavalry (knights), elephants (bishops), and chariots (rooks). The king piece reflected the game's military simulation origins.\n\nChaturanga spread through Persia (where it became Shatranj) and the Arab world before reaching Europe. Each culture modified the rules—the powerful queen didn't exist until medieval Europe. Chess became history's most studied game, a test of pure mental ability.",
+            "metrics": {
+                "original_name": "Chaturanga"
+            }
+        },
+        {
+            "id": "evt_chess_europe",
+            "title": "Chess Reaches Europe",
+            "date_display": "c. 1000 CE",
+            "date_start": "1000-01-01",
+            "group_ids": ["grp_classical"],
+            "type": "Game Spread",
+            "innovation": "European Adaptation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d5/ChessStartingPosition.jpg"
+            ],
+            "description": "Chess reached Europe through Moorish Spain and became popular among nobility—it was called 'the game of kings' and considered essential education for aristocrats. The pieces were Europeanized: the vizier became a queen, the elephant became a bishop.\n\nMedieval chess was slower than the modern game—the queen and bishop had limited movement. Chess manuals and problems emerged as the game became central to intellectual culture. Churches periodically banned the game for encouraging gambling.",
+            "metrics": {
+                "spread_route": "Via Moorish Spain"
+            }
+        },
+        {
+            "id": "evt_modern_chess",
+            "title": "Modern Chess Rules Standardized",
+            "date_display": "c. 1475",
+            "date_start": "1475-01-01",
+            "group_ids": ["grp_classical"],
+            "type": "Rule Change",
+            "innovation": "Powerful Queen",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/44/Knight_%28Central_Staunton%29.jpg"
+            ],
+            "description": "In late 15th century Spain or Italy, chess rules changed dramatically. The queen gained her modern power to move any distance in any direction, and the bishop gained diagonal range. These changes, possibly celebrating Queen Isabella's power, created the faster, more tactical modern game.\n\nThe enhanced queen was called 'mad queen chess' (scacchi alla rabiosa) for its aggressive pace. The changes spread across Europe, standardizing the game that would be played for the next 500 years.",
+            "metrics": {
+                "key_change": "Queen gains full board movement"
+            }
+        },
+        {
+            "id": "evt_game_goose",
+            "title": "The Game of the Goose",
+            "date_display": "1759",
+            "date_start": "1759-01-01",
+            "group_ids": ["grp_classical"],
+            "type": "Game Publication",
+            "innovation": "First Commercially Published Board Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/43/Gioco_Oca_XVIII_secolo.jpg"
+            ],
+            "description": "The Game of the Goose is often cited as the first commercially published board game in Europe. Players raced along a spiral track, with special squares causing advancement, reversal, or penalties. The game required no skill—pure luck determined the winner.\n\nThe Goose established the 'roll-and-move' formula that would dominate family board games for two centuries. Publishers could easily create themed variants by changing the artwork while keeping identical gameplay.",
+            "metrics": {
+                "format": "Spiral track, roll-and-move"
+            }
+        },
+        {
+            "id": "evt_game_of_life",
+            "title": "The Game of Life",
+            "date_display": "1860",
+            "date_start": "1860-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Game Publication",
+            "innovator": "Milton Bradley",
+            "innovation": "Life Simulation Board Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/80/The_Game_of_Life_Logo.svg"
+            ],
+            "description": "Milton Bradley's 'The Checkered Game of Life' was one of the first popular American board games. Players navigated from youth to old age, with squares representing virtues (industry, honesty) leading upward and vices (gambling, crime) causing setbacks. The game taught Protestant values through play.\n\nBradley founded his company on this game's success. The modern 'Game of Life' (1960 revision) replaced moral instruction with material success—cars, houses, money—reflecting changed American values.",
+            "metrics": {
+                "company": "Milton Bradley (founded on this game)"
+            }
+        },
+        {
+            "id": "evt_parker_brothers",
+            "title": "George Parker Founds Parker Brothers",
+            "date_display": "1883",
+            "date_start": "1883-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Company Founding",
+            "innovator": "George Parker",
+            "innovation": "Major Game Publisher",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5c/Parker_Brothers_logo.png"
+            ],
+            "description": "Sixteen-year-old George Parker founded Parker Brothers after creating 'Banking,' a card game that sold well locally. The company would grow to become one of the largest game publishers in the world, eventually publishing Monopoly, Clue, and Risk.\n\nParker Brothers represented the industrialization of games—mass production, national distribution, and marketing. The company merged with Tonka in 1987 and was eventually absorbed into Hasbro, but the Parker Brothers brand continues.",
+            "metrics": {
+                "founder_age": "16",
+                "later_hits": "Monopoly, Clue, Risk"
+            }
+        },
+        {
+            "id": "evt_landlords_game",
+            "title": "Lizzie Magie Patents The Landlord's Game",
+            "date_display": "1903",
+            "date_start": "1903-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Patent",
+            "innovator": "Lizzie Magie",
+            "innovation": "Monopoly's Origin",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1c/LandlordsGame.JPG"
+            ],
+            "description": "Elizabeth Magie created The Landlord's Game to demonstrate the economic theories of Henry George—specifically that monopolies on land create wealth inequality. The game had two sets of rules: one where monopolies crushed opponents, another where taxes redistributed wealth.\n\nThe game spread through progressive and academic circles, evolving through folk variations. One version, stripped of its educational purpose, became Monopoly. Magie sold her patent to Parker Brothers for $500; Charles Darrow, who didn't invent the game, became a millionaire from it.",
+            "metrics": {
+                "purpose": "Economic education",
+                "patent_sale": "$500"
+            }
+        },
+        {
+            "id": "evt_sorry",
+            "title": "Sorry! Published",
+            "date_display": "1934",
+            "date_start": "1934-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Game Publication",
+            "innovator": "Parker Brothers",
+            "innovation": "Card-Driven Racing",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sorry_game.jpg"
+            ],
+            "description": "Sorry! adapted the ancient Pachisi cross-and-circle design with cards replacing dice. The 'Sorry!' card—which sends an opponent's piece back to start—added dramatic reversals and the gleeful cruelty that made the game memorable for generations of families.\n\nThe game's combination of simple rules, luck-based accessibility, and aggressive interaction made it a family game night staple. Sorry! demonstrated that ancient game designs could be successfully repackaged for modern audiences.",
+            "metrics": {
+                "base_design": "Pachisi variant"
+            }
+        },
+        {
+            "id": "evt_monopoly",
+            "title": "Monopoly Published by Parker Brothers",
+            "date_display": "1935",
+            "date_start": "1935-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Game Publication",
+            "innovator": "Parker Brothers (Charles Darrow credited)",
+            "innovation": "Property Trading Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/f/f9/English_Monopoly_board.jpg"
+            ],
+            "description": "Monopoly became the best-selling board game in history, despite—or perhaps because of—its brutal gameplay where lucky players crush opponents in hours-long sessions. The game descended from Lizzie Magie's Landlord's Game through folk variants.\n\nParker Brothers bought rights from Charles Darrow, who claimed to have invented it (he hadn't). The game's Atlantic City streets became iconic, and 'Monopoly money' entered the language. The game taught children capitalism's harsh realities more effectively than any textbook.",
+            "metrics": {
+                "sales": "Over 275 million copies sold",
+                "languages": "47"
+            }
+        },
+        {
+            "id": "evt_scrabble_invented",
+            "title": "Scrabble Invented",
+            "date_display": "1938",
+            "date_start": "1938-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Game Invention",
+            "innovator": "Alfred Mosher Butts",
+            "innovation": "Word Formation Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5d/Scrabble_game_in_progress.jpg"
+            ],
+            "description": "Unemployed architect Alfred Butts created Scrabble (originally 'Lexiko' and 'Criss-Crosswords') by analyzing word frequency in newspapers to assign point values to letters. The game was repeatedly rejected by game companies.\n\nButts sold the game to James Brunot, who renamed it Scrabble and trademarked it in 1948. After years of slow sales, a Macy's executive discovered the game on vacation and placed a large order, launching Scrabble to mainstream success.",
+            "metrics": {
+                "letter_values": "Based on frequency analysis"
+            }
+        },
+        {
+            "id": "evt_scrabble_trademark",
+            "title": "Scrabble Trademarked",
+            "date_display": "1948",
+            "date_start": "1948-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Trademark",
+            "innovator": "James Brunot",
+            "innovation": "Commercial Launch",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5d/Scrabble_game_in_progress.jpg"
+            ],
+            "description": "James Brunot trademarked Scrabble and began manufacturing it in his Connecticut home. Early sales were modest—he lost money for the first few years. The breakthrough came when a Macy's executive played the game and ordered cases for the store.\n\nScrabble became a cultural phenomenon, played in homes, tournaments, and competitive circuits worldwide. The game's combination of vocabulary knowledge, spatial awareness, and strategy made it genuinely skill-testing while remaining accessible to casual players.",
+            "metrics": {
+                "breakthrough": "Macy's department store order"
+            }
+        },
+        {
+            "id": "evt_candy_land",
+            "title": "Candy Land Published",
+            "date_display": "1949",
+            "date_start": "1949-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Game Publication",
+            "innovator": "Eleanor Abbott",
+            "innovation": "First Game for Non-Readers",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/62/Candy_Land_game.jpg"
+            ],
+            "description": "Schoolteacher Eleanor Abbott created Candy Land while recovering from polio, designing a game that children too young to read could play. The color-based card matching required no literacy or math, making it many children's first board game experience.\n\nCandy Land's pure luck (no decisions, outcome predetermined by shuffled cards) frustrates adult sensibilities but serves its purpose: teaching young children turn-taking, rule-following, and winning/losing gracefully. For generations, it's been the gateway game.",
+            "metrics": {
+                "target_age": "3+"
+            }
+        },
+        {
+            "id": "evt_clue",
+            "title": "Clue (Cluedo) Published",
+            "date_display": "1949",
+            "date_start": "1949-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Game Publication",
+            "innovator": "Anthony E. Pratt",
+            "innovation": "Deduction Board Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/56/Cluedo-tokens.jpg"
+            ],
+            "description": "British musician Anthony Pratt invented Cluedo during WWII air-raid blackouts, inspired by murder mystery parlor games. Players deduce which suspect, weapon, and room cards are hidden in the envelope through careful questioning and elimination.\n\nCluedo (Clue in North America) became a mystery genre staple, spawning countless themed variants and a beloved 1985 film. The game introduced deduction mechanics that would influence modern hobby games.",
+            "metrics": {
+                "inventor": "Anthony E. Pratt (UK)"
+            }
+        },
+        {
+            "id": "evt_risk",
+            "title": "Risk Published",
+            "date_display": "1957",
+            "date_start": "1957-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Game Publication",
+            "innovator": "Albert Lamorisse",
+            "innovation": "Global Conquest Board Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0c/Risk_game_board.jpg"
+            ],
+            "description": "French film director Albert Lamorisse created La Conquête du Monde (The Conquest of the World), which Parker Brothers published as Risk. The game simulated global military conquest through dice-based combat, territory control, and card trading.\n\nRisk introduced strategic wargaming to mainstream audiences—previously, wargames were complex simulations for hobbyists. The game could last for hours (or days), creating legends of marathon sessions and broken friendships over Australia.",
+            "metrics": {
+                "playtime": "Potentially hours to days"
+            }
+        },
+        {
+            "id": "evt_diplomacy",
+            "title": "Diplomacy Published",
+            "date_display": "1959",
+            "date_start": "1959-01-01",
+            "group_ids": ["grp_mass_production"],
+            "type": "Game Publication",
+            "innovator": "Allan B. Calhamer",
+            "innovation": "Negotiation Strategy Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/5/5f/Diplomacy.jpg"
+            ],
+            "description": "Diplomacy eliminated dice entirely—victory depended solely on negotiation, alliance-building, and betrayal. Set in pre-WWI Europe, players controlled major powers and simultaneously revealed orders each turn. The game demanded reading opponents and timing betrayals perfectly.\n\nDiplomacy became infamous for destroying friendships. Henry Kissinger reportedly played; JFK was a fan. The game proved that board games could be serious diplomatic simulations requiring psychological skill.",
+            "metrics": {
+                "dice": "None (pure negotiation)"
+            }
+        },
+        {
+            "id": "evt_chainmail",
+            "title": "Chainmail Published",
+            "date_display": "1971",
+            "date_start": "1971-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Game Publication",
+            "innovator": "Gary Gygax, Jeff Perren",
+            "innovation": "Fantasy Wargame Rules",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+            ],
+            "description": "Chainmail was a medieval miniatures wargame with a fantasy supplement allowing dragons, wizards, and magical combat. Gary Gygax and Jeff Perren's rules created the mechanical foundation for Dungeons & Dragons.\n\nThe fantasy supplement proved more popular than the historical rules. Players began focusing on individual hero characters rather than armies, leading Gygax to develop rules for dungeon exploration and character advancement.",
+            "metrics": {
+                "significance": "D&D mechanical foundation"
+            }
+        },
+        {
+            "id": "evt_dnd",
+            "title": "Dungeons & Dragons Published",
+            "date_display": "January 1974",
+            "date_start": "1974-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Game Publication",
+            "innovator": "Gary Gygax, Dave Arneson",
+            "innovation": "Role-Playing Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+            ],
+            "description": "Gary Gygax and Dave Arneson's Dungeons & Dragons created an entirely new category of game—the role-playing game. There was no board, no winner, and no end state. Players created characters and embarked on collaborative adventures guided by a Dungeon Master.\n\nD&D was revolutionary: players could attempt anything imaginable, with success determined by dice and rules. The game merged wargaming mechanics with storytelling, creating a form that would spawn countless RPGs, influence video games, and shape geek culture for 50 years.",
+            "metrics": {
+                "print_run": "1,000 copies (initial)"
+            }
+        },
+        {
+            "id": "evt_basic_dnd",
+            "title": "Basic Dungeons & Dragons Released",
+            "date_display": "1977",
+            "date_start": "1977-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Game Publication",
+            "innovator": "TSR, J. Eric Holmes",
+            "innovation": "Accessible Entry Point",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+            ],
+            "description": "The Basic Set (blue box) repackaged D&D for mass market retail, with streamlined rules and a clear introduction for new players. While the Advanced Dungeons & Dragons line targeted dedicated hobbyists, Basic brought D&D to toy stores and mainstream audiences.\n\nBasic D&D introduced millions to role-playing, creating a generation of players who would later drive the hobby gaming industry. The boxed set format—rulebook, dice, adventure—became the standard for introducing new RPGs.",
+            "metrics": {
+                "distribution": "Mass market retail"
+            }
+        },
+        {
+            "id": "evt_trivial_pursuit",
+            "title": "Trivial Pursuit Invented",
+            "date_display": "1979",
+            "date_start": "1979-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Game Invention",
+            "innovator": "Chris Haney, Scott Abbott",
+            "innovation": "Trivia Board Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8c/Trivial_pursuit_card.jpg"
+            ],
+            "description": "Canadian journalists Chris Haney and Scott Abbott invented Trivial Pursuit while playing Scrabble and lamenting missing pieces. They created a trivia game with six categories (Geography, Entertainment, History, Arts & Literature, Science & Nature, Sports & Leisure).\n\nAfter self-financing production, Trivial Pursuit became the best-selling game of 1984. It launched a trivia game craze and proved that adults would buy board games for themselves, not just for children.",
+            "metrics": {
+                "categories": "6"
+            }
+        },
+        {
+            "id": "evt_satanic_panic",
+            "title": "D&D 'Satanic Panic' Peaks",
+            "date_display": "1983",
+            "date_start": "1983-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Cultural Event",
+            "innovation": "Moral Panic Response",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+            ],
+            "description": "Religious groups attacked Dungeons & Dragons as promoting Satanism, witchcraft, and suicide. The moral panic was fueled by misunderstanding of the game and tragic incidents blamed without evidence on D&D involvement. A TV movie, 'Mazes and Monsters,' dramatized supposed dangers.\n\nThe panic peaked in 1983-1985 but continued affecting the hobby for years. TSR removed 'demonic' imagery from products. The controversy paradoxically increased D&D's visibility and cemented its countercultural cachet among teenagers.",
+            "metrics": {
+                "peak_period": "1983-1985"
+            }
+        },
+        {
+            "id": "evt_warhammer",
+            "title": "Warhammer Fantasy Battles Released",
+            "date_display": "1983",
+            "date_start": "1983-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Game Publication",
+            "innovator": "Games Workshop",
+            "innovation": "Miniatures Wargaming System",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/07/Warhammer_Fantasy_Roleplay_logo.jpg"
+            ],
+            "description": "Games Workshop launched Warhammer Fantasy Battles, a tabletop miniatures wargame requiring armies of hand-painted plastic and metal figures. The game combined strategic gameplay with the hobby of collecting, assembling, and painting miniatures.\n\nWarhammer created a distinct hobbyist culture and business model—selling expensive miniatures that customers spend hours painting before playing. The dark fantasy setting influenced countless video games and media.",
+            "metrics": {
+                "hobby_components": "Collecting, building, painting, playing"
+            }
+        },
+        {
+            "id": "evt_axis_allies",
+            "title": "Axis & Allies Published",
+            "date_display": "1984",
+            "date_start": "1984-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Game Publication",
+            "innovator": "Larry Harris, Milton Bradley",
+            "innovation": "WWII Strategic Simulation",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1d/Axis_and_allies.jpg"
+            ],
+            "description": "Axis & Allies brought strategic WWII simulation to mainstream audiences. Five players controlled major powers (Germany, Japan, USSR, UK, USA) in a global conflict requiring economic management, unit production, and combined arms strategy.\n\nThe game bridged wargaming complexity and mass-market accessibility, introducing concepts like economic production and combined operations to players who would never buy hex-and-counter wargames.",
+            "metrics": {
+                "powers": "5 (Germany, Japan, USSR, UK, USA)"
+            }
+        },
+        {
+            "id": "evt_warhammer_40k",
+            "title": "Warhammer 40,000 Released",
+            "date_display": "1987",
+            "date_start": "1987-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Game Publication",
+            "innovator": "Games Workshop",
+            "innovation": "Grimdark Science Fantasy",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/37/40k_Noise_Marine.jpg"
+            ],
+            "description": "Warhammer 40,000 transplanted Warhammer's miniatures gameplay to a dystopian far future where 'there is only war.' The setting's grimdark tone—fascist space marines fighting endless enemies in a decaying empire—created iconic imagery and lore.\n\n40K became Games Workshop's most successful franchise, spawning novels, video games, and a devoted global community. The game's culture emphasized painting skill and tournament competition alongside gameplay.",
+            "metrics": {
+                "setting": "Far future ('There is only war')"
+            }
+        },
+        {
+            "id": "evt_heroquest",
+            "title": "HeroQuest Published",
+            "date_display": "1989",
+            "date_start": "1989-01-01",
+            "group_ids": ["grp_rpg"],
+            "type": "Game Publication",
+            "innovator": "Milton Bradley, Games Workshop",
+            "innovation": "Dungeon Crawl Board Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+            ],
+            "description": "HeroQuest combined role-playing dungeon exploration with board game accessibility. One player controlled monsters while others played hero characters exploring modular dungeon tiles. The game introduced a generation of players to fantasy gaming concepts.\n\nHeroQuest's miniatures, furniture pieces, and modular design influenced countless dungeon crawl games. Its nostalgic appeal led to a successful 2021 rerelease through Hasbro.",
+            "metrics": {
+                "collaboration": "Milton Bradley + Games Workshop"
+            }
+        },
+        {
+            "id": "evt_magic",
+            "title": "Magic: The Gathering Launched",
+            "date_display": "August 5, 1993",
+            "date_start": "1993-08-05",
+            "group_ids": ["grp_eurogame"],
+            "type": "Game Publication",
+            "innovator": "Richard Garfield, Wizards of the Coast",
+            "innovation": "Collectible Card Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/aa/Magic_the_gathering-card_back.jpg"
+            ],
+            "description": "Mathematics professor Richard Garfield created Magic: The Gathering, the first collectible card game. Players built custom decks from cards sold in randomized packs, then battled opponents. The combination of gameplay strategy and card collecting proved addictive.\n\nMagic was immediately successful, selling out initial print runs instantly. It spawned an entire CCG industry, professional tournament circuits, and a secondary market where rare cards sold for thousands of dollars. The game continues 30 years later with millions of active players.",
+            "metrics": {
+                "genre_created": "Collectible Card Game",
+                "active_players": "Millions"
+            }
+        },
+        {
+            "id": "evt_catan",
+            "title": "Settlers of Catan Published",
+            "date_display": "1995",
+            "date_start": "1995-01-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Game Publication",
+            "innovator": "Klaus Teuber",
+            "innovation": "Gateway Eurogame",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/a3/Catan-2015-boxart.jpg"
+            ],
+            "description": "Klaus Teuber's Die Siedler von Catan (The Settlers of Catan) introduced millions to German-style board gaming. Players collected resources, traded with opponents, and built settlements on a modular hex board. The game balanced strategy, negotiation, and manageable luck.\n\nCatan became the 'gateway game' that converted casual players into hobby gamers. It demonstrated that board games could be sophisticated adult entertainment, not just children's toys. Catan has sold over 40 million copies worldwide.",
+            "metrics": {
+                "sales": "40+ million copies"
+            }
+        },
+        {
+            "id": "evt_magic_pro_tour",
+            "title": "Magic: The Gathering Pro Tour Begins",
+            "date_display": "February 1996",
+            "date_start": "1996-02-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Competitive Event",
+            "innovator": "Wizards of the Coast",
+            "innovation": "Professional Card Game Circuit",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/aa/Magic_the_gathering-card_back.jpg"
+            ],
+            "description": "Wizards of the Coast launched the Pro Tour, a professional competitive circuit for Magic: The Gathering with significant prize pools. The Pro Tour created a path for skilled players to earn money playing cards and elevated Magic to a spectator esport.\n\nThe Pro Tour's existence legitimized competitive card gaming and influenced how other games approached organized play. Prize pools eventually exceeded millions of dollars, supporting professional players.",
+            "metrics": {
+                "significance": "Professional card gaming legitimized"
+            }
+        },
+        {
+            "id": "evt_tigris",
+            "title": "Tigris & Euphrates Published",
+            "date_display": "1997",
+            "date_start": "1997-01-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Game Publication",
+            "innovator": "Reiner Knizia",
+            "innovation": "Abstract Euro Design",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d7/Tigris_and_euphrates_gameplay.jpg"
+            ],
+            "description": "Reiner Knizia's Tigris & Euphrates represented the height of 'German school' game design—elegant mechanics, minimal luck, and theme secondary to gameplay systems. Players built civilizations in ancient Mesopotamia, scoring across four categories with only their lowest score counting.\n\nKnizia became the most prolific and celebrated designer of the era. Tigris & Euphrates demonstrated that abstract strategy could be disguised with thematic elements while maintaining mechanical purity.",
+            "metrics": {
+                "designer": "Reiner Knizia"
+            }
+        },
+        {
+            "id": "evt_bgg",
+            "title": "BoardGameGeek Founded",
+            "date_display": "January 2000",
+            "date_start": "2000-01-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Website Launch",
+            "innovator": "Scott Alden, Derk Solko",
+            "innovation": "Board Game Database Community",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/bb/BoardGameGeek_Logo.svg"
+            ],
+            "description": "BoardGameGeek (BGG) launched as a database and community site for board game enthusiasts. Users could rate games, write reviews, trade games, and discuss the hobby. The site's rating system became the de facto standard for measuring game quality.\n\nBGG transformed the hobby by connecting geographically dispersed enthusiasts and providing reliable information about thousands of games. A high BGG rating became crucial for commercial success, and the site's 'BGG Top 100' list influenced purchasing decisions worldwide.",
+            "metrics": {
+                "users": "Millions",
+                "games_catalogued": "100,000+"
+            }
+        },
+        {
+            "id": "evt_carcassonne",
+            "title": "Carcassonne Published",
+            "date_display": "2000",
+            "date_start": "2000-10-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Game Publication",
+            "innovator": "Klaus-Jürgen Wrede",
+            "innovation": "Tile-Laying Mechanic",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d9/Carcassonne_%28board_game%29.jpg"
+            ],
+            "description": "Carcassonne's simple premise—draw a tile, place it to continue the map, optionally place a wooden 'meeple'—proved endlessly engaging. The game built landscapes of cities, roads, and monasteries, with points scored for completed features.\n\nCarcassonne popularized the tile-laying genre and introduced 'meeple' into gaming vocabulary. Its accessible rules and attractive components made it another gateway game alongside Catan.",
+            "metrics": {
+                "term_coined": "'Meeple' (wooden figures)"
+            }
+        },
+        {
+            "id": "evt_puerto_rico",
+            "title": "Puerto Rico Published",
+            "date_display": "2002",
+            "date_start": "2002-01-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Game Publication",
+            "innovator": "Andreas Seyfarth",
+            "innovation": "Role Selection Mechanic",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/68/Puerto_Rico_game.jpg"
+            ],
+            "description": "Puerto Rico's innovative role-selection mechanic—where each player's choice affects everyone—created a deeply interactive strategy game. Players managed plantations and shipped goods in colonial Puerto Rico. The game topped BoardGameGeek's rankings for years.\n\nPuerto Rico's colonial theme and depiction of workers (later acknowledged as enslaved people) became controversial, leading to discussions about historical themes in games. A 2022 edition addressed the representation issues.",
+            "metrics": {
+                "bgg_ranking": "#1 for several years"
+            }
+        },
+        {
+            "id": "evt_ticket_to_ride",
+            "title": "Ticket to Ride Published",
+            "date_display": "2004",
+            "date_start": "2004-01-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Game Publication",
+            "innovator": "Alan R. Moon",
+            "innovation": "Set Collection Route Building",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/2c/Ticket_to_Ride_Board_Game_Train_Car.jpg"
+            ],
+            "description": "Ticket to Ride combined set collection (gathering colored train cards) with route-building on an American railroad map. The simple rules—draw cards or claim routes—made it instantly teachable, while route destination cards added strategic tension.\n\nTicket to Ride won the Spiel des Jahres (German Game of the Year) and became a massive crossover hit. With numerous map expansions and a successful digital version, it remains one of the best-selling modern hobby games.",
+            "metrics": {
+                "award": "Spiel des Jahres 2004"
+            }
+        },
+        {
+            "id": "evt_power_grid",
+            "title": "Power Grid Published",
+            "date_display": "2004",
+            "date_start": "2004-01-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Game Publication",
+            "innovator": "Friedemann Friese",
+            "innovation": "Economic Auction Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0f/Power_Grid_board_game_components.jpg"
+            ],
+            "description": "Power Grid challenged players to build electrical networks across Germany (and later other maps), buying power plants at auction and managing fuel supplies. The game's economic systems—with market prices responding to supply and demand—created rich strategic decisions.\n\nFriedemann Friese's design demonstrated that simulation-style economics could work in an accessible board game format. Power Grid is considered a peak achievement in economic game design.",
+            "metrics": {
+                "designer": "Friedemann Friese"
+            }
+        },
+        {
+            "id": "evt_twilight_struggle",
+            "title": "Twilight Struggle Published",
+            "date_display": "2005",
+            "date_start": "2005-01-01",
+            "group_ids": ["grp_eurogame"],
+            "type": "Game Publication",
+            "innovator": "Ananda Gupta, Jason Matthews",
+            "innovation": "Card-Driven Wargame",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/8/8d/Twilight_Struggle_board_game.jpg"
+            ],
+            "description": "Twilight Struggle simulated the Cold War through cards representing historical events. Each card could be played for its event or for operations points—forcing agonizing decisions when holding enemy events. The two-player game captured Cold War paranoia and brinksmanship.\n\nTwilight Struggle spent years at #1 on BoardGameGeek, introducing wargame concepts to eurogame players. Its card-driven system influenced numerous historical games that followed.",
+            "metrics": {
+                "bgg_ranking": "Long-time #1"
+            }
+        },
+        {
+            "id": "evt_pandemic",
+            "title": "Pandemic Published",
+            "date_display": "2008",
+            "date_start": "2008-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Matt Leacock",
+            "innovation": "Cooperative Board Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c9/Pandemic_board_game.jpg"
+            ],
+            "description": "Pandemic made cooperative gaming mainstream. All players worked together to stop four diseases spreading across the world, winning or losing as a team. The game's elegant systems—action point allowance, set collection, cascading outbreaks—created tense experiences without player conflict.\n\nPandemic proved that not every game needed a winner and loser. It spawned numerous expansions and spin-offs, including Pandemic Legacy (see below). The game gained unexpected relevance during the COVID-19 pandemic.",
+            "metrics": {
+                "genre_impact": "Popularized cooperative games"
+            }
+        },
+        {
+            "id": "evt_dominion",
+            "title": "Dominion Published (Deckbuilding Created)",
+            "date_display": "2008",
+            "date_start": "2008-10-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Donald X. Vaccarino",
+            "innovation": "Deckbuilding Genre",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1e/Dominion_game_cards.jpg"
+            ],
+            "description": "Dominion invented the 'deckbuilding' genre—players started with identical weak decks and purchased cards during play to improve them. The game distilled collectible card game concepts into a self-contained box with no randomized boosters.\n\nDeckbuilding became one of the most influential mechanics of modern gaming. Countless games adopted the concept: Ascension, Star Realms, Clank!, and many others. Donald X. Vaccarino created an entirely new genre with a single design.",
+            "metrics": {
+                "award": "Spiel des Jahres 2009",
+                "genre_created": "Deckbuilding"
+            }
+        },
+        {
+            "id": "evt_7_wonders",
+            "title": "7 Wonders Published",
+            "date_display": "2010",
+            "date_start": "2010-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Antoine Bauza",
+            "innovation": "Card Drafting Engine",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/6d/7_Wonders_%28board_game%29.jpg"
+            ],
+            "description": "7 Wonders used card drafting—players chose cards from hands passed around the table—to build ancient civilizations. The simultaneous play kept seven players engaged in 30 minutes, solving the problem of long waits between turns.\n\nThe game's scalability (2-7 players with minimal time increase) and elegant mechanisms made it a modern classic. Card drafting became a staple mechanism in subsequent designs.",
+            "metrics": {
+                "playtime": "~30 minutes regardless of player count"
+            }
+        },
+        {
+            "id": "evt_dnd_pathfinder",
+            "title": "Pathfinder Rises, D&D 4e Backlash",
+            "date_display": "2011",
+            "date_start": "2011-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Industry Event",
+            "innovator": "Paizo Publishing",
+            "innovation": "D&D Fork",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+            ],
+            "description": "Dungeons & Dragons 4th Edition's controversial changes (video game-like mechanics, tactical focus) drove many players to Pathfinder, Paizo's continuation of 3.5 Edition rules. Pathfinder briefly became the best-selling RPG, surpassing D&D itself.\n\nThe schism demonstrated the passionate attachment players felt toward D&D mechanics. When Wizards of the Coast released 5th Edition (returning to 3.x-style play), it recaptured the market—but Pathfinder remains a significant competitor.",
+            "metrics": {
+                "pathfinder_sales": "Briefly #1 RPG"
+            }
+        },
+        {
+            "id": "evt_kickstarter_boardgames",
+            "title": "Kickstarter Board Game Boom Begins",
+            "date_display": "2012",
+            "date_start": "2012-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Industry Event",
+            "innovation": "Crowdfunded Publishing",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/0b/Kickstarter_icon.svg"
+            ],
+            "description": "Kickstarter transformed board game publishing, allowing designers to fund production through pre-orders from fans. Games that traditional publishers wouldn't touch could find audiences directly. The first major successes—Zombicide, The Doom That Came to Atlantic City—proved the model.\n\nKickstarter democratized publishing but also created FOMO culture and campaign-exclusive content. The platform became the primary launch vehicle for hobby games, with projects regularly raising millions of dollars.",
+            "metrics": {
+                "impact": "Democratized publishing"
+            }
+        },
+        {
+            "id": "evt_xwing",
+            "title": "Star Wars: X-Wing Miniatures Launches",
+            "date_display": "August 2012",
+            "date_start": "2012-08-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Fantasy Flight Games",
+            "innovation": "Pre-Painted Miniatures Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/45/Star_Wars_X-Wing_Miniatures_Game.jpg"
+            ],
+            "description": "X-Wing Miniatures brought Star Wars dogfighting to tabletops with pre-painted, collectible ships. The game used a clever movement template system where players secretly selected maneuvers, then revealed simultaneously—creating the feel of actual space combat.\n\nX-Wing proved that licensed miniatures games could achieve both commercial success and competitive depth. Its organized play scene attracted thousands of players to tournaments worldwide.",
+            "metrics": {
+                "innovation": "Pre-painted collectible miniatures"
+            }
+        },
+        {
+            "id": "evt_exploding_kittens",
+            "title": "Exploding Kittens Record Kickstarter",
+            "date_display": "February 2015",
+            "date_start": "2015-02-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Crowdfunding Record",
+            "innovator": "Elan Lee, Matthew Inman (The Oatmeal)",
+            "innovation": "Viral Game Marketing",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3a/Exploding_Kittens_logo.png"
+            ],
+            "description": "Exploding Kittens became the most-backed project in Kickstarter history at the time, raising $8.8 million from 219,000 backers. The game's appeal came from The Oatmeal's webcomic art and silly premise—Russian Roulette with cats.\n\nThe campaign demonstrated that game mechanics mattered less than brand and personality for mainstream audiences. Exploding Kittens reached demographics who would never browse BoardGameGeek, proving board games could be viral products.",
+            "metrics": {
+                "funding": "$8.8 million",
+                "backers": "219,382"
+            }
+        },
+        {
+            "id": "evt_dead_of_winter",
+            "title": "Dead of Winter Published",
+            "date_display": "2014",
+            "date_start": "2014-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Jonathan Gilmour, Isaac Vega",
+            "innovation": "Hidden Traitor Narrative",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/9/9e/Dead_of_Winter_board_game.jpg"
+            ],
+            "description": "Dead of Winter combined cooperative survival in a zombie apocalypse with secret personal objectives and a possible traitor. The crossroads card system created emergent narratives, presenting moral dilemmas that affected the group.\n\nThe game popularized the 'hidden traitor' mechanism in cooperative games and demonstrated that board games could tell stories as compelling as video games or movies.",
+            "metrics": {
+                "mechanism": "Hidden traitor + crossroads cards"
+            }
+        },
+        {
+            "id": "evt_dnd_5e",
+            "title": "Dungeons & Dragons 5th Edition Launches",
+            "date_display": "July 2014",
+            "date_start": "2014-07-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Wizards of the Coast",
+            "innovation": "D&D Renaissance",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+            ],
+            "description": "D&D 5th Edition learned from 4th Edition's mistakes, returning to simpler, more narrative-focused gameplay while maintaining modern design sensibilities. The edition was developed with extensive public playtesting and fan feedback.\n\n5th Edition became D&D's most successful version ever, driven by actual-play shows like Critical Role introducing the game to new audiences. The RPG experienced a genuine mainstream moment, with celebrity players and Netflix deals.",
+            "metrics": {
+                "success": "Best-selling D&D edition ever"
+            }
+        },
+        {
+            "id": "evt_tabletop",
+            "title": "TableTop Show with Wil Wheaton",
+            "date_display": "2012-2017",
+            "date_start": "2012-04-02",
+            "group_ids": ["grp_renaissance"],
+            "type": "Media",
+            "innovator": "Geek & Sundry, Wil Wheaton",
+            "innovation": "Board Game Video Content",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/a/ae/Wil_Wheaton_%282018%29.jpg"
+            ],
+            "description": "Wil Wheaton's TableTop show on YouTube/Geek & Sundry introduced board games to mainstream audiences through celebrity guests playing and explaining games. Each episode's featured game reliably saw sales spikes—the 'TableTop Effect.'\n\nTableTop pioneered board game video content that would explode into a genre of its own. Actual-play shows, how-to-play videos, and reviews on YouTube became essential marketing and community-building tools.",
+            "metrics": {
+                "views": "Millions per episode",
+                "effect": "'TableTop Effect' on sales"
+            }
+        },
+        {
+            "id": "evt_codenames",
+            "title": "Codenames Published",
+            "date_display": "2015",
+            "date_start": "2015-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Vlaada Chvátil",
+            "innovation": "Word Association Party Game",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/6/60/Codenames_board_game_cover.jpg"
+            ],
+            "description": "Codenames challenged teams to guess words from single-word clues, creating hilarious moments when clues led to wrong guesses. The game worked beautifully with large groups and non-gamers, becoming a party game phenomenon.\n\nDesigner Vlaada Chvátil (known for complex games like Mage Knight) proved his range with this elegant design. Codenames won the Spiel des Jahres and became a staple of casual game nights.",
+            "metrics": {
+                "award": "Spiel des Jahres 2016"
+            }
+        },
+        {
+            "id": "evt_scythe",
+            "title": "Scythe Published",
+            "date_display": "2016",
+            "date_start": "2016-08-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Jamey Stegmaier",
+            "innovation": "Engine-Building Area Control",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/4/4f/Scythe_%28board_game%29_box.jpg"
+            ],
+            "description": "Scythe combined stunning alternate-history artwork with engine-building gameplay in 1920s Eastern Europe with mechs. The game successfully Kickstarted with overwhelming backing and delivered on its ambitious production quality.\n\nJamey Stegmaier's Stonemaier Games became a model for how independent publishers could compete with established companies through direct relationships with backers and exceptional production values.",
+            "metrics": {
+                "kickstarter": "Nearly $2 million raised"
+            }
+        },
+        {
+            "id": "evt_gloomhaven",
+            "title": "Gloomhaven Published",
+            "date_display": "2017",
+            "date_start": "2017-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Isaac Childres",
+            "innovation": "Legacy Dungeon Crawler",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/2e/Gloomhaven_board_game_box.jpg"
+            ],
+            "description": "Gloomhaven combined tactical dungeon crawling with legacy-style campaign progression over 100+ scenarios. The 22-pound box contained hundreds of components for an experience lasting dozens of hours. It topped BoardGameGeek's rankings, dethroning Pandemic Legacy.\n\nGloomhaven proved that massive, complex hobby games could achieve commercial success through Kickstarter. Its card-based combat system and persistent world influenced numerous games that followed.",
+            "metrics": {
+                "weight": "22+ pounds",
+                "scenarios": "100+",
+                "bgg_rank": "#1 for years"
+            }
+        },
+        {
+            "id": "evt_critical_role",
+            "title": "Critical Role Reaches Mainstream",
+            "date_display": "2018",
+            "date_start": "2018-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Media Event",
+            "innovator": "Critical Role, Matthew Mercer",
+            "innovation": "RPG as Entertainment",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+            ],
+            "description": "Critical Role—a livestreamed Dungeons & Dragons campaign with voice actors—broke out of nerd culture into mainstream entertainment. The show's Kickstarter for an animated series raised $11.4 million in 24 hours, eventually leading to an Amazon animated series.\n\nCritical Role demonstrated that watching people play tabletop RPGs could be as compelling as any scripted show. The cast became genuine celebrities, and D&D experienced a cultural renaissance partly attributable to the show's influence.",
+            "metrics": {
+                "kickstarter": "$11.4 million in 24 hours",
+                "viewers": "Millions"
+            }
+        },
+        {
+            "id": "evt_wingspan",
+            "title": "Wingspan Published",
+            "date_display": "2019",
+            "date_start": "2019-03-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Game Publication",
+            "innovator": "Elizabeth Hargrave",
+            "innovation": "Nature Theme Engine Builder",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/b/b6/Wingspan_board_game_components.jpg"
+            ],
+            "description": "Wingspan featured beautiful bird illustrations on over 170 cards, each representing a real species with accurate facts. Players built engines of bird powers in their aviaries, competing to attract the best birds and complete bonus objectives.\n\nElizabeth Hargrave's design demonstrated that unconventional themes (birdwatching!) could succeed when paired with elegant mechanisms. Wingspan won the Spiel des Jahres Kennerspiel and became a crossover hit reaching beyond typical hobby game audiences.",
+            "metrics": {
+                "award": "Kennerspiel des Jahres 2019",
+                "birds": "170+ species"
+            }
+        },
+        {
+            "id": "evt_covid_boom",
+            "title": "COVID Board Game Boom",
+            "date_display": "2020",
+            "date_start": "2020-03-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Market Event",
+            "innovation": "Pandemic-Driven Sales",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/c/c9/Pandemic_board_game.jpg"
+            ],
+            "description": "The COVID-19 pandemic drove explosive board game sales as locked-down families sought entertainment at home. Classic games like Monopoly saw massive spikes, but hobby games also benefited. Sales of Pandemic (ironically) increased dramatically.\n\nThe boom validated board games as mainstream entertainment and introduced many new players to the hobby. Whether pandemic-driven interest would persist post-lockdown remained uncertain, but the audience had expanded.",
+            "metrics": {
+                "growth": "30%+ industry sales increase (2020)"
+            }
+        },
+        {
+            "id": "evt_frosthaven",
+            "title": "Frosthaven Kickstarter Record",
+            "date_display": "2020",
+            "date_start": "2020-04-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Crowdfunding Record",
+            "innovator": "Isaac Childres, Cephalofair Games",
+            "innovation": "Massive Board Game Campaign",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/2e/Gloomhaven_board_game_box.jpg"
+            ],
+            "description": "Frosthaven, the sequel to Gloomhaven, raised $12.9 million on Kickstarter—the most-funded board game campaign ever. The massive standalone expansion promised even more content than its predecessor.\n\nThe campaign demonstrated the passionate audience for complex hobby games and Gloomhaven's cultural impact. Frosthaven's successful delivery in 2023 fulfilled years of anticipation.",
+            "metrics": {
+                "funding": "$12.9 million",
+                "backers": "83,000+"
+            }
+        },
+        {
+            "id": "evt_market_15b",
+            "title": "Hobby Gaming Market Exceeds $15B",
+            "date_display": "2024",
+            "date_start": "2024-01-01",
+            "group_ids": ["grp_renaissance"],
+            "type": "Industry Milestone",
+            "innovation": "Market Scale",
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/d5/ChessStartingPosition.jpg"
+            ],
+            "description": "The global hobby gaming market (board games, RPGs, card games, miniatures) exceeded $15 billion in annual sales, with projections of continued growth. The industry had transformed from niche hobby to significant entertainment sector.\n\nDigital integration, subscription services, and streaming content continued driving engagement. Board games competed for leisure time alongside video games and streaming services—and often won.",
+            "metrics": {
+                "market_size": "$15+ billion globally"
+            }
+        }
+    ]
+}
