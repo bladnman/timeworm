@@ -25,6 +25,12 @@ export const ViewSwitcher = () => {
       >
         Comic View
       </button>
+      <button
+        className={classNames(styles.button, { [styles.active]: viewMode === 'orbital' })}
+        onClick={() => setViewMode('orbital')}
+      >
+        Orbital View
+      </button>
     </div>
   );
 };
