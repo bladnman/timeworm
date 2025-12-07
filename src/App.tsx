@@ -13,6 +13,7 @@ import { MosaicView } from './views/Mosaic/MosaicView';
 import { OrbitalRings } from './views/OrbitalRings/OrbitalRings';
 import { RiverPathView } from './views/RiverPath/RiverPathView';
 import { StrataView } from './views/Strata/StrataView';
+import { TrailProfileView } from './views/TrailProfile/TrailProfileView';
 import { TrainJourney } from './views/TrainJourney/TrainJourney';
 import { VerticalView } from './views/Vertical/VerticalView';
 
@@ -32,6 +33,7 @@ const ViewManager = () => {
     if (viewMode === 'tree') return <BranchingTree />;
     if (viewMode === 'bikeride') return <BikeRideView />;
     if (viewMode === 'train') return <TrainJourney />;
+    if (viewMode === 'trail') return <TrailProfileView />;
     return <HorizontalView />;
 };
 

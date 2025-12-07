@@ -1,0 +1,261 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  background: var(--color-bg-canvas);
+}
+
+.trailCanvas {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.svgContainer {
+  flex: 1;
+  min-height: 400px;
+}
+
+.trailSvg {
+  display: block;
+}
+
+/* Trail gradient fill */
+.trailArea {
+  transition: opacity var(--duration-fast);
+}
+
+/* Trail line stroke */
+.trailLine {
+  fill: none;
+  stroke: var(--color-text-accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-width var(--duration-fast);
+}
+
+/* Event markers */
+.marker {
+  cursor: pointer;
+  transition: r var(--duration-fast), fill var(--duration-fast);
+}
+
+.marker:hover {
+  filter: brightness(1.2);
+}
+
+.markerHalo {
+  fill: none;
+  stroke: var(--color-text-accent);
+  stroke-width: 2;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Time axis */
+.axisContainer {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  height: 40px;
+}
+
+.axisLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.tick {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  background: var(--color-text-secondary);
+}
+
+.tickLabel {
+  position: absolute;
+  top: 8px;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.tickLabelMajor {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* Y-axis label */
+.yAxisLabel {
+  position: fixed;
+  left: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center center;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  z-index: 10;
+  background: var(--color-bg-canvas);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 4px;
+}
+
+.yAxisArrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.yAxisArrow span {
+  font-size: var(--text-xs);
+}
+
+/* Controls panel */
+.controls {
+  position: fixed;
+  top: var(--space-4);
+  right: var(--space-4);
+  background: var(--color-bg-surface);
+  padding: var(--space-4);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.controlGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.controlLabel {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.controlValue {
+  color: var(--color-text-primary);
+  font-family: var(--font-mono);
+}
+
+.controlInput {
+  width: 150px;
+}
+
+/* Cursor line */
+.cursorLine {
+  stroke: var(--color-text-accent);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.cursorDot {
+  fill: var(--color-text-accent);
+  pointer-events: none;
+}
+
+/* Tooltip */
+.tooltip {
+  position: fixed;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: var(--space-2) var(--space-4);
+  z-index: 100;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 280px;
+}
+
+.tooltipTitle {
+  font-weight: 600;
+  color: var(--color-text-primary);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-1);
+}
+
+.tooltipDate {
+  font-size: var(--text-xs);
+  color: var(--color-text-accent);
+  margin-bottom: var(--space-1);
+}
+
+.tooltipMeta {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+/* Legend */
+.legend {
+  position: fixed;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: var(--space-2) var(--space-4);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-sm);
+  margin-bottom: 60px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.legendDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-text-accent);
+  border: 2px solid var(--color-bg-surface);
+  box-shadow: 0 0 0 2px var(--color-text-accent);
+}
+
+.legendLine {
+  width: 24px;
+  height: 3px;
+  background: var(--color-text-accent);
+  border-radius: 2px;
+}
+
+.legendArea {
+  width: 24px;
+  height: 16px;
+  background: linear-gradient(to bottom, rgba(56, 189, 248, 0.4), rgba(56, 189, 248, 0.05));
+  border-radius: 2px;
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--color-text-secondary);
+}
