@@ -67,6 +67,12 @@ export const ViewSwitcher = () => {
       >
         Bike Ride
       </button>
+      <button
+        className={classNames(styles.button, { [styles.active]: viewMode === 'train' })}
+        onClick={() => setViewMode('train')}
+      >
+        Train Journey
+      </button>
     </div>
   );
 };
