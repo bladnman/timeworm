@@ -1,10 +1,11 @@
-import { useRef, useEffect, useCallback, useState } from 'react';
+import { useRef, useEffect, useCallback, useState, useMemo } from 'react';
 import { useBikeRideView } from './hooks/useBikeRideView';
 import { RidePath } from './components/RidePath/RidePath';
 import { EventStop } from './components/EventStop/EventStop';
 import { BikeIcon } from './components/BikeIcon/BikeIcon';
-import { TimeScrubber } from './components/TimeScrubber/TimeScrubber';
-import { MiniMap } from './components/MiniMap/MiniMap';
+import { ViewportNavigator, type NavigatorMarker } from '../../components/ViewportNavigator';
+import { PlaybackControls } from '../../components/PlaybackControls';
+import { ZoomControls } from '../../components/ZoomControls';
 import { BIKE_RIDE_CONFIG } from './hooks/constants';
 import styles from './BikeRideView.module.css';
 
@@ -34,7 +35,6 @@ export function BikeRideView() {
     totalWidth,
     canvasHeight,
     pixelsPerYear,
-    setPixelsPerYear: _setPixelsPerYear,
     zoomIn,
     zoomOut,
     resetZoom,
@@ -42,14 +42,11 @@ export function BikeRideView() {
     setCurrentTime,
     bikePosition,
     isPlaying,
-    play,
-    pause,
     togglePlayback,
     playbackSpeed,
     setPlaybackSpeed,
     minYear,
     maxYear,
-    totalYears: _totalYears,
     getCurrentYear,
     selectedEventId,
     selectEvent,
@@ -57,8 +54,6 @@ export function BikeRideView() {
     setHoveredEventId,
     viewportOffset,
     setViewportOffset,
-    scrollToTime: _scrollToTime,
-    scrollToEvent: _scrollToEvent,
   } = useBikeRideView();
 
   // Track viewport dimensions
@@ -118,38 +113,47 @@ export function BikeRideView() {
   // Generate decorative elements (trees, benches)
   const decorations = generateDecorations(path, totalWidth);
 
+  // Convert events to NavigatorMarker format for ViewportNavigator
+  const navigatorMarkers: NavigatorMarker[] = useMemo(
+    () =>
+      events.map((event) => ({
+        id: event.event.id,
+        position: event.t,
+        title: event.event.title,
+      })),
+    [events]
+  );
+
   return (
     <div className={styles.bikeRideView}>
-      {/* MiniMap overview */}
-      <MiniMap
-        events={events}
+      {/* Viewport navigator (minimap) */}
+      <ViewportNavigator
+        markers={navigatorMarkers}
         totalWidth={totalWidth}
         viewportWidth={viewportWidth}
         viewportOffset={viewportOffset}
         currentTime={currentTime}
         onViewportChange={handleViewportChange}
         onTimeChange={setCurrentTime}
+        showPathPreview
       />
 
       {/* Zoom controls */}
-      <div className={styles.zoomControls}>
-        <button onClick={zoomIn} className={styles.zoomButton} title="Zoom in">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M8 3v10M3 8h10" stroke="currentColor" strokeWidth="2" fill="none" />
-          </svg>
-        </button>
-        <button onClick={resetZoom} className={styles.zoomButton} title="Reset zoom">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-            <circle cx="8" cy="8" r="5" stroke="currentColor" strokeWidth="2" fill="none" />
-          </svg>
-        </button>
-        <button onClick={zoomOut} className={styles.zoomButton} title="Zoom out">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M3 8h10" stroke="currentColor" strokeWidth="2" fill="none" />
-          </svg>
-        </button>
-        <span className={styles.zoomLabel}>{pixelsPerYear.toFixed(0)} px/yr</span>
-      </div>
+      <ZoomControls
+        zoomLevel={pixelsPerYear}
+        minZoom={BIKE_RIDE_CONFIG.zoomMin}
+        maxZoom={BIKE_RIDE_CONFIG.zoomMax}
+        defaultZoom={BIKE_RIDE_CONFIG.pixelsPerYear}
+        zoomStep={BIKE_RIDE_CONFIG.zoomStep}
+        onZoomChange={(zoom) => {
+          // Use the zoom functions to ensure proper clamping
+          if (zoom > pixelsPerYear) zoomIn();
+          else if (zoom < pixelsPerYear) zoomOut();
+          else resetZoom();
+        }}
+        unit="px/yr"
+        className={styles.zoomControls}
+      />
 
       {/* Main canvas container */}
       <div
@@ -228,17 +232,15 @@ export function BikeRideView() {
         </div>
       </div>
 
-      {/* Time scrubber */}
-      <TimeScrubber
+      {/* Playback controls */}
+      <PlaybackControls
         currentTime={currentTime}
         isPlaying={isPlaying}
-        minYear={minYear}
-        maxYear={maxYear}
-        currentYear={getCurrentYear()}
         playbackSpeed={playbackSpeed}
+        startLabel={formatYear(minYear)}
+        endLabel={formatYear(maxYear)}
+        currentLabel={formatYear(getCurrentYear())}
         onTimeChange={setCurrentTime}
-        onPlay={play}
-        onPause={pause}
         onTogglePlayback={togglePlayback}
         onSpeedChange={setPlaybackSpeed}
       />
