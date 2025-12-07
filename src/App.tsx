@@ -9,6 +9,7 @@ import { HorizontalView } from './views/Horizontal/HorizontalView';
 import { MosaicView } from './views/Mosaic/MosaicView';
 import { OrbitalRings } from './views/OrbitalRings/OrbitalRings';
 import { RiverPathView } from './views/RiverPath/RiverPathView';
+import { StrataView } from './views/Strata/StrataView';
 import { VerticalView } from './views/Vertical/VerticalView';
 
 const ViewManager = () => {
@@ -22,6 +23,7 @@ const ViewManager = () => {
     if (viewMode === 'depthroad') return <DepthRoad />;
     if (viewMode === 'mosaic') return <MosaicView />;
     if (viewMode === 'orbital') return <OrbitalRings />;
+    if (viewMode === 'strata') return <StrataView />;
     return <HorizontalView />;
 };
 
