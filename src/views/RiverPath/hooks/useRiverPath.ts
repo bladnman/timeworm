@@ -76,7 +76,7 @@ const VIEWPORT_PADDING = 50;
 
 export const useRiverPath = (): UseRiverPathResult => {
   const { data, selectEvent } = useTimeline();
-  const [zoom, setZoom] = useState(RIVER_PATH_CONFIG.zoomDefault);
+  const [zoom, setZoom] = useState<number>(RIVER_PATH_CONFIG.zoomDefault);
   const [hoveredEventId, setHoveredEventId] = useState<string | null>(null);
   const hasAutoFitRef = useRef(false);
 

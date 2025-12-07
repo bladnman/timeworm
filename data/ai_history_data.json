@@ -228,7 +228,9 @@
             "type": "Hardware / Model",
             "innovator": "Frank Rosenblatt",
             "innovation": "First Hardware Neural Network",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/13/Mark_I_Perceptron%2C_Figure_2_of_operator%27s_manual.png"
+            ],
             "description": "The Perceptron was the first physical implementation of a neural network. Built at Cornell Aeronautical Laboratory, it was an analog machine utilizing a 20x20 array of cadmium sulfide photocells (400 pixels) to 'see' images. It was connected to a layer of 'association units' (neurons) whose weights were adjusted by electric motors driving potentiometers. It successfully learned to distinguish cards marked on the left vs. the right. The New York Times famously reported the Navy's claim that this was the embryo of a computer that would eventually 'walk, talk, see, write, reproduce itself and be conscious of its existence.'",
             "metrics": {
                 "resolution": "20x20 pixels (400 photocells)",
@@ -252,7 +254,9 @@
             "type": "Software",
             "innovator": "Joseph Weizenbaum",
             "innovation": "First Chatbot / The ELIZA Effect",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/79/ELIZA_conversation.png"
+            ],
             "description": "Created at MIT, ELIZA was a simple natural language processing program designed to simulate a Rogerian psychotherapist. It operated on pattern matching—if a user said 'My mother hates me,' ELIZA might locate the keyword 'mother' and respond, 'Tell me more about your family.' Despite its simplicity and total lack of understanding, users formed deep emotional bonds with it, often asking Weizenbaum to leave the room so they could talk to the machine in private. This phenomenon, where users project sentience onto a computer, is now known as the 'ELIZA Effect.' Weizenbaum was so disturbed by this that he became a vocal critic of AI.",
             "metrics": {},
             "links": [
@@ -273,7 +277,9 @@
             "type": "Publication",
             "innovator": "Marvin Minsky, Seymour Papert",
             "innovation": "Theoretical Limitation of Neural Networks",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/en/d/d8/Perceptrons_%28book%29.jpg"
+            ],
             "description": "In 1969, AI pioneers Minsky and Papert published a rigorous mathematical analysis of Rosenblatt's Perceptrons. They proved that a single-layer perceptron was incapable of solving non-linear problems, specifically the 'XOR' (Exclusive OR) function. While multi-layer networks could solve this, the authors implied that training such networks was computationally unfeasible. This book is widely credited (or blamed) for causing the first 'AI Winter,' effectively freezing funding and research into neural networks for nearly two decades in favor of Symbolic AI.",
             "metrics": {},
             "links": [
@@ -321,7 +327,9 @@
             "type": "Model / Architecture",
             "innovator": "Krizhevsky, Sutskever, Hinton",
             "innovation": "Deep Learning Explosion (CNN)",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1d/AlexNet_architecture.png"
+            ],
             "description": "AlexNet is the moment modern AI truly began. Submitted to the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), this deep convolutional neural network (CNN) crushed the competition, achieving a top-5 error rate of 15.3% (the runner-up was at 26.2%). Its success was due to two factors: the use of a deep architecture (8 layers) and the novel utilization of GPUs (two NVIDIA GTX 580s) for training. This result vindicated the Connectionist approach (neural networks) after decades of skepticism and kicked off the current Deep Learning gold rush.",
             "metrics": {
                 "error_rate": "15.3% (Top-5)",
@@ -372,7 +380,9 @@
             "type": "Publication / Architecture",
             "innovator": "Google (Vaswani et al.)",
             "innovation": "The Transformer Architecture",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/1/1b/Transformer%2C_attention_block_diagram.png"
+            ],
             "description": "This is arguably the most important computer science paper of the 21st century. The authors proposed the 'Transformer' architecture, which discarded the sequential nature of previous language models (RNNs/LSTMs) in favor of a mechanism called 'Self-Attention.' This allowed the model to look at an entire sentence (or paragraph) at once and understand the relationship between words regardless of their distance from each other. Crucially, this architecture is highly parallelizable, meaning it could be trained on massive clusters of GPUs, allowing AI to ingest the entire internet. This architecture underpins GPT, BERT, Claude, Gemini, and almost all modern Generative AI.",
             "metrics": {},
             "links": [
@@ -419,7 +429,9 @@
             "type": "Model Release",
             "innovator": "Meta AI",
             "innovation": "Open Weight Models",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Llama_logo.svg/800px-Llama_logo.svg.png"
+            ],
             "description": "In a strategic pivot, Meta released Llama 2 with 'open weights'—allowing researchers and companies to download and run the model on their own hardware, free for commercial use (up to a limit). This challenged the 'closed garden' approach of OpenAI and Google. It catalyzed a massive explosion of open-source innovation, leading to thousands of fine-tuned variants for coding, medical analysis, and roleplay, effectively commoditizing the base layer of intelligence.",
             "metrics": {
                 "license": "Commercial Open Weights",
@@ -470,7 +482,9 @@
             "type": "Model Reveal",
             "innovator": "OpenAI",
             "innovation": "High-Fidelity Text-to-Video / World Simulation",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/en/2/29/OpenAI_Sora_icon.png"
+            ],
             "description": "OpenAI shocked the creative world with the reveal of Sora, a diffusion transformer capable of generating 60-second, 1080p videos from simple text prompts. Unlike previous video models which were jittery and dream-like, Sora maintained temporal consistency (characters didn't morph over time) and displayed an emergent understanding of 3D physics, object permanence, and lighting. OpenAI positioned it not just as a creative tool, but as a 'World Simulator'—a step toward AI understanding the physical laws of reality.",
             "metrics": {
                 "output": "60s Photorealistic Video",
@@ -546,7 +560,9 @@
             "type": "Model Release",
             "innovator": "Meta AI",
             "innovation": "Open Source Frontier Parity",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Llama_logo.svg/800px-Llama_logo.svg.png"
+            ],
             "description": "Meta released Llama 3.1 405B, the largest open-weights model ever created. Trained on over 16,000 H100 GPUs, it was the first open model to perform on par with top-tier closed models like GPT-4o. This was a critical moment for enterprise AI, as it meant companies could self-host frontier-class intelligence without sending data to OpenAI or Google. It solidified Meta's position as the 'Android' of the AI ecosystem.",
             "metrics": {
                 "parameters": "405 Billion",
@@ -572,7 +588,9 @@
             "type": "Model Release",
             "innovator": "OpenAI",
             "innovation": "Inference-Time Compute / Chain of Thought",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/en/f/ff/OpenAI_o1_icon.png"
+            ],
             "description": "With the release of o1 (formerly Project Strawberry), OpenAI shifted the paradigm from 'Training Compute' (making the model bigger) to 'Inference Compute' (letting the model think longer). o1 uses a 'Chain of Thought' process where it breaks down complex problems, fact-checks itself, and backtracks before generating a final answer. This 'System 2' thinking allowed it to solve PhD-level physics problems and rank in the 89th percentile of competitive coding, areas where 'System 1' models like GPT-4o struggled.",
             "metrics": {
                 "paradigm": "System 2 Reasoning",
@@ -596,7 +614,9 @@
             "type": "Model Release",
             "innovator": "xAI (Elon Musk)",
             "innovation": "Supercluster Scale & Real-Time Data",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Grok-feb-2025-logo.svg/800px-Grok-feb-2025-logo.svg.png"
+            ],
             "description": "xAI's Grok-3 was the first model trained on the Memphis 'Colossus' supercluster, which utilized 100,000 NVIDIA H100s—the largest single training cluster in the world at the time. Beyond raw scale, Grok-3's key differentiator was its real-time access to the X (formerly Twitter) 'firehose.' This allowed the model to have up-to-the-second knowledge of breaking news and cultural sentiment, whereas other models had knowledge cutoffs or relied on slower search indexing.",
             "metrics": {
                 "training_hardware": "100k H100 GPUs",
@@ -620,7 +640,9 @@
             "type": "Model Release",
             "innovator": "Meta AI",
             "innovation": "Agentic Focus / Mixture-of-Experts",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Llama_logo.svg/800px-Llama_logo.svg.png"
+            ],
             "description": "Llama 4 marked the shift from 'Chatbot' to 'Agent.' Released in two primary variants, Scout (for research) and Maverick (for coding), these models were designed to run autonomously in loops. Using a highly efficient Mixture-of-Experts (MoE) architecture, they could run on consumer-grade hardware while executing multi-step workflows—such as scraping a website, summarizing the data, and writing a report—without human intervention.",
             "metrics": {
                 "architecture": "Mixture-of-Experts (MoE)",
@@ -644,7 +666,9 @@
             "type": "Model Release",
             "innovator": "Anthropic",
             "innovation": "Long-Horizon Task Execution",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Anthropic_logo.svg/800px-Anthropic_logo.svg.png"
+            ],
             "description": "Anthropic's Claude 4 focused on 'long-horizon' reliability. While other models could write a function, Claude 4 could maintain a coherent goal over thousands of steps, effectively allowing it to architect and debug entire software repositories. It became the standard backend for autonomous software engineering agents. Its 'Constitutional AI' framework was also updated to better handle nuanced ethical decisions in enterprise environments.",
             "metrics": {
                 "training_cost": ">$200 Million",
@@ -668,7 +692,9 @@
             "type": "Model Release",
             "innovator": "Google DeepMind",
             "innovation": "Integrated Audio-Video Generation",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Veo_3_demo_Owl_and_Badger.webm/800px--Veo_3_demo_Owl_and_Badger.webm.jpg"
+            ],
             "description": "Veo 3 solved the 'uncanny valley' of AI video by integrating perfect lip-syncing and Foley (sound effects) generation directly into the video generation process. Previous models required generating video and audio separately and trying to align them. Veo 3 understood the physics of sound—how footsteps sound on gravel vs. carpet—and generated them in sync with the pixels. Google immediately integrated this into YouTube Shorts, allowing creators to generate B-roll on the fly.",
             "metrics": {
                 "integration": "YouTube Shorts",
@@ -692,7 +718,9 @@
             "type": "Model Release",
             "innovator": "OpenAI",
             "innovation": "Adaptive Reasoning & Steerability",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/OpenAI_logo_2025_%28wordmark%29.svg/800px-OpenAI_logo_2025_%28wordmark%29.svg.png"
+            ],
             "description": "GPT-5.1 represented the convergence of the 'Omni' (fast) and 'Reasoning' (slow) paradigms. Using an Adaptive MoE architecture, the model could dynamically decide whether a user prompt required a quick, instinctive answer or deep, deliberative thought. It also introduced high-fidelity 'Steerability,' allowing users to define the model's personality, verbosity, and political/philosophical leanings with extreme precision, addressing the 'one size fits all' complaints of previous generations.",
             "metrics": {
                 "training_cost": ">$300 Million",
@@ -716,7 +744,9 @@
             "type": "Model Release",
             "innovator": "Google",
             "innovation": "Reasoning Integrated with Search",
-            "image_urls": [],
+            "image_urls": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/800px-Google_Gemini_logo.svg.png"
+            ],
             "description": "Gemini 3 brought 'System 2' reasoning to the masses by integrating it deeply with Google Search. Unlike o1, which reasoned in a vacuum, Gemini 3 could 'Deep Think' while actively browsing the live web, cross-referencing its reasoning steps with real-time data to minimize hallucinations. It achieved 'PhD-level' reasoning capabilities across biology, physics, and chemistry, and was deployed to accelerate drug discovery within Google's Isomorphic Labs.",
             "metrics": {
                 "training_cost": ">$250 Million (Est)",

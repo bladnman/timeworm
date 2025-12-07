@@ -3,6 +3,7 @@ import { DetailOverlay } from './components/DetailOverlay/DetailOverlay';
 import { ViewSwitcher } from './components/ViewSwitcher/ViewSwitcher';
 import { TimelineContext } from './context/TimelineContext';
 import { TimelineProvider } from './context/TimelineProvider';
+import { BikeRideView } from './views/BikeRide/BikeRideView';
 import { BranchingTree } from './views/BranchingTree/BranchingTree';
 import { ComicView } from './views/Comic/ComicView';
 import { DepthRoad } from './views/DepthRoad/DepthRoad';
@@ -26,6 +27,7 @@ const ViewManager = () => {
     if (viewMode === 'orbital') return <OrbitalRings />;
     if (viewMode === 'strata') return <StrataView />;
     if (viewMode === 'tree') return <BranchingTree />;
+    if (viewMode === 'bikeride') return <BikeRideView />;
     return <HorizontalView />;
 };
 

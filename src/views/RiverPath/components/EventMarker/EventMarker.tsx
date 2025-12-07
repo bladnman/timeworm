@@ -22,7 +22,7 @@ export const EventMarker = ({
   event,
   isHovered,
   isSelected,
-  zoom,
+  zoom: _zoom,
   showLabel,
   onHover,
   onClick,
