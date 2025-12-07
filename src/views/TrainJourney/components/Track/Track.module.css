@@ -1,0 +1,63 @@
+.trackContainer {
+  position: absolute;
+  height: 24px;
+  transform: translateY(-50%);
+}
+
+.rail {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 8px;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    to bottom,
+    #5a4a3a 0%,
+    #3d3229 20%,
+    #2a231c 50%,
+    #3d3229 80%,
+    #5a4a3a 100%
+  );
+  border-radius: 2px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.sleepers {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 20px;
+  transform: translateY(-50%);
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0px,
+    transparent 4px,
+    #4a3f35 4px,
+    #3d332a 6px,
+    #4a3f35 8px,
+    transparent 8px,
+    transparent 24px
+  );
+  z-index: -1;
+}
+
+.railShine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  transform: translateY(-6px);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(180, 160, 140, 0.4) 10%,
+    rgba(180, 160, 140, 0.6) 50%,
+    rgba(180, 160, 140, 0.4) 90%,
+    transparent 100%
+  );
+}

@@ -1,0 +1,158 @@
+.station {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform var(--duration-fast);
+}
+
+.station:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Platform */
+.platform {
+  position: relative;
+  height: 8px;
+  background: linear-gradient(
+    to bottom,
+    #6b5b4f,
+    #4a4039
+  );
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.minor .platform {
+  width: 40px;
+}
+
+.major .platform {
+  width: 80px;
+}
+
+.terminus .platform {
+  width: 120px;
+}
+
+.platformEdge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #8a7a6a;
+}
+
+/* Building (major and terminus only) */
+.building {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.structure {
+  background: linear-gradient(
+    to bottom,
+    #3d3229,
+    #2a231c
+  );
+  border: 1px solid #5a4a3a;
+  border-radius: 2px 2px 0 0;
+}
+
+.major .structure {
+  width: 40px;
+  height: 24px;
+}
+
+.terminus .structure {
+  width: 60px;
+  height: 32px;
+}
+
+.roof {
+  width: 70px;
+  height: 12px;
+  background: linear-gradient(
+    to bottom,
+    #5a4a3a,
+    #3d3229
+  );
+  clip-path: polygon(10% 100%, 50% 0%, 90% 100%);
+  margin-bottom: -1px;
+}
+
+/* Marker post */
+.marker {
+  position: absolute;
+  top: -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  width: 3px;
+  height: 20px;
+  background: linear-gradient(
+    to right,
+    #4a4039,
+    #6b5b4f,
+    #4a4039
+  );
+}
+
+.light {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #ffd93d,
+    #ff9500
+  );
+  box-shadow:
+    0 0 8px #ffd93d,
+    0 0 16px rgba(255, 217, 61, 0.5);
+}
+
+.minor .marker {
+  top: -20px;
+}
+
+.minor .post {
+  height: 12px;
+}
+
+.minor .light {
+  width: 6px;
+  height: 6px;
+}
+
+/* Label */
+.label {
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.major .label,
+.terminus .label {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+}
+
+.terminus .label {
+  font-weight: 700;
+}

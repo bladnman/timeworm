@@ -1,0 +1,127 @@
+.eventWrapper {
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 20;
+  cursor: pointer;
+  transition: transform var(--duration-fast);
+}
+
+.eventWrapper:hover {
+  z-index: 30;
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* Connector line */
+.connector {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-text-accent),
+    rgba(56, 189, 248, 0.3)
+  );
+  transform: translateX(-50%);
+}
+
+.below .connector {
+  background: linear-gradient(
+    to top,
+    var(--color-text-accent),
+    rgba(56, 189, 248, 0.3)
+  );
+}
+
+/* Anchor dot on track */
+.anchor {
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--color-text-accent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow:
+    0 0 8px var(--color-text-accent),
+    0 0 16px rgba(56, 189, 248, 0.4);
+}
+
+/* Event card */
+.card {
+  position: relative;
+  width: 220px;
+  min-height: 60px;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: var(--space-2) var(--space-4);
+  padding-left: 12px;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all var(--duration-fast);
+  overflow: hidden;
+}
+
+.eventWrapper:hover .card {
+  border-color: var(--color-text-accent);
+  background: var(--color-bg-surface-hover);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    0 0 0 1px var(--color-text-accent);
+}
+
+/* Type indicator bar */
+.typeIndicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--color-text-accent);
+}
+
+.typeIndicator[data-type="Hardware"] {
+  background: #f472b6; /* Pink */
+}
+
+.typeIndicator[data-type="Software"] {
+  background: #a78bfa; /* Purple */
+}
+
+.typeIndicator[data-type="Concept"] {
+  background: #34d399; /* Green */
+}
+
+.typeIndicator[data-type="Organization"] {
+  background: #fbbf24; /* Yellow */
+}
+
+.typeIndicator[data-type="Achievement"] {
+  background: #fb923c; /* Orange */
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-accent);
+  font-weight: 500;
+}
+
+.title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
