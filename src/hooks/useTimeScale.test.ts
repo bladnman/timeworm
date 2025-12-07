@@ -80,12 +80,16 @@ describe('useTimeScale', () => {
     ]);
     const { result } = renderHook(() => useTimeScale(data, { pixelsPerYear: 1 }));
 
-    // BCE dates produce NaN with current date-fns implementation
-    // This is a known limitation - the hook returns dates but totalWidth may be NaN
-    // TODO: Fix BCE date handling in useTimeScale
-    expect(result.current.minDate).toBeInstanceOf(Date);
-    expect(result.current.maxDate).toBeInstanceOf(Date);
-    // Note: totalWidth is NaN due to BCE date handling issue
+    // Now using ParsedDate which properly handles BCE dates
+    expect(result.current.minDate).toHaveProperty('year');
+    expect(result.current.maxDate).toHaveProperty('year');
+    // minDate should be 50 years before -150 = -200
+    expect(result.current.minDate.year).toBe(-200);
+    // maxDate should be 20 years after 2000 = 2020
+    expect(result.current.maxDate.year).toBe(2020);
+    // totalYears should be 2020 - (-200) = 2220
+    expect(result.current.totalYears).toBe(2220);
+    expect(result.current.totalWidth).toBe(2220); // 2220 years * 1px/year
   });
 
   it('updates when pixelsPerYear changes', () => {

@@ -1,45 +1,69 @@
-import { differenceInDays, getYear, parseISO } from 'date-fns';
 import { useMemo } from 'react';
 import type { TimelineData } from '../types/timeline';
+import {
+  parseISOExtended,
+  differenceInYears,
+  getYear,
+  fromYear,
+  eachYearOfInterval,
+  type ParsedDate,
+} from '../utils/dateUtils';
 
 interface TimeScaleConfig {
   pixelsPerYear: number;
 }
 
-export const useTimeScale = (data: TimelineData | null, config: TimeScaleConfig) => {
+export interface TimeScaleResult {
+  totalWidth: number;
+  getPosition: (dateStr: string) => number;
+  minDate: ParsedDate;
+  maxDate: ParsedDate;
+  totalYears: number;
+  years: number[];
+}
+
+export const useTimeScale = (data: TimelineData | null, config: TimeScaleConfig): TimeScaleResult => {
   const scale = useMemo(() => {
+    const emptyResult: TimeScaleResult = {
+      totalWidth: 0,
+      getPosition: () => 0,
+      minDate: fromYear(0),
+      maxDate: fromYear(0),
+      totalYears: 0,
+      years: [],
+    };
+
     if (!data || data.events.length === 0) {
-      return { totalWidth: 0, getPosition: () => 0, minDate: new Date(), maxDate: new Date() };
+      return emptyResult;
     }
 
     // Sort events to find absolute range
-    const sortedEvents = [...data.events].sort((a, b) => 
-      new Date(a.date_start).getTime() - new Date(b.date_start).getTime()
-    );
+    const sortedEvents = [...data.events].sort((a, b) => {
+      const dateA = parseISOExtended(a.date_start);
+      const dateB = parseISOExtended(b.date_start);
+      return dateA.decimalYear - dateB.decimalYear;
+    });
 
-    const minDateRaw = parseISO(sortedEvents[0].date_start);
-    const maxDateRaw = parseISO(sortedEvents[sortedEvents.length - 1].date_end || sortedEvents[sortedEvents.length - 1].date_start);
+    const minDateRaw = parseISOExtended(sortedEvents[0].date_start);
+    const lastEvent = sortedEvents[sortedEvents.length - 1];
+    const maxDateRaw = parseISOExtended(lastEvent.date_end || lastEvent.date_start);
 
     // Padding: Start 50 years before first event, End 20 years after last
-    const minDate = new Date(getYear(minDateRaw) - 50, 0, 1);
-    // Since dates can be BC (negative years), we need careful handling, but date-fns handles ISO parsing well.
-    // The data uses "-0150-01-01" for 150 BCE.
-    
-    // For max date, ensure we cover the full range
-    const maxDate = new Date(getYear(maxDateRaw) + 20, 0, 1);
+    const minDate = fromYear(getYear(minDateRaw) - 50);
+    const maxDate = fromYear(getYear(maxDateRaw) + 20);
 
-    const totalDays = differenceInDays(maxDate, minDate);
-    const totalYears = totalDays / 365.25;
+    const totalYears = differenceInYears(minDate, maxDate);
     const totalWidth = totalYears * config.pixelsPerYear;
 
-    const getPosition = (dateStr: string) => {
-      const date = parseISO(dateStr);
-      const daysFromStart = differenceInDays(date, minDate);
-      const pos = (daysFromStart / 365.25) * config.pixelsPerYear;
-      return pos;
+    const getPosition = (dateStr: string): number => {
+      const date = parseISOExtended(dateStr);
+      const yearsFromStart = differenceInYears(minDate, date);
+      return yearsFromStart * config.pixelsPerYear;
     };
 
-    return { totalWidth, getPosition, minDate, maxDate };
+    const years = eachYearOfInterval(minDate, maxDate);
+
+    return { totalWidth, getPosition, minDate, maxDate, totalYears, years };
   }, [data, config.pixelsPerYear]);
 
   return scale;
