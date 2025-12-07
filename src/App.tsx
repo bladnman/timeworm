@@ -7,6 +7,7 @@ import { BikeRideView } from './views/BikeRide/BikeRideView';
 import { BranchingTree } from './views/BranchingTree/BranchingTree';
 import { ComicView } from './views/Comic/ComicView';
 import { DepthRoad } from './views/DepthRoad/DepthRoad';
+import { ExhibitWalk } from './views/ExhibitWalk/ExhibitWalk';
 import { HorizontalView } from './views/Horizontal/HorizontalView';
 import { MosaicView } from './views/Mosaic/MosaicView';
 import { OrbitalRings } from './views/OrbitalRings/OrbitalRings';
@@ -21,6 +22,7 @@ const ViewManager = () => {
     if (isLoading) return <div style={{ padding: '2rem', textAlign: 'center' }}>Loading TimeWorm...</div>;
 
     if (viewMode === 'comic') return <ComicView />;
+    if (viewMode === 'exhibit') return <ExhibitWalk />;
     if (viewMode === 'vertical') return <VerticalView />;
     if (viewMode === 'river') return <RiverPathView />;
     if (viewMode === 'depthroad') return <DepthRoad />;
