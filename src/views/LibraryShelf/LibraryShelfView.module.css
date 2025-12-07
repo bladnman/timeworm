@@ -1,0 +1,273 @@
+/**
+ * LibraryShelfView Styles
+ *
+ * Creates a library shelf environment with:
+ * - Horizontal scrollable shelf
+ * - 3D shelf ledge effect
+ * - Gap indicators for time jumps
+ * - Timeline markers below
+ */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg-canvas) 0%,
+    #1a1a2e 50%,
+    #16213e 100%
+  );
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-text-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Empty state */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+/* Zoom controls */
+.controls {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-bg-surface);
+  padding: var(--space-2);
+  border-radius: 8px;
+  z-index: 50;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.zoomButton {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: var(--color-bg-surface-hover);
+  color: var(--color-text-primary);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--duration-fast);
+}
+
+.zoomButton:hover:not(:disabled) {
+  background: var(--color-border);
+}
+
+.zoomButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.zoomLabel {
+  min-width: 48px;
+  text-align: center;
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  color: var(--color-text-secondary);
+}
+
+/* Shelf container */
+.shelfContainer {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  padding: var(--space-8) 0;
+}
+
+.shelfWrapper {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* The shelf structure */
+.shelf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Books container */
+.books {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  padding: 0 32px;
+  height: 320px;
+}
+
+.bookSlot {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+/* Gap indicator between books */
+.gapIndicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 60px;
+  padding: 0 var(--space-2);
+}
+
+.gapLine {
+  flex: 1;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-text-secondary) 20%,
+    var(--color-text-secondary) 80%,
+    transparent
+  );
+  opacity: 0.3;
+}
+
+.gapLabel {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--color-bg-surface);
+  border-radius: 4px;
+}
+
+/* Shelf ledge with 3D effect */
+.shelfLedge {
+  width: 100%;
+  position: relative;
+}
+
+.ledgeTop {
+  height: 12px;
+  background: linear-gradient(
+    to bottom,
+    #5d4e37 0%,
+    #4a3f2f 100%
+  );
+  border-radius: 2px 2px 0 0;
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.1),
+    0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.ledgeFront {
+  height: 24px;
+  background: linear-gradient(
+    to bottom,
+    #3d3225 0%,
+    #2a2318 100%
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Timeline markers */
+.timeline {
+  position: relative;
+  height: 40px;
+  margin-top: var(--space-4);
+  padding: 0 32px;
+}
+
+.timeLabel {
+  position: absolute;
+  font-size: var(--text-xs);
+  font-family: var(--font-mono);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.timeLabel::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 1px;
+  height: 6px;
+  background: var(--color-border);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .controls {
+    top: var(--space-2);
+    right: var(--space-2);
+    padding: var(--space-1);
+  }
+
+  .zoomButton {
+    width: 28px;
+    height: 28px;
+    font-size: var(--text-base);
+  }
+
+  .books {
+    height: 260px;
+    padding: 0 var(--space-4);
+  }
+
+  .gapIndicator {
+    min-width: 40px;
+  }
+
+  .gapLabel {
+    font-size: 0.625rem;
+    padding: var(--space-1) var(--space-2);
+  }
+}

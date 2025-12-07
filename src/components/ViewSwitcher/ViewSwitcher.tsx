@@ -85,6 +85,12 @@ export const ViewSwitcher = () => {
       >
         Trail View
       </button>
+      <button
+        className={classNames(styles.button, { [styles.active]: viewMode === 'libraryShelf' })}
+        onClick={() => setViewMode('libraryShelf')}
+      >
+        Library Shelf
+      </button>
     </div>
   );
 };

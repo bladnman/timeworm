@@ -1,0 +1,261 @@
+/**
+ * BookDetail Styles
+ *
+ * Creates an "open book" appearance with:
+ * - Cover page on the left
+ * - Table of contents on the right
+ * - Chapter entries styled like book pages
+ */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+  animation: fadeIn var(--duration-fast) ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.book {
+  display: flex;
+  max-width: 800px;
+  width: 90vw;
+  max-height: 80vh;
+  background: var(--color-bg-surface);
+  border-radius: 4px 8px 8px 4px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  animation: bookOpen 0.3s var(--ease-spring);
+}
+
+@keyframes bookOpen {
+  from {
+    transform: perspective(1000px) rotateY(-30deg) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(1000px) rotateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Left side: Book cover */
+.cover {
+  width: 200px;
+  min-width: 200px;
+  background: var(--book-color);
+  color: var(--book-text);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  box-shadow: inset -4px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.coverDecor {
+  position: absolute;
+  inset: var(--space-4);
+  border: 2px solid currentColor;
+  opacity: 0.2;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.coverTitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin: 0 0 var(--space-2);
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.coverSubtitle {
+  font-size: var(--text-sm);
+  opacity: 0.8;
+  margin-bottom: var(--space-6);
+}
+
+.coverChapterCount {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  margin-top: auto;
+}
+
+/* Right side: Table of contents */
+.contents {
+  flex: 1;
+  background: #f5f1e8;
+  color: #2c2416;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.contentsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ebe6db;
+}
+
+.contentsTitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 0;
+  color: #4a3f2f;
+}
+
+.closeButton {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: #6b5d4d;
+  font-size: var(--text-2xl);
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--duration-fast);
+}
+
+.closeButton:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #2c2416;
+}
+
+/* Chapter list */
+.chapterList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.chapter {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.chapter:last-child {
+  border-bottom: none;
+}
+
+.chapterButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    background var(--duration-fast),
+    transform var(--duration-fast);
+}
+
+.chapterButton:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.chapterButton:active {
+  transform: scale(0.99);
+}
+
+.chapterNumber {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: #8b7355;
+  min-width: 24px;
+}
+
+.chapterContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.chapterTitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: #2c2416;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chapterDate {
+  font-size: var(--text-xs);
+  color: #8b7355;
+}
+
+.chapterArrow {
+  font-size: var(--text-lg);
+  color: #b8a88a;
+  opacity: 0;
+  transition: opacity var(--duration-fast);
+}
+
+.chapterButton:hover .chapterArrow {
+  opacity: 1;
+}
+
+/* Empty state */
+.emptyState {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b7355;
+  font-style: italic;
+  padding: var(--space-8);
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .book {
+    flex-direction: column;
+    max-height: 90vh;
+  }
+
+  .cover {
+    width: 100%;
+    min-width: auto;
+    padding: var(--space-4);
+    box-shadow: none;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .coverTitle {
+    font-size: var(--text-xl);
+  }
+
+  .coverChapterCount {
+    margin-top: var(--space-2);
+  }
+}

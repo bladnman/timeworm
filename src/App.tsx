@@ -9,6 +9,7 @@ import { ComicView } from './views/Comic/ComicView';
 import { DepthRoad } from './views/DepthRoad/DepthRoad';
 import { ExhibitWalk } from './views/ExhibitWalk/ExhibitWalk';
 import { HorizontalView } from './views/Horizontal/HorizontalView';
+import { LibraryShelfView } from './views/LibraryShelf/LibraryShelfView';
 import { MosaicView } from './views/Mosaic/MosaicView';
 import { OrbitalRings } from './views/OrbitalRings/OrbitalRings';
 import { RiverPathView } from './views/RiverPath/RiverPathView';
@@ -34,6 +35,7 @@ const ViewManager = () => {
     if (viewMode === 'bikeride') return <BikeRideView />;
     if (viewMode === 'train') return <TrainJourney />;
     if (viewMode === 'trail') return <TrailProfileView />;
+    if (viewMode === 'libraryShelf') return <LibraryShelfView />;
     return <HorizontalView />;
 };
 
