@@ -3,6 +3,7 @@ import { DetailOverlay } from './components/DetailOverlay/DetailOverlay';
 import { ViewSwitcher } from './components/ViewSwitcher/ViewSwitcher';
 import { TimelineContext } from './context/TimelineContext';
 import { TimelineProvider } from './context/TimelineProvider';
+import { ComicView } from './views/Comic/ComicView';
 import { HorizontalView } from './views/Horizontal/HorizontalView';
 import { VerticalView } from './views/Vertical/VerticalView';
 
@@ -11,11 +12,9 @@ const ViewManager = () => {
 
     if (isLoading) return <div style={{ padding: '2rem', textAlign: 'center' }}>Loading TimeWorm...</div>;
 
-    return (
-        <>
-            {viewMode === 'vertical' ? <VerticalView /> : <HorizontalView />}
-        </>
-    );
+    if (viewMode === 'comic') return <ComicView />;
+    if (viewMode === 'vertical') return <VerticalView />;
+    return <HorizontalView />;
 };
 
 function App() {

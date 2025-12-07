@@ -19,6 +19,12 @@ export const ViewSwitcher = () => {
       >
         Track View
       </button>
+      <button
+        className={classNames(styles.button, { [styles.active]: viewMode === 'comic' })}
+        onClick={() => setViewMode('comic')}
+      >
+        Comic View
+      </button>
     </div>
   );
 };
