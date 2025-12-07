@@ -1,0 +1,84 @@
+.miniMap {
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.track {
+  position: relative;
+  height: 24px;
+  background: var(--color-bg-canvas);
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Event dots */
+.eventDot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: var(--color-text-secondary);
+  border-radius: 50%;
+  transition: all var(--duration-fast);
+  pointer-events: none;
+}
+
+.eventDot:hover {
+  background: var(--color-text-accent);
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Current time marker */
+.timeMarker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-text-accent);
+  transform: translateX(-50%);
+  pointer-events: none;
+  box-shadow: 0 0 8px var(--color-text-accent);
+}
+
+/* Viewport indicator */
+.viewport {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  background: rgba(56, 189, 248, 0.15);
+  border: 2px solid var(--color-text-accent);
+  border-radius: 4px;
+  cursor: grab;
+  transition: background var(--duration-fast);
+}
+
+.viewport:hover {
+  background: rgba(56, 189, 248, 0.25);
+}
+
+.viewport:active {
+  cursor: grabbing;
+}
+
+.viewportHandle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 8px;
+  background: var(--color-text-accent);
+  border-radius: 4px;
+  opacity: 0.6;
+}
+
+/* Path preview */
+.pathPreview {
+  width: 100%;
+  height: 20px;
+  margin-top: var(--space-1);
+  opacity: 0.5;
+}

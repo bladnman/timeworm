@@ -1,0 +1,139 @@
+.eventStop {
+  cursor: pointer;
+  transition: transform var(--duration-fast);
+}
+
+.eventStop:hover {
+  transform: scale(1.05);
+}
+
+/* Marker styles */
+.marker {
+  fill: var(--color-bg-surface);
+  stroke: var(--color-text-accent);
+  stroke-width: 3;
+  transition: all var(--duration-fast);
+}
+
+.markerInner {
+  fill: var(--color-text-accent);
+  transition: all var(--duration-fast);
+}
+
+.markerGlow {
+  fill: var(--color-text-accent);
+  opacity: 0.2;
+  filter: blur(8px);
+}
+
+/* Past events (bike has passed) */
+.past .marker {
+  fill: var(--color-text-accent);
+  opacity: 0.8;
+}
+
+.past .markerInner {
+  fill: var(--color-bg-surface);
+}
+
+/* Selected state */
+.selected .marker {
+  stroke: var(--color-text-primary);
+  stroke-width: 4;
+}
+
+.selected .markerInner {
+  fill: var(--color-text-primary);
+}
+
+/* Hovered state */
+.hovered .marker {
+  stroke-width: 4;
+}
+
+/* Connector line */
+.connector {
+  stroke: var(--color-border);
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+  opacity: 0.6;
+}
+
+.selected .connector,
+.hovered .connector {
+  stroke: var(--color-text-accent);
+  opacity: 1;
+}
+
+/* Signpost */
+.signpost {
+  fill: var(--color-border);
+  opacity: 0.6;
+}
+
+.selected .signpost,
+.hovered .signpost {
+  fill: var(--color-text-accent);
+  opacity: 1;
+}
+
+/* Label container */
+.labelContainer {
+  overflow: visible;
+  pointer-events: none;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-2);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all var(--duration-fast);
+  max-width: 100%;
+}
+
+.selected .label,
+.hovered .label {
+  border-color: var(--color-text-accent);
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.2);
+}
+
+.labelDate {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+}
+
+.labelTitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+/* Gap indicator */
+.gapIndicator {
+  opacity: 0.7;
+}
+
+.gapText {
+  font-size: var(--text-xs);
+  fill: var(--color-text-secondary);
+  font-family: var(--font-mono);
+}
+
+.gapConnector {
+  fill: none;
+  stroke: var(--color-text-secondary);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  opacity: 0.5;
+}

@@ -1,0 +1,129 @@
+.bikeGroup {
+  transition: transform var(--duration-fast) var(--ease-spring);
+  pointer-events: none;
+}
+
+.glow {
+  fill: var(--color-text-accent);
+  opacity: 0.3;
+  filter: blur(8px);
+}
+
+.moving .glow {
+  animation: pulse 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+}
+
+/* Motion trail */
+.trail circle {
+  fill: var(--color-text-accent);
+  opacity: 0.4;
+  animation: fade 0.3s ease-out infinite;
+}
+
+.trail circle:nth-child(2) {
+  animation-delay: 0.1s;
+  opacity: 0.25;
+}
+
+.trail circle:nth-child(3) {
+  animation-delay: 0.2s;
+  opacity: 0.15;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Bike parts */
+.wheel {
+  fill: none;
+  stroke: var(--color-text-primary);
+  stroke-width: 2;
+}
+
+.wheelHub {
+  fill: var(--color-text-accent);
+}
+
+.frame {
+  fill: none;
+  stroke: var(--color-text-primary);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.seat {
+  fill: var(--color-text-secondary);
+}
+
+.handlebar {
+  fill: none;
+  stroke: var(--color-text-primary);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* Spokes rotation animation */
+.spokes {
+  animation: spin 0.3s linear infinite;
+  transform-origin: center;
+}
+
+.spoke {
+  stroke: var(--color-text-secondary);
+  stroke-width: 1;
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+/* Moving state enhancements */
+.moving .wheel {
+  animation: wheelSpin 0.2s linear infinite;
+}
+
+.moving .bike {
+  animation: bounce 0.15s ease-in-out infinite alternate;
+}
+
+@keyframes wheelSpin {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 20;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1px);
+  }
+}

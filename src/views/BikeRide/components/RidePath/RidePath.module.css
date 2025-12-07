@@ -1,0 +1,43 @@
+.pathGroup {
+  pointer-events: none;
+}
+
+.pathShadow {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.3);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: blur(4px);
+  transform: translate(2px, 4px);
+}
+
+.pathBackground {
+  fill: none;
+  stroke: var(--color-bg-surface);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pathEdge {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.6;
+}
+
+.pathTraveled {
+  fill: none;
+  stroke: var(--color-text-accent);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.3;
+  transition: stroke-dasharray var(--duration-normal);
+}
+
+.pathCenterLine {
+  fill: none;
+  stroke: var(--color-text-secondary);
+  stroke-linecap: round;
+  opacity: 0.4;
+}
