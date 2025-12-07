@@ -3,6 +3,7 @@ import { DetailOverlay } from './components/DetailOverlay/DetailOverlay';
 import { ViewSwitcher } from './components/ViewSwitcher/ViewSwitcher';
 import { TimelineContext } from './context/TimelineContext';
 import { TimelineProvider } from './context/TimelineProvider';
+import { BranchingTree } from './views/BranchingTree/BranchingTree';
 import { ComicView } from './views/Comic/ComicView';
 import { DepthRoad } from './views/DepthRoad/DepthRoad';
 import { HorizontalView } from './views/Horizontal/HorizontalView';
@@ -24,6 +25,7 @@ const ViewManager = () => {
     if (viewMode === 'mosaic') return <MosaicView />;
     if (viewMode === 'orbital') return <OrbitalRings />;
     if (viewMode === 'strata') return <StrataView />;
+    if (viewMode === 'tree') return <BranchingTree />;
     return <HorizontalView />;
 };
 
