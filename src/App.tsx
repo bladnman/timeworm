@@ -5,6 +5,7 @@ import { TimelineContext } from './context/TimelineContext';
 import { TimelineProvider } from './context/TimelineProvider';
 import { ComicView } from './views/Comic/ComicView';
 import { HorizontalView } from './views/Horizontal/HorizontalView';
+import { MosaicView } from './views/Mosaic/MosaicView';
 import { VerticalView } from './views/Vertical/VerticalView';
 
 const ViewManager = () => {
@@ -14,6 +15,7 @@ const ViewManager = () => {
 
     if (viewMode === 'comic') return <ComicView />;
     if (viewMode === 'vertical') return <VerticalView />;
+    if (viewMode === 'mosaic') return <MosaicView />;
     return <HorizontalView />;
 };
 
