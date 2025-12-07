@@ -25,6 +25,12 @@ export const ViewSwitcher = () => {
       >
         Comic View
       </button>
+      <button
+        className={classNames(styles.button, { [styles.active]: viewMode === 'libraryShelf' })}
+        onClick={() => setViewMode('libraryShelf')}
+      >
+        Library Shelf
+      </button>
     </div>
   );
 };
