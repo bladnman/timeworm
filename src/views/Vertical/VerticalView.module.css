@@ -61,3 +61,38 @@
   font-size: var(--text-sm);
   line-height: 1.5;
 }
+
+/* Time gap indicator */
+.gapIndicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-6) 0;
+  padding-left: var(--space-8);
+  margin-left: -1px; /* Align with border */
+}
+
+.gapLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-text-accent) 20%,
+    var(--color-text-accent) 80%,
+    transparent
+  );
+  opacity: 0.4;
+}
+
+.gapLabel {
+  color: var(--color-text-accent);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-bg-surface);
+  border: 1px dashed var(--color-text-accent);
+  border-radius: 4px;
+  opacity: 0.8;
+}
