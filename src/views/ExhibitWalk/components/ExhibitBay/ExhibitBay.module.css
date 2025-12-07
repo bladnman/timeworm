@@ -1,0 +1,232 @@
+/**
+ * ExhibitBay - Museum display case styling
+ *
+ * Evokes a gallery alcove or display bay with:
+ * - Subtle framing elements
+ * - Warm lighting suggestion
+ * - Clean, spacious layout
+ */
+
+.bay {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 41, 59, 0.95) 0%,
+    rgba(15, 23, 42, 0.98) 100%
+  );
+  border: 1px solid #2a3244;
+  border-radius: 8px;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition:
+    transform var(--duration-fast),
+    box-shadow var(--duration-fast),
+    border-color var(--duration-fast);
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.bay.hovered {
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(56, 189, 248, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.bay.expanded {
+  max-height: none;
+  z-index: 10;
+  transform: translateY(-50%) scale(1.02);
+  border-color: var(--color-text-accent);
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.5),
+    0 0 0 1px var(--color-text-accent);
+}
+
+/* Decorative frame elements */
+.frameTop,
+.frameBottom {
+  height: 3px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(56, 189, 248, 0.2) 20%,
+    rgba(56, 189, 248, 0.4) 50%,
+    rgba(56, 189, 248, 0.2) 80%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity var(--duration-fast);
+}
+
+.bay.hovered .frameTop,
+.bay.hovered .frameBottom {
+  opacity: 1;
+}
+
+.bay.expanded .frameTop,
+.bay.expanded .frameBottom {
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-text-accent) 20%,
+    var(--color-text-accent) 80%,
+    transparent 100%
+  );
+}
+
+/* Bay header */
+.header {
+  padding: var(--space-4);
+  border-bottom: 1px solid rgba(42, 50, 68, 0.5);
+  cursor: pointer;
+  transition: background-color var(--duration-fast);
+}
+
+.header:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.timeLabel {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-1);
+}
+
+.eventCount {
+  font-size: var(--text-xs);
+  color: var(--color-text-accent);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.duration {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  margin-top: 2px;
+}
+
+/* Display case - contains cards */
+.displayCase {
+  flex: 1;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-bg-surface-hover) transparent;
+}
+
+.displayCase.multiColumn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
+
+/* Card wrapper for animation */
+.cardWrapper {
+  animation: cardEnter 0.3s ease-out both;
+}
+
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Expand toggle button */
+.expandToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  margin: 0 var(--space-4) var(--space-4);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 4px;
+  color: var(--color-text-accent);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast),
+    border-color var(--duration-fast);
+}
+
+.expandToggle:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.expandIcon {
+  transition: transform var(--duration-fast);
+}
+
+.expandIcon.rotated {
+  transform: rotate(180deg);
+}
+
+/* Gap marker - shows time gap from previous bay */
+.gapMarker {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-100%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  opacity: 0.6;
+}
+
+.gapLine {
+  width: 20px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-text-secondary));
+}
+
+.gapText {
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+/* Size variants */
+.compact .header {
+  padding: var(--space-2) var(--space-4);
+}
+
+.compact .displayCase {
+  padding: var(--space-2) var(--space-4) var(--space-4);
+}
+
+.standard {
+  /* Default sizing */
+}
+
+.expanded .displayCase {
+  max-height: 600px;
+}
