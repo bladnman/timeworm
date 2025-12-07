@@ -4,6 +4,7 @@ import { ViewSwitcher } from './components/ViewSwitcher/ViewSwitcher';
 import { TimelineContext } from './context/TimelineContext';
 import { TimelineProvider } from './context/TimelineProvider';
 import { ComicView } from './views/Comic/ComicView';
+import { DepthRoad } from './views/DepthRoad/DepthRoad';
 import { HorizontalView } from './views/Horizontal/HorizontalView';
 import { RiverPathView } from './views/RiverPath/RiverPathView';
 import { VerticalView } from './views/Vertical/VerticalView';
@@ -16,6 +17,7 @@ const ViewManager = () => {
     if (viewMode === 'comic') return <ComicView />;
     if (viewMode === 'vertical') return <VerticalView />;
     if (viewMode === 'river') return <RiverPathView />;
+    if (viewMode === 'depthroad') return <DepthRoad />;
     return <HorizontalView />;
 };
 

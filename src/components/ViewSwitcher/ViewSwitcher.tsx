@@ -31,6 +31,12 @@ export const ViewSwitcher = () => {
       >
         River View
       </button>
+      <button
+        className={classNames(styles.button, { [styles.active]: viewMode === 'depthroad' })}
+        onClick={() => setViewMode('depthroad')}
+      >
+        Depth Road
+      </button>
     </div>
   );
 };

@@ -394,7 +394,7 @@
             "innovator": "OpenAI",
             "innovation": "RLHF / Consumer AI Adoption",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/800px-ChatGPT_logo.svg.png"
             ],
             "description": "While GPT-3 existed before this, it was a raw, difficult-to-control developer tool. ChatGPT applied Reinforcement Learning from Human Feedback (RLHF) to the model, fine-tuning it to follow instructions and converse politely. Released as a simple, free chat interface (Low-Code/No-Code), it lowered the barrier to entry for AI to zero. It became the fastest-growing consumer application in history, reaching 100 million monthly active users in just two months. It sparked a global arms race among tech giants and brought AI into the public consciousness overnight.",
             "metrics": {
@@ -444,7 +444,7 @@
             "innovator": "Google",
             "innovation": "Native Multimodality",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg"
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/800px-Google_Gemini_logo.svg.png"
             ],
             "description": "Google's response to GPT-4 was the first model built from the ground up to be 'natively multimodal.' Unlike previous systems that stitched together separate models for vision (OCR) and text, Gemini was trained on text, images, and audio simultaneously. This gave it a nuanced understanding of cross-modal reasoning (e.g., explaining a physics problem in a video). It was also the first model to surpass human experts on the massive MMLU (Massive Multitask Language Understanding) benchmark, scoring 90.0%.",
             "metrics": {
@@ -495,7 +495,7 @@
             "innovator": "Anthropic",
             "innovation": "Metacognition / Needle In A Haystack",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg"
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Anthropic_logo.svg/800px-Anthropic_logo.svg.png"
             ],
             "description": "For a brief window in 2024, Claude 3 Opus was widely considered the 'smartest' model available, beating GPT-4 on most leaderboards. It was noted for its nuanced writing style and large context window. During internal testing, it demonstrated a form of 'metacognition' (awareness of its own thought process). When asked to find a random sentence hidden in a massive document (the 'Needle in a Haystack' test), the model not only found it but commented, 'This sentence seems so out of place... I suspect this is a test to see if I'm paying attention.'",
             "metrics": {
@@ -521,7 +521,7 @@
             "innovator": "OpenAI",
             "innovation": "Real-time Audio/Vision / Emotional Intonation",
             "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/800px-ChatGPT_logo.svg.png"
             ],
             "description": "GPT-4o ('o' for Omni) was a step change in human-computer interaction (HCI). It combined text, audio, and vision into a single end-to-end model. This allowed for an audio latency of ~320 milliseconds—roughly the same reaction time as a human in conversation—enabling users to interrupt the AI. It could also detect emotion in a user's voice and generate audio with laughter, singing, or whispers, moving the AI interface from 'transactional' to 'relational.'",
             "metrics": {
