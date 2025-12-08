@@ -4,7 +4,8 @@
         "version": "1.0.0",
         "generated_date": "2025-12-06",
         "overview": "For over 5,000 years, humans have marked their skin with permanent designs—for ritual, protection, punishment, identity, rebellion, and beauty. The tattoo's journey from sacred ritual to criminal stigma to high fashion reflects shifting attitudes about the body, class, and self-expression. Today, tattoos are more popular than ever, yet their ancient power to transform and define persists.",
-        "attribution": "Historical research compiled from anthropological studies, tattoo industry archives, and cultural analysis."
+        "attribution": "Historical research compiled from anthropological studies, tattoo industry archives, and cultural analysis.",
+        "defaultView": "strata"
     },
     "groups": [
         {

@@ -4,7 +4,8 @@
         "version": "1.0.0",
         "generated_date": "2025-12-07",
         "overview": "The fortune cookie is perhaps America's most misunderstood cultural artifact—a treat universally associated with Chinese restaurants that actually originated in Japan and was popularized by Japanese-American bakers in California. Its story reveals how cultural exchange, wartime displacement, and marketing mythology can reshape an object's identity entirely.",
-        "attribution": "Historical research compiled from food history archives, Japanese-American cultural studies, and culinary journalism."
+        "attribution": "Historical research compiled from food history archives, Japanese-American cultural studies, and culinary journalism.",
+        "defaultView": "vertical"
     },
     "groups": [
         {

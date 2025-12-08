@@ -4,7 +4,8 @@
         "version": "1.0.0",
         "generated_date": "2025-12-06",
         "overview": "The bicycle is one of humanity's most elegant inventions—a simple machine that transformed transportation, liberated women, enabled sport, and now promises to reshape cities in the face of climate change. From aristocratic toy to mass transit, from high-wheel death trap to e-bike commuter, the bicycle's 200-year journey reflects changing attitudes about technology, fitness, urban design, and personal freedom.",
-        "attribution": "Historical research compiled from cycling history archives, transportation studies, and cultural analysis."
+        "attribution": "Historical research compiled from cycling history archives, transportation studies, and cultural analysis.",
+        "defaultView": "trail"
     },
     "groups": [
         {
