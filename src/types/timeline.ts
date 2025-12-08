@@ -32,9 +32,6 @@ export interface TimelineEvent {
   date_start: string;
   date_end?: string;
   group_ids: string[];
-  type: string;
-  innovator?: string;
-  innovation: string;
   image_urls: string[];
   description: string;
   metrics: TimelineEventMetric;
