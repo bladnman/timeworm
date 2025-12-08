@@ -1,8 +1,8 @@
 /**
  * Image Gallery Styles
  *
+ * Unified hero + thumbnail layout.
  * Images are visual content - let them shine.
- * Minimal chrome, the images are the UI.
  */
 
 .container {
@@ -11,37 +11,66 @@
   gap: var(--space-6);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: var(--space-4);
+/* Hero Section */
+.heroSection {
+  width: 100%;
 }
 
-.imageCard {
+.heroCard {
+  position: relative;
+  aspect-ratio: 21 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-bg-elevated);
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Thumbnail Grid */
+.thumbnailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: var(--space-3);
+}
+
+.thumbnailCard {
   position: relative;
   aspect-ratio: 16 / 10;
   border-radius: 8px;
   overflow: hidden;
   background: var(--color-bg-elevated);
+  border: 2px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.image {
+.thumbnailCard:hover {
+  border-color: var(--color-accent);
+}
+
+.thumbnailImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.imageCard:hover .image {
-  transform: scale(1.02);
+.thumbnailCard:hover .thumbnailImage {
+  transform: scale(1.05);
 }
 
+/* Remove buttons */
 .removeButton {
   position: absolute;
   top: var(--space-2);
   right: var(--space-2);
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,12 +84,40 @@
   transition: all 0.2s ease;
 }
 
-.imageCard:hover .removeButton {
+.heroCard:hover .removeButton {
   opacity: 1;
   transform: scale(1);
 }
 
 .removeButton:hover {
+  background: var(--color-error);
+}
+
+.thumbnailRemove {
+  position: absolute;
+  top: var(--space-1);
+  right: var(--space-1);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.2s ease;
+}
+
+.thumbnailCard:hover .thumbnailRemove {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.thumbnailRemove:hover {
   background: var(--color-error);
 }
 
@@ -71,10 +128,10 @@
 
 .featuredBadge {
   position: absolute;
-  bottom: var(--space-2);
-  left: var(--space-2);
-  padding: var(--space-1) var(--space-2);
-  font-size: 10px;
+  bottom: var(--space-3);
+  left: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;

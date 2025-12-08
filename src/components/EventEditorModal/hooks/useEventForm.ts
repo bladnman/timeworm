@@ -16,9 +16,6 @@ interface FormState {
   date_end: string;
   date_display: string;
   description: string;
-  type: string;
-  innovator: string;
-  innovation: string;
   group_ids: string[];
   image_urls: string[];
   metrics: Record<string, string>;
@@ -32,9 +29,6 @@ const createFormFromEvent = (event: {
   date_end?: string;
   date_display: string;
   description: string;
-  type: string;
-  innovator?: string;
-  innovation: string;
   group_ids: string[];
   image_urls?: string[];
   metrics?: Record<string, string>;
@@ -45,9 +39,6 @@ const createFormFromEvent = (event: {
   date_end: event.date_end ?? '',
   date_display: event.date_display,
   description: event.description,
-  type: event.type,
-  innovator: event.innovator ?? '',
-  innovation: event.innovation,
   group_ids: event.group_ids,
   image_urls: event.image_urls ?? [],
   metrics: event.metrics ?? {},
@@ -113,8 +104,6 @@ export const useEventForm = (eventId: string | null) => {
         Object.entries(updates).forEach(([key, value]) => {
           if (key === 'date_end' && value === '') {
             eventUpdates[key] = undefined;
-          } else if (key === 'innovator' && value === '') {
-            eventUpdates[key] = undefined;
           } else if (key !== 'errors') {
             eventUpdates[key] = value;
           }
@@ -167,7 +156,7 @@ export const useEventForm = (eventId: string | null) => {
         return newForm;
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
   );
 
   // Toggle group selection
@@ -185,7 +174,7 @@ export const useEventForm = (eventId: string | null) => {
         return { ...prev, group_ids: newGroups };
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
   );
 
   // Image management
@@ -198,7 +187,7 @@ export const useEventForm = (eventId: string | null) => {
         return { ...prev, image_urls: newUrls };
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
   );
 
   const removeImageUrl = useCallback(
@@ -210,7 +199,18 @@ export const useEventForm = (eventId: string | null) => {
         return { ...prev, image_urls: newUrls };
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
+  );
+
+  const reorderImageUrls = useCallback(
+    (urls: string[]) => {
+      setForm((prev) => {
+        if (!prev) return prev;
+        debouncedSave({ image_urls: urls });
+        return { ...prev, image_urls: urls };
+      });
+    },
+    [setForm, debouncedSave]
   );
 
   // Metrics management
@@ -230,7 +230,7 @@ export const useEventForm = (eventId: string | null) => {
         return { ...prev, metrics: newMetrics };
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
   );
 
   const removeMetric = useCallback(
@@ -243,7 +243,7 @@ export const useEventForm = (eventId: string | null) => {
         return { ...prev, metrics: newMetrics };
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
   );
 
   // Links management
@@ -256,7 +256,7 @@ export const useEventForm = (eventId: string | null) => {
         return { ...prev, links: newLinks };
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
   );
 
   const updateLink = useCallback(
@@ -269,7 +269,7 @@ export const useEventForm = (eventId: string | null) => {
         return { ...prev, links: newLinks };
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
   );
 
   const removeLink = useCallback(
@@ -281,7 +281,7 @@ export const useEventForm = (eventId: string | null) => {
         return { ...prev, links: newLinks };
       });
     },
-    [debouncedSave]
+    [setForm, debouncedSave]
   );
 
   // Delete event
@@ -310,6 +310,7 @@ export const useEventForm = (eventId: string | null) => {
     toggleGroup,
     addImageUrl,
     removeImageUrl,
+    reorderImageUrls,
     updateMetric,
     removeMetric,
     addLink,

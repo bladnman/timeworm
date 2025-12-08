@@ -1,0 +1,86 @@
+/**
+ * Delete Zone Styles
+ *
+ * Subtle, de-emphasized destructive action.
+ * At the very bottom - scroll to find.
+ */
+
+.deleteZone {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-12) 0;
+  margin-top: var(--space-8);
+  border-top: 1px solid var(--color-border);
+}
+
+.deleteButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text-tertiary);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.deleteButton:hover {
+  color: var(--color-error);
+}
+
+.deleteIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.confirmContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.confirmText {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.confirmActions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.confirmDelete {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  background: var(--color-error);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.confirmDelete:hover {
+  opacity: 0.9;
+}
+
+.confirmCancel {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  background: transparent;
+  color: var(--color-text-tertiary);
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.confirmCancel:hover {
+  color: var(--color-text-primary);
+}
