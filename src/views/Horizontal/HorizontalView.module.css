@@ -100,7 +100,6 @@
 /* Event/Cluster wrapper */
 .itemWrapper {
   position: absolute;
-  top: 50%;
   z-index: 5;
   transition:
     left var(--duration-normal) ease-out,
@@ -150,16 +149,14 @@
   height: 10px;
   background: var(--color-text-accent);
   border-radius: 50%;
-  transform: translateX(-50%);
+  /* transform is set inline: translateX(-50%) translateY(-50%) */
   z-index: 10;
   transition:
-    transform var(--duration-fast) var(--ease-spring),
     box-shadow var(--duration-fast);
   box-shadow: 0 0 0 2px var(--color-bg-canvas);
 }
 
 .itemWrapper:hover .anchor {
-  transform: translateX(-50%) scale(1.3);
   box-shadow:
     0 0 0 3px var(--color-bg-canvas),
     0 0 12px 2px var(--color-text-accent);

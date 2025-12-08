@@ -6,10 +6,31 @@
   background: var(--color-bg-surface);
   border-top: 1px solid var(--color-border);
   padding: var(--space-4);
+  padding-top: var(--space-3);
   z-index: 50;
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+}
+
+/* Context bar - shows minimap position in total timeline */
+.contextBar {
+  position: relative;
+  height: 4px;
+  background: var(--color-bg-canvas);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: var(--space-1);
+}
+
+.contextIndicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--color-text-accent);
+  border-radius: 2px;
+  opacity: 0.5;
+  transition: left var(--duration-fast), width var(--duration-fast);
 }
 
 /* Year labels */
@@ -39,6 +60,47 @@
   background: var(--color-bg-surface-hover);
 }
 
+/* Edge fade overlays - indicate more content available */
+.edgeFade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.edgeFade[data-edge="left"] {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg-canvas) 0%, var(--color-bg-canvas) 30%, transparent 100%);
+  padding-left: var(--space-2);
+  justify-content: flex-start;
+}
+
+.edgeFade[data-edge="right"] {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg-canvas) 0%, var(--color-bg-canvas) 30%, transparent 100%);
+  padding-right: var(--space-2);
+  justify-content: flex-end;
+}
+
+.edgeYear {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--color-text-secondary);
+  opacity: 0.8;
+}
+
+.edgeArrow {
+  font-size: 10px;
+  color: var(--color-text-accent);
+  opacity: 0.8;
+}
+
 /* Axis line in the middle */
 .axisLine {
   position: absolute;
@@ -48,23 +110,25 @@
   height: 1px;
   background: var(--color-border);
   transform: translateY(-50%);
+  z-index: 1;
 }
 
-/* Event dots */
+/* Event dots - centered on axis line */
 .eventDot {
   position: absolute;
   top: 50%;
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   background: var(--color-text-accent);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  z-index: 5;
 }
 
 .eventDot[data-cluster="true"] {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background: var(--color-text-primary);
 }
 
@@ -77,7 +141,7 @@
   border: 2px solid var(--color-text-accent);
   border-radius: 8px;
   cursor: grab;
-  transition: background var(--duration-fast);
+  transition: background var(--duration-fast), opacity var(--duration-fast);
   min-width: 24px;
 }
 
@@ -88,6 +152,70 @@
 .viewport:active {
   cursor: grabbing;
   background: rgb(56 189 248 / 0.4);
+}
+
+/* Ghost viewport shown during drag */
+.viewport.ghost {
+  opacity: 0.3;
+  border-style: dashed;
+  pointer-events: none;
+}
+
+/* Active dragging state */
+.viewport.dragging {
+  cursor: grabbing;
+  background: rgb(56 189 248 / 0.4);
+  box-shadow: 0 0 8px 2px rgb(56 189 248 / 0.4);
+}
+
+/* Active resizing state */
+.viewport.resizing {
+  cursor: ew-resize;
+  background: rgb(56 189 248 / 0.5);
+  box-shadow: 0 0 12px 3px rgb(56 189 248 / 0.5);
+  border-color: rgb(56 189 248 / 0.8);
+}
+
+/* Resize handles */
+.resizeHandle {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 12px;
+  cursor: ew-resize;
+  background: transparent;
+  transition: background var(--duration-fast), transform var(--duration-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resizeHandle[data-edge="left"] {
+  left: -6px;
+  border-radius: 4px 0 0 4px;
+}
+
+.resizeHandle[data-edge="right"] {
+  right: -6px;
+  border-radius: 0 4px 4px 0;
+}
+
+.resizeHandle:hover {
+  background: rgb(56 189 248 / 0.4);
+}
+
+/* Mobile-visible handles (shown on tap) */
+.resizeHandle.visible {
+  background: rgb(56 189 248 / 0.6);
+}
+
+.resizeHandle.visible::after {
+  content: '';
+  width: 4px;
+  height: 16px;
+  background: var(--color-text-accent);
+  border-radius: 2px;
+  box-shadow: 0 0 4px rgb(56 189 248 / 0.6);
 }
 
 /* Hint text */

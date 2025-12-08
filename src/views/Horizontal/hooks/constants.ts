@@ -1,3 +1,22 @@
+export const MINIMAP_CONFIG = {
+  // Target viewport indicator size as percentage of minimap width
+  targetViewportPercent: 25,
+
+  // Acceptable range before auto-adjustment
+  minViewportPercent: 15,
+  maxViewportPercent: 60,
+
+  // Minimum years the minimap can display (prevents over-zooming)
+  minYearsVisible: 5,
+
+  // Auto-scroll settings during edge resize
+  autoScrollStepPercent: 20,
+  autoScrollIntervalMs: 50,
+
+  // Edge detection threshold (percentage from edge)
+  edgeThresholdPercent: 2,
+} as const;
+
 export const HORIZONTAL_VIEW_CONFIG = {
   // Zoom settings
   defaultPixelsPerYear: 50,

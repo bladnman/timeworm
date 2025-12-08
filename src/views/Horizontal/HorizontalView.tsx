@@ -30,6 +30,8 @@ export const HorizontalView = () => {
     maxYear,
     containerRef,
     handleZoomChange,
+    handleZoomDelta,
+    handleResizeZoom,
     handleEventClick,
     handleClusterClick,
     handleSpotlightClose,
@@ -117,26 +119,32 @@ export const HorizontalView = () => {
                   className={styles.itemWrapper}
                   style={{
                     left: `${cluster.xPos}px`,
-                    top: `${yPos}px`,
+                    top: `calc(50% + ${yPos}px)`,
                   }}
                   data-lane={item.lane}
                 >
-                  {/* Connector line */}
+                  {/* Connector line from card to axis */}
                   <div
                     className={styles.connector}
-                    style={{
-                      height: `${connectorLength + stackOffsetPx}px`,
-                      top: isAbove ? '100%' : 'auto',
-                      bottom: isAbove ? 'auto' : '100%',
+                    style={isAbove ? {
+                      // Above: card is above axis, connector goes from card bottom (100%) down to axis (-yPos from top)
+                      // Height = distance from card bottom to axis = -yPos - cardHeight
+                      // Since we don't know cardHeight, use: top: 100%, height: calc(-yPos - 100%)
+                      top: '100%',
+                      height: `calc(${-yPos}px - 100%)`,
+                    } : {
+                      // Below: from axis (above the card) down to top of card
+                      top: `${-yPos}px`,
+                      height: `${yPos}px`,
                     }}
                   />
 
-                  {/* Anchor dot */}
+                  {/* Anchor dot - positioned to sit on the axis */}
                   <div
                     className={styles.anchor}
                     style={{
-                      top: isAbove ? `calc(100% + ${connectorLength + stackOffsetPx}px)` : 'auto',
-                      bottom: isAbove ? 'auto' : `calc(100% + ${connectorLength + stackOffsetPx}px)`,
+                      top: `${-yPos}px`,
+                      transform: 'translateX(-50%) translateY(-50%)',
                     }}
                   />
 
@@ -160,27 +168,31 @@ export const HorizontalView = () => {
                 className={styles.itemWrapper}
                 style={{
                   left: `${event.xPos}px`,
-                  top: `${yPos}px`,
+                  top: `calc(50% + ${yPos}px)`,
                   width: `${config.cardWidth}px`,
                 }}
                 data-lane={item.lane}
               >
-                {/* Connector line */}
+                {/* Connector line from card to axis */}
                 <div
                   className={styles.connector}
-                  style={{
-                    height: `${connectorLength + stackOffsetPx}px`,
-                    top: isAbove ? '100%' : 'auto',
-                    bottom: isAbove ? 'auto' : '100%',
+                  style={isAbove ? {
+                    // Above: card is above axis, connector goes from card bottom (100%) down to axis
+                    top: '100%',
+                    height: `calc(${-yPos}px - 100%)`,
+                  } : {
+                    // Below: from axis (above the card) down to top of card
+                    top: `${-yPos}px`,
+                    height: `${yPos}px`,
                   }}
                 />
 
-                {/* Anchor dot */}
+                {/* Anchor dot - positioned to sit on the axis */}
                 <div
                   className={styles.anchor}
                   style={{
-                    top: isAbove ? `calc(100% + ${connectorLength + stackOffsetPx}px)` : 'auto',
-                    bottom: isAbove ? 'auto' : `calc(100% + ${connectorLength + stackOffsetPx}px)`,
+                    top: `${-yPos}px`,
+                    transform: 'translateX(-50%) translateY(-50%)',
                   }}
                 />
 
@@ -200,9 +212,12 @@ export const HorizontalView = () => {
         totalWidth={totalWidth}
         viewportWidth={viewportWidth}
         viewportOffset={viewportOffset}
+        pixelsPerYear={pixelsPerYear}
         minYear={minYear}
         maxYear={maxYear}
         onViewportChange={handleViewportChange}
+        onZoomChange={handleZoomDelta}
+        onResizeZoom={handleResizeZoom}
       />
 
       {/* Event Spotlight modal */}

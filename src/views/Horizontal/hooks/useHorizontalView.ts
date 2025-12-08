@@ -12,12 +12,15 @@ export interface Tick {
 }
 
 const VIEWPORT_PADDING = 100;
+const IDEAL_YEARS_IN_VIEW = 80; // Show ~80 years at a time for good readability
 
-const computeAutoFitZoom = (totalYears: number): number => {
+const computeAutoFitZoom = (_totalYears: number): number => {
   const viewportWidth = window.innerWidth - VIEWPORT_PADDING * 2;
+  // Calculate zoom to show IDEAL_YEARS_IN_VIEW years in the viewport
+  const idealZoom = viewportWidth / IDEAL_YEARS_IN_VIEW;
   return Math.max(
     HORIZONTAL_VIEW_CONFIG.zoomMin,
-    Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, viewportWidth / totalYears)
+    Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, idealZoom)
   );
 };
 
@@ -76,6 +79,43 @@ export const useHorizontalView = () => {
   const handleZoomChange = useCallback((value: number) => {
     setPixelsPerYear(value);
   }, []);
+
+  // Handle zoom delta (for minimap scroll wheel)
+  const handleZoomDelta = useCallback((delta: number) => {
+    setPixelsPerYear((prev) => {
+      const newValue = prev + delta * HORIZONTAL_VIEW_CONFIG.zoomStep;
+      return Math.max(HORIZONTAL_VIEW_CONFIG.zoomMin, Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, newValue));
+    });
+  }, []);
+
+  // Handle resize from minimap - sets new pixels per year based on desired viewport ratio
+  // anchorPercent: 0 = anchor left edge, 1 = anchor right edge
+  const handleResizeZoom = useCallback((newPixelsPerYear: number, anchorPercent: number) => {
+    const clampedPPY = Math.max(HORIZONTAL_VIEW_CONFIG.zoomMin, Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, newPixelsPerYear));
+
+    // Calculate the anchor point in years (what year position should stay fixed)
+    const currentAnchorOffset = viewportOffset + (viewportWidth * anchorPercent);
+    const anchorYearPosition = currentAnchorOffset / pixelsPerYear;
+
+    // After zoom, where should the viewport be to keep the anchor in the same screen position?
+    const newAnchorOffset = anchorYearPosition * clampedPPY;
+    const newViewportOffset = newAnchorOffset - (viewportWidth * anchorPercent);
+
+    // Calculate new total width to clamp offset properly
+    const newTotalWidth = totalYears * clampedPPY;
+    const clampedOffset = Math.max(0, Math.min(newTotalWidth - viewportWidth, newViewportOffset));
+
+    setPixelsPerYear(clampedPPY);
+    setViewportOffset(clampedOffset);
+
+    // Scroll to new position
+    if (containerRef.current) {
+      containerRef.current.scrollTo({
+        left: clampedOffset,
+        behavior: 'auto', // instant, not smooth, for resize
+      });
+    }
+  }, [viewportOffset, viewportWidth, pixelsPerYear, totalYears]);
 
   const handleEventClick = useCallback((eventId: string) => {
     const event = data?.events.find((e) => e.id === eventId);
@@ -211,6 +251,8 @@ export const useHorizontalView = () => {
 
     // Handlers
     handleZoomChange,
+    handleZoomDelta,
+    handleResizeZoom,
     handleEventClick,
     handleClusterClick,
     handleSpotlightClose,
