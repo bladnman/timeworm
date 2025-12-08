@@ -185,7 +185,7 @@
     },
     {
       "id": "evt_chess_india",
-      "title": "Chess Develops in India",
+      "title": "Chaturanga: Birth of Chess",
       "date_display": "c. 600 CE",
       "date_start": "0600-01-01",
       "group_ids": [
@@ -195,16 +195,22 @@
       "innovator": "Indian Culture",
       "innovation": "Asymmetric Piece Powers",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d5/ChessStartingPosition.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChessSet.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1a/A_treatise_on_chess_2.jpg"
       ],
-      "description": "Chess emerged in India as Chaturanga, a four-player war game representing the Indian army: infantry (pawns), cavalry (knights), elephants (bishops), and chariots (rooks). The king piece reflected the game's military simulation origins.\n\nChaturanga spread through Persia (where it became Shatranj) and the Arab world before reaching Europe. Each culture modified the rules—the powerful queen didn't exist until medieval Europe. Chess became history's most studied game, a test of pure mental ability.",
+      "description": "Chess emerged in India around the 6th century CE as *Chaturanga* (Sanskrit for 'four divisions'), a war game representing the Indian army's four military branches: infantry (pawns), cavalry (knights), elephants (bishops), and chariots (rooks). The king piece (*raja*) and counselor (*mantri*, later queen) completed the forces.\n\nChaturanga introduced the revolutionary concept of pieces with different movement abilities—unlike earlier games where all pieces moved identically. This asymmetry created unprecedented strategic depth.\n\nThe game spread to Persia where it became *Shatranj*, then to the Arab world following the Islamic conquest. The Persian exclamation *Shāh Māt* ('the king is helpless') became 'checkmate.' Each culture refined the rules as the game traveled the Silk Road toward Europe.",
+      "links": [
+        {"title": "Chaturanga - Wikipedia", "url": "https://en.wikipedia.org/wiki/Chaturanga"},
+        {"title": "History of Chess - Wikipedia", "url": "https://en.wikipedia.org/wiki/History_of_chess"}
+      ],
       "metrics": {
-        "original_name": "Chaturanga"
+        "original_name": "Chaturanga",
+        "spread_route": "India → Persia → Arab World → Europe"
       }
     },
     {
       "id": "evt_chess_europe",
-      "title": "Chess Reaches Europe",
+      "title": "The Game of Kings",
       "date_display": "c. 1000 CE",
       "date_start": "1000-01-01",
       "group_ids": [
@@ -213,16 +219,20 @@
       "type": "Game Spread",
       "innovation": "European Adaptation",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d5/ChessStartingPosition.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/2/24/Meister_der_Manessischen_Liederhandschrift_004.jpg"
       ],
-      "description": "Chess reached Europe through Moorish Spain and became popular among nobility—it was called 'the game of kings' and considered essential education for aristocrats. The pieces were Europeanized: the vizier became a queen, the elephant became a bishop.\n\nMedieval chess was slower than the modern game—the queen and bishop had limited movement. Chess manuals and problems emerged as the game became central to intellectual culture. Churches periodically banned the game for encouraging gambling.",
+      "description": "Chess reached Europe through Moorish Spain around 1000 CE and rapidly became 'the game of kings'—considered essential education for nobility alongside riding, swimming, archery, and courtly arts. The pieces were Europeanized: the Persian *vizier* became a queen, the *elephant* (*al-fil*) became a bishop.\n\nMedieval chess was slower than the modern game—the queen could only move one square diagonally, and the bishop jumped exactly two squares. Chess manuals, composed problems, and treatises emerged as the game became central to aristocratic intellectual culture. The oldest known chess manual, from around 1283, was commissioned by King Alfonso X of Castile.\n\nChurches periodically banned chess for encouraging gambling, and moralists criticized the time nobility spent playing rather than governing—testament to the game's addictive appeal.",
+      "links": [
+        {"title": "History of Chess - Wikipedia", "url": "https://en.wikipedia.org/wiki/History_of_chess"}
+      ],
       "metrics": {
-        "spread_route": "Via Moorish Spain"
+        "spread_route": "Via Moorish Spain (~1000 CE)",
+        "earliest_manual": "Libro de los Juegos (1283)"
       }
     },
     {
       "id": "evt_modern_chess",
-      "title": "Modern Chess Rules Standardized",
+      "title": "The Mad Queen Revolution",
       "date_display": "c. 1475",
       "date_start": "1475-01-01",
       "group_ids": [
@@ -231,29 +241,37 @@
       "type": "Rule Change",
       "innovation": "Powerful Queen",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/44/Knight_%28Central_Staunton%29.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/1/12/Lucena1497.jpg"
       ],
-      "description": "In late 15th century Spain or Italy, chess rules changed dramatically. The queen gained her modern power to move any distance in any direction, and the bishop gained diagonal range. These changes, possibly celebrating Queen Isabella's power, created the faster, more tactical modern game.\n\nThe enhanced queen was called 'mad queen chess' (scacchi alla rabiosa) for its aggressive pace. The changes spread across Europe, standardizing the game that would be played for the next 500 years.",
+      "description": "In late 15th century Spain or Italy, chess underwent its most dramatic transformation. The queen—previously limited to moving one square diagonally—gained the modern power to move any distance in any direction, making her the most powerful piece. The bishop gained unlimited diagonal range. These changes created a faster, more tactical game that rewarded aggressive play.\n\nThe new style was called *scacchi alla rabiosa* ('mad queen chess') or *scacchi de la donna* ('lady's chess') for its aggressive pace. Some historians connect the timing to Queen Isabella of Castile's powerful reign. The first book on modern chess, *Repetición de Amores y Arte de Ajedrez* by Luis Ramirez de Lucena (1497), documented the new rules.\n\nThe changes spread across Europe within decades, creating the standardized game that would be played for the next 500 years—until computer analysis began reshaping strategy in the 21st century.",
+      "links": [
+        {"title": "History of Chess - Wikipedia", "url": "https://en.wikipedia.org/wiki/History_of_chess"}
+      ],
       "metrics": {
-        "key_change": "Queen gains full board movement"
+        "key_change": "Queen gains full board movement",
+        "first_modern_book": "Lucena (1497)"
       }
     },
     {
       "id": "evt_game_goose",
       "title": "The Game of the Goose",
-      "date_display": "1759",
-      "date_start": "1759-01-01",
+      "date_display": "c. 1580s",
+      "date_start": "1580-01-01",
       "group_ids": [
         "grp_classical"
       ],
       "type": "Game Publication",
-      "innovation": "First Commercially Published Board Game",
+      "innovation": "Commercial Roll-and-Move Template",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/43/Gioco_Oca_XVIII_secolo.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Goosy_Goosy_Gander_02.JPG"
       ],
-      "description": "The Game of the Goose is often cited as the first commercially published board game in Europe. Players raced along a spiral track, with special squares causing advancement, reversal, or penalties. The game required no skill—pure luck determined the winner.\n\nThe Goose established the 'roll-and-move' formula that would dominate family board games for two centuries. Publishers could easily create themed variants by changing the artwork while keeping identical gameplay.",
+      "description": "The Game of the Goose (*Gioco dell'Oca*) emerged in Florence during the late 16th century and is considered one of the earliest commercially published board games in Europe. Legend holds that Francesco de' Medici sent a copy to King Philip II of Spain around 1580. Players raced along a spiral track of 63 spaces, with goose spaces allowing double movement and hazard spaces (the inn, the well, the prison, death) causing setbacks.\n\nThe game required no skill whatsoever—pure dice luck determined the winner. This simplicity was key to its success: anyone could play immediately, and publishers could easily create themed variants by changing artwork while keeping identical gameplay. The Goose established the 'roll-and-move' formula that would dominate family board games for centuries, from Snakes and Ladders to modern children's games.",
+      "links": [
+        {"title": "Game of the Goose - Wikipedia", "url": "https://en.wikipedia.org/wiki/Game_of_the_Goose"}
+      ],
       "metrics": {
-        "format": "Spiral track, roll-and-move"
+        "format": "63-space spiral track, roll-and-move",
+        "origin": "Florence, c. 1580s"
       }
     },
     {
