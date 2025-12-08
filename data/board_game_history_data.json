@@ -539,7 +539,7 @@
     },
     {
       "id": "evt_chainmail",
-      "title": "Chainmail Published",
+      "title": "Before Dragons, There Was Chainmail",
       "date_display": "1971",
       "date_start": "1971-01-01",
       "group_ids": [
@@ -549,16 +549,20 @@
       "innovator": "Gary Gygax, Jeff Perren",
       "innovation": "Fantasy Wargame Rules",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/0/0b/D%26D_Game_1.jpg"
       ],
-      "description": "Chainmail was a medieval miniatures wargame with a fantasy supplement allowing dragons, wizards, and magical combat. Gary Gygax and Jeff Perren's rules created the mechanical foundation for Dungeons & Dragons.\n\nThe fantasy supplement proved more popular than the historical rules. Players began focusing on individual hero characters rather than armies, leading Gygax to develop rules for dungeon exploration and character advancement.",
+      "description": "Chainmail was a medieval miniatures wargame with a revolutionary 14-page fantasy supplement allowing dragons, wizards, elves, and magical combat. Gary Gygax and Jeff Perren's rules created the mechanical foundation that would become Dungeons & Dragons.\n\nThe fantasy supplement—originally an afterthought—proved far more popular than the historical rules. Players began focusing on individual hero characters rather than armies, asking 'What if my wizard explored that dungeon?' This question led Gygax to collaborate with Dave Arneson on rules for dungeon exploration, character advancement, and the revolutionary concept of ongoing campaigns.",
+      "links": [
+        {"title": "Chainmail (game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Chainmail_(game)"}
+      ],
       "metrics": {
-        "significance": "D&D mechanical foundation"
+        "significance": "D&D mechanical foundation",
+        "fantasy_supplement": "14 pages"
       }
     },
     {
       "id": "evt_dnd",
-      "title": "Dungeons & Dragons Published",
+      "title": "D&D Invents a New Form",
       "date_display": "January 1974",
       "date_start": "1974-01-01",
       "group_ids": [
@@ -568,16 +572,22 @@
       "innovator": "Gary Gygax, Dave Arneson",
       "innovation": "Role-Playing Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/0/0b/D%26D_Game_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/DnD_Game_14.jpg"
       ],
-      "description": "Gary Gygax and Dave Arneson's Dungeons & Dragons created an entirely new category of game—the role-playing game. There was no board, no winner, and no end state. Players created characters and embarked on collaborative adventures guided by a Dungeon Master.\n\nD&D was revolutionary: players could attempt anything imaginable, with success determined by dice and rules. The game merged wargaming mechanics with storytelling, creating a form that would spawn countless RPGs, influence video games, and shape geek culture for 50 years.",
+      "description": "Gary Gygax and Dave Arneson's *Dungeons & Dragons* created an entirely new category of game—the role-playing game. There was no board, no winner, and no end state. Players created characters with statistics like Strength and Intelligence, embarked on collaborative adventures in fantastical worlds, and a Dungeon Master adjudicated their actions.\n\nD&D was revolutionary: players could attempt *anything* imaginable, with success determined by dice and rules. 'I try to pick the lock.' 'I bluff the guard.' 'I jump across the chasm.' The game merged wargaming mechanics with collaborative storytelling, creating a form that would spawn thousands of RPGs, lay the foundation for video game RPGs, and shape geek culture for 50 years.\n\nThe first print run of 1,000 copies sold out quickly through hobby channels and word of mouth. TSR (Tactical Studies Rules) was born, and gaming would never be the same.",
+      "links": [
+        {"title": "Dungeons & Dragons - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dungeons_%26_Dragons"},
+        {"title": "History of D&D", "url": "https://en.wikipedia.org/wiki/History_of_Dungeons_%26_Dragons"}
+      ],
       "metrics": {
-        "print_run": "1,000 copies (initial)"
+        "initial_print_run": "1,000 copies",
+        "publisher": "TSR (Tactical Studies Rules)"
       }
     },
     {
       "id": "evt_basic_dnd",
-      "title": "Basic Dungeons & Dragons Released",
+      "title": "D&D Goes Mainstream",
       "date_display": "1977",
       "date_start": "1977-01-01",
       "group_ids": [
@@ -587,16 +597,20 @@
       "innovator": "TSR, J. Eric Holmes",
       "innovation": "Accessible Entry Point",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/0/0b/D%26D_Game_1.jpg"
       ],
-      "description": "The Basic Set (blue box) repackaged D&D for mass market retail, with streamlined rules and a clear introduction for new players. While the Advanced Dungeons & Dragons line targeted dedicated hobbyists, Basic brought D&D to toy stores and mainstream audiences.\n\nBasic D&D introduced millions to role-playing, creating a generation of players who would later drive the hobby gaming industry. The boxed set format—rulebook, dice, adventure—became the standard for introducing new RPGs.",
+      "description": "Dr. J. Eric Holmes, a professor and D&D enthusiast, compiled the Basic Set (the famous 'blue box')—a complete introduction to D&D with streamlined rules for characters levels 1-3. While the Advanced Dungeons & Dragons line (released 1977-1979) targeted dedicated hobbyists with complex rules, Basic brought D&D to toy stores and mainstream audiences.\n\nThe boxed set format—rulebook, dice, introductory adventure—became the industry standard for introducing new RPGs. Basic D&D introduced millions to role-playing, creating a generation of players who would later drive the hobby gaming industry, found game companies, and design video games.",
+      "links": [
+        {"title": "Dungeons & Dragons Basic Set - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dungeons_%26_Dragons_Basic_Set"}
+      ],
       "metrics": {
-        "distribution": "Mass market retail"
+        "distribution": "Mass market retail",
+        "character_levels": "1-3"
       }
     },
     {
       "id": "evt_trivial_pursuit",
-      "title": "Trivial Pursuit Invented",
+      "title": "The Trivia Phenomenon",
       "date_display": "1979",
       "date_start": "1979-01-01",
       "group_ids": [
@@ -606,16 +620,20 @@
       "innovator": "Chris Haney, Scott Abbott",
       "innovation": "Trivia Board Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Trivial_pursuit_card.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/3/3e/Trivial_Pursuit.jpg"
       ],
-      "description": "Canadian journalists Chris Haney and Scott Abbott invented Trivial Pursuit while playing Scrabble and lamenting missing pieces. They created a trivia game with six categories (Geography, Entertainment, History, Arts & Literature, Science & Nature, Sports & Leisure).\n\nAfter self-financing production, Trivial Pursuit became the best-selling game of 1984. It launched a trivia game craze and proved that adults would buy board games for themselves, not just for children.",
+      "description": "Canadian journalists Chris Haney and Scott Abbott invented Trivial Pursuit in December 1979 while playing Scrabble and lamenting missing pieces. They decided to create their own game, settling on trivia with six color-coded categories: Geography (blue), Entertainment (pink), History (yellow), Arts & Literature (brown), Science & Nature (green), and Sports & Leisure (orange).\n\nAfter self-financing production and selling door-to-door, Trivial Pursuit exploded into a phenomenon. It became the best-selling game of 1984, moving 20 million copies that year alone. The game launched an enduring trivia craze and proved that adults would buy board games for themselves, not just for children—paving the way for the adult gaming market.",
+      "links": [
+        {"title": "Trivial Pursuit - Wikipedia", "url": "https://en.wikipedia.org/wiki/Trivial_Pursuit"}
+      ],
       "metrics": {
-        "categories": "6"
+        "categories": "6",
+        "1984_sales": "20 million copies"
       }
     },
     {
       "id": "evt_satanic_panic",
-      "title": "D&D 'Satanic Panic' Peaks",
+      "title": "The Satanic Panic",
       "date_display": "1983",
       "date_start": "1983-01-01",
       "group_ids": [
@@ -624,16 +642,20 @@
       "type": "Cultural Event",
       "innovation": "Moral Panic Response",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/DnD_Game_14.jpg"
       ],
-      "description": "Religious groups attacked Dungeons & Dragons as promoting Satanism, witchcraft, and suicide. The moral panic was fueled by misunderstanding of the game and tragic incidents blamed without evidence on D&D involvement. A TV movie, 'Mazes and Monsters,' dramatized supposed dangers.\n\nThe panic peaked in 1983-1985 but continued affecting the hobby for years. TSR removed 'demonic' imagery from products. The controversy paradoxically increased D&D's visibility and cemented its countercultural cachet among teenagers.",
+      "description": "Religious groups attacked Dungeons & Dragons as promoting Satanism, witchcraft, and suicide. The moral panic was fueled by misunderstanding of the game—particularly its inclusion of demons and devils in monster manuals—and tragic incidents blamed without evidence on D&D involvement. The 1982 TV movie *Mazes and Monsters* (starring Tom Hanks) dramatized supposed dangers.\n\nOrganizations like BADD (Bothered About Dungeons and Dragons) campaigned for bans. Some schools and libraries removed D&D materials. The panic peaked in 1983-1985 but continued affecting the hobby for years; TSR removed 'demonic' imagery from products and renamed devils to 'baatezu.'\n\nThe controversy paradoxically increased D&D's visibility and cemented its countercultural cachet among teenagers. The forbidden nature made it more appealing to exactly the demographic it was meant to protect.",
+      "links": [
+        {"title": "Dungeons & Dragons controversies - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dungeons_%26_Dragons_controversies"}
+      ],
       "metrics": {
-        "peak_period": "1983-1985"
+        "peak_period": "1983-1985",
+        "notable_movie": "Mazes and Monsters (1982)"
       }
     },
     {
       "id": "evt_warhammer",
-      "title": "Warhammer Fantasy Battles Released",
+      "title": "Enter the Grimdark",
       "date_display": "1983",
       "date_start": "1983-01-01",
       "group_ids": [
@@ -643,16 +665,20 @@
       "innovator": "Games Workshop",
       "innovation": "Miniatures Wargaming System",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/07/Warhammer_Fantasy_Roleplay_logo.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warhammer_game.jpg"
       ],
-      "description": "Games Workshop launched Warhammer Fantasy Battles, a tabletop miniatures wargame requiring armies of hand-painted plastic and metal figures. The game combined strategic gameplay with the hobby of collecting, assembling, and painting miniatures.\n\nWarhammer created a distinct hobbyist culture and business model—selling expensive miniatures that customers spend hours painting before playing. The dark fantasy setting influenced countless video games and media.",
+      "description": "Games Workshop launched Warhammer Fantasy Battles, a tabletop miniatures wargame requiring armies of hand-painted plastic and metal figures. Unlike D&D's individual heroes, Warhammer depicted massed battles with regiments of troops, war machines, and powerful characters.\n\nWarhammer created a distinct hobbyist culture and revolutionary business model—selling expensive unassembled miniatures that customers spend hours building and painting before playing. The 'hobby' of collecting, modeling, and painting became as important as the game itself. The dark, satirical fantasy setting (later called 'grimdark')—where there are no true heroes, just varying degrees of villainy—influenced countless video games, novels, and media.\n\nGames Workshop would expand this into Warhammer 40,000 (1987) and become one of the most valuable gaming companies in the world.",
+      "links": [
+        {"title": "Warhammer Fantasy (setting) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Warhammer_Fantasy_(setting)"}
+      ],
       "metrics": {
-        "hobby_components": "Collecting, building, painting, playing"
+        "hobby_components": "Collecting, building, painting, playing",
+        "setting_tone": "Grimdark fantasy"
       }
     },
     {
       "id": "evt_axis_allies",
-      "title": "Axis & Allies Published",
+      "title": "World War II on Your Table",
       "date_display": "1984",
       "date_start": "1984-01-01",
       "group_ids": [
@@ -662,16 +688,20 @@
       "innovator": "Larry Harris, Milton Bradley",
       "innovation": "WWII Strategic Simulation",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/1d/Axis_and_allies.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Axis_n_allies_europe_%28356614157%29.jpg"
       ],
-      "description": "Axis & Allies brought strategic WWII simulation to mainstream audiences. Five players controlled major powers (Germany, Japan, USSR, UK, USA) in a global conflict requiring economic management, unit production, and combined arms strategy.\n\nThe game bridged wargaming complexity and mass-market accessibility, introducing concepts like economic production and combined operations to players who would never buy hex-and-counter wargames.",
+      "description": "Larry Harris designed Axis & Allies to bring strategic WWII simulation to mainstream audiences. Five players controlled major powers (Germany, Japan, USSR, UK, USA) in a global conflict requiring economic management, unit production, and combined arms strategy with infantry, tanks, fighters, bombers, battleships, and aircraft carriers.\n\nThe game bridged wargaming complexity and mass-market accessibility. Unlike hex-and-counter wargames with hundreds of rules, Axis & Allies taught concepts like economic production, combined operations, and strategic bombing through accessible mechanics. The game created a franchise spanning different theaters and eras.",
+      "links": [
+        {"title": "Axis & Allies - Wikipedia", "url": "https://en.wikipedia.org/wiki/Axis_%26_Allies"}
+      ],
       "metrics": {
-        "powers": "5 (Germany, Japan, USSR, UK, USA)"
+        "powers": "5 (Germany, Japan, USSR, UK, USA)",
+        "playtime": "3-8 hours"
       }
     },
     {
       "id": "evt_warhammer_40k",
-      "title": "Warhammer 40,000 Released",
+      "title": "In the Grim Darkness of the Future...",
       "date_display": "1987",
       "date_start": "1987-01-01",
       "group_ids": [
@@ -681,16 +711,20 @@
       "innovator": "Games Workshop",
       "innovation": "Grimdark Science Fantasy",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/3/37/40k_Noise_Marine.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/81/Wh40k_painting_miniature.jpg"
       ],
-      "description": "Warhammer 40,000 transplanted Warhammer's miniatures gameplay to a dystopian far future where 'there is only war.' The setting's grimdark tone—fascist space marines fighting endless enemies in a decaying empire—created iconic imagery and lore.\n\n40K became Games Workshop's most successful franchise, spawning novels, video games, and a devoted global community. The game's culture emphasized painting skill and tournament competition alongside gameplay.",
+      "description": "Warhammer 40,000 transplanted Warhammer's miniatures gameplay to a dystopian far future where, in the iconic tagline, 'In the grim darkness of the far future, there is only war.' The Imperium of Man is a decaying fascist theocracy, Space Marines are genetically-modified killing machines serving a corpse-god, and every other faction is equally or more horrific.\n\n40K became Games Workshop's most successful franchise, spawning hundreds of novels, video games (including the *Dawn of War* series), and a devoted global community. The game's culture emphasized painting skill and tournament competition alongside gameplay.\n\nGames Workshop's market capitalization eventually exceeded $5 billion, making it one of the most valuable gaming companies in the world—built on selling plastic miniatures for a game imagined in 1987.",
+      "links": [
+        {"title": "Warhammer 40,000 - Wikipedia", "url": "https://en.wikipedia.org/wiki/Warhammer_40,000"}
+      ],
       "metrics": {
-        "setting": "Far future ('There is only war')"
+        "setting": "'In the grim darkness of the far future, there is only war'",
+        "company_value": "~$5 billion (2021)"
       }
     },
     {
       "id": "evt_heroquest",
-      "title": "HeroQuest Published",
+      "title": "HeroQuest: The Gateway Drug",
       "date_display": "1989",
       "date_start": "1989-01-01",
       "group_ids": [
@@ -700,11 +734,16 @@
       "innovator": "Milton Bradley, Games Workshop",
       "innovation": "Dungeon Crawl Board Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warhammer_game.jpg"
       ],
-      "description": "HeroQuest combined role-playing dungeon exploration with board game accessibility. One player controlled monsters while others played hero characters exploring modular dungeon tiles. The game introduced a generation of players to fantasy gaming concepts.\n\nHeroQuest's miniatures, furniture pieces, and modular design influenced countless dungeon crawl games. Its nostalgic appeal led to a successful 2021 rerelease through Hasbro.",
+      "description": "HeroQuest combined role-playing dungeon exploration with board game accessibility—a collaboration between toy giant Milton Bradley and miniatures specialist Games Workshop. One player controlled monsters and read from a quest book while up to four others played heroes (Barbarian, Wizard, Elf, Dwarf) exploring modular dungeon tiles.\n\nThe box included 65 miniatures, plastic furniture (doors, treasure chests, torture racks), and cardboard dungeon tiles—production values unprecedented for board games. HeroQuest introduced a generation to fantasy gaming concepts without requiring a Dungeon Master to improvise or players to imagine invisible dungeons.\n\nIts influence on dungeon crawl board games—from Descent to Gloomhaven—is immense. The game's nostalgic appeal led to a wildly successful 2021 Kickstarter rerelease through Hasbro.",
+      "links": [
+        {"title": "HeroQuest - Wikipedia", "url": "https://en.wikipedia.org/wiki/HeroQuest"}
+      ],
       "metrics": {
-        "collaboration": "Milton Bradley + Games Workshop"
+        "collaboration": "Milton Bradley + Games Workshop",
+        "miniatures": "65",
+        "2021_kickstarter": "$3.7 million"
       }
     },
     {
