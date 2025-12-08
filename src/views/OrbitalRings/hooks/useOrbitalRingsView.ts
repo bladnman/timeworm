@@ -73,10 +73,10 @@ const polarToCartesian = (
 };
 
 /**
- * Get color for an event based on its type.
+ * Get color for an event (default color since type was removed).
  */
-const getEventColor = (eventType: string): string => {
-  return EVENT_TYPE_COLORS[eventType] || EVENT_TYPE_COLORS.default;
+const getEventColor = (): string => {
+  return EVENT_TYPE_COLORS.default;
 };
 
 /**
@@ -209,7 +209,7 @@ export const useOrbitalRingsView = () => {
         angle,
         x,
         y,
-        color: getEventColor(event.type),
+        color: getEventColor(),
         parsedDate,
       };
     });

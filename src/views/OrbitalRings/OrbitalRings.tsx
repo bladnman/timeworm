@@ -212,7 +212,6 @@ export const OrbitalRings = () => {
         <div className={styles.tooltip}>
           <div className={styles.tooltipDate}>{hoveredEvent.event.date_display}</div>
           <div className={styles.tooltipTitle}>{hoveredEvent.event.title}</div>
-          <div className={styles.tooltipType}>{hoveredEvent.event.type}</div>
           <div className={styles.tooltipHint}>Click for details</div>
         </div>
       )}
