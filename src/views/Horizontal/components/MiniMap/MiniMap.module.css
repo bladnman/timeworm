@@ -223,12 +223,12 @@
   z-index: 10;
 }
 
-/* Resize handles - always visible with subtle indicator */
+/* Resize handles - prominent grabbable indicators */
 .resizeHandle {
   position: absolute;
-  top: -4px;
-  bottom: -4px;
-  width: 16px;
+  top: -6px;
+  bottom: -6px;
+  width: 24px;
   cursor: ew-resize;
   background: transparent;
   transition: background var(--duration-fast);
@@ -238,42 +238,58 @@
 }
 
 .resizeHandle[data-edge="left"] {
-  left: -8px;
-  border-radius: 4px 0 0 4px;
+  left: -12px;
+  border-radius: 6px 0 0 6px;
 }
 
 .resizeHandle[data-edge="right"] {
-  right: -8px;
-  border-radius: 0 4px 4px 0;
+  right: -12px;
+  border-radius: 0 6px 6px 0;
 }
 
-/* Always-visible grab bar indicator */
+/* Grab bar indicator - hidden by default, shown on viewport hover */
 .resizeHandle::before {
   content: '';
-  width: 4px;
-  height: 16px;
-  background: rgb(56 189 248 / 0.4);
-  border-radius: 2px;
-  transition: background var(--duration-fast), height var(--duration-fast), box-shadow var(--duration-fast);
+  width: 8px;
+  height: 28px;
+  background: rgb(56 189 248 / 0.7);
+  border: 1px solid rgb(56 189 248 / 0.9);
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgb(56 189 248 / 0.3);
+  opacity: 0;
+  transition: background var(--duration-fast), height var(--duration-fast), box-shadow var(--duration-fast), width var(--duration-fast), opacity var(--duration-fast);
+}
+
+/* Show handles when hovering the viewport */
+.viewport:hover .resizeHandle::before,
+.viewport.dragging .resizeHandle::before,
+.viewport.resizing .resizeHandle::before {
+  opacity: 1;
 }
 
 .resizeHandle:hover::before {
-  background: rgb(56 189 248 / 0.8);
-  height: 20px;
-  box-shadow: 0 0 6px rgb(56 189 248 / 0.5);
+  opacity: 1;
+  background: rgb(56 189 248 / 0.9);
+  width: 10px;
+  height: 32px;
+  box-shadow: 0 0 10px rgb(56 189 248 / 0.6);
 }
 
 .resizeHandle:active::before {
+  opacity: 1;
   background: var(--color-text-accent);
-  height: 24px;
-  box-shadow: 0 0 8px rgb(56 189 248 / 0.7);
+  width: 10px;
+  height: 36px;
+  box-shadow: 0 0 14px rgb(56 189 248 / 0.8);
 }
 
-/* Mobile-visible handles (shown on tap) - more prominent */
+/* Mobile-visible handles (shown on tap) - match hover state */
 .resizeHandle.visible::before {
-  background: rgb(56 189 248 / 0.7);
-  height: 20px;
-  box-shadow: 0 0 6px rgb(56 189 248 / 0.5);
+  opacity: 1;
+  background: rgb(56 189 248 / 0.9);
+  width: 10px;
+  height: 32px;
+  box-shadow: 0 0 10px rgb(56 189 248 / 0.6);
 }
 
 /* Hint text */
