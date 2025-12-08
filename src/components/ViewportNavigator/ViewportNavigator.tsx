@@ -1,4 +1,4 @@
-import { memo, useCallback, useRef, type MouseEvent } from 'react';
+import { memo, useCallback, useRef, useState, useEffect, type MouseEvent } from 'react';
 import type { ComponentTheme } from '../../types/componentTheme';
 import { DEFAULT_COMPONENT_THEME, themeToCSS } from '../../types/componentTheme';
 import styles from './ViewportNavigator.module.css';
@@ -76,11 +76,28 @@ export const ViewportNavigator = memo(function ViewportNavigator({
   className,
 }: ViewportNavigatorProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState(100);
+
+  // Track container width via ResizeObserver
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const updateWidth = () => {
+      setContainerWidth(container.offsetWidth || 100);
+    };
+
+    const observer = new ResizeObserver(updateWidth);
+    observer.observe(container);
+    updateWidth();
+
+    return () => observer.disconnect();
+  }, []);
 
   // Calculate viewport indicator dimensions
   const viewportRatio = totalWidth > 0 ? viewportWidth / totalWidth : 1;
   const viewportIndicatorWidth = Math.max(
-    minViewportWidth / (containerRef.current?.offsetWidth ?? 100) * 100,
+    minViewportWidth / containerWidth * 100,
     viewportRatio * 100
   );
   const viewportIndicatorLeft =
