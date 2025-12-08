@@ -1,0 +1,130 @@
+/**
+ * Editor Footer Styles
+ *
+ * Actions are available but not demanding.
+ * Delete is destructive but not scary.
+ * Save status is quiet confirmation.
+ */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  /* Subtle top separator */
+  border-top: 1px solid var(--color-border);
+  opacity: 0.8;
+  flex-shrink: 0;
+  background: var(--color-bg-canvas);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.deleteButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text-tertiary);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.deleteButton:hover {
+  color: var(--color-error);
+}
+
+.deleteIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.confirmContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.confirmText {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.confirmDelete {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  background: var(--color-error);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.confirmDelete:hover {
+  opacity: 0.9;
+}
+
+.confirmCancel {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  background: transparent;
+  color: var(--color-text-tertiary);
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.confirmCancel:hover {
+  color: var(--color-text-primary);
+}
+
+.saveIndicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+}
+
+.savingIcon {
+  width: 14px;
+  height: 14px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.savedIcon {
+  width: 14px;
+  height: 14px;
+  color: var(--color-success);
+}
+
+.errorIcon {
+  width: 14px;
+  height: 14px;
+  color: var(--color-error);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}

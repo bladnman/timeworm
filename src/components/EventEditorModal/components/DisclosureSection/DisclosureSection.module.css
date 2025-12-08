@@ -1,0 +1,74 @@
+/**
+ * Disclosure Section Styles
+ *
+ * Per the ethos: "A disclosure should not pop.
+ * It should arrive—as if it was always there, just now visible."
+ *
+ * Subtle separator, quiet header, content that materializes.
+ */
+
+.section {
+  /* Subtle top separator - not a heavy border */
+  padding-top: var(--space-10);
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-border),
+    transparent
+  );
+  opacity: 0.5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color-text-primary);
+}
+
+.title {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+  transition: color 0.15s ease;
+}
+
+.header:hover .title {
+  color: var(--color-text-secondary);
+}
+
+.chevron {
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-tertiary);
+  transition: color 0.15s ease;
+}
+
+.header:hover .chevron {
+  color: var(--color-text-secondary);
+}
+
+.content {
+  overflow: hidden;
+}
+
+.inner {
+  padding-top: var(--space-8);
+}

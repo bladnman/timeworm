@@ -1,0 +1,70 @@
+/**
+ * Editor Toolbar Styles
+ *
+ * The toolbar should be helpful but not attention-seeking.
+ * Minimal, quiet, recedes when not needed.
+ */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2) 0;
+  /* No background, no border - just the buttons */
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.toolbar:hover {
+  opacity: 1;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background: var(--color-border);
+  margin: 0 var(--space-2);
+  opacity: 0.5;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.button:hover {
+  color: var(--color-text-primary);
+  background: var(--color-bg-elevated);
+}
+
+.button.active {
+  color: var(--color-accent);
+  background: transparent;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.textButton {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
