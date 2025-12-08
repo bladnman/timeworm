@@ -1,6 +1,6 @@
 .container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   position: relative;
@@ -9,7 +9,7 @@
 
 .trailCanvas {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -98,7 +98,7 @@
 
 /* Y-axis label */
 .yAxisLabel {
-  position: fixed;
+  position: absolute;
   left: var(--space-4);
   top: 50%;
   transform: translateY(-50%) rotate(-90deg);
@@ -126,7 +126,7 @@
 
 /* Controls panel */
 .controls {
-  position: fixed;
+  position: absolute;
   top: var(--space-4);
   right: var(--space-4);
   background: var(--color-bg-surface);
@@ -175,7 +175,7 @@
 
 /* Tooltip */
 .tooltip {
-  position: fixed;
+  position: absolute;
   background: var(--color-bg-surface);
   border: 1px solid var(--color-border);
   border-radius: 8px;
@@ -206,7 +206,7 @@
 
 /* Legend */
 .legend {
-  position: fixed;
+  position: absolute;
   bottom: var(--space-4);
   left: 50%;
   transform: translateX(-50%);
@@ -219,7 +219,6 @@
   align-items: center;
   gap: var(--space-4);
   font-size: var(--text-sm);
-  margin-bottom: 60px;
 }
 
 .legendItem {

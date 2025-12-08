@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: var(--color-bg-canvas);
   overflow: hidden;
 }
@@ -10,7 +10,6 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  padding-bottom: 80px; /* Space for ViewSwitcher */
 }
 
 .canvas {
@@ -20,7 +19,7 @@
 
 /* Controls */
 .controls {
-  position: fixed;
+  position: absolute;
   top: var(--space-4);
   left: var(--space-4);
   z-index: 100;
@@ -122,7 +121,7 @@
 
 /* Legend */
 .legend {
-  position: fixed;
+  position: absolute;
   top: var(--space-4);
   right: var(--space-4);
   z-index: 100;

@@ -1,8 +1,9 @@
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: var(--space-12) var(--space-4);
-  padding-bottom: 120px; /* Space for view switcher */
+  padding: var(--space-8) var(--space-4);
+  height: 100%;
+  overflow-y: auto;
 }
 
 .item {

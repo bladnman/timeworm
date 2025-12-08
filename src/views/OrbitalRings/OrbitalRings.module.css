@@ -1,6 +1,6 @@
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,8 +10,8 @@
 }
 
 .loading {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +96,7 @@
 
 /* Controls */
 .controls {
-  position: fixed;
+  position: absolute;
   top: var(--space-4);
   right: var(--space-4);
   background: var(--color-bg-surface);
@@ -145,7 +145,7 @@
 
 /* Legend */
 .legend {
-  position: fixed;
+  position: absolute;
   top: var(--space-4);
   left: var(--space-4);
   background: var(--color-bg-surface);
@@ -187,7 +187,7 @@
 
 /* Tooltip */
 .tooltip {
-  position: fixed;
+  position: absolute;
   bottom: var(--space-8);
   left: 50%;
   transform: translateX(-50%);
@@ -243,7 +243,7 @@
 
 /* Event count */
 .eventCount {
-  position: fixed;
+  position: absolute;
   bottom: var(--space-4);
   right: var(--space-4);
   font-size: var(--text-xs);
