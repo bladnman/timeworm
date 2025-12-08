@@ -36,7 +36,7 @@ interface UseMiniMapReturn {
   // Actions
   panMinimap: (deltaYears: number) => void;
   zoomMinimap: (focalYear: number, zoomFactor: number) => void;
-  panMinimapByPercent: (deltaPercent: number, trackWidth: number) => void;
+  panMinimapByPercent: (deltaPercent: number) => void;
   zoomMinimapAtPercent: (percent: number, zoomFactor: number) => void;
   recenterOnViewport: () => void;
   resetToFullRange: () => void;
@@ -181,7 +181,7 @@ export function useMiniMap({
 
   // Pan minimap by a percentage of track width
   const panMinimapByPercent = useCallback(
-    (deltaPercent: number, _trackWidth: number) => {
+    (deltaPercent: number) => {
       const deltaYears = (deltaPercent / 100) * minimapYearsVisible;
       panMinimap(-deltaYears); // Negative because dragging right should show earlier years
     },

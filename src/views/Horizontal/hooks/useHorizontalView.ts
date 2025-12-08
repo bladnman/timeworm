@@ -14,7 +14,7 @@ export interface Tick {
 const VIEWPORT_PADDING = 100;
 const IDEAL_YEARS_IN_VIEW = 80; // Show ~80 years at a time for good readability
 
-const computeAutoFitZoom = (_totalYears: number): number => {
+const computeAutoFitZoom = (): number => {
   const viewportWidth = window.innerWidth - VIEWPORT_PADDING * 2;
   // Calculate zoom to show IDEAL_YEARS_IN_VIEW years in the viewport
   const idealZoom = viewportWidth / IDEAL_YEARS_IN_VIEW;
@@ -40,7 +40,7 @@ export const useHorizontalView = () => {
     if (!hasAutoFitRef.current && data && totalYears > 0) {
       hasAutoFitRef.current = true;
       // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional one-time sync before paint
-      setPixelsPerYear(computeAutoFitZoom(totalYears));
+      setPixelsPerYear(computeAutoFitZoom());
     }
   }, [data, totalYears]);
 

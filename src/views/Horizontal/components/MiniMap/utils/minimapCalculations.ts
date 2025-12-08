@@ -65,7 +65,7 @@ export function getViewportIndicatorBounds(
   const isClipped = leftPercent < 0 || leftPercent + widthPercent > 100;
 
   // Calculate visible (clamped) portion
-  let visibleLeftPercent = Math.max(0, leftPercent);
+  const visibleLeftPercent = Math.max(0, leftPercent);
   let visibleWidthPercent = widthPercent;
 
   if (leftPercent < 0) {
