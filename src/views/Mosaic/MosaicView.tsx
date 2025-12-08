@@ -189,7 +189,6 @@ export const MosaicView = () => {
               >
                 <span className={styles.detailEventDate}>{event.date_display}</span>
                 <span className={styles.detailEventTitle}>{event.title}</span>
-                <span className={styles.detailEventType}>{event.type}</span>
               </li>
             ))}
           </ul>

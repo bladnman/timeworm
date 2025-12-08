@@ -36,9 +36,6 @@ const Panel = ({
             className={styles.image}
             loading="lazy"
           />
-          {event.innovator && (
-            <div className={styles.innovator}>{event.innovator}</div>
-          )}
         </div>
       ) : (
         <div className={styles.noImage}>
@@ -50,7 +47,6 @@ const Panel = ({
         <h3 className={styles.title}>{event.title}</h3>
         <p className={styles.description}>{event.description}</p>
       </div>
-      {event.type && <div className={styles.emphasis}>{event.type}</div>}
     </div>
   );
 };

@@ -1,7 +1,9 @@
 /**
  * Image Gallery
  *
- * Display and manage image URLs.
+ * Unified image management with hero display.
+ * First image displays large, others as thumbnails.
+ * Click thumbnail to make it featured.
  */
 
 import { useState } from 'react';
@@ -11,9 +13,10 @@ interface ImageGalleryProps {
   urls: string[];
   onAdd: (url: string) => void;
   onRemove: (index: number) => void;
+  onReorder: (urls: string[]) => void;
 }
 
-export const ImageGallery: React.FC<ImageGalleryProps> = ({ urls, onAdd, onRemove }) => {
+export const ImageGallery: React.FC<ImageGalleryProps> = ({ urls, onAdd, onRemove, onReorder }) => {
   const [newUrl, setNewUrl] = useState('');
   const [showInput, setShowInput] = useState(false);
 
@@ -25,16 +28,61 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ urls, onAdd, onRemov
     }
   };
 
+  const handleMakeFeatured = (index: number) => {
+    if (index === 0) return;
+    const newUrls = [...urls];
+    const [selected] = newUrls.splice(index, 1);
+    newUrls.unshift(selected);
+    onReorder(newUrls);
+  };
+
+  const featuredUrl = urls[0];
+  const thumbnailUrls = urls.slice(1);
+
   return (
     <div className={styles.container}>
-      {urls.length > 0 && (
-        <div className={styles.grid}>
-          {urls.map((url, index) => (
-            <div key={index} className={styles.imageCard}>
-              <img src={url} alt={`Image ${index + 1}`} className={styles.image} />
+      {/* Hero Image */}
+      {featuredUrl && (
+        <div className={styles.heroSection}>
+          <div className={styles.heroCard}>
+            <img src={featuredUrl} alt="Featured" className={styles.heroImage} />
+            <button
+              className={styles.removeButton}
+              onClick={() => onRemove(0)}
+              title="Remove image"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className={styles.removeIcon}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <span className={styles.featuredBadge}>Featured</span>
+          </div>
+        </div>
+      )}
+
+      {/* Thumbnails */}
+      {thumbnailUrls.length > 0 && (
+        <div className={styles.thumbnailGrid}>
+          {thumbnailUrls.map((url, index) => (
+            <button
+              key={index + 1}
+              className={styles.thumbnailCard}
+              onClick={() => handleMakeFeatured(index + 1)}
+              title="Click to make featured"
+            >
+              <img src={url} alt={`Image ${index + 2}`} className={styles.thumbnailImage} />
               <button
-                className={styles.removeButton}
-                onClick={() => onRemove(index)}
+                className={styles.thumbnailRemove}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onRemove(index + 1);
+                }}
                 title="Remove image"
               >
                 <svg
@@ -47,12 +95,12 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ urls, onAdd, onRemov
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
-              {index === 0 && <span className={styles.featuredBadge}>Featured</span>}
-            </div>
+            </button>
           ))}
         </div>
       )}
 
+      {/* Add Image */}
       {showInput ? (
         <div className={styles.inputRow}>
           <input

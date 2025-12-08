@@ -5,7 +5,8 @@
  * Supports all event schema fields.
  */
 
-import { useState, useEffect, useCallback } from 'react';
+/* eslint-disable react-hooks/set-state-in-effect */
+import { useState, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 import { useTimeline } from '../../hooks/useTimeline';
@@ -29,16 +30,13 @@ export const EventEditor: React.FC<EventEditorProps> = ({ eventId }) => {
   const [dateStart, setDateStart] = useState('');
   const [dateEnd, setDateEnd] = useState('');
   const [description, setDescription] = useState('');
-  const [type, setType] = useState('');
-  const [innovator, setInnovator] = useState('');
-  const [innovation, setInnovation] = useState('');
   const [selectedGroups, setSelectedGroups] = useState<string[]>([]);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
   // Validation
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  // Initialize form when event changes
+  // Sync form with event data when event changes
   useEffect(() => {
     if (event) {
       setTitle(event.title);
@@ -46,14 +44,11 @@ export const EventEditor: React.FC<EventEditorProps> = ({ eventId }) => {
       setDateStart(event.date_start);
       setDateEnd(event.date_end ?? '');
       setDescription(event.description);
-      setType(event.type);
-      setInnovator(event.innovator ?? '');
-      setInnovation(event.innovation);
       setSelectedGroups(event.group_ids);
       setShowDeleteConfirm(false);
       setErrors({});
     }
-  }, [event]);
+  }, [eventId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Validate and save field
   const saveField = useCallback(
@@ -177,49 +172,6 @@ export const EventEditor: React.FC<EventEditorProps> = ({ eventId }) => {
           onBlur={() => saveField('description', description)}
           placeholder="Event description..."
         />
-      </div>
-
-      {/* Type, Innovator, Innovation */}
-      <div className={styles.section}>
-        <h3 className={styles.sectionTitle}>Details</h3>
-
-        <div className={styles.formGroup}>
-          <label className={styles.label}>Type</label>
-          <input
-            type="text"
-            className={styles.input}
-            value={type}
-            onChange={(e) => setType(e.target.value)}
-            onBlur={() => saveField('type', type)}
-            placeholder="e.g., Invention, Event, Discovery"
-          />
-        </div>
-
-        <div className={styles.formGroup}>
-          <label className={styles.label}>
-            Innovator <span className={styles.labelOptional}>(optional)</span>
-          </label>
-          <input
-            type="text"
-            className={styles.input}
-            value={innovator}
-            onChange={(e) => setInnovator(e.target.value)}
-            onBlur={() => saveField('innovator', innovator || undefined)}
-            placeholder="Person or organization"
-          />
-        </div>
-
-        <div className={styles.formGroup}>
-          <label className={styles.label}>Innovation</label>
-          <input
-            type="text"
-            className={styles.input}
-            value={innovation}
-            onChange={(e) => setInnovation(e.target.value)}
-            onBlur={() => saveField('innovation', innovation)}
-            placeholder="What was created/discovered"
-          />
-        </div>
       </div>
 
       {/* Groups */}

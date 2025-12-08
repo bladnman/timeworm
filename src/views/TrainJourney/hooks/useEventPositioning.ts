@@ -66,8 +66,6 @@ export const useEventPositioning = (config: UseEventPositioningConfig): UseEvent
         title: event.title,
         date_display: event.date_display,
         date_start: event.date_start,
-        type: event.type,
-        innovator: event.innovator,
         xPos,
         lane: 'above' as const,  // Will be assigned in stacking phase
         stackIndex: 0,

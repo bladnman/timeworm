@@ -45,7 +45,6 @@ export const EventCard = ({ event, onSelect, compact = false }: EventCardProps) 
 
       <div className={styles.content}>
         <div className={styles.placard}>
-          <span className={styles.type}>{event.type}</span>
           <span className={styles.date}>{event.date_display}</span>
         </div>
 
@@ -56,13 +55,6 @@ export const EventCard = ({ event, onSelect, compact = false }: EventCardProps) 
             {event.description.slice(0, 100)}
             {event.description.length > 100 ? '...' : ''}
           </p>
-        )}
-
-        {event.innovator && (
-          <div className={styles.innovator}>
-            <span className={styles.innovatorLabel}>By</span>
-            <span className={styles.innovatorName}>{event.innovator}</span>
-          </div>
         )}
       </div>
 

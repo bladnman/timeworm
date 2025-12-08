@@ -22,11 +22,12 @@ export const EventMarker = ({
   event,
   isHovered,
   isSelected,
-  zoom: _zoom,
+  zoom: _zoom, // Reserved for future LOD use
   showLabel,
   onHover,
   onClick,
 }: EventMarkerProps) => {
+  void _zoom; // Suppress unused variable lint error
   const markerSize = isHovered || isSelected ? 16 : 12;
 
   // Calculate connector line from river center to marker

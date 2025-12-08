@@ -61,12 +61,10 @@ export interface EventWithPosition {
   title: string;
   date_display: string;
   date_start: string;
-  type: string;
   xPos: number;
   lane: 'above' | 'below';
   stackIndex: number;
   stationId: string | null;  // null if between stations
-  innovator?: string;
 }
 
 export interface EventCluster {

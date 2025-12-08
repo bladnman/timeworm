@@ -205,7 +205,7 @@ export const useRiverPath = (): UseRiverPathResult => {
     });
   }, [data, riverPath, timeRange]);
 
-  // Auto-fit zoom on initial load
+  // Auto-fit zoom on initial load - runs once when riverPath becomes available
   useLayoutEffect(() => {
     if (!hasAutoFitRef.current && riverPath) {
       hasAutoFitRef.current = true;
@@ -214,7 +214,7 @@ export const useRiverPath = (): UseRiverPathResult => {
         RIVER_PATH_CONFIG.zoomMin,
         Math.min(RIVER_PATH_CONFIG.zoomMax, viewportWidth / RIVER_PATH_CONFIG.canvasWidth)
       );
-      setZoom(autoZoom);
+      setZoom(autoZoom); // eslint-disable-line react-hooks/set-state-in-effect -- Initial auto-fit is a valid use case
     }
   }, [riverPath]);
 

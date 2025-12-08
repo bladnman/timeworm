@@ -64,20 +64,6 @@ export const DetailOverlay = () => {
             </motion.p>
 
             <motion.div variants={itemVariants} className={styles.metaSection}>
-              <div className={styles.metaRow}>
-                <span className={styles.metaLabel}>Type</span>
-                <span className={styles.metaValue}>{event.type}</span>
-              </div>
-              {event.innovator && (
-                <div className={styles.metaRow}>
-                  <span className={styles.metaLabel}>Innovator</span>
-                  <span className={styles.metaValue}>{event.innovator}</span>
-                </div>
-              )}
-              <div className={styles.metaRow}>
-                <span className={styles.metaLabel}>Innovation</span>
-                <span className={styles.metaValue}>{event.innovation}</span>
-              </div>
               {Object.entries(event.metrics).map(([key, value]) => (
                 <div key={key} className={styles.metaRow}>
                   <span className={styles.metaLabel}>{key}</span>

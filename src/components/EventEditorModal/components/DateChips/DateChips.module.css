@@ -1,11 +1,71 @@
 /**
  * Date Chips Styles
  *
- * Dates should feel like metadata - present but not dominant.
- * Subtle, integrated, discoverable but not desperate.
+ * Smart date display with auto-generation.
+ * Human-readable display prominent, ISO inputs secondary.
  */
 
 .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Display Section - The human-readable date */
+.displaySection {
+  display: flex;
+  align-items: center;
+}
+
+.displayButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0;
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.displayButton:hover {
+  color: var(--color-text-primary);
+}
+
+.displayInput {
+  padding: 0;
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-accent);
+  border-radius: 0;
+  outline: none;
+  min-width: 200px;
+}
+
+.displayInput::placeholder {
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
+
+.customBadge {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-tertiary);
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-bg-surface);
+  border-radius: 4px;
+}
+
+/* ISO Section - Technical date inputs */
+.isoSection {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -30,9 +90,10 @@
   display: inline-flex;
   align-items: center;
   padding: 0;
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   font-weight: 400;
-  color: var(--color-text-secondary);
+  font-family: monospace;
+  color: var(--color-text-tertiary);
   background: transparent;
   border: none;
   cursor: pointer;
@@ -44,9 +105,8 @@
 }
 
 .chipOptional {
-  color: var(--color-text-tertiary);
   font-style: italic;
-  font-size: var(--text-sm);
+  font-family: inherit;
 }
 
 .chipError {
@@ -55,8 +115,9 @@
 
 .chipInput {
   padding: 0;
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   font-weight: 400;
+  font-family: monospace;
   color: var(--color-text-primary);
   background: transparent;
   border: none;
@@ -69,6 +130,7 @@
 .chipInput::placeholder {
   color: var(--color-text-tertiary);
   font-style: italic;
+  font-family: inherit;
 }
 
 .chipInputError {

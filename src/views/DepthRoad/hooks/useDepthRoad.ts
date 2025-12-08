@@ -86,15 +86,15 @@ const depthToScale = (
 };
 
 /**
- * Assigns a lateral position (-1 to 1) based on event category/type.
+ * Assigns a lateral position (-1 to 1) based on event id/title.
  * Spreads events across the road width to reduce visual clustering.
  */
 const getLateralPosition = (event: TimelineEvent, index: number): number => {
   const spread = DEPTH_ROAD_CONFIG.eventLateralSpread;
 
-  // Use type for primary grouping
-  const typeHash = event.type.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
-  const basePosition = ((typeHash % 100) / 100) * 2 - 1; // -1 to 1
+  // Use title for primary grouping
+  const titleHash = event.title.split('').reduce((acc: number, c: string) => acc + c.charCodeAt(0), 0);
+  const basePosition = ((titleHash % 100) / 100) * 2 - 1; // -1 to 1
 
   // Add slight offset based on index to prevent exact overlaps
   const indexOffset = ((index % 5) - 2) * 0.1;
@@ -105,8 +105,8 @@ const getLateralPosition = (event: TimelineEvent, index: number): number => {
 /**
  * Gets color for event category.
  */
-const getCategoryColor = (event: TimelineEvent): string => {
-  return CATEGORY_COLORS[event.type] || CATEGORY_COLORS['default'];
+const getCategoryColor = (): string => {
+  return CATEGORY_COLORS['default'];
 };
 
 export const useDepthRoad = (): UseDepthRoadResult => {
@@ -164,7 +164,7 @@ export const useDepthRoad = (): UseDepthRoadResult => {
           normalizedDepth,
           scale,
           lateralPosition,
-          categoryColor: getCategoryColor(event),
+          categoryColor: getCategoryColor(),
           screenY,
           screenX,
           zIndex,

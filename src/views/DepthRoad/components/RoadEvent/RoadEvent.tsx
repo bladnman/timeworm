@@ -83,19 +83,6 @@ export const RoadEvent = ({ event, onSelect }: RoadEventProps) => {
         {/* Title */}
         <div className={styles.title}>{event.title}</div>
 
-        {/* Type indicator */}
-        <div className={styles.type}>
-          <span
-            className={styles.typeDot}
-            style={{ backgroundColor: event.categoryColor }}
-          />
-          {event.type}
-        </div>
-
-        {/* Innovator (shown on hover) */}
-        {isHovered && event.innovator && (
-          <div className={styles.innovator}>{event.innovator}</div>
-        )}
       </div>
     </div>
   );

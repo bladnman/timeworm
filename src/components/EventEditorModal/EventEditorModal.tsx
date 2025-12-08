@@ -25,6 +25,7 @@ import { ImageGallery } from './components/ImageGallery/ImageGallery';
 import { MetricsEditor } from './components/MetricsEditor/MetricsEditor';
 import { LinksEditor } from './components/LinksEditor/LinksEditor';
 import { EditorFooter } from './components/EditorFooter/EditorFooter';
+import { DeleteZone } from './components/DeleteZone/DeleteZone';
 import styles from './EventEditorModal.module.css';
 
 export const EventEditorModal: React.FC = () => {
@@ -40,6 +41,7 @@ export const EventEditorModal: React.FC = () => {
     toggleGroup,
     addImageUrl,
     removeImageUrl,
+    reorderImageUrls,
     updateMetric,
     removeMetric,
     addLink,
@@ -125,17 +127,6 @@ export const EventEditorModal: React.FC = () => {
                     error={form.errors?.title}
                   />
 
-                  {/* Featured Image */}
-                  {form.image_urls.length > 0 && (
-                    <div className={styles.heroImage}>
-                      <img
-                        src={form.image_urls[0]}
-                        alt={form.title}
-                        className={styles.heroImageImg}
-                      />
-                    </div>
-                  )}
-
                   {/* Date Chips */}
                   <DateChips
                     dateStart={form.date_start}
@@ -161,42 +152,14 @@ export const EventEditorModal: React.FC = () => {
                     onToggle={toggleGroup}
                   />
 
-                  {/* Details Section */}
-                  <DisclosureSection title="Details" defaultOpen>
-                    <div className={styles.detailsGrid}>
-                      <div className={styles.field}>
-                        <label className={styles.fieldLabel}>Type</label>
-                        <input
-                          type="text"
-                          className={styles.fieldInput}
-                          value={form.type}
-                          onChange={(e) => updateField('type', e.target.value)}
-                          placeholder="e.g., Invention, Event, Discovery"
-                        />
-                      </div>
-                      <div className={styles.field}>
-                        <label className={styles.fieldLabel}>
-                          Innovator <span className={styles.optional}>(optional)</span>
-                        </label>
-                        <input
-                          type="text"
-                          className={styles.fieldInput}
-                          value={form.innovator}
-                          onChange={(e) => updateField('innovator', e.target.value)}
-                          placeholder="Person or organization"
-                        />
-                      </div>
-                      <div className={styles.field}>
-                        <label className={styles.fieldLabel}>Innovation</label>
-                        <input
-                          type="text"
-                          className={styles.fieldInput}
-                          value={form.innovation}
-                          onChange={(e) => updateField('innovation', e.target.value)}
-                          placeholder="What was created/discovered"
-                        />
-                      </div>
-                    </div>
+                  {/* Links Section - promoted from Advanced */}
+                  <DisclosureSection title="Links" defaultOpen={form.links.length > 0}>
+                    <LinksEditor
+                      links={form.links}
+                      onAdd={addLink}
+                      onUpdate={updateLink}
+                      onRemove={removeLink}
+                    />
                   </DisclosureSection>
 
                   {/* Images Section */}
@@ -205,29 +168,25 @@ export const EventEditorModal: React.FC = () => {
                       urls={form.image_urls}
                       onAdd={addImageUrl}
                       onRemove={removeImageUrl}
+                      onReorder={reorderImageUrls}
                     />
                   </DisclosureSection>
 
-                  {/* Advanced Section */}
-                  <DisclosureSection title="Advanced" defaultOpen={false}>
-                    <div className={styles.advancedContent}>
-                      <MetricsEditor
-                        metrics={form.metrics}
-                        onUpdate={updateMetric}
-                        onRemove={removeMetric}
-                      />
-                      <LinksEditor
-                        links={form.links}
-                        onAdd={addLink}
-                        onUpdate={updateLink}
-                        onRemove={removeLink}
-                      />
-                    </div>
+                  {/* Additional Fields - flexible key-value pairs */}
+                  <DisclosureSection title="Additional Fields" defaultOpen={Object.keys(form.metrics).length > 0}>
+                    <MetricsEditor
+                      metrics={form.metrics}
+                      onUpdate={updateMetric}
+                      onRemove={removeMetric}
+                    />
                   </DisclosureSection>
+
+                  {/* Delete Zone - at the very bottom, scroll to find */}
+                  <DeleteZone onDelete={handleDelete} />
                 </motion.div>
               </div>
 
-              <EditorFooter onDelete={handleDelete} saveStatus={saveStatus} />
+              <EditorFooter saveStatus={saveStatus} />
             </div>
           </motion.div>
         </>

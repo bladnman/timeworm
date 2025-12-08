@@ -17,7 +17,7 @@ export const TrackEvent = ({
   connectorLength,
   onClick,
 }: TrackEventProps) => {
-  const { title, date_display, type, xPos, lane, stackIndex } = event;
+  const { title, date_display, xPos, lane, stackIndex } = event;
 
   // Calculate vertical position based on lane and stack
   const stackOffset = stackIndex * (cardHeight + 12);
@@ -55,7 +55,6 @@ export const TrackEvent = ({
 
       {/* Event card */}
       <div className={styles.card}>
-        <div className={styles.typeIndicator} data-type={type} />
         <div className={styles.content}>
           <span className={styles.date}>{date_display}</span>
           <span className={styles.title}>{title}</span>

@@ -28,9 +28,7 @@ export const EventsList: React.FC = () => {
       events = events.filter(
         (event) =>
           event.title.toLowerCase().includes(query) ||
-          event.description.toLowerCase().includes(query) ||
-          event.type.toLowerCase().includes(query) ||
-          event.innovator?.toLowerCase().includes(query)
+          event.description.toLowerCase().includes(query)
       );
     }
 
@@ -51,8 +49,6 @@ export const EventsList: React.FC = () => {
       date_display: new Date().getFullYear().toString(),
       date_start: `${new Date().getFullYear()}-01-01`,
       group_ids: [],
-      type: 'Event',
-      innovation: '',
       image_urls: [],
       description: '',
       metrics: {},
@@ -134,7 +130,6 @@ export const EventsList: React.FC = () => {
                 <h3 className={styles.eventTitle}>{event.title}</h3>
                 <p className={styles.eventDate}>{event.date_display}</p>
               </div>
-              {event.type && <span className={styles.eventType}>{event.type}</span>}
             </motion.div>
           ))}
         </motion.div>
