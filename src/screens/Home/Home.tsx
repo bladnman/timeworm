@@ -12,7 +12,7 @@ import { TimelineGrid } from './components/TimelineGrid/TimelineGrid';
 import styles from './Home.module.css';
 
 export const Home: React.FC = () => {
-  const { manifest, hasLocalEdits } = useTimelineLibrary();
+  const { manifest, isLoadingManifest } = useTimelineLibrary();
 
   return (
     <motion.div
@@ -57,10 +57,11 @@ export const Home: React.FC = () => {
       </header>
 
       <div className={styles.gridContainer}>
-        <TimelineGrid
-          timelines={manifest}
-          hasLocalEdits={hasLocalEdits}
-        />
+        {isLoadingManifest ? (
+          <div className={styles.loading}>Loading timelines...</div>
+        ) : (
+          <TimelineGrid timelines={manifest} />
+        )}
       </div>
     </motion.div>
   );

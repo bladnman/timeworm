@@ -86,3 +86,45 @@ export const eachYearOfInterval = (start: ParsedDate, end: ParsedDate): number[]
 
   return years;
 };
+
+/**
+ * Format a date string for human-readable display.
+ * Handles BCE dates and generates appropriate display format.
+ */
+export const formatDateDisplay = (dateStr: string): string => {
+  if (!dateStr) return '';
+
+  const parsed = parseISOExtended(dateStr);
+  const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+
+  const monthName = monthNames[parsed.month - 1] || '';
+  const year = parsed.year < 0 ? `${Math.abs(parsed.year)} BCE` : `${parsed.year}`;
+
+  // If we only have year (month=1, day=1), just show year
+  if (parsed.month === 1 && parsed.day === 1) {
+    return year;
+  }
+
+  // If we have month but day is 1, show month and year
+  if (parsed.day === 1) {
+    return `${monthName} ${year}`;
+  }
+
+  // Full date
+  return `${monthName} ${parsed.day}, ${year}`;
+};
+
+/**
+ * Format a date range for display.
+ * Shows just start if no end, or "Start - End" if both.
+ */
+export const formatDateRangeDisplay = (startStr: string, endStr?: string): string => {
+  const start = formatDateDisplay(startStr);
+  if (!endStr) return start;
+
+  const end = formatDateDisplay(endStr);
+  return `${start} – ${end}`;
+};

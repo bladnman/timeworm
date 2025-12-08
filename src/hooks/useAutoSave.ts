@@ -1,30 +1,23 @@
+/**
+ * useAutoSave Hook
+ *
+ * Auto-saves timeline data to the backend API with debouncing.
+ * Provides save status for UI feedback.
+ */
+
 import { useEffect, useRef, useCallback, useState } from 'react';
 import type { TimelineData } from '../types/timeline';
-
-/**
- * Storage key prefix for localStorage persistence
- */
-const STORAGE_PREFIX = 'timeworm:timeline:';
 
 /**
  * Auto-save debounce delay in milliseconds
  */
 const AUTOSAVE_DELAY_MS = 2000;
 
-/**
- * Stored timeline data shape
- */
-interface StoredTimeline {
-  data: TimelineData;
-  lastModified: string;
-  version: number;
-}
-
 export type SaveStatus = 'idle' | 'pending' | 'saving' | 'saved' | 'error';
 
 interface UseAutoSaveConfig {
   /**
-   * Timeline ID for storage key
+   * Timeline ID for API endpoint
    */
   timelineId: string | null;
 
@@ -59,15 +52,10 @@ interface UseAutoSaveResult {
    * Manually trigger save
    */
   saveNow: () => void;
-
-  /**
-   * Clear saved data for this timeline
-   */
-  clearSaved: () => void;
 }
 
 /**
- * Hook for auto-saving timeline data to localStorage with debouncing.
+ * Hook for auto-saving timeline data to the backend API with debouncing.
  * Provides save status for UI feedback.
  */
 export const useAutoSave = (config: UseAutoSaveConfig): UseAutoSaveResult => {
@@ -80,29 +68,28 @@ export const useAutoSave = (config: UseAutoSaveConfig): UseAutoSaveResult => {
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const savedIndicatorTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Get storage key
-  const getStorageKey = useCallback(() => {
-    if (!timelineId) return null;
-    return `${STORAGE_PREFIX}${timelineId}`;
-  }, [timelineId]);
-
   // Save function
-  const save = useCallback(() => {
-    const storageKey = getStorageKey();
-    if (!storageKey || !data) return;
+  const save = useCallback(async () => {
+    if (!timelineId || !data) return;
 
     setStatus('saving');
 
     try {
-      const stored: StoredTimeline = {
-        data,
-        lastModified: new Date().toISOString(),
-        version: 1,
-      };
+      const response = await fetch(`/api/timeline/${timelineId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-      localStorage.setItem(storageKey, JSON.stringify(stored));
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || `Failed to save: ${response.status}`);
+      }
 
-      setLastSaved(stored.lastModified);
+      const savedAt = new Date().toISOString();
+      setLastSaved(savedAt);
       setStatus('saved');
       onSaved?.();
 
@@ -114,7 +101,7 @@ export const useAutoSave = (config: UseAutoSaveConfig): UseAutoSaveResult => {
       console.error('Failed to save timeline:', err);
       setStatus('error');
     }
-  }, [getStorageKey, data, onSaved]);
+  }, [timelineId, data, onSaved]);
 
   // Manual save
   const saveNow = useCallback(() => {
@@ -125,16 +112,6 @@ export const useAutoSave = (config: UseAutoSaveConfig): UseAutoSaveResult => {
     }
     save();
   }, [save]);
-
-  // Clear saved data
-  const clearSaved = useCallback(() => {
-    const storageKey = getStorageKey();
-    if (storageKey) {
-      localStorage.removeItem(storageKey);
-      setLastSaved(null);
-      setStatus('idle');
-    }
-  }, [getStorageKey]);
 
   // Auto-save when dirty
   useEffect(() => {
@@ -161,22 +138,6 @@ export const useAutoSave = (config: UseAutoSaveConfig): UseAutoSaveResult => {
     };
   }, [isDirty, timelineId, data, save]);
 
-  // Load last saved timestamp on mount
-  useEffect(() => {
-    const storageKey = getStorageKey();
-    if (!storageKey) return;
-
-    try {
-      const stored = localStorage.getItem(storageKey);
-      if (stored) {
-        const parsed: StoredTimeline = JSON.parse(stored);
-        setLastSaved(parsed.lastModified);
-      }
-    } catch {
-      // Ignore parse errors
-    }
-  }, [getStorageKey]);
-
   // Cleanup on unmount
   useEffect(() => {
     return () => {
@@ -193,6 +154,5 @@ export const useAutoSave = (config: UseAutoSaveConfig): UseAutoSaveResult => {
     status,
     lastSaved,
     saveNow,
-    clearSaved,
   };
 };

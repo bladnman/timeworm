@@ -7,14 +7,13 @@
  */
 
 import { motion } from 'framer-motion';
-import type { TimelineManifestEntry } from '../../../../../data/manifest';
+import type { TimelineManifestEntry } from '../../../../hooks/useTimelineLibrary';
 import { useApp } from '../../../../hooks/useApp';
 import { cardVariants } from '../../../../theme/motion';
 import styles from './TimelineCard.module.css';
 
 interface TimelineCardProps {
   timeline: TimelineManifestEntry;
-  hasEdits: boolean;
 }
 
 /**
@@ -37,7 +36,7 @@ const viewModeNames: Record<string, string> = {
   libraryShelf: 'Library',
 };
 
-export const TimelineCard: React.FC<TimelineCardProps> = ({ timeline, hasEdits }) => {
+export const TimelineCard: React.FC<TimelineCardProps> = ({ timeline }) => {
   const { navigateToTimeline } = useApp();
 
   const handleClick = () => {
@@ -82,17 +81,6 @@ export const TimelineCard: React.FC<TimelineCardProps> = ({ timeline, hasEdits }
           </svg>
         </div>
 
-        {/* Edit badge */}
-        {hasEdits && (
-          <motion.span
-            className={styles.editBadge}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            Edited
-          </motion.span>
-        )}
       </div>
 
       {/* Content */}
