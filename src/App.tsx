@@ -1,51 +1,54 @@
-import { useContext } from 'react';
-import { DetailOverlay } from './components/DetailOverlay/DetailOverlay';
-import { ViewSwitcher } from './components/ViewSwitcher/ViewSwitcher';
-import { TimelineContext } from './context/TimelineContext';
+/**
+ * TimeWorm App
+ *
+ * Root component with navigation and providers.
+ * Animation is the experience, not polish.
+ */
+
+import { AnimatePresence } from 'framer-motion';
+import { AppProvider } from './context/AppProvider';
 import { TimelineProvider } from './context/TimelineProvider';
-import { BikeRideView } from './views/BikeRide/BikeRideView';
-import { BranchingTree } from './views/BranchingTree/BranchingTree';
-import { ComicView } from './views/Comic/ComicView';
-import { DepthRoad } from './views/DepthRoad/DepthRoad';
-import { ExhibitWalk } from './views/ExhibitWalk/ExhibitWalk';
-import { HorizontalView } from './views/Horizontal/HorizontalView';
-import { LibraryShelfView } from './views/LibraryShelf/LibraryShelfView';
-import { MosaicView } from './views/Mosaic/MosaicView';
-import { OrbitalRings } from './views/OrbitalRings/OrbitalRings';
-import { RiverPathView } from './views/RiverPath/RiverPathView';
-import { StrataView } from './views/Strata/StrataView';
-import { TrailProfileView } from './views/TrailProfile/TrailProfileView';
-import { TrainJourney } from './views/TrainJourney/TrainJourney';
-import { VerticalView } from './views/Vertical/VerticalView';
+import { useApp } from './hooks/useApp';
+import { Home } from './screens/Home/Home';
+import { TimelineScreen } from './screens/Timeline/TimelineScreen';
+import { DetailOverlay } from './components/DetailOverlay/DetailOverlay';
+import { EventEditorModal } from './components/EventEditorModal/EventEditorModal';
 
-const ViewManager = () => {
-    const { viewMode, isLoading } = useContext(TimelineContext)!;
+/**
+ * Screen router - renders the appropriate screen based on app state
+ */
+const ScreenRouter: React.FC = () => {
+  const { screen, timelineMode } = useApp();
 
-    if (isLoading) return <div style={{ padding: '2rem', textAlign: 'center' }}>Loading TimeWorm...</div>;
+  return (
+    <>
+      <AnimatePresence mode="wait">
+        {screen === 'home' ? (
+          <Home key="home" />
+        ) : (
+          <TimelineScreen key="timeline" />
+        )}
+      </AnimatePresence>
 
-    if (viewMode === 'comic') return <ComicView />;
-    if (viewMode === 'exhibit') return <ExhibitWalk />;
-    if (viewMode === 'vertical') return <VerticalView />;
-    if (viewMode === 'river') return <RiverPathView />;
-    if (viewMode === 'depthroad') return <DepthRoad />;
-    if (viewMode === 'mosaic') return <MosaicView />;
-    if (viewMode === 'orbital') return <OrbitalRings />;
-    if (viewMode === 'strata') return <StrataView />;
-    if (viewMode === 'tree') return <BranchingTree />;
-    if (viewMode === 'bikeride') return <BikeRideView />;
-    if (viewMode === 'train') return <TrainJourney />;
-    if (viewMode === 'trail') return <TrailProfileView />;
-    if (viewMode === 'libraryShelf') return <LibraryShelfView />;
-    return <HorizontalView />;
+      {/* DetailOverlay shows on timeline screen when not in edit mode */}
+      {screen === 'timeline' && timelineMode === 'view' && <DetailOverlay />}
+
+      {/* EventEditorModal shows when editing an event */}
+      {screen === 'timeline' && <EventEditorModal />}
+    </>
+  );
 };
 
+/**
+ * App wrapper with providers
+ */
 function App() {
   return (
-    <TimelineProvider>
-      <ViewManager />
-      <ViewSwitcher />
-      <DetailOverlay />
-    </TimelineProvider>
+    <AppProvider>
+      <TimelineProvider>
+        <ScreenRouter />
+      </TimelineProvider>
+    </AppProvider>
   );
 }
 

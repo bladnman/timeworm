@@ -1,5 +1,13 @@
-import classNames from 'classnames';
+/**
+ * Detail Overlay
+ *
+ * Right-side panel showing event details when selected.
+ * Now uses Framer Motion for animations.
+ */
+
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTimeline } from '../../hooks/useTimeline';
+import { panelRightVariants, itemVariants, itemContainerVariants } from '../../theme/motion';
 import styles from './DetailOverlay.module.css';
 
 export const DetailOverlay = () => {
@@ -8,52 +16,91 @@ export const DetailOverlay = () => {
   const event = data?.events.find((e) => e.id === selectedEventId);
 
   return (
-    <div className={classNames(styles.overlay, { [styles.open]: !!selectedEventId })}>
-      <div className={styles.header}>
-        <button className={styles.closeButton} onClick={() => selectEvent(null)}>
-          Close
-        </button>
-      </div>
+    <AnimatePresence>
+      {selectedEventId && event && (
+        <motion.div
+          className={styles.overlay}
+          variants={panelRightVariants}
+          initial="closed"
+          animate="open"
+          exit="exit"
+        >
+          <motion.div
+            className={styles.header}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            <button className={styles.closeButton} onClick={() => selectEvent(null)}>
+              Close
+            </button>
+          </motion.div>
 
-      {event && (
-        <div className={styles.content}>
-          <div className={styles.date}>{event.date_display}</div>
-          <h2 className={styles.title}>{event.title}</h2>
-          
-          {event.image_urls.length > 0 && (
-            <img src={event.image_urls[0]} alt={event.title} className={styles.image} />
-          )}
+          <motion.div
+            className={styles.content}
+            variants={itemContainerVariants}
+            initial="initial"
+            animate="enter"
+          >
+            <motion.div variants={itemVariants} className={styles.date}>
+              {event.date_display}
+            </motion.div>
 
-          <p className={styles.description}>{event.description}</p>
+            <motion.h2 variants={itemVariants} className={styles.title}>
+              {event.title}
+            </motion.h2>
 
-          <div className={styles.metaSection}>
-            <div className={styles.metaRow}>
+            {event.image_urls.length > 0 && (
+              <motion.img
+                variants={itemVariants}
+                src={event.image_urls[0]}
+                alt={event.title}
+                className={styles.image}
+              />
+            )}
+
+            <motion.p variants={itemVariants} className={styles.description}>
+              {event.description}
+            </motion.p>
+
+            <motion.div variants={itemVariants} className={styles.metaSection}>
+              <div className={styles.metaRow}>
                 <span className={styles.metaLabel}>Type</span>
                 <span className={styles.metaValue}>{event.type}</span>
-            </div>
-             <div className={styles.metaRow}>
-                <span className={styles.metaLabel}>Innovator</span>
-                <span className={styles.metaValue}>{event.innovator}</span>
-            </div>
-             <div className={styles.metaRow}>
+              </div>
+              {event.innovator && (
+                <div className={styles.metaRow}>
+                  <span className={styles.metaLabel}>Innovator</span>
+                  <span className={styles.metaValue}>{event.innovator}</span>
+                </div>
+              )}
+              <div className={styles.metaRow}>
                 <span className={styles.metaLabel}>Innovation</span>
                 <span className={styles.metaValue}>{event.innovation}</span>
-            </div>
-             {Object.entries(event.metrics).map(([key, value]) => (
+              </div>
+              {Object.entries(event.metrics).map(([key, value]) => (
                 <div key={key} className={styles.metaRow}>
-                    <span className={styles.metaLabel}>{key}</span>
-                    <span className={styles.metaValue}>{value}</span>
+                  <span className={styles.metaLabel}>{key}</span>
+                  <span className={styles.metaValue}>{value}</span>
                 </div>
-            ))}
-          </div>
+              ))}
+            </motion.div>
 
-          {event.links.map(link => (
-             <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className={styles.link}>
+            {event.links?.map((link) => (
+              <motion.a
+                key={link.url}
+                variants={itemVariants}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
                 {link.title} →
-             </a>
-          ))}
-        </div>
+              </motion.a>
+            ))}
+          </motion.div>
+        </motion.div>
       )}
-    </div>
+    </AnimatePresence>
   );
 };
