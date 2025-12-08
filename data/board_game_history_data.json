@@ -57,9 +57,14 @@
       "type": "Game Origin",
       "innovation": "Earliest Known Board Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/a8/Senet_board_Rosicrucian.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Gaming_Board_Inscribed_for_Amenhotep_III_with_Separate_Sliding_Drawer%2C_ca._1390-1353_B.C.E.%2C49.56a-b.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b4/Maler_der_Grabkammer_der_Nefertari_003.jpg"
       ],
-      "description": "Senet is the oldest known board game, with artifacts found in Egyptian tombs dating to around 3500 BCE. The game used a 30-square board and throwing sticks as dice. Over time, Senet evolved from pure game to religious ritual—representations in tombs suggest it symbolized the journey to the afterlife.\n\nThe rules of Senet must be reconstructed from incomplete evidence, but it clearly involved racing pieces across the board with consequences for landing on certain squares. Egyptian pharaohs were buried with Senet boards, demonstrating the game's importance in their culture.",
+      "description": "Senet is the oldest known board game, with artifacts found in Egyptian tombs dating to around 3500 BCE. The game used a 30-square board and throwing sticks as dice. Over time, Senet evolved from pure entertainment to religious ritual—by the New Kingdom (1550–1077 BCE), the game symbolized the soul's journey through the underworld to the afterlife.\n\nThe rules of Senet must be reconstructed from incomplete evidence, but the game clearly involved racing pieces across the board with consequences for landing on certain squares. Queen Nefertari is depicted playing Senet on her tomb walls, and King Tutankhamun was buried with five complete game sets. Egyptian pharaohs and nobility considered the game essential preparation for navigating the afterlife—winning at Senet meant successfully passing into eternity.",
+      "links": [
+        {"title": "Senet - Wikipedia", "url": "https://en.wikipedia.org/wiki/Senet"},
+        {"title": "Metropolitan Museum - Senet", "url": "https://www.metmuseum.org/perspectives/ancient-egypt-board-games"}
+      ],
       "metrics": {
         "age": "~5,500 years",
         "squares": "30"
@@ -76,11 +81,16 @@
       "type": "Game Origin",
       "innovation": "Mesopotamian Racing Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c9/British_Museum_Royal_Game_of_Ur.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/1/1d/British_Museum_Royal_Game_of_Ur.jpg"
       ],
-      "description": "Discovered in the Royal Tombs of Ur in modern-day Iraq, this 20-square racing game was played throughout the ancient Near East for thousands of years. A cuneiform tablet from 177 BCE provides partial rules, making it one of the few ancient games whose rules can be reconstructed with reasonable confidence.\n\nThe game involves racing seven pieces across the board, with rosette squares providing safe spaces and extra turns. The Royal Game of Ur demonstrates that sophisticated game design existed at the dawn of civilization.",
+      "description": "Discovered by Sir Leonard Woolley in the Royal Tombs of Ur in modern-day Iraq during excavations from 1922–1934, this 20-square racing game dates to approximately 2600–2400 BCE, making it one of the oldest surviving game boards in the world.\n\nThe game was played throughout the ancient Near East for over 3,000 years. A remarkable cuneiform tablet from 177 BCE provides partial rules, making it one of the few ancient games whose gameplay can be reconstructed with confidence. Players raced seven pieces across the board using tetrahedral dice, with rosette squares providing safe spaces and extra turns.\n\nThe British Museum's ornate example features a wooden board inlaid with shell, red limestone, and lapis lazuli—demonstrating that sophisticated game design and luxury craftsmanship existed at the dawn of civilization.",
+      "links": [
+        {"title": "Royal Game of Ur - Wikipedia", "url": "https://en.wikipedia.org/wiki/Royal_Game_of_Ur"},
+        {"title": "British Museum Collection", "url": "https://www.britishmuseum.org/collection/object/W_1928-1009-378"}
+      ],
       "metrics": {
-        "discovery": "1920s, Royal Tombs of Ur"
+        "discovery": "1922–1934, Royal Tombs of Ur",
+        "age": "~4,500 years"
       }
     },
     {
@@ -94,11 +104,15 @@
       "type": "Game Origin",
       "innovation": "Race and Capture Mechanics",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/29/Backgammon_board.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/3/30/Backgammon_lg.png"
       ],
-      "description": "Racing games involving dice and piece capture appeared in various cultures around 2000 BCE, eventually evolving into modern backgammon. The Roman game Tabula, Persian game Nard, and similar games spread along trade routes.\n\nBackgammon's combination of luck (dice) and skill (movement choices) created enduring appeal. The game has been played continuously for millennia and remains popular today, with competitive play and gambling throughout the world.",
+      "description": "Racing games involving dice and piece capture appeared in various cultures around 2000 BCE, eventually evolving into modern backgammon. The Roman game Tabula, Persian game Nard, and similar games spread along ancient trade routes, each culture adding refinements.\n\nBackgammon's combination of luck (dice) and skill (movement choices) created enduring appeal—players must decide which pieces to move, when to take risks, and how to block opponents. The game has been played continuously for millennia and remains popular today, with competitive tournaments, online play, and gambling throughout the world. Its balance of chance and strategy represents an ideal that many modern games still aspire to achieve.",
+      "links": [
+        {"title": "Backgammon - Wikipedia", "url": "https://en.wikipedia.org/wiki/Backgammon"}
+      ],
       "metrics": {
-        "type": "Race game with capture"
+        "type": "Race game with capture",
+        "continuous_play": "~4,000 years"
       }
     },
     {
@@ -114,10 +128,13 @@
       "image_urls": [
         "https://upload.wikimedia.org/wikipedia/commons/2/2a/FloorGoban.JPG"
       ],
-      "description": "Go (Weiqi in Chinese) emerged in ancient China and spread to Korea and Japan, where it became deeply embedded in culture and education. The game uses simple rules—black and white stones placed on a 19x19 grid, surrounding territory—but produces staggering complexity.\n\nGo has more possible game positions than atoms in the observable universe. It remained the last major board game where human masters defeated computers until AlphaGo's 2016 victory. The game is considered one of the four essential arts of Chinese scholars.",
+      "description": "Go (Weiqi in Chinese, Baduk in Korean, Igo in Japanese) emerged in ancient China and spread to Korea and Japan, where it became deeply embedded in culture, philosophy, and education. The game uses deceptively simple rules—black and white stones placed alternately on a 19×19 grid, with players surrounding territory and capturing opponent stones—but produces staggering complexity.\n\nGo has more possible game positions than atoms in the observable universe (approximately 10^170). It remained the last major board game where human masters consistently defeated computers—until Google DeepMind's AlphaGo shocked the world by defeating champion Lee Sedol in 2016. The game was considered one of the four essential arts of Chinese scholars alongside calligraphy, painting, and playing the guqin.",
+      "links": [
+        {"title": "Go (game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Go_(game)"}
+      ],
       "metrics": {
-        "complexity": "More positions than atoms in universe",
-        "board_size": "19x19"
+        "complexity": "~10^170 possible positions",
+        "board_size": "19×19"
       }
     },
     {
@@ -131,11 +148,16 @@
       "type": "Game Origin",
       "innovation": "Cross-and-Circle Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/3/36/Pachisi.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Pachisi-real.jpg"
       ],
-      "description": "Pachisi, the 'national game of India,' used a cross-shaped cloth board and cowrie shells as dice. Four players raced pieces around the board, with capture mechanics adding strategic depth. The game was played by Mughal emperors using human pieces on courtyard-sized boards.\n\nPachisi's design influenced countless descendants: Parcheesi, Ludo, and Sorry! all derive from this ancient game. The cross-and-circle track design appears in games worldwide, demonstrating Pachisi's foundational influence.",
+      "description": "Pachisi, the 'national game of India,' used a cross-shaped cloth board and cowrie shells as dice. The name derives from the Hindi word *paccīs* meaning 'twenty-five'—the highest possible throw. Four players raced pieces around the board, with capture mechanics adding strategic depth.\n\nThe Mughal Emperor Akbar famously played pachisi on life-sized marble courts at Fatehpur Sikri and Agra, using costumed harem women as living game pieces who moved according to dice throws. These 16th-century pachisi courts still survive today.\n\nPachisi's design influenced countless descendants across the globe: Parcheesi, Ludo, and Sorry! all derive from this ancient game. The cross-and-circle track design appears in games worldwide, demonstrating Pachisi's foundational influence on game design.",
+      "links": [
+        {"title": "Pachisi - Wikipedia", "url": "https://en.wikipedia.org/wiki/Pachisi"},
+        {"title": "Pachisi - Britannica", "url": "https://www.britannica.com/topic/Pachisi"}
+      ],
       "metrics": {
-        "descendants": "Parcheesi, Ludo, Sorry!"
+        "descendants": "Parcheesi, Ludo, Sorry!",
+        "historic_courts": "Fatehpur Sikri, Agra (still extant)"
       }
     },
     {
@@ -149,11 +171,16 @@
       "type": "Game Origin",
       "innovation": "Seed-Counting Game System",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/de/Mancala_Bao.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Tropenmuseum_Royal_Tropical_Institute_Objectnumber_699-2_Speelbord_voor_mancala_spel.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/Yao_People_Playing_%22Bawo%22.jpg"
       ],
-      "description": "Mancala refers to a family of 'count-and-capture' games played throughout Africa and Asia for millennia. Players distribute seeds (or stones) from cups on a board, capturing opponent seeds according to various rules. Over 200 mancala variants exist worldwide.\n\nMancala games require only a board with holes and seeds—making them accessible across economic conditions. The games develop mathematical thinking and appear in cultures from Ethiopia to Southeast Asia, demonstrating parallel development or ancient trade route transmission.",
+      "description": "Mancala refers to a family of 'count-and-capture' games (from Arabic *naqalah*, 'to move') played throughout Africa and Asia for millennia. Players distribute seeds, stones, or shells from cups on a board, capturing opponent pieces according to various rules. Over 200 mancala variants exist worldwide, including Oware (West Africa), Bao (East Africa), Congkak (Southeast Asia), and Kalah (Western simplification).\n\nMancala games require only a board with holes and seeds—or simply holes dug in the ground—making them accessible across all economic conditions. Archaeological evidence suggests mancala-style pit rows carved in stone date back thousands of years in Africa. The games develop mathematical thinking and strategic planning, and appear in cultures from Ethiopia to the Philippines, demonstrating either parallel development or transmission along ancient trade routes.",
+      "links": [
+        {"title": "Mancala - Wikipedia", "url": "https://en.wikipedia.org/wiki/Mancala"}
+      ],
       "metrics": {
-        "variants": "200+ worldwide"
+        "variants": "200+ worldwide",
+        "regional_names": "Oware, Bao, Congkak, Kalah"
       }
     },
     {
