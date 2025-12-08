@@ -1,0 +1,26 @@
+/**
+ * Timeline Grid Styles
+ *
+ * Responsive grid layout for timeline cards.
+ */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-6);
+}
+
+/* On larger screens, limit to 3 columns max for better visual balance */
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* On mobile, single column */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}

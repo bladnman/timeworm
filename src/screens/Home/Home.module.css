@@ -1,0 +1,73 @@
+/**
+ * Home Screen Styles
+ *
+ * The timeline library - where users begin their journey.
+ * Breathing space, considered typography, inviting cards.
+ */
+
+.container {
+  min-height: 100vh;
+  background-color: var(--color-bg-canvas);
+  padding: var(--space-8);
+  overflow-y: auto;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto var(--space-12);
+  text-align: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  opacity: 0.9;
+}
+
+.title {
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.gridContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--space-4);
+  }
+
+  .header {
+    margin-bottom: var(--space-8);
+  }
+
+  .title {
+    font-size: var(--text-2xl);
+  }
+
+  .subtitle {
+    font-size: var(--text-base);
+  }
+}
