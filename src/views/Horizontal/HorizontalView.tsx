@@ -50,24 +50,6 @@ export const HorizontalView = () => {
 
   return (
     <div className={styles.container}>
-      {/* Zoom controls */}
-      <div className={styles.controls}>
-        <label className={styles.zoomLabel}>
-          <span className={styles.zoomIcon}>🔍</span>
-          <span>{pixelsPerYear.toFixed(1)}px/yr</span>
-        </label>
-        <input
-          type="range"
-          className={styles.zoomSlider}
-          min={config.zoomMin}
-          max={config.zoomMax}
-          step={config.zoomStep}
-          value={pixelsPerYear}
-          onChange={(e) => handleZoomChange(Number(e.target.value))}
-        />
-        <div className={styles.zoomHint}>← → to pan, +/- to zoom</div>
-      </div>
-
       {/* Main scrollable track area */}
       <div
         ref={containerRef}
