@@ -247,7 +247,7 @@
   border-radius: 0 6px 6px 0;
 }
 
-/* Always-visible grab bar indicator - prominent pill shape */
+/* Grab bar indicator - hidden by default, shown on viewport hover */
 .resizeHandle::before {
   content: '';
   width: 8px;
@@ -256,10 +256,19 @@
   border: 1px solid rgb(56 189 248 / 0.9);
   border-radius: 4px;
   box-shadow: 0 0 4px rgb(56 189 248 / 0.3);
-  transition: background var(--duration-fast), height var(--duration-fast), box-shadow var(--duration-fast), width var(--duration-fast);
+  opacity: 0;
+  transition: background var(--duration-fast), height var(--duration-fast), box-shadow var(--duration-fast), width var(--duration-fast), opacity var(--duration-fast);
+}
+
+/* Show handles when hovering the viewport */
+.viewport:hover .resizeHandle::before,
+.viewport.dragging .resizeHandle::before,
+.viewport.resizing .resizeHandle::before {
+  opacity: 1;
 }
 
 .resizeHandle:hover::before {
+  opacity: 1;
   background: rgb(56 189 248 / 0.9);
   width: 10px;
   height: 32px;
@@ -267,6 +276,7 @@
 }
 
 .resizeHandle:active::before {
+  opacity: 1;
   background: var(--color-text-accent);
   width: 10px;
   height: 36px;
@@ -275,6 +285,7 @@
 
 /* Mobile-visible handles (shown on tap) - match hover state */
 .resizeHandle.visible::before {
+  opacity: 1;
   background: rgb(56 189 248 / 0.9);
   width: 10px;
   height: 32px;
