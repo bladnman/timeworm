@@ -1,8 +1,16 @@
-import { memo, useCallback, useRef, useState, type MouseEvent, type WheelEvent } from 'react';
+import { memo, useCallback, useMemo, useRef, useState, type MouseEvent, type WheelEvent } from 'react';
 import type { TrackLayoutItem } from '../../hooks/useTrackLayout';
 import { useMiniMap } from './hooks/useMiniMap';
 import { useAutoScroll } from './hooks/useAutoScroll';
-import { minimapPercentToYear, yearToMinimapPercent } from './utils/minimapCalculations';
+import {
+  minimapPercentToYear,
+  yearToMinimapPercent,
+  pixelDeltaToPercent,
+  getPreviewCenterYear,
+  yearToViewportOffset,
+  getEventDensityDots,
+  type FrozenCoordinateSnapshot,
+} from './utils/minimapCalculations';
 import styles from './MiniMap.module.css';
 
 interface MiniMapProps {
@@ -19,15 +27,20 @@ interface MiniMapProps {
 }
 
 interface DragState {
-  type: 'move' | 'resize-left' | 'resize-right' | 'pan-track';
+  type: 'move' | 'resize-left' | 'resize-right' | 'pan-track' | 'pan-context';
   startX: number;
   startOffset: number;
-  // For resize: the preview width as percentage (0-100)
-  previewWidthPercent?: number;
-  // For resize: the preview left position as percentage
-  previewLeftPercent?: number;
-  // For resize: the starting width percent (to calculate ratio)
-  startWidthPercent?: number;
+
+  // Frozen coordinate snapshot - the stable coordinate system during drag
+  snapshot: FrozenCoordinateSnapshot;
+
+  // Preview position (what user is dragging TO) - in percentage
+  previewLeftPercent: number;
+  previewWidthPercent: number;
+
+  // Ghost position (where drag STARTED) - in percentage
+  ghostLeftPercent: number;
+  ghostWidthPercent: number;
 }
 
 /**
@@ -57,6 +70,7 @@ export const MiniMap = memo(function MiniMap({
   onResizeZoom,
 }: MiniMapProps) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const contextBarRef = useRef<HTMLDivElement>(null);
   const [dragState, setDragState] = useState<DragState | null>(null);
   const [showMobileHandles, setShowMobileHandles] = useState(false);
 
@@ -74,6 +88,7 @@ export const MiniMap = memo(function MiniMap({
     zoomMinimapAtPercent,
     recenterOnViewport,
     setIsDraggingMinimap,
+    getCoordinateSnapshot,
   } = useMiniMap({
     totalMinYear: minYear,
     totalMaxYear: maxYear,
@@ -135,44 +150,58 @@ export const MiniMap = memo(function MiniMap({
   );
 
   // Handle viewport indicator drag (move main viewport)
+  // Uses frozen coordinate system to prevent jank during drag
   const handleViewportDrag = useCallback(
     (e: MouseEvent<HTMLDivElement>) => {
       e.stopPropagation();
       e.preventDefault();
 
-      // Toggle mobile handles on click (not drag)
+      const track = trackRef.current;
+      if (!track) return;
+
       const startX = e.clientX;
-      const startOffset = viewportOffset;
+      const rect = track.getBoundingClientRect();
+
+      // Capture frozen coordinate snapshot at drag start
+      const snapshot = getCoordinateSnapshot(rect.width);
 
       setDragState({
         type: 'move',
         startX,
-        startOffset,
+        startOffset: viewportOffset,
+        snapshot,
+        // Initialize preview and ghost at same position (frozen coordinates)
+        previewLeftPercent: snapshot.indicatorLeftPercent,
+        previewWidthPercent: snapshot.indicatorWidthPercent,
+        ghostLeftPercent: snapshot.indicatorLeftPercent,
+        ghostWidthPercent: snapshot.indicatorWidthPercent,
       });
       setIsDraggingMinimap(true);
-
-      const track = trackRef.current;
-      if (!track) return;
 
       let hasMoved = false;
 
       const handleMove = (moveEvent: globalThis.MouseEvent) => {
         hasMoved = true;
-        const rect = track.getBoundingClientRect();
         const deltaX = moveEvent.clientX - startX;
-        const deltaPercent = (deltaX / rect.width) * 100;
 
-        // Convert delta percent to years, then to pixels
-        const deltaYears = (deltaPercent / 100) * minimapYearsVisible;
-        const deltaPixels = deltaYears * pixelsPerYear;
+        // Convert pixel delta to percentage using FROZEN snapshot
+        const deltaPercent = pixelDeltaToPercent(deltaX, snapshot);
 
-        const newOffset = clampOffset(startOffset + deltaPixels);
+        // Calculate new preview position (ghost stays fixed)
+        const newLeftPercent = Math.max(
+          0,
+          Math.min(100 - snapshot.indicatorWidthPercent, snapshot.indicatorLeftPercent + deltaPercent)
+        );
 
-        setDragState({
-          type: 'move',
-          startX,
-          startOffset: newOffset,
-        });
+        setDragState((prev) =>
+          prev
+            ? {
+                ...prev,
+                previewLeftPercent: newLeftPercent,
+                // Ghost stays at original position
+              }
+            : null
+        );
       };
 
       const handleUp = (upEvent: globalThis.MouseEvent) => {
@@ -186,17 +215,34 @@ export const MiniMap = memo(function MiniMap({
           setShowMobileHandles((prev) => !prev);
         }
 
-        const rect = track.getBoundingClientRect();
-        const deltaX = upEvent.clientX - startX;
-        const deltaPercent = (deltaX / rect.width) * 100;
-        const deltaYears = (deltaPercent / 100) * minimapYearsVisible;
-        const deltaPixels = deltaYears * pixelsPerYear;
+        // Get final preview position from drag state
+        setDragState((currentState) => {
+          if (currentState && hasMoved) {
+            // Convert preview position to year using FROZEN snapshot
+            const centerYear = getPreviewCenterYear(
+              currentState.previewLeftPercent,
+              currentState.previewWidthPercent,
+              currentState.snapshot
+            );
 
-        const finalOffset = clampOffset(startOffset + deltaPixels);
+            // Convert year to offset using CURRENT (live) coordinates
+            const finalOffset = yearToViewportOffset(
+              centerYear,
+              viewportWidth,
+              pixelsPerYear,
+              minYear,
+              totalWidth
+            );
 
-        setDragState(null);
+            // Commit the change
+            setTimeout(() => {
+              onViewportChange(finalOffset);
+            }, 0);
+          }
+          return null;
+        });
+
         setIsDraggingMinimap(false);
-        onViewportChange(finalOffset);
       };
 
       document.body.style.cursor = 'grabbing';
@@ -204,10 +250,20 @@ export const MiniMap = memo(function MiniMap({
       document.addEventListener('mousemove', handleMove);
       document.addEventListener('mouseup', handleUp);
     },
-    [viewportOffset, minimapYearsVisible, pixelsPerYear, clampOffset, onViewportChange, setIsDraggingMinimap]
+    [
+      viewportOffset,
+      viewportWidth,
+      pixelsPerYear,
+      minYear,
+      totalWidth,
+      onViewportChange,
+      setIsDraggingMinimap,
+      getCoordinateSnapshot,
+    ]
   );
 
   // Handle edge resize with auto-scroll at boundaries
+  // Uses frozen coordinate system for jank-free resizing
   const handleEdgeResize = useCallback(
     (edge: 'left' | 'right', e: MouseEvent<HTMLDivElement>) => {
       e.stopPropagation();
@@ -220,17 +276,20 @@ export const MiniMap = memo(function MiniMap({
 
       const startX = e.clientX;
       const rect = track.getBoundingClientRect();
-      const startLeftPercent = indicatorLeftPercent;
-      const startWidthPercent = indicatorWidthPercent;
-      const startRightPercent = startLeftPercent + startWidthPercent;
+
+      // Capture frozen coordinate snapshot at resize start
+      const snapshot = getCoordinateSnapshot(rect.width);
+      const startRightPercent = snapshot.indicatorLeftPercent + snapshot.indicatorWidthPercent;
 
       setDragState({
         type: edge === 'left' ? 'resize-left' : 'resize-right',
         startX,
         startOffset: viewportOffset,
-        previewLeftPercent: startLeftPercent,
-        previewWidthPercent: startWidthPercent,
-        startWidthPercent: startWidthPercent,
+        snapshot,
+        previewLeftPercent: snapshot.indicatorLeftPercent,
+        previewWidthPercent: snapshot.indicatorWidthPercent,
+        ghostLeftPercent: snapshot.indicatorLeftPercent,
+        ghostWidthPercent: snapshot.indicatorWidthPercent,
       });
       setIsDraggingMinimap(true);
 
@@ -247,30 +306,35 @@ export const MiniMap = memo(function MiniMap({
           stopAutoScroll();
         }
 
-        const deltaX = currentX - startX;
-        const deltaPercent = (deltaX / rect.width) * 100;
+        // Calculate delta using FROZEN snapshot for consistency
+        const deltaPercent = pixelDeltaToPercent(currentX - startX, snapshot);
 
         let newLeftPercent: number;
         let newWidthPercent: number;
 
         if (edge === 'left') {
-          // Moving left edge: right edge stays fixed
-          newLeftPercent = Math.max(0, Math.min(startRightPercent - 5, startLeftPercent + deltaPercent));
+          // Moving left edge: right edge stays fixed (in frozen coordinates)
+          newLeftPercent = Math.max(0, Math.min(startRightPercent - 5, snapshot.indicatorLeftPercent + deltaPercent));
           newWidthPercent = startRightPercent - newLeftPercent;
         } else {
-          // Moving right edge: left edge stays fixed
-          newLeftPercent = startLeftPercent;
-          newWidthPercent = Math.max(5, Math.min(100 - startLeftPercent, startWidthPercent + deltaPercent));
+          // Moving right edge: left edge stays fixed (in frozen coordinates)
+          newLeftPercent = snapshot.indicatorLeftPercent;
+          newWidthPercent = Math.max(
+            5,
+            Math.min(100 - snapshot.indicatorLeftPercent, snapshot.indicatorWidthPercent + deltaPercent)
+          );
         }
 
-        setDragState({
-          type: edge === 'left' ? 'resize-left' : 'resize-right',
-          startX,
-          startOffset: viewportOffset,
-          previewLeftPercent: newLeftPercent,
-          previewWidthPercent: newWidthPercent,
-          startWidthPercent: startWidthPercent,
-        });
+        setDragState((prev) =>
+          prev
+            ? {
+                ...prev,
+                previewLeftPercent: newLeftPercent,
+                previewWidthPercent: newWidthPercent,
+                // Ghost stays at original position
+              }
+            : null
+        );
       };
 
       const handleUp = () => {
@@ -282,9 +346,9 @@ export const MiniMap = memo(function MiniMap({
 
         // Get final state and calculate new zoom
         setDragState((currentState) => {
-          if (currentState && currentState.previewWidthPercent && currentState.startWidthPercent) {
-            // Calculate zoom ratio: smaller preview = higher zoom
-            const zoomRatio = currentState.startWidthPercent / currentState.previewWidthPercent;
+          if (currentState && currentState.previewWidthPercent && currentState.snapshot) {
+            // Calculate zoom ratio using FROZEN snapshot width
+            const zoomRatio = currentState.snapshot.indicatorWidthPercent / currentState.previewWidthPercent;
             const newPPY = pixelsPerYear * zoomRatio;
 
             // Anchor the opposite edge
@@ -308,8 +372,6 @@ export const MiniMap = memo(function MiniMap({
     },
     [
       onResizeZoom,
-      indicatorLeftPercent,
-      indicatorWidthPercent,
       viewportOffset,
       pixelsPerYear,
       checkEdgeProximity,
@@ -317,6 +379,7 @@ export const MiniMap = memo(function MiniMap({
       stopAutoScroll,
       recenterOnViewport,
       setIsDraggingMinimap,
+      getCoordinateSnapshot,
     ]
   );
 
@@ -359,35 +422,186 @@ export const MiniMap = memo(function MiniMap({
     [minimapYearsVisible, panMinimap, zoomMinimapAtPercent]
   );
 
+  // Handle context bar drag (pans both minimap range AND main viewport)
+  const handleContextBarDrag = useCallback(
+    (e: MouseEvent<HTMLDivElement>) => {
+      e.stopPropagation();
+      e.preventDefault();
+
+      const contextBar = contextBarRef.current;
+      if (!contextBar) return;
+
+      const startX = e.clientX;
+      const rect = contextBar.getBoundingClientRect();
+      const totalYears = maxYear - minYear;
+
+      // Create a simple snapshot for context bar dragging
+      const startContextLeftPercent = totalYears > 0 ? ((minimapRangeStart - minYear) / totalYears) * 100 : 0;
+      const startContextWidthPercent = totalYears > 0 ? (minimapYearsVisible / totalYears) * 100 : 100;
+
+      // We need a snapshot for the drag state interface, use track ref if available
+      const trackRect = trackRef.current?.getBoundingClientRect();
+      const snapshot = getCoordinateSnapshot(trackRect?.width ?? rect.width);
+
+      setDragState({
+        type: 'pan-context',
+        startX,
+        startOffset: viewportOffset,
+        snapshot,
+        previewLeftPercent: startContextLeftPercent,
+        previewWidthPercent: startContextWidthPercent,
+        ghostLeftPercent: startContextLeftPercent,
+        ghostWidthPercent: startContextWidthPercent,
+      });
+      setIsDraggingMinimap(true);
+
+      const handleMove = (moveEvent: globalThis.MouseEvent) => {
+        const deltaX = moveEvent.clientX - startX;
+        const deltaPercent = (deltaX / rect.width) * 100;
+
+        // Convert context bar delta to years
+        const deltaYears = (deltaPercent / 100) * totalYears;
+
+        // Pan the minimap range
+        const newRangeStart = Math.max(minYear, Math.min(maxYear - minimapYearsVisible, minimapRangeStart + deltaYears));
+
+        // Update preview position
+        const newContextLeftPercent = totalYears > 0 ? ((newRangeStart - minYear) / totalYears) * 100 : 0;
+
+        setDragState((prev) =>
+          prev
+            ? {
+                ...prev,
+                previewLeftPercent: newContextLeftPercent,
+              }
+            : null
+        );
+      };
+
+      const handleUp = (upEvent: globalThis.MouseEvent) => {
+        document.removeEventListener('mousemove', handleMove);
+        document.removeEventListener('mouseup', handleUp);
+        document.body.style.cursor = '';
+        document.body.style.userSelect = '';
+
+        // Calculate final position and commit
+        setDragState((currentState) => {
+          if (currentState) {
+            const deltaX = upEvent.clientX - startX;
+            const deltaPercent = (deltaX / rect.width) * 100;
+            const deltaYears = (deltaPercent / 100) * totalYears;
+
+            // Pan the minimap
+            panMinimap(deltaYears);
+
+            // Also move the main viewport to center on the new minimap position
+            const newMinimapCenter = minimapRangeStart + deltaYears + minimapYearsVisible / 2;
+            const newViewportOffset = yearToViewportOffset(
+              newMinimapCenter,
+              viewportWidth,
+              pixelsPerYear,
+              minYear,
+              totalWidth
+            );
+            setTimeout(() => {
+              onViewportChange(newViewportOffset);
+            }, 0);
+          }
+          return null;
+        });
+
+        setIsDraggingMinimap(false);
+      };
+
+      document.body.style.cursor = 'grabbing';
+      document.body.style.userSelect = 'none';
+      document.addEventListener('mousemove', handleMove);
+      document.addEventListener('mouseup', handleUp);
+    },
+    [
+      minYear,
+      maxYear,
+      minimapRangeStart,
+      minimapYearsVisible,
+      viewportOffset,
+      viewportWidth,
+      pixelsPerYear,
+      totalWidth,
+      panMinimap,
+      onViewportChange,
+      setIsDraggingMinimap,
+      getCoordinateSnapshot,
+    ]
+  );
+
+  // Calculate event density dots for context bar
+  const contextDensityDots = useMemo(
+    () => getEventDensityDots(items, pixelsPerYear, minYear, maxYear),
+    [items, pixelsPerYear, minYear, maxYear]
+  );
+
   // Determine display state
   const isDragging = dragState !== null;
   const isResizing = dragState?.type === 'resize-left' || dragState?.type === 'resize-right';
+  const isMoving = dragState?.type === 'move';
 
   // Calculate display values for viewport indicator
+  // During drag: use frozen snapshot positions for both ghost and preview
+  // Not dragging: use live calculated position
   let displayLeftPercent = indicatorLeftPercent;
   let displayWidthPercent = indicatorWidthPercent;
+  let ghostLeftPercent = indicatorLeftPercent;
+  let ghostWidthPercent = indicatorWidthPercent;
 
-  if (dragState && (dragState.type === 'resize-left' || dragState.type === 'resize-right')) {
-    displayLeftPercent = dragState.previewLeftPercent ?? indicatorLeftPercent;
-    displayWidthPercent = dragState.previewWidthPercent ?? indicatorWidthPercent;
+  if (dragState) {
+    // Preview shows current drag position (from frozen coordinates)
+    displayLeftPercent = dragState.previewLeftPercent;
+    displayWidthPercent = dragState.previewWidthPercent;
+    // Ghost shows original position (from frozen coordinates)
+    ghostLeftPercent = dragState.ghostLeftPercent;
+    ghostWidthPercent = dragState.ghostWidthPercent;
   }
 
   // Calculate context bar position (shows where minimap view is in total timeline)
   const totalYears = maxYear - minYear;
-  const contextLeftPercent = totalYears > 0 ? ((minimapRangeStart - minYear) / totalYears) * 100 : 0;
+  const isContextDragging = dragState?.type === 'pan-context';
+
+  // Use preview position during context bar drag, otherwise use live calculation
+  const contextLeftPercent = isContextDragging
+    ? dragState.previewLeftPercent
+    : totalYears > 0
+      ? ((minimapRangeStart - minYear) / totalYears) * 100
+      : 0;
   const contextWidthPercent = totalYears > 0 ? (minimapYearsVisible / totalYears) * 100 : 100;
 
   return (
     <div className={styles.container}>
       {/* Context bar - shows minimap position in total timeline */}
       {!isAtFullRange && (
-        <div className={styles.contextBar}>
+        <div ref={contextBarRef} className={styles.contextBar}>
+          {/* Track line */}
+          <div className={styles.contextTrack} />
+
+          {/* Event density dots */}
+          {contextDensityDots.map((dot, i) => (
+            <div
+              key={i}
+              className={styles.contextDot}
+              style={{
+                left: `${dot.percent}%`,
+                opacity: 0.3 + dot.density * 0.7,
+              }}
+            />
+          ))}
+
+          {/* Draggable indicator */}
           <div
-            className={styles.contextIndicator}
+            className={`${styles.contextIndicator} ${isContextDragging ? styles.dragging : ''}`}
             style={{
               left: `${contextLeftPercent}%`,
               width: `${Math.max(2, contextWidthPercent)}%`,
             }}
+            onMouseDown={handleContextBarDrag}
           />
         </div>
       )}
@@ -438,13 +652,13 @@ export const MiniMap = memo(function MiniMap({
         {/* Axis line */}
         <div className={styles.axisLine} />
 
-        {/* Ghost viewport during drag - shows original position */}
-        {isDragging && !isResizing && (
+        {/* Ghost viewport during drag/resize - shows original position */}
+        {isDragging && (
           <div
             className={`${styles.viewport} ${styles.ghost}`}
             style={{
-              left: `${indicatorLeftPercent}%`,
-              width: `${indicatorWidthPercent}%`,
+              left: `${ghostLeftPercent}%`,
+              width: `${ghostWidthPercent}%`,
             }}
           />
         )}

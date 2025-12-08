@@ -1,981 +1,1284 @@
 {
-    "meta": {
-        "title": "Two Wheels of Freedom: A History of the Bicycle",
-        "version": "1.1.0",
-        "generated_date": "2025-12-07",
-        "overview": "The bicycle is one of humanity's most elegant inventions—a simple machine that transformed transportation, liberated women, enabled sport, and now promises to reshape cities in the face of climate change.\n\nFrom **aristocratic toy to mass transit**, from **high-wheel death trap to e-bike commuter**, the bicycle's 200-year journey reflects changing attitudes about technology, fitness, urban design, and personal freedom.\n\nThis timeline traces that journey through six eras: the precursor machines of the early 1800s, the daring penny-farthing riders, the revolutionary safety bicycle that changed society, the automobile age that nearly killed cycling, the BMX and mountain bike revival, and the urban renaissance transforming 21st-century cities.",
-        "attribution": "Historical research compiled from cycling history archives, transportation studies, and cultural analysis."
+  "meta": {
+    "title": "Two Wheels of Freedom: A History of the Bicycle",
+    "version": "1.1.0",
+    "generated_date": "2025-12-07",
+    "overview": "The bicycle is one of humanity's most elegant inventions—a simple machine that transformed transportation, liberated women, enabled sport, and now promises to reshape cities in the face of climate change.\n\nFrom **aristocratic toy to mass transit**, from **high-wheel death trap to e-bike commuter**, the bicycle's 200-year journey reflects changing attitudes about technology, fitness, urban design, and personal freedom.\n\nThis timeline traces that journey through six eras: the precursor machines of the early 1800s, the daring penny-farthing riders, the revolutionary safety bicycle that changed society, the automobile age that nearly killed cycling, the BMX and mountain bike revival, and the urban renaissance transforming 21st-century cities.",
+    "attribution": "Historical research compiled from cycling history archives, transportation studies, and cultural analysis.",
+    "defaultView": "horizontal"
+  },
+  "groups": [
+    {
+      "id": "grp_precursors",
+      "title": "Part I: Precursors & Early Machines",
+      "date_range": "1817 – 1869",
+      "description": "The bicycle began as a walking aid, evolved into a foot-propelled hobbyhorse, gained pedals, and became the velocipede craze. Early machines were uncomfortable, inefficient, and fascinating novelties that captured public imagination."
     },
-    "groups": [
+    {
+      "id": "grp_penny",
+      "title": "Part II: The Penny-Farthing Era",
+      "date_range": "1870 – 1884",
+      "description": "The high-wheel ordinary (penny-farthing) represented the first true bicycles—but their danger and expense limited adoption to athletic young men. Cycling clubs formed, racing emerged, and the bicycle became a symbol of daring modernity."
+    },
+    {
+      "id": "grp_safety",
+      "title": "Part III: The Safety Bicycle Revolution",
+      "date_range": "1885 – 1910",
+      "description": "The chain-driven safety bicycle with pneumatic tires made cycling accessible to everyone—including women, whose embrace of cycling challenged social norms and accelerated dress reform. The 1890s bicycle boom transformed society."
+    },
+    {
+      "id": "grp_automobile",
+      "title": "Part IV: The Automobile Age",
+      "date_range": "1910 – 1969",
+      "description": "As automobiles conquered roads, bicycles declined in Western countries—relegated to children's toys and racing. European road racing traditions endured, while America built a car-centric landscape that marginalized cyclists."
+    },
+    {
+      "id": "grp_bmx_mtb",
+      "title": "Part V: BMX & Mountain Bike Era",
+      "date_range": "1970 – 1999",
+      "description": "American innovation revitalized cycling through BMX racing and mountain biking. Off-road bicycles opened new terrain and attracted new demographics. Component technology advanced rapidly, and cycling began its cultural comeback."
+    },
+    {
+      "id": "grp_urban",
+      "title": "Part VI: Urban Renaissance",
+      "date_range": "2000 – 2025",
+      "description": "Climate change, urban congestion, and health consciousness drove a global cycling renaissance. Protected bike lanes transformed cities, bike-share systems democratized access, and e-bikes removed barriers of hills and fitness, making cycling practical for millions."
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_draisine",
+      "title": "Drais and the Running Machine",
+      "date_display": "June 12, 1817",
+      "date_start": "1817-06-12",
+      "group_ids": [
+        "grp_precursors"
+      ],
+      "type": "Invention",
+      "innovator": "Karl von Drais",
+      "innovation": "First Two-Wheeled Personal Vehicle",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Draisine_or_Laufmaschine%2C_around_1820._Archetype_of_the_Bicycle._Pic_01.jpg/800px-Draisine_or_Laufmaschine%2C_around_1820._Archetype_of_the_Bicycle._Pic_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Draisine1817.jpg/800px-Draisine1817.jpg"
+      ],
+      "description": "Baron Karl von Drais demonstrated his 'Laufmaschine' (running machine) by riding from Mannheim to the Schwetzingen coaching station and back—a 14-kilometer round trip completed in under an hour, a journey that took horse-drawn coaches four hours.\n\nThe Laufmaschine emerged from crisis. The 1815 eruption of Mount Tambora triggered the 'Year Without a Summer' in 1816, causing widespread crop failures and horse starvation across Europe. As a civic-minded forest official and inventor, Drais sought a mechanical substitute for the horse.\n\nHis invention weighed about 50 pounds and was built entirely of wood. It featured two in-line spoked wheels, handlebar steering connected to a pivoting front wheel, and a padded leather seat. Riders pushed their feet against the ground, coasting between strides at speeds of 8-10 mph. This incorporated the fundamental two-wheeler balancing principle that would become basic to all bicycles and motorcycles.\n\nDrais patented the design in France in 1818 as a 'vélocipède,' and the invention quickly became a European novelty, known in England as the 'hobby horse' or 'dandy horse.'",
+      "metrics": {
+        "speed": "~15 km/h (9 mph)",
+        "weight": "~50 lbs",
+        "propulsion": "Foot-push (no pedals)"
+      },
+      "links": [
         {
-            "id": "grp_precursors",
-            "title": "Part I: Precursors & Early Machines",
-            "date_range": "1817 – 1869",
-            "description": "The bicycle began as a walking aid, evolved into a foot-propelled hobbyhorse, gained pedals, and became the velocipede craze. Early machines were uncomfortable, inefficient, and fascinating novelties that captured public imagination."
+          "title": "Karl Drais - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Karl_Drais"
         },
         {
-            "id": "grp_penny",
-            "title": "Part II: The Penny-Farthing Era",
-            "date_range": "1870 – 1884",
-            "description": "The high-wheel ordinary (penny-farthing) represented the first true bicycles—but their danger and expense limited adoption to athletic young men. Cycling clubs formed, racing emerged, and the bicycle became a symbol of daring modernity."
+          "title": "Dandy Horse - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dandy_horse"
         },
         {
-            "id": "grp_safety",
-            "title": "Part III: The Safety Bicycle Revolution",
-            "date_range": "1885 – 1910",
-            "description": "The chain-driven safety bicycle with pneumatic tires made cycling accessible to everyone—including women, whose embrace of cycling challenged social norms and accelerated dress reform. The 1890s bicycle boom transformed society."
-        },
-        {
-            "id": "grp_automobile",
-            "title": "Part IV: The Automobile Age",
-            "date_range": "1910 – 1969",
-            "description": "As automobiles conquered roads, bicycles declined in Western countries—relegated to children's toys and racing. European road racing traditions endured, while America built a car-centric landscape that marginalized cyclists."
-        },
-        {
-            "id": "grp_bmx_mtb",
-            "title": "Part V: BMX & Mountain Bike Era",
-            "date_range": "1970 – 1999",
-            "description": "American innovation revitalized cycling through BMX racing and mountain biking. Off-road bicycles opened new terrain and attracted new demographics. Component technology advanced rapidly, and cycling began its cultural comeback."
-        },
-        {
-            "id": "grp_urban",
-            "title": "Part VI: Urban Renaissance",
-            "date_range": "2000 – 2025",
-            "description": "Climate change, urban congestion, and health consciousness drove a global cycling renaissance. Protected bike lanes transformed cities, bike-share systems democratized access, and e-bikes removed barriers of hills and fitness, making cycling practical for millions."
+          "title": "Draisine at Smithsonian",
+          "url": "https://www.si.edu/newsdesk/snapshot/draisine"
         }
-    ],
-    "events": [
+      ]
+    },
+    {
+      "id": "evt_hobby_horse",
+      "title": "The London Hobby Horse Craze",
+      "date_display": "1819",
+      "date_start": "1819-01-01",
+      "group_ids": [
+        "grp_precursors"
+      ],
+      "type": "Commercial Launch",
+      "innovator": "Denis Johnson",
+      "innovation": "First Bicycle Marketing",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/06/1924-71_Ladies_Hobby_Horse.jpg"
+      ],
+      "description": "London coachmaker Denis Johnson patented an improved version of the draisine, marketing it as the 'pedestrian curricle' or 'hobby horse.' Priced at 8 guineas (equivalent to several months' wages for a laborer), these machines became fashionable accessories for wealthy young men who raced them through London parks and promenades.\n\nJohnson's design featured a more elegant serpentine frame and a padded saddle. He opened riding schools where customers could learn to balance and steer. The craze peaked in early 1819 with hobby horses appearing in satirical cartoons and becoming a symbol of dandyish excess.\n\nThe fashion collapsed within months. The machines proved impractical on unpaved roads, and riders frequently tumbled. After numerous pedestrian complaints and injuries, authorities banned hobby horses from sidewalks. The two-wheeled concept went dormant for nearly fifty years until French inventors would revive it with a crucial addition: pedals.",
+      "metrics": {
+        "price": "8 guineas (~£840 today)",
+        "craze_duration": "~1 year"
+      },
+      "links": [
         {
-            "id": "evt_draisine",
-            "title": "Drais and the Running Machine",
-            "date_display": "June 12, 1817",
-            "date_start": "1817-06-12",
-            "group_ids": ["grp_precursors"],
-            "type": "Invention",
-            "innovator": "Karl von Drais",
-            "innovation": "First Two-Wheeled Personal Vehicle",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Draisine_or_Laufmaschine%2C_around_1820._Archetype_of_the_Bicycle._Pic_01.jpg/800px-Draisine_or_Laufmaschine%2C_around_1820._Archetype_of_the_Bicycle._Pic_01.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Draisine1817.jpg/800px-Draisine1817.jpg"
-            ],
-            "description": "Baron Karl von Drais demonstrated his 'Laufmaschine' (running machine) by riding from Mannheim to the Schwetzingen coaching station and back—a 14-kilometer round trip completed in under an hour, a journey that took horse-drawn coaches four hours.\n\nThe Laufmaschine emerged from crisis. The 1815 eruption of Mount Tambora triggered the 'Year Without a Summer' in 1816, causing widespread crop failures and horse starvation across Europe. As a civic-minded forest official and inventor, Drais sought a mechanical substitute for the horse.\n\nHis invention weighed about 50 pounds and was built entirely of wood. It featured two in-line spoked wheels, handlebar steering connected to a pivoting front wheel, and a padded leather seat. Riders pushed their feet against the ground, coasting between strides at speeds of 8-10 mph. This incorporated the fundamental two-wheeler balancing principle that would become basic to all bicycles and motorcycles.\n\nDrais patented the design in France in 1818 as a 'vélocipède,' and the invention quickly became a European novelty, known in England as the 'hobby horse' or 'dandy horse.'",
-            "metrics": {
-                "speed": "~15 km/h (9 mph)",
-                "weight": "~50 lbs",
-                "propulsion": "Foot-push (no pedals)"
-            },
-            "links": [
-                {"title": "Karl Drais - Wikipedia", "url": "https://en.wikipedia.org/wiki/Karl_Drais"},
-                {"title": "Dandy Horse - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dandy_horse"},
-                {"title": "Draisine at Smithsonian", "url": "https://www.si.edu/newsdesk/snapshot/draisine"}
-            ]
-        },
-        {
-            "id": "evt_hobby_horse",
-            "title": "The London Hobby Horse Craze",
-            "date_display": "1819",
-            "date_start": "1819-01-01",
-            "group_ids": ["grp_precursors"],
-            "type": "Commercial Launch",
-            "innovator": "Denis Johnson",
-            "innovation": "First Bicycle Marketing",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/0/06/1924-71_Ladies_Hobby_Horse.jpg"
-            ],
-            "description": "London coachmaker Denis Johnson patented an improved version of the draisine, marketing it as the 'pedestrian curricle' or 'hobby horse.' Priced at 8 guineas (equivalent to several months' wages for a laborer), these machines became fashionable accessories for wealthy young men who raced them through London parks and promenades.\n\nJohnson's design featured a more elegant serpentine frame and a padded saddle. He opened riding schools where customers could learn to balance and steer. The craze peaked in early 1819 with hobby horses appearing in satirical cartoons and becoming a symbol of dandyish excess.\n\nThe fashion collapsed within months. The machines proved impractical on unpaved roads, and riders frequently tumbled. After numerous pedestrian complaints and injuries, authorities banned hobby horses from sidewalks. The two-wheeled concept went dormant for nearly fifty years until French inventors would revive it with a crucial addition: pedals.",
-            "metrics": {
-                "price": "8 guineas (~£840 today)",
-                "craze_duration": "~1 year"
-            },
-            "links": [
-                {"title": "Dandy Horse - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dandy_horse"}
-            ]
-        },
-        {
-            "id": "evt_macmillan",
-            "title": "The Blacksmith's Pedal Machine",
-            "date_display": "1839",
-            "date_start": "1839-01-01",
-            "group_ids": ["grp_precursors"],
-            "type": "Innovation",
-            "innovator": "Kirkpatrick Macmillan",
-            "innovation": "Pedal-Driven Propulsion (Disputed)",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Macmillan_1839.jpg/800px-Macmillan_1839.jpg"
-            ],
-            "description": "Scottish blacksmith Kirkpatrick Macmillan of Dumfriesshire reportedly built the first pedal-driven bicycle, with rear-wheel drive via horizontal treadles connected by rods. According to claims made decades later by his relatives, Macmillan was riding his machine as early as 1839.\n\nThe evidence rests on a tantalizing 1842 newspaper report of 'a gentleman from Dumfries-shire bestride a velocipede of ingenious design' who was fined five shillings in Glasgow for knocking down a child in the Gorbals. If this was Macmillan, he had ridden some 70 miles to get there.\n\nMacmillan never patented his design, never marketed it, and left no drawings or documentation. A replica based on later descriptions sits in the Glasgow Transport Museum. Whether he truly invented pedal propulsion or whether the claims were Victorian mythmaking, the design never spread beyond Dumfriesshire. The pedal bicycle would need to be 'reinvented' in France twenty years later.",
-            "metrics": {
-                "mechanism": "Rear-wheel drive via rods",
-                "status": "Disputed priority",
-                "distance": "70 miles to Glasgow (if 1842 report)"
-            },
-            "links": [
-                {"title": "Kirkpatrick Macmillan - Wikipedia", "url": "https://en.wikipedia.org/wiki/Kirkpatrick_Macmillan"},
-                {"title": "Scotland.org - Macmillan", "url": "https://www.scotland.org.uk/scottish-inventors/kirkpatrick-macmillan"}
-            ]
-        },
-        {
-            "id": "evt_velocipede",
-            "title": "Lallement's Pedal Velocipede",
-            "date_display": "1863",
-            "date_start": "1863-01-01",
-            "group_ids": ["grp_precursors"],
-            "type": "Patent",
-            "innovator": "Pierre Lallement",
-            "innovation": "Pedal Cranks on Front Wheel",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/7/78/Pierre_Lallemant_1870.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Velocipede_Michaux-1.jpg/800px-Velocipede_Michaux-1.jpg"
-            ],
-            "description": "French carriage-maker Pierre Lallement attached rotary pedal cranks directly to the front wheel hub, creating the first commercially viable pedal-driven bicycle. He demonstrated his vélocipède in Paris around 1863, then emigrated to America where he obtained the first US bicycle patent in November 1866.\n\nThe priority of the pedal invention is disputed. Lallement worked briefly for the Michaux company, and both Pierre Michaux and his son Ernest also claimed credit. What is clear is that by 1867, the Michaux workshop in Paris was producing pedal velocipedes and the bicycle era had truly begun.\n\nThe direct-drive design was simple but fundamentally limited. Pedaling while steering was awkward, especially at low speeds. And since one turn of the pedals meant one turn of the wheel, speed was limited by how fast you could spin your legs. These limitations would drive the next innovation: the high-wheel 'ordinary.'",
-            "metrics": {
-                "patent": "US Patent 59,915 (November 1866)",
-                "mechanism": "Direct-drive front wheel"
-            },
-            "links": [
-                {"title": "Pierre Lallement - Wikipedia", "url": "https://en.wikipedia.org/wiki/Pierre_Lallement"},
-                {"title": "Velocipede - Wikipedia", "url": "https://en.wikipedia.org/wiki/Velocipede"}
-            ]
-        },
-        {
-            "id": "evt_velocipede_craze",
-            "title": "Velocipede Mania Sweeps Paris",
-            "date_display": "1867",
-            "date_start": "1867-01-01",
-            "group_ids": ["grp_precursors"],
-            "type": "Cultural Phenomenon",
-            "innovator": "Michaux Company",
-            "innovation": "First Bicycle Craze",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Velocipedes.png/800px-Velocipedes.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/The_American_Velocipede.jpg/800px-The_American_Velocipede.jpg"
-            ],
-            "description": "The Michaux company began mass-producing velocipedes in Paris, and the machines became the latest fashionable sensation. Indoor riding academies—called 'vélodromes'—opened across the city where customers could learn to ride without traffic hazards or cobblestone bruises. The machines were displayed at the 1867 Paris World's Fair, spreading the craze internationally.\n\nRaces and exhibitions drew crowds. Newspapers reported on velocipede exploits. Songs were written about them. The machines cost 150-200 francs—several months' wages for a worker—making them toys of the wealthy, but the democratization of speed had begun.\n\nThe Franco-Prussian War (1870-71) devastated the French bicycle industry, but by then the craze had crossed the Channel to England and the Atlantic to America, where it ignited similar manias. The bicycle industry would never again go dormant.",
-            "metrics": {
-                "price": "150-200 francs",
-                "nickname": "'Boneshaker' (due to vibration)"
-            },
-            "links": [
-                {"title": "Velocipede - Wikipedia", "url": "https://en.wikipedia.org/wiki/Velocipede"},
-                {"title": "Michaux Company - Wikipedia", "url": "https://en.wikipedia.org/wiki/Michaux_company"}
-            ]
-        },
-        {
-            "id": "evt_boneshaker",
-            "title": "Peak of the Boneshakers",
-            "date_display": "1869",
-            "date_start": "1869-01-01",
-            "group_ids": ["grp_precursors"],
-            "type": "Peak",
-            "innovation": "Mass Velocipede Production",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Boneshaker%2C_European%2C_circa_1868.JPG/800px-Boneshaker%2C_European%2C_circa_1868.JPG"
-            ],
-            "description": "The velocipede craze peaked in 1869, with riding schools operating in major cities across Europe and America. In New York, rinks opened where fashionable riders circled to music. In Boston, velocipede races packed indoor arenas. The machines earned their 'boneshaker' nickname from the brutal vibrations transmitted through iron-tired wooden wheels on cobblestone streets—a ride that could leave you sore for days.\n\nAs with the hobby horse fifty years earlier, the craze faded when the impracticality became undeniable. The machines were expensive, exhausting to ride, and punishing on rough roads. But unlike the earlier fashion, the velocipede craze left behind something crucial: an established bicycle manufacturing industry with capital, expertise, and a hunger for the next innovation.\n\nBritish manufacturers, inheriting the French industry's momentum, would soon answer with the high-wheel 'ordinary'—a machine that sacrificed safety for speed.",
-            "metrics": {
-                "wheel_material": "Iron-tired wooden wheels",
-                "weight": "~60 lbs"
-            },
-            "links": [
-                {"title": "Velocipede - Wikipedia", "url": "https://en.wikipedia.org/wiki/Velocipede"}
-            ]
-        },
-        {
-            "id": "evt_penny_farthing",
-            "title": "Rise of the High Wheeler",
-            "date_display": "1870",
-            "date_start": "1870-01-01",
-            "group_ids": ["grp_penny"],
-            "type": "Design Evolution",
-            "innovator": "James Starley, others",
-            "innovation": "High-Wheel 'Ordinary'",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/a/a7/Ordinary_bicycle01.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/4/4b/A_man_with_a_Penny-farthing_bicycle_-_Ladybank%2C_Scotland_c.1880.jpg"
-            ],
-            "description": "British manufacturers developed the 'ordinary' or 'high-wheel' bicycle with a massive front wheel—up to 60 inches in diameter—and a tiny trailing rear wheel. The logic was simple: since pedals attached directly to the front wheel, a larger wheel meant more ground covered per revolution and thus higher speeds.\n\nThe design required athletic young men to mount by running alongside and vaulting into the saddle, perched high above the front axle. Riders faced a constant danger: hitting any obstacle could pitch them headfirst over the handlebars in a 'header' or 'cropper.' Deaths were not uncommon.\n\nDespite the danger, the ordinary represented a massive leap in speed and efficiency over the boneshaker. Racing became popular, and cycling clubs proliferated. The nickname 'penny-farthing' came later, comparing the wheel sizes to British coins—a large penny and small farthing.",
-            "metrics": {
-                "front_wheel": "Up to 60 inches (152 cm)",
-                "speed": "Up to 20+ mph",
-                "danger": "Headers, high falls"
-            },
-            "links": [
-                {"title": "Penny-farthing - Wikipedia", "url": "https://en.wikipedia.org/wiki/Penny-farthing"}
-            ]
-        },
-        {
-            "id": "evt_metal_spokes",
-            "title": "Starley's Tension-Spoke Wheel",
-            "date_display": "1870",
-            "date_start": "1870-01-01",
-            "group_ids": ["grp_penny"],
-            "type": "Innovation",
-            "innovator": "James Starley",
-            "innovation": "Tangent-Spoke Wheel",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/f/f2/James_Starley_%281830-1871%29.jpg"
-            ],
-            "description": "James Starley, the 'father of the bicycle industry,' patented the tangent-spoke wheel design where thin wire spokes connected the hub to the rim under tension rather than compression. The spokes were arranged tangentially to the hub, allowing them to transmit pedaling torque without bending.\n\nThis elegant engineering made possible the enormous front wheels of the penny-farthing. A 60-inch wooden-spoked wheel would have been impossibly heavy, but tension spokes made it light enough to ride. Starley's Coventry factory became the center of the British bicycle industry.\n\nModern bicycle wheels still use variations of Starley's fundamental concept, refined but essentially unchanged. His nephew, John Kemp Starley, would later design the safety bicycle that obsoleted the high-wheeler—but using James Starley's wheel technology.",
-            "metrics": {
-                "innovation": "Tension-spoke wheel design",
-                "weight_savings": "Enabled 60-inch wheels"
-            },
-            "links": [
-                {"title": "James Starley - Wikipedia", "url": "https://en.wikipedia.org/wiki/James_Starley"},
-                {"title": "Wire-spoked wheel - Wikipedia", "url": "https://en.wikipedia.org/wiki/Wire-spoked_wheel"}
-            ]
-        },
-        {
-            "id": "evt_boston_club",
-            "title": "America's First Bicycle Club",
-            "date_display": "February 11, 1878",
-            "date_start": "1878-02-11",
-            "group_ids": ["grp_penny"],
-            "type": "Organization",
-            "innovation": "First American Cycling Club",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/15-mile_Penny_Farthing_Race%2C_Harvard_University_Cycling_Association_in_1887.png/800px-15-mile_Penny_Farthing_Race%2C_Harvard_University_Cycling_Association_in_1887.png"
-            ],
-            "description": "The Boston Bicycle Club became the first cycling club in America, founded by a group of high-wheel enthusiasts who organized rides, races, and advocacy for cyclists' rights. Membership required both athletic ability—mounting a penny-farthing was no simple feat—and wealth, as the machines cost $100-150 (several months' wages for a worker).\n\nCycling clubs created social communities around the new technology, organizing group rides through countryside and city. Members wore distinctive uniforms and carried club flags. The clubs also advocated for road improvements and cyclists' legal right to use public roads—battles that would continue for decades.\n\nThe club movement spread rapidly. Within two years, there were enough clubs to form a national organization: the League of American Wheelmen.",
-            "metrics": {
-                "significance": "First US cycling club",
-                "bicycle_cost": "$100-150"
-            },
-            "links": [
-                {"title": "League of American Bicyclists - Wikipedia", "url": "https://en.wikipedia.org/wiki/League_of_American_Bicyclists"}
-            ]
-        },
-        {
-            "id": "evt_law",
-            "title": "The League of American Wheelmen",
-            "date_display": "May 31, 1880",
-            "date_start": "1880-05-31",
-            "group_ids": ["grp_penny"],
-            "type": "Organization",
-            "innovation": "National Cycling Advocacy",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/c/c5/League_of_American_Bicyclists_memorial_in_Newport%2C_Rhode_Island.jpg"
-            ],
-            "description": "The League of American Wheelmen (LAW) was founded in Newport, Rhode Island, uniting local cycling clubs into the first national cycling organization in America. At its founding meeting, 31 clubs from 8 states sent representatives to establish a unified voice for cyclists' interests.\n\nThe LAW became a powerful advocacy force. It fought for cyclists' legal right to use public roads—contested by horse-carriage drivers—and launched the 'Good Roads Movement' that successfully pushed for paved roads and street improvements across America. The organization published maps, organized national tours, and lobbied for cycling-friendly legislation.\n\nMembership peaked at over 100,000 in the 1890s during the bicycle boom. Ironically, the improved roads that cyclists fought for would soon be filled with automobiles. The organization still exists today as the League of American Bicyclists.",
-            "metrics": {
-                "founding_clubs": "31 from 8 states",
-                "peak_membership": "Over 100,000 (1890s)"
-            },
-            "links": [
-                {"title": "League of American Bicyclists - Wikipedia", "url": "https://en.wikipedia.org/wiki/League_of_American_Bicyclists"},
-                {"title": "Good Roads Movement - Wikipedia", "url": "https://en.wikipedia.org/wiki/Good_Roads_Movement"}
-            ]
-        },
-        {
-            "id": "evt_stevens_tour",
-            "title": "Around the World on a Penny-Farthing",
-            "date_display": "April 22, 1884 – December 24, 1886",
-            "date_start": "1884-04-22",
-            "date_end": "1886-12-24",
-            "group_ids": ["grp_penny"],
-            "type": "Adventure",
-            "innovator": "Thomas Stevens",
-            "innovation": "First Round-the-World Bicycle Trip",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Thomas_Stevens.jpg/800px-Thomas_Stevens.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/a/a4/Thomas_Stevens_bicycle.jpg"
-            ],
-            "description": "Thomas Stevens left San Francisco on April 22, 1884, aboard a black-enameled Columbia 50-inch penny-farthing, carrying only socks, a spare shirt, a raincoat that doubled as tent and bedroll, and a pocket revolver. He would become the first person to circle the globe by bicycle.\n\nStevens crossed America first, reaching Boston on August 4, 1884—the first transcontinental bicycle crossing, 3,700 miles in 103 days. He spent the winter writing for *Outing* magazine, then shipped to Liverpool to continue eastward. He rode through England, France, Germany, Austria-Hungary, and the Balkans. In Persia and Afghanistan he was turned back by authorities and had to sail to India.\n\nHe pedaled the Grand Trunk Road across India, navigated hostile crowds in China during a war with France, and ended his bicycle journey in Yokohama, Japan on December 17, 1886. Total cycling distance: approximately 13,500 miles. His book *Around the World on a Bicycle* became a bestseller.",
-            "metrics": {
-                "duration": "2 years, 8 months",
-                "cycling_distance": "~13,500 miles",
-                "bicycle": "Columbia 50-inch Standard"
-            },
-            "links": [
-                {"title": "Thomas Stevens - Wikipedia", "url": "https://en.wikipedia.org/wiki/Thomas_Stevens_(cyclist)"},
-                {"title": "Around the World on a Bicycle (Project Gutenberg)", "url": "https://www.gutenberg.org/ebooks/author/45284"}
-            ]
-        },
-        {
-            "id": "evt_rover_safety",
-            "title": "The Rover Safety Bicycle",
-            "date_display": "1885",
-            "date_start": "1885-01-01",
-            "group_ids": ["grp_safety"],
-            "type": "Product Launch",
-            "innovator": "John Kemp Starley",
-            "innovation": "Chain-Driven Safety Bicycle",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rover_safety_bicycle_of_1885_%28right%29.jpg/800px-Rover_safety_bicycle_of_1885_%28right%29.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/1/14/Safety_bicycle_1887.jpg"
-            ],
-            "description": "John Kemp Starley designed the Rover Safety Bicycle, establishing the basic form that all modern bicycles still follow: two equal-sized wheels, chain drive to the rear wheel, and a diamond-shaped frame. Riders sat low between the wheels, eliminating the deadly header risk of the penny-farthing.\n\nThe chain drive was the key innovation. By using a large front sprocket and small rear sprocket, Starley maintained the mechanical advantage of a large wheel without the danger. A rider could pedal at a comfortable cadence while the rear wheel turned rapidly. Combined with his uncle James Starley's wire-spoke wheels, the design was light, fast, and—crucially—safe.\n\nTo prove the design, Starley staged a 100-mile race in September 1885. All 14 riders used Rovers, with the winner completing the distance in just over 7 hours. According to *The Cyclist* magazine, the Rover 'set the fashion to the world.' Within five years, the penny-farthing was obsolete. The Polish word for bicycle—'rower'—still honors Starley's brand.",
-            "metrics": {
-                "price": "£20 15s (1886)",
-                "innovation": "Chain drive, equal wheels, diamond frame"
-            },
-            "links": [
-                {"title": "Safety bicycle - Wikipedia", "url": "https://en.wikipedia.org/wiki/Safety_bicycle"},
-                {"title": "John Kemp Starley - Wikipedia", "url": "https://en.wikipedia.org/wiki/John_Kemp_Starley"}
-            ]
-        },
-        {
-            "id": "evt_dunlop_tire",
-            "title": "Dunlop's Pneumatic Tire",
-            "date_display": "December 7, 1888",
-            "date_start": "1888-12-07",
-            "group_ids": ["grp_safety"],
-            "type": "Patent",
-            "innovator": "John Boyd Dunlop",
-            "innovation": "Air-Filled Rubber Tire",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/John_Boyd_Dunlop.jpg/800px-John_Boyd_Dunlop.jpg",
-                "https://upload.wikimedia.org/wikipedia/commons/f/f8/Dunlop_first_pneumatic_bicycle_tyre.JPG"
-            ],
-            "description": "Scottish veterinarian John Boyd Dunlop, living in Belfast, reinvented the pneumatic tire to smooth his son's tricycle ride over rough cobblestones. He wrapped rubber sheets around an air-filled canvas tube, creating a cushion that absorbed road vibration. The technology had actually been invented by Robert Thomson in 1845, but was forgotten—Dunlop developed it independently.\n\nThe proof came on the track. Cyclist Willie Hume won a series of races on Dunlop's pneumatic tires in 1889, demonstrating that air-filled tires were not only more comfortable but significantly faster than solid rubber. The cushioning allowed wheels to roll over obstacles rather than bouncing off them.\n\nDunlop's patent was eventually invalidated when Thomson's prior invention surfaced, but by then the Dunlop Rubber Company was established and thriving. Pneumatic tires became essential to the bicycle boom of the 1890s and would later prove equally vital to the automobile industry.",
-            "metrics": {
-                "patent": "UK Patent 10607 (1888)",
-                "effect": "Improved comfort, speed, and efficiency"
-            },
-            "links": [
-                {"title": "John Boyd Dunlop - Wikipedia", "url": "https://en.wikipedia.org/wiki/John_Boyd_Dunlop"},
-                {"title": "Pneumatic tire - Wikipedia", "url": "https://en.wikipedia.org/wiki/Pneumatic_tire"}
-            ]
-        },
-        {
-            "id": "evt_bicycle_boom",
-            "title": "The Gay Nineties Bicycle Boom",
-            "date_display": "1890",
-            "date_start": "1890-01-01",
-            "group_ids": ["grp_safety"],
-            "type": "Cultural Shift",
-            "innovation": "Mass Transportation Revolution",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Overman_victor_flyer_bicycle.png/800px-Overman_victor_flyer_bicycle.png",
-                "https://upload.wikimedia.org/wikipedia/commons/1/14/Safety_bicycle_1887.jpg"
-            ],
-            "description": "The combination of Starley's safety bicycle and Dunlop's pneumatic tire created an unprecedented cycling boom that transformed Western society. By 1890, bicycle prices had fallen from luxury goods to middle-class affordability. Factories adopted interchangeable parts and assembly-line production to meet demand.\n\nThe social effects were profound. Workers could live miles from their jobs rather than walking distance. Young people could court beyond parental supervision—the bicycle enabled the first 'date culture.' Women found unprecedented mobility and freedom. Cycling clubs became social centers, and 'scorchers' (fast riders) terrorized pedestrians.\n\nThe manufacturing revolution was equally significant. Bicycle factories pioneered precision steel tubing, ball bearings, differential gears, and assembly-line production. When the automobile emerged, bicycle mechanics and manufacturers—including the Dodge brothers, the Fisher brothers, and of course the Wrights—brought these skills directly to the car industry.",
-            "metrics": {
-                "US_production": "1.2 million bicycles/year (1896)",
-                "impact": "First mass personal transportation"
-            },
-            "links": [
-                {"title": "Bicycle craze - Wikipedia", "url": "https://en.wikipedia.org/wiki/Bicycle_craze"}
-            ]
-        },
-        {
-            "id": "evt_women_cycling",
-            "title": "Bloomers and the New Woman",
-            "date_display": "1893",
-            "date_start": "1893-01-01",
-            "group_ids": ["grp_safety"],
-            "type": "Social Movement",
-            "innovation": "Bicycle-Driven Dress Reform",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bloomers.jpg"
-            ],
-            "description": "The bicycle posed a radical problem for Victorian women: how could one ride while wearing the period's mandatory long skirts, corsets, and petticoats? Skirts tangled in chains and wheels; corsets made breathing during exertion dangerous. The practical necessity of cycling drove a revolution in women's dress.\n\n'Rational dress' advocates promoted bloomers—loose-fitting trousers gathered at the ankle—and divided skirts that permitted cycling. Conservatives were scandalized. Clergy preached against the immorality of visible female legs. Mobs harassed women cyclists. But the practical benefits were undeniable, and fashion slowly bent to function.\n\nMore fundamentally, cycling empowered women by providing independent mobility for the first time in history. Women could travel without chaperones, visit friends, attend meetings, and participate in public life on their own terms. The bicycle became inextricably linked to the women's suffrage movement.",
-            "metrics": {
-                "innovation": "Bloomers and divided skirts",
-                "impact": "Physical and social liberation"
-            },
-            "links": [
-                {"title": "Bloomers (clothing) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Bloomers_(clothing)"},
-                {"title": "Rational dress - Wikipedia", "url": "https://en.wikipedia.org/wiki/Rational_dress"}
-            ]
-        },
-        {
-            "id": "evt_anthony_quote",
-            "title": "Anthony's 'Freedom Machine'",
-            "date_display": "February 2, 1896",
-            "date_start": "1896-02-02",
-            "group_ids": ["grp_safety"],
-            "type": "Cultural Statement",
-            "innovator": "Susan B. Anthony",
-            "innovation": "Feminist Symbol",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/SB_Anthony_from_RoRaWW.jpg/800px-SB_Anthony_from_RoRaWW.jpg"
-            ],
-            "description": "In an interview with journalist Nellie Bly, 76-year-old suffragist leader Susan B. Anthony declared: 'Let me tell you what I think of bicycling. I think it has done more to emancipate women than anything else in the world. It gives women a feeling of freedom and self-reliance.'\n\nAnthony's statement captured a profound truth about the bicycle's social impact. For the first time in history, women had access to independent personal transportation. They could go where they wanted, when they wanted, without requiring a horse, a carriage, a driver, or a male escort. The physical freedom of cycling translated directly into social and political freedom.\n\nThe quote became one of the most famous statements about women's liberation, linking the suffrage movement to the bicycle craze. Anthony herself had ridden (and crashed) a bicycle, and understood viscerally the independence it provided. She lived to see neither women's suffrage nor the automobile age, but she recognized the revolutionary potential of the machine.",
-            "metrics": {
-                "source": "Interview with Nellie Bly, 1896",
-                "quote": "'The freedom machine'"
-            },
-            "links": [
-                {"title": "Susan B. Anthony - Wikipedia", "url": "https://en.wikipedia.org/wiki/Susan_B._Anthony"}
-            ]
-        },
-        {
-            "id": "evt_olympic_cycling",
-            "title": "Cycling at the First Olympics",
-            "date_display": "April 8, 1896",
-            "date_start": "1896-04-08",
-            "group_ids": ["grp_safety"],
-            "type": "Sports Event",
-            "innovation": "Olympic Sport Status",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/7/7f/Podhlatodromio_karaiskakh_1896.jpg"
-            ],
-            "description": "Cycling featured prominently in the first modern Olympic Games in Athens, with six events: sprint, time trial, 10km, 100km, road race, and 12-hour race. The Neo Phaliron Velodrome hosted the track events, while the marathon course served as the road race route.\n\nFrench cyclist Paul Masson dominated the track events, winning three gold medals. The 87km road race was won by Greek rider Aristidis Konstantinidis, delighting the home crowd. The grueling 12-hour race (later discontinued) tested the limits of human endurance.\n\nOlympic recognition legitimized bicycle racing as a sport on par with athletics and swimming. Cycling has appeared at every Summer Olympics since, developing distinct traditions for track (in velodromes) and road disciplines.",
-            "metrics": {
-                "events": "6 cycling events",
-                "venue": "Neo Phaliron Velodrome"
-            },
-            "links": [
-                {"title": "Cycling at the 1896 Summer Olympics - Wikipedia", "url": "https://en.wikipedia.org/wiki/Cycling_at_the_1896_Summer_Olympics"}
-            ]
-        },
-        {
-            "id": "evt_peak_sales",
-            "title": "The Bicycle Bubble Peaks",
-            "date_display": "1898",
-            "date_start": "1898-01-01",
-            "group_ids": ["grp_safety"],
-            "type": "Market Peak",
-            "innovation": "Mass Market Achievement",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Overman_victor_flyer_bicycle.png/800px-Overman_victor_flyer_bicycle.png"
-            ],
-            "description": "American bicycle production peaked at over one million units annually, with more than 300 manufacturers competing for market share. The Pope Manufacturing Company alone produced 60,000 bicycles per year. Prices had fallen from $150 to under $50, making bicycles accessible to working-class Americans.\n\nThe industry's success contained the seeds of its decline. Market saturation meant everyone who wanted a bicycle had one. Overproduction led to price collapses. Speculative investments in bicycle companies—the tech stocks of their era—crashed, wiping out fortunes.\n\nThe emerging automobile industry accelerated the decline. Many bicycle manufacturers pivoted to cars: Pope built electric automobiles, the Dodge brothers made parts for Oldsmobile and then Ford, and countless bicycle mechanics turned their skills to the new machines. By 1900, the bicycle boom was over—but the manufacturing infrastructure it created would power the automobile age.",
-            "metrics": {
-                "production": "1+ million bicycles/year",
-                "manufacturers": "300+ US companies"
-            },
-            "links": [
-                {"title": "Bicycle craze - Wikipedia", "url": "https://en.wikipedia.org/wiki/Bicycle_craze"}
-            ]
-        },
-        {
-            "id": "evt_tour_de_france",
-            "title": "The First Tour de France",
-            "date_display": "July 1, 1903",
-            "date_start": "1903-07-01",
-            "group_ids": ["grp_automobile"],
-            "type": "Sports Event",
-            "innovator": "L'Auto newspaper / Henri Desgrange",
-            "innovation": "Grand Tour Format",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/f/f5/Garin03winner.jpg"
-            ],
-            "description": "The first Tour de France started at 3:16 p.m. on July 1, 1903, from the Café Reveil Matin outside Paris. Henri Desgrange, editor of the sports newspaper *L'Auto*, organized the race to boost circulation in his paper's rivalry with *Le Vélo*. The gamble would create one of the world's greatest sporting events.\n\nThe race covered 2,428 kilometers in six monstrous stages, with rest days between. Stages averaged over 400 km—riders pedaled through the night. Sixty riders started; twenty-one finished. Maurice Garin, a 32-year-old Italian-born chimney sweep nicknamed 'The Little Sweep,' won by nearly three hours—still the largest winning margin in Tour history.\n\nGarin earned 6,125 francs in prize money. More importantly, *L'Auto*'s circulation soared. The Tour became an annual institution, growing in prestige to become cycling's ultimate prize and an inseparable part of French national identity.",
-            "metrics": {
-                "distance": "2,428 km",
-                "stages": "6 (avg 400+ km each)",
-                "starters": "60",
-                "finishers": "21",
-                "winner": "Maurice Garin (2:49:45 margin)"
-            },
-            "links": [
-                {"title": "1903 Tour de France - Wikipedia", "url": "https://en.wikipedia.org/wiki/1903_Tour_de_France"},
-                {"title": "Tour de France - Wikipedia", "url": "https://en.wikipedia.org/wiki/Tour_de_France"}
-            ]
-        },
-        {
-            "id": "evt_wright_brothers",
-            "title": "Bicycle Mechanics Take Flight",
-            "date_display": "December 17, 1903",
-            "date_start": "1903-12-17",
-            "group_ids": ["grp_automobile"],
-            "type": "Technology Transfer",
-            "innovator": "Wright Brothers",
-            "innovation": "Bicycle Technology Enables Flight",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/8/86/First_flight2.jpg"
-            ],
-            "description": "At 10:35 a.m. on December 17, 1903, Orville Wright lifted off from the sand at Kill Devil Hills, North Carolina, piloting the first powered, controlled, heavier-than-air flight. He and his brother Wilbur had spent years developing the aircraft in the back of their Dayton, Ohio bicycle shop.\n\nThe connection between bicycles and aviation was not coincidental. The Wrights' experience with two-wheeled balance informed their understanding of aircraft control—they recognized that a plane, like a bicycle, required active pilot control rather than inherent stability. Their chain-drive system for the propellers came directly from bicycle technology. Their metalworking skills, honed on bicycle repairs, enabled precision manufacturing.\n\nThe Wrights were far from the only bicycle mechanics who became aviation pioneers. Glenn Curtiss, the Wrights' great rival, also came from bicycles. The bicycle industry had developed lightweight construction, precision engineering, and an understanding of human-powered locomotion that transferred directly to early aviation.",
-            "metrics": {
-                "first_flight": "12 seconds, 120 feet",
-                "longest_flight": "59 seconds, 852 feet"
-            },
-            "links": [
-                {"title": "Wright Brothers - Wikipedia", "url": "https://en.wikipedia.org/wiki/Wright_brothers"},
-                {"title": "Wright Flyer - Wikipedia", "url": "https://en.wikipedia.org/wiki/Wright_Flyer"}
-            ]
-        },
-        {
-            "id": "evt_giro",
-            "title": "Birth of the Giro d'Italia",
-            "date_display": "May 13, 1909",
-            "date_start": "1909-05-13",
-            "group_ids": ["grp_automobile"],
-            "type": "Sports Event",
-            "innovator": "La Gazzetta dello Sport",
-            "innovation": "Italian Grand Tour",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/a/ae/Giro_1909.png"
-            ],
-            "description": "Following the Tour de France's example, the Italian sports newspaper *La Gazzetta dello Sport* launched its own grand tour on May 13, 1909. The first Giro d'Italia covered 2,448 km in eight stages, departing from Milan and looping through Italy's diverse terrain.\n\nLuigi Ganna won the inaugural Giro with a total time of 89 hours, 48 minutes. The race featured the grueling mountain passes of the Alps and Dolomites that would become the Giro's signature challenge—climbs like the Stelvio and Gavia would later acquire legendary status.\n\nThe Giro became central to Italian national identity, second only to football in the nation's sporting passions. Together with the Tour and the later Vuelta a España (1935), the three Grand Tours established the three-week stage race as cycling's ultimate test of endurance.",
-            "metrics": {
-                "distance": "2,448 km",
-                "stages": "8",
-                "winner": "Luigi Ganna"
-            },
-            "links": [
-                {"title": "Giro d'Italia - Wikipedia", "url": "https://en.wikipedia.org/wiki/Giro_d%27Italia"},
-                {"title": "1909 Giro d'Italia - Wikipedia", "url": "https://en.wikipedia.org/wiki/1909_Giro_d%27Italia"}
-            ]
-        },
-        {
-            "id": "evt_sturmey_archer",
-            "title": "The Legendary 3-Speed Hub",
-            "date_display": "1913",
-            "date_start": "1913-01-01",
-            "group_ids": ["grp_automobile"],
-            "type": "Innovation",
-            "innovator": "Sturmey-Archer",
-            "innovation": "Internal Hub Gearing",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/0/04/Sturmey_Archer_3spd_bicycle_hub.jpg"
-            ],
-            "description": "The Sturmey-Archer AW 3-speed hub, introduced in 1936 (building on designs dating to 1913), became arguably the most successful bicycle component ever manufactured. The internally-geared hub enclosed its planetary gear mechanism within the rear hub shell, protected from weather and requiring minimal maintenance.\n\nUnlike derailleurs with exposed chains and sprockets, the internal hub was clean, reliable, and nearly foolproof. Riders shifted with a simple handlebar lever connected by cable to the hub. The design was perfect for utility cycling in rainy British conditions—no exposed gears to rust or jam.\n\nThe AW hub dominated practical transportation cycling for decades, particularly in Britain, the Netherlands, and Northern Europe. Tens of millions were manufactured. Though derailleurs eventually won out for sport cycling, internal hubs remained standard for city bikes and experienced a renaissance in urban cycling.",
-            "metrics": {
-                "production": "Tens of millions",
-                "gear_range": "3 speeds"
-            },
-            "links": [
-                {"title": "Sturmey-Archer - Wikipedia", "url": "https://en.wikipedia.org/wiki/Sturmey-Archer"},
-                {"title": "Hub gear - Wikipedia", "url": "https://en.wikipedia.org/wiki/Hub_gear"}
-            ]
-        },
-        {
-            "id": "evt_schwinn_dominance",
-            "title": "Schwinn's American Empire",
-            "date_display": "1930s",
-            "date_start": "1930-01-01",
-            "group_ids": ["grp_automobile"],
-            "type": "Industry Development",
-            "innovator": "Schwinn Bicycle Company",
-            "innovation": "American Mass Market",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/d/d9/SchwinnAeroCycle.jpg"
-            ],
-            "description": "Arnold, Schwinn & Company emerged from the Great Depression as America's dominant bicycle brand, controlling up to 25% of the US market through exclusive dealer networks and aggressive marketing. The company's balloon-tired cruisers with chrome fenders, coaster brakes, and tank-mounted headlights defined the American bicycle for generations.\n\nUnlike European manufacturers who built lightweight machines for adult transportation and sport, Schwinn focused on children and teenagers. Heavy, durable bikes with automotive styling—mock gas tanks, springer forks, chrome accessories—became the American archetype. The bikes were perfect for cruising suburban streets but poorly suited for serious riding.\n\nThis strategy would prove fatally shortsighted. When the 1970s bike boom brought adult riders back to cycling, they wanted lightweight 10-speeds, not 50-pound cruisers. Schwinn failed to adapt, refused to manufacture in Asia, and eventually filed for bankruptcy in 1992.",
-            "metrics": {
-                "market_share": "~25% of US market",
-                "strategy": "Children's market, dealer networks"
-            },
-            "links": [
-                {"title": "Schwinn - Wikipedia", "url": "https://en.wikipedia.org/wiki/Schwinn"}
-            ]
-        },
-        {
-            "id": "evt_derailleur_tour",
-            "title": "Derailleurs Come to the Tour",
-            "date_display": "1937",
-            "date_start": "1937-01-01",
-            "group_ids": ["grp_automobile"],
-            "type": "Rule Change",
-            "innovation": "Modern Gearing Permitted",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/14-06-20-shimano-600-RalfR-N3S_7903-05.jpg/800px-14-06-20-shimano-600-RalfR-N3S_7903-05.jpg"
-            ],
-            "description": "The Tour de France finally permitted derailleur gears in 1937, ending an era of painful absurdity. Previously, race organizers—including Henri Desgrange—had banned them as unsporting mechanical aids. Riders used hubs with different sprockets on each side; when terrain changed, they had to dismount, remove the rear wheel, flip it, and remount—losing precious time.\n\nDerailleurs had existed since the early 1900s, but purists considered gear-changing contrary to the spirit of cycling. The 1937 rule change was practical necessity: mountain stages had become too grueling with fixed gears. The liberation was transformative—riders could now shift while pedaling, selecting optimal gears for any terrain.\n\nRoger Lapébie won the 1937 Tour, the first using derailleurs. The technology evolved rapidly, from 3-speed systems to today's electronic 24-speed setups that shift in milliseconds.",
-            "metrics": {
-                "previous_system": "Fixed gears, wheel flipping",
-                "first_winner": "Roger Lapébie (1937)"
-            },
-            "links": [
-                {"title": "Derailleur - Wikipedia", "url": "https://en.wikipedia.org/wiki/Derailleur"},
-                {"title": "1937 Tour de France - Wikipedia", "url": "https://en.wikipedia.org/wiki/1937_Tour_de_France"}
-            ]
-        },
-        {
-            "id": "evt_schwinn_stingray",
-            "title": "Sting-Ray Mania",
-            "date_display": "1969",
-            "date_start": "1969-01-01",
-            "group_ids": ["grp_automobile"],
-            "type": "Market Peak",
-            "innovator": "Schwinn",
-            "innovation": "Banana Seat Youth Bike",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Schwinn_StingRay_OrangeKrate_5speed_1968.jpg/800px-Schwinn_StingRay_OrangeKrate_5speed_1968.jpg"
-            ],
-            "description": "The Schwinn Sting-Ray became the most popular bicycle ever made, with sales exceeding 2 million units at its peak. Introduced in 1963 and inspired by the custom 'chopper' motorcycles of California, the Sting-Ray featured a banana seat, high-rise 'ape hanger' handlebars, and a 20-inch rear wheel paired with a smaller front wheel.\n\nThe design captured the muscle-car aesthetics of the 1960s. Premium 'Krate' models came with stick-shift 5-speed transmissions, springer front forks, and colors like 'Orange Krate' and 'Apple Krate.' Every major manufacturer rushed to copy the design, spawning an entire category of 'wheelie bikes.'\n\nThe Sting-Ray represented bicycles as children's toys rather than transportation—a nadir for American cycling culture. Adults had largely abandoned bikes for cars, leaving the market to kids. California teens would soon repurpose these machines for dirt racing, creating BMX and ultimately inspiring the mountain bike revolution.",
-            "metrics": {
-                "sales": "2+ million units",
-                "style": "Banana seat, high-rise bars, 20-inch wheels"
-            },
-            "links": [
-                {"title": "Schwinn Sting-Ray - Wikipedia", "url": "https://en.wikipedia.org/wiki/Schwinn_Sting-Ray"}
-            ]
-        },
-        {
-            "id": "evt_bmx_begins",
-            "title": "Birth of BMX",
-            "date_display": "1970",
-            "date_start": "1970-01-01",
-            "group_ids": ["grp_bmx_mtb"],
-            "type": "Sport Origin",
-            "innovation": "Bicycle Motocross",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/f/fe/BMX_racing_action_photo.jpg"
-            ],
-            "description": "California kids, inspired by watching motocross motorcycle racing, began racing their Sting-Ray-style bikes on improvised dirt tracks. The 1971 motorcycle documentary *On Any Sunday* featured a scene of kids racing bikes in the dirt, capturing and spreading the zeitgeist. Within years, organized BMX (Bicycle Motocross) racing had emerged.\n\nBMX represented something genuinely new in cycling—an American innovation divorced from European road racing traditions. It was informal, youthful, and focused on excitement rather than endurance. Kids built their own tracks, modified their own bikes, and created their own culture. By the mid-1970s, BMX-specific bicycles with 20-inch wheels and knobby tires replaced the repurposed Sting-Rays.\n\nThe sport's counterculture energy would directly inspire both freestyle BMX (tricks and jumps) and, through the same Northern California scene, the invention of the mountain bike.",
-            "metrics": {
-                "origin": "Southern California dirt tracks",
-                "wheel_size": "20 inches"
-            },
-            "links": [
-                {"title": "BMX - Wikipedia", "url": "https://en.wikipedia.org/wiki/BMX"},
-                {"title": "On Any Sunday (1971) - Wikipedia", "url": "https://en.wikipedia.org/wiki/On_Any_Sunday"}
-            ]
-        },
-        {
-            "id": "evt_mountain_bike_origins",
-            "title": "Repack: Birth of the Mountain Bike",
-            "date_display": "1977",
-            "date_start": "1977-01-01",
-            "group_ids": ["grp_bmx_mtb"],
-            "type": "Innovation",
-            "innovator": "Gary Fisher, Joe Breeze, Charlie Kelly",
-            "innovation": "Off-Road Bicycle",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mountain-bike-racing.jpg/800px-Mountain-bike-racing.jpg"
-            ],
-            "description": "In the hills above Marin County, California, a group of countercultural cyclists began racing modified 1930s-40s Schwinn cruisers down the fire roads of Mount Tamalpais. They called it 'repack' racing because the coaster brake hubs got so hot during the descent that the grease burned away and had to be repacked after each run.\n\nThe old cruisers—heavy, balloon-tired 'klunkers'—couldn't handle the abuse. The riders began modifying them with motorcycle components, thumb shifters, and drum brakes. In 1977, Joe Breeze built the first purpose-designed mountain bike frame, the 'Breezer #1.' Gary Fisher and Charlie Kelly founded MountainBikes (later Fisher Bicycles) and began selling purpose-built machines.\n\nWhat started as a Northern California obsession became a global phenomenon. The mountain bike democratized cycling, making rough terrain accessible and removing the intimidating culture of road racing. By the 1990s, mountain bikes outsold road bikes worldwide.",
-            "metrics": {
-                "first_purpose_built": "Breezer #1 (1977)",
-                "repack_record": "4:22 (Gary Fisher)"
-            },
-            "links": [
-                {"title": "Mountain bike - Wikipedia", "url": "https://en.wikipedia.org/wiki/Mountain_bike"},
-                {"title": "History of the mountain bike - Wikipedia", "url": "https://en.wikipedia.org/wiki/History_of_the_mountain_bike"}
-            ]
-        },
-        {
-            "id": "evt_specialized_stumpjumper",
-            "title": "The Stumpjumper Goes Mass-Market",
-            "date_display": "1981",
-            "date_start": "1981-01-01",
-            "group_ids": ["grp_bmx_mtb"],
-            "type": "Product Launch",
-            "innovator": "Specialized",
-            "innovation": "First Mass-Produced Mountain Bike",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Orbea_Occam_2020.jpg/800px-Orbea_Occam_2020.jpg"
-            ],
-            "description": "Specialized founder Mike Sinyard launched the Stumpjumper in 1981, the first mass-produced mountain bike available through normal retail channels. Manufactured in Japan (where Sinyard had connections from importing components), the Stumpjumper sold for $750—expensive, but far less than the $1,500+ custom frames from the Marin County pioneers.\n\nThe Stumpjumper brought mountain biking out of Northern California counterculture and into mainstream America. Specialized sold 500 bikes the first year, proving market demand existed. Major manufacturers—Schwinn, Trek, Giant—rushed to develop their own mountain bike lines.\n\nWithin a decade, mountain bikes had overtaken road bikes in sales. The upright position, durability, and lower intimidation factor appealed to casual riders who had no interest in racing. Mountain biking became the engine that brought American adults back to cycling.",
-            "metrics": {
-                "price": "$750",
-                "first_year_sales": "~500 units"
-            },
-            "links": [
-                {"title": "Specialized Stumpjumper - Wikipedia", "url": "https://en.wikipedia.org/wiki/Specialized_Stumpjumper"},
-                {"title": "Specialized Bicycle Components - Wikipedia", "url": "https://en.wikipedia.org/wiki/Specialized_Bicycle_Components"}
-            ]
-        },
-        {
-            "id": "evt_bmx_olympics",
-            "title": "BMX at the LA Olympics",
-            "date_display": "1984",
-            "date_start": "1984-01-01",
-            "group_ids": ["grp_bmx_mtb"],
-            "type": "Sports Event",
-            "innovation": "Olympic Recognition",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/f/fe/BMX_racing_action_photo.jpg"
-            ],
-            "description": "BMX was featured as a demonstration sport at the Los Angeles Olympics, exposing the California-born sport to a global television audience. Racers from the US, the Netherlands, Japan, and other nations competed on a specially built track.\n\nThe Olympic appearance legitimized BMX beyond its American counterculture origins. International federations organized, rules standardized, and professional competitions proliferated. Though full Olympic medal status wouldn't come until Beijing 2008, the 1984 demonstration marked BMX's coming of age as an international sport.",
-            "metrics": {
-                "status": "Demonstration sport",
-                "wait_for_medals": "24 years (2008)"
-            },
-            "links": [
-                {"title": "BMX at the 1984 Summer Olympics - Wikipedia", "url": "https://en.wikipedia.org/wiki/Cycling_at_the_1984_Summer_Olympics"}
-            ]
-        },
-        {
-            "id": "evt_mtb_boom",
-            "title": "Mountain Bike Sales Explode",
-            "date_display": "1984",
-            "date_start": "1984-01-01",
-            "group_ids": ["grp_bmx_mtb"],
-            "type": "Market Shift",
-            "innovation": "Off-Road Cycling Mainstream",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mountain-bike-racing.jpg/800px-Mountain-bike-racing.jpg"
-            ],
-            "description": "Mountain bike sales exploded in the mid-1980s as the category attracted both serious off-road enthusiasts and casual riders who simply preferred the upright position and versatile tires. By decade's end, mountain bikes outsold road bikes in the United States.\n\nThe boom brought American adults back to cycling. Unlike the intimidating world of road racing—with its expensive equipment, specialized clothing, and elitist culture—mountain biking was accessible. You could ride in regular clothes, explore trails near home, and fall without injury on soft dirt. The bikes worked on roads too, making them practical all-rounders.\n\nMajor manufacturers who had ignored the early mountain bike pioneers now scrambled to compete. Trek, Cannondale, and even struggling Schwinn rushed mountain bikes to market. The category would dominate bicycle sales for the next three decades.",
-            "metrics": {
-                "market_share": "Overtook road bikes by 1990",
-                "appeal": "Casual riders, all-terrain versatility"
-            },
-            "links": [
-                {"title": "Mountain bike - Wikipedia", "url": "https://en.wikipedia.org/wiki/Mountain_bike"}
-            ]
-        },
-        {
-            "id": "evt_shimano_sti",
-            "title": "Shimano's STI Revolution",
-            "date_display": "1990",
-            "date_start": "1990-01-01",
-            "group_ids": ["grp_bmx_mtb"],
-            "type": "Innovation",
-            "innovator": "Shimano",
-            "innovation": "Integrated Brake-Shift Levers",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/14-06-20-shimano-600-RalfR-N3S_7903-05.jpg/800px-14-06-20-shimano-600-RalfR-N3S_7903-05.jpg"
-            ],
-            "description": "Shimano Total Integration (STI) combined brake levers with shift controls in a single integrated unit, allowing road cyclists to change gears without moving their hands from the handlebars. The system debuted at the 1990 Tour de France on Dura-Ace components.\n\nBefore STI, road cyclists had to reach down to shift with downtube-mounted levers—dangerous at high speeds and in tight packs. STI placed shifting at the fingertips: a small lever behind the brake lever shifted up, pressing the brake lever sideways shifted down. The intuitive system quickly became the industry standard.\n\nCampagnolo responded with Ergopower; SRAM later introduced Double Tap. But Shimano's STI set the template that all modern road groupsets follow. The innovation made shifting safe enough for casual riders while improving racing performance.",
-            "metrics": {
-                "debut": "1990 Tour de France",
-                "innovation": "Integrated brake-shift levers"
-            },
-            "links": [
-                {"title": "Shimano Total Integration - Wikipedia", "url": "https://en.wikipedia.org/wiki/Shimano_Total_Integration"}
-            ]
-        },
-        {
-            "id": "evt_mtb_olympics",
-            "title": "Mountain Biking Goes Olympic",
-            "date_display": "July 30, 1996",
-            "date_start": "1996-07-30",
-            "group_ids": ["grp_bmx_mtb"],
-            "type": "Sports Event",
-            "innovation": "Olympic Medal Sport",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Orbea_Occam_2020.jpg/800px-Orbea_Occam_2020.jpg"
-            ],
-            "description": "Cross-country mountain biking debuted as an Olympic medal sport at the Atlanta Games, just 19 years after Joe Breeze built the first purpose-designed mountain bike. Bart Brentjens of the Netherlands won the men's race; Paola Pezzo of Italy took the women's gold.\n\nOlympic status completed mountain biking's transformation from Northern California counterculture to legitimate international sport. The UCI organized World Championships, professionalized the competition structure, and standardized race formats.\n\nOlympic recognition brought funding, media attention, and equipment development. Suspension technology, carbon fiber frames, and disc brakes evolved rapidly as manufacturers competed to equip Olympic athletes. The recreational market benefited from technology trickle-down.",
-            "metrics": {
-                "event": "Cross-country",
-                "winners": "Bart Brentjens (M), Paola Pezzo (F)"
-            },
-            "links": [
-                {"title": "Mountain biking at the 1996 Summer Olympics - Wikipedia", "url": "https://en.wikipedia.org/wiki/Cycling_at_the_1996_Summer_Olympics_%E2%80%93_Men%27s_cross-country"}
-            ]
-        },
-        {
-            "id": "evt_armstrong_first",
-            "title": "Armstrong's Comeback Victory",
-            "date_display": "July 25, 1999",
-            "date_start": "1999-07-25",
-            "group_ids": ["grp_bmx_mtb"],
-            "type": "Sports Event",
-            "innovator": "Lance Armstrong",
-            "innovation": "Cancer Survivor Narrative",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/f/f5/Garin03winner.jpg"
-            ],
-            "description": "Lance Armstrong won the Tour de France in 1999, just three years after a near-fatal cancer diagnosis. The 27-year-old Texan's victory made him an instant American hero and the most famous cyclist since Eddy Merckx.\n\nArmstrong's story was irresistible: diagnosed with testicular cancer that had spread to his brain and lungs, given less than 50% survival odds, he returned to win cycling's greatest race. His Livestrong Foundation raised hundreds of millions for cancer research. He would go on to win seven consecutive Tours (1999-2005).\n\nThe Armstrong era brought unprecedented American attention to professional cycling, driving recreational cycling participation and bike sales. It would all collapse spectacularly in 2012 when USADA stripped his titles after revealing systematic doping, but for a decade, Armstrong was cycling's most powerful ambassador.",
-            "metrics": {
-                "tour_victories": "7 (all stripped in 2012)",
-                "cancer_diagnosis": "1996"
-            },
-            "links": [
-                {"title": "Lance Armstrong - Wikipedia", "url": "https://en.wikipedia.org/wiki/Lance_Armstrong"}
-            ]
-        },
-        {
-            "id": "evt_velib",
-            "title": "Vélib' Changes Urban Mobility",
-            "date_display": "July 15, 2007",
-            "date_start": "2007-07-15",
-            "group_ids": ["grp_urban"],
-            "type": "System Launch",
-            "innovator": "City of Paris, JCDecaux",
-            "innovation": "Large-Scale Urban Bike-Share",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Station_V%C3%A9lib_rue_Saint-Antoine_Paris_octobre_2020.jpg/800px-Station_V%C3%A9lib_rue_Saint-Antoine_Paris_octobre_2020.jpg"
-            ],
-            "description": "Paris launched Vélib' (a portmanteau of *vélo* and *liberté*—bicycle and freedom) on July 15, 2007, with 10,648 bicycles at 750 stations across the city. Users could pick up a bike at any station and return it to any other, paying just €1 for a day pass with the first 30 minutes free.\n\nWhile not the first public bike-share (Copenhagen's Bycyklen launched in 1995, Lyon's Vélo'v in 2005), Vélib's scale was unprecedented. The system proved that bike-sharing could work in a major world capital, handling tens of thousands of daily trips across a complex urban landscape.\n\nVélib' inspired a global wave of bike-share systems. Barcelona launched Bicing in 2007, London's Boris Bikes followed in 2010, and by 2013 over 500 cities worldwide had implemented similar programs. The concept transformed urban transportation policy by demonstrating that cycling could be democratized—removing barriers of ownership, storage, and theft that had limited bicycle adoption.",
-            "metrics": {
-                "bikes": "10,648 at launch",
-                "stations": "750"
-            },
-            "links": [
-                {"title": "Vélib' - Wikipedia", "url": "https://en.wikipedia.org/wiki/V%C3%A9lib%27"},
-                {"title": "The Bike-Share Story - CityLab", "url": "https://www.bloomberg.com/news/articles/2012-08-10/a-short-history-of-bike-share"}
-            ]
-        },
-        {
-            "id": "evt_bmx_medal",
-            "title": "BMX Hits the Olympic Stage",
-            "date_display": "August 20, 2008",
-            "date_start": "2008-08-20",
-            "group_ids": ["grp_urban"],
-            "type": "Sports Event",
-            "innovation": "BMX Olympic Medal Sport",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Renato_Rezende_em_2021.jpg/800px-Renato_Rezende_em_2021.jpg"
-            ],
-            "description": "BMX racing became a full Olympic medal sport at the Beijing Games on August 20, 2008, 24 years after its demonstration appearance in Los Angeles. Latvian Māris Štrombergs won the men's gold; France's Anne-Caroline Chausson took the women's title.\n\nThe IOC added BMX specifically to attract younger viewers increasingly disengaged from traditional cycling events. The eight-rider elimination heats, spectacular crashes, and 35-second races created television-friendly drama that road racing couldn't match.\n\nOlympic status accelerated BMX's professionalization worldwide. National federations began funding BMX programs, UCI-sanctioned Supercross events created a professional circuit, and manufacturers developed specialized equipment. By the 2020 Tokyo Games, BMX freestyle would also join the program—further expanding cycling's Olympic presence beyond its traditional road and track disciplines.",
-            "metrics": {
-                "status": "Full Olympic medal sport",
-                "first_gold": "Māris Štrombergs (M), Anne-Caroline Chausson (F)"
-            },
-            "links": [
-                {"title": "Cycling at the 2008 Summer Olympics - BMX - Wikipedia", "url": "https://en.wikipedia.org/wiki/Cycling_at_the_2008_Summer_Olympics_%E2%80%93_BMX"},
-                {"title": "BMX Racing - Olympics", "url": "https://olympics.com/en/sports/cycling-bmx-racing/"}
-            ]
-        },
-        {
-            "id": "evt_armstrong_stripped",
-            "title": "The Armstrong Doping Scandal",
-            "date_display": "August 24, 2012",
-            "date_start": "2012-08-24",
-            "group_ids": ["grp_urban"],
-            "type": "Sports Event",
-            "innovator": "USADA",
-            "innovation": "Doping Enforcement",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Lance_Armstrong_%28Tour_Down_Under_2009%29.jpg/800px-Lance_Armstrong_%28Tour_Down_Under_2009%29.jpg"
-            ],
-            "description": "On August 24, 2012, the US Anti-Doping Agency stripped Lance Armstrong of all seven Tour de France titles (1999-2005) after he declined to contest their charges. USADA CEO Travis Tygart called it \"the most sophisticated, professionalized and successful doping program that sport has ever seen.\"\n\nThe USADA investigation revealed systematic blood doping, EPO use, and testosterone abuse coordinated by Armstrong and US Postal Service team management. Eleven former teammates provided sworn testimony detailing the program. The UCI accepted USADA's findings and erased Armstrong's results from August 1998 forward.\n\nThe scandal devastated professional cycling's credibility and Armstrong's legacy. His Livestrong Foundation, which had raised over $500 million for cancer research, distanced itself from its founder. Sponsors fled. Armstrong eventually admitted doping in a 2013 interview with Oprah Winfrey.\n\nParadoxically, recreational cycling continued growing throughout the scandal. The sport had evolved beyond its professional racing associations—people cycled for fitness, commuting, and environmental reasons that had nothing to do with the Tour de France.",
-            "metrics": {
-                "titles_stripped": "7 Tour de France victories",
-                "ban": "Lifetime"
-            },
-            "links": [
-                {"title": "Lance Armstrong doping case - Wikipedia", "url": "https://en.wikipedia.org/wiki/Lance_Armstrong_doping_case"},
-                {"title": "USADA Reasoned Decision", "url": "https://www.usada.org/spirit-of-sport/education/effects-of-performance-enhancing-drugs/"}
-            ]
-        },
-        {
-            "id": "evt_citi_bike",
-            "title": "Citi Bike Conquers New York",
-            "date_display": "May 27, 2013",
-            "date_start": "2013-05-27",
-            "group_ids": ["grp_urban"],
-            "type": "System Launch",
-            "innovator": "NYC, Citibank",
-            "innovation": "American Major City Bike-Share",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citi_Bikes_Sunset_Park.jpg/800px-Citi_Bikes_Sunset_Park.jpg"
-            ],
-            "description": "New York City launched Citi Bike on May 27, 2013, with 6,000 bicycles at 330 stations across Manhattan and Brooklyn—making it North America's largest bike-share system. Citibank's $41 million sponsorship funded the initial deployment without requiring city tax dollars.\n\nCritics predicted disaster: New York traffic was too aggressive, distances too far, weather too extreme, and the lack of helmet laws too dangerous. Instead, the system exceeded projections, logging 8 million trips in its first year. Members could pick up the distinctive blue bikes for short trips around the city for $149 annually—roughly the cost of a monthly transit pass.\n\nCiti Bike proved that bike-share could work in America's densest, most car-hostile city. By 2023, the system had expanded to 27,000 bikes, added electric options, and logged over 30 million annual rides. It normalized cycling in a city that once seemed impossible to traverse on two wheels.",
-            "metrics": {
-                "bikes": "6,000 at launch, 27,000+ by 2023",
-                "first_year_trips": "8 million"
-            },
-            "links": [
-                {"title": "Citi Bike - Wikipedia", "url": "https://en.wikipedia.org/wiki/Citi_Bike"},
-                {"title": "Citi Bike Official Site", "url": "https://citibikenyc.com/"}
-            ]
-        },
-        {
-            "id": "evt_dockless",
-            "title": "The Dockless Bike Invasion",
-            "date_display": "2017",
-            "date_start": "2017-01-01",
-            "group_ids": ["grp_urban"],
-            "type": "Industry Event",
-            "innovator": "Ofo, Mobike",
-            "innovation": "GPS-Tracked Dockless Bikes",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/An_ofo_bike_miss_seat.jpg/800px-An_ofo_bike_miss_seat.jpg"
-            ],
-            "description": "In 2017, Chinese dockless bike-share companies Ofo and Mobike began a global expansion fueled by billions in venture capital. Their model was radical: GPS-tracked bikes that users could locate via smartphone, unlock with a QR code, and leave anywhere when finished. No stations required.\n\nThe companies deployed millions of brightly colored bikes across Chinese cities, then expanded to Europe, America, and Asia. At peak, Ofo operated 10 million yellow bikes in 250 cities. Mobike deployed similarly across 200+ cities. Competitors like LimeBike and Spin followed.\n\nThe boom turned to bust spectacularly. Neither company achieved profitability. Bikes were vandalized, stolen, and abandoned in piles. By late 2018, Ofo was essentially bankrupt, Mobike was sold to Meituan at a loss, and cities worldwide were left with bicycle graveyards.\n\nYet the wreckage proved instructive: massive demand existed for convenient, flexible cycling. Cities developed regulations for shared mobility. Successful operators like Lime pivoted to e-bikes and scooters. The chaos birthed a more sustainable micromobility industry.",
-            "metrics": {
-                "ofo_peak_bikes": "10 million",
-                "cities": "250+ (Ofo), 200+ (Mobike)"
-            },
-            "links": [
-                {"title": "Ofo (company) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Ofo_(company)"},
-                {"title": "What Happened to Bike-Sharing - The Atlantic", "url": "https://www.theatlantic.com/photo/2018/03/bike-share-oversupply-in-china-huge-piles-of-abandoned-and-broken-bicycles/556268/"}
-            ]
-        },
-        {
-            "id": "evt_ebike_maturity",
-            "title": "The E-Bike Tipping Point",
-            "date_display": "2018",
-            "date_start": "2018-01-01",
-            "group_ids": ["grp_urban"],
-            "type": "Technology Development",
-            "innovation": "Electric Assist Bicycles",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Electric_Wheels_in_Fort_Lauderdale%2C_Florida.jpg/800px-Electric_Wheels_in_Fort_Lauderdale%2C_Florida.jpg"
-            ],
-            "description": "By 2018, electric bicycle technology had reached a tipping point. Lithium-ion battery costs had fallen 87% since 2010 while energy density improved. Compact mid-drive motors from Bosch, Shimano, and Yamaha provided natural-feeling assistance. Prices dropped below €2,000 for quality models.\n\nE-bikes removed the fundamental barriers that had limited cycling: hills became trivial, distances up to 50km practical, arriving sweaty a choice rather than an inevitability. The technology made cycling viable for commuters, older riders, those with physical limitations, and anyone unwilling to arrive at work exhausted.\n\nEuropean sales grew exponentially. In the Netherlands, e-bikes accounted for over half of bicycle revenue by 2018. Germany sold 720,000 units. The trend spread worldwide as major manufacturers from Trek to Specialized launched comprehensive e-bike lines.\n\nThe demographic transformation was striking: e-bikes attracted riders who would never have considered traditional bicycles. They didn't replace car trips so much as create entirely new cycling trips—expanding the potential cycling population far beyond traditional enthusiasts.",
-            "metrics": {
-                "germany_sales_2018": "720,000 units",
-                "battery_cost_reduction": "87% since 2010"
-            },
-            "links": [
-                {"title": "Electric bicycle - Wikipedia", "url": "https://en.wikipedia.org/wiki/Electric_bicycle"},
-                {"title": "E-Bike Sales Statistics - Statista", "url": "https://www.statista.com/topics/2376/e-bikes/"}
-            ]
-        },
-        {
-            "id": "evt_covid_boom",
-            "title": "The Pandemic Bike Boom",
-            "date_display": "2020",
-            "date_start": "2020-03-01",
-            "group_ids": ["grp_urban"],
-            "type": "Market Event",
-            "innovation": "Pandemic-Driven Demand",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Station_V%C3%A9lib_rue_Saint-Antoine_Paris_octobre_2020.jpg/800px-Station_V%C3%A9lib_rue_Saint-Antoine_Paris_octobre_2020.jpg"
-            ],
-            "description": "The COVID-19 pandemic triggered an unprecedented global bicycle boom beginning in March 2020. With public transit perceived as dangerous and gyms closed, people turned to bicycles for exercise and transportation. In the US, bicycle sales jumped 121% in March-May compared to 2019; repair shops reported backlogs of months.\n\nThe supply chain couldn't cope. Asian manufacturing had shuttered during China's lockdown; shipping containers sat on docks. Bike shops sold inventory within weeks and faced waitlists extending into 2021. Used bike prices doubled. Components became impossible to source.\n\nCities responded with emergency infrastructure. Paris created 50km of \"coronapistes\"—COVID bike lanes. Milan announced 35km of new cycling routes. New York, London, and dozens of other cities installed temporary protected lanes, some of which became permanent.\n\nThe pandemic compressed years of cultural change into months. People who hadn't cycled since childhood rediscovered bicycles. Employers rethought commuting. Families started riding together. Though the boom moderated as lockdowns ended, cycling participation remained elevated—the pandemic had created millions of new cyclists.",
-            "metrics": {
-                "us_sales_increase": "121% (March-May 2020)",
-                "paris_emergency_lanes": "50km"
-            },
-            "links": [
-                {"title": "The Bike Boom Cometh - NPR", "url": "https://www.npr.org/2020/05/10/852908036/as-the-pandemic-took-hold-americans-bought-tons-of-bikes"},
-                {"title": "Pandemic cycling - Wikipedia", "url": "https://en.wikipedia.org/wiki/Effects_of_the_COVID-19_pandemic_on_cycling"}
-            ]
-        },
-        {
-            "id": "evt_protected_lanes",
-            "title": "The Protected Lane Revolution",
-            "date_display": "2022",
-            "date_start": "2022-01-01",
-            "group_ids": ["grp_urban"],
-            "type": "Infrastructure Development",
-            "innovation": "Physically Separated Cycling Infrastructure",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cycle_track_Northumberland_Park_N17_-_46068930994.jpg/800px-Cycle_track_Northumberland_Park_N17_-_46068930994.jpg"
-            ],
-            "description": "By 2022, the global movement toward protected bicycle infrastructure had reached critical mass. Cities worldwide accelerated construction of cycle tracks—paths physically separated from motor vehicle traffic by concrete barriers, bollards, parked cars, or grade separation.\n\nThe evidence had become overwhelming. Research from dozens of cities showed protected lanes increased cycling rates 75-200% compared to painted lanes. Injury rates dropped 90% on protected infrastructure. Most importantly, protected lanes attracted the \"interested but concerned\" majority—the 60% of potential cyclists who wanted to ride but feared traffic.\n\nParis transformed itself, adding 1,000km of cycling infrastructure since 2015 and banning cars from major corridors. London's protected Superhighways carried tens of thousands daily. Even car-centric American cities like Austin, Denver, and Minneapolis built protected networks.\n\nThe shift reflected changed understanding: decades of painted bike lanes had failed to increase cycling because paint doesn't make people feel safe. Physical protection did. Cities finally recognized that cycling infrastructure couldn't be an afterthought—it required the same design rigor as roads and transit.",
-            "metrics": {
-                "cycling_increase": "75-200% on protected vs painted lanes",
-                "injury_reduction": "90% on protected infrastructure"
-            },
-            "links": [
-                {"title": "Cycle track - Wikipedia", "url": "https://en.wikipedia.org/wiki/Cycle_track"},
-                {"title": "Protected Bike Lane Statistics - People for Bikes", "url": "https://peopleforbikes.org/statistics/protected-bike-lanes/"}
-            ]
-        },
-        {
-            "id": "evt_ebike_surpass",
-            "title": "E-Bikes Become the Default",
-            "date_display": "2023",
-            "date_start": "2023-01-01",
-            "group_ids": ["grp_urban"],
-            "type": "Market Milestone",
-            "innovation": "E-Bike Dominance",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Electric_Wheels_in_Fort_Lauderdale%2C_Florida.jpg/800px-Electric_Wheels_in_Fort_Lauderdale%2C_Florida.jpg"
-            ],
-            "description": "In 2023, e-bike sales exceeded traditional bicycle sales in several major European markets for the first time. The Netherlands led the transition: 54% of new adult bicycles sold were electric. Germany sold 2.1 million e-bikes compared to 1.8 million traditional bikes. Belgium, Switzerland, and Austria showed similar patterns.\n\nThe crossover represented a fundamental shift in what \"bicycle\" meant. For a century, cycling required physical effort proportional to distance and terrain. E-bikes broke that relationship, making 20km commutes effortless, hills irrelevant, and cargo loads manageable.\n\nThe transformation happened faster than anyone predicted. E-bikes didn't just replace some car trips with bike trips—they created entirely new travel patterns. Suburban commuters who never considered cycling began riding. Retirees explored regions they couldn't have managed on traditional bikes. Families chose e-cargo bikes over second cars.\n\nAnalysts projected e-bikes would dominate the global bicycle market by 2030. The bicycle, after 200 years, was being reinvented—not as a toy or sport equipment but as practical transportation for the electrified age.",
-            "metrics": {
-                "netherlands_share": "54% of new adult bikes",
-                "germany_ebikes": "2.1 million vs 1.8 million traditional"
-            },
-            "links": [
-                {"title": "European e-bike market - Bike Europe", "url": "https://www.bike-eu.com/"},
-                {"title": "E-bike statistics - CONEBI", "url": "https://www.conebi.eu/"}
-            ]
-        },
-        {
-            "id": "evt_cargo_bikes",
-            "title": "Cargo Bikes Transform Delivery",
-            "date_display": "2024",
-            "date_start": "2024-01-01",
-            "group_ids": ["grp_urban"],
-            "type": "Industry Trend",
-            "innovator": "DHL, UPS, Amazon",
-            "innovation": "Last-Mile Logistics",
-            "image_urls": [
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Modern_Cargo_Trike_In_London.jpg/800px-Modern_Cargo_Trike_In_London.jpg"
-            ],
-            "description": "By 2024, e-cargo bikes had become essential tools for urban logistics as delivery companies sought faster, cheaper, and cleaner last-mile solutions. DHL deployed over 18,000 cargo bikes globally. UPS established \"micro-hubs\"—small warehouses where vans delivered inventory for cargo bike distribution. Amazon expanded its Prime cargo bike fleet across European cities.\n\nThe economics proved compelling. A cargo bike could carry 300kg of packages, handle 40+ deliveries per shift, and navigate congested city centers far faster than a van stuck in traffic or circling for parking. Operating costs ran 70% lower than electric vans. Zero emissions helped companies meet sustainability targets.\n\nCities encouraged the shift. Paris banned diesel delivery vehicles from the center; cargo bikes became the only practical alternative. London's Ultra Low Emission Zone made electric cargo bikes economically attractive. Amsterdam and Copenhagen, where cargo bikes had been common for decades, offered models for other cities.\n\nThe technology represented cycling's expansion from personal transportation into commercial infrastructure. Two hundred years after Baron von Drais invented his running machine, the bicycle was becoming integral to the global logistics network.",
-            "metrics": {
-                "dhl_fleet": "18,000+ cargo bikes globally",
-                "cost_savings": "70% vs electric vans"
-            },
-            "links": [
-                {"title": "Cargo bike - Wikipedia", "url": "https://en.wikipedia.org/wiki/Cargo_bike"},
-                {"title": "DHL Logistics - Cargo Bikes", "url": "https://www.dhl.com/global-en/home/about-us/delivered-magazine/articles/2021/issue-3-2021/city-logistics-with-cargo-bikes.html"}
-            ]
+          "title": "Dandy Horse - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dandy_horse"
         }
-    ]
+      ]
+    },
+    {
+      "id": "evt_macmillan",
+      "title": "The Blacksmith's Pedal Machine",
+      "date_display": "1839",
+      "date_start": "1839-01-01",
+      "group_ids": [
+        "grp_precursors"
+      ],
+      "type": "Innovation",
+      "innovator": "Kirkpatrick Macmillan",
+      "innovation": "Pedal-Driven Propulsion (Disputed)",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Macmillan_1839.jpg/800px-Macmillan_1839.jpg"
+      ],
+      "description": "Scottish blacksmith Kirkpatrick Macmillan of Dumfriesshire reportedly built the first pedal-driven bicycle, with rear-wheel drive via horizontal treadles connected by rods. According to claims made decades later by his relatives, Macmillan was riding his machine as early as 1839.\n\nThe evidence rests on a tantalizing 1842 newspaper report of 'a gentleman from Dumfries-shire bestride a velocipede of ingenious design' who was fined five shillings in Glasgow for knocking down a child in the Gorbals. If this was Macmillan, he had ridden some 70 miles to get there.\n\nMacmillan never patented his design, never marketed it, and left no drawings or documentation. A replica based on later descriptions sits in the Glasgow Transport Museum. Whether he truly invented pedal propulsion or whether the claims were Victorian mythmaking, the design never spread beyond Dumfriesshire. The pedal bicycle would need to be 'reinvented' in France twenty years later.",
+      "metrics": {
+        "mechanism": "Rear-wheel drive via rods",
+        "status": "Disputed priority",
+        "distance": "70 miles to Glasgow (if 1842 report)"
+      },
+      "links": [
+        {
+          "title": "Kirkpatrick Macmillan - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kirkpatrick_Macmillan"
+        },
+        {
+          "title": "Scotland.org - Macmillan",
+          "url": "https://www.scotland.org.uk/scottish-inventors/kirkpatrick-macmillan"
+        }
+      ]
+    },
+    {
+      "id": "evt_velocipede",
+      "title": "Lallement's Pedal Velocipede",
+      "date_display": "1863",
+      "date_start": "1863-01-01",
+      "group_ids": [
+        "grp_precursors"
+      ],
+      "type": "Patent",
+      "innovator": "Pierre Lallement",
+      "innovation": "Pedal Cranks on Front Wheel",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/78/Pierre_Lallemant_1870.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Velocipede_Michaux-1.jpg/800px-Velocipede_Michaux-1.jpg"
+      ],
+      "description": "French carriage-maker Pierre Lallement attached rotary pedal cranks directly to the front wheel hub, creating the first commercially viable pedal-driven bicycle. He demonstrated his vélocipède in Paris around 1863, then emigrated to America where he obtained the first US bicycle patent in November 1866.\n\nThe priority of the pedal invention is disputed. Lallement worked briefly for the Michaux company, and both Pierre Michaux and his son Ernest also claimed credit. What is clear is that by 1867, the Michaux workshop in Paris was producing pedal velocipedes and the bicycle era had truly begun.\n\nThe direct-drive design was simple but fundamentally limited. Pedaling while steering was awkward, especially at low speeds. And since one turn of the pedals meant one turn of the wheel, speed was limited by how fast you could spin your legs. These limitations would drive the next innovation: the high-wheel 'ordinary.'",
+      "metrics": {
+        "patent": "US Patent 59,915 (November 1866)",
+        "mechanism": "Direct-drive front wheel"
+      },
+      "links": [
+        {
+          "title": "Pierre Lallement - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pierre_Lallement"
+        },
+        {
+          "title": "Velocipede - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Velocipede"
+        }
+      ]
+    },
+    {
+      "id": "evt_velocipede_craze",
+      "title": "Velocipede Mania Sweeps Paris",
+      "date_display": "1867",
+      "date_start": "1867-01-01",
+      "group_ids": [
+        "grp_precursors"
+      ],
+      "type": "Cultural Phenomenon",
+      "innovator": "Michaux Company",
+      "innovation": "First Bicycle Craze",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Velocipedes.png/800px-Velocipedes.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/The_American_Velocipede.jpg/800px-The_American_Velocipede.jpg"
+      ],
+      "description": "The Michaux company began mass-producing velocipedes in Paris, and the machines became the latest fashionable sensation. Indoor riding academies—called 'vélodromes'—opened across the city where customers could learn to ride without traffic hazards or cobblestone bruises. The machines were displayed at the 1867 Paris World's Fair, spreading the craze internationally.\n\nRaces and exhibitions drew crowds. Newspapers reported on velocipede exploits. Songs were written about them. The machines cost 150-200 francs—several months' wages for a worker—making them toys of the wealthy, but the democratization of speed had begun.\n\nThe Franco-Prussian War (1870-71) devastated the French bicycle industry, but by then the craze had crossed the Channel to England and the Atlantic to America, where it ignited similar manias. The bicycle industry would never again go dormant.",
+      "metrics": {
+        "price": "150-200 francs",
+        "nickname": "'Boneshaker' (due to vibration)"
+      },
+      "links": [
+        {
+          "title": "Velocipede - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Velocipede"
+        },
+        {
+          "title": "Michaux Company - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Michaux_company"
+        }
+      ]
+    },
+    {
+      "id": "evt_boneshaker",
+      "title": "Peak of the Boneshakers",
+      "date_display": "1869",
+      "date_start": "1869-01-01",
+      "group_ids": [
+        "grp_precursors"
+      ],
+      "type": "Peak",
+      "innovation": "Mass Velocipede Production",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Boneshaker%2C_European%2C_circa_1868.JPG/800px-Boneshaker%2C_European%2C_circa_1868.JPG"
+      ],
+      "description": "The velocipede craze peaked in 1869, with riding schools operating in major cities across Europe and America. In New York, rinks opened where fashionable riders circled to music. In Boston, velocipede races packed indoor arenas. The machines earned their 'boneshaker' nickname from the brutal vibrations transmitted through iron-tired wooden wheels on cobblestone streets—a ride that could leave you sore for days.\n\nAs with the hobby horse fifty years earlier, the craze faded when the impracticality became undeniable. The machines were expensive, exhausting to ride, and punishing on rough roads. But unlike the earlier fashion, the velocipede craze left behind something crucial: an established bicycle manufacturing industry with capital, expertise, and a hunger for the next innovation.\n\nBritish manufacturers, inheriting the French industry's momentum, would soon answer with the high-wheel 'ordinary'—a machine that sacrificed safety for speed.",
+      "metrics": {
+        "wheel_material": "Iron-tired wooden wheels",
+        "weight": "~60 lbs"
+      },
+      "links": [
+        {
+          "title": "Velocipede - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Velocipede"
+        }
+      ]
+    },
+    {
+      "id": "evt_penny_farthing",
+      "title": "Rise of the High Wheeler",
+      "date_display": "1870",
+      "date_start": "1870-01-01",
+      "group_ids": [
+        "grp_penny"
+      ],
+      "type": "Design Evolution",
+      "innovator": "James Starley, others",
+      "innovation": "High-Wheel 'Ordinary'",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a7/Ordinary_bicycle01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4b/A_man_with_a_Penny-farthing_bicycle_-_Ladybank%2C_Scotland_c.1880.jpg"
+      ],
+      "description": "British manufacturers developed the 'ordinary' or 'high-wheel' bicycle with a massive front wheel—up to 60 inches in diameter—and a tiny trailing rear wheel. The logic was simple: since pedals attached directly to the front wheel, a larger wheel meant more ground covered per revolution and thus higher speeds.\n\nThe design required athletic young men to mount by running alongside and vaulting into the saddle, perched high above the front axle. Riders faced a constant danger: hitting any obstacle could pitch them headfirst over the handlebars in a 'header' or 'cropper.' Deaths were not uncommon.\n\nDespite the danger, the ordinary represented a massive leap in speed and efficiency over the boneshaker. Racing became popular, and cycling clubs proliferated. The nickname 'penny-farthing' came later, comparing the wheel sizes to British coins—a large penny and small farthing.",
+      "metrics": {
+        "front_wheel": "Up to 60 inches (152 cm)",
+        "speed": "Up to 20+ mph",
+        "danger": "Headers, high falls"
+      },
+      "links": [
+        {
+          "title": "Penny-farthing - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Penny-farthing"
+        }
+      ]
+    },
+    {
+      "id": "evt_metal_spokes",
+      "title": "Starley's Tension-Spoke Wheel",
+      "date_display": "1870",
+      "date_start": "1870-01-01",
+      "group_ids": [
+        "grp_penny"
+      ],
+      "type": "Innovation",
+      "innovator": "James Starley",
+      "innovation": "Tangent-Spoke Wheel",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/James_Starley_%281830-1871%29.jpg"
+      ],
+      "description": "James Starley, the 'father of the bicycle industry,' patented the tangent-spoke wheel design where thin wire spokes connected the hub to the rim under tension rather than compression. The spokes were arranged tangentially to the hub, allowing them to transmit pedaling torque without bending.\n\nThis elegant engineering made possible the enormous front wheels of the penny-farthing. A 60-inch wooden-spoked wheel would have been impossibly heavy, but tension spokes made it light enough to ride. Starley's Coventry factory became the center of the British bicycle industry.\n\nModern bicycle wheels still use variations of Starley's fundamental concept, refined but essentially unchanged. His nephew, John Kemp Starley, would later design the safety bicycle that obsoleted the high-wheeler—but using James Starley's wheel technology.",
+      "metrics": {
+        "innovation": "Tension-spoke wheel design",
+        "weight_savings": "Enabled 60-inch wheels"
+      },
+      "links": [
+        {
+          "title": "James Starley - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/James_Starley"
+        },
+        {
+          "title": "Wire-spoked wheel - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Wire-spoked_wheel"
+        }
+      ]
+    },
+    {
+      "id": "evt_boston_club",
+      "title": "America's First Bicycle Club",
+      "date_display": "February 11, 1878",
+      "date_start": "1878-02-11",
+      "group_ids": [
+        "grp_penny"
+      ],
+      "type": "Organization",
+      "innovation": "First American Cycling Club",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/15-mile_Penny_Farthing_Race%2C_Harvard_University_Cycling_Association_in_1887.png/800px-15-mile_Penny_Farthing_Race%2C_Harvard_University_Cycling_Association_in_1887.png"
+      ],
+      "description": "The Boston Bicycle Club became the first cycling club in America, founded by a group of high-wheel enthusiasts who organized rides, races, and advocacy for cyclists' rights. Membership required both athletic ability—mounting a penny-farthing was no simple feat—and wealth, as the machines cost $100-150 (several months' wages for a worker).\n\nCycling clubs created social communities around the new technology, organizing group rides through countryside and city. Members wore distinctive uniforms and carried club flags. The clubs also advocated for road improvements and cyclists' legal right to use public roads—battles that would continue for decades.\n\nThe club movement spread rapidly. Within two years, there were enough clubs to form a national organization: the League of American Wheelmen.",
+      "metrics": {
+        "significance": "First US cycling club",
+        "bicycle_cost": "$100-150"
+      },
+      "links": [
+        {
+          "title": "League of American Bicyclists - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/League_of_American_Bicyclists"
+        }
+      ]
+    },
+    {
+      "id": "evt_law",
+      "title": "The League of American Wheelmen",
+      "date_display": "May 31, 1880",
+      "date_start": "1880-05-31",
+      "group_ids": [
+        "grp_penny"
+      ],
+      "type": "Organization",
+      "innovation": "National Cycling Advocacy",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c5/League_of_American_Bicyclists_memorial_in_Newport%2C_Rhode_Island.jpg"
+      ],
+      "description": "The League of American Wheelmen (LAW) was founded in Newport, Rhode Island, uniting local cycling clubs into the first national cycling organization in America. At its founding meeting, 31 clubs from 8 states sent representatives to establish a unified voice for cyclists' interests.\n\nThe LAW became a powerful advocacy force. It fought for cyclists' legal right to use public roads—contested by horse-carriage drivers—and launched the 'Good Roads Movement' that successfully pushed for paved roads and street improvements across America. The organization published maps, organized national tours, and lobbied for cycling-friendly legislation.\n\nMembership peaked at over 100,000 in the 1890s during the bicycle boom. Ironically, the improved roads that cyclists fought for would soon be filled with automobiles. The organization still exists today as the League of American Bicyclists.",
+      "metrics": {
+        "founding_clubs": "31 from 8 states",
+        "peak_membership": "Over 100,000 (1890s)"
+      },
+      "links": [
+        {
+          "title": "League of American Bicyclists - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/League_of_American_Bicyclists"
+        },
+        {
+          "title": "Good Roads Movement - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Good_Roads_Movement"
+        }
+      ]
+    },
+    {
+      "id": "evt_stevens_tour",
+      "title": "Around the World on a Penny-Farthing",
+      "date_display": "April 22, 1884 – December 24, 1886",
+      "date_start": "1884-04-22",
+      "date_end": "1886-12-24",
+      "group_ids": [
+        "grp_penny"
+      ],
+      "type": "Adventure",
+      "innovator": "Thomas Stevens",
+      "innovation": "First Round-the-World Bicycle Trip",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Thomas_Stevens.jpg/800px-Thomas_Stevens.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Thomas_Stevens_bicycle.jpg"
+      ],
+      "description": "Thomas Stevens left San Francisco on April 22, 1884, aboard a black-enameled Columbia 50-inch penny-farthing, carrying only socks, a spare shirt, a raincoat that doubled as tent and bedroll, and a pocket revolver. He would become the first person to circle the globe by bicycle.\n\nStevens crossed America first, reaching Boston on August 4, 1884—the first transcontinental bicycle crossing, 3,700 miles in 103 days. He spent the winter writing for *Outing* magazine, then shipped to Liverpool to continue eastward. He rode through England, France, Germany, Austria-Hungary, and the Balkans. In Persia and Afghanistan he was turned back by authorities and had to sail to India.\n\nHe pedaled the Grand Trunk Road across India, navigated hostile crowds in China during a war with France, and ended his bicycle journey in Yokohama, Japan on December 17, 1886. Total cycling distance: approximately 13,500 miles. His book *Around the World on a Bicycle* became a bestseller.",
+      "metrics": {
+        "duration": "2 years, 8 months",
+        "cycling_distance": "~13,500 miles",
+        "bicycle": "Columbia 50-inch Standard"
+      },
+      "links": [
+        {
+          "title": "Thomas Stevens - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Thomas_Stevens_(cyclist)"
+        },
+        {
+          "title": "Around the World on a Bicycle (Project Gutenberg)",
+          "url": "https://www.gutenberg.org/ebooks/author/45284"
+        }
+      ]
+    },
+    {
+      "id": "evt_rover_safety",
+      "title": "The Rover Safety Bicycle",
+      "date_display": "1885",
+      "date_start": "1885-01-01",
+      "group_ids": [
+        "grp_safety"
+      ],
+      "type": "Product Launch",
+      "innovator": "John Kemp Starley",
+      "innovation": "Chain-Driven Safety Bicycle",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rover_safety_bicycle_of_1885_%28right%29.jpg/800px-Rover_safety_bicycle_of_1885_%28right%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/14/Safety_bicycle_1887.jpg"
+      ],
+      "description": "John Kemp Starley designed the Rover Safety Bicycle, establishing the basic form that all modern bicycles still follow: two equal-sized wheels, chain drive to the rear wheel, and a diamond-shaped frame. Riders sat low between the wheels, eliminating the deadly header risk of the penny-farthing.\n\nThe chain drive was the key innovation. By using a large front sprocket and small rear sprocket, Starley maintained the mechanical advantage of a large wheel without the danger. A rider could pedal at a comfortable cadence while the rear wheel turned rapidly. Combined with his uncle James Starley's wire-spoke wheels, the design was light, fast, and—crucially—safe.\n\nTo prove the design, Starley staged a 100-mile race in September 1885. All 14 riders used Rovers, with the winner completing the distance in just over 7 hours. According to *The Cyclist* magazine, the Rover 'set the fashion to the world.' Within five years, the penny-farthing was obsolete. The Polish word for bicycle—'rower'—still honors Starley's brand.",
+      "metrics": {
+        "price": "£20 15s (1886)",
+        "innovation": "Chain drive, equal wheels, diamond frame"
+      },
+      "links": [
+        {
+          "title": "Safety bicycle - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Safety_bicycle"
+        },
+        {
+          "title": "John Kemp Starley - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_Kemp_Starley"
+        }
+      ]
+    },
+    {
+      "id": "evt_dunlop_tire",
+      "title": "Dunlop's Pneumatic Tire",
+      "date_display": "December 7, 1888",
+      "date_start": "1888-12-07",
+      "group_ids": [
+        "grp_safety"
+      ],
+      "type": "Patent",
+      "innovator": "John Boyd Dunlop",
+      "innovation": "Air-Filled Rubber Tire",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/John_Boyd_Dunlop.jpg/800px-John_Boyd_Dunlop.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f8/Dunlop_first_pneumatic_bicycle_tyre.JPG"
+      ],
+      "description": "Scottish veterinarian John Boyd Dunlop, living in Belfast, reinvented the pneumatic tire to smooth his son's tricycle ride over rough cobblestones. He wrapped rubber sheets around an air-filled canvas tube, creating a cushion that absorbed road vibration. The technology had actually been invented by Robert Thomson in 1845, but was forgotten—Dunlop developed it independently.\n\nThe proof came on the track. Cyclist Willie Hume won a series of races on Dunlop's pneumatic tires in 1889, demonstrating that air-filled tires were not only more comfortable but significantly faster than solid rubber. The cushioning allowed wheels to roll over obstacles rather than bouncing off them.\n\nDunlop's patent was eventually invalidated when Thomson's prior invention surfaced, but by then the Dunlop Rubber Company was established and thriving. Pneumatic tires became essential to the bicycle boom of the 1890s and would later prove equally vital to the automobile industry.",
+      "metrics": {
+        "patent": "UK Patent 10607 (1888)",
+        "effect": "Improved comfort, speed, and efficiency"
+      },
+      "links": [
+        {
+          "title": "John Boyd Dunlop - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_Boyd_Dunlop"
+        },
+        {
+          "title": "Pneumatic tire - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pneumatic_tire"
+        }
+      ]
+    },
+    {
+      "id": "evt_bicycle_boom",
+      "title": "The Gay Nineties Bicycle Boom",
+      "date_display": "1890",
+      "date_start": "1890-01-01",
+      "group_ids": [
+        "grp_safety"
+      ],
+      "type": "Cultural Shift",
+      "innovation": "Mass Transportation Revolution",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Overman_victor_flyer_bicycle.png/800px-Overman_victor_flyer_bicycle.png",
+        "https://upload.wikimedia.org/wikipedia/commons/1/14/Safety_bicycle_1887.jpg"
+      ],
+      "description": "The combination of Starley's safety bicycle and Dunlop's pneumatic tire created an unprecedented cycling boom that transformed Western society. By 1890, bicycle prices had fallen from luxury goods to middle-class affordability. Factories adopted interchangeable parts and assembly-line production to meet demand.\n\nThe social effects were profound. Workers could live miles from their jobs rather than walking distance. Young people could court beyond parental supervision—the bicycle enabled the first 'date culture.' Women found unprecedented mobility and freedom. Cycling clubs became social centers, and 'scorchers' (fast riders) terrorized pedestrians.\n\nThe manufacturing revolution was equally significant. Bicycle factories pioneered precision steel tubing, ball bearings, differential gears, and assembly-line production. When the automobile emerged, bicycle mechanics and manufacturers—including the Dodge brothers, the Fisher brothers, and of course the Wrights—brought these skills directly to the car industry.",
+      "metrics": {
+        "US_production": "1.2 million bicycles/year (1896)",
+        "impact": "First mass personal transportation"
+      },
+      "links": [
+        {
+          "title": "Bicycle craze - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bicycle_craze"
+        }
+      ]
+    },
+    {
+      "id": "evt_women_cycling",
+      "title": "Bloomers and the New Woman",
+      "date_display": "1893",
+      "date_start": "1893-01-01",
+      "group_ids": [
+        "grp_safety"
+      ],
+      "type": "Social Movement",
+      "innovation": "Bicycle-Driven Dress Reform",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bloomers.jpg"
+      ],
+      "description": "The bicycle posed a radical problem for Victorian women: how could one ride while wearing the period's mandatory long skirts, corsets, and petticoats? Skirts tangled in chains and wheels; corsets made breathing during exertion dangerous. The practical necessity of cycling drove a revolution in women's dress.\n\n'Rational dress' advocates promoted bloomers—loose-fitting trousers gathered at the ankle—and divided skirts that permitted cycling. Conservatives were scandalized. Clergy preached against the immorality of visible female legs. Mobs harassed women cyclists. But the practical benefits were undeniable, and fashion slowly bent to function.\n\nMore fundamentally, cycling empowered women by providing independent mobility for the first time in history. Women could travel without chaperones, visit friends, attend meetings, and participate in public life on their own terms. The bicycle became inextricably linked to the women's suffrage movement.",
+      "metrics": {
+        "innovation": "Bloomers and divided skirts",
+        "impact": "Physical and social liberation"
+      },
+      "links": [
+        {
+          "title": "Bloomers (clothing) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bloomers_(clothing)"
+        },
+        {
+          "title": "Rational dress - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rational_dress"
+        }
+      ]
+    },
+    {
+      "id": "evt_anthony_quote",
+      "title": "Anthony's 'Freedom Machine'",
+      "date_display": "February 2, 1896",
+      "date_start": "1896-02-02",
+      "group_ids": [
+        "grp_safety"
+      ],
+      "type": "Cultural Statement",
+      "innovator": "Susan B. Anthony",
+      "innovation": "Feminist Symbol",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/SB_Anthony_from_RoRaWW.jpg/800px-SB_Anthony_from_RoRaWW.jpg"
+      ],
+      "description": "In an interview with journalist Nellie Bly, 76-year-old suffragist leader Susan B. Anthony declared: 'Let me tell you what I think of bicycling. I think it has done more to emancipate women than anything else in the world. It gives women a feeling of freedom and self-reliance.'\n\nAnthony's statement captured a profound truth about the bicycle's social impact. For the first time in history, women had access to independent personal transportation. They could go where they wanted, when they wanted, without requiring a horse, a carriage, a driver, or a male escort. The physical freedom of cycling translated directly into social and political freedom.\n\nThe quote became one of the most famous statements about women's liberation, linking the suffrage movement to the bicycle craze. Anthony herself had ridden (and crashed) a bicycle, and understood viscerally the independence it provided. She lived to see neither women's suffrage nor the automobile age, but she recognized the revolutionary potential of the machine.",
+      "metrics": {
+        "source": "Interview with Nellie Bly, 1896",
+        "quote": "'The freedom machine'"
+      },
+      "links": [
+        {
+          "title": "Susan B. Anthony - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Susan_B._Anthony"
+        }
+      ]
+    },
+    {
+      "id": "evt_olympic_cycling",
+      "title": "Cycling at the First Olympics",
+      "date_display": "April 8, 1896",
+      "date_start": "1896-04-08",
+      "group_ids": [
+        "grp_safety"
+      ],
+      "type": "Sports Event",
+      "innovation": "Olympic Sport Status",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/7f/Podhlatodromio_karaiskakh_1896.jpg"
+      ],
+      "description": "Cycling featured prominently in the first modern Olympic Games in Athens, with six events: sprint, time trial, 10km, 100km, road race, and 12-hour race. The Neo Phaliron Velodrome hosted the track events, while the marathon course served as the road race route.\n\nFrench cyclist Paul Masson dominated the track events, winning three gold medals. The 87km road race was won by Greek rider Aristidis Konstantinidis, delighting the home crowd. The grueling 12-hour race (later discontinued) tested the limits of human endurance.\n\nOlympic recognition legitimized bicycle racing as a sport on par with athletics and swimming. Cycling has appeared at every Summer Olympics since, developing distinct traditions for track (in velodromes) and road disciplines.",
+      "metrics": {
+        "events": "6 cycling events",
+        "venue": "Neo Phaliron Velodrome"
+      },
+      "links": [
+        {
+          "title": "Cycling at the 1896 Summer Olympics - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cycling_at_the_1896_Summer_Olympics"
+        }
+      ]
+    },
+    {
+      "id": "evt_peak_sales",
+      "title": "The Bicycle Bubble Peaks",
+      "date_display": "1898",
+      "date_start": "1898-01-01",
+      "group_ids": [
+        "grp_safety"
+      ],
+      "type": "Market Peak",
+      "innovation": "Mass Market Achievement",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Overman_victor_flyer_bicycle.png/800px-Overman_victor_flyer_bicycle.png"
+      ],
+      "description": "American bicycle production peaked at over one million units annually, with more than 300 manufacturers competing for market share. The Pope Manufacturing Company alone produced 60,000 bicycles per year. Prices had fallen from $150 to under $50, making bicycles accessible to working-class Americans.\n\nThe industry's success contained the seeds of its decline. Market saturation meant everyone who wanted a bicycle had one. Overproduction led to price collapses. Speculative investments in bicycle companies—the tech stocks of their era—crashed, wiping out fortunes.\n\nThe emerging automobile industry accelerated the decline. Many bicycle manufacturers pivoted to cars: Pope built electric automobiles, the Dodge brothers made parts for Oldsmobile and then Ford, and countless bicycle mechanics turned their skills to the new machines. By 1900, the bicycle boom was over—but the manufacturing infrastructure it created would power the automobile age.",
+      "metrics": {
+        "production": "1+ million bicycles/year",
+        "manufacturers": "300+ US companies"
+      },
+      "links": [
+        {
+          "title": "Bicycle craze - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bicycle_craze"
+        }
+      ]
+    },
+    {
+      "id": "evt_tour_de_france",
+      "title": "The First Tour de France",
+      "date_display": "July 1, 1903",
+      "date_start": "1903-07-01",
+      "group_ids": [
+        "grp_automobile"
+      ],
+      "type": "Sports Event",
+      "innovator": "L'Auto newspaper / Henri Desgrange",
+      "innovation": "Grand Tour Format",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Garin03winner.jpg"
+      ],
+      "description": "The first Tour de France started at 3:16 p.m. on July 1, 1903, from the Café Reveil Matin outside Paris. Henri Desgrange, editor of the sports newspaper *L'Auto*, organized the race to boost circulation in his paper's rivalry with *Le Vélo*. The gamble would create one of the world's greatest sporting events.\n\nThe race covered 2,428 kilometers in six monstrous stages, with rest days between. Stages averaged over 400 km—riders pedaled through the night. Sixty riders started; twenty-one finished. Maurice Garin, a 32-year-old Italian-born chimney sweep nicknamed 'The Little Sweep,' won by nearly three hours—still the largest winning margin in Tour history.\n\nGarin earned 6,125 francs in prize money. More importantly, *L'Auto*'s circulation soared. The Tour became an annual institution, growing in prestige to become cycling's ultimate prize and an inseparable part of French national identity.",
+      "metrics": {
+        "distance": "2,428 km",
+        "stages": "6 (avg 400+ km each)",
+        "starters": "60",
+        "finishers": "21",
+        "winner": "Maurice Garin (2:49:45 margin)"
+      },
+      "links": [
+        {
+          "title": "1903 Tour de France - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/1903_Tour_de_France"
+        },
+        {
+          "title": "Tour de France - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tour_de_France"
+        }
+      ]
+    },
+    {
+      "id": "evt_wright_brothers",
+      "title": "Bicycle Mechanics Take Flight",
+      "date_display": "December 17, 1903",
+      "date_start": "1903-12-17",
+      "group_ids": [
+        "grp_automobile"
+      ],
+      "type": "Technology Transfer",
+      "innovator": "Wright Brothers",
+      "innovation": "Bicycle Technology Enables Flight",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/86/First_flight2.jpg"
+      ],
+      "description": "At 10:35 a.m. on December 17, 1903, Orville Wright lifted off from the sand at Kill Devil Hills, North Carolina, piloting the first powered, controlled, heavier-than-air flight. He and his brother Wilbur had spent years developing the aircraft in the back of their Dayton, Ohio bicycle shop.\n\nThe connection between bicycles and aviation was not coincidental. The Wrights' experience with two-wheeled balance informed their understanding of aircraft control—they recognized that a plane, like a bicycle, required active pilot control rather than inherent stability. Their chain-drive system for the propellers came directly from bicycle technology. Their metalworking skills, honed on bicycle repairs, enabled precision manufacturing.\n\nThe Wrights were far from the only bicycle mechanics who became aviation pioneers. Glenn Curtiss, the Wrights' great rival, also came from bicycles. The bicycle industry had developed lightweight construction, precision engineering, and an understanding of human-powered locomotion that transferred directly to early aviation.",
+      "metrics": {
+        "first_flight": "12 seconds, 120 feet",
+        "longest_flight": "59 seconds, 852 feet"
+      },
+      "links": [
+        {
+          "title": "Wright Brothers - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Wright_brothers"
+        },
+        {
+          "title": "Wright Flyer - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Wright_Flyer"
+        }
+      ]
+    },
+    {
+      "id": "evt_giro",
+      "title": "Birth of the Giro d'Italia",
+      "date_display": "May 13, 1909",
+      "date_start": "1909-05-13",
+      "group_ids": [
+        "grp_automobile"
+      ],
+      "type": "Sports Event",
+      "innovator": "La Gazzetta dello Sport",
+      "innovation": "Italian Grand Tour",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Giro_1909.png"
+      ],
+      "description": "Following the Tour de France's example, the Italian sports newspaper *La Gazzetta dello Sport* launched its own grand tour on May 13, 1909. The first Giro d'Italia covered 2,448 km in eight stages, departing from Milan and looping through Italy's diverse terrain.\n\nLuigi Ganna won the inaugural Giro with a total time of 89 hours, 48 minutes. The race featured the grueling mountain passes of the Alps and Dolomites that would become the Giro's signature challenge—climbs like the Stelvio and Gavia would later acquire legendary status.\n\nThe Giro became central to Italian national identity, second only to football in the nation's sporting passions. Together with the Tour and the later Vuelta a España (1935), the three Grand Tours established the three-week stage race as cycling's ultimate test of endurance.",
+      "metrics": {
+        "distance": "2,448 km",
+        "stages": "8",
+        "winner": "Luigi Ganna"
+      },
+      "links": [
+        {
+          "title": "Giro d'Italia - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Giro_d%27Italia"
+        },
+        {
+          "title": "1909 Giro d'Italia - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/1909_Giro_d%27Italia"
+        }
+      ]
+    },
+    {
+      "id": "evt_sturmey_archer",
+      "title": "The Legendary 3-Speed Hub",
+      "date_display": "1913",
+      "date_start": "1913-01-01",
+      "group_ids": [
+        "grp_automobile"
+      ],
+      "type": "Innovation",
+      "innovator": "Sturmey-Archer",
+      "innovation": "Internal Hub Gearing",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/04/Sturmey_Archer_3spd_bicycle_hub.jpg"
+      ],
+      "description": "The Sturmey-Archer AW 3-speed hub, introduced in 1936 (building on designs dating to 1913), became arguably the most successful bicycle component ever manufactured. The internally-geared hub enclosed its planetary gear mechanism within the rear hub shell, protected from weather and requiring minimal maintenance.\n\nUnlike derailleurs with exposed chains and sprockets, the internal hub was clean, reliable, and nearly foolproof. Riders shifted with a simple handlebar lever connected by cable to the hub. The design was perfect for utility cycling in rainy British conditions—no exposed gears to rust or jam.\n\nThe AW hub dominated practical transportation cycling for decades, particularly in Britain, the Netherlands, and Northern Europe. Tens of millions were manufactured. Though derailleurs eventually won out for sport cycling, internal hubs remained standard for city bikes and experienced a renaissance in urban cycling.",
+      "metrics": {
+        "production": "Tens of millions",
+        "gear_range": "3 speeds"
+      },
+      "links": [
+        {
+          "title": "Sturmey-Archer - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sturmey-Archer"
+        },
+        {
+          "title": "Hub gear - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hub_gear"
+        }
+      ]
+    },
+    {
+      "id": "evt_schwinn_dominance",
+      "title": "Schwinn's American Empire",
+      "date_display": "1930s",
+      "date_start": "1930-01-01",
+      "group_ids": [
+        "grp_automobile"
+      ],
+      "type": "Industry Development",
+      "innovator": "Schwinn Bicycle Company",
+      "innovation": "American Mass Market",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d9/SchwinnAeroCycle.jpg"
+      ],
+      "description": "Arnold, Schwinn & Company emerged from the Great Depression as America's dominant bicycle brand, controlling up to 25% of the US market through exclusive dealer networks and aggressive marketing. The company's balloon-tired cruisers with chrome fenders, coaster brakes, and tank-mounted headlights defined the American bicycle for generations.\n\nUnlike European manufacturers who built lightweight machines for adult transportation and sport, Schwinn focused on children and teenagers. Heavy, durable bikes with automotive styling—mock gas tanks, springer forks, chrome accessories—became the American archetype. The bikes were perfect for cruising suburban streets but poorly suited for serious riding.\n\nThis strategy would prove fatally shortsighted. When the 1970s bike boom brought adult riders back to cycling, they wanted lightweight 10-speeds, not 50-pound cruisers. Schwinn failed to adapt, refused to manufacture in Asia, and eventually filed for bankruptcy in 1992.",
+      "metrics": {
+        "market_share": "~25% of US market",
+        "strategy": "Children's market, dealer networks"
+      },
+      "links": [
+        {
+          "title": "Schwinn - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Schwinn"
+        }
+      ]
+    },
+    {
+      "id": "evt_derailleur_tour",
+      "title": "Derailleurs Come to the Tour",
+      "date_display": "1937",
+      "date_start": "1937-01-01",
+      "group_ids": [
+        "grp_automobile"
+      ],
+      "type": "Rule Change",
+      "innovation": "Modern Gearing Permitted",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/14-06-20-shimano-600-RalfR-N3S_7903-05.jpg/800px-14-06-20-shimano-600-RalfR-N3S_7903-05.jpg"
+      ],
+      "description": "The Tour de France finally permitted derailleur gears in 1937, ending an era of painful absurdity. Previously, race organizers—including Henri Desgrange—had banned them as unsporting mechanical aids. Riders used hubs with different sprockets on each side; when terrain changed, they had to dismount, remove the rear wheel, flip it, and remount—losing precious time.\n\nDerailleurs had existed since the early 1900s, but purists considered gear-changing contrary to the spirit of cycling. The 1937 rule change was practical necessity: mountain stages had become too grueling with fixed gears. The liberation was transformative—riders could now shift while pedaling, selecting optimal gears for any terrain.\n\nRoger Lapébie won the 1937 Tour, the first using derailleurs. The technology evolved rapidly, from 3-speed systems to today's electronic 24-speed setups that shift in milliseconds.",
+      "metrics": {
+        "previous_system": "Fixed gears, wheel flipping",
+        "first_winner": "Roger Lapébie (1937)"
+      },
+      "links": [
+        {
+          "title": "Derailleur - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Derailleur"
+        },
+        {
+          "title": "1937 Tour de France - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/1937_Tour_de_France"
+        }
+      ]
+    },
+    {
+      "id": "evt_schwinn_stingray",
+      "title": "Sting-Ray Mania",
+      "date_display": "1969",
+      "date_start": "1969-01-01",
+      "group_ids": [
+        "grp_automobile"
+      ],
+      "type": "Market Peak",
+      "innovator": "Schwinn",
+      "innovation": "Banana Seat Youth Bike",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Schwinn_StingRay_OrangeKrate_5speed_1968.jpg/800px-Schwinn_StingRay_OrangeKrate_5speed_1968.jpg"
+      ],
+      "description": "The Schwinn Sting-Ray became the most popular bicycle ever made, with sales exceeding 2 million units at its peak. Introduced in 1963 and inspired by the custom 'chopper' motorcycles of California, the Sting-Ray featured a banana seat, high-rise 'ape hanger' handlebars, and a 20-inch rear wheel paired with a smaller front wheel.\n\nThe design captured the muscle-car aesthetics of the 1960s. Premium 'Krate' models came with stick-shift 5-speed transmissions, springer front forks, and colors like 'Orange Krate' and 'Apple Krate.' Every major manufacturer rushed to copy the design, spawning an entire category of 'wheelie bikes.'\n\nThe Sting-Ray represented bicycles as children's toys rather than transportation—a nadir for American cycling culture. Adults had largely abandoned bikes for cars, leaving the market to kids. California teens would soon repurpose these machines for dirt racing, creating BMX and ultimately inspiring the mountain bike revolution.",
+      "metrics": {
+        "sales": "2+ million units",
+        "style": "Banana seat, high-rise bars, 20-inch wheels"
+      },
+      "links": [
+        {
+          "title": "Schwinn Sting-Ray - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Schwinn_Sting-Ray"
+        }
+      ]
+    },
+    {
+      "id": "evt_bmx_begins",
+      "title": "Birth of BMX",
+      "date_display": "1970",
+      "date_start": "1970-01-01",
+      "group_ids": [
+        "grp_bmx_mtb"
+      ],
+      "type": "Sport Origin",
+      "innovation": "Bicycle Motocross",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/BMX_racing_action_photo.jpg"
+      ],
+      "description": "California kids, inspired by watching motocross motorcycle racing, began racing their Sting-Ray-style bikes on improvised dirt tracks. The 1971 motorcycle documentary *On Any Sunday* featured a scene of kids racing bikes in the dirt, capturing and spreading the zeitgeist. Within years, organized BMX (Bicycle Motocross) racing had emerged.\n\nBMX represented something genuinely new in cycling—an American innovation divorced from European road racing traditions. It was informal, youthful, and focused on excitement rather than endurance. Kids built their own tracks, modified their own bikes, and created their own culture. By the mid-1970s, BMX-specific bicycles with 20-inch wheels and knobby tires replaced the repurposed Sting-Rays.\n\nThe sport's counterculture energy would directly inspire both freestyle BMX (tricks and jumps) and, through the same Northern California scene, the invention of the mountain bike.",
+      "metrics": {
+        "origin": "Southern California dirt tracks",
+        "wheel_size": "20 inches"
+      },
+      "links": [
+        {
+          "title": "BMX - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/BMX"
+        },
+        {
+          "title": "On Any Sunday (1971) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/On_Any_Sunday"
+        }
+      ]
+    },
+    {
+      "id": "evt_mountain_bike_origins",
+      "title": "Repack: Birth of the Mountain Bike",
+      "date_display": "1977",
+      "date_start": "1977-01-01",
+      "group_ids": [
+        "grp_bmx_mtb"
+      ],
+      "type": "Innovation",
+      "innovator": "Gary Fisher, Joe Breeze, Charlie Kelly",
+      "innovation": "Off-Road Bicycle",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mountain-bike-racing.jpg/800px-Mountain-bike-racing.jpg"
+      ],
+      "description": "In the hills above Marin County, California, a group of countercultural cyclists began racing modified 1930s-40s Schwinn cruisers down the fire roads of Mount Tamalpais. They called it 'repack' racing because the coaster brake hubs got so hot during the descent that the grease burned away and had to be repacked after each run.\n\nThe old cruisers—heavy, balloon-tired 'klunkers'—couldn't handle the abuse. The riders began modifying them with motorcycle components, thumb shifters, and drum brakes. In 1977, Joe Breeze built the first purpose-designed mountain bike frame, the 'Breezer #1.' Gary Fisher and Charlie Kelly founded MountainBikes (later Fisher Bicycles) and began selling purpose-built machines.\n\nWhat started as a Northern California obsession became a global phenomenon. The mountain bike democratized cycling, making rough terrain accessible and removing the intimidating culture of road racing. By the 1990s, mountain bikes outsold road bikes worldwide.",
+      "metrics": {
+        "first_purpose_built": "Breezer #1 (1977)",
+        "repack_record": "4:22 (Gary Fisher)"
+      },
+      "links": [
+        {
+          "title": "Mountain bike - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mountain_bike"
+        },
+        {
+          "title": "History of the mountain bike - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_mountain_bike"
+        }
+      ]
+    },
+    {
+      "id": "evt_specialized_stumpjumper",
+      "title": "The Stumpjumper Goes Mass-Market",
+      "date_display": "1981",
+      "date_start": "1981-01-01",
+      "group_ids": [
+        "grp_bmx_mtb"
+      ],
+      "type": "Product Launch",
+      "innovator": "Specialized",
+      "innovation": "First Mass-Produced Mountain Bike",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Orbea_Occam_2020.jpg/800px-Orbea_Occam_2020.jpg"
+      ],
+      "description": "Specialized founder Mike Sinyard launched the Stumpjumper in 1981, the first mass-produced mountain bike available through normal retail channels. Manufactured in Japan (where Sinyard had connections from importing components), the Stumpjumper sold for $750—expensive, but far less than the $1,500+ custom frames from the Marin County pioneers.\n\nThe Stumpjumper brought mountain biking out of Northern California counterculture and into mainstream America. Specialized sold 500 bikes the first year, proving market demand existed. Major manufacturers—Schwinn, Trek, Giant—rushed to develop their own mountain bike lines.\n\nWithin a decade, mountain bikes had overtaken road bikes in sales. The upright position, durability, and lower intimidation factor appealed to casual riders who had no interest in racing. Mountain biking became the engine that brought American adults back to cycling.",
+      "metrics": {
+        "price": "$750",
+        "first_year_sales": "~500 units"
+      },
+      "links": [
+        {
+          "title": "Specialized Stumpjumper - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Specialized_Stumpjumper"
+        },
+        {
+          "title": "Specialized Bicycle Components - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Specialized_Bicycle_Components"
+        }
+      ]
+    },
+    {
+      "id": "evt_bmx_olympics",
+      "title": "BMX at the LA Olympics",
+      "date_display": "1984",
+      "date_start": "1984-01-01",
+      "group_ids": [
+        "grp_bmx_mtb"
+      ],
+      "type": "Sports Event",
+      "innovation": "Olympic Recognition",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/BMX_racing_action_photo.jpg"
+      ],
+      "description": "BMX was featured as a demonstration sport at the Los Angeles Olympics, exposing the California-born sport to a global television audience. Racers from the US, the Netherlands, Japan, and other nations competed on a specially built track.\n\nThe Olympic appearance legitimized BMX beyond its American counterculture origins. International federations organized, rules standardized, and professional competitions proliferated. Though full Olympic medal status wouldn't come until Beijing 2008, the 1984 demonstration marked BMX's coming of age as an international sport.",
+      "metrics": {
+        "status": "Demonstration sport",
+        "wait_for_medals": "24 years (2008)"
+      },
+      "links": [
+        {
+          "title": "BMX at the 1984 Summer Olympics - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cycling_at_the_1984_Summer_Olympics"
+        }
+      ]
+    },
+    {
+      "id": "evt_mtb_boom",
+      "title": "Mountain Bike Sales Explode",
+      "date_display": "1984",
+      "date_start": "1984-01-01",
+      "group_ids": [
+        "grp_bmx_mtb"
+      ],
+      "type": "Market Shift",
+      "innovation": "Off-Road Cycling Mainstream",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mountain-bike-racing.jpg/800px-Mountain-bike-racing.jpg"
+      ],
+      "description": "Mountain bike sales exploded in the mid-1980s as the category attracted both serious off-road enthusiasts and casual riders who simply preferred the upright position and versatile tires. By decade's end, mountain bikes outsold road bikes in the United States.\n\nThe boom brought American adults back to cycling. Unlike the intimidating world of road racing—with its expensive equipment, specialized clothing, and elitist culture—mountain biking was accessible. You could ride in regular clothes, explore trails near home, and fall without injury on soft dirt. The bikes worked on roads too, making them practical all-rounders.\n\nMajor manufacturers who had ignored the early mountain bike pioneers now scrambled to compete. Trek, Cannondale, and even struggling Schwinn rushed mountain bikes to market. The category would dominate bicycle sales for the next three decades.",
+      "metrics": {
+        "market_share": "Overtook road bikes by 1990",
+        "appeal": "Casual riders, all-terrain versatility"
+      },
+      "links": [
+        {
+          "title": "Mountain bike - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mountain_bike"
+        }
+      ]
+    },
+    {
+      "id": "evt_shimano_sti",
+      "title": "Shimano's STI Revolution",
+      "date_display": "1990",
+      "date_start": "1990-01-01",
+      "group_ids": [
+        "grp_bmx_mtb"
+      ],
+      "type": "Innovation",
+      "innovator": "Shimano",
+      "innovation": "Integrated Brake-Shift Levers",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/14-06-20-shimano-600-RalfR-N3S_7903-05.jpg/800px-14-06-20-shimano-600-RalfR-N3S_7903-05.jpg"
+      ],
+      "description": "Shimano Total Integration (STI) combined brake levers with shift controls in a single integrated unit, allowing road cyclists to change gears without moving their hands from the handlebars. The system debuted at the 1990 Tour de France on Dura-Ace components.\n\nBefore STI, road cyclists had to reach down to shift with downtube-mounted levers—dangerous at high speeds and in tight packs. STI placed shifting at the fingertips: a small lever behind the brake lever shifted up, pressing the brake lever sideways shifted down. The intuitive system quickly became the industry standard.\n\nCampagnolo responded with Ergopower; SRAM later introduced Double Tap. But Shimano's STI set the template that all modern road groupsets follow. The innovation made shifting safe enough for casual riders while improving racing performance.",
+      "metrics": {
+        "debut": "1990 Tour de France",
+        "innovation": "Integrated brake-shift levers"
+      },
+      "links": [
+        {
+          "title": "Shimano Total Integration - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Shimano_Total_Integration"
+        }
+      ]
+    },
+    {
+      "id": "evt_mtb_olympics",
+      "title": "Mountain Biking Goes Olympic",
+      "date_display": "July 30, 1996",
+      "date_start": "1996-07-30",
+      "group_ids": [
+        "grp_bmx_mtb"
+      ],
+      "type": "Sports Event",
+      "innovation": "Olympic Medal Sport",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Orbea_Occam_2020.jpg/800px-Orbea_Occam_2020.jpg"
+      ],
+      "description": "Cross-country mountain biking debuted as an Olympic medal sport at the Atlanta Games, just 19 years after Joe Breeze built the first purpose-designed mountain bike. Bart Brentjens of the Netherlands won the men's race; Paola Pezzo of Italy took the women's gold.\n\nOlympic status completed mountain biking's transformation from Northern California counterculture to legitimate international sport. The UCI organized World Championships, professionalized the competition structure, and standardized race formats.\n\nOlympic recognition brought funding, media attention, and equipment development. Suspension technology, carbon fiber frames, and disc brakes evolved rapidly as manufacturers competed to equip Olympic athletes. The recreational market benefited from technology trickle-down.",
+      "metrics": {
+        "event": "Cross-country",
+        "winners": "Bart Brentjens (M), Paola Pezzo (F)"
+      },
+      "links": [
+        {
+          "title": "Mountain biking at the 1996 Summer Olympics - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cycling_at_the_1996_Summer_Olympics_%E2%80%93_Men%27s_cross-country"
+        }
+      ]
+    },
+    {
+      "id": "evt_armstrong_first",
+      "title": "Armstrong's Comeback Victory",
+      "date_display": "July 25, 1999",
+      "date_start": "1999-07-25",
+      "group_ids": [
+        "grp_bmx_mtb"
+      ],
+      "type": "Sports Event",
+      "innovator": "Lance Armstrong",
+      "innovation": "Cancer Survivor Narrative",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Garin03winner.jpg"
+      ],
+      "description": "Lance Armstrong won the Tour de France in 1999, just three years after a near-fatal cancer diagnosis. The 27-year-old Texan's victory made him an instant American hero and the most famous cyclist since Eddy Merckx.\n\nArmstrong's story was irresistible: diagnosed with testicular cancer that had spread to his brain and lungs, given less than 50% survival odds, he returned to win cycling's greatest race. His Livestrong Foundation raised hundreds of millions for cancer research. He would go on to win seven consecutive Tours (1999-2005).\n\nThe Armstrong era brought unprecedented American attention to professional cycling, driving recreational cycling participation and bike sales. It would all collapse spectacularly in 2012 when USADA stripped his titles after revealing systematic doping, but for a decade, Armstrong was cycling's most powerful ambassador.",
+      "metrics": {
+        "tour_victories": "7 (all stripped in 2012)",
+        "cancer_diagnosis": "1996"
+      },
+      "links": [
+        {
+          "title": "Lance Armstrong - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lance_Armstrong"
+        }
+      ]
+    },
+    {
+      "id": "evt_velib",
+      "title": "Vélib' Changes Urban Mobility",
+      "date_display": "July 15, 2007",
+      "date_start": "2007-07-15",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "System Launch",
+      "innovator": "City of Paris, JCDecaux",
+      "innovation": "Large-Scale Urban Bike-Share",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Station_V%C3%A9lib_rue_Saint-Antoine_Paris_octobre_2020.jpg/800px-Station_V%C3%A9lib_rue_Saint-Antoine_Paris_octobre_2020.jpg"
+      ],
+      "description": "Paris launched Vélib' (a portmanteau of *vélo* and *liberté*—bicycle and freedom) on July 15, 2007, with 10,648 bicycles at 750 stations across the city. Users could pick up a bike at any station and return it to any other, paying just €1 for a day pass with the first 30 minutes free.\n\nWhile not the first public bike-share (Copenhagen's Bycyklen launched in 1995, Lyon's Vélo'v in 2005), Vélib's scale was unprecedented. The system proved that bike-sharing could work in a major world capital, handling tens of thousands of daily trips across a complex urban landscape.\n\nVélib' inspired a global wave of bike-share systems. Barcelona launched Bicing in 2007, London's Boris Bikes followed in 2010, and by 2013 over 500 cities worldwide had implemented similar programs. The concept transformed urban transportation policy by demonstrating that cycling could be democratized—removing barriers of ownership, storage, and theft that had limited bicycle adoption.",
+      "metrics": {
+        "bikes": "10,648 at launch",
+        "stations": "750"
+      },
+      "links": [
+        {
+          "title": "Vélib' - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/V%C3%A9lib%27"
+        },
+        {
+          "title": "The Bike-Share Story - CityLab",
+          "url": "https://www.bloomberg.com/news/articles/2012-08-10/a-short-history-of-bike-share"
+        }
+      ]
+    },
+    {
+      "id": "evt_bmx_medal",
+      "title": "BMX Hits the Olympic Stage",
+      "date_display": "August 20, 2008",
+      "date_start": "2008-08-20",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "Sports Event",
+      "innovation": "BMX Olympic Medal Sport",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Renato_Rezende_em_2021.jpg/800px-Renato_Rezende_em_2021.jpg"
+      ],
+      "description": "BMX racing became a full Olympic medal sport at the Beijing Games on August 20, 2008, 24 years after its demonstration appearance in Los Angeles. Latvian Māris Štrombergs won the men's gold; France's Anne-Caroline Chausson took the women's title.\n\nThe IOC added BMX specifically to attract younger viewers increasingly disengaged from traditional cycling events. The eight-rider elimination heats, spectacular crashes, and 35-second races created television-friendly drama that road racing couldn't match.\n\nOlympic status accelerated BMX's professionalization worldwide. National federations began funding BMX programs, UCI-sanctioned Supercross events created a professional circuit, and manufacturers developed specialized equipment. By the 2020 Tokyo Games, BMX freestyle would also join the program—further expanding cycling's Olympic presence beyond its traditional road and track disciplines.",
+      "metrics": {
+        "status": "Full Olympic medal sport",
+        "first_gold": "Māris Štrombergs (M), Anne-Caroline Chausson (F)"
+      },
+      "links": [
+        {
+          "title": "Cycling at the 2008 Summer Olympics - BMX - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cycling_at_the_2008_Summer_Olympics_%E2%80%93_BMX"
+        },
+        {
+          "title": "BMX Racing - Olympics",
+          "url": "https://olympics.com/en/sports/cycling-bmx-racing/"
+        }
+      ]
+    },
+    {
+      "id": "evt_armstrong_stripped",
+      "title": "The Armstrong Doping Scandal",
+      "date_display": "August 24, 2012",
+      "date_start": "2012-08-24",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "Sports Event",
+      "innovator": "USADA",
+      "innovation": "Doping Enforcement",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Lance_Armstrong_%28Tour_Down_Under_2009%29.jpg/800px-Lance_Armstrong_%28Tour_Down_Under_2009%29.jpg"
+      ],
+      "description": "On August 24, 2012, the US Anti-Doping Agency stripped Lance Armstrong of all seven Tour de France titles (1999-2005) after he declined to contest their charges. USADA CEO Travis Tygart called it \"the most sophisticated, professionalized and successful doping program that sport has ever seen.\"\n\nThe USADA investigation revealed systematic blood doping, EPO use, and testosterone abuse coordinated by Armstrong and US Postal Service team management. Eleven former teammates provided sworn testimony detailing the program. The UCI accepted USADA's findings and erased Armstrong's results from August 1998 forward.\n\nThe scandal devastated professional cycling's credibility and Armstrong's legacy. His Livestrong Foundation, which had raised over $500 million for cancer research, distanced itself from its founder. Sponsors fled. Armstrong eventually admitted doping in a 2013 interview with Oprah Winfrey.\n\nParadoxically, recreational cycling continued growing throughout the scandal. The sport had evolved beyond its professional racing associations—people cycled for fitness, commuting, and environmental reasons that had nothing to do with the Tour de France.",
+      "metrics": {
+        "titles_stripped": "7 Tour de France victories",
+        "ban": "Lifetime"
+      },
+      "links": [
+        {
+          "title": "Lance Armstrong doping case - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lance_Armstrong_doping_case"
+        },
+        {
+          "title": "USADA Reasoned Decision",
+          "url": "https://www.usada.org/spirit-of-sport/education/effects-of-performance-enhancing-drugs/"
+        }
+      ]
+    },
+    {
+      "id": "evt_citi_bike",
+      "title": "Citi Bike Conquers New York",
+      "date_display": "May 27, 2013",
+      "date_start": "2013-05-27",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "System Launch",
+      "innovator": "NYC, Citibank",
+      "innovation": "American Major City Bike-Share",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citi_Bikes_Sunset_Park.jpg/800px-Citi_Bikes_Sunset_Park.jpg"
+      ],
+      "description": "New York City launched Citi Bike on May 27, 2013, with 6,000 bicycles at 330 stations across Manhattan and Brooklyn—making it North America's largest bike-share system. Citibank's $41 million sponsorship funded the initial deployment without requiring city tax dollars.\n\nCritics predicted disaster: New York traffic was too aggressive, distances too far, weather too extreme, and the lack of helmet laws too dangerous. Instead, the system exceeded projections, logging 8 million trips in its first year. Members could pick up the distinctive blue bikes for short trips around the city for $149 annually—roughly the cost of a monthly transit pass.\n\nCiti Bike proved that bike-share could work in America's densest, most car-hostile city. By 2023, the system had expanded to 27,000 bikes, added electric options, and logged over 30 million annual rides. It normalized cycling in a city that once seemed impossible to traverse on two wheels.",
+      "metrics": {
+        "bikes": "6,000 at launch, 27,000+ by 2023",
+        "first_year_trips": "8 million"
+      },
+      "links": [
+        {
+          "title": "Citi Bike - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Citi_Bike"
+        },
+        {
+          "title": "Citi Bike Official Site",
+          "url": "https://citibikenyc.com/"
+        }
+      ]
+    },
+    {
+      "id": "evt_dockless",
+      "title": "The Dockless Bike Invasion",
+      "date_display": "2017",
+      "date_start": "2017-01-01",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "Industry Event",
+      "innovator": "Ofo, Mobike",
+      "innovation": "GPS-Tracked Dockless Bikes",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/An_ofo_bike_miss_seat.jpg/800px-An_ofo_bike_miss_seat.jpg"
+      ],
+      "description": "In 2017, Chinese dockless bike-share companies Ofo and Mobike began a global expansion fueled by billions in venture capital. Their model was radical: GPS-tracked bikes that users could locate via smartphone, unlock with a QR code, and leave anywhere when finished. No stations required.\n\nThe companies deployed millions of brightly colored bikes across Chinese cities, then expanded to Europe, America, and Asia. At peak, Ofo operated 10 million yellow bikes in 250 cities. Mobike deployed similarly across 200+ cities. Competitors like LimeBike and Spin followed.\n\nThe boom turned to bust spectacularly. Neither company achieved profitability. Bikes were vandalized, stolen, and abandoned in piles. By late 2018, Ofo was essentially bankrupt, Mobike was sold to Meituan at a loss, and cities worldwide were left with bicycle graveyards.\n\nYet the wreckage proved instructive: massive demand existed for convenient, flexible cycling. Cities developed regulations for shared mobility. Successful operators like Lime pivoted to e-bikes and scooters. The chaos birthed a more sustainable micromobility industry.",
+      "metrics": {
+        "ofo_peak_bikes": "10 million",
+        "cities": "250+ (Ofo), 200+ (Mobike)"
+      },
+      "links": [
+        {
+          "title": "Ofo (company) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ofo_(company)"
+        },
+        {
+          "title": "What Happened to Bike-Sharing - The Atlantic",
+          "url": "https://www.theatlantic.com/photo/2018/03/bike-share-oversupply-in-china-huge-piles-of-abandoned-and-broken-bicycles/556268/"
+        }
+      ]
+    },
+    {
+      "id": "evt_ebike_maturity",
+      "title": "The E-Bike Tipping Point",
+      "date_display": "2018",
+      "date_start": "2018-01-01",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "Technology Development",
+      "innovation": "Electric Assist Bicycles",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Electric_Wheels_in_Fort_Lauderdale%2C_Florida.jpg/800px-Electric_Wheels_in_Fort_Lauderdale%2C_Florida.jpg"
+      ],
+      "description": "By 2018, electric bicycle technology had reached a tipping point. Lithium-ion battery costs had fallen 87% since 2010 while energy density improved. Compact mid-drive motors from Bosch, Shimano, and Yamaha provided natural-feeling assistance. Prices dropped below €2,000 for quality models.\n\nE-bikes removed the fundamental barriers that had limited cycling: hills became trivial, distances up to 50km practical, arriving sweaty a choice rather than an inevitability. The technology made cycling viable for commuters, older riders, those with physical limitations, and anyone unwilling to arrive at work exhausted.\n\nEuropean sales grew exponentially. In the Netherlands, e-bikes accounted for over half of bicycle revenue by 2018. Germany sold 720,000 units. The trend spread worldwide as major manufacturers from Trek to Specialized launched comprehensive e-bike lines.\n\nThe demographic transformation was striking: e-bikes attracted riders who would never have considered traditional bicycles. They didn't replace car trips so much as create entirely new cycling trips—expanding the potential cycling population far beyond traditional enthusiasts.",
+      "metrics": {
+        "germany_sales_2018": "720,000 units",
+        "battery_cost_reduction": "87% since 2010"
+      },
+      "links": [
+        {
+          "title": "Electric bicycle - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Electric_bicycle"
+        },
+        {
+          "title": "E-Bike Sales Statistics - Statista",
+          "url": "https://www.statista.com/topics/2376/e-bikes/"
+        }
+      ]
+    },
+    {
+      "id": "evt_covid_boom",
+      "title": "The Pandemic Bike Boom",
+      "date_display": "2020",
+      "date_start": "2020-03-01",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "Market Event",
+      "innovation": "Pandemic-Driven Demand",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Station_V%C3%A9lib_rue_Saint-Antoine_Paris_octobre_2020.jpg/800px-Station_V%C3%A9lib_rue_Saint-Antoine_Paris_octobre_2020.jpg"
+      ],
+      "description": "The COVID-19 pandemic triggered an unprecedented global bicycle boom beginning in March 2020. With public transit perceived as dangerous and gyms closed, people turned to bicycles for exercise and transportation. In the US, bicycle sales jumped 121% in March-May compared to 2019; repair shops reported backlogs of months.\n\nThe supply chain couldn't cope. Asian manufacturing had shuttered during China's lockdown; shipping containers sat on docks. Bike shops sold inventory within weeks and faced waitlists extending into 2021. Used bike prices doubled. Components became impossible to source.\n\nCities responded with emergency infrastructure. Paris created 50km of \"coronapistes\"—COVID bike lanes. Milan announced 35km of new cycling routes. New York, London, and dozens of other cities installed temporary protected lanes, some of which became permanent.\n\nThe pandemic compressed years of cultural change into months. People who hadn't cycled since childhood rediscovered bicycles. Employers rethought commuting. Families started riding together. Though the boom moderated as lockdowns ended, cycling participation remained elevated—the pandemic had created millions of new cyclists.",
+      "metrics": {
+        "us_sales_increase": "121% (March-May 2020)",
+        "paris_emergency_lanes": "50km"
+      },
+      "links": [
+        {
+          "title": "The Bike Boom Cometh - NPR",
+          "url": "https://www.npr.org/2020/05/10/852908036/as-the-pandemic-took-hold-americans-bought-tons-of-bikes"
+        },
+        {
+          "title": "Pandemic cycling - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Effects_of_the_COVID-19_pandemic_on_cycling"
+        }
+      ]
+    },
+    {
+      "id": "evt_protected_lanes",
+      "title": "The Protected Lane Revolution",
+      "date_display": "2022",
+      "date_start": "2022-01-01",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "Infrastructure Development",
+      "innovation": "Physically Separated Cycling Infrastructure",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cycle_track_Northumberland_Park_N17_-_46068930994.jpg/800px-Cycle_track_Northumberland_Park_N17_-_46068930994.jpg"
+      ],
+      "description": "By 2022, the global movement toward protected bicycle infrastructure had reached critical mass. Cities worldwide accelerated construction of cycle tracks—paths physically separated from motor vehicle traffic by concrete barriers, bollards, parked cars, or grade separation.\n\nThe evidence had become overwhelming. Research from dozens of cities showed protected lanes increased cycling rates 75-200% compared to painted lanes. Injury rates dropped 90% on protected infrastructure. Most importantly, protected lanes attracted the \"interested but concerned\" majority—the 60% of potential cyclists who wanted to ride but feared traffic.\n\nParis transformed itself, adding 1,000km of cycling infrastructure since 2015 and banning cars from major corridors. London's protected Superhighways carried tens of thousands daily. Even car-centric American cities like Austin, Denver, and Minneapolis built protected networks.\n\nThe shift reflected changed understanding: decades of painted bike lanes had failed to increase cycling because paint doesn't make people feel safe. Physical protection did. Cities finally recognized that cycling infrastructure couldn't be an afterthought—it required the same design rigor as roads and transit.",
+      "metrics": {
+        "cycling_increase": "75-200% on protected vs painted lanes",
+        "injury_reduction": "90% on protected infrastructure"
+      },
+      "links": [
+        {
+          "title": "Cycle track - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cycle_track"
+        },
+        {
+          "title": "Protected Bike Lane Statistics - People for Bikes",
+          "url": "https://peopleforbikes.org/statistics/protected-bike-lanes/"
+        }
+      ]
+    },
+    {
+      "id": "evt_ebike_surpass",
+      "title": "E-Bikes Become the Default",
+      "date_display": "2023",
+      "date_start": "2023-01-01",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "Market Milestone",
+      "innovation": "E-Bike Dominance",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Electric_Wheels_in_Fort_Lauderdale%2C_Florida.jpg/800px-Electric_Wheels_in_Fort_Lauderdale%2C_Florida.jpg"
+      ],
+      "description": "In 2023, e-bike sales exceeded traditional bicycle sales in several major European markets for the first time. The Netherlands led the transition: 54% of new adult bicycles sold were electric. Germany sold 2.1 million e-bikes compared to 1.8 million traditional bikes. Belgium, Switzerland, and Austria showed similar patterns.\n\nThe crossover represented a fundamental shift in what \"bicycle\" meant. For a century, cycling required physical effort proportional to distance and terrain. E-bikes broke that relationship, making 20km commutes effortless, hills irrelevant, and cargo loads manageable.\n\nThe transformation happened faster than anyone predicted. E-bikes didn't just replace some car trips with bike trips—they created entirely new travel patterns. Suburban commuters who never considered cycling began riding. Retirees explored regions they couldn't have managed on traditional bikes. Families chose e-cargo bikes over second cars.\n\nAnalysts projected e-bikes would dominate the global bicycle market by 2030. The bicycle, after 200 years, was being reinvented—not as a toy or sport equipment but as practical transportation for the electrified age.",
+      "metrics": {
+        "netherlands_share": "54% of new adult bikes",
+        "germany_ebikes": "2.1 million vs 1.8 million traditional"
+      },
+      "links": [
+        {
+          "title": "European e-bike market - Bike Europe",
+          "url": "https://www.bike-eu.com/"
+        },
+        {
+          "title": "E-bike statistics - CONEBI",
+          "url": "https://www.conebi.eu/"
+        }
+      ]
+    },
+    {
+      "id": "evt_cargo_bikes",
+      "title": "Cargo Bikes Transform Delivery",
+      "date_display": "2024",
+      "date_start": "2024-01-01",
+      "group_ids": [
+        "grp_urban"
+      ],
+      "type": "Industry Trend",
+      "innovator": "DHL, UPS, Amazon",
+      "innovation": "Last-Mile Logistics",
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Modern_Cargo_Trike_In_London.jpg/800px-Modern_Cargo_Trike_In_London.jpg"
+      ],
+      "description": "By 2024, e-cargo bikes had become essential tools for urban logistics as delivery companies sought faster, cheaper, and cleaner last-mile solutions. DHL deployed over 18,000 cargo bikes globally. UPS established \"micro-hubs\"—small warehouses where vans delivered inventory for cargo bike distribution. Amazon expanded its Prime cargo bike fleet across European cities.\n\nThe economics proved compelling. A cargo bike could carry 300kg of packages, handle 40+ deliveries per shift, and navigate congested city centers far faster than a van stuck in traffic or circling for parking. Operating costs ran 70% lower than electric vans. Zero emissions helped companies meet sustainability targets.\n\nCities encouraged the shift. Paris banned diesel delivery vehicles from the center; cargo bikes became the only practical alternative. London's Ultra Low Emission Zone made electric cargo bikes economically attractive. Amsterdam and Copenhagen, where cargo bikes had been common for decades, offered models for other cities.\n\nThe technology represented cycling's expansion from personal transportation into commercial infrastructure. Two hundred years after Baron von Drais invented his running machine, the bicycle was becoming integral to the global logistics network.",
+      "metrics": {
+        "dhl_fleet": "18,000+ cargo bikes globally",
+        "cost_savings": "70% vs electric vans"
+      },
+      "links": [
+        {
+          "title": "Cargo bike - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cargo_bike"
+        },
+        {
+          "title": "DHL Logistics - Cargo Bikes",
+          "url": "https://www.dhl.com/global-en/home/about-us/delivered-magazine/articles/2021/issue-3-2021/city-logistics-with-cargo-bikes.html"
+        }
+      ]
+    }
+  ]
 }

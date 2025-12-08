@@ -1,6 +1,146 @@
 import { MINIMAP_CONFIG } from '../../../hooks/constants';
 
 /**
+ * Frozen coordinate snapshot captured at drag start.
+ * This allows the viewport indicator to remain stable during drag operations
+ * even if the underlying state changes (e.g., auto-follow, zoom updates).
+ */
+export interface FrozenCoordinateSnapshot {
+  // Captured at drag start - defines the "frozen" coordinate system
+  viewportOffset: number;
+  viewportWidth: number;
+  pixelsPerYear: number;
+  minimapRangeStart: number;
+  minimapRangeEnd: number;
+  minimapYearsVisible: number;
+  totalMinYear: number;
+  totalMaxYear: number;
+
+  // Computed indicator position at drag start
+  indicatorLeftPercent: number;
+  indicatorWidthPercent: number;
+
+  // Track dimensions for pixel-to-percent conversion
+  trackWidth: number;
+}
+
+/**
+ * Create a frozen coordinate snapshot from current state.
+ * Call this at drag start to freeze the coordinate system.
+ */
+export function createCoordinateSnapshot(params: {
+  viewportOffset: number;
+  viewportWidth: number;
+  pixelsPerYear: number;
+  minimapRangeStart: number;
+  minimapRangeEnd: number;
+  totalMinYear: number;
+  totalMaxYear: number;
+  indicatorLeftPercent: number;
+  indicatorWidthPercent: number;
+  trackWidth: number;
+}): FrozenCoordinateSnapshot {
+  return {
+    viewportOffset: params.viewportOffset,
+    viewportWidth: params.viewportWidth,
+    pixelsPerYear: params.pixelsPerYear,
+    minimapRangeStart: params.minimapRangeStart,
+    minimapRangeEnd: params.minimapRangeEnd,
+    minimapYearsVisible: params.minimapRangeEnd - params.minimapRangeStart,
+    totalMinYear: params.totalMinYear,
+    totalMaxYear: params.totalMaxYear,
+    indicatorLeftPercent: params.indicatorLeftPercent,
+    indicatorWidthPercent: params.indicatorWidthPercent,
+    trackWidth: params.trackWidth,
+  };
+}
+
+/**
+ * Convert a pixel delta to a percentage delta using the frozen snapshot.
+ * This ensures consistent drag behavior regardless of live state changes.
+ */
+export function pixelDeltaToPercent(deltaPixels: number, snapshot: FrozenCoordinateSnapshot): number {
+  if (snapshot.trackWidth <= 0) return 0;
+  return (deltaPixels / snapshot.trackWidth) * 100;
+}
+
+/**
+ * Convert a percentage position (in frozen coordinates) to a year.
+ */
+export function snapshotPercentToYear(percent: number, snapshot: FrozenCoordinateSnapshot): number {
+  return minimapPercentToYear(percent, snapshot.minimapRangeStart, snapshot.minimapRangeEnd);
+}
+
+/**
+ * Convert a year to a viewport offset using CURRENT (live) coordinates.
+ * Used when committing the drag to reconcile frozen position with live state.
+ */
+export function yearToViewportOffset(
+  centerYear: number,
+  viewportWidth: number,
+  pixelsPerYear: number,
+  totalMinYear: number,
+  totalWidth: number
+): number {
+  const viewportYears = viewportWidth / pixelsPerYear;
+  const targetOffset = (centerYear - viewportYears / 2 - totalMinYear) * pixelsPerYear;
+  // Clamp to valid range
+  return Math.max(0, Math.min(totalWidth - viewportWidth, targetOffset));
+}
+
+/**
+ * Calculate the center year from a preview position in frozen coordinates.
+ */
+export function getPreviewCenterYear(
+  previewLeftPercent: number,
+  previewWidthPercent: number,
+  snapshot: FrozenCoordinateSnapshot
+): number {
+  const centerPercent = previewLeftPercent + previewWidthPercent / 2;
+  return snapshotPercentToYear(centerPercent, snapshot);
+}
+
+/**
+ * Calculate event density dots for the context (overview) bar.
+ * Returns an array of dots with their percentage position and relative density.
+ */
+export function getEventDensityDots(
+  items: Array<{ xPos: number }>,
+  pixelsPerYear: number,
+  totalMinYear: number,
+  totalMaxYear: number,
+  bucketCount: number = 30
+): Array<{ percent: number; density: number }> {
+  const totalYears = totalMaxYear - totalMinYear;
+  if (totalYears <= 0 || items.length === 0) return [];
+
+  // Create buckets
+  const buckets = new Array(bucketCount).fill(0);
+
+  // Count items in each bucket
+  items.forEach((item) => {
+    const year = item.xPos / pixelsPerYear + totalMinYear;
+    const normalizedPosition = (year - totalMinYear) / totalYears;
+    const bucketIndex = Math.floor(normalizedPosition * bucketCount);
+    if (bucketIndex >= 0 && bucketIndex < bucketCount) {
+      buckets[bucketIndex]++;
+    }
+  });
+
+  // Find max count for normalization
+  const maxCount = Math.max(...buckets);
+  if (maxCount === 0) return [];
+
+  // Convert to dots, filtering out empty buckets
+  return buckets
+    .map((count, i) => ({
+      percent: ((i + 0.5) / bucketCount) * 100,
+      density: count / maxCount,
+    }))
+    .filter((d) => d.density > 0);
+}
+
+/**
  * Convert a year to a percentage position within the minimap's displayed range
  */
 export function yearToMinimapPercent(

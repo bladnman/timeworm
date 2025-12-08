@@ -5,6 +5,8 @@ import {
   panMinimapRange,
   zoomMinimapRange,
   minimapPercentToYear,
+  createCoordinateSnapshot,
+  type FrozenCoordinateSnapshot,
 } from '../utils/minimapCalculations';
 
 interface UseMiniMapOptions {
@@ -44,6 +46,9 @@ interface UseMiniMapReturn {
   // Drag state management
   isDraggingMinimap: boolean;
   setIsDraggingMinimap: (dragging: boolean) => void;
+
+  // Frozen coordinate snapshot for jank-free dragging
+  getCoordinateSnapshot: (trackWidth: number) => FrozenCoordinateSnapshot;
 }
 
 export function useMiniMap({
@@ -233,6 +238,35 @@ export function useMiniMap({
     setMinimapRangeEnd(totalMaxYear);
   }, [totalMinYear, totalMaxYear]);
 
+  // Create a frozen coordinate snapshot for jank-free dragging
+  const getCoordinateSnapshot = useCallback(
+    (trackWidth: number): FrozenCoordinateSnapshot => {
+      return createCoordinateSnapshot({
+        viewportOffset,
+        viewportWidth,
+        pixelsPerYear,
+        minimapRangeStart,
+        minimapRangeEnd,
+        totalMinYear,
+        totalMaxYear,
+        indicatorLeftPercent: indicatorBounds.visibleLeftPercent,
+        indicatorWidthPercent: indicatorBounds.visibleWidthPercent,
+        trackWidth,
+      });
+    },
+    [
+      viewportOffset,
+      viewportWidth,
+      pixelsPerYear,
+      minimapRangeStart,
+      minimapRangeEnd,
+      totalMinYear,
+      totalMaxYear,
+      indicatorBounds.visibleLeftPercent,
+      indicatorBounds.visibleWidthPercent,
+    ]
+  );
+
   return {
     minimapRangeStart,
     minimapRangeEnd,
@@ -255,5 +289,7 @@ export function useMiniMap({
 
     isDraggingMinimap,
     setIsDraggingMinimap,
+
+    getCoordinateSnapshot,
   };
 }

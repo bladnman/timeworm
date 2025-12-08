@@ -16,21 +16,64 @@
 /* Context bar - shows minimap position in total timeline */
 .contextBar {
   position: relative;
-  height: 4px;
+  height: 12px;
   background: var(--color-bg-canvas);
-  border-radius: 2px;
+  border-radius: 6px;
   overflow: hidden;
   margin-bottom: var(--space-1);
 }
 
+/* Track line in context bar */
+.contextTrack {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  right: 4px;
+  height: 2px;
+  background: var(--color-border);
+  transform: translateY(-50%);
+}
+
+/* Density dots in context bar */
+.contextDot {
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  background: var(--color-text-secondary);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Draggable indicator in context bar */
 .contextIndicator {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  background: var(--color-text-accent);
-  border-radius: 2px;
-  opacity: 0.5;
-  transition: left var(--duration-fast), width var(--duration-fast);
+  top: 2px;
+  bottom: 2px;
+  background: rgb(56 189 248 / 0.3);
+  border: 1px solid var(--color-text-accent);
+  border-radius: 4px;
+  cursor: grab;
+  transition: background var(--duration-fast), box-shadow var(--duration-fast);
+}
+
+.contextIndicator:hover {
+  background: rgb(56 189 248 / 0.4);
+  box-shadow: 0 0 6px rgb(56 189 248 / 0.3);
+}
+
+.contextIndicator:active {
+  cursor: grabbing;
+  background: rgb(56 189 248 / 0.5);
+  box-shadow: 0 0 8px rgb(56 189 248 / 0.4);
+}
+
+/* Dragging state for context indicator */
+.contextIndicator.dragging {
+  cursor: grabbing;
+  background: rgb(56 189 248 / 0.5);
+  box-shadow: 0 0 10px rgb(56 189 248 / 0.5);
 }
 
 /* Year labels */
@@ -154,68 +197,83 @@
   background: rgb(56 189 248 / 0.4);
 }
 
-/* Ghost viewport shown during drag */
+/* Ghost viewport shown during drag - shows original position */
 .viewport.ghost {
-  opacity: 0.3;
-  border-style: dashed;
+  opacity: 0.4;
+  border: 2px dashed var(--color-text-accent);
+  background: transparent;
   pointer-events: none;
+  z-index: 5;
 }
 
-/* Active dragging state */
+/* Active dragging state - preview of where viewport is going */
 .viewport.dragging {
   cursor: grabbing;
-  background: rgb(56 189 248 / 0.4);
-  box-shadow: 0 0 8px 2px rgb(56 189 248 / 0.4);
+  background: rgb(56 189 248 / 0.35);
+  box-shadow: 0 0 12px 3px rgb(56 189 248 / 0.5);
+  z-index: 10;
 }
 
-/* Active resizing state */
+/* Active resizing state - preview of new size */
 .viewport.resizing {
   cursor: ew-resize;
-  background: rgb(56 189 248 / 0.5);
-  box-shadow: 0 0 12px 3px rgb(56 189 248 / 0.5);
-  border-color: rgb(56 189 248 / 0.8);
+  background: rgb(56 189 248 / 0.4);
+  box-shadow: 0 0 16px 4px rgb(56 189 248 / 0.6);
+  border-color: var(--color-text-accent);
+  z-index: 10;
 }
 
-/* Resize handles */
+/* Resize handles - always visible with subtle indicator */
 .resizeHandle {
   position: absolute;
   top: -4px;
   bottom: -4px;
-  width: 12px;
+  width: 16px;
   cursor: ew-resize;
   background: transparent;
-  transition: background var(--duration-fast), transform var(--duration-fast);
+  transition: background var(--duration-fast);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .resizeHandle[data-edge="left"] {
-  left: -6px;
+  left: -8px;
   border-radius: 4px 0 0 4px;
 }
 
 .resizeHandle[data-edge="right"] {
-  right: -6px;
+  right: -8px;
   border-radius: 0 4px 4px 0;
 }
 
-.resizeHandle:hover {
-  background: rgb(56 189 248 / 0.4);
-}
-
-/* Mobile-visible handles (shown on tap) */
-.resizeHandle.visible {
-  background: rgb(56 189 248 / 0.6);
-}
-
-.resizeHandle.visible::after {
+/* Always-visible grab bar indicator */
+.resizeHandle::before {
   content: '';
   width: 4px;
   height: 16px;
-  background: var(--color-text-accent);
+  background: rgb(56 189 248 / 0.4);
   border-radius: 2px;
-  box-shadow: 0 0 4px rgb(56 189 248 / 0.6);
+  transition: background var(--duration-fast), height var(--duration-fast), box-shadow var(--duration-fast);
+}
+
+.resizeHandle:hover::before {
+  background: rgb(56 189 248 / 0.8);
+  height: 20px;
+  box-shadow: 0 0 6px rgb(56 189 248 / 0.5);
+}
+
+.resizeHandle:active::before {
+  background: var(--color-text-accent);
+  height: 24px;
+  box-shadow: 0 0 8px rgb(56 189 248 / 0.7);
+}
+
+/* Mobile-visible handles (shown on tap) - more prominent */
+.resizeHandle.visible::before {
+  background: rgb(56 189 248 / 0.7);
+  height: 20px;
+  box-shadow: 0 0 6px rgb(56 189 248 / 0.5);
 }
 
 /* Hint text */
