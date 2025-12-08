@@ -83,6 +83,13 @@
   gap: var(--space-2);
 }
 
+.zoomControls {
+  position: fixed;
+  top: var(--space-4);
+  right: var(--space-4);
+  z-index: 50;
+}
+
 .tick {
   position: absolute;
   top: 0;

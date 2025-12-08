@@ -1,0 +1,136 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  background: var(--tw-component-glass-bg, var(--glass-bg));
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+}
+
+/* Orientation variants */
+.vertical {
+  flex-direction: column;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+/* Size variants */
+.compact {
+  padding: var(--space-1);
+  gap: 2px;
+}
+
+.large {
+  padding: var(--space-3, 0.75rem);
+  gap: var(--space-2);
+}
+
+/* Control buttons - glass style */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--duration-fast);
+}
+
+.compact .button {
+  width: 24px;
+  height: 24px;
+}
+
+.large .button {
+  width: 40px;
+  height: 40px;
+}
+
+.button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.compact .button svg {
+  width: 14px;
+  height: 14px;
+}
+
+.large .button svg {
+  width: 22px;
+  height: 22px;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-bg-surface-hover);
+  border-color: var(--tw-component-accent, var(--color-text-accent));
+  color: var(--tw-component-accent, var(--color-text-accent));
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Reset button - slightly different styling */
+.resetButton {
+  opacity: 0.7;
+}
+
+.resetButton:hover:not(:disabled) {
+  opacity: 1;
+}
+
+/* Zoom level display */
+.zoomDisplay {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  padding: var(--space-1) var(--space-2);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+.vertical .zoomDisplay {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-1);
+  padding-top: var(--space-2);
+}
+
+.horizontal .zoomDisplay {
+  border-left: 1px solid var(--color-border);
+  margin-left: var(--space-1);
+  padding-left: var(--space-2);
+}
+
+.zoomValue {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--tw-component-accent, var(--color-text-accent));
+}
+
+.compact .zoomValue {
+  font-size: var(--text-xs);
+}
+
+.zoomUnit {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.compact .zoomUnit {
+  display: none;
+}

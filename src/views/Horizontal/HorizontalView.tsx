@@ -1,4 +1,6 @@
 import { useHorizontalView } from './hooks/useHorizontalView';
+import { ZoomControls } from '../../components/ZoomControls';
+import { HORIZONTAL_VIEW_CONFIG } from './hooks/constants';
 import styles from './HorizontalView.module.css';
 
 export const HorizontalView = () => {
@@ -15,24 +17,23 @@ export const HorizontalView = () => {
     cardHeight,
     zoomMin,
     zoomMax,
-    zoomStep,
   } = useHorizontalView();
 
   if (!data) return <div>Loading...</div>;
 
   return (
     <div className={styles.container}>
-      <div className={styles.controls}>
-        <label>Zoom Level: {pixelsPerYear}px/yr</label>
-        <input
-          type="range"
-          min={zoomMin}
-          max={zoomMax}
-          step={zoomStep}
-          value={pixelsPerYear}
-          onChange={(e) => handleZoomChange(Number(e.target.value))}
-        />
-      </div>
+      <ZoomControls
+        zoomLevel={pixelsPerYear}
+        minZoom={zoomMin}
+        maxZoom={zoomMax}
+        defaultZoom={HORIZONTAL_VIEW_CONFIG.defaultPixelsPerYear}
+        zoomStep={1.2}
+        onZoomChange={handleZoomChange}
+        unit="px/yr"
+        orientation="horizontal"
+        className={styles.zoomControls}
+      />
 
       <div
         className={styles.timelineTrack}
