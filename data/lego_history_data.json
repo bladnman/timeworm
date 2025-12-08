@@ -4,7 +4,8 @@
         "version": "1.0.0",
         "generated_date": "2025-12-06",
         "overview": "From a Depression-era Danish carpenter's workshop to the world's largest toy company, LEGO transformed simple plastic bricks into a creative system that has captivated billions of children and adults alike. The story includes near-bankruptcy, a pivot to licensed properties, and the emergence of adult fans who have elevated the brick to an art medium. Today, LEGO represents something rare: a product that genuinely makes people more creative.",
-        "attribution": "Historical research compiled from LEGO company archives, toy industry analysis, and design history."
+        "attribution": "Historical research compiled from LEGO company archives, toy industry analysis, and design history.",
+        "defaultView": "tree"
     },
     "groups": [
         {

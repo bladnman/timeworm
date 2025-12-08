@@ -4,7 +4,8 @@
         "version": "1.0.0",
         "generated_date": "2025-12-06",
         "overview": "Godzilla is more than a monster—he is a mirror. Born from Japan's atomic trauma in 1954, this towering reptile has spent seven decades reflecting society's deepest fears back at itself: nuclear annihilation, environmental destruction, government incompetence, and the hubris of technology. From somber allegory to campy hero to CGI spectacle, Godzilla has been reinvented for every generation while remaining cinema's most enduring kaiju.",
-        "attribution": "Historical research compiled from Toho Studios archives, film history, and cultural analysis."
+        "attribution": "Historical research compiled from Toho Studios archives, film history, and cultural analysis.",
+        "defaultView": "comic"
     },
     "groups": [
         {

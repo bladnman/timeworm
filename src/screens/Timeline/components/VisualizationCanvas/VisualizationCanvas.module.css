@@ -1,0 +1,36 @@
+/**
+ * Visualization Canvas Styles
+ *
+ * Container for the timeline visualization.
+ * The visualization is sacred - it owns this space.
+ */
+
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  flex: 1;
+  overflow: hidden;
+}
+
+.visualizationWrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  /*
+   * transform: translateZ(0) creates a new containing block.
+   * This makes position:fixed elements inside views relative to this
+   * container instead of the viewport - keeping them contained.
+   */
+  transform: translateZ(0);
+}
+
+/*
+ * The view itself should fill and scroll within the wrapper.
+ */
+.visualizationWrapper > div {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}

@@ -1,6 +1,6 @@
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: var(--color-bg-canvas);
   overflow: hidden;
   position: relative;
@@ -20,7 +20,7 @@
 
 /* Camera controls panel */
 .controls {
-  position: fixed;
+  position: absolute;
   top: var(--space-4);
   right: var(--space-4);
   background: var(--color-bg-surface);
@@ -97,7 +97,7 @@
 
 /* Legend */
 .legend {
-  position: fixed;
+  position: absolute;
   left: var(--space-4);
   top: 50%;
   transform: translateY(-50%);
@@ -160,7 +160,7 @@
 
 /* Vanishing point indicator */
 .vanishingIndicator {
-  position: fixed;
+  position: absolute;
   top: 100px; /* vanishingPointY */
   left: 50%;
   transform: translateX(-50%);

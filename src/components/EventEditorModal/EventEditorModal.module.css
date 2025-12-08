@@ -1,0 +1,167 @@
+/**
+ * Event Editor Modal Styles
+ *
+ * Following the TimeWorm Ethos:
+ * - Integration over interruption
+ * - Elements should arrive, not pop
+ * - Nothing hides, nothing shouts, everything belongs
+ * - Generous breathing room
+ * - Subtle confidence
+ */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 400;
+  backdrop-filter: blur(8px);
+}
+
+.modalContainer {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 401;
+  /* Substantial margin from viewport edges */
+  padding: var(--space-16);
+}
+
+.modal {
+  width: min(900px, 100%);
+  max-height: 88vh;
+  background: var(--color-bg-canvas);
+  border-radius: 20px;
+  box-shadow:
+    0 32px 64px -16px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Smooth scrolling for that polished feel */
+  scroll-behavior: smooth;
+}
+
+.content {
+  /* Generous internal padding - nothing touches the edges */
+  padding: var(--space-10) var(--space-12);
+  padding-bottom: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  /* Large gaps between major sections - whitespace is our separator */
+  gap: var(--space-10);
+}
+
+/* Hero Image - full bleed, cinematic */
+.heroImage {
+  /* Break out of content padding for full-width hero */
+  margin-left: calc(-1 * var(--space-12));
+  margin-right: calc(-1 * var(--space-12));
+  margin-top: calc(-1 * var(--space-10));
+  margin-bottom: var(--space-4);
+  aspect-ratio: 21 / 9;
+  overflow: hidden;
+  background: var(--color-bg-elevated);
+}
+
+.heroImageImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Details Grid - spacious layout */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+/* Field Styles - minimal, elegant, no boxes */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.fieldLabel {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-tertiary);
+}
+
+.optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.fieldInput {
+  /* No border, subtle background that's almost invisible */
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  padding: var(--space-2) 0;
+  font-size: var(--text-lg);
+  color: var(--color-text-primary);
+  transition: border-color 0.2s ease;
+}
+
+.fieldInput:hover {
+  border-bottom-color: var(--color-border);
+}
+
+.fieldInput:focus {
+  outline: none;
+  border-bottom-color: var(--color-accent);
+}
+
+.fieldInput::placeholder {
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
+
+/* Advanced Content */
+.advancedContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modalContainer {
+    padding: var(--space-4);
+  }
+
+  .modal {
+    width: 100%;
+    max-height: 94vh;
+    border-radius: 12px;
+  }
+
+  .content {
+    padding: var(--space-6) var(--space-6);
+  }
+
+  .heroImage {
+    margin-left: calc(-1 * var(--space-6));
+    margin-right: calc(-1 * var(--space-6));
+    margin-top: calc(-1 * var(--space-6));
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}

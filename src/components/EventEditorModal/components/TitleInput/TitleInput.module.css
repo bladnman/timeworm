@@ -1,0 +1,46 @@
+/**
+ * Title Input Styles
+ *
+ * The title is the most important element.
+ * It should command attention without shouting.
+ * Large, confident, quiet presence.
+ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.input {
+  width: 100%;
+  /* Large, commanding presence */
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  /* Completely invisible - just text */
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  resize: none;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--color-text-tertiary);
+  font-weight: 400;
+}
+
+.error {
+  font-size: var(--text-sm);
+  color: var(--color-error);
+  margin-top: var(--space-2);
+}

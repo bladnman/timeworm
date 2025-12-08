@@ -4,7 +4,8 @@
         "version": "1.0.0",
         "generated_date": "2025-12-06",
         "overview": "Theme parks represent humanity's most elaborate efforts to manufacture happiness—places where architecture, technology, and storytelling converge to create immersive experiences that transport guests beyond ordinary reality. From the pleasure gardens of Europe to the billion-dollar immersive lands of today, these engineered worlds reflect our evolving dreams of escape and wonder.",
-        "attribution": "Historical research compiled from theme park industry archives, entertainment history, and architectural analysis."
+        "attribution": "Historical research compiled from theme park industry archives, entertainment history, and architectural analysis.",
+        "defaultView": "exhibit"
     },
     "groups": [
         {

@@ -1,0 +1,42 @@
+/**
+ * Editor Header Styles
+ *
+ * Minimal - just a way to close. The content is the focus.
+ */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--space-4) var(--space-6);
+  /* No border - let the content breathe */
+  flex-shrink: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.closeButton:hover {
+  background: var(--color-bg-elevated);
+  color: var(--color-text-primary);
+}
+
+.closeIcon {
+  width: 20px;
+  height: 20px;
+}

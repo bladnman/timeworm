@@ -1,0 +1,74 @@
+/**
+ * Group Selector Styles
+ *
+ * Groups are organizational, not the focus.
+ * Quiet chips that don't demand attention.
+ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.label {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-tertiary);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text-tertiary);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0.7;
+}
+
+.chip:hover {
+  opacity: 1;
+  color: var(--color-text-secondary);
+  border-color: var(--color-text-tertiary);
+}
+
+.chipSelected {
+  opacity: 1;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg-canvas);
+}
+
+.chipSelected:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg-canvas);
+  opacity: 0.9;
+}
+
+.chipIcon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.empty {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}

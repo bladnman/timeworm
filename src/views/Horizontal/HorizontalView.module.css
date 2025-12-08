@@ -167,7 +167,7 @@
 
 /* Zoom controls */
 .controls {
-  position: fixed;
+  position: absolute;
   top: var(--space-4);
   right: var(--space-4);
   background: var(--color-bg-surface);

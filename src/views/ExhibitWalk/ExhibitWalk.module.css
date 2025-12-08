@@ -10,7 +10,7 @@
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: linear-gradient(
     to bottom,
@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   background: var(--color-bg-canvas);
 }
 
@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   background: var(--color-bg-canvas);
 }
 
@@ -122,8 +122,8 @@
 
 /* Scroll hints at the bottom */
 .scrollHints {
-  position: fixed;
-  bottom: 80px; /* Above view switcher */
+  position: absolute;
+  bottom: var(--space-4);
   left: 0;
   right: 0;
   display: flex;
@@ -164,7 +164,7 @@
 .container::before,
 .container::after {
   content: '';
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   width: 120px;

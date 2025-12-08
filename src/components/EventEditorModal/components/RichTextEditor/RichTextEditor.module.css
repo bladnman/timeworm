@@ -1,0 +1,114 @@
+/**
+ * Rich Text Editor Styles
+ *
+ * The description is where the story lives.
+ * It should feel like writing, not filling out a form.
+ * Minimal chrome, maximum focus on content.
+ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.editorWrapper {
+  /* No border - content stands on its own */
+  background: transparent;
+  border: none;
+  min-height: 200px;
+}
+
+.editor {
+  font-size: var(--text-lg);
+  line-height: 1.75;
+  color: var(--color-text-primary);
+  outline: none;
+  min-height: 180px;
+}
+
+.editor p {
+  margin: 0;
+}
+
+.editor p + p {
+  margin-top: var(--space-4);
+}
+
+.editor h2 {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: var(--space-8) 0 var(--space-4);
+  color: var(--color-text-primary);
+}
+
+.editor h2:first-child {
+  margin-top: 0;
+}
+
+.editor h3 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin: var(--space-6) 0 var(--space-3);
+  color: var(--color-text-primary);
+}
+
+.editor ul,
+.editor ol {
+  padding-left: var(--space-6);
+  margin: var(--space-4) 0;
+}
+
+.editor li {
+  margin: var(--space-2) 0;
+}
+
+.editor li p {
+  margin: 0;
+}
+
+.editor blockquote {
+  border-left: 2px solid var(--color-text-tertiary);
+  padding-left: var(--space-6);
+  margin: var(--space-6) 0;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.editor strong {
+  font-weight: 600;
+}
+
+.editor em {
+  font-style: italic;
+}
+
+.editor code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--color-bg-elevated);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+/* Placeholder - subtle invitation */
+.editor .is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--color-text-tertiary);
+  font-style: italic;
+  pointer-events: none;
+  height: 0;
+}
+
+.link {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.link:hover {
+  border-bottom-color: var(--color-accent);
+}

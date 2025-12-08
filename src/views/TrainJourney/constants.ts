@@ -66,7 +66,7 @@ export interface EventWithPosition {
   lane: 'above' | 'below';
   stackIndex: number;
   stationId: string | null;  // null if between stations
-  innovator: string;
+  innovator?: string;
 }
 
 export interface EventCluster {

@@ -3,22 +3,44 @@
   --color-bg-canvas: #0f172a; /* Slate 900 */
   --color-bg-surface: #1e293b; /* Slate 800 */
   --color-bg-surface-hover: #334155; /* Slate 700 */
-  
+
   /* Colors - Text */
   --color-text-primary: #f8fafc; /* Slate 50 */
   --color-text-secondary: #94a3b8; /* Slate 400 */
   --color-text-accent: #38bdf8; /* Sky 400 */
-  
+  --color-accent-secondary: #22c55e; /* Green 500 - for gradients */
+
   /* Colors - Borders */
   --color-border: #334155; /* Slate 700 */
-  
+
+  /* Glass UI - Semi-transparent overlay styling */
+  --glass-bg-opacity: 0.15;
+  --glass-border-opacity: 0.8;
+  --glass-bg: rgba(56, 189, 248, var(--glass-bg-opacity));
+  --glass-bg-hover: rgba(56, 189, 248, 0.25);
+  --glass-border: rgba(56, 189, 248, var(--glass-border-opacity));
+  --glass-glow: 0 0 8px rgba(56, 189, 248, 0.5);
+
+  /* Component theming - Override these per-component */
+  --tw-component-accent: var(--color-text-accent);
+  --tw-component-accent-secondary: var(--color-accent-secondary);
+  --tw-component-accent-muted: var(--color-text-secondary);
+  --tw-component-glass-bg: var(--glass-bg);
+  --tw-component-glass-border: var(--color-text-accent);
+
   /* Spacing */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
+  --space-3: 0.75rem;
   --space-4: 1rem;
+  --space-5: 1.25rem;
   --space-6: 1.5rem;
   --space-8: 2rem;
+  --space-10: 2.5rem;
   --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
   
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;

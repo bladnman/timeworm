@@ -4,7 +4,8 @@
         "version": "1.0.0",
         "generated_date": "2025-12-06",
         "overview": "The sneaker began as humble athletic footwear—a practical solution for sports and exercise—but evolved into one of the most powerful cultural symbols of the 20th and 21st centuries. From vulcanized rubber soles to billion-dollar resale markets, the history of sneakers traces the intersection of technology, sports, music, fashion, and identity. What we wear on our feet has become a statement of who we are.",
-        "attribution": "Historical research compiled from industry archives, sports history, and cultural analysis."
+        "attribution": "Historical research compiled from industry archives, sports history, and cultural analysis.",
+        "defaultView": "train"
     },
     "groups": [
         {

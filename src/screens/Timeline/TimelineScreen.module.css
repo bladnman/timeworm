@@ -1,0 +1,114 @@
+/**
+ * Timeline Screen Styles
+ *
+ * Container for the timeline visualization and edit mode.
+ * The visualization is sacred - it owns the space.
+ */
+
+.container {
+  position: relative;
+  height: 100vh;
+  background-color: var(--color-bg-canvas);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Visualization canvas - takes available space */
+.canvas {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 0; /* Required for flex children to shrink */
+}
+
+/* When in edit mode, canvas makes room for the drawer */
+.canvasWithDrawer {
+  margin-right: 400px;
+  transition: margin-right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Loading state */
+.loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--color-bg-surface);
+  border-top-color: var(--color-text-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  font-size: var(--text-sm);
+}
+
+/* Error state */
+.error {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-4);
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.errorIcon {
+  width: 48px;
+  height: 48px;
+  color: #ef4444;
+}
+
+.errorTitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.errorMessage {
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.backButton {
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-bg-surface);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: var(--color-bg-surface-hover);
+  border-color: var(--color-text-accent);
+}
+
+/* Mobile: drawer becomes full screen overlay */
+@media (max-width: 768px) {
+  .canvasWithDrawer {
+    margin-right: 0;
+  }
+}

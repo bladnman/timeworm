@@ -1,7 +1,7 @@
 import { useMemo, useState, useCallback, useLayoutEffect, useRef, useEffect } from 'react';
 import { useTimeline } from '../../../hooks/useTimeline';
 import { useTimeScale } from '../../../hooks/useTimeScale';
-import { useTrackLayout, type TrackLayoutItem } from './useTrackLayout';
+import { useTrackLayout } from './useTrackLayout';
 import { HORIZONTAL_VIEW_CONFIG } from './constants';
 import type { TimelineEvent } from '../../../types/timeline';
 

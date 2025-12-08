@@ -6,8 +6,8 @@
   max-width: 900px;
   margin: 0 auto;
   padding: var(--space-8) var(--space-4);
-  padding-bottom: 120px; /* Space for view switcher */
-  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
 }
 
 /* Age Ruler - vertical strip on the left for quick navigation */
@@ -18,7 +18,7 @@
   position: sticky;
   top: var(--space-8);
   height: fit-content;
-  max-height: calc(100vh - 160px);
+  max-height: calc(100% - 100px);
   overflow-y: auto;
   background: var(--color-bg-surface);
   border-radius: 8px;

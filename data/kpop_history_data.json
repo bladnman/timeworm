@@ -4,7 +4,8 @@
         "version": "1.0.0",
         "generated_date": "2025-12-06",
         "overview": "K-Pop is not just a music genre—it's an industrial complex, a cultural export strategy, and a template for manufacturing global stardom. From Seo Taiji's revolutionary debut in 1992 to BTS speaking at the United Nations, Korean pop music has evolved from domestic entertainment into one of the world's most sophisticated cultural products, complete with trainee systems, fan armies, and streaming optimization strategies.",
-        "attribution": "Historical research compiled from Korean music industry archives, cultural analysis, and entertainment journalism."
+        "attribution": "Historical research compiled from Korean music industry archives, cultural analysis, and entertainment journalism.",
+        "defaultView": "orbital"
     },
     "groups": [
         {

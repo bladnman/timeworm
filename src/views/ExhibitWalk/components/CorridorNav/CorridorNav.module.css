@@ -6,7 +6,7 @@
  */
 
 .nav {
-  position: fixed;
+  position: absolute;
   top: var(--space-4);
   left: 50%;
   transform: translateX(-50%);

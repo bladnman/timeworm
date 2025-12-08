@@ -1,17 +1,18 @@
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   background-color: var(--color-bg-canvas);
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 .loading {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100%;
   color: var(--color-text-secondary);
   font-size: var(--text-lg);
 }
@@ -185,7 +186,7 @@
 
 /* Tooltip */
 .tooltip {
-  position: fixed;
+  position: absolute;
   bottom: var(--space-8);
   left: 50%;
   transform: translateX(-50%);
@@ -255,11 +256,11 @@
 
 /* Detail Panel */
 .detailPanel {
-  position: fixed;
+  position: absolute;
   top: 80px;
   right: var(--space-6);
   width: 360px;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100% - 100px);
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
   border-radius: 8px;
@@ -358,7 +359,7 @@
 
 /* Legend */
 .legend {
-  position: fixed;
+  position: absolute;
   bottom: var(--space-4);
   right: var(--space-4);
   display: flex;
