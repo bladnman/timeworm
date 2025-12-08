@@ -276,7 +276,7 @@
     },
     {
       "id": "evt_game_of_life",
-      "title": "The Game of Life",
+      "title": "The Checkered Game of Life",
       "date_display": "1860",
       "date_start": "1860-01-01",
       "group_ids": [
@@ -286,16 +286,20 @@
       "innovator": "Milton Bradley",
       "innovation": "Life Simulation Board Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/80/The_Game_of_Life_Logo.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/9/91/Checkered_game_of_life_mb_cover.jpg"
       ],
-      "description": "Milton Bradley's 'The Checkered Game of Life' was one of the first popular American board games. Players navigated from youth to old age, with squares representing virtues (industry, honesty) leading upward and vices (gambling, crime) causing setbacks. The game taught Protestant values through play.\n\nBradley founded his company on this game's success. The modern 'Game of Life' (1960 revision) replaced moral instruction with material success—cars, houses, money—reflecting changed American values.",
+      "description": "Milton Bradley's 'The Checkered Game of Life' was one of the first commercially successful American board games. Players navigated from 'Infancy' to 'Happy Old Age' on a 64-square checkerboard, with squares representing virtues (Industry, Honesty, Perseverance) leading upward and vices (Gambling, Crime, Intemperance) causing setbacks or sending players to 'Ruin.' The game taught Protestant work ethic values through play.\n\nBradley founded his company on this game's success, selling 40,000 copies in its first year. The modern 'Game of Life' (1960 redesign by Reuben Klamer) replaced moral instruction with material success—careers, cars, houses, money—reflecting changed American values. The original's explicit moralizing became implicit capitalism.",
+      "links": [
+        {"title": "The Game of Life - Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Game_of_Life"}
+      ],
       "metrics": {
-        "company": "Milton Bradley (founded on this game)"
+        "company": "Milton Bradley (founded 1860)",
+        "first_year_sales": "40,000 copies"
       }
     },
     {
       "id": "evt_parker_brothers",
-      "title": "George Parker Founds Parker Brothers",
+      "title": "A Teenager Builds an Empire",
       "date_display": "1883",
       "date_start": "1883-01-01",
       "group_ids": [
@@ -305,56 +309,70 @@
       "innovator": "George Parker",
       "innovation": "Major Game Publisher",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/5c/Parker_Brothers_logo.png"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Monopoly_Dice.png"
       ],
-      "description": "Sixteen-year-old George Parker founded Parker Brothers after creating 'Banking,' a card game that sold well locally. The company would grow to become one of the largest game publishers in the world, eventually publishing Monopoly, Clue, and Risk.\n\nParker Brothers represented the industrialization of games—mass production, national distribution, and marketing. The company merged with Tonka in 1987 and was eventually absorbed into Hasbro, but the Parker Brothers brand continues.",
+      "description": "Sixteen-year-old George Swinnerton Parker founded Parker Brothers in Salem, Massachusetts after creating 'Banking,' a card game that sold well locally. Parker believed games should be entertaining rather than purely educational—a radical departure from the moral instruction common in Victorian games.\n\nParker Brothers grew to become one of the largest game publishers in the world, defining the American board game industry. The company published Monopoly (1935), Clue (1949), Risk (1959), Trivial Pursuit (1982), and countless other classics. Parker Brothers represented the industrialization of games—mass production, national distribution, and marketing.\n\nThe company merged with Tonka in 1987 and was eventually absorbed into Hasbro in 1991, but the Parker Brothers brand continues on classic games.",
+      "links": [
+        {"title": "Parker Brothers - Wikipedia", "url": "https://en.wikipedia.org/wiki/Parker_Brothers"}
+      ],
       "metrics": {
         "founder_age": "16",
-        "later_hits": "Monopoly, Clue, Risk"
+        "later_hits": "Monopoly, Clue, Risk, Trivial Pursuit",
+        "acquired_by": "Hasbro (1991)"
       }
     },
     {
       "id": "evt_landlords_game",
-      "title": "Lizzie Magie Patents The Landlord's Game",
+      "title": "Monopoly's Forgotten Mother",
       "date_display": "1903",
       "date_start": "1903-01-01",
       "group_ids": [
         "grp_mass_production"
       ],
       "type": "Patent",
-      "innovator": "Lizzie Magie",
-      "innovation": "Monopoly's Origin",
+      "innovator": "Elizabeth Magie",
+      "innovation": "Property Trading Mechanics",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/1c/LandlordsGame.JPG"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a6/Landlords_board_game_cover.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3c/BoardGamePatentMagie.png"
       ],
-      "description": "Elizabeth Magie created The Landlord's Game to demonstrate the economic theories of Henry George—specifically that monopolies on land create wealth inequality. The game had two sets of rules: one where monopolies crushed opponents, another where taxes redistributed wealth.\n\nThe game spread through progressive and academic circles, evolving through folk variations. One version, stripped of its educational purpose, became Monopoly. Magie sold her patent to Parker Brothers for $500; Charles Darrow, who didn't invent the game, became a millionaire from it.",
+      "description": "Elizabeth 'Lizzie' Magie, a progressive activist and game designer, patented The Landlord's Game in 1903 to demonstrate the economic theories of Henry George—specifically that land monopolies create wealth inequality. The game featured a square board with properties for sale, rent collection, and a 'Go to Jail' corner.\n\nMagie designed two sets of rules: one ('Prosperity') where a single land tax redistributed wealth to all players, another ('Monopolist') where monopolies crushed opponents into bankruptcy. She intended players to see that the cooperative rules produced better outcomes.\n\nThe game spread through Quaker and academic circles, evolving through folk variations over three decades. One version, stripped of its educational message, reached Charles Darrow in 1932. Parker Brothers bought Magie's patent in 1935 for $500 with no royalties; Darrow, who hadn't invented the game, became a millionaire. Magie's authorship was largely forgotten until 1970s scholarship revealed the game's true origins.",
+      "links": [
+        {"title": "The Landlord's Game - Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Landlord%27s_Game"},
+        {"title": "Elizabeth Magie - Wikipedia", "url": "https://en.wikipedia.org/wiki/Elizabeth_Magie"}
+      ],
       "metrics": {
-        "purpose": "Economic education",
-        "patent_sale": "$500"
+        "purpose": "Economic education (Georgism)",
+        "patent_sale": "$500 (no royalties)",
+        "true_origin_revealed": "1970s"
       }
     },
     {
       "id": "evt_sorry",
-      "title": "Sorry! Published",
+      "title": "Sorry!",
       "date_display": "1934",
       "date_start": "1934-01-01",
       "group_ids": [
         "grp_mass_production"
       ],
       "type": "Game Publication",
-      "innovator": "Parker Brothers",
+      "innovator": "W.H. Storey (UK), Parker Brothers (US)",
       "innovation": "Card-Driven Racing",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sorry_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Pachisi-real.jpg"
       ],
-      "description": "Sorry! adapted the ancient Pachisi cross-and-circle design with cards replacing dice. The 'Sorry!' card—which sends an opponent's piece back to start—added dramatic reversals and the gleeful cruelty that made the game memorable for generations of families.\n\nThe game's combination of simple rules, luck-based accessibility, and aggressive interaction made it a family game night staple. Sorry! demonstrated that ancient game designs could be successfully repackaged for modern audiences.",
+      "description": "Sorry! adapted the ancient Pachisi cross-and-circle design with cards replacing dice. Originally published in England in 1929, Parker Brothers acquired the US rights in 1934. The 'Sorry!' card—which lets you take an opponent's piece from anywhere on the board and send it back to start while saying 'Sorry!'—added dramatic reversals and gleeful cruelty that made the game memorable.\n\nThe game's combination of simple rules, luck-based accessibility, and aggressive player interaction made it a family game night staple for decades. Sorry! proved that ancient game designs could be successfully repackaged for modern audiences—it's essentially Pachisi with added schadenfreude.",
+      "links": [
+        {"title": "Sorry! (game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Sorry!_(game)"}
+      ],
       "metrics": {
-        "base_design": "Pachisi variant"
+        "base_design": "Pachisi variant",
+        "origin": "UK (1929), US (1934)"
       }
     },
     {
       "id": "evt_monopoly",
-      "title": "Monopoly Published by Parker Brothers",
+      "title": "Monopoly Conquers the World",
       "date_display": "1935",
       "date_start": "1935-01-01",
       "group_ids": [
@@ -364,17 +382,22 @@
       "innovator": "Parker Brothers (Charles Darrow credited)",
       "innovation": "Property Trading Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/English_Monopoly_board.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/1/1c/Toys_2007-150-656_%2815406600117%29.jpg"
       ],
-      "description": "Monopoly became the best-selling board game in history, despite—or perhaps because of—its brutal gameplay where lucky players crush opponents in hours-long sessions. The game descended from Lizzie Magie's Landlord's Game through folk variants.\n\nParker Brothers bought rights from Charles Darrow, who claimed to have invented it (he hadn't). The game's Atlantic City streets became iconic, and 'Monopoly money' entered the language. The game taught children capitalism's harsh realities more effectively than any textbook.",
+      "description": "Monopoly became the best-selling board game in history, despite—or perhaps because of—its brutal gameplay where lucky players crush opponents in hours-long sessions. Parker Brothers initially rejected the game, citing '52 fundamental errors,' but reconsidered when Charles Darrow began selling copies independently.\n\nDarrow claimed to have invented Monopoly (he hadn't—it descended from Elizabeth Magie's Landlord's Game through folk variants). Parker Brothers purchased his version in 1935, and Darrow became a millionaire while Magie received only $500 for her patent.\n\nThe game's Atlantic City street names became iconic American touchstones, and 'Monopoly money' entered common language. During WWII, the British Secret Service hid escape maps, compasses, and real currency in Monopoly sets sent to POWs. The game has sold over 275 million copies in 47 languages, teaching children capitalism's harsh realities more effectively than any textbook.",
+      "links": [
+        {"title": "Monopoly (game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Monopoly_(game)"},
+        {"title": "History of Monopoly", "url": "https://en.wikipedia.org/wiki/History_of_Monopoly"}
+      ],
       "metrics": {
-        "sales": "Over 275 million copies sold",
-        "languages": "47"
+        "sales": "275+ million copies",
+        "languages": "47",
+        "annual_players": "~275 million"
       }
     },
     {
       "id": "evt_scrabble_invented",
-      "title": "Scrabble Invented",
+      "title": "An Architect Counts Letters",
       "date_display": "1938",
       "date_start": "1938-01-01",
       "group_ids": [
@@ -386,33 +409,42 @@
       "image_urls": [
         "https://upload.wikimedia.org/wikipedia/commons/5/5d/Scrabble_game_in_progress.jpg"
       ],
-      "description": "Unemployed architect Alfred Butts created Scrabble (originally 'Lexiko' and 'Criss-Crosswords') by analyzing word frequency in newspapers to assign point values to letters. The game was repeatedly rejected by game companies.\n\nButts sold the game to James Brunot, who renamed it Scrabble and trademarked it in 1948. After years of slow sales, a Macy's executive discovered the game on vacation and placed a large order, launching Scrabble to mainstream success.",
+      "description": "Unemployed architect Alfred Mosher Butts created Scrabble (originally called 'Lexiko' and 'Criss-Crosswords') during the Great Depression by combining elements of anagram games with crossword puzzles. To determine point values, he meticulously analyzed letter frequency on the front page of *The New York Times*, counting thousands of letters to create the scoring system still used today.\n\nButts manufactured sets by hand and submitted his game to every major game company—Milton Bradley, Parker Brothers, and others—but was rejected by all of them. The game languished for a decade until James Brunot acquired the rights in 1948.",
+      "links": [
+        {"title": "Scrabble - Wikipedia", "url": "https://en.wikipedia.org/wiki/Scrabble"},
+        {"title": "Alfred Mosher Butts - Wikipedia", "url": "https://en.wikipedia.org/wiki/Alfred_Mosher_Butts"}
+      ],
       "metrics": {
-        "letter_values": "Based on frequency analysis"
+        "letter_values": "Based on NYT frequency analysis",
+        "original_names": "Lexiko, Criss-Crosswords"
       }
     },
     {
       "id": "evt_scrabble_trademark",
-      "title": "Scrabble Trademarked",
-      "date_display": "1948",
-      "date_start": "1948-01-01",
+      "title": "Scrabble Goes Mainstream",
+      "date_display": "1952",
+      "date_start": "1952-01-01",
       "group_ids": [
         "grp_mass_production"
       ],
-      "type": "Trademark",
+      "type": "Cultural Event",
       "innovator": "James Brunot",
-      "innovation": "Commercial Launch",
+      "innovation": "Accidental Viral Marketing",
       "image_urls": [
         "https://upload.wikimedia.org/wikipedia/commons/5/5d/Scrabble_game_in_progress.jpg"
       ],
-      "description": "James Brunot trademarked Scrabble and began manufacturing it in his Connecticut home. Early sales were modest—he lost money for the first few years. The breakthrough came when a Macy's executive played the game and ordered cases for the store.\n\nScrabble became a cultural phenomenon, played in homes, tournaments, and competitive circuits worldwide. The game's combination of vocabulary knowledge, spatial awareness, and strategy made it genuinely skill-testing while remaining accessible to casual players.",
+      "description": "James Brunot trademarked Scrabble in 1948 and began manufacturing it in his Connecticut home, losing money for four years. The breakthrough came in 1952 when Jack Strauss, chairman of Macy's department store, played Scrabble on vacation and couldn't find it in his own stores. He placed a large order, and the game went viral.\n\nScrabble became a cultural phenomenon, eventually selling 150 million sets in 121 countries in 29 languages. The game spawned competitive tournaments with professional players memorizing obscure two-letter words and strategic tile-counting. The combination of vocabulary knowledge, spatial awareness, and probability made it genuinely skill-testing while remaining accessible to casual players.",
+      "links": [
+        {"title": "Scrabble - Wikipedia", "url": "https://en.wikipedia.org/wiki/Scrabble"}
+      ],
       "metrics": {
-        "breakthrough": "Macy's department store order"
+        "breakthrough": "Macy's chairman's vacation (1952)",
+        "sales": "150 million sets worldwide"
       }
     },
     {
       "id": "evt_candy_land",
-      "title": "Candy Land Published",
+      "title": "A Game Born in a Hospital",
       "date_display": "1949",
       "date_start": "1949-01-01",
       "group_ids": [
@@ -422,16 +454,20 @@
       "innovator": "Eleanor Abbott",
       "innovation": "First Game for Non-Readers",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/62/Candy_Land_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/9/91/Checkered_game_of_life_mb_cover.jpg"
       ],
-      "description": "Schoolteacher Eleanor Abbott created Candy Land while recovering from polio, designing a game that children too young to read could play. The color-based card matching required no literacy or math, making it many children's first board game experience.\n\nCandy Land's pure luck (no decisions, outcome predetermined by shuffled cards) frustrates adult sensibilities but serves its purpose: teaching young children turn-taking, rule-following, and winning/losing gracefully. For generations, it's been the gateway game.",
+      "description": "Schoolteacher Eleanor Abbott created Candy Land while recovering from polio in a San Diego hospital, designing a game specifically for children too young to read. The color-based card matching required no literacy, counting, or strategic decisions—children simply drew cards and moved to the matching colored space.\n\nCandy Land's pure luck (the outcome is entirely predetermined by the shuffled deck) frustrates adult sensibilities but serves its purpose perfectly: teaching young children turn-taking, rule-following, and winning/losing gracefully. Abbott sold the game to Milton Bradley, which published it in 1949. For over 70 years, it has been many children's first board game experience—the gateway to a lifetime of gaming.",
+      "links": [
+        {"title": "Candy Land - Wikipedia", "url": "https://en.wikipedia.org/wiki/Candy_Land"}
+      ],
       "metrics": {
-        "target_age": "3+"
+        "target_age": "3+",
+        "copies_sold": "Over 40 million"
       }
     },
     {
       "id": "evt_clue",
-      "title": "Clue (Cluedo) Published",
+      "title": "Murder in the Mansion",
       "date_display": "1949",
       "date_start": "1949-01-01",
       "group_ids": [
@@ -441,16 +477,20 @@
       "innovator": "Anthony E. Pratt",
       "innovation": "Deduction Board Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/56/Cluedo-tokens.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4c/Cluedo_Clue_pack_logo.png"
       ],
-      "description": "British musician Anthony Pratt invented Cluedo during WWII air-raid blackouts, inspired by murder mystery parlor games. Players deduce which suspect, weapon, and room cards are hidden in the envelope through careful questioning and elimination.\n\nCluedo (Clue in North America) became a mystery genre staple, spawning countless themed variants and a beloved 1985 film. The game introduced deduction mechanics that would influence modern hobby games.",
+      "description": "British musician Anthony Pratt invented Cluedo during WWII air-raid blackouts, inspired by murder mystery parlor games popular at country house parties. Players deduce which suspect, weapon, and room cards are hidden in the secret envelope by making suggestions and carefully tracking which cards opponents reveal.\n\nPratt patented the game in 1947, and Waddingtons published it as 'Cluedo' in the UK in 1949. Parker Brothers licensed it for North America as 'Clue.' The game became a murder mystery genre staple, spawning countless themed variants and a beloved 1985 cult film with three alternate endings. Its deduction mechanics—gathering information from opponents' responses—influenced modern hobby games like Mysterium and Cryptid.",
+      "links": [
+        {"title": "Cluedo - Wikipedia", "url": "https://en.wikipedia.org/wiki/Cluedo"}
+      ],
       "metrics": {
-        "inventor": "Anthony E. Pratt (UK)"
+        "suspects": "6 (Miss Scarlet, Colonel Mustard, etc.)",
+        "weapons": "6 (Candlestick, Rope, etc.)"
       }
     },
     {
       "id": "evt_risk",
-      "title": "Risk Published",
+      "title": "The World at War on Your Table",
       "date_display": "1957",
       "date_start": "1957-01-01",
       "group_ids": [
@@ -460,16 +500,22 @@
       "innovator": "Albert Lamorisse",
       "innovation": "Global Conquest Board Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0c/Risk_game_board.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Amsterdam_-_Risk_players_-_1136_%28cropped%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Risk-dice-example.jpg"
       ],
-      "description": "French film director Albert Lamorisse created La Conquête du Monde (The Conquest of the World), which Parker Brothers published as Risk. The game simulated global military conquest through dice-based combat, territory control, and card trading.\n\nRisk introduced strategic wargaming to mainstream audiences—previously, wargames were complex simulations for hobbyists. The game could last for hours (or days), creating legends of marathon sessions and broken friendships over Australia.",
+      "description": "French film director Albert Lamorisse—best known for the Academy Award-winning short *The Red Balloon*—created *La Conquête du Monde* (The Conquest of the World) in 1957. Parker Brothers licensed and published it as Risk in 1959.\n\nThe game simulated global military conquest through dice-based combat, territory control, and card set trading. Risk introduced strategic wargaming to mainstream audiences—previously, wargames were complex hex-and-counter simulations for dedicated hobbyists. Its simplified combat resolution (rolling dice, comparing results) made global warfare accessible to families.\n\nRisk could last for hours or even days, creating legends of marathon sessions, broken alliances, and friendships tested over the strategic importance of Australia. 'I trusted you!' became its unofficial slogan.",
+      "links": [
+        {"title": "Risk (game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Risk_(game)"}
+      ],
       "metrics": {
-        "playtime": "Potentially hours to days"
+        "territories": "42",
+        "continents": "6",
+        "playtime": "Hours to days"
       }
     },
     {
       "id": "evt_diplomacy",
-      "title": "Diplomacy Published",
+      "title": "The Friendship Destroyer",
       "date_display": "1959",
       "date_start": "1959-01-01",
       "group_ids": [
@@ -477,13 +523,18 @@
       ],
       "type": "Game Publication",
       "innovator": "Allan B. Calhamer",
-      "innovation": "Negotiation Strategy Game",
+      "innovation": "Pure Negotiation Strategy",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/5f/Diplomacy.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Stabbeurfou.png"
       ],
-      "description": "Diplomacy eliminated dice entirely—victory depended solely on negotiation, alliance-building, and betrayal. Set in pre-WWI Europe, players controlled major powers and simultaneously revealed orders each turn. The game demanded reading opponents and timing betrayals perfectly.\n\nDiplomacy became infamous for destroying friendships. Henry Kissinger reportedly played; JFK was a fan. The game proved that board games could be serious diplomatic simulations requiring psychological skill.",
+      "description": "Diplomacy eliminated dice and randomness entirely—victory depends solely on negotiation, alliance-building, and perfectly-timed betrayal. Set in pre-WWI Europe, seven players control major powers (England, France, Germany, Italy, Austria-Hungary, Russia, Turkey) and write orders secretly, revealing them simultaneously each turn.\n\nThe game demands reading opponents, forging alliances, and knowing exactly when to betray your allies. All units have equal strength; success requires coordinating support from other players' forces. This makes diplomacy not just useful but essential—you cannot win alone, yet only one player can win.\n\nDiplomacy became infamous for destroying friendships. Henry Kissinger was a reported fan; JFK played in the White House. The game proved that board games could be serious diplomatic simulations requiring psychological skill, patience, and the ability to lie convincingly to friends.",
+      "links": [
+        {"title": "Diplomacy (game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Diplomacy_(game)"}
+      ],
       "metrics": {
-        "dice": "None (pure negotiation)"
+        "players": "7 (ideally)",
+        "dice": "None (pure negotiation)",
+        "playtime": "4-12 hours"
       }
     },
     {
