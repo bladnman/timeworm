@@ -748,7 +748,7 @@
     },
     {
       "id": "evt_magic",
-      "title": "Magic: The Gathering Launched",
+      "title": "The Card Game That Changed Everything",
       "date_display": "August 5, 1993",
       "date_start": "1993-08-05",
       "group_ids": [
@@ -758,17 +758,23 @@
       "innovator": "Richard Garfield, Wizards of the Coast",
       "innovation": "Collectible Card Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/aa/Magic_the_gathering-card_back.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/7/78/Magic_the_Gathering_Commander_battlefield_example.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/33/Magic_Players.jpg"
       ],
-      "description": "Mathematics professor Richard Garfield created Magic: The Gathering, the first collectible card game. Players built custom decks from cards sold in randomized packs, then battled opponents. The combination of gameplay strategy and card collecting proved addictive.\n\nMagic was immediately successful, selling out initial print runs instantly. It spawned an entire CCG industry, professional tournament circuits, and a secondary market where rare cards sold for thousands of dollars. The game continues 30 years later with millions of active players.",
+      "description": "Mathematics professor Richard Garfield created Magic: The Gathering while waiting for a publisher to accept his board game *RoboRally*. Wizards of the Coast asked for something portable and cheap to produce—Garfield delivered something that would generate billions of dollars and spawn an entirely new gaming category.\n\nMagic invented the collectible card game (CCG) genre: players purchased randomized booster packs hoping for rare, powerful cards, then built custom decks to battle opponents. The genius was 'trading game'—rarity created scarcity, scarcity created value, and value created a secondary market where cards traded like stocks.\n\nThe initial print run of 2.6 million cards sold out in weeks. By 1994, dozens of CCG imitators flooded the market. Magic spawned professional tournament circuits with million-dollar prize pools, a robust online version, and a 2023 Netflix documentary. Individual rare cards from early sets—the Black Lotus, the Power Nine—sell for hundreds of thousands of dollars.\n\nThree decades later, Magic remains the world's most popular trading card game with an estimated 35 million players. It proved that gaming could be a lifestyle—a continuous purchase, a community identity, a competitive pursuit.",
+      "links": [
+        {"title": "Magic: The Gathering - Wikipedia", "url": "https://en.wikipedia.org/wiki/Magic:_The_Gathering"},
+        {"title": "History of Magic: The Gathering", "url": "https://en.wikipedia.org/wiki/History_of_Magic:_The_Gathering"}
+      ],
       "metrics": {
         "genre_created": "Collectible Card Game",
-        "active_players": "Millions"
+        "active_players": "~35 million",
+        "initial_print": "2.6 million cards"
       }
     },
     {
       "id": "evt_catan",
-      "title": "Settlers of Catan Published",
+      "title": "Catan Creates the Gateway",
       "date_display": "1995",
       "date_start": "1995-01-01",
       "group_ids": [
@@ -778,16 +784,22 @@
       "innovator": "Klaus Teuber",
       "innovation": "Gateway Eurogame",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Catan-2015-boxart.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/7/70/A_game_of_Settlers_of_Catan.jpg"
       ],
-      "description": "Klaus Teuber's Die Siedler von Catan (The Settlers of Catan) introduced millions to German-style board gaming. Players collected resources, traded with opponents, and built settlements on a modular hex board. The game balanced strategy, negotiation, and manageable luck.\n\nCatan became the 'gateway game' that converted casual players into hobby gamers. It demonstrated that board games could be sophisticated adult entertainment, not just children's toys. Catan has sold over 40 million copies worldwide.",
+      "description": "Klaus Teuber, a German dental technician turned game designer, created *Die Siedler von Catan* (The Settlers of Catan) after years of experimenting with game designs in his spare time. The game combined resource collection, trading, and settlement building on a modular hexagonal board that changed every play.\n\nCatan won the prestigious Spiel des Jahres (German Game of the Year) in 1995 and became the 'gateway game' that converted millions of casual players into hobby gamers. Its genius lay in balanced mechanics: the dice introduced luck but strategic placement and trading created skill; the modular board provided variety; player interaction was competitive but rarely punishing.\n\n'Got any wood for sheep?' became a cultural catchphrase. Catan showed mainstream audiences that board games had evolved far beyond Monopoly. The game spawned numerous expansions, spin-offs, and video game adaptations. It has sold over 40 million copies in 40 languages, making it one of the best-selling board games ever.\n\nKlaus Teuber passed away in 2023, but his game had already changed how the world thought about board games.",
+      "links": [
+        {"title": "Catan - Wikipedia", "url": "https://en.wikipedia.org/wiki/Catan"},
+        {"title": "Klaus Teuber - Wikipedia", "url": "https://en.wikipedia.org/wiki/Klaus_Teuber"}
+      ],
       "metrics": {
-        "sales": "40+ million copies"
+        "sales": "40+ million copies",
+        "languages": "40+",
+        "award": "Spiel des Jahres 1995"
       }
     },
     {
       "id": "evt_magic_pro_tour",
-      "title": "Magic: The Gathering Pro Tour Begins",
+      "title": "Card Gaming Goes Pro",
       "date_display": "February 1996",
       "date_start": "1996-02-01",
       "group_ids": [
@@ -797,16 +809,21 @@
       "innovator": "Wizards of the Coast",
       "innovation": "Professional Card Game Circuit",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/aa/Magic_the_gathering-card_back.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/7/78/Magic_the_Gathering_Commander_battlefield_example.jpg"
       ],
-      "description": "Wizards of the Coast launched the Pro Tour, a professional competitive circuit for Magic: The Gathering with significant prize pools. The Pro Tour created a path for skilled players to earn money playing cards and elevated Magic to a spectator esport.\n\nThe Pro Tour's existence legitimized competitive card gaming and influenced how other games approached organized play. Prize pools eventually exceeded millions of dollars, supporting professional players.",
+      "description": "Wizards of the Coast launched the Pro Tour, transforming Magic: The Gathering from hobby into profession. The first Pro Tour in New York City offered a $60,000 grand prize—real money for playing cards. Players could qualify through local tournaments, creating a pyramid of competitive play.\n\nThe Pro Tour established patterns that esports would later follow: traveling tournaments, professional players with sponsorships, commentary and coverage for spectators, hall-of-fame recognition, and a ranked qualification system. Players like Kai Budde, Jon Finkel, and Luis Scott-Vargas became celebrities within the community.\n\nOver the following decades, prize pools grew into the millions. Magic established the template for professional tabletop gaming, proving that competitive play could sustain careers and draw audiences. The Pro Tour (now called Pro Tour and World Championship under various names) continues today, having awarded over $50 million in prizes.",
+      "links": [
+        {"title": "Magic Pro Tour - Wikipedia", "url": "https://en.wikipedia.org/wiki/Magic:_The_Gathering_Pro_Tour"}
+      ],
       "metrics": {
+        "first_grand_prize": "$60,000",
+        "total_prizes_awarded": "$50+ million",
         "significance": "Professional card gaming legitimized"
       }
     },
     {
       "id": "evt_tigris",
-      "title": "Tigris & Euphrates Published",
+      "title": "The Mathematical Masterwork",
       "date_display": "1997",
       "date_start": "1997-01-01",
       "group_ids": [
@@ -816,16 +833,22 @@
       "innovator": "Reiner Knizia",
       "innovation": "Abstract Euro Design",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Tigris_and_euphrates_gameplay.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/e/e7/Deskohran%C3%AD_2008_0109.jpg"
       ],
-      "description": "Reiner Knizia's Tigris & Euphrates represented the height of 'German school' game design—elegant mechanics, minimal luck, and theme secondary to gameplay systems. Players built civilizations in ancient Mesopotamia, scoring across four categories with only their lowest score counting.\n\nKnizia became the most prolific and celebrated designer of the era. Tigris & Euphrates demonstrated that abstract strategy could be disguised with thematic elements while maintaining mechanical purity.",
+      "description": "Reiner Knizia, a German mathematician with a doctorate in mathematics, designed Tigris & Euphrates as an exercise in elegant game theory wrapped in Mesopotamian theming. Players built civilizations along the great rivers, placing tiles and leaders across four spheres: farming (blue), trading (green), religion (red), and government (black). The scoring system was brutally elegant—only your lowest category counted, forcing balanced play.\n\nThe game represented the apex of 'German school' design philosophy: mechanics over theme, indirect player interaction, no player elimination, and meaningful decisions throughout. Combat existed but was resolved through tile counting rather than dice—pure information, no randomness.\n\nKnizia became the most prolific celebrated designer of the Eurogame era, designing hundreds of games across all genres. His mathematical background showed in designs that felt like theorems expressed in cardboard. Tigris & Euphrates consistently ranks among the greatest strategy games ever designed and remains a benchmark for abstract euro design.",
+      "links": [
+        {"title": "Tigris and Euphrates - Wikipedia", "url": "https://en.wikipedia.org/wiki/Tigris_and_Euphrates_(board_game)"},
+        {"title": "Reiner Knizia - Wikipedia", "url": "https://en.wikipedia.org/wiki/Reiner_Knizia"}
+      ],
       "metrics": {
-        "designer": "Reiner Knizia"
+        "designer": "Reiner Knizia (PhD Mathematics)",
+        "scoring": "Only lowest color counts",
+        "design_philosophy": "German school abstract euro"
       }
     },
     {
       "id": "evt_bgg",
-      "title": "BoardGameGeek Founded",
+      "title": "The Geek Database Goes Online",
       "date_display": "January 2000",
       "date_start": "2000-01-01",
       "group_ids": [
@@ -835,17 +858,21 @@
       "innovator": "Scott Alden, Derk Solko",
       "innovation": "Board Game Database Community",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/bb/BoardGameGeek_Logo.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/BoardGameGeek_Logo.svg/500px-BoardGameGeek_Logo.svg.png"
       ],
-      "description": "BoardGameGeek (BGG) launched as a database and community site for board game enthusiasts. Users could rate games, write reviews, trade games, and discuss the hobby. The site's rating system became the de facto standard for measuring game quality.\n\nBGG transformed the hobby by connecting geographically dispersed enthusiasts and providing reliable information about thousands of games. A high BGG rating became crucial for commercial success, and the site's 'BGG Top 100' list influenced purchasing decisions worldwide.",
+      "description": "Scott Alden and Derk Solko launched BoardGameGeek (BGG), a database and community site that would become the central hub of hobby gaming. The site combined a comprehensive game database, user ratings, forums, file uploads, marketplace, and—crucially—the mathematical rating system that created the definitive ranking of board games.\n\nBGG's Bayesian-weighted rating system produced 'The List'—a ranked hierarchy that became the hobby's quality standard. A high BGG ranking could make an obscure game famous; a low ranking spelled commercial death. Designers obsessed over their scores. 'It's BGG #47!' became meaningful marketing.\n\nThe site connected geographically dispersed enthusiasts, created marketplace liquidity through its GeekMarket, and archived rules, FAQs, and variants for thousands of games. Its annual 'Golden Geek Awards' rivaled industry awards in prestige. By the 2020s, BGG catalogued over 130,000 games with millions of user ratings, remaining the hobby's essential resource despite its deliberately retro interface.",
+      "links": [
+        {"title": "BoardGameGeek - Wikipedia", "url": "https://en.wikipedia.org/wiki/BoardGameGeek"}
+      ],
       "metrics": {
-        "users": "Millions",
-        "games_catalogued": "100,000+"
+        "games_catalogued": "130,000+",
+        "users": "3+ million",
+        "significance": "Hobby's central database and community"
       }
     },
     {
       "id": "evt_carcassonne",
-      "title": "Carcassonne Published",
+      "title": "The Birth of the Meeple",
       "date_display": "2000",
       "date_start": "2000-10-01",
       "group_ids": [
@@ -855,16 +882,22 @@
       "innovator": "Klaus-Jürgen Wrede",
       "innovation": "Tile-Laying Mechanic",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d9/Carcassonne_%28board_game%29.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Carcassonne_Miples.jpg"
       ],
-      "description": "Carcassonne's simple premise—draw a tile, place it to continue the map, optionally place a wooden 'meeple'—proved endlessly engaging. The game built landscapes of cities, roads, and monasteries, with points scored for completed features.\n\nCarcassonne popularized the tile-laying genre and introduced 'meeple' into gaming vocabulary. Its accessible rules and attractive components made it another gateway game alongside Catan.",
+      "description": "Klaus-Jürgen Wrede designed Carcassonne with elegant simplicity: draw a tile, place it to extend the shared landscape, optionally claim a feature with one of your wooden figures. Players built medieval French countryside—walled cities, winding roads, monasteries, and farms—tile by tile.\n\nThe game won the Spiel des Jahres in 2001 and became another essential gateway game alongside Catan. Its genius lay in gentle tension: you want to complete features to score points and recover your figures, but other players might finish them first or block completion entirely.\n\nCarcassonne gave gaming the word 'meeple'—a portmanteau of 'my people' coined by player Alison Hansel in 2000 to describe the small wooden figures. The term became universal, appearing in countless subsequent games. The meeple became the unofficial symbol of modern board gaming, appearing on t-shirts, tattoos, and as the BoardGameGeek logo.\n\nCarcassonne spawned dozens of expansions and spin-offs, has sold over 10 million copies, and remains one of the most-played modern board games.",
+      "links": [
+        {"title": "Carcassonne (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Carcassonne_(board_game)"},
+        {"title": "Meeple - Wikipedia", "url": "https://en.wikipedia.org/wiki/Meeple"}
+      ],
       "metrics": {
-        "term_coined": "'Meeple' (wooden figures)"
+        "term_coined": "'Meeple' (2000)",
+        "sales": "10+ million copies",
+        "award": "Spiel des Jahres 2001"
       }
     },
     {
       "id": "evt_puerto_rico",
-      "title": "Puerto Rico Published",
+      "title": "The Role Selection Revolution",
       "date_display": "2002",
       "date_start": "2002-01-01",
       "group_ids": [
@@ -874,16 +907,20 @@
       "innovator": "Andreas Seyfarth",
       "innovation": "Role Selection Mechanic",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/68/Puerto_Rico_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/7/70/A_game_of_Settlers_of_Catan.jpg"
       ],
-      "description": "Puerto Rico's innovative role-selection mechanic—where each player's choice affects everyone—created a deeply interactive strategy game. Players managed plantations and shipped goods in colonial Puerto Rico. The game topped BoardGameGeek's rankings for years.\n\nPuerto Rico's colonial theme and depiction of workers (later acknowledged as enslaved people) became controversial, leading to discussions about historical themes in games. A 2022 edition addressed the representation issues.",
+      "description": "Andreas Seyfarth's Puerto Rico introduced the role-selection mechanic that would influence countless designs. Each round, players chose roles (Builder, Mayor, Captain, Craftsman, Trader, Settler, Prospector) that everyone executed—but the chooser got a bonus. This created deep interaction: choosing a role helped you but might help opponents more.\n\nPlayers managed colonial plantations, constructed buildings, and shipped goods for victory points. The game combined multiple interconnected systems into a unified whole—a hallmark of sophisticated eurogame design. Puerto Rico dominated BoardGameGeek's rankings for years, often holding the #1 position.\n\nThe game's colonial theme later became controversial. The brown discs representing 'colonists' worked on plantations in a Caribbean colony—a depiction critics noted echoed slavery without acknowledging it. A 2022 edition redesigned the components and theme to address concerns, demonstrating evolving attitudes about historical representation in games. The mechanical innovations remained influential regardless.",
+      "links": [
+        {"title": "Puerto Rico (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Puerto_Rico_(board_game)"}
+      ],
       "metrics": {
-        "bgg_ranking": "#1 for several years"
+        "bgg_ranking": "#1 for several years",
+        "mechanic_influence": "Role selection (used by Race for the Galaxy, Citadels, etc.)"
       }
     },
     {
       "id": "evt_ticket_to_ride",
-      "title": "Ticket to Ride Published",
+      "title": "All Aboard the Gateway Train",
       "date_display": "2004",
       "date_start": "2004-01-01",
       "group_ids": [
@@ -893,16 +930,21 @@
       "innovator": "Alan R. Moon",
       "innovation": "Set Collection Route Building",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2c/Ticket_to_Ride_Board_Game_Train_Car.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Ticket_to_Ride_at_restaurant_Kaisla.jpg"
       ],
-      "description": "Ticket to Ride combined set collection (gathering colored train cards) with route-building on an American railroad map. The simple rules—draw cards or claim routes—made it instantly teachable, while route destination cards added strategic tension.\n\nTicket to Ride won the Spiel des Jahres (German Game of the Year) and became a massive crossover hit. With numerous map expansions and a successful digital version, it remains one of the best-selling modern hobby games.",
+      "description": "Alan R. Moon designed Ticket to Ride with ruthless simplicity: on your turn, draw train cards, claim a route, or draw destination tickets. That's it. Three choices. The game taught itself in minutes but revealed surprising depth—when do you grab a contested route versus building your hand? Which destinations are safe bets?\n\nThe American railroad map evoked nostalgia for the golden age of train travel. Players collected colored cards to claim routes between cities, racing to complete secret destination tickets while blocking opponents. The plastic trains were satisfying to place; the routes were just challenging enough.\n\nTicket to Ride won the Spiel des Jahres in 2004 and became the ultimate gateway game—simple enough for families, strategic enough for hobbyists. Publisher Days of Wonder expanded it into a franchise: Europe, Nordic Countries, Germany, Japan, and more than a dozen other maps. Digital versions became bestsellers on Steam and mobile.\n\nTicket to Ride has sold over 10 million copies, introducing millions to modern board gaming with the simple joy of connecting cities by rail.",
+      "links": [
+        {"title": "Ticket to Ride (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Ticket_to_Ride_(board_game)"}
+      ],
       "metrics": {
-        "award": "Spiel des Jahres 2004"
+        "sales": "10+ million copies",
+        "award": "Spiel des Jahres 2004",
+        "expansions": "15+ map variants"
       }
     },
     {
       "id": "evt_power_grid",
-      "title": "Power Grid Published",
+      "title": "Economics in Cardboard Form",
       "date_display": "2004",
       "date_start": "2004-01-01",
       "group_ids": [
@@ -912,16 +954,22 @@
       "innovator": "Friedemann Friese",
       "innovation": "Economic Auction Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0f/Power_Grid_board_game_components.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/87/Hry_a_hlavolamy_2008_-_Vysok%C3%A9_nap%C4%9Bt%C3%AD_2.jpg"
       ],
-      "description": "Power Grid challenged players to build electrical networks across Germany (and later other maps), buying power plants at auction and managing fuel supplies. The game's economic systems—with market prices responding to supply and demand—created rich strategic decisions.\n\nFriedemann Friese's design demonstrated that simulation-style economics could work in an accessible board game format. Power Grid is considered a peak achievement in economic game design.",
+      "description": "Friedemann Friese's Power Grid (*Funkenschlag*) simulated electric utility economics with remarkable elegance. Players bought power plants at auction, purchased fuel from a fluctuating commodity market, built transmission networks across city maps, and powered cities for income. Every system interacted: as players bought coal, prices rose; as nuclear plants entered play, uranium became scarce.\n\nThe game featured one of board gaming's cleverest catch-up mechanisms: the player in last place acted first each phase, getting first pick of cheap fuel and network expansions. Leaders paid premium prices and expanded last. This kept games competitive until the final round.\n\nFriese—recognizable by his signature green hair and his company's all-green game boxes—designed Power Grid as a refinement of his earlier Funkenschlag. The game became a standard reference for economic mechanisms in game design. Multiple map expansions (USA, France, China, and many more) kept the game fresh across hundreds of plays.\n\nPower Grid demonstrated that theme and mechanics could reinforce each other—you *felt* like an energy baron making infrastructure investments.",
+      "links": [
+        {"title": "Power Grid (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Power_Grid_(board_game)"},
+        {"title": "Friedemann Friese - Wikipedia", "url": "https://en.wikipedia.org/wiki/Friedemann_Friese"}
+      ],
       "metrics": {
-        "designer": "Friedemann Friese"
+        "designer": "Friedemann Friese",
+        "maps_available": "15+",
+        "signature": "Economic simulation with catch-up mechanism"
       }
     },
     {
       "id": "evt_twilight_struggle",
-      "title": "Twilight Struggle Published",
+      "title": "The Cold War on Your Table",
       "date_display": "2005",
       "date_start": "2005-01-01",
       "group_ids": [
@@ -931,11 +979,17 @@
       "innovator": "Ananda Gupta, Jason Matthews",
       "innovation": "Card-Driven Wargame",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8d/Twilight_Struggle_board_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Twilight_struggle_example.jpg"
       ],
-      "description": "Twilight Struggle simulated the Cold War through cards representing historical events. Each card could be played for its event or for operations points—forcing agonizing decisions when holding enemy events. The two-player game captured Cold War paranoia and brinksmanship.\n\nTwilight Struggle spent years at #1 on BoardGameGeek, introducing wargame concepts to eurogame players. Its card-driven system influenced numerous historical games that followed.",
+      "description": "Ananda Gupta and Jason Matthews designed Twilight Struggle to capture Cold War paranoia in two hours of agonizing decisions. Each card represented a historical event—the Marshall Plan, Fidel Castro, the Space Race, DEFCON alerts—and players faced impossible choices: play a card for its operations points but trigger the enemy's event, or waste it in the Space Race?\n\nThe game simulated superpower conflict through influence in contested regions, coups, realignments, and the ever-present threat of nuclear war. Push too hard and DEFCON drops to 1—triggering global thermonuclear war and instant loss for the aggressor. The tension was authentic: you felt like Khrushchev during the Cuban Missile Crisis, trying to project strength while avoiding catastrophe.\n\nTwilight Struggle held BoardGameGeek's #1 ranking longer than any other game, from 2010 to 2015—dethroned only by Pandemic Legacy. It introduced card-driven wargame mechanics to eurogame audiences, spawned a successful digital adaptation, and proved that two-player games could achieve mainstream hobby success.\n\nThe game taught Cold War history more effectively than most textbooks—players emerged understanding why the Berlin Wall mattered and how the Domino Theory shaped American policy.",
+      "links": [
+        {"title": "Twilight Struggle - Wikipedia", "url": "https://en.wikipedia.org/wiki/Twilight_Struggle"},
+        {"title": "Twilight Struggle Official Site", "url": "https://www.gmtgames.com/p-588-twilight-struggle-deluxe-edition.aspx"}
+      ],
       "metrics": {
-        "bgg_ranking": "Long-time #1"
+        "bgg_ranking": "#1 from 2010-2015",
+        "theme": "Cold War superpower conflict",
+        "player_count": "2 players only"
       }
     },
     {
