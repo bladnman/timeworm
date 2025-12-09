@@ -994,7 +994,7 @@
     },
     {
       "id": "evt_pandemic",
-      "title": "Pandemic Published",
+      "title": "Saving the World Together",
       "date_display": "2008",
       "date_start": "2008-01-01",
       "group_ids": [
@@ -1004,16 +1004,22 @@
       "innovator": "Matt Leacock",
       "innovation": "Cooperative Board Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c9/Pandemic_board_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Pandemic_board_game_CDC.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pandemic_board_game.jpg"
       ],
-      "description": "Pandemic made cooperative gaming mainstream. All players worked together to stop four diseases spreading across the world, winning or losing as a team. The game's elegant systems—action point allowance, set collection, cascading outbreaks—created tense experiences without player conflict.\n\nPandemic proved that not every game needed a winner and loser. It spawned numerous expansions and spin-offs, including Pandemic Legacy (see below). The game gained unexpected relevance during the COVID-19 pandemic.",
+      "description": "Matt Leacock's Pandemic made cooperative gaming mainstream with elegant simplicity: four diseases spread across the world, and players work together as CDC specialists to find cures before outbreaks overwhelm humanity. There are no opponents—only the game itself, threatening cascading chain reactions when infection clusters explode.\n\nThe game's systems interlock beautifully. Action points force agonizing triage decisions. The infection deck builds tension as cities resurface. The epidemic cards accelerate the threat. Players specialize—the Medic treats efficiently, the Scientist researches faster, the Dispatcher coordinates movement—creating genuine team dynamics.\n\nPandemic proved cooperative games could deliver tension and satisfaction without player conflict. It spawned numerous expansions (On the Brink, In the Lab, State of Emergency) and spin-offs (Pandemic Legacy, Pandemic: Fall of Rome). The Legacy version, co-designed with Rob Daviau, held BGG's #1 ranking and pioneered permanent game changes.\n\nDuring the COVID-19 pandemic, the game gained unexpected relevance—and sales spiked as locked-down families played a game about... stopping a pandemic. The irony was not lost on anyone.",
+      "links": [
+        {"title": "Pandemic (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Pandemic_(board_game)"},
+        {"title": "Matt Leacock - Wikipedia", "url": "https://en.wikipedia.org/wiki/Matt_Leacock"}
+      ],
       "metrics": {
-        "genre_impact": "Popularized cooperative games"
+        "genre_impact": "Popularized cooperative games",
+        "legacy_version": "Pandemic Legacy: BGG #1 (2015-2017)"
       }
     },
     {
       "id": "evt_dominion",
-      "title": "Dominion Published (Deckbuilding Created)",
+      "title": "Deckbuilding Is Born",
       "date_display": "2008",
       "date_start": "2008-10-01",
       "group_ids": [
@@ -1023,17 +1029,21 @@
       "innovator": "Donald X. Vaccarino",
       "innovation": "Deckbuilding Genre",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/1e/Dominion_game_cards.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Dominion_at_pax_east_2011.jpg"
       ],
-      "description": "Dominion invented the 'deckbuilding' genre—players started with identical weak decks and purchased cards during play to improve them. The game distilled collectible card game concepts into a self-contained box with no randomized boosters.\n\nDeckbuilding became one of the most influential mechanics of modern gaming. Countless games adopted the concept: Ascension, Star Realms, Clank!, and many others. Donald X. Vaccarino created an entirely new genre with a single design.",
+      "description": "Donald X. Vaccarino invented an entirely new genre with Dominion: deckbuilding. Every player started with an identical weak deck of ten cards. During play, you purchased better cards from a shared market, adding them to your deck. Your deck improved as you played—the game *was* building your engine.\n\nDominion distilled the joy of collectible card games—constructing powerful decks, finding combos—into a self-contained box with no randomized purchases. Games lasted 30 minutes. The kingdom cards changed each session, creating thousands of possible setups from a single box.\n\nThe game won the Spiel des Jahres in 2009 and spawned fourteen expansions. More significantly, it launched an entire genre. Deckbuilding became one of board gaming's most influential mechanics: Ascension added combat, Clank! added dungeon crawling, Star Realms added direct conflict, and countless other games adopted the core concept.\n\nVaccarino proved that a single innovative mechanic could define an entire category of games. 'Deckbuilder' became a genre label as fundamental as 'worker placement' or 'area control.'",
+      "links": [
+        {"title": "Dominion (card game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dominion_(card_game)"}
+      ],
       "metrics": {
         "award": "Spiel des Jahres 2009",
-        "genre_created": "Deckbuilding"
+        "genre_created": "Deckbuilding",
+        "expansions": "14+"
       }
     },
     {
       "id": "evt_7_wonders",
-      "title": "7 Wonders Published",
+      "title": "Seven Players in Thirty Minutes",
       "date_display": "2010",
       "date_start": "2010-01-01",
       "group_ids": [
@@ -1043,16 +1053,21 @@
       "innovator": "Antoine Bauza",
       "innovation": "Card Drafting Engine",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/6d/7_Wonders_%28board_game%29.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/7/70/A_game_of_Settlers_of_Catan.jpg"
       ],
-      "description": "7 Wonders used card drafting—players chose cards from hands passed around the table—to build ancient civilizations. The simultaneous play kept seven players engaged in 30 minutes, solving the problem of long waits between turns.\n\nThe game's scalability (2-7 players with minimal time increase) and elegant mechanisms made it a modern classic. Card drafting became a staple mechanism in subsequent designs.",
+      "description": "Antoine Bauza's 7 Wonders solved a fundamental problem: how do you play a strategy game with seven people without spending four hours? The answer was card drafting with simultaneous play. Everyone picked a card from their hand at the same time, then passed the remaining cards. No waiting. No downtime.\n\nPlayers built ancient civilizations through three ages, constructing buildings, developing military, advancing science, and erecting world wonders. Cards interacted with neighbors on either side, creating localized competition. The game scaled from 2 to 7 players with virtually no increase in play time—about 30 minutes regardless of count.\n\n7 Wonders won the Kennerspiel des Jahres in 2011 and popularized card drafting as a core mechanism. Its influence spread through Blood Rage, Sushi Go!, and countless other designs. The game proved that complex strategy could fit into lunch-break time slots.\n\nExpansions (Leaders, Cities, Armada) added depth without bloat. A second edition and spin-off (7 Wonders Duel for two players) extended the franchise. Bauza had created a modern classic.",
+      "links": [
+        {"title": "7 Wonders (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/7_Wonders_(board_game)"}
+      ],
       "metrics": {
-        "playtime": "~30 minutes regardless of player count"
+        "playtime": "~30 minutes (2-7 players)",
+        "award": "Kennerspiel des Jahres 2011",
+        "mechanism": "Card drafting"
       }
     },
     {
       "id": "evt_dnd_pathfinder",
-      "title": "Pathfinder Rises, D&D 4e Backlash",
+      "title": "The Great D&D Schism",
       "date_display": "2011",
       "date_start": "2011-01-01",
       "group_ids": [
@@ -1062,16 +1077,22 @@
       "innovator": "Paizo Publishing",
       "innovation": "D&D Fork",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/0/0b/D%26D_Game_1.jpg"
       ],
-      "description": "Dungeons & Dragons 4th Edition's controversial changes (video game-like mechanics, tactical focus) drove many players to Pathfinder, Paizo's continuation of 3.5 Edition rules. Pathfinder briefly became the best-selling RPG, surpassing D&D itself.\n\nThe schism demonstrated the passionate attachment players felt toward D&D mechanics. When Wizards of the Coast released 5th Edition (returning to 3.x-style play), it recaptured the market—but Pathfinder remains a significant competitor.",
+      "description": "Dungeons & Dragons 4th Edition (2008) represented the most radical redesign in D&D history: tactical grid combat, video game-inspired 'powers' replacing spells, and streamlined balance. Many long-time players felt it had lost the soul of D&D—more tactical miniatures game than role-playing experience.\n\nPaizo Publishing, which had produced D&D magazines under license, saw opportunity. Using the Open Gaming License from 3rd Edition, they created Pathfinder—essentially D&D 3.5 with refinements. The tagline was implicit: *This is what D&D should have been.*\n\nPathfinder succeeded beyond expectations. By 2011, it outsold D&D 4th Edition, becoming the industry's best-selling RPG. The impossible had happened—a third-party publisher had dethroned Dungeons & Dragons using its own open-source rules.\n\nWizards of the Coast responded with D&D 5th Edition (2014), returning to 3.x-style design philosophy with streamlined modern systems. The schism healed—mostly. Pathfinder retained a devoted fanbase and released its own second edition in 2019. The competition had made both games better.",
+      "links": [
+        {"title": "Pathfinder RPG - Wikipedia", "url": "https://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game"},
+        {"title": "D&D 4th Edition - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dungeons_%26_Dragons_4th_Edition"}
+      ],
       "metrics": {
-        "pathfinder_sales": "Briefly #1 RPG"
+        "pathfinder_peak": "#1 RPG (2011-2014)",
+        "4e_controversy": "Radical tactical redesign",
+        "resolution": "D&D 5e returns to 3.x philosophy"
       }
     },
     {
       "id": "evt_kickstarter_boardgames",
-      "title": "Kickstarter Board Game Boom Begins",
+      "title": "Crowdfunding Changes Everything",
       "date_display": "2012",
       "date_start": "2012-01-01",
       "group_ids": [
@@ -1080,16 +1101,21 @@
       "type": "Industry Event",
       "innovation": "Crowdfunded Publishing",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0b/Kickstarter_icon.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kickstarter_logo_2019.svg/500px-Kickstarter_logo_2019.svg.png"
       ],
-      "description": "Kickstarter transformed board game publishing, allowing designers to fund production through pre-orders from fans. Games that traditional publishers wouldn't touch could find audiences directly. The first major successes—Zombicide, The Doom That Came to Atlantic City—proved the model.\n\nKickstarter democratized publishing but also created FOMO culture and campaign-exclusive content. The platform became the primary launch vehicle for hobby games, with projects regularly raising millions of dollars.",
+      "description": "Kickstarter transformed board game publishing by eliminating gatekeepers. Designers could fund production through pre-orders from fans, bypassing traditional publishers entirely. Games too niche, too expensive, or too risky for conventional channels could find their audience directly.\n\nThe first major board game successes—Zombicide ($781,000 in 2012), The Doom That Came to Atlantic City ($122,000)—proved the model. By 2015, board games had become Kickstarter's largest category by funding. Campaigns regularly raised millions of dollars. Kingdom Death: Monster raised $12.4 million in 2016; Frosthaven broke $13 million in 2020.\n\nCrowdfunding changed what was possible: massive miniature collections, premium components, and production runs that would terrify traditional publishers. It also created problems—FOMO marketing, Kickstarter-exclusive content, delayed deliveries, and campaigns that never fulfilled promises.\n\nThe platform democratized publishing but also professionalized it. Major publishers like CMON built entire business models around Kickstarter campaigns. Small designers could compete with corporations. The industry would never be the same.",
+      "links": [
+        {"title": "Kickstarter - Wikipedia", "url": "https://en.wikipedia.org/wiki/Kickstarter"}
+      ],
       "metrics": {
+        "board_games_category": "Kickstarter's largest by funding",
+        "record_campaigns": "Kingdom Death ($12.4M), Frosthaven ($13M)",
         "impact": "Democratized publishing"
       }
     },
     {
       "id": "evt_xwing",
-      "title": "Star Wars: X-Wing Miniatures Launches",
+      "title": "Dogfights Over the Dinner Table",
       "date_display": "August 2012",
       "date_start": "2012-08-01",
       "group_ids": [
@@ -1099,16 +1125,21 @@
       "innovator": "Fantasy Flight Games",
       "innovation": "Pre-Painted Miniatures Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/45/Star_Wars_X-Wing_Miniatures_Game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warhammer_game.jpg"
       ],
-      "description": "X-Wing Miniatures brought Star Wars dogfighting to tabletops with pre-painted, collectible ships. The game used a clever movement template system where players secretly selected maneuvers, then revealed simultaneously—creating the feel of actual space combat.\n\nX-Wing proved that licensed miniatures games could achieve both commercial success and competitive depth. Its organized play scene attracted thousands of players to tournaments worldwide.",
+      "description": "Fantasy Flight Games' X-Wing Miniatures brought Star Wars dogfighting to tabletops with gorgeous pre-painted ships—no assembly or painting required. The game used simultaneous movement: players secretly selected maneuvers using dials, then revealed and executed simultaneously. This created the feel of actual space combat, with pilots trying to predict and outmaneuver opponents.\n\nThe collectible model worked brilliantly. Each ship expansion was playable out of the box with unique pilots, abilities, and upgrades. The base game included an X-Wing and two TIE Fighters; expansions added the Millennium Falcon, Slave I, and eventually entire fleets spanning Star Wars eras.\n\nX-Wing proved licensed miniatures games could achieve both commercial success and competitive depth. The organized play scene grew to thousands of players at worldwide tournaments. Fantasy Flight expanded the system to Star Wars: Armada (capital ships) and ground combat.\n\nThe game also demonstrated premium pricing could work. Individual ships cost $15-100+, and serious players spent hundreds building collections. X-Wing showed that the right license combined with quality gameplay could sustain a miniatures ecosystem without the painting barrier.",
+      "links": [
+        {"title": "Star Wars: X-Wing Miniatures Game - Wikipedia", "url": "https://en.wikipedia.org/wiki/Star_Wars:_X-Wing_Miniatures_Game"}
+      ],
       "metrics": {
-        "innovation": "Pre-painted collectible miniatures"
+        "innovation": "Pre-painted collectible miniatures",
+        "gameplay": "Simultaneous hidden movement",
+        "license": "Star Wars (all eras)"
       }
     },
     {
       "id": "evt_exploding_kittens",
-      "title": "Exploding Kittens Record Kickstarter",
+      "title": "Kittens Go Viral",
       "date_display": "February 2015",
       "date_start": "2015-02-01",
       "group_ids": [
@@ -1118,17 +1149,21 @@
       "innovator": "Elan Lee, Matthew Inman (The Oatmeal)",
       "innovation": "Viral Game Marketing",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/3/3a/Exploding_Kittens_logo.png"
+        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Exploding_Kittens_game_play_test_01.JPG"
       ],
-      "description": "Exploding Kittens became the most-backed project in Kickstarter history at the time, raising $8.8 million from 219,000 backers. The game's appeal came from The Oatmeal's webcomic art and silly premise—Russian Roulette with cats.\n\nThe campaign demonstrated that game mechanics mattered less than brand and personality for mainstream audiences. Exploding Kittens reached demographics who would never browse BoardGameGeek, proving board games could be viral products.",
+      "description": "Exploding Kittens proved that marketing mattered more than mechanics. The game—essentially Russian Roulette with cats—raised $8.8 million from 219,382 backers, becoming the most-backed Kickstarter project in history at the time. The campaign funded in eight minutes.\n\nThe magic came from Matthew Inman's The Oatmeal webcomic—absurdist humor and irreverent art that had already built a massive audience. The game was secondary to the brand. Hobby gamers dismissed it as simple; millions of casual players bought it anyway.\n\nExploding Kittens reached demographics who would never browse BoardGameGeek or visit a game store. It appeared at Target, Walmart, and airport gift shops. It spawned expansion packs, spin-offs (Bears vs Babies, Throw Throw Burrito), a mobile app, and a Netflix animated series.\n\nThe success demonstrated a parallel market: party games for people who didn't consider themselves gamers. Production values, strategic depth, and BoardGameGeek rankings meant nothing to this audience. What mattered was brand, humor, and social media virality. Exploding Kittens wasn't competing with Twilight Struggle—it was competing with Cards Against Humanity.",
+      "links": [
+        {"title": "Exploding Kittens - Wikipedia", "url": "https://en.wikipedia.org/wiki/Exploding_Kittens"}
+      ],
       "metrics": {
         "funding": "$8.8 million",
-        "backers": "219,382"
+        "backers": "219,382",
+        "funded_in": "8 minutes"
       }
     },
     {
       "id": "evt_dead_of_winter",
-      "title": "Dead of Winter Published",
+      "title": "Trust No One (Especially in Winter)",
       "date_display": "2014",
       "date_start": "2014-01-01",
       "group_ids": [
@@ -1138,16 +1173,21 @@
       "innovator": "Jonathan Gilmour, Isaac Vega",
       "innovation": "Hidden Traitor Narrative",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Dead_of_Winter_board_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pandemic_board_game.jpg"
       ],
-      "description": "Dead of Winter combined cooperative survival in a zombie apocalypse with secret personal objectives and a possible traitor. The crossroads card system created emergent narratives, presenting moral dilemmas that affected the group.\n\nThe game popularized the 'hidden traitor' mechanism in cooperative games and demonstrated that board games could tell stories as compelling as video games or movies.",
+      "description": "Dead of Winter combined cooperative zombie survival with something more insidious: everyone had a secret objective, and one player might be a traitor. The group needed to cooperate to survive—gathering food, building barricades, fighting zombies—but could you trust your allies? Was that player hoarding supplies for a personal goal, or sabotaging the colony?\n\nThe 'Crossroads' card system created emergent narratives. Another player drew a card each turn and watched for trigger conditions. If triggered, they interrupted to present a moral dilemma: 'A child approaches the gate, but she might be infected. Do you let her in?' Choices had consequences. The game told stories.\n\nDead of Winter popularized the hidden traitor mechanism in cooperative games—Battlestar Galactica had done it earlier, but Dead of Winter made it central and accessible. It demonstrated that board games could create tension, paranoia, and narrative drama rivaling any scripted entertainment.\n\nPlaid Hat Games' design proved that thematic immersion and mechanical depth could coexist. Players remembered specific sessions—*that* time someone got bitten, *that* betrayal at the worst moment.",
+      "links": [
+        {"title": "Dead of Winter (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dead_of_Winter:_A_Crossroads_Game"}
+      ],
       "metrics": {
-        "mechanism": "Hidden traitor + crossroads cards"
+        "mechanism": "Hidden traitor + crossroads cards",
+        "innovation": "Narrative emergent gameplay",
+        "publisher": "Plaid Hat Games"
       }
     },
     {
       "id": "evt_dnd_5e",
-      "title": "Dungeons & Dragons 5th Edition Launches",
+      "title": "D&D Becomes Cool Again",
       "date_display": "July 2014",
       "date_start": "2014-07-01",
       "group_ids": [
@@ -1157,16 +1197,21 @@
       "innovator": "Wizards of the Coast",
       "innovation": "D&D Renaissance",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/0/0b/D%26D_Game_1.jpg"
       ],
-      "description": "D&D 5th Edition learned from 4th Edition's mistakes, returning to simpler, more narrative-focused gameplay while maintaining modern design sensibilities. The edition was developed with extensive public playtesting and fan feedback.\n\n5th Edition became D&D's most successful version ever, driven by actual-play shows like Critical Role introducing the game to new audiences. The RPG experienced a genuine mainstream moment, with celebrity players and Netflix deals.",
+      "description": "After the 4th Edition schism, Wizards of the Coast developed 5th Edition through unprecedented public playtesting—over 175,000 playtesters shaped the rules. The result: a streamlined system that evoked 3rd Edition's flexibility with modern accessibility. The 'Advantage/Disadvantage' system elegantly replaced stacking modifiers. Bounded accuracy kept math manageable.\n\n5th Edition succeeded beyond expectations, becoming the best-selling D&D version in the game's 50-year history. But the rules alone didn't cause the renaissance—culture did.\n\nCritical Role brought D&D to YouTube and Twitch audiences. *Stranger Things* featured kids playing D&D. Celebrities discussed their campaigns openly. The stigma of the Satanic Panic fully lifted. D&D became not just acceptable but *cool*—a creative hobby rather than basement weirdness.\n\nWizards of the Coast reported record revenue year after year. Major publishers announced D&D movies, animated series, and video games. Fifth Edition proved that tabletop role-playing could be mainstream entertainment—fifty years after Gygax and Arneson created it in a Wisconsin basement.",
+      "links": [
+        {"title": "D&D 5th Edition - Wikipedia", "url": "https://en.wikipedia.org/wiki/Dungeons_%26_Dragons_(5th_Edition)"}
+      ],
       "metrics": {
-        "success": "Best-selling D&D edition ever"
+        "playtesters": "175,000+",
+        "success": "Best-selling D&D edition ever",
+        "cultural_drivers": "Critical Role, Stranger Things"
       }
     },
     {
       "id": "evt_tabletop",
-      "title": "TableTop Show with Wil Wheaton",
+      "title": "Wil Wheaton Plays Games",
       "date_display": "2012-2017",
       "date_start": "2012-04-02",
       "group_ids": [
@@ -1176,17 +1221,21 @@
       "innovator": "Geek & Sundry, Wil Wheaton",
       "innovation": "Board Game Video Content",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Wil_Wheaton_%282018%29.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a8/TIMX6236_-_Wil_Wheaton_-_53973459580.jpg"
       ],
-      "description": "Wil Wheaton's TableTop show on YouTube/Geek & Sundry introduced board games to mainstream audiences through celebrity guests playing and explaining games. Each episode's featured game reliably saw sales spikes—the 'TableTop Effect.'\n\nTableTop pioneered board game video content that would explode into a genre of its own. Actual-play shows, how-to-play videos, and reviews on YouTube became essential marketing and community-building tools.",
+      "description": "Wil Wheaton's TableTop on Geek & Sundry's YouTube channel proved people would watch others play board games. Each episode featured Wheaton and celebrity guests learning and playing a game—edited for entertainment, with rules explanations woven into gameplay.\n\nThe 'TableTop Effect' became measurable: games featured on the show experienced immediate sales spikes. Publishers scrambled for episode slots. Small Worlds sold out after its episode. Forbidden Island became mainstream. The show functioned as both entertainment and advertisement.\n\nTableTop pioneered a genre that would explode across YouTube: Shut Up & Sit Down, The Dice Tower, Watch It Played, and countless others created board game video content. How-to-play videos replaced rulebooks for many players. Reviews influenced purchasing decisions. The YouTube algorithm became a marketing channel.\n\nTableTop ran for four seasons (2012-2017), accumulating hundreds of millions of views. Wheaton demonstrated that the right host could make board gaming accessible and appealing to audiences who'd never set foot in a game store. The show helped create the conditions for board gaming's mainstream breakthrough.",
+      "links": [
+        {"title": "TableTop (web series) - Wikipedia", "url": "https://en.wikipedia.org/wiki/TableTop_(web_series)"}
+      ],
       "metrics": {
-        "views": "Millions per episode",
-        "effect": "'TableTop Effect' on sales"
+        "views": "Hundreds of millions (total)",
+        "effect": "'TableTop Effect' on sales",
+        "seasons": "4 (2012-2017)"
       }
     },
     {
       "id": "evt_codenames",
-      "title": "Codenames Published",
+      "title": "Spymasters and Word Association",
       "date_display": "2015",
       "date_start": "2015-01-01",
       "group_ids": [
@@ -1196,16 +1245,21 @@
       "innovator": "Vlaada Chvátil",
       "innovation": "Word Association Party Game",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/60/Codenames_board_game_cover.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b0/Codenames_board_game.jpg"
       ],
-      "description": "Codenames challenged teams to guess words from single-word clues, creating hilarious moments when clues led to wrong guesses. The game worked beautifully with large groups and non-gamers, becoming a party game phenomenon.\n\nDesigner Vlaada Chvátil (known for complex games like Mage Knight) proved his range with this elegant design. Codenames won the Spiel des Jahres and became a staple of casual game nights.",
+      "description": "Vlaada Chvátil, known for complex games like Mage Knight and Through the Ages, designed something elegantly simple: a 25-word grid where spymasters give one-word clues to help teammates identify their agents. Guess wrong and you might hit an enemy spy—or worse, the assassin that ends the game immediately.\n\n'Beach: 3' might link 'ocean,' 'umbrella,' and 'sand'—but does it also match 'wave' (an enemy word)? The tension between ambitious clues and safe ones created hilarious moments and genuine strategic depth. Teams debated interpretations, argued about connections, and remembered spectacular failures for years.\n\nCodenames worked with any group size and non-gamers. It scaled from four to ten+ players effortlessly. The rules took two minutes to explain. It became the default party game of the hobby gaming era.\n\nThe game won the Spiel des Jahres in 2016 and spawned variants: Codenames Pictures, Codenames Duet (cooperative two-player), Disney editions, and countless themes. Chvátil proved that a complex designer could create mass-market hits when the concept was right.",
+      "links": [
+        {"title": "Codenames (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Codenames_(board_game)"}
+      ],
       "metrics": {
-        "award": "Spiel des Jahres 2016"
+        "award": "Spiel des Jahres 2016",
+        "players": "4-10+",
+        "designer": "Vlaada Chvátil (also: Mage Knight, Through the Ages)"
       }
     },
     {
       "id": "evt_scythe",
-      "title": "Scythe Published",
+      "title": "Mechs and Wheat Fields",
       "date_display": "2016",
       "date_start": "2016-08-01",
       "group_ids": [
@@ -1215,16 +1269,21 @@
       "innovator": "Jamey Stegmaier",
       "innovation": "Engine-Building Area Control",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Scythe_%28board_game%29_box.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Carcassonne_Miples.jpg"
       ],
-      "description": "Scythe combined stunning alternate-history artwork with engine-building gameplay in 1920s Eastern Europe with mechs. The game successfully Kickstarted with overwhelming backing and delivered on its ambitious production quality.\n\nJamey Stegmaier's Stonemaier Games became a model for how independent publishers could compete with established companies through direct relationships with backers and exceptional production values.",
+      "description": "Scythe married Jakub Różalski's stunning alternate-history art—diesel-punk mechs looming over 1920s Eastern European farmlands—with an engine-building strategy game. Players controlled factions rebuilding after a great war, developing technology, deploying mechs, and competing for territory. Despite the militaristic aesthetics, combat was costly and rare; efficient engine-building won games.\n\nJamey Stegmaier's Stonemaier Games Kickstarted Scythe with meticulous transparency, raising nearly $2 million. The campaign became a case study in crowdfunding best practices: clear communication, realistic timelines, and premium components delivered on schedule.\n\nScythe demonstrated that independent publishers could compete with major companies through direct relationships with backers and exceptional production values. Metal coins, realistic resources, and the iconic Encounter cards created a premium feel that justified premium pricing.\n\nThe game spawned expansions (Invaders from Afar, Rise of Fenris) and a digital adaptation. Stonemaier Games became a model for modern game publishing: Kickstarter-funded, community-engaged, and quality-obsessed.",
+      "links": [
+        {"title": "Scythe (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Scythe_(board_game)"}
+      ],
       "metrics": {
-        "kickstarter": "Nearly $2 million raised"
+        "kickstarter": "Nearly $2 million raised",
+        "art": "Jakub Różalski",
+        "publisher": "Stonemaier Games"
       }
     },
     {
       "id": "evt_gloomhaven",
-      "title": "Gloomhaven Published",
+      "title": "The 22-Pound Monster",
       "date_display": "2017",
       "date_start": "2017-01-01",
       "group_ids": [
@@ -1234,18 +1293,21 @@
       "innovator": "Isaac Childres",
       "innovation": "Legacy Dungeon Crawler",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2e/Gloomhaven_board_game_box.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pandemic_board_game.jpg"
       ],
-      "description": "Gloomhaven combined tactical dungeon crawling with legacy-style campaign progression over 100+ scenarios. The 22-pound box contained hundreds of components for an experience lasting dozens of hours. It topped BoardGameGeek's rankings, dethroning Pandemic Legacy.\n\nGloomhaven proved that massive, complex hobby games could achieve commercial success through Kickstarter. Its card-based combat system and persistent world influenced numerous games that followed.",
+      "description": "Gloomhaven arrived in a 22-pound box containing 95 scenarios, 17 playable character classes (most unlocked through play), 1,500+ cards, and hundreds of map tiles. It was absurd. It was ambitious. It dethroned Pandemic Legacy to become BoardGameGeek's #1 game.\n\nIsaac Childres designed a tactical dungeon crawler where every class played differently through unique hand management. Characters exhausted over time—use powerful cards early and burn out faster. The legacy elements meant permanent changes: sealed envelopes with new content, stickers modifying the world, characters retiring to unlock new classes.\n\nGloomhaven raised $386,000 on Kickstarter in 2015, then $4 million for a second printing in 2017. It proved that massive, complex hobby games could find commercial success when designed well enough. The game took hundreds of hours to complete—and players actually completed it.\n\nThe influence spread immediately. Jaws of the Lion provided an accessible entry point. Frosthaven raised $13 million as a sequel. Gloomhaven's card-based combat and hand management influenced countless designs. Childres had created a new standard for campaign-length dungeon crawling.",
+      "links": [
+        {"title": "Gloomhaven - Wikipedia", "url": "https://en.wikipedia.org/wiki/Gloomhaven"}
+      ],
       "metrics": {
         "weight": "22+ pounds",
-        "scenarios": "100+",
-        "bgg_rank": "#1 for years"
+        "scenarios": "95+",
+        "bgg_rank": "#1 (dethroned Pandemic Legacy)"
       }
     },
     {
       "id": "evt_critical_role",
-      "title": "Critical Role Reaches Mainstream",
+      "title": "Voice Actors Roll Dice",
       "date_display": "2018",
       "date_start": "2018-01-01",
       "group_ids": [
@@ -1255,17 +1317,21 @@
       "innovator": "Critical Role, Matthew Mercer",
       "innovation": "RPG as Entertainment",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/Dungeons_and_Dragons_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Travis_Willingham%2C_Marisha_Ray%2C_Taliesin_Jaffe%2C_Sam_Riegel%2C_Laura_Bailey_%26_Matthew_Mercer_%2833719531601%29.jpg"
       ],
-      "description": "Critical Role—a livestreamed Dungeons & Dragons campaign with voice actors—broke out of nerd culture into mainstream entertainment. The show's Kickstarter for an animated series raised $11.4 million in 24 hours, eventually leading to an Amazon animated series.\n\nCritical Role demonstrated that watching people play tabletop RPGs could be as compelling as any scripted show. The cast became genuine celebrities, and D&D experienced a cultural renaissance partly attributable to the show's influence.",
+      "description": "Critical Role began as a home D&D game between voice actors—people who voiced characters in video games, anime, and animation for a living. When Geek & Sundry streamed their sessions starting in 2015, viewers discovered that watching talented performers play D&D was genuinely compelling entertainment.\n\nDungeon Master Matthew Mercer's vivid descriptions and the cast's emotional investment created something between improv theater and collaborative storytelling. Campaigns ran for years. Characters developed. Story arcs concluded in moments of genuine catharsis. Viewers cried when fictional characters died.\n\nIn 2019, Critical Role's Kickstarter for an animated series raised $11.4 million in 24 hours—eventually totaling $11.9 million. Amazon Prime picked up *The Legend of Vox Machina* for multiple seasons. The cast became genuine celebrities. Critical Role spun off into its own company, publishing adventures and producing content.\n\nMore than any other single factor, Critical Role drove D&D's 5th Edition renaissance. It showed mainstream audiences that tabletop RPGs weren't strange basement rituals—they were creative social experiences. The show normalized D&D and created new players by the millions.",
+      "links": [
+        {"title": "Critical Role - Wikipedia", "url": "https://en.wikipedia.org/wiki/Critical_Role"}
+      ],
       "metrics": {
         "kickstarter": "$11.4 million in 24 hours",
-        "viewers": "Millions"
+        "amazon_series": "The Legend of Vox Machina",
+        "impact": "Primary driver of D&D 5e renaissance"
       }
     },
     {
       "id": "evt_wingspan",
-      "title": "Wingspan Published",
+      "title": "Birds as Game Theme? Really?",
       "date_display": "2019",
       "date_start": "2019-03-01",
       "group_ids": [
@@ -1275,17 +1341,22 @@
       "innovator": "Elizabeth Hargrave",
       "innovation": "Nature Theme Engine Builder",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Wingspan_board_game_components.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/d/dd/Birdfeeder_dice_tower_in_Wingspan_board_game.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d8/Cards_in_Wingspan_board_game.jpg"
       ],
-      "description": "Wingspan featured beautiful bird illustrations on over 170 cards, each representing a real species with accurate facts. Players built engines of bird powers in their aviaries, competing to attract the best birds and complete bonus objectives.\n\nElizabeth Hargrave's design demonstrated that unconventional themes (birdwatching!) could succeed when paired with elegant mechanisms. Wingspan won the Spiel des Jahres Kennerspiel and became a crossover hit reaching beyond typical hobby game audiences.",
+      "description": "Elizabeth Hargrave designed Wingspan because she wanted nature-themed games that weren't about hunting. Publishers were skeptical—birds? Really? Stonemaier Games took the risk, and the result exceeded everyone's expectations.\n\nWingspan featured 170 North American bird species with accurate illustrations and facts—the Northern Mockingbird could copy other birds' powers; the Killdeer laid eggs in multiple habitats. Players built engine combinations in three habitats, gaining resources to attract increasingly powerful birds. The 'birdfeeder' dice tower delighted players with tactile charm.\n\nThe game won the Kennerspiel des Jahres in 2019 and became Stonemaier's biggest hit. It reached audiences who didn't consider themselves gamers but loved birds—Audubon Society members, birdwatchers, nature enthusiasts. It appeared in Target alongside Mass Effect and Minecraft spinoffs.\n\nHargrave proved that unconventional themes could succeed when paired with elegant mechanisms and genuine thematic authenticity. Expansions added European, Oceanic, and Asian birds. Wingspan became a platform for appreciation of the natural world—and one of the best-selling hobby games of its era.",
+      "links": [
+        {"title": "Wingspan (board game) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Wingspan_(board_game)"}
+      ],
       "metrics": {
         "award": "Kennerspiel des Jahres 2019",
-        "birds": "170+ species"
+        "birds": "170+ species (base game)",
+        "designer": "Elizabeth Hargrave"
       }
     },
     {
       "id": "evt_covid_boom",
-      "title": "COVID Board Game Boom",
+      "title": "The Lockdown Gaming Renaissance",
       "date_display": "2020",
       "date_start": "2020-03-01",
       "group_ids": [
@@ -1294,16 +1365,21 @@
       "type": "Market Event",
       "innovation": "Pandemic-Driven Sales",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c9/Pandemic_board_game.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Pandemic_board_game_CDC.jpg"
       ],
-      "description": "The COVID-19 pandemic drove explosive board game sales as locked-down families sought entertainment at home. Classic games like Monopoly saw massive spikes, but hobby games also benefited. Sales of Pandemic (ironically) increased dramatically.\n\nThe boom validated board games as mainstream entertainment and introduced many new players to the hobby. Whether pandemic-driven interest would persist post-lockdown remained uncertain, but the audience had expanded.",
+      "description": "When COVID-19 lockdowns confined families at home in March 2020, board game sales exploded. People needed entertainment that didn't require screens. They rediscovered the joy of playing games together—sometimes for the first time since childhood.\n\nThe industry saw 30%+ sales growth in 2020. Classic games like Monopoly and Scrabble surged alongside hobby games. Puzzles sold out everywhere. The board game *Pandemic* saw ironic popularity as families played a game about stopping a global outbreak while living through one.\n\nThe boom validated board games as mainstream entertainment. New players discovered hobby gaming existed beyond Hasbro classics. Game stores (those that survived) found new customers. Online retailers couldn't keep popular titles in stock.\n\nWhether pandemic-driven interest would persist post-lockdown remained uncertain—but the audience had permanently expanded. Board gaming had proven itself an ideal activity for human connection in isolated times.",
+      "links": [
+        {"title": "Board games during COVID-19 - Various", "url": "https://en.wikipedia.org/wiki/Impact_of_the_COVID-19_pandemic_on_the_entertainment_industry"}
+      ],
       "metrics": {
-        "growth": "30%+ industry sales increase (2020)"
+        "growth": "30%+ industry sales increase (2020)",
+        "context": "COVID-19 lockdowns worldwide",
+        "ironic_hit": "Pandemic board game sales up 300%"
       }
     },
     {
       "id": "evt_frosthaven",
-      "title": "Frosthaven Kickstarter Record",
+      "title": "$13 Million for Cardboard",
       "date_display": "2020",
       "date_start": "2020-04-01",
       "group_ids": [
@@ -1313,17 +1389,21 @@
       "innovator": "Isaac Childres, Cephalofair Games",
       "innovation": "Massive Board Game Campaign",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2e/Gloomhaven_board_game_box.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pandemic_board_game.jpg"
       ],
-      "description": "Frosthaven, the sequel to Gloomhaven, raised $12.9 million on Kickstarter—the most-funded board game campaign ever. The massive standalone expansion promised even more content than its predecessor.\n\nThe campaign demonstrated the passionate audience for complex hobby games and Gloomhaven's cultural impact. Frosthaven's successful delivery in 2023 fulfilled years of anticipation.",
+      "description": "In March 2020—at the height of pandemic lockdowns—Isaac Childres launched the Frosthaven Kickstarter. The sequel to Gloomhaven promised even more content: 100+ scenarios, new character classes, town-building mechanics, and a massive interconnected campaign.\n\nThe campaign raised $12.9 million from 83,000+ backers, shattering the record for most-funded board game in Kickstarter history. People stuck at home during a pandemic pledged $100+ for a game that wouldn't ship for years. The demand demonstrated both Gloomhaven's cultural impact and the passionate audience for complex hobby games.\n\nFrosthaven finally delivered in 2023, fulfilling three years of anticipation. The 29-pound box (heavier than Gloomhaven!) contained everything promised. Reviews praised the refinements over its predecessor.\n\nThe campaign proved that board games could command video-game-level budgets and audiences. $13 million for a single board game would have been unthinkable a decade earlier. The hobby had arrived.",
+      "links": [
+        {"title": "Frosthaven - Wikipedia", "url": "https://en.wikipedia.org/wiki/Frosthaven"}
+      ],
       "metrics": {
         "funding": "$12.9 million",
-        "backers": "83,000+"
+        "backers": "83,000+",
+        "weight": "29 pounds"
       }
     },
     {
       "id": "evt_market_15b",
-      "title": "Hobby Gaming Market Exceeds $15B",
+      "title": "A $15 Billion Industry",
       "date_display": "2024",
       "date_start": "2024-01-01",
       "group_ids": [
@@ -1332,11 +1412,16 @@
       "type": "Industry Milestone",
       "innovation": "Market Scale",
       "image_urls": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d5/ChessStartingPosition.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Carcassonne_Miples.jpg"
       ],
-      "description": "The global hobby gaming market (board games, RPGs, card games, miniatures) exceeded $15 billion in annual sales, with projections of continued growth. The industry had transformed from niche hobby to significant entertainment sector.\n\nDigital integration, subscription services, and streaming content continued driving engagement. Board games competed for leisure time alongside video games and streaming services—and often won.",
+      "description": "By 2024, the global hobby gaming market—board games, role-playing games, collectible card games, and miniatures—exceeded $15 billion in annual revenue. What was once a niche hobby had become a significant entertainment sector competing with video games and streaming services.\n\nThe industry had transformed across multiple dimensions. Crowdfunding enabled independent publishers to thrive. YouTube and Twitch created new marketing and community channels. Digital companion apps enhanced physical games. Subscription services delivered curated game collections.\n\nBoard game cafes proliferated in cities worldwide, providing social spaces for play. Game conventions drew tens of thousands of attendees. Professional designers achieved celebrity status. The hobby had graduated from basement pastime to cultural phenomenon.\n\nFrom Senet in ancient Egypt to Frosthaven's 29-pound box, board games had been part of human civilization for 5,500 years. The modern renaissance proved they would continue evolving—physical play remaining relevant despite (or perhaps because of) the digital age.",
+      "links": [
+        {"title": "Board game industry analysis - Various", "url": "https://en.wikipedia.org/wiki/Board_game#Market"}
+      ],
       "metrics": {
-        "market_size": "$15+ billion globally"
+        "market_size": "$15+ billion globally",
+        "growth_rate": "Continued expansion projected",
+        "significance": "Niche hobby → major entertainment sector"
       }
     }
   ]
