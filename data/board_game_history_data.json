@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Roll for History: A History of Board Games",
-    "version": "1.0.0",
-    "generated_date": "2025-12-06",
-    "overview": "Board games are among humanity's oldest forms of structured play, with archaeological evidence dating back 5,000 years. From ancient games of strategy and chance to modern hobby gaming's explosion of creativity, the history of board games reflects changing attitudes about leisure, education, competition, and social bonding. Today's tabletop gaming renaissance represents the medium's richest period of innovation and cultural impact.",
-    "attribution": "Historical research compiled from gaming history archives, industry analysis, and cultural studies.",
+    "version": "2.0.0",
+    "generated_date": "2025-12-08",
+    "overview": "Board games are among humanity's oldest forms of structured play, with archaeological evidence dating back 5,500 years to ancient Egypt. From Senet's spiritual journey through the afterlife to Gloomhaven's 22-pound campaign box, the history of board games reflects changing attitudes about leisure, education, competition, and social connection. Today's tabletop gaming renaissance—a $15 billion global industry—represents the medium's richest period of innovation and cultural impact.",
+    "attribution": "Historical research compiled from gaming history archives, BoardGameGeek, Wikipedia, museum collections, and industry analysis. All events validated with reference links.",
     "defaultView": "comic"
   },
   "groups": [
