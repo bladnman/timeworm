@@ -123,6 +123,7 @@ export const HorizontalView = () => {
               return (
                 <div
                   key={cluster.id}
+                  data-item-id={cluster.id}
                   className={styles.itemWrapper}
                   style={{
                     left: `${cluster.xPos}px`,
@@ -172,6 +173,7 @@ export const HorizontalView = () => {
             return (
               <div
                 key={event.id}
+                data-item-id={event.id}
                 className={styles.itemWrapper}
                 style={{
                   left: `${event.xPos}px`,

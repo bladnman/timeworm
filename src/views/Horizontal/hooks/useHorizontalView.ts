@@ -3,6 +3,7 @@ import { useTimeline } from '../../../hooks/useTimeline';
 import { useTimeScale } from '../../../hooks/useTimeScale';
 import { useUrlState } from '../../../hooks/useUrlState';
 import { useTrackLayout } from './useTrackLayout';
+import { useResizeFlip } from './useResizeFlip';
 import { HORIZONTAL_VIEW_CONFIG } from './constants';
 import type { TimelineEvent } from '../../../types/timeline';
 
@@ -18,6 +19,7 @@ const IDEAL_YEARS_IN_VIEW = 80; // Show ~80 years at a time for good readability
 // Pending scroll position - set by resize, executed after DOM update
 interface PendingScroll {
   offset: number;
+  triggerFlip?: boolean;
 }
 
 const computeAutoFitZoom = (): number => {
@@ -42,6 +44,12 @@ export const useHorizontalView = () => {
   // Track when we're doing a programmatic scroll to prevent the scroll listener
   // from overwriting viewportOffset with intermediate values during resize
   const isProgrammaticScrollRef = useRef(false);
+
+  // FLIP animation for smooth resize/zoom transitions
+  const { capturePositions, applyFlipTransforms } = useResizeFlip({
+    containerRef,
+    itemSelector: '[data-item-id]',
+  });
 
   // URL state for share functionality
   const { initialRange, generateShareUrl, clearRangeParams } = useUrlState();
@@ -94,7 +102,7 @@ export const useHorizontalView = () => {
   // This ensures scrollTo works correctly when zooming in (where new offset > old container width)
   useLayoutEffect(() => {
     if (pendingScrollRef.current && containerRef.current) {
-      const { offset } = pendingScrollRef.current;
+      const { offset, triggerFlip } = pendingScrollRef.current;
       const container = containerRef.current;
       pendingScrollRef.current = null;
 
@@ -104,6 +112,12 @@ export const useHorizontalView = () => {
         behavior: 'auto',
       });
 
+      // FLIP: Apply transforms BEFORE paint (synchronously in useLayoutEffect)
+      // This prevents the flash of items at their final positions
+      if (triggerFlip) {
+        applyFlipTransforms();
+      }
+
       // Clear the programmatic scroll flag and restore smooth scrolling after the scroll settles
       requestAnimationFrame(() => {
         isProgrammaticScrollRef.current = false;
@@ -112,7 +126,7 @@ export const useHorizontalView = () => {
         delete container.dataset.resizing;
       });
     }
-  }, [pixelsPerYear]); // Run after pixelsPerYear changes trigger a re-render
+  }, [pixelsPerYear, applyFlipTransforms]); // Run after pixelsPerYear changes trigger a re-render
 
   // Get track layout with clustering
   const { items, maxStackAbove, maxStackBelow } = useTrackLayout(data, {
@@ -166,6 +180,9 @@ export const useHorizontalView = () => {
     snapshotViewportOffset: number,
     snapshotPixelsPerYear: number
   ) => {
+    // FLIP Step 1: Capture visual positions BEFORE any state changes
+    capturePositions();
+
     const clampedPPY = Math.max(HORIZONTAL_VIEW_CONFIG.zoomMin, Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, newPixelsPerYear));
 
     // Calculate anchor year from the frozen snapshot values
@@ -193,7 +210,7 @@ export const useHorizontalView = () => {
     // Store pending scroll - will be executed after DOM updates via useLayoutEffect
     // This is critical because when zooming in, the new offset may exceed the OLD
     // container width, causing scrollTo to be clamped by the browser.
-    pendingScrollRef.current = { offset: clampedOffset };
+    pendingScrollRef.current = { offset: clampedOffset, triggerFlip: true };
     // Prevent scroll listener from overwriting viewportOffset during the transition
     isProgrammaticScrollRef.current = true;
 
@@ -207,7 +224,7 @@ export const useHorizontalView = () => {
 
     setPixelsPerYear(clampedPPY);
     setViewportOffset(clampedOffset);
-  }, [viewportWidth, totalYears]);
+  }, [capturePositions, viewportWidth, totalYears]);
 
   const handleEventClick = useCallback((eventId: string) => {
     const event = data?.events.find((e) => e.id === eventId);
