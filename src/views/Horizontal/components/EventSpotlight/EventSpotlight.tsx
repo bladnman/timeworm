@@ -132,10 +132,6 @@ export const EventSpotlight = memo(function EventSpotlight({
               {event.title}
             </h2>
 
-            {event.type && (
-              <div className={styles.type}>{event.type}</div>
-            )}
-
             {event.description && (
               <p className={styles.description}>{event.description}</p>
             )}

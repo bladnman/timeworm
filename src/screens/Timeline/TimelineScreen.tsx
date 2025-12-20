@@ -20,7 +20,7 @@ import styles from './TimelineScreen.module.css';
 export const TimelineScreen: React.FC = () => {
   const { selectedTimelineId, timelineMode, navigateToHome } = useApp();
   const { loadTimeline, loadingId, error } = useTimelineLibrary();
-  const { setData, data } = useTimeline();
+  const { setData, data, viewMode } = useTimeline();
   const [isInitialLoad, setIsInitialLoad] = useState(true);
 
   // Load timeline data when screen mounts or timeline changes
@@ -97,6 +97,7 @@ export const TimelineScreen: React.FC = () => {
   return (
     <motion.div
       className={styles.container}
+      data-view={viewMode}
       variants={screenForwardVariants}
       initial="initial"
       animate="enter"

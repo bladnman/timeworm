@@ -31,6 +31,7 @@ const vizOptions: { mode: ViewMode; label: string }[] = [
   { mode: 'exhibit', label: 'Exhibit' },
   { mode: 'trail', label: 'Trail' },
   { mode: 'libraryShelf', label: 'Library' },
+  { mode: 'youtube', label: 'YouTube' },
 ];
 
 export const TimelineSettings: React.FC = () => {

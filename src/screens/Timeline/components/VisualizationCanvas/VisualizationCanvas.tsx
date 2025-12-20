@@ -24,6 +24,7 @@ import { StrataView } from '../../../../views/Strata/StrataView';
 import { TrailProfileView } from '../../../../views/TrailProfile/TrailProfileView';
 import { TrainJourney } from '../../../../views/TrainJourney/TrainJourney';
 import { VerticalView } from '../../../../views/Vertical/VerticalView';
+import { YouTubeView } from '../../../../views/YouTube/YouTubeView';
 
 import styles from './VisualizationCanvas.module.css';
 
@@ -45,6 +46,7 @@ const viewComponents = {
   exhibit: ExhibitWalk,
   trail: TrailProfileView,
   libraryShelf: LibraryShelfView,
+  youtube: YouTubeView,
 } as const;
 
 export const VisualizationCanvas: React.FC = () => {

@@ -1,0 +1,223 @@
+/* YouTube-styled Video Cluster */
+.cluster {
+  position: relative;
+  z-index: 10;
+}
+
+.cluster.expanded {
+  z-index: 100;
+}
+
+/* Badge button - YouTube red styling */
+.badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-bg-surface);
+  border: 1px solid #FF0000; /* YouTube red */
+  border-radius: 20px;
+  padding: var(--space-2) var(--space-4);
+  cursor: pointer;
+  transition:
+    background var(--duration-fast),
+    border-color var(--duration-fast),
+    transform var(--duration-fast) var(--ease-spring);
+  white-space: nowrap;
+}
+
+.badge:hover {
+  background: #282828; /* YouTube charcoal */
+  border-color: #CC0000; /* Darker red */
+  transform: scale(1.02);
+}
+
+.badge:focus-visible {
+  outline: 2px solid #FF0000;
+  outline-offset: 2px;
+}
+
+.expanded .badge {
+  border-color: #FF0000;
+  background: #282828;
+}
+
+.count {
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: #FF0000; /* YouTube red */
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.label {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dateRange {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  padding-left: var(--space-2);
+  border-left: 1px solid var(--color-border);
+}
+
+.chevron {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-left: var(--space-1);
+  transition: transform var(--duration-fast);
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: calc(100% + var(--space-2));
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 280px;
+  max-width: 340px;
+  background: var(--color-bg-surface);
+  border: 1px solid #383838; /* YouTube charcoal light */
+  border-radius: 12px;
+  box-shadow: 0 12px 32px -4px rgb(0 0 0 / 0.4);
+  overflow: hidden;
+  animation: dropdownSlide var(--duration-fast) var(--ease-spring);
+}
+
+.above .dropdown {
+  top: auto;
+  bottom: calc(100% + var(--space-2));
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.above .dropdown {
+  animation-name: dropdownSlideUp;
+}
+
+@keyframes dropdownSlideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.dropdownHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid #383838;
+  background: #282828; /* YouTube charcoal */
+}
+
+.dropdownTitle {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+}
+
+.dropdownRange {
+  font-size: var(--text-xs);
+  color: #FF0000; /* YouTube red */
+  font-family: var(--font-mono);
+}
+
+/* Video list */
+.eventList {
+  max-height: 320px;
+  overflow-y: auto;
+  padding: var(--space-2);
+}
+
+.eventItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-2);
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--duration-fast);
+}
+
+.eventItem:hover {
+  background: #282828;
+}
+
+.eventItem:focus-visible {
+  outline: 2px solid #FF0000;
+  outline-offset: -2px;
+}
+
+/* Thumbnail with play icon */
+.thumbContainer {
+  position: relative;
+  width: 64px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.eventThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #282828;
+}
+
+.thumbPlayIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  color: #FF0000;
+  opacity: 0;
+  transition: opacity var(--duration-fast);
+}
+
+.eventItem:hover .thumbPlayIcon {
+  opacity: 1;
+}
+
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.eventDate {
+  font-size: var(--text-xs);
+  color: #FF0000; /* YouTube red */
+  font-family: var(--font-mono);
+}
+
+.eventTitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -91,6 +91,12 @@ export const ViewSwitcher = () => {
       >
         Library Shelf
       </button>
+      <button
+        className={classNames(styles.button, { [styles.active]: viewMode === 'youtube' })}
+        onClick={() => setViewMode('youtube')}
+      >
+        YouTube
+      </button>
     </div>
   );
 };

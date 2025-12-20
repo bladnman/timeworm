@@ -1,0 +1,313 @@
+/* YouTube View - Main container */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-canvas);
+  overflow: hidden;
+
+  /* Override colors for YouTube theme - red + charcoal */
+  --color-text-accent: #FF0000;
+  --color-bg-canvas: #181818;
+  --color-bg-surface: #282828;
+  --color-bg-surface-hover: #383838;
+  --color-bg-elevated: #383838;
+  --color-border: #383838;
+  --color-text-secondary: #AAAAAA;
+
+  /* Header theme overrides */
+  --header-bg: rgba(24, 24, 24, 0.95);
+  --header-border: #383838;
+}
+
+/* Loading state */
+.loading {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-canvas);
+}
+
+.loadingText {
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+}
+
+/* Scrollable container */
+.scrollContainer {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: auto;
+  position: relative;
+  /* Leave space for minimap */
+  padding-bottom: 100px;
+  scroll-behavior: smooth;
+}
+
+/* Timeline track area */
+.timelineTrack {
+  position: relative;
+  min-height: 100%;
+  /* Center the axis vertically */
+  display: flex;
+  align-items: center;
+}
+
+/* Central axis line - YouTube charcoal */
+.axis {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #383838 5%,
+    #383838 95%,
+    transparent 100%
+  );
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Tick container */
+.tick {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tick line - YouTube charcoal */
+.tickLine {
+  width: 1px;
+  height: 20px;
+  background: #383838;
+  transform: translateY(-50%);
+}
+
+.tickLine[data-major="true"] {
+  height: 32px;
+  width: 2px;
+  background: #606060;
+}
+
+/* Tick label */
+.tickLabel {
+  position: absolute;
+  top: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: #606060;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+/* Video/Cluster wrapper */
+.itemWrapper {
+  position: absolute;
+  z-index: 5;
+  transition:
+    left var(--duration-normal) ease-out,
+    top var(--duration-normal) ease-out,
+    opacity var(--duration-fast);
+}
+
+/* Disable transitions during resize zoom */
+.scrollContainer[data-resizing="true"] .itemWrapper {
+  transition: none;
+}
+
+.itemWrapper:hover {
+  z-index: 20;
+}
+
+/* Connector line from card to axis - YouTube red gradient */
+.connector {
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #FF0000 0%,
+    #383838 100%
+  );
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0.6;
+  transition: opacity var(--duration-fast);
+}
+
+.itemWrapper:hover .connector {
+  opacity: 1;
+  background: #FF0000;
+}
+
+/* Items below the axis need reversed gradient */
+.itemWrapper[data-lane="below"] .connector {
+  background: linear-gradient(
+    to top,
+    #FF0000 0%,
+    #383838 100%
+  );
+}
+
+/* Play icon anchor on the axis - YouTube red triangle (for videos) */
+.anchorPlay {
+  position: absolute;
+  left: 50%;
+  /* Create play triangle pointing right */
+  width: 0;
+  height: 0;
+  border-left: 8px solid #FF0000;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  z-index: 10;
+  transition: border-color var(--duration-fast);
+  filter: drop-shadow(0 0 4px rgba(255, 0, 0, 0.5));
+}
+
+.itemWrapper:hover .anchorPlay {
+  border-left-color: #CC0000;
+  filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8));
+}
+
+/* Circle dot anchor on the axis (for non-video events) */
+.anchorDot {
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #FF0000;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color var(--duration-fast), transform var(--duration-fast);
+  filter: drop-shadow(0 0 4px rgba(255, 0, 0, 0.5));
+}
+
+.itemWrapper:hover .anchorDot {
+  background: #CC0000;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8));
+}
+
+/* Navigation controls wrapper */
+.navigationControls {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+  padding: 0 var(--space-4) var(--space-4);
+}
+
+/* Share button - YouTube styled */
+.shareButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: #282828;
+  border: 1px solid #383838;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast),
+    border-color var(--duration-fast),
+    color var(--duration-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.shareButton:hover {
+  background: #383838;
+  border-color: #FF0000;
+  color: var(--color-text-primary);
+}
+
+.shareButton:active {
+  transform: scale(0.98);
+}
+
+.shareButton svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .shareButton span {
+    display: none;
+  }
+
+  .shareButton {
+    padding: var(--space-2);
+  }
+}
+
+/* Global overrides for MiniMap component to use YouTube red */
+.container :global([class*="contextIndicator"]) {
+  background: rgb(255 0 0 / 0.3) !important;
+}
+
+.container :global([class*="contextIndicator"]:hover) {
+  background: rgb(255 0 0 / 0.4) !important;
+  box-shadow: 0 0 6px rgb(255 0 0 / 0.3) !important;
+}
+
+.container :global([class*="contextIndicator"]:active),
+.container :global([class*="contextIndicator"][class*="dragging"]) {
+  background: rgb(255 0 0 / 0.5) !important;
+  box-shadow: 0 0 10px rgb(255 0 0 / 0.5) !important;
+}
+
+.container :global([class*="viewport"]) {
+  background: rgb(255 0 0 / 0.2) !important;
+}
+
+.container :global([class*="viewport"]:hover) {
+  background: rgb(255 0 0 / 0.3) !important;
+}
+
+.container :global([class*="viewport"]:active) {
+  background: rgb(255 0 0 / 0.4) !important;
+}
+
+.container :global([class*="viewport"][class*="dragging"]) {
+  background: rgb(255 0 0 / 0.35) !important;
+  box-shadow: 0 0 12px 3px rgb(255 0 0 / 0.5) !important;
+}
+
+.container :global([class*="viewport"][class*="resizing"]) {
+  background: rgb(255 0 0 / 0.4) !important;
+  box-shadow: 0 0 16px 4px rgb(255 0 0 / 0.6) !important;
+}
+
+.container :global([class*="resizeHandle"]::before) {
+  background: rgb(255 0 0 / 0.7) !important;
+  border-color: rgb(255 0 0 / 0.9) !important;
+  box-shadow: 0 0 4px rgb(255 0 0 / 0.3) !important;
+}
+
+.container :global([class*="resizeHandle"]:hover::before) {
+  background: rgb(255 0 0 / 0.9) !important;
+  box-shadow: 0 0 10px rgb(255 0 0 / 0.6) !important;
+}
+
+.container :global([class*="resizeHandle"]:active::before) {
+  box-shadow: 0 0 14px rgb(255 0 0 / 0.8) !important;
+}
+
+.container :global([class*="resizeHandle"][class*="visible"]::before) {
+  background: rgb(255 0 0 / 0.9) !important;
+  box-shadow: 0 0 10px rgb(255 0 0 / 0.6) !important;
+}

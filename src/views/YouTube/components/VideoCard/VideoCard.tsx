@@ -1,9 +1,9 @@
 import { memo, useState } from 'react';
 import type { TimelineEvent } from '../../../../types/timeline';
-import styles from './EventCard.module.css';
+import styles from './VideoCard.module.css';
 import classNames from 'classnames';
 
-interface EventCardProps {
+interface VideoCardProps {
   event: TimelineEvent;
   isSelected?: boolean;
   compact?: boolean;
@@ -11,17 +11,17 @@ interface EventCardProps {
 }
 
 /**
- * Event card with optional key art image display.
+ * Video card with 16:9 thumbnail and play icon overlay.
  *
- * Follows the ethos of "Integration Over Interruption" - cards feel like
- * natural extensions of the timeline, not interruptions to it.
+ * Styled with YouTube's red and charcoal color scheme.
+ * Play icon appears on hover over the thumbnail.
  */
-export const EventCard = memo(function EventCard({
+export const VideoCard = memo(function VideoCard({
   event,
   isSelected = false,
   compact = false,
   onClick,
-}: EventCardProps) {
+}: VideoCardProps) {
   const [imageError, setImageError] = useState(false);
   const hasImage = event.image_urls?.length > 0 && !imageError;
   const imageUrl = hasImage ? event.image_urls[0] : null;

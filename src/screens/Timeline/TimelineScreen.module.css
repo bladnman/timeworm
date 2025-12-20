@@ -112,3 +112,15 @@
     margin-right: 0;
   }
 }
+
+/* View-specific theming: header variables based on active view */
+.container[data-view="youtube"] {
+  --header-bg: rgba(24, 24, 24, 0.95);
+  --header-border: #383838;
+  --header-button-hover: rgba(255, 255, 255, 0.3);
+  --header-button-active: #FF0000;
+  --color-text-accent: #FF0000;
+  --color-bg-canvas: #181818;
+  --color-bg-surface: #282828;
+  --color-border: #383838;
+}

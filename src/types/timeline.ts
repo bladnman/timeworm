@@ -1,4 +1,4 @@
-export type ViewMode = 'vertical' | 'horizontal' | 'comic' | 'river' | 'depthroad' | 'mosaic' | 'orbital' | 'strata' | 'tree' | 'bikeride' | 'train' | 'exhibit' | 'trail' | 'libraryShelf';
+export type ViewMode = 'vertical' | 'horizontal' | 'comic' | 'river' | 'depthroad' | 'mosaic' | 'orbital' | 'strata' | 'tree' | 'bikeride' | 'train' | 'exhibit' | 'trail' | 'libraryShelf' | 'youtube';
 
 export interface TimelineMeta {
   title: string;
