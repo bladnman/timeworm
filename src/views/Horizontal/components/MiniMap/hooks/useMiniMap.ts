@@ -47,6 +47,9 @@ interface UseMiniMapReturn {
   isDraggingMinimap: boolean;
   setIsDraggingMinimap: (dragging: boolean) => void;
 
+  // Suppress auto-follow for one render cycle (used after context bar drag)
+  suppressAutoFollow: () => void;
+
   // Frozen coordinate snapshot for jank-free dragging
   getCoordinateSnapshot: (trackWidth: number) => FrozenCoordinateSnapshot;
 }
@@ -67,6 +70,9 @@ export function useMiniMap({
 
   // Track if we've initialized
   const hasInitializedRef = useRef(false);
+
+  // Flag to suppress auto-follow for one render cycle (used after context bar drag)
+  const suppressAutoFollowRef = useRef(false);
 
   // Initialize range when total bounds become available
   useEffect(() => {
@@ -96,6 +102,12 @@ export function useMiniMap({
   useEffect(() => {
     if (isDraggingMinimap) return;
     if (totalYears <= 0 || viewportWidth <= 0) return;
+
+    // Check and clear the suppress flag (used after context bar drag)
+    if (suppressAutoFollowRef.current) {
+      suppressAutoFollowRef.current = false;
+      return;
+    }
 
     // Calculate main viewport in year-space
     const mainViewportStartYear = viewportOffset / pixelsPerYear + totalMinYear;
@@ -267,6 +279,11 @@ export function useMiniMap({
     ]
   );
 
+  // Suppress auto-follow for one render cycle
+  const suppressAutoFollow = useCallback(() => {
+    suppressAutoFollowRef.current = true;
+  }, []);
+
   return {
     minimapRangeStart,
     minimapRangeEnd,
@@ -289,6 +306,7 @@ export function useMiniMap({
 
     isDraggingMinimap,
     setIsDraggingMinimap,
+    suppressAutoFollow,
 
     getCoordinateSnapshot,
   };

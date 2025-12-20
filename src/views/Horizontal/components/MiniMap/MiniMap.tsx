@@ -435,9 +435,11 @@ export const MiniMap = memo(function MiniMap({
       const rect = contextBar.getBoundingClientRect();
       const totalYears = maxYear - minYear;
 
-      // Create a simple snapshot for context bar dragging
-      const startContextLeftPercent = totalYears > 0 ? ((minimapRangeStart - minYear) / totalYears) * 100 : 0;
-      const startContextWidthPercent = totalYears > 0 ? (minimapYearsVisible / totalYears) * 100 : 100;
+      // Context bar indicator now shows VIEWPORT position (not minimap range)
+      const startViewportYear = viewportOffset / pixelsPerYear + minYear;
+      const viewportYearsSpan = viewportWidth / pixelsPerYear;
+      const startContextLeftPercent = totalYears > 0 ? ((startViewportYear - minYear) / totalYears) * 100 : 0;
+      const startContextWidthPercent = totalYears > 0 ? (viewportYearsSpan / totalYears) * 100 : 100;
 
       // We need a snapshot for the drag state interface, use track ref if available
       const trackRect = trackRef.current?.getBoundingClientRect();
@@ -462,11 +464,11 @@ export const MiniMap = memo(function MiniMap({
         // Convert context bar delta to years
         const deltaYears = (deltaPercent / 100) * totalYears;
 
-        // Pan the minimap range
-        const newRangeStart = Math.max(minYear, Math.min(maxYear - minimapYearsVisible, minimapRangeStart + deltaYears));
+        // Calculate new viewport position (clamped)
+        const newViewportStartYear = Math.max(minYear, Math.min(maxYear - viewportYearsSpan, startViewportYear + deltaYears));
 
         // Update preview position
-        const newContextLeftPercent = totalYears > 0 ? ((newRangeStart - minYear) / totalYears) * 100 : 0;
+        const newContextLeftPercent = totalYears > 0 ? ((newViewportStartYear - minYear) / totalYears) * 100 : 0;
 
         setDragState((prev) =>
           prev
@@ -491,26 +493,29 @@ export const MiniMap = memo(function MiniMap({
             const deltaPercent = (deltaX / rect.width) * 100;
             const deltaYears = (deltaPercent / 100) * totalYears;
 
-            // Pan the minimap
-            panMinimap(deltaYears);
+            // Calculate new viewport center year (clamped)
+            const newViewportStartYear = Math.max(minYear, Math.min(maxYear - viewportYearsSpan, startViewportYear + deltaYears));
+            const newViewportCenterYear = newViewportStartYear + viewportYearsSpan / 2;
 
-            // Also move the main viewport to center on the new minimap position
-            const newMinimapCenter = minimapRangeStart + deltaYears + minimapYearsVisible / 2;
+            // Convert to viewport offset
             const newViewportOffset = yearToViewportOffset(
-              newMinimapCenter,
+              newViewportCenterYear,
               viewportWidth,
               pixelsPerYear,
               minYear,
               totalWidth
             );
+
+            // Update viewport directly (auto-follow will adjust minimap as needed)
             setTimeout(() => {
               onViewportChange(newViewportOffset);
+              setIsDraggingMinimap(false);
             }, 0);
+          } else {
+            setIsDraggingMinimap(false);
           }
           return null;
         });
-
-        setIsDraggingMinimap(false);
       };
 
       document.body.style.cursor = 'grabbing';
@@ -521,13 +526,10 @@ export const MiniMap = memo(function MiniMap({
     [
       minYear,
       maxYear,
-      minimapRangeStart,
-      minimapYearsVisible,
       viewportOffset,
       viewportWidth,
       pixelsPerYear,
       totalWidth,
-      panMinimap,
       onViewportChange,
       setIsDraggingMinimap,
       getCoordinateSnapshot,
@@ -561,17 +563,22 @@ export const MiniMap = memo(function MiniMap({
     ghostWidthPercent = dragState.ghostWidthPercent;
   }
 
-  // Calculate context bar position (shows where minimap view is in total timeline)
+  // Calculate context bar position (shows where VIEWPORT is in total timeline)
+  // This makes the dots align between the context bar and main minimap indicators
   const totalYears = maxYear - minYear;
   const isContextDragging = dragState?.type === 'pan-context';
 
-  // Use preview position during context bar drag, otherwise use live calculation
+  // Calculate viewport position in year-space
+  const viewportStartYear = viewportOffset / pixelsPerYear + minYear;
+  const viewportYears = viewportWidth / pixelsPerYear;
+
+  // Use preview position during context bar drag, otherwise show viewport position
   const contextLeftPercent = isContextDragging
     ? dragState.previewLeftPercent
     : totalYears > 0
-      ? ((minimapRangeStart - minYear) / totalYears) * 100
+      ? ((viewportStartYear - minYear) / totalYears) * 100
       : 0;
-  const contextWidthPercent = totalYears > 0 ? (minimapYearsVisible / totalYears) * 100 : 100;
+  const contextWidthPercent = totalYears > 0 ? (viewportYears / totalYears) * 100 : 100;
 
   return (
     <div className={styles.container}>
