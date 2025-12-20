@@ -1,3 +1,4 @@
+import { useState, useCallback } from 'react';
 import { useHorizontalView } from './hooks/useHorizontalView';
 import { EventCard } from './components/EventCard/EventCard';
 import { EventCluster } from './components/EventCluster/EventCluster';
@@ -29,7 +30,6 @@ export const HorizontalView = () => {
     minYear,
     maxYear,
     containerRef,
-    handleZoomChange,
     handleZoomDelta,
     handleResizeZoom,
     handleEventClick,
@@ -37,8 +37,33 @@ export const HorizontalView = () => {
     handleSpotlightClose,
     handleViewportChange,
     getYearPosition,
+    getShareUrl,
     config,
   } = useHorizontalView();
+
+  // Share button state
+  const [shareStatus, setShareStatus] = useState<'idle' | 'copied'>('idle');
+
+  const handleShare = useCallback(async () => {
+    const url = getShareUrl();
+    if (!url) return;
+
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareStatus('copied');
+      setTimeout(() => setShareStatus('idle'), 2000);
+    } catch {
+      // Fallback: select text for manual copy
+      const input = document.createElement('input');
+      input.value = url;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      setShareStatus('copied');
+      setTimeout(() => setShareStatus('idle'), 2000);
+    }
+  }, [getShareUrl]);
 
   if (!data) {
     return (
@@ -188,19 +213,46 @@ export const HorizontalView = () => {
         </div>
       </div>
 
-      {/* MiniMap navigation */}
-      <MiniMap
-        items={items}
-        totalWidth={totalWidth}
-        viewportWidth={viewportWidth}
-        viewportOffset={viewportOffset}
-        pixelsPerYear={pixelsPerYear}
-        minYear={minYear}
-        maxYear={maxYear}
-        onViewportChange={handleViewportChange}
-        onZoomChange={handleZoomDelta}
-        onResizeZoom={handleResizeZoom}
-      />
+      {/* Navigation controls */}
+      <div className={styles.navigationControls}>
+        {/* Share button */}
+        <button
+          className={styles.shareButton}
+          onClick={handleShare}
+          aria-label="Share current view"
+          title="Copy link to current view"
+        >
+          {shareStatus === 'copied' ? (
+            <>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Copied!</span>
+            </>
+          ) : (
+            <>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+              </svg>
+              <span>Share</span>
+            </>
+          )}
+        </button>
+
+        {/* MiniMap navigation */}
+        <MiniMap
+          items={items}
+          totalWidth={totalWidth}
+          viewportWidth={viewportWidth}
+          viewportOffset={viewportOffset}
+          pixelsPerYear={pixelsPerYear}
+          minYear={minYear}
+          maxYear={maxYear}
+          onViewportChange={handleViewportChange}
+          onZoomChange={handleZoomDelta}
+          onResizeZoom={handleResizeZoom}
+        />
+      </div>
 
       {/* Event Spotlight modal */}
       {spotlightEvents && (

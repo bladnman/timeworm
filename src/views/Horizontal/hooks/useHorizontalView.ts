@@ -1,6 +1,7 @@
 import { useMemo, useState, useCallback, useLayoutEffect, useRef, useEffect } from 'react';
 import { useTimeline } from '../../../hooks/useTimeline';
 import { useTimeScale } from '../../../hooks/useTimeScale';
+import { useUrlState } from '../../../hooks/useUrlState';
 import { useTrackLayout } from './useTrackLayout';
 import { HORIZONTAL_VIEW_CONFIG } from './constants';
 import type { TimelineEvent } from '../../../types/timeline';
@@ -13,6 +14,11 @@ export interface Tick {
 
 const VIEWPORT_PADDING = 100;
 const IDEAL_YEARS_IN_VIEW = 80; // Show ~80 years at a time for good readability
+
+// Pending scroll position - set by resize, executed after DOM update
+interface PendingScroll {
+  offset: number;
+}
 
 const computeAutoFitZoom = (): number => {
   const viewportWidth = window.innerWidth - VIEWPORT_PADDING * 2;
@@ -32,17 +38,81 @@ export const useHorizontalView = () => {
   const [viewportWidth, setViewportWidth] = useState(0);
   const hasAutoFitRef = useRef(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const pendingScrollRef = useRef<PendingScroll | null>(null);
+  // Track when we're doing a programmatic scroll to prevent the scroll listener
+  // from overwriting viewportOffset with intermediate values during resize
+  const isProgrammaticScrollRef = useRef(false);
+
+  // URL state for share functionality
+  const { initialRange, generateShareUrl, clearRangeParams } = useUrlState();
 
   const { totalWidth, getPosition, minDate, maxDate, totalYears, years } = useTimeScale(data, { pixelsPerYear });
 
-  // Auto-fit zoom on initial load
+  // Auto-fit zoom on initial load, or restore from URL if range params present
   useLayoutEffect(() => {
     if (!hasAutoFitRef.current && data && totalYears > 0) {
       hasAutoFitRef.current = true;
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional one-time sync before paint
-      setPixelsPerYear(computeAutoFitZoom());
+      const vw = window.innerWidth - VIEWPORT_PADDING * 2;
+
+      // Check if URL has range params to restore
+      if (initialRange.start !== null && initialRange.end !== null) {
+        // Calculate zoom and offset from normalized range
+        const rangeNormalized = initialRange.end - initialRange.start;
+        const rangeYears = rangeNormalized * totalYears;
+
+        // Calculate pixelsPerYear to fit the range in viewport
+        const newPPY = Math.max(
+          HORIZONTAL_VIEW_CONFIG.zoomMin,
+          Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, vw / rangeYears)
+        );
+
+        // Calculate offset: start position in pixels
+        const startYearsFromMin = initialRange.start * totalYears;
+        const newOffset = startYearsFromMin * newPPY;
+
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional one-time sync before paint
+        setPixelsPerYear(newPPY);
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional one-time sync before paint
+        setViewportOffset(newOffset);
+
+        // Clear range params from URL after restoring (keeps URL clean)
+        clearRangeParams();
+
+        // Scroll container to restored position
+        if (containerRef.current) {
+          containerRef.current.scrollTo({ left: newOffset, behavior: 'auto' });
+        }
+      } else {
+        // No URL range, use auto-fit
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional one-time sync before paint
+        setPixelsPerYear(computeAutoFitZoom());
+      }
     }
-  }, [data, totalYears]);
+  }, [data, totalYears, initialRange, clearRangeParams]);
+
+  // Execute pending scroll after DOM updates with new totalWidth
+  // This ensures scrollTo works correctly when zooming in (where new offset > old container width)
+  useLayoutEffect(() => {
+    if (pendingScrollRef.current && containerRef.current) {
+      const { offset } = pendingScrollRef.current;
+      const container = containerRef.current;
+      pendingScrollRef.current = null;
+
+      // Now the DOM has the new totalWidth, so scrollTo won't be clamped incorrectly
+      container.scrollTo({
+        left: offset,
+        behavior: 'auto',
+      });
+
+      // Clear the programmatic scroll flag and restore smooth scrolling after the scroll settles
+      requestAnimationFrame(() => {
+        isProgrammaticScrollRef.current = false;
+        // Restore smooth scrolling and transitions for normal user interactions
+        container.style.scrollBehavior = '';
+        delete container.dataset.resizing;
+      });
+    }
+  }, [pixelsPerYear]); // Run after pixelsPerYear changes trigger a re-render
 
   // Get track layout with clustering
   const { items, maxStackAbove, maxStackBelow } = useTrackLayout(data, {
@@ -88,34 +158,56 @@ export const useHorizontalView = () => {
     });
   }, []);
 
-  // Handle resize from minimap - sets new pixels per year based on desired viewport ratio
-  // anchorPercent: 0 = anchor left edge, 1 = anchor right edge
-  const handleResizeZoom = useCallback((newPixelsPerYear: number, anchorPercent: number) => {
+  // Handle resize from minimap - sets new pixels per year and anchors an edge
+  // Uses frozen snapshot values from MiniMap to ensure consistent calculation
+  const handleResizeZoom = useCallback((
+    newPixelsPerYear: number,
+    edge: 'left' | 'right',
+    snapshotViewportOffset: number,
+    snapshotPixelsPerYear: number
+  ) => {
     const clampedPPY = Math.max(HORIZONTAL_VIEW_CONFIG.zoomMin, Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, newPixelsPerYear));
 
-    // Calculate the anchor point in years (what year position should stay fixed)
-    const currentAnchorOffset = viewportOffset + (viewportWidth * anchorPercent);
-    const anchorYearPosition = currentAnchorOffset / pixelsPerYear;
+    // Calculate anchor year from the frozen snapshot values
+    // For right edge drag: anchor LEFT edge (keep it at the same year)
+    // For left edge drag: anchor RIGHT edge (keep it at the same year)
+    const snapshotLeftYearsFromMin = snapshotViewportOffset / snapshotPixelsPerYear;
+    const snapshotViewportYears = viewportWidth / snapshotPixelsPerYear;
+    const snapshotRightYearsFromMin = snapshotLeftYearsFromMin + snapshotViewportYears;
 
-    // After zoom, where should the viewport be to keep the anchor in the same screen position?
-    const newAnchorOffset = anchorYearPosition * clampedPPY;
-    const newViewportOffset = newAnchorOffset - (viewportWidth * anchorPercent);
+    let newOffset: number;
+    if (edge === 'right') {
+      // Keep left edge at the same year position
+      newOffset = snapshotLeftYearsFromMin * clampedPPY;
+    } else {
+      // Keep right edge at the same year position
+      // Right edge year stays fixed, so: newRightOffset = snapshotRightYearsFromMin * clampedPPY
+      // newOffset = newRightOffset - viewportWidth
+      newOffset = snapshotRightYearsFromMin * clampedPPY - viewportWidth;
+    }
 
     // Calculate new total width to clamp offset properly
     const newTotalWidth = totalYears * clampedPPY;
-    const clampedOffset = Math.max(0, Math.min(newTotalWidth - viewportWidth, newViewportOffset));
+    const clampedOffset = Math.max(0, Math.min(newTotalWidth - viewportWidth, newOffset));
+
+    // Store pending scroll - will be executed after DOM updates via useLayoutEffect
+    // This is critical because when zooming in, the new offset may exceed the OLD
+    // container width, causing scrollTo to be clamped by the browser.
+    pendingScrollRef.current = { offset: clampedOffset };
+    // Prevent scroll listener from overwriting viewportOffset during the transition
+    isProgrammaticScrollRef.current = true;
+
+    // Temporarily disable smooth scrolling and CSS transitions to prevent "zoom from zero" animation
+    // The browser may animate scroll position changes when content size changes
+    // Also, CSS transitions on items cause them to animate from old positions
+    if (containerRef.current) {
+      containerRef.current.style.scrollBehavior = 'auto';
+      containerRef.current.dataset.resizing = 'true';
+    }
 
     setPixelsPerYear(clampedPPY);
     setViewportOffset(clampedOffset);
-
-    // Scroll to new position
-    if (containerRef.current) {
-      containerRef.current.scrollTo({
-        left: clampedOffset,
-        behavior: 'auto', // instant, not smooth, for resize
-      });
-    }
-  }, [viewportOffset, viewportWidth, pixelsPerYear, totalYears]);
+  }, [viewportWidth, totalYears]);
 
   const handleEventClick = useCallback((eventId: string) => {
     const event = data?.events.find((e) => e.id === eventId);
@@ -165,7 +257,11 @@ export const useHorizontalView = () => {
     if (!container) return;
 
     const updateViewport = () => {
-      setViewportOffset(container.scrollLeft);
+      // Skip updating viewportOffset during programmatic scrolls (e.g., resize zoom)
+      // to prevent intermediate scroll positions from overwriting the intended offset
+      if (!isProgrammaticScrollRef.current) {
+        setViewportOffset(container.scrollLeft);
+      }
       setViewportWidth(container.clientWidth);
     };
 
@@ -230,6 +326,28 @@ export const useHorizontalView = () => {
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [spotlightEvents, viewportWidth, viewportOffset, totalWidth, pixelsPerYear, handleViewportChange, handleZoomChange]);
 
+  // Get current viewport range as normalized values for sharing
+  const getShareState = useCallback((): { start: number; end: number } | null => {
+    if (totalYears <= 0 || viewportWidth <= 0) return null;
+
+    // Current viewport in years from timeline start
+    const startYearsFromMin = viewportOffset / pixelsPerYear;
+    const endYearsFromMin = (viewportOffset + viewportWidth) / pixelsPerYear;
+
+    // Normalize to 0-1
+    const start = Math.max(0, Math.min(1, startYearsFromMin / totalYears));
+    const end = Math.max(0, Math.min(1, endYearsFromMin / totalYears));
+
+    return { start, end };
+  }, [viewportOffset, viewportWidth, pixelsPerYear, totalYears]);
+
+  // Generate a shareable URL for current viewport
+  const getShareUrl = useCallback((): string | null => {
+    const state = getShareState();
+    if (!state) return null;
+    return generateShareUrl(state.start, state.end);
+  }, [getShareState, generateShareUrl]);
+
   return {
     // Data
     data,
@@ -260,6 +378,9 @@ export const useHorizontalView = () => {
     getYearPosition,
     selectEvent,
     selectedEventId,
+
+    // Share
+    getShareUrl,
 
     // Config
     config: HORIZONTAL_VIEW_CONFIG,

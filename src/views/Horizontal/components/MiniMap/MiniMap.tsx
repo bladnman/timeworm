@@ -23,7 +23,7 @@ interface MiniMapProps {
   maxYear: number;
   onViewportChange: (offset: number) => void;
   onZoomChange?: (delta: number) => void;
-  onResizeZoom?: (newPixelsPerYear: number, anchorPercent: number) => void;
+  onResizeZoom?: (newPixelsPerYear: number, edge: 'left' | 'right', snapshotViewportOffset: number, snapshotPixelsPerYear: number) => void;
 }
 
 interface DragState {
@@ -86,7 +86,6 @@ export const MiniMap = memo(function MiniMap({
     hasMoreRight,
     panMinimap,
     zoomMinimapAtPercent,
-    recenterOnViewport,
     setIsDraggingMinimap,
     getCoordinateSnapshot,
   } = useMiniMap({
@@ -204,7 +203,7 @@ export const MiniMap = memo(function MiniMap({
         );
       };
 
-      const handleUp = (upEvent: globalThis.MouseEvent) => {
+      const handleUp = (_upEvent: globalThis.MouseEvent) => {
         document.removeEventListener('mousemove', handleMove);
         document.removeEventListener('mouseup', handleUp);
         document.body.style.cursor = '';
@@ -347,16 +346,18 @@ export const MiniMap = memo(function MiniMap({
         // Get final state and calculate new zoom
         setDragState((currentState) => {
           if (currentState && currentState.previewWidthPercent && currentState.snapshot) {
+            const { snapshot } = currentState;
+
             // Calculate zoom ratio using FROZEN snapshot width
-            const zoomRatio = currentState.snapshot.indicatorWidthPercent / currentState.previewWidthPercent;
+            const zoomRatio = snapshot.indicatorWidthPercent / currentState.previewWidthPercent;
             const newPPY = pixelsPerYear * zoomRatio;
 
-            // Anchor the opposite edge
-            const anchorPercent = edge === 'left' ? 1 : 0;
+            // Pass the frozen snapshot values directly - let handleResizeZoom do the calculation
+            // This avoids coordinate system mismatches between minimap and main view
+            // Note: Don't call recenterOnViewport here - it would use stale closure values.
+            // The auto-center effect in useMiniMap will handle recentering after state updates.
             setTimeout(() => {
-              onResizeZoom(newPPY, anchorPercent);
-              // Recenter minimap after resize
-              setTimeout(recenterOnViewport, 50);
+              onResizeZoom(newPPY, edge, snapshot.viewportOffset, snapshot.pixelsPerYear);
             }, 0);
           }
           return null;
@@ -377,7 +378,6 @@ export const MiniMap = memo(function MiniMap({
       checkEdgeProximity,
       startAutoScroll,
       stopAutoScroll,
-      recenterOnViewport,
       setIsDraggingMinimap,
       getCoordinateSnapshot,
     ]
@@ -543,7 +543,6 @@ export const MiniMap = memo(function MiniMap({
   // Determine display state
   const isDragging = dragState !== null;
   const isResizing = dragState?.type === 'resize-left' || dragState?.type === 'resize-right';
-  const isMoving = dragState?.type === 'move';
 
   // Calculate display values for viewport indicator
   // During drag: use frozen snapshot positions for both ghost and preview
@@ -613,7 +612,7 @@ export const MiniMap = memo(function MiniMap({
       </div>
 
       {/* Track */}
-      <div ref={trackRef} className={styles.track} onClick={handleTrackClick} onWheel={handleWheel}>
+      <div ref={trackRef} className={styles.track} onClick={handleTrackClick} onWheel={handleWheel} data-testid="minimap-track" aria-label="Timeline minimap">
         {/* Edge fade - left */}
         {hasMoreLeft && (
           <div className={styles.edgeFade} data-edge="left">
@@ -671,12 +670,22 @@ export const MiniMap = memo(function MiniMap({
             width: `${displayWidthPercent}%`,
           }}
           onMouseDown={handleViewportDrag}
+          data-testid="minimap-viewport"
+          role="slider"
+          aria-label="Timeline viewport position"
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-valuenow={Math.round(displayLeftPercent + displayWidthPercent / 2)}
         >
           {/* Left resize handle */}
           {onResizeZoom && (
             <div
               className={`${styles.resizeHandle} ${showMobileHandles ? styles.visible : ''}`}
               data-edge="left"
+              data-testid="minimap-resize-left"
+              role="separator"
+              aria-orientation="vertical"
+              aria-label="Resize viewport left edge"
               onMouseDown={handleLeftEdgeDrag}
             />
           )}
@@ -685,6 +694,10 @@ export const MiniMap = memo(function MiniMap({
             <div
               className={`${styles.resizeHandle} ${showMobileHandles ? styles.visible : ''}`}
               data-edge="right"
+              data-testid="minimap-resize-right"
+              role="separator"
+              aria-orientation="vertical"
+              aria-label="Resize viewport right edge"
               onMouseDown={handleRightEdgeDrag}
             />
           )}
