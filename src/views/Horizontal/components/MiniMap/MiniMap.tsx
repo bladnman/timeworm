@@ -9,6 +9,7 @@ import {
   getPreviewCenterYear,
   yearToViewportOffset,
   getEventDensityDots,
+  formatRangeLabel,
   type FrozenCoordinateSnapshot,
 } from './utils/minimapCalculations';
 import styles from './MiniMap.module.css';
@@ -311,15 +312,18 @@ export const MiniMap = memo(function MiniMap({
         let newLeftPercent: number;
         let newWidthPercent: number;
 
+        // Minimum indicator width: 0.5% allows deep zoom (was 5% which limited zoom)
+        const MIN_INDICATOR_PERCENT = 0.5;
+
         if (edge === 'left') {
           // Moving left edge: right edge stays fixed (in frozen coordinates)
-          newLeftPercent = Math.max(0, Math.min(startRightPercent - 5, snapshot.indicatorLeftPercent + deltaPercent));
+          newLeftPercent = Math.max(0, Math.min(startRightPercent - MIN_INDICATOR_PERCENT, snapshot.indicatorLeftPercent + deltaPercent));
           newWidthPercent = startRightPercent - newLeftPercent;
         } else {
           // Moving right edge: left edge stays fixed (in frozen coordinates)
           newLeftPercent = snapshot.indicatorLeftPercent;
           newWidthPercent = Math.max(
-            5,
+            MIN_INDICATOR_PERCENT,
             Math.min(100 - snapshot.indicatorLeftPercent, snapshot.indicatorWidthPercent + deltaPercent)
           );
         }
@@ -612,10 +616,10 @@ export const MiniMap = memo(function MiniMap({
         </div>
       )}
 
-      {/* Year labels - show minimap range, not total range */}
+      {/* Year labels - show minimap range with appropriate granularity */}
       <div className={styles.yearLabels}>
-        <span className={styles.yearLabel}>{Math.round(minimapRangeStart)}</span>
-        <span className={styles.yearLabel}>{Math.round(minimapRangeEnd)}</span>
+        <span className={styles.yearLabel}>{formatRangeLabel(minimapRangeStart, minimapYearsVisible)}</span>
+        <span className={styles.yearLabel}>{formatRangeLabel(minimapRangeEnd, minimapYearsVisible)}</span>
       </div>
 
       {/* Track */}
@@ -624,14 +628,14 @@ export const MiniMap = memo(function MiniMap({
         {hasMoreLeft && (
           <div className={styles.edgeFade} data-edge="left">
             <span className={styles.edgeArrow}>{'<'}</span>
-            <span className={styles.edgeYear}>{Math.round(minYear)}</span>
+            <span className={styles.edgeYear}>{Math.floor(minYear)}</span>
           </div>
         )}
 
         {/* Edge fade - right */}
         {hasMoreRight && (
           <div className={styles.edgeFade} data-edge="right">
-            <span className={styles.edgeYear}>{Math.round(maxYear)}</span>
+            <span className={styles.edgeYear}>{Math.floor(maxYear)}</span>
             <span className={styles.edgeArrow}>{'>'}</span>
           </div>
         )}

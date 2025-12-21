@@ -6,8 +6,8 @@ export const MINIMAP_CONFIG = {
   minViewportPercent: 15,
   maxViewportPercent: 60,
 
-  // Minimum years the minimap can display (prevents over-zooming)
-  minYearsVisible: 5,
+  // Minimum years the minimap can display (fraction of a month allows day-level zoom)
+  minYearsVisible: 1 / 52, // ~1 week minimum - allows zooming to day level
 
   // Auto-scroll settings during edge resize
   autoScrollStepPercent: 20,
@@ -21,7 +21,7 @@ export const HORIZONTAL_VIEW_CONFIG = {
   // Zoom settings
   defaultPixelsPerYear: 50,
   zoomMin: 2,
-  zoomMax: 500,
+  zoomMax: 100000, // Allows zooming to day-level (~365px per day at max)
   zoomStep: 2,
 
   // Card dimensions
@@ -35,9 +35,10 @@ export const HORIZONTAL_VIEW_CONFIG = {
   connectorLength: 60,
   anchorSize: 10,
 
-  // Clustering
-  clusterThreshold: 4, // Events beyond this become a cluster
+  // Clustering - more generous to show individual items when possible
+  clusterThreshold: 8, // Events beyond this become a cluster
   stackOffset: 20, // Vertical offset between stacked cards
+  stackCapacity: 6, // Max items per stack before clustering
 
   // Animation
   transitionDuration: 300,

@@ -1,10 +1,11 @@
 import { useMemo, useState, useCallback, useLayoutEffect, useRef, useEffect } from 'react';
 import { useTimeline } from '../../../hooks/useTimeline';
-import { useTimeScale } from '../../../hooks/useTimeScale';
+import { useTimeScale, getDataBounds } from '../../../hooks/useTimeScale';
 import { useUrlState } from '../../../hooks/useUrlState';
 import { useTrackLayout } from './useTrackLayout';
 import { useResizeFlip } from './useResizeFlip';
 import { HORIZONTAL_VIEW_CONFIG } from './constants';
+import { computeAutoFitZoom, getDataAwareZoomMax } from '../../../hooks/utils/autoFitZoom';
 import type { TimelineEvent } from '../../../types/timeline';
 
 export interface Tick {
@@ -14,23 +15,12 @@ export interface Tick {
 }
 
 const VIEWPORT_PADDING = 100;
-const IDEAL_YEARS_IN_VIEW = 80; // Show ~80 years at a time for good readability
 
 // Pending scroll position - set by resize, executed after DOM update
 interface PendingScroll {
   offset: number;
   triggerFlip?: boolean;
 }
-
-const computeAutoFitZoom = (): number => {
-  const viewportWidth = window.innerWidth - VIEWPORT_PADDING * 2;
-  // Calculate zoom to show IDEAL_YEARS_IN_VIEW years in the viewport
-  const idealZoom = viewportWidth / IDEAL_YEARS_IN_VIEW;
-  return Math.max(
-    HORIZONTAL_VIEW_CONFIG.zoomMin,
-    Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, idealZoom)
-  );
-};
 
 export const useHorizontalView = () => {
   const { data, selectEvent, selectedEventId } = useTimeline();
@@ -54,11 +44,54 @@ export const useHorizontalView = () => {
   // URL state for share functionality
   const { initialRange, generateShareUrl, clearRangeParams } = useUrlState();
 
-  const { totalWidth, getPosition, minDate, maxDate, totalYears, years } = useTimeScale(data, { pixelsPerYear });
+  // Get raw data bounds for auto-fit calculation
+  const dataBounds = useMemo(() => getDataBounds(data), [data]);
+
+  // Compute dynamic zoomMax based on data granularity (uses minimum event spacing)
+  const zoomMax = useMemo(() => {
+    if (!dataBounds) return HORIZONTAL_VIEW_CONFIG.zoomMax;
+    return getDataAwareZoomMax(
+      dataBounds.spanYears,
+      dataBounds.eventCount,
+      HORIZONTAL_VIEW_CONFIG.cardWidth,
+      HORIZONTAL_VIEW_CONFIG.gap,
+      dataBounds.eventYears
+    );
+  }, [dataBounds]);
+
+  // Compute auto-fit parameters based on data density
+  const autoFitResult = useMemo(() => {
+    if (!dataBounds) return null;
+    // Pass full viewport width - autoFitZoom handles edge padding internally
+    const vw = window.innerWidth;
+
+    return computeAutoFitZoom(
+      dataBounds.eventCount,
+      dataBounds.spanYears,
+      vw,
+      {
+        cardWidth: HORIZONTAL_VIEW_CONFIG.cardWidth,
+        gap: HORIZONTAL_VIEW_CONFIG.gap,
+        stackCapacity: HORIZONTAL_VIEW_CONFIG.stackCapacity,
+        zoomMin: HORIZONTAL_VIEW_CONFIG.zoomMin,
+        zoomMax,
+        minEdgePadding: VIEWPORT_PADDING,
+      }
+    );
+  }, [dataBounds, zoomMax]);
+
+  // Pass dynamic padding to useTimeScale
+  const timeScaleConfig = useMemo(() => ({
+    pixelsPerYear,
+    paddingBefore: autoFitResult?.paddingBefore,
+    paddingAfter: autoFitResult?.paddingAfter,
+  }), [pixelsPerYear, autoFitResult?.paddingBefore, autoFitResult?.paddingAfter]);
+
+  const { totalWidth, getPosition, minDate, maxDate, totalYears, years } = useTimeScale(data, timeScaleConfig);
 
   // Auto-fit zoom on initial load, or restore from URL if range params present
   useLayoutEffect(() => {
-    if (!hasAutoFitRef.current && data && totalYears > 0) {
+    if (!hasAutoFitRef.current && data && autoFitResult && totalYears > 0) {
       hasAutoFitRef.current = true;
       const vw = window.innerWidth - VIEWPORT_PADDING * 2;
 
@@ -71,7 +104,7 @@ export const useHorizontalView = () => {
         // Calculate pixelsPerYear to fit the range in viewport
         const newPPY = Math.max(
           HORIZONTAL_VIEW_CONFIG.zoomMin,
-          Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, vw / rangeYears)
+          Math.min(zoomMax, vw / rangeYears)
         );
 
         // Calculate offset: start position in pixels
@@ -91,12 +124,14 @@ export const useHorizontalView = () => {
           containerRef.current.scrollTo({ left: newOffset, behavior: 'auto' });
         }
       } else {
-        // No URL range, use auto-fit
+        // No URL range, use smart auto-fit based on data density
         // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional one-time sync before paint
-        setPixelsPerYear(computeAutoFitZoom());
+        setPixelsPerYear(autoFitResult.pixelsPerYear);
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional one-time sync before paint
+        setViewportOffset(autoFitResult.initialOffset);
       }
     }
-  }, [data, totalYears, initialRange, clearRangeParams]);
+  }, [data, totalYears, initialRange, clearRangeParams, autoFitResult]);
 
   // Execute pending scroll after DOM updates with new totalWidth
   // This ensures scrollTo works correctly when zooming in (where new offset > old container width)
@@ -136,28 +171,71 @@ export const useHorizontalView = () => {
     getPosition,
   });
 
-  // Generate ticks for the axis
+  // Generate ticks for the axis - adaptive based on zoom level
   const ticks = useMemo((): Tick[] => {
+    const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const startYear = Math.floor(minDate.decimalYear);
+    const endYear = Math.ceil(maxDate.decimalYear);
+
+    // DAY-LEVEL: > 3000 px/yr (~8px per day) - show days
+    if (pixelsPerYear > 3000) {
+      const dayTicks: Tick[] = [];
+      for (let y = startYear; y <= endYear; y++) {
+        for (let m = 0; m < 12; m++) {
+          const daysInMonth = new Date(y, m + 1, 0).getDate();
+          for (let d = 1; d <= daysInMonth; d++) {
+            const decimalYear = y + (m + (d - 1) / daysInMonth) / 12;
+            if (decimalYear >= minDate.decimalYear - 0.01 && decimalYear <= maxDate.decimalYear + 0.01) {
+              const isFirstOfMonth = d === 1;
+              const isFirstOfYear = m === 0 && d === 1;
+              dayTicks.push({
+                year: decimalYear,
+                label: isFirstOfYear ? `${y}` : isFirstOfMonth ? MONTHS[m] : `${d}`,
+                major: isFirstOfMonth,
+              });
+            }
+          }
+        }
+      }
+      return dayTicks;
+    }
+
+    // MONTH-LEVEL: 100-3000 px/yr - show months
+    if (pixelsPerYear > 100) {
+      const monthTicks: Tick[] = [];
+      for (let y = startYear; y <= endYear; y++) {
+        for (let m = 0; m < 12; m++) {
+          const decimalYear = y + m / 12;
+          if (decimalYear >= minDate.decimalYear - 0.1 && decimalYear <= maxDate.decimalYear + 0.1) {
+            monthTicks.push({
+              year: decimalYear,
+              label: m === 0 ? `${y}` : MONTHS[m],
+              major: m === 0 || m === 6,
+            });
+          }
+        }
+      }
+      return monthTicks;
+    }
+
+    // YEAR-LEVEL: use the years array from useTimeScale
     if (years.length === 0) return [];
 
-    // If super zoomed out (< 10px/yr), show decades only
+    // < 10 px/yr → decades only
     if (pixelsPerYear < 10) {
       return years
         .filter((y) => y % 10 === 0)
-        .map((y) => ({
-          year: y,
-          label: y.toString(),
-          major: true,
-        }));
+        .map((y) => ({ year: y, label: y.toString(), major: true }));
     }
 
-    // Otherwise show years, with decades as major
+    // 10-100 px/yr → years (mark all as major if few years)
+    const allMajor = years.length < 10;
     return years.map((y) => ({
       year: y,
       label: y.toString(),
-      major: y % 10 === 0,
+      major: allMajor || y % 10 === 0,
     }));
-  }, [years, pixelsPerYear]);
+  }, [years, pixelsPerYear, minDate.decimalYear, maxDate.decimalYear]);
 
   // Handlers
   const handleZoomChange = useCallback((value: number) => {
@@ -168,9 +246,9 @@ export const useHorizontalView = () => {
   const handleZoomDelta = useCallback((delta: number) => {
     setPixelsPerYear((prev) => {
       const newValue = prev + delta * HORIZONTAL_VIEW_CONFIG.zoomStep;
-      return Math.max(HORIZONTAL_VIEW_CONFIG.zoomMin, Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, newValue));
+      return Math.max(HORIZONTAL_VIEW_CONFIG.zoomMin, Math.min(zoomMax, newValue));
     });
-  }, []);
+  }, [zoomMax]);
 
   // Handle resize from minimap - sets new pixels per year and anchors an edge
   // Uses frozen snapshot values from MiniMap to ensure consistent calculation
@@ -183,7 +261,7 @@ export const useHorizontalView = () => {
     // FLIP Step 1: Capture visual positions BEFORE any state changes
     capturePositions();
 
-    const clampedPPY = Math.max(HORIZONTAL_VIEW_CONFIG.zoomMin, Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, newPixelsPerYear));
+    const clampedPPY = Math.max(HORIZONTAL_VIEW_CONFIG.zoomMin, Math.min(zoomMax, newPixelsPerYear));
 
     // Calculate anchor year from the frozen snapshot values
     // For right edge drag: anchor LEFT edge (keep it at the same year)
@@ -224,7 +302,7 @@ export const useHorizontalView = () => {
 
     setPixelsPerYear(clampedPPY);
     setViewportOffset(clampedOffset);
-  }, [capturePositions, viewportWidth, totalYears]);
+  }, [capturePositions, viewportWidth, totalYears, zoomMax]);
 
   const handleEventClick = useCallback((eventId: string) => {
     const event = data?.events.find((e) => e.id === eventId);
@@ -251,13 +329,13 @@ export const useHorizontalView = () => {
     }
   }, []);
 
-  // Get year position for ticks
+  // Get year position for ticks (uses decimal year for proper sub-year positioning)
   const getYearPosition = useCallback(
     (year: number): number => {
-      const yearsFromMin = year - minDate.year;
+      const yearsFromMin = year - minDate.decimalYear;
       return yearsFromMin * pixelsPerYear;
     },
-    [minDate.year, pixelsPerYear]
+    [minDate.decimalYear, pixelsPerYear]
   );
 
   // Calculate track height based on stack depth
@@ -321,7 +399,7 @@ export const useHorizontalView = () => {
         case '+':
         case '=':
           e.preventDefault();
-          handleZoomChange(Math.min(HORIZONTAL_VIEW_CONFIG.zoomMax, pixelsPerYear + HORIZONTAL_VIEW_CONFIG.zoomStep * 2));
+          handleZoomChange(Math.min(zoomMax, pixelsPerYear + HORIZONTAL_VIEW_CONFIG.zoomStep * 2));
           break;
         case '-':
         case '_':
@@ -341,7 +419,7 @@ export const useHorizontalView = () => {
 
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [spotlightEvents, viewportWidth, viewportOffset, totalWidth, pixelsPerYear, handleViewportChange, handleZoomChange]);
+  }, [spotlightEvents, viewportWidth, viewportOffset, totalWidth, pixelsPerYear, handleViewportChange, handleZoomChange, zoomMax]);
 
   // Get current viewport range as normalized values for sharing
   const getShareState = useCallback((): { start: number; end: number } | null => {

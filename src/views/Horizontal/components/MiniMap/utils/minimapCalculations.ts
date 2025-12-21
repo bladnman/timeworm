@@ -1,5 +1,39 @@
 import { MINIMAP_CONFIG } from '../../../hooks/constants';
 
+// Re-export for use by other minimap modules
+export { MINIMAP_CONFIG };
+
+const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/**
+ * Format a decimal year for display based on the visible range.
+ * Shows appropriate granularity: years, months, or days.
+ * Always includes year to avoid ambiguity.
+ */
+export function formatRangeLabel(decimalYear: number, rangeSpan: number): string {
+  const year = Math.floor(decimalYear);
+  const yearFraction = decimalYear - year;
+
+  // Showing > 2 years: just show year
+  if (rangeSpan > 2) {
+    return String(year);
+  }
+
+  // Calculate month and day from fraction
+  const dayOfYear = yearFraction * 365;
+  const month = Math.floor(dayOfYear / 30.44); // Average days per month
+  const dayOfMonth = Math.max(1, Math.floor(dayOfYear - month * 30.44) + 1);
+  const monthIndex = Math.min(11, Math.max(0, month));
+
+  // Showing > 3 months: show "Mon 'YY"
+  if (rangeSpan > 0.25) {
+    return `${MONTH_NAMES[monthIndex]} '${String(year).slice(-2)}`;
+  }
+
+  // Showing weeks or days: show "Mon D, 'YY"
+  return `${MONTH_NAMES[monthIndex]} ${dayOfMonth}, '${String(year).slice(-2)}`;
+}
+
 /**
  * Frozen coordinate snapshot captured at drag start.
  * This allows the viewport indicator to remain stable during drag operations

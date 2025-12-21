@@ -7,6 +7,7 @@ import {
   minimapPercentToYear,
   createCoordinateSnapshot,
   type FrozenCoordinateSnapshot,
+  MINIMAP_CONFIG,
 } from '../utils/minimapCalculations';
 
 interface UseMiniMapOptions {
@@ -119,25 +120,22 @@ export function useMiniMap({
     const viewportRatioPercent = (mainViewportYears / currentRange) * 100;
 
     // Check if we need to auto-zoom the minimap
-    const TARGET_PERCENT = 25;
-    const MIN_PERCENT = 15;
-    const MAX_PERCENT = 60;
-    const MIN_YEARS = 5;
+    const { targetViewportPercent, minViewportPercent, maxViewportPercent, minYearsVisible } = MINIMAP_CONFIG;
 
     let newRange = currentRange;
     let needsUpdate = false;
 
     // If viewport indicator is too small, zoom in the minimap
-    if (viewportRatioPercent < MIN_PERCENT) {
+    if (viewportRatioPercent < minViewportPercent) {
       // Calculate range that makes viewport ~25%
-      newRange = mainViewportYears / (TARGET_PERCENT / 100);
-      newRange = Math.max(MIN_YEARS, Math.min(totalYears, newRange));
+      newRange = mainViewportYears / (targetViewportPercent / 100);
+      newRange = Math.max(minYearsVisible, Math.min(totalYears, newRange));
       needsUpdate = true;
     }
     // If viewport indicator is too large, zoom out the minimap (up to full range)
-    else if (viewportRatioPercent > MAX_PERCENT && currentRange < totalYears) {
-      newRange = mainViewportYears / (TARGET_PERCENT / 100);
-      newRange = Math.max(MIN_YEARS, Math.min(totalYears, newRange));
+    else if (viewportRatioPercent > maxViewportPercent && currentRange < totalYears) {
+      newRange = mainViewportYears / (targetViewportPercent / 100);
+      newRange = Math.max(minYearsVisible, Math.min(totalYears, newRange));
       needsUpdate = true;
     }
 
