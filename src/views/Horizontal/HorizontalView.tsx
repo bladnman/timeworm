@@ -131,26 +131,25 @@ export const HorizontalView = () => {
                   }}
                   data-lane={item.lane}
                 >
-                  {/* Connector line from card to axis */}
+                  {/* Connector line from card to axis - at left: 0 which is xPos */}
                   <div
                     className={styles.connector}
                     style={isAbove ? {
-                      // Above: card is above axis, connector goes from card bottom (100%) down to axis (-yPos from top)
-                      // Height = distance from card bottom to axis = -yPos - cardHeight
-                      // Since we don't know cardHeight, use: top: 100%, height: calc(-yPos - 100%)
+                      left: 0,
                       top: '100%',
                       height: `calc(${-yPos}px - 100%)`,
                     } : {
-                      // Below: from axis (above the card) down to top of card
+                      left: 0,
                       top: `${-yPos}px`,
                       height: `${yPos}px`,
                     }}
                   />
 
-                  {/* Anchor dot - positioned to sit on the axis */}
+                  {/* Anchor dot - positioned at xPos (left: 0 since itemWrapper.left = xPos) */}
                   <div
                     className={styles.anchor}
                     style={{
+                      left: 0,
                       top: `${-yPos}px`,
                       transform: 'translateX(-50%) translateY(-50%)',
                     }}
@@ -170,36 +169,39 @@ export const HorizontalView = () => {
 
             // Regular event
             const event = item as LayoutEvent;
+            // Card is centered on xPos (left edge at xPos - cardWidth/2)
+            const cardLeft = event.xPos - config.cardWidth / 2;
             return (
               <div
                 key={event.id}
                 data-item-id={event.id}
                 className={styles.itemWrapper}
                 style={{
-                  left: `${event.xPos}px`,
+                  left: `${cardLeft}px`,
                   top: `calc(50% + ${yPos}px)`,
                   width: `${config.cardWidth}px`,
                 }}
                 data-lane={item.lane}
               >
-                {/* Connector line from card to axis */}
+                {/* Connector line from card to axis - positioned at center of card (which is xPos) */}
                 <div
                   className={styles.connector}
                   style={isAbove ? {
-                    // Above: card is above axis, connector goes from card bottom (100%) down to axis
+                    left: `${config.cardWidth / 2}px`,
                     top: '100%',
                     height: `calc(${-yPos}px - 100%)`,
                   } : {
-                    // Below: from axis (above the card) down to top of card
+                    left: `${config.cardWidth / 2}px`,
                     top: `${-yPos}px`,
                     height: `${yPos}px`,
                   }}
                 />
 
-                {/* Anchor dot - positioned to sit on the axis */}
+                {/* Anchor dot - positioned at center of card (which is xPos) */}
                 <div
                   className={styles.anchor}
                   style={{
+                    left: `${config.cardWidth / 2}px`,
                     top: `${-yPos}px`,
                     transform: 'translateX(-50%) translateY(-50%)',
                   }}
@@ -207,6 +209,7 @@ export const HorizontalView = () => {
 
                 <EventCard
                   event={event.event}
+                  isMilestone={event.isMilestone}
                   onClick={() => handleEventClick(event.event.id)}
                 />
               </div>

@@ -131,22 +131,25 @@ export const YouTubeView = () => {
                   }}
                   data-lane={item.lane}
                 >
-                  {/* Connector line from card to axis */}
+                  {/* Connector line from card to axis - at left: 0 which is xPos */}
                   <div
                     className={styles.connector}
                     style={isAbove ? {
+                      left: 0,
                       top: '100%',
                       height: `calc(${-yPos}px - 100%)`,
                     } : {
+                      left: 0,
                       top: `${-yPos}px`,
                       height: `${yPos}px`,
                     }}
                   />
 
-                  {/* Anchor: play triangle for videos, circle dot for non-videos */}
+                  {/* Anchor: positioned at xPos (left: 0 since itemWrapper.left = xPos) */}
                   <div
                     className={hasVideo ? styles.anchorPlay : styles.anchorDot}
                     style={{
+                      left: 0,
                       top: `${-yPos}px`,
                       transform: 'translateX(-50%) translateY(-50%)',
                     }}
@@ -166,34 +169,39 @@ export const YouTubeView = () => {
             // Regular video event
             const event = item as LayoutEvent;
             const hasVideo = !!event.event.metrics?.video_id;
+            // Card is centered on xPos (left edge at xPos - cardWidth/2)
+            const cardLeft = event.xPos - config.cardWidth / 2;
             return (
               <div
                 key={event.id}
                 data-item-id={event.id}
                 className={styles.itemWrapper}
                 style={{
-                  left: `${event.xPos}px`,
+                  left: `${cardLeft}px`,
                   top: `calc(50% + ${yPos}px)`,
                   width: `${config.cardWidth}px`,
                 }}
                 data-lane={item.lane}
               >
-                {/* Connector line from card to axis */}
+                {/* Connector line from card to axis - positioned at center of card (which is xPos) */}
                 <div
                   className={styles.connector}
                   style={isAbove ? {
+                    left: `${config.cardWidth / 2}px`,
                     top: '100%',
                     height: `calc(${-yPos}px - 100%)`,
                   } : {
+                    left: `${config.cardWidth / 2}px`,
                     top: `${-yPos}px`,
                     height: `${yPos}px`,
                   }}
                 />
 
-                {/* Anchor: play triangle for videos, circle dot for non-videos */}
+                {/* Anchor: positioned at center of card (which is xPos) */}
                 <div
                   className={hasVideo ? styles.anchorPlay : styles.anchorDot}
                   style={{
+                    left: `${config.cardWidth / 2}px`,
                     top: `${-yPos}px`,
                     transform: 'translateX(-50%) translateY(-50%)',
                   }}
@@ -201,6 +209,7 @@ export const YouTubeView = () => {
 
                 <VideoCard
                   event={event.event}
+                  isMilestone={event.isMilestone}
                   onClick={() => handleVideoClick(event.event.id)}
                 />
               </div>

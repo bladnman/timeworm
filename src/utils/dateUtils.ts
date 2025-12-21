@@ -33,16 +33,43 @@ export const parseISOExtended = (dateStr: string): ParsedDate => {
   return { year, month, day, decimalYear };
 };
 
+/** Days in each month (non-leap year) */
+const DAYS_PER_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
 /**
  * Get approximate day of year (1-366) from month and day.
+ * Month is 1-indexed (1 = January).
  */
 const getDayOfYear = (month: number, day: number): number => {
-  const daysPerMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   let dayOfYear = day;
   for (let i = 0; i < month - 1; i++) {
-    dayOfYear += daysPerMonth[i];
+    dayOfYear += DAYS_PER_MONTH[i];
   }
   return dayOfYear;
+};
+
+/**
+ * Convert a date to decimal year representation.
+ * This is the single source of truth for all date positioning.
+ *
+ * @param year - The year (e.g., 2025)
+ * @param month - Month (1-indexed: 1 = January, 12 = December)
+ * @param day - Day of month (1-31)
+ * @returns Decimal year (e.g., 2025.5 for mid-2025)
+ */
+export const getDecimalYear = (year: number, month: number, day: number): number => {
+  const dayOfYear = getDayOfYear(month, day);
+  return year + (dayOfYear - 1) / 365.25;
+};
+
+/**
+ * Get decimal year for the first day of a month.
+ * Month is 0-indexed (0 = January) to match JavaScript Date conventions.
+ * This is a convenience wrapper for tick generation.
+ */
+export const getMonthStartDecimalYear = (year: number, month0: number): number => {
+  // Convert 0-indexed month to 1-indexed for getDecimalYear
+  return getDecimalYear(year, month0 + 1, 1);
 };
 
 /**

@@ -6,6 +6,7 @@ import { useTrackLayout } from './useTrackLayout';
 import { useResizeFlip } from './useResizeFlip';
 import { HORIZONTAL_VIEW_CONFIG } from './constants';
 import { computeAutoFitZoom, getDataAwareZoomMax } from '../../../hooks/utils/autoFitZoom';
+import { getMonthStartDecimalYear, getDecimalYear } from '../../../utils/dateUtils';
 import type { TimelineEvent } from '../../../types/timeline';
 
 export interface Tick {
@@ -172,6 +173,7 @@ export const useHorizontalView = () => {
   });
 
   // Generate ticks for the axis - adaptive based on zoom level
+  // Uses shared getDecimalYear/getMonthStartDecimalYear from dateUtils for consistency with event positioning
   const ticks = useMemo((): Tick[] => {
     const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const startYear = Math.floor(minDate.decimalYear);
@@ -184,7 +186,8 @@ export const useHorizontalView = () => {
         for (let m = 0; m < 12; m++) {
           const daysInMonth = new Date(y, m + 1, 0).getDate();
           for (let d = 1; d <= daysInMonth; d++) {
-            const decimalYear = y + (m + (d - 1) / daysInMonth) / 12;
+            // getDecimalYear uses 1-indexed month, so m+1
+            const decimalYear = getDecimalYear(y, m + 1, d);
             if (decimalYear >= minDate.decimalYear - 0.01 && decimalYear <= maxDate.decimalYear + 0.01) {
               const isFirstOfMonth = d === 1;
               const isFirstOfYear = m === 0 && d === 1;
@@ -205,7 +208,8 @@ export const useHorizontalView = () => {
       const monthTicks: Tick[] = [];
       for (let y = startYear; y <= endYear; y++) {
         for (let m = 0; m < 12; m++) {
-          const decimalYear = y + m / 12;
+          // getMonthStartDecimalYear takes 0-indexed month
+          const decimalYear = getMonthStartDecimalYear(y, m);
           if (decimalYear >= minDate.decimalYear - 0.1 && decimalYear <= maxDate.decimalYear + 0.1) {
             monthTicks.push({
               year: decimalYear,

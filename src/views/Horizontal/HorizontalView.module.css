@@ -97,10 +97,11 @@
   font-weight: 600;
 }
 
-/* Event/Cluster wrapper */
+/* Event/Cluster wrapper - centered on event date via translateX(-50%) */
 .itemWrapper {
   position: absolute;
   z-index: 5;
+  /* Note: transform includes the centering translateX(-50%), don't animate it */
   transition:
     left var(--duration-normal) ease-out,
     top var(--duration-normal) ease-out,
@@ -117,6 +118,7 @@
 }
 
 /* Connector line from card to axis */
+/* Left position set inline to be at the anchor point (xPos) */
 .connector {
   position: absolute;
   width: 2px;
@@ -125,7 +127,6 @@
     var(--color-text-accent) 0%,
     var(--color-border) 100%
   );
-  left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   opacity: 0.6;
@@ -147,9 +148,9 @@
 }
 
 /* Anchor dot on the axis */
+/* Left position set inline to be at the anchor point (xPos) */
 .anchor {
   position: absolute;
-  left: 50%;
   width: 10px;
   height: 10px;
   background: var(--color-text-accent);

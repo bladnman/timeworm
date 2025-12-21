@@ -110,10 +110,11 @@
   font-weight: 600;
 }
 
-/* Video/Cluster wrapper */
+/* Video/Cluster wrapper - centered on event date via translateX(-50%) */
 .itemWrapper {
   position: absolute;
   z-index: 5;
+  /* Note: transform includes the centering translateX(-50%), don't animate it */
   transition:
     left var(--duration-normal) ease-out,
     top var(--duration-normal) ease-out,
@@ -130,6 +131,7 @@
 }
 
 /* Connector line from card to axis - YouTube red gradient */
+/* Left position set inline to be at the anchor point (xPos) */
 .connector {
   position: absolute;
   width: 2px;
@@ -138,7 +140,6 @@
     #FF0000 0%,
     #383838 100%
   );
-  left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   opacity: 0.6;
@@ -160,9 +161,9 @@
 }
 
 /* Play icon anchor on the axis - YouTube red triangle (for videos) */
+/* Left position set inline to be at the anchor point (xPos) */
 .anchorPlay {
   position: absolute;
-  left: 50%;
   /* Create play triangle pointing right */
   width: 0;
   height: 0;
@@ -180,9 +181,10 @@
 }
 
 /* Circle dot anchor on the axis (for non-video events) */
+/* Positioned at left: 0 (which equals xPos since itemWrapper.left = xPos) */
 .anchorDot {
   position: absolute;
-  left: 50%;
+  left: 0;
   width: 10px;
   height: 10px;
   background: #FF0000;
