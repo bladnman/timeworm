@@ -23,6 +23,16 @@ export interface TimelineManifestEntry {
  */
 export const timelineManifest: TimelineManifestEntry[] = [
   {
+    id: 'ai_2025_year_end',
+    filename: 'ai_2025_year_end_data.json',
+    title: 'AI in 2025: The Year of Agents',
+    overview:
+      '2025 was the year agentic AI went mainstream. From OpenAI\'s Operator to the December showdown between GPT-5.2 and Claude Opus 4.5, this timeline chronicles the 26 most significant moments in AI.',
+    eventCount: 26,
+    dateRange: '2025',
+    defaultView: 'youtube',
+  },
+  {
     id: 'ai_history',
     filename: 'ai_history_data.json',
     title: 'The Architecture of Minds',
