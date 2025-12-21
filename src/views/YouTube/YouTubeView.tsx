@@ -118,8 +118,8 @@ export const YouTubeView = () => {
 
             if (item.type === 'cluster') {
               const cluster = item as LayoutCluster;
-              // Check if any event in cluster has videoId
-              const hasVideo = cluster.events.some(e => e.metrics?.videoId);
+              // Check if any event in cluster has video_id
+              const hasVideo = cluster.events.some(e => e.metrics?.video_id);
               return (
                 <div
                   key={cluster.id}
@@ -165,7 +165,7 @@ export const YouTubeView = () => {
 
             // Regular video event
             const event = item as LayoutEvent;
-            const hasVideo = !!event.event.metrics?.videoId;
+            const hasVideo = !!event.event.metrics?.video_id;
             return (
               <div
                 key={event.id}
