@@ -54,3 +54,15 @@ src/
 ### Quality
 - Lint-clean code
 - Unit tests for critical logic (adjacent to source files)
+
+## 5. Open Agent System
+
+**CRITICAL: Read `open-agents/INSTRUCTIONS.md` immediately when processing data or working with the inbox.**
+
+This project includes an Open Agent System for automating data workflows:
+
+| Agent | Command | Description |
+|-------|---------|-------------|
+| Ingest | `/agents:ingest` | Transform inbox files into timeline data |
+
+See `open-agents/README.md` for full documentation.
