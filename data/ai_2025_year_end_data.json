@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "AI in 2025: The Year of Agents",
-    "version": "1.1.0",
-    "generated_date": "2025-12-20",
-    "overview": "2025 was the year agentic AI went mainstream. From OpenAI's Operator launching in January to the December showdown between GPT-5.2 and Claude Opus 4.5, this timeline chronicles the 26 most significant moments in AI—as covered by MetalSole.",
+    "version": "1.2.0",
+    "generated_date": "2025-12-21",
+    "overview": "2025 was the year agentic AI went mainstream. From OpenAI's Operator launching in January to the December showdown between GPT-5.2 and Claude Opus 4.5, this timeline chronicles the most significant moments in AI—as covered by MetalSole—alongside key frontier model releases.",
     "attribution": "MetalSole Year-End Review 2025",
     "defaultView": "youtube"
   },
@@ -39,8 +39,12 @@
       "title": "OpenAI Operator & Computer-Using Agent (CUA)",
       "date_display": "January 25, 2025",
       "date_start": "2025-01-25",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/6xwcT_kq1ng/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/6xwcT_kq1ng/maxresdefault.jpg"
+      ],
       "description": "OpenAI's first browser agent, Operator, marked the beginning of agentic AI going mainstream. Using their new Computer-Using Agent (CUA) model, it could navigate websites, fill forms, and complete tasks autonomously—though with notable limitations around CAPTCHAs and complex interfaces.",
       "extended_details": {
         "landscape": "The computer-use agent space was already heating up when OpenAI released Operator on January 23, 2025. Anthropic had demonstrated Claude's computer use capabilities in October 2024, positioning it as the first frontier AI model to offer computer use in public beta. Google DeepMind had released Mariner, a web-browsing agent built on Gemini 2.0. Open-source projects like Browser Use were gaining traction for browser automation. The startup ecosystem was buzzing—Browserbase had recently raised funding positioning itself as infrastructure for AI agents.\n\nOpenAI's entry validated the category while raising stakes for all players. The company collaborated with DoorDash, Instacart, OpenTable, Priceline, StubHub, Thumbtack, and Uber to ensure Operator addressed real-world needs.",
@@ -67,12 +71,46 @@
       ]
     },
     {
+      "id": "ms_gemini_20_flash",
+      "title": "Gemini 2.0 Flash",
+      "date_display": "January 30, 2025",
+      "date_start": "2025-01-30",
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "description": "Gemini 2.0 Flash became the new default model for the Gemini app, bringing faster responses and improved capabilities to Google's AI assistant.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true
+      }
+    },
+    {
+      "id": "ms_o3_mini",
+      "title": "o3-mini",
+      "date_display": "January 31, 2025",
+      "date_start": "2025-01-31",
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "description": "OpenAI released o3-mini, a small reasoning model optimized for math, science, and coding tasks—bringing chain-of-thought reasoning to a more efficient form factor.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true
+      }
+    },
+    {
       "id": "evt_deepseek_r1",
       "title": "DeepSeek R1 & The $600B Crash",
       "date_display": "January 31, 2025",
       "date_start": "2025-01-31",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/dC9HjP2VTDE/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/dC9HjP2VTDE/maxresdefault.jpg"
+      ],
       "description": "A Chinese startup's open-source reasoning model sent shockwaves through Silicon Valley and Wall Street. DeepSeek R1 matched OpenAI's o1 performance at a fraction of the cost, triggering the largest single-day market cap loss in stock market history for Nvidia.",
       "extended_details": {
         "landscape": "On January 20, 2025, DeepSeek released R1, a reasoning model trained via large-scale reinforcement learning that competed directly with OpenAI's o1. The company claimed training costs of just $5.6 million for its base model—a staggering contrast to the hundreds of millions or billions spent by US AI companies. DeepSeek-R1 was 20 to 50 times cheaper to use than OpenAI's o1.\n\nThe timing was significant: just days after OpenAI's Operator launch, a one-year-old Chinese startup demonstrated that frontier AI capabilities didn't require frontier-level spending. By January 27, DeepSeek surpassed ChatGPT as the most downloaded freeware app on the iOS App Store in the United States.",
@@ -100,12 +138,31 @@
       ]
     },
     {
+      "id": "ms_gemini_20_pro",
+      "title": "Gemini 2.0 Pro",
+      "date_display": "February 5, 2025",
+      "date_start": "2025-02-05",
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "description": "Google released the full Gemini 2.0 Pro model, expanding access to their most capable model at the time with enhanced reasoning and multimodal capabilities.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true
+      }
+    },
+    {
       "id": "evt_vibe_coding",
       "title": "Vibe Coding: A New Paradigm",
       "date_display": "February 22, 2025",
       "date_start": "2025-02-22",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/a3krAyLKn4Q/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/a3krAyLKn4Q/maxresdefault.jpg"
+      ],
       "description": "Andrej Karpathy coined 'vibe coding' to describe a new approach where developers describe what they want in natural language and accept AI-generated code without fully understanding it. The term captured a cultural shift in how software gets built.",
       "extended_details": {
         "landscape": "On February 6, 2025, Andrej Karpathy—co-founder of OpenAI and former AI leader at Tesla—posted on X: \"There's a new kind of coding I call 'vibe coding', where you fully give in to the vibes, embrace exponentials, and forget that the code even exists.\" The post was viewed over 4.5 million times.\n\nKarpathy specifically mentioned Cursor Composer with Claude Sonnet and SuperWhisper for voice input. AI coding tools were maturing rapidly: GitHub Copilot had just introduced Agent Mode on February 6, 2025. Cursor, the AI-native IDE, was gaining significant traction among developers.",
@@ -132,12 +189,31 @@
       ]
     },
     {
+      "id": "ms_gpt45",
+      "title": "GPT-4.5 Research Preview",
+      "date_display": "February 27, 2025",
+      "date_start": "2025-02-27",
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "description": "OpenAI released GPT-4.5 as a research preview, featuring high emotional intelligence (EQ), improved agentic planning capabilities, and better performance on nuanced tasks.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true
+      }
+    },
+    {
       "id": "evt_deep_research",
       "title": "OpenAI Deep Research: The AI Research Analyst",
       "date_display": "February 27, 2025",
       "date_start": "2025-02-27",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/IDirh4qQ8cA/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/IDirh4qQ8cA/maxresdefault.jpg"
+      ],
       "description": "OpenAI's Deep Research agent could autonomously browse the web, analyze sources, and produce comprehensive research reports—accomplishing in minutes what would take humans hours.",
       "extended_details": {
         "landscape": "On February 2, 2025, OpenAI unveiled Deep Research, powered by a version of the upcoming o3 model optimized for web browsing and data analysis. The agent could search, interpret, and analyze massive amounts of text, images, and PDFs, pivoting as needed based on information encountered.\n\nSam Altman called it \"like a superpower; experts on demand.\" The feature initially launched for Pro users ($200/month) with up to 100 queries per month due to high compute requirements. By February 5, it expanded to UK, Switzerland, and EEA users.",
@@ -168,8 +244,12 @@
       "title": "Sesame's Maya: Crossing the Uncanny Valley",
       "date_display": "March 7, 2025",
       "date_start": "2025-03-07",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/0PeiEtqUTIE/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/0PeiEtqUTIE/maxresdefault.jpg"
+      ],
       "description": "Sesame's Maya voice assistant demonstrated eerily human-like conversation—complete with thinking pauses, self-corrections, and emotional responses. The technology crossed the uncanny valley of voice AI, leaving users both fascinated and unnerved.",
       "extended_details": {
         "landscape": "Nearly 12 years after the Spike Jonze film \"Her\" imagined emotional connections with AI voice assistants, Sesame released Maya in early 2025. Built on their Conversational Speech Model (CSM), Maya could detect emotional cues in speech and respond appropriately—matching enthusiasm, adopting informative tones, or responding with warmth and empathy.\n\nThe model was trained on close to 1 million hours of audio. Unlike traditional text-to-speech systems, CSM actively engaged—stumbling over words, correcting itself, and modulating tone to mimic human unpredictability.",
@@ -200,8 +280,12 @@
       "title": "Model Context Protocol (MCP): The Universal Connector",
       "date_display": "March 8, 2025",
       "date_start": "2025-03-08",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/j2YyjXyrE_Q/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/j2YyjXyrE_Q/maxresdefault.jpg"
+      ],
       "description": "Anthropic's Model Context Protocol emerged as the standard for connecting AI assistants to external tools and data sources. By year's end, it had been adopted by OpenAI, Microsoft, and Google, and was donated to the Linux Foundation.",
       "extended_details": {
         "landscape": "MCP was announced by Anthropic in November 2024 as an open standard for connecting AI assistants to data systems. Created by developers David Soria Parra and Justin Spahr-Summers, it aimed to solve the \"N×M\" integration problem—where every AI needed custom connectors for every tool.\n\nBy March 2025, adoption exploded: OpenAI officially adopted MCP across ChatGPT desktop, Agents SDK, and Responses API. Microsoft Copilot Studio added support. Tools like Claude Desktop and Cursor shipped with MCP integration. Pre-built servers were available for Google Drive, Slack, GitHub, Git, Postgres, and Puppeteer.",
@@ -229,12 +313,31 @@
       ]
     },
     {
+      "id": "ms_gemini_robotics",
+      "title": "Gemini Robotics",
+      "date_display": "March 12, 2025",
+      "date_start": "2025-03-12",
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "description": "Google DeepMind released Gemini Robotics, a vision-language-action model designed to power physical robots with AI reasoning and real-world interaction capabilities.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true
+      }
+    },
+    {
       "id": "evt_manus",
       "title": "Manus: The Autonomous Agent from China",
       "date_display": "March 12, 2025",
       "date_start": "2025-03-12",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/xb7Y03Cm3Kk/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/xb7Y03Cm3Kk/maxresdefault.jpg"
+      ],
       "description": "Manus emerged from Shenzhen as one of the first truly autonomous AI agents—capable of browsing the web, orchestrating sub-agents, and completing complex multi-step tasks without supervision, running asynchronously in the cloud.",
       "extended_details": {
         "landscape": "Launched on March 6, 2025, Manus distinguished itself from Operator and other agents through true autonomy. While competitors required constant human oversight, Manus operated within a virtual computing environment in the cloud—users could switch off their computers and receive notifications when tasks completed.\n\nThe agent leveraged Browser Use, an open-source tool that extracted website elements to allow AI models to interact with them. A post about Manus's use of Browser Use garnered over 2.4 million views on X. The agent could open tabs, fill forms, navigate sites, and coordinate specialized sub-agents for different task types.",
@@ -261,12 +364,67 @@
       ]
     },
     {
+      "id": "evt_pro_vibe_coding",
+      "title": "Vibe Coding Gets Structured: Pro Vibe Coding",
+      "date_display": "March 21, 2025",
+      "date_start": "2025-03-21",
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/dexb77bz4kg/maxresdefault.jpg"
+      ],
+      "description": "The early vibe coding chaos evolves into structured engineering. This video demonstrates converting a Python-based system into Next.js using AI—showing how to balance creative freedom with engineering discipline. Key insight: separation of concerns and proper architecture make AI-generated code sustainable and maintainable.",
+      "extended_details": {
+        "landscape": "Just six weeks after Andrej Karpathy coined \"vibe coding\" on February 6, 2025, the developer community was already grappling with its implications. Y Combinator reported that 25% of startup companies in its Winter 2025 batch had codebases that were 95% AI-generated. Cursor was at version 0.46, steadily improving its agent capabilities with features like MCP (Model Context Protocol) handlers.\n\nThe initial excitement around vibe coding—\"fully giving in to the vibes, embracing exponentials, and forgetting that the code even exists\"—was giving way to practical concerns. Teams were discovering that AI-generated code, while fast to produce, created maintenance nightmares without structure.",
+        "historical_context": "Karpathy's February 6th tweet that launched the term had been viewed over 4.5 million times. He described using Cursor Composer with Claude Sonnet and SuperWhisper for voice input, barely touching the keyboard, and \"always clicking Accept All\" without reading diffs. This worked for \"throwaway weekend projects\" but clearly needed evolution for serious work.\n\nThe term was already trending: Merriam-Webster added \"vibe coding\" as a \"slang & trending\" term the month after Karpathy's post. The 2025 Stack Overflow Developer Survey would later show 84% of developers using or planning to use AI tools, though positive sentiment had already dropped to 60%.",
+        "public_sentiment": "The developer community was split. Some celebrated the productivity gains and democratization of coding. Others worried about security vulnerabilities, maintainability, and the erosion of programming skills. Simon Willison offered a nuanced take: \"Not all AI-assisted programming is vibe coding (but vibe coding rocks).\"\n\nThe most successful developers were already learning to \"blend play with pragmatism—setting aside dedicated 'vibe time' for early-stage exploration, then pivoting into structured development once patterns emerge.\"",
+        "story_being_told": "Media coverage framed this as the natural maturation of AI coding. The chaotic, unstructured nature of pure vibe coding was proving unsustainable for production systems. Tools and practices were emerging to add discipline: .cursor rules files for consistent architecture, separation of concerns for maintainability, and voice-driven development with SuperWhisper for faster context input.",
+        "notable_references": [
+          "Andrej Karpathy (Feb 6, 2025): Original X post coining \"vibe coding,\" viewed 4.5M+ times",
+          "Y Combinator (Mar 2025): Reported 25% of W25 batch had 95% AI-generated codebases",
+          "Simon Willison (Mar 19, 2025): \"Not all AI-assisted programming is vibe coding (but vibe coding rocks)\"",
+          "Coverage in New York Times, Ars Technica, The Guardian"
+        ]
+      },
+      "metrics": {
+        "video_id": "dexb77bz4kg",
+        "category": "Engineering",
+        "company": "MetalSole"
+      },
+      "links": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://youtube.com/watch?v=dexb77bz4kg"
+        }
+      ]
+    },
+    {
+      "id": "ms_gemini_25_pro_experimental",
+      "title": "Gemini 2.5 Pro Experimental",
+      "date_display": "March 25, 2025",
+      "date_start": "2025-03-25",
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "description": "Google's first 'thinking model' competitor arrived, featuring chain-of-thought reasoning that could work through complex problems step-by-step before responding.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true
+      }
+    },
+    {
       "id": "evt_gpt4o_images",
       "title": "GPT-4o Native Image Generation & The Ghibli Trend",
       "date_display": "March 30, 2025",
       "date_start": "2025-03-30",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/i9KIXAtQGzg/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/i9KIXAtQGzg/maxresdefault.jpg"
+      ],
       "description": "OpenAI integrated native image generation into GPT-4o, enabling conversational image creation. The feature immediately went viral as users flooded social media with Studio Ghibli-style AI art, overwhelming OpenAI's servers.",
       "extended_details": {
         "landscape": "On March 25, 2025, OpenAI enabled GPT-4o's native image generation for ChatGPT users. Unlike previous systems like DALL-E 3, GPT-4o could handle complex, conversational image requests—building upon images and text in chat context for consistency throughout.\n\nWithin 24 hours, social media feeds flooded with AI-generated Studio Ghibli-style images. The trend went so viral that Sam Altman said OpenAI's GPUs were \"melting.\" Rate limits were imposed to handle the flood of requests.",
@@ -297,8 +455,12 @@
       "title": "Gemini 2.5 Pro: Google's Thinking Model",
       "date_display": "March 31, 2025",
       "date_start": "2025-03-31",
-      "group_ids": ["grp_q1_2025"],
-      "image_urls": ["https://img.youtube.com/vi/fRVFxXXhMQk/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q1_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/fRVFxXXhMQk/maxresdefault.jpg"
+      ],
       "description": "Google released Gemini 2.5 Pro, a 'thinking model' with chain-of-thought reasoning built in. It debuted at #1 on LMArena and set state-of-the-art benchmarks across math, science, and coding.",
       "extended_details": {
         "landscape": "On March 25, 2025, Google released Gemini 2.5 Pro Experimental, described as its most intelligent AI model yet. The model featured enhanced reasoning through chain-of-thought prompting—capable of reasoning through steps before responding.\n\nGemini 2.5 Pro shipped with a 1 million token context window (2 million coming soon) and excelled at creating web apps and agentic code applications. On SWE-Bench Verified, it scored 63.8% with a custom agent setup. It achieved state-of-the-art 18.8% on Humanity's Last Exam without tool use.",
@@ -330,8 +492,12 @@
       "title": "Google A2A Protocol: Agent-to-Agent Communication",
       "date_display": "April 14, 2025",
       "date_start": "2025-04-14",
-      "group_ids": ["grp_q2_2025"],
-      "image_urls": ["https://img.youtube.com/vi/L6XLD7ov7YM/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/L6XLD7ov7YM/maxresdefault.jpg"
+      ],
       "description": "Google launched the Agent2Agent Protocol (A2A) at Cloud Next 2025, enabling AI agents to communicate, exchange information, and coordinate actions across different platforms and vendors.",
       "extended_details": {
         "landscape": "On April 9, 2025, Google unveiled A2A at Cloud Next 2025 with support from over 50 technology partners including Atlassian, Box, Cohere, Intuit, Langchain, MongoDB, PayPal, Salesforce, SAP, ServiceNow, and major service providers like Accenture, Deloitte, and McKinsey.\n\nA2A was positioned as complementary to Anthropic's MCP: while MCP provided tools and context to individual agents, A2A enabled agents to collaborate with each other. Built on HTTP, SSE, and JSON-RPC standards, it integrated with existing enterprise IT stacks.",
@@ -359,12 +525,32 @@
       ]
     },
     {
+      "id": "ms_gpt41_family",
+      "title": "GPT-4.1 Family (4.1, mini, nano)",
+      "date_display": "April 14, 2025",
+      "date_start": "2025-04-14",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "description": "OpenAI released GPT-4.1 as a coding-focused model with 1M token context, alongside GPT-4.1 mini and GPT-4.1 nano variants for different performance/cost tradeoffs.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true,
+        "swe_bench": "54.6%"
+      }
+    },
+    {
       "id": "evt_gpt41",
       "title": "GPT-4.1: The Coding Specialist",
       "date_display": "April 16, 2025",
       "date_start": "2025-04-16",
-      "group_ids": ["grp_q2_2025"],
-      "image_urls": ["https://img.youtube.com/vi/b59c7EvOSSA/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/b59c7EvOSSA/maxresdefault.jpg"
+      ],
       "description": "OpenAI released GPT-4.1 as a coding-focused model with major improvements in software engineering tasks. Three variants (4.1, 4.1 mini, 4.1 nano) offered flexibility between performance and cost.",
       "extended_details": {
         "landscape": "On April 14, 2025, OpenAI released GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano—all with 1 million token context windows. The models were specifically optimized for coding tasks, instruction following, and long context handling.\n\nOn SWE-bench Verified, GPT-4.1 completed 54.6% of tasks compared to 33.2% for GPT-4o. On Windsurf's internal benchmark, it scored 60% higher than GPT-4o while being 30% more efficient in tool calling and 50% less likely to repeat unnecessary edits.",
@@ -392,12 +578,32 @@
       ]
     },
     {
+      "id": "ms_o3_o4mini",
+      "title": "o3 & o4-mini",
+      "date_display": "April 16, 2025",
+      "date_start": "2025-04-16",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "description": "OpenAI's full o3 reasoning model arrived with agentic tool use capabilities, alongside o4-mini—the fastest reasoning model and top performer on AIME 2024/2025 benchmarks.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true,
+        "swe_bench": "69.1%"
+      }
+    },
+    {
       "id": "evt_o3_codex",
       "title": "o3, o4-mini & Codex CLI: Reasoning Goes Agentic",
       "date_display": "April 19, 2025",
       "date_start": "2025-04-19",
-      "group_ids": ["grp_q2_2025"],
-      "image_urls": ["https://img.youtube.com/vi/qHX2tnXR0aQ/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/qHX2tnXR0aQ/maxresdefault.jpg"
+      ],
       "description": "OpenAI released o3 and o4-mini reasoning models alongside Codex CLI—a free, open-source command-line coding agent. For the first time, reasoning models could agentically use all ChatGPT tools including web search, code execution, and image generation.",
       "extended_details": {
         "landscape": "On April 16, 2025, OpenAI unveiled o3 and o4-mini as the smartest models they'd released to date. The key innovation: reasoning models could now combine every tool within ChatGPT—web search, file analysis, Python execution, visual reasoning, and image generation.\n\no3 topped the SWE-Bench Verified leaderboard at 69.1% and made 20% fewer major errors than o1 on difficult real-world tasks. o4-mini achieved remarkable performance for its size, becoming the best benchmarked model on AIME 2024 and 2025.\n\nCodex CLI marked OpenAI's first significant open-source release since 2019. A $1 million fund offered $25,000 grants for promising projects.",
@@ -429,8 +635,12 @@
       "title": "SuperWhisper: Voice-First Development",
       "date_display": "May 6, 2025",
       "date_start": "2025-05-06",
-      "group_ids": ["grp_q2_2025"],
-      "image_urls": ["https://img.youtube.com/vi/z-9si5WxZNI/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/z-9si5WxZNI/maxresdefault.jpg"
+      ],
       "description": "SuperWhisper emerged as the go-to voice-to-text tool for AI-assisted coding, enabling developers to dictate code and prompts at 'super-human speeds' with on-device processing for privacy.",
       "extended_details": {
         "landscape": "As vibe coding gained momentum, SuperWhisper filled a crucial gap: voice input optimized for developers. The macOS app (later iOS) processed speech using AI models locally—no internet required—supporting 100+ languages with automatic mode switching between Code mode for IDEs and Writing mode for documents.\n\nAndrej Karpathy specifically mentioned SuperWhisper in his original vibe coding post, bringing attention to the tool. Users could choose between Nano, Fast, Pro, and Ultra models, balancing speed and accuracy.",
@@ -457,12 +667,61 @@
       ]
     },
     {
+      "id": "ms_gpt41_chatgpt",
+      "title": "GPT-4.1 in ChatGPT",
+      "date_display": "May 14, 2025",
+      "date_start": "2025-05-14",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "description": "GPT-4.1 became available in ChatGPT for Plus and Pro subscribers, bringing the coding-focused model from API-only to consumer access.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true
+      }
+    },
+    {
+      "id": "ms_gemini_25_flash_deep_think",
+      "title": "Gemini 2.5 Flash & Deep Think Mode",
+      "date_display": "May 20, 2025",
+      "date_start": "2025-05-20",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "description": "At Google I/O 2025, Gemini 2.5 Flash became the new default model for faster responses, while Deep Think mode enabled complex reasoning for Gemini 2.5 Pro users.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true
+      }
+    },
+    {
+      "id": "ms_claude_4_family",
+      "title": "Claude 4 Family Launch (Opus 4, Sonnet 4)",
+      "date_display": "May 22, 2025",
+      "date_start": "2025-05-22",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "description": "Anthropic launched the Claude 4 family with Opus 4 as the flagship and Sonnet 4 as the new default for most users, entering the frontier model race.",
+      "metrics": {
+        "category": "Models",
+        "company": "Anthropic",
+        "milestone": true
+      }
+    },
+    {
       "id": "evt_veo3",
       "title": "Google Veo 3 & I/O 2025: AI Video Gets Sound",
       "date_display": "May 28, 2025",
       "date_start": "2025-05-28",
-      "group_ids": ["grp_q2_2025"],
-      "image_urls": ["https://img.youtube.com/vi/X1nyD5TdkEg/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/X1nyD5TdkEg/maxresdefault.jpg"
+      ],
       "description": "Google unveiled Veo 3 at I/O 2025—the first AI video generator that could create synchronized audio including dialogue, sound effects, and ambient noise. DeepMind CEO Demis Hassabis called it the end of 'the silent era.'",
       "extended_details": {
         "landscape": "On May 20, 2025, Google released Veo 3 with synchronized audio generation—understanding raw pixels to automatically sync generated sounds with video clips. This distinguished it from OpenAI's Sora, which generated video without audio.\n\nGoogle shared benchmark data showing Veo 3 achieved 72% preference rate for prompt fulfillment (vs 23% for Sora) and higher scores in physics simulation realism and lip-sync accuracy. The feature launched for $249.99/month Ultra subscribers.\n\nAlongside Veo 3, Google announced Imagen 4 (image generation) and Flow (a filmmaking tool for cinematic videos).",
@@ -489,12 +748,82 @@
       ]
     },
     {
+      "id": "ms_o3_pro",
+      "title": "o3-pro",
+      "date_display": "June 10, 2025",
+      "date_start": "2025-06-10",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "description": "OpenAI released o3-pro, their most capable reasoning model that could think longer on complex problems, designed for tasks requiring deep analysis.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true
+      }
+    },
+    {
+      "id": "ms_gemini_25_ga",
+      "title": "Gemini 2.5 Pro GA & Flash-Lite",
+      "date_display": "June 17, 2025",
+      "date_start": "2025-06-17",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "description": "Gemini 2.5 Pro reached general availability, while Flash-Lite offered a speed and cost-optimized variant for high-volume applications.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true
+      }
+    },
+    {
+      "id": "evt_ai_rewrote_rules",
+      "title": "AI Just Rewrote the Rules of Coding",
+      "date_display": "June 20, 2025",
+      "date_start": "2025-06-20",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/Tvcx9vU8q5I/maxresdefault.jpg"
+      ],
+      "description": "A comprehensive look at how software engineering transformed in just six months. From copy-paste code and tab completion at the beginning of the year, through Cursor's agentic mode, to CLI-based coding and cloud PR workflows. The video charts the exponential pace of change: Copilot's autocomplete to Cursor's file awareness to Claude Projects' canvas to agentic tool calling to full terminal control.",
+      "extended_details": {
+        "landscape": "By June 2025, the AI coding tool landscape had transformed dramatically. Claude Code had launched (with broader availability that month), GitHub Copilot had rolled out Agent Mode to all VS Code users, and Gemini CLI was about to debut. The competition was fierce: on June 3, 2025, Anthropic announced it would cut off Windsurf's direct API access to Claude 3.x models with less than five days' notice, sparking controversy.\n\nCursor was evolving rapidly, adding features like preconfigured MCP handlers. The pricing changes around this time 'triggered enough backlash that Cursor published an apology and clarification post'—a sign of how competitive and contentious the market had become.",
+        "historical_context": "The progression from early 2025 was remarkable. GitHub Copilot had been around since 2021, starting as simple autocomplete. Cursor emerged as the 'AI-native IDE,' forked from VS Code. Claude Projects introduced the two-panel canvas in June 2024—'a watershed moment' that let developers have long conversations about code.\n\nBy late 2024, Cursor gained 'complete control and understanding of your project' with tool calling and terminal access. Now, six months into 2025, the paradigm was shifting again: from IDE-based tools to terminal-first agentic systems.",
+        "public_sentiment": "Developers were experiencing whiplash from the pace of change. The tools that seemed cutting-edge in January felt dated by June. Claude Code's approach—'a terminal-first AI agent built to understand and manipulate your entire codebase deeply'—represented a philosophical shift from the IDE-centric view.\n\nThe community was split on whether IDE or CLI tools were superior, but most agreed that autonomous, multi-file operations requiring full codebase understanding were increasingly important.",
+        "story_being_told": "The narrative was about exponential acceleration. What previously took years of evolution in software tooling was happening in months. The industry was moving from AI as 'helpful assistant' to AI as 'autonomous team member.' The implications for software development careers and practices were profound.",
+        "notable_references": [
+          "Anthropic (Jun 3, 2025): Announced Windsurf API access cut-off, sparking industry controversy",
+          "GitHub (Feb 2025): Copilot Agent Mode generally available",
+          "TechCrunch (Jun 2025): 'Claude Code represents Anthropic's answer to AI coding assistant wars'",
+          "Extensive developer discussion on Hacker News and X"
+        ]
+      },
+      "metrics": {
+        "video_id": "Tvcx9vU8q5I",
+        "category": "Engineering",
+        "company": "MetalSole"
+      },
+      "links": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://youtube.com/watch?v=Tvcx9vU8q5I"
+        }
+      ]
+    },
+    {
       "id": "evt_claude_code",
       "title": "Claude Code: The Terminal Revolution",
       "date_display": "June 26, 2025",
       "date_start": "2025-06-26",
-      "group_ids": ["grp_q2_2025"],
-      "image_urls": ["https://img.youtube.com/vi/-0kwdOLXXq8/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/-0kwdOLXXq8/maxresdefault.jpg"
+      ],
       "description": "Anthropic launched Claude Code, an agentic coding tool that lived in the terminal. By year's end, it accounted for over $500 million in annualized revenue, with 90% of the product itself written by Claude.",
       "extended_details": {
         "landscape": "Claude Code launched in May 2025 (with broader availability in June), offering a fundamentally different approach than IDE-based AI coding tools. Working in the terminal, it could directly edit files, run commands, create commits, and handle git workflows through natural language.\n\nThe tool followed Unix philosophy—composable and scriptable. Example: `tail -f app.log | claude -p \"Slack me if you see any anomalies\"`. MCP integration enabled connections to Google Drive, Jira, and custom developer tooling.",
@@ -522,12 +851,78 @@
       ]
     },
     {
+      "id": "ms_gpt45_deprecated",
+      "title": "GPT-4.5 Deprecated",
+      "date_display": "July 14, 2025",
+      "date_start": "2025-07-14",
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "description": "OpenAI turned off GPT-4.5 in the API, marking the end of the research preview that had launched in February.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true
+      }
+    },
+    {
+      "id": "ms_claude_opus_41",
+      "title": "Claude Opus 4.1",
+      "date_display": "August 5, 2025",
+      "date_start": "2025-08-05",
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "description": "Anthropic released Claude Opus 4.1, optimized for agentic tasks with 74.5% on SWE-bench Verified—a significant improvement in autonomous coding capability.",
+      "metrics": {
+        "category": "Models",
+        "company": "Anthropic",
+        "milestone": true,
+        "swe_bench": "74.5%"
+      }
+    },
+    {
+      "id": "ms_gpt_oss",
+      "title": "GPT-OSS (Open-Weight Models)",
+      "date_display": "August 5, 2025",
+      "date_start": "2025-08-05",
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "description": "OpenAI released GPT-OSS, their first open-weight reasoning models in 120B and 20B parameter versions, marking a shift toward more open model distribution.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true
+      }
+    },
+    {
+      "id": "ms_gpt5_family",
+      "title": "GPT-5 Family (GPT-5, mini, nano)",
+      "date_display": "August 7, 2025",
+      "date_start": "2025-08-07",
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "description": "OpenAI released GPT-5 as their unified model with auto/fast/thinking modes, alongside mini and nano variants. First time free users got access to reasoning capabilities.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true,
+        "aime_2025": "94.6%"
+      }
+    },
+    {
       "id": "evt_gpt5",
       "title": "GPT-5: The Unified Model",
       "date_display": "August 10, 2025",
       "date_start": "2025-08-10",
-      "group_ids": ["grp_q3_2025"],
-      "image_urls": ["https://img.youtube.com/vi/8fsA-pEVnhU/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/8fsA-pEVnhU/maxresdefault.jpg"
+      ],
       "description": "OpenAI released GPT-5 as their first 'unified' AI model—combining reasoning capabilities with fast responses through a real-time router that automatically chose between modes based on task complexity.",
       "extended_details": {
         "landscape": "On August 7, 2025, OpenAI released GPT-5, eliminating the need to manually switch between specialized models. A real-time router automatically chose between a fast, high-throughput model for routine queries and \"GPT-5 thinking\" for complex reasoning.\n\nPerformance benchmarks were impressive: 94.6% on AIME 2025 without tools, 74.9% on SWE-bench Verified, 84.2% on MMMU. Hallucinations dropped significantly—45% fewer factual errors with web search vs GPT-4o, 80% fewer when thinking vs o3.\n\nGPT-5 became the default model for all free ChatGPT users—the first time free users had access to a reasoning model.",
@@ -555,12 +950,52 @@
       ]
     },
     {
+      "id": "evt_ai_prds",
+      "title": "Building With AI PRDs Is a Game Changer",
+      "date_display": "August 19, 2025",
+      "date_start": "2025-08-19",
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/j0yyNQ5eTSk/maxresdefault.jpg"
+      ],
+      "description": "The emergence of the 'AI PRD'—a new kind of requirements document designed specifically for AI consumption. Unlike traditional PRDs written for human engineers, AI PRDs need explicit boundaries, edge cases, and evaluation criteria since the AI won't ask follow-up questions. This video introduces the pattern that became standard by year's end: a 'what document' describing requirements and a 'how document' for technical specifications.",
+      "extended_details": {
+        "landscape": "By August 2025, the importance of structured context for AI coding was becoming clear. Tools like Context Engineering (launched August 11, 2025) emerged specifically for 'dynamically generating complete product requirements document templates.' ChatPRD offered MCP integration with Claude Code. OpenAI's own product lead, Miqdad Jaffer, shared an AI PRD template addressing common implementation problems.\n\nThe problem these tools solved was significant: 'studies show [context loss] can lead to a 50-60% error rate in complex code generation.' Traditional PRDs—often bloated by PMs using LLMs to generate content—had 'lost their way' and said nothing useful to AI systems.",
+        "historical_context": "Product Requirements Documents had been standard engineering practice for decades. But in the AI era, they needed reinvention. The concept of a 'Prompt Requirements Document' emerged for the 'Vibe Coding era'—focusing on generating, editing, and managing structured prompts that both AI and humans could understand.\n\nPreviously, PMs spent 10-15 hours per week drafting and refining PRDs. AI tools were now helping auto-generate first drafts, summarize user feedback, and suggest requirements based on customer data. Surveys from Atlassian and Productboard showed PMs using AI-powered tools reported saving 6-9 hours per week.",
+        "public_sentiment": "The developer community was embracing structured approaches to AI context. The insight that 'AI won't ask follow-up questions' was crucial—unlike human engineers who would immediately ask clarifying questions, AI systems would just forge ahead with assumptions. This required more upfront specification, not less.",
+        "story_being_told": "The narrative positioned AI PRDs as essential infrastructure for serious AI-assisted development. 'By giving Claude Code a well-structured PRD (or connecting it via ChatPRD's MCP integration and guiding with a CLAUDE.md), you give the AI a source of truth about your product's goals.'",
+        "notable_references": [
+          "Context Engineering (Aug 11, 2025): Launched tool for dynamic PRD template generation",
+          "Miqdad Jaffer (OpenAI Product Lead): Shared AI PRD template addressing common problems",
+          "Aakash Gupta (Aug 16, 2025): Published guide on 'concise, decision-focused requirements documents'",
+          "ChatPRD, Feedough AI PRD tools"
+        ]
+      },
+      "metrics": {
+        "video_id": "j0yyNQ5eTSk",
+        "category": "Engineering",
+        "company": "MetalSole"
+      },
+      "links": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://youtube.com/watch?v=j0yyNQ5eTSk"
+        }
+      ]
+    },
+    {
       "id": "evt_codex_upgrades",
       "title": "Codex CLI Major Upgrades",
       "date_display": "August 31, 2025",
       "date_start": "2025-08-31",
-      "group_ids": ["grp_q3_2025"],
-      "image_urls": ["https://img.youtube.com/vi/KZwcKQe34n8/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/KZwcKQe34n8/maxresdefault.jpg"
+      ],
       "description": "OpenAI significantly upgraded Codex CLI with IDE integration, local-cloud sync, and container caching that slashed completion times by 90%.",
       "extended_details": {
         "landscape": "In August 2025, OpenAI rewrote Codex CLI from the ground up with major improvements:\n\n- **IDE Integration**: VS Code extension bringing Codex into VS Code, Cursor, and forks—eliminating API key setup by connecting through existing ChatGPT plans\n- **Local-Cloud Sync**: Seamless handoff between local pairing and cloud execution without losing state\n- **Enhanced Images**: Multi-image support throughout conversations (previously limited to one)\n- **90% Faster**: Container caching dramatically reduced completion times for new tasks and follow-ups\n\nUI improvements included `/resume` command, Ctrl-P/N navigation, and automatic history trimming.",
@@ -592,8 +1027,12 @@
       "title": "Gemini CLI: Google Goes Open Source",
       "date_display": "September 7, 2025",
       "date_start": "2025-09-07",
-      "group_ids": ["grp_q3_2025"],
-      "image_urls": ["https://img.youtube.com/vi/EPReHLqmQPs/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/EPReHLqmQPs/maxresdefault.jpg"
+      ],
       "description": "Google released Gemini CLI as an open-source terminal coding agent with the industry's most generous free tier: 60 requests per minute and 1,000 per day at no charge.",
       "extended_details": {
         "landscape": "In late June 2025, Google released Gemini CLI as an open-source AI agent (Apache 2.0 license) bringing Gemini directly into the terminal. The free tier offered Gemini 2.5 Pro access with a 1 million token context window—60 model requests per minute and 1,000 per day at no charge.\n\nThe tool supported MCP for extensibility, positioning it as a platform rather than single-purpose application. Agentic coding capabilities let it take prompts, create execution plans, and generate complete project scaffolds.",
@@ -621,12 +1060,104 @@
       ]
     },
     {
+      "id": "evt_bot_pattern",
+      "title": "AI Just Wrote My Code While I Slept",
+      "date_display": "September 11, 2025",
+      "date_start": "2025-09-11",
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/BkJspRRXkfM/maxresdefault.jpg"
+      ],
+      "description": "The 'bot pattern' emerges—giving a task to an agent and letting it iterate until complete, without human in the loop. This marks the shift from interactive pair programming to asynchronous AI development. Using GitHub issues, branches, and PRs, developers could hand off work to AI and receive completed pull requests. The video demonstrates this with Claude Code, Gemini CLI, and Codex, showing the beginning of cloud-scale development.",
+      "extended_details": {
+        "landscape": "September 2025 marked a turning point for asynchronous AI coding. GitHub had shipped its Copilot Coding Agent—'an asynchronous teammate that lives in the cloud, takes on issues, and sends you fully tested pull requests while you focus on higher value work.' Gartner published its Magic Quadrant for AI Code Assistants on September 15, 2025, positioning GitHub as Leader for the second consecutive year.\n\nGoogle's Jules had also emerged as 'an autonomous, asynchronous AI coding agent that plans tasks, executes them in a cloud VM, and opens GitHub pull requests for review.' The pattern was becoming clear: less instant code completion in your editor, more autonomous work happening on provisioned VMs with PRs waiting when done.",
+        "historical_context": "The 'bot pattern' represented a fundamental shift from the interactive model that had dominated AI coding tools. Previously, developers worked side-by-side with AI, accepting or rejecting suggestions in real-time. The new pattern was delegation: define the task, walk away, review the results later.\n\nThis built on GitHub's long history of asynchronous collaboration—pull requests, issues, code reviews—now enhanced with AI agents that could participate in these workflows autonomously.",
+        "public_sentiment": "Developers were cautiously excited. The appeal of 'AI writing code while you sleep' was obvious, but concerns remained about code quality, security, and the need for review. The pattern worked best when 'tests are in place' to validate AI-generated changes—a recognition that human oversight was still essential.",
+        "story_being_told": "Media framed this as the beginning of truly scalable AI development. GitHub's vision was 'an SDLC powered by an agentic layer where AI agents work alongside developers synchronously and asynchronously, proactively assisting with tasks like code writing, debugging, testing, and documentation.'",
+        "notable_references": [
+          "GitHub (Sep 2025): 'Copilot Coding Agent—an asynchronous teammate that lives in the cloud'",
+          "Gartner (Sep 15, 2025): Positioned GitHub as Leader in AI Code Assistants Magic Quadrant",
+          "Google Labs (Aug 2025): Jules AI agent launch—'asynchronous coding agent'",
+          "Microsoft Build 2025 announcements, enterprise adoption coverage"
+        ]
+      },
+      "metrics": {
+        "video_id": "BkJspRRXkfM",
+        "category": "Engineering",
+        "company": "MetalSole"
+      },
+      "links": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://youtube.com/watch?v=BkJspRRXkfM"
+        }
+      ]
+    },
+    {
+      "id": "evt_codex_new_engineering",
+      "title": "Why Codex Is the Beginning of New Engineering",
+      "date_display": "September 19, 2025",
+      "date_start": "2025-09-19",
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/bxrmweabEsI/maxresdefault.jpg"
+      ],
+      "description": "OpenAI's Codex updates mark 'a sea change in engineering.' The video demonstrates the full cloud development lifecycle: firing off multiple requests, reviewing results in GitHub, merging PRs. Key insight: this isn't about faster coding—it's about scaling yourself from one developer to many. Cloud, CLI, and IDE integrations create a unified workflow where AI handles execution while humans handle direction.",
+      "extended_details": {
+        "landscape": "On September 23, 2025, GPT-5-Codex became available to developers using Codex via API key. OpenAI had rebuilt the CLI 'around agentic coding workflows to harness models into more capable and reliable partners.' New features included image support for wireframes and diagrams, progress tracking with to-do lists, web search via MCP, and an IDE extension for VS Code and Cursor.\n\nThe performance was impressive: 'In tests, GPT-5 Codex operated autonomously for more than seven hours on difficult tasks. It used 93.7% fewer tokens in the bottom decile and spent about twice as long reasoning in the top decile, pointing to speed on small jobs and endurance on large ones.'",
+        "historical_context": "OpenAI's Codex had launched in April 2025 alongside o3 and o4-mini. The initial release was rough around the edges, drawing criticism for high cognitive cost and clunky workflows. The September updates addressed this feedback systematically, demonstrating OpenAI's commitment to making Codex 'a better pair programmer.'\n\nThe open-source nature of the CLI was significant—it allowed the community to shape its evolution, and OpenAI had committed $1M in grants for promising projects built on it.",
+        "public_sentiment": "Developer reception focused on the practical improvements: IDE integration eliminating API key management, local-cloud sync for seamless handoff, and dramatically faster completion times through container caching. The CLI was now 'far more usable' than its initial release.",
+        "story_being_told": "The narrative was about 'new engineering'—a fundamental shift in how software gets built. The idea of 'scaling yourself from one developer to many' resonated strongly. The cloud development lifecycle wasn't just about efficiency; it was about a new way of thinking about development work.",
+        "notable_references": [
+          "OpenAI (Sep 23, 2025): GPT-5-Codex available to API developers",
+          "OpenAI (Sep 2025): 'Introducing upgrades to Codex' with rebuilt CLI",
+          "Community feedback: CLI redesigned around agentic coding workflows",
+          "GitHub Codex integration coverage, developer testing discussions"
+        ]
+      },
+      "metrics": {
+        "video_id": "bxrmweabEsI",
+        "category": "Engineering",
+        "company": "MetalSole"
+      },
+      "links": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://youtube.com/watch?v=bxrmweabEsI"
+        }
+      ]
+    },
+    {
+      "id": "ms_claude_sonnet_45",
+      "title": "Claude Sonnet 4.5",
+      "date_display": "September 29, 2025",
+      "date_start": "2025-09-29",
+      "group_ids": [
+        "grp_q3_2025"
+      ],
+      "description": "Anthropic released Claude Sonnet 4.5 with 77-82% on SWE-bench, positioning it as the best model for coding, agents, and computer use at its price point.",
+      "metrics": {
+        "category": "Models",
+        "company": "Anthropic",
+        "milestone": true,
+        "swe_bench": "77-82%"
+      }
+    },
+    {
       "id": "evt_claude_45_sonnet",
       "title": "Claude Sonnet 4.5 & The New Default",
       "date_display": "October 6, 2025",
       "date_start": "2025-10-06",
-      "group_ids": ["grp_q4_2025"],
-      "image_urls": ["https://img.youtube.com/vi/J5-lU1RrEJo/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/J5-lU1RrEJo/maxresdefault.jpg"
+      ],
       "description": "Anthropic released Claude Sonnet 4.5 in September, followed by Haiku 4.5 in October, establishing a new tier of coding capability. Claude Opus 4.5 followed in November, reclaiming the coding benchmark crown.",
       "extended_details": {
         "landscape": "Anthropic's 4.5 series rolled out through fall 2025:\n- **Sonnet 4.5** (September): Became the new default in Claude Code with enhanced reasoning\n- **Haiku 4.5** (October): Cost-efficient option for simpler tasks\n- **Opus 4.5** (November 24): Industry-leading 80.9% on SWE-bench Verified\n\nOpus 4.5 was priced at $5/$25 per million tokens—dramatically lower than Opus 4.1's $15/$75. Anthropic claimed it scored higher on difficult engineering exams than any human candidate.",
@@ -657,8 +1188,12 @@
       "title": "ChatGPT App Store Announcement",
       "date_display": "October 12, 2025",
       "date_start": "2025-10-12",
-      "group_ids": ["grp_q4_2025"],
-      "image_urls": ["https://img.youtube.com/vi/HgXdOeSfsfk/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/HgXdOeSfsfk/maxresdefault.jpg"
+      ],
       "description": "At DevDay, OpenAI announced apps for ChatGPT with the Apps SDK, signaling a platform strategy. Early partners included Canva, Coursera, Expedia, Figma, and Zillow. The full store launched in December.",
       "extended_details": {
         "landscape": "In October 2025, OpenAI announced apps at DevDay, with the Apps SDK building on Model Context Protocol. Early partners represented major consumer and business categories: design (Canva, Figma), travel (Expedia), education (Coursera), and real estate (Zillow).\n\nThe full directory launched December 17, 2025 with Featured, Lifestyle, and Productivity categories. Users could create Spotify playlists, order groceries through DoorDash, or search houses on Zillow directly within ChatGPT.",
@@ -685,12 +1220,67 @@
       ]
     },
     {
+      "id": "ms_claude_haiku_45",
+      "title": "Claude Haiku 4.5",
+      "date_display": "October 15, 2025",
+      "date_start": "2025-10-15",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "description": "Anthropic released Claude Haiku 4.5, offering Sonnet-level coding performance at 1/3 the cost and 2x the speed—designed for high-volume, cost-sensitive applications.",
+      "metrics": {
+        "category": "Models",
+        "company": "Anthropic",
+        "milestone": true
+      }
+    },
+    {
+      "id": "evt_model_evolution",
+      "title": "Model Evolution: From 3.5 to 4.5",
+      "date_display": "October 18, 2025",
+      "date_start": "2025-10-18",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/Uk9S11HPgmY/maxresdefault.jpg"
+      ],
+      "description": "A practical demonstration of model evolution through 2025. The video shows the same task attempted across Claude versions: 3.3 couldn't proceed, 3.5 wrote code but couldn't run the server, 3.6 had API issues, 3.7 couldn't send messages correctly, Sonnet 4 built a working system then broke it, and finally Sonnet 4.5 completed the task fully after 5 hours. This progression—visible in the last 3-4 months alone—shows the dramatic capability jumps that defined the year.",
+      "extended_details": {
+        "landscape": "By October 2025, Claude had gone through a remarkable evolution. Anthropic had released Sonnet 4.5 on September 29, 2025—'the best coding model in the world'—and Haiku 4.5 followed on October 15. The progression was visible in benchmarks: on OSWorld (real-world computer tasks), Sonnet 4.5 led at 61.4%, up from Sonnet 4's 42.2% just four months prior.\n\nThe model releases were coming rapidly: Claude 3.7 Sonnet in February 2025, Sonnet 4 and Opus 4 in May, Opus 4.1 in August, and now the 4.5 series. Each represented meaningful capability improvements, especially for coding tasks.",
+        "historical_context": "Claude 3.5 Sonnet had launched in June 2024, setting 'new industry benchmarks for graduate-level reasoning, undergraduate-level knowledge, and coding proficiency.' But it was the 2025 models that crossed key capability thresholds. Claude 3.7 Sonnet (February 2025) introduced hybrid reasoning—choosing between rapid responses and step-by-step thinking. Sonnet 4 and Opus 4 (May 2025) added the code execution tool and MCP connector.\n\nOpus 4.1 (August 2025) advanced Claude's coding score to 74.5% on SWE-bench Verified. Sonnet 4.5 pushed even further, becoming 'the best model for building complex agents' and 'the best model at using computers.'",
+        "public_sentiment": "Developers were experiencing the improvement directly in their workflows. The practical demonstration of 'same task, different models' made the progression tangible. What couldn't be done reliably a few months ago was now routine. The pace was both exciting and disorienting.",
+        "story_being_told": "The narrative emphasized that model capability was improving faster than most realized. The gap between a 3.5 model and a 4.5 model wasn't incremental—it was transformational. This had implications for how developers should think about AI tooling: today's limitations might be tomorrow's solved problems.",
+        "notable_references": [
+          "Anthropic (Sep 29, 2025): Announced Sonnet 4.5 as 'the best coding model in the world'",
+          "Anthropic (Oct 15, 2025): Released Haiku 4.5 matching Sonnet 4 on coding",
+          "GitHub (Nov 10, 2025): Deprecated Claude Sonnet 3.5, replaced with Haiku 4.5",
+          "SWE-bench Verified benchmark progressions, OSWorld results"
+        ]
+      },
+      "metrics": {
+        "video_id": "Uk9S11HPgmY",
+        "category": "Models",
+        "company": "MetalSole"
+      },
+      "links": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://youtube.com/watch?v=Uk9S11HPgmY"
+        }
+      ]
+    },
+    {
       "id": "evt_claude_code_web",
       "title": "Claude Code Web: Coding in the Browser",
       "date_display": "October 22, 2025",
       "date_start": "2025-10-22",
-      "group_ids": ["grp_q4_2025"],
-      "image_urls": ["https://img.youtube.com/vi/LDScpaOP2mA/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/LDScpaOP2mA/maxresdefault.jpg"
+      ],
       "description": "Anthropic launched Claude Code on the web, allowing developers to point the agent at GitHub repositories and execute tasks entirely in Anthropic's cloud—with a 'teleport' feature to continue locally.",
       "extended_details": {
         "landscape": "On October 20, 2025, Anthropic released Claude Code for web as a beta for Pro and Max users at claude.ai/code. Developers could link GitHub repositories, create tasks in plain English (\"fix memory leak in auth handler\"), and execute entirely in sandboxed infrastructure.\n\nKey features included secure sandboxing (seatbelt on macOS, Bubblewrap on Linux), Git proxy service, and the \"teleport\" capability to copy both chat transcript and edited files to local CLI for continued work.",
@@ -721,8 +1311,12 @@
       "title": "OpenAI Atlas: The Agentic Browser",
       "date_display": "October 23, 2025",
       "date_start": "2025-10-23",
-      "group_ids": ["grp_q4_2025"],
-      "image_urls": ["https://img.youtube.com/vi/9HhSaY9ToTw/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/9HhSaY9ToTw/maxresdefault.jpg"
+      ],
       "description": "OpenAI released Atlas, an AI-native browser built on Chromium with Agent Mode that could perform sequences of actions across multiple websites to achieve user goals.",
       "extended_details": {
         "landscape": "On October 21, 2025, OpenAI launched Atlas for macOS—not just a browser with AI features, but the first web browser built from the ground up around artificial intelligence. The primary innovation: Agent Mode allowing AI to perform sequences of actions across multiple sites to achieve high-level goals.\n\nBrowser Memories provided persistent context about user preferences. Safety limits included: no code execution in browser, no file downloads, no extension installation, and pauses on sensitive sites like financial institutions.",
@@ -749,12 +1343,52 @@
       ]
     },
     {
+      "id": "evt_back_to_terminal",
+      "title": "The Real Reason AI Is Going Back to the Terminal",
+      "date_display": "October 30, 2025",
+      "date_start": "2025-10-30",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/RvQII_5Puzw/maxresdefault.jpg"
+      ],
+      "description": "Why did everyone suddenly move from IDEs to CLIs? This video explains the strategic reasoning: AI companies realized the secret was building the best interaction with their own models. Claude Code, Gemini CLI, Codex CLI—each is an 'engine' that takes problems, works with tools, and returns results. The real unlock: this engine can run anywhere—terminal, web, IDE plugin, GitHub actions. The CLI wasn't the destination; it was the foundation for everything else.",
+      "extended_details": {
+        "landscape": "2025 marked what some called 'the terminal renaissance' in AI coding. Since February 2025, Anthropic, DeepMind, and OpenAI had all released command-line coding tools—Claude Code, Gemini CLI, and Codex CLI—and they were 'already among the companies' most popular products.'\n\nThe shift was dramatic enough to attract industry analysis. TechCrunch reported in July 2025: 'AI coding tools are shifting to a surprising place: The terminal.' Industry analysts predicted that '95% of LLM-computer interaction' would move to terminal-like interfaces.",
+        "historical_context": "The terminal was an unexpected destination. For decades, developer tooling had trended toward richer GUIs—IDEs with debugging, profiling, visual git clients. The AI coding revolution initially followed this pattern: GitHub Copilot in VS Code, Cursor as a full IDE.\n\nBut the CLI approach offered something the IDE couldn't: true autonomy. 'Running in the terminal unlocks autonomy. Because it runs in the shell, Claude Code isn't just generating text; it is executing commands. It can run your test suite, see that it failed, read the error log, edit the file, and run the test again—all without you touching the keyboard.'",
+        "public_sentiment": "Developer opinion was divided. Some saw the terminal renaissance as a return to developer roots—'the most important part of engineering... high-level thinking.' Others preferred the visual feedback of IDEs. The consensus emerging was that both had their place: 'Start with Cursor for code completion and Claude Code for autonomous operations.'",
+        "story_being_told": "The deeper story was about AI companies building 'the best possible pipe to their own models' while gaining 'relationships directly with customers.' The CLI was the 'engine' that could be deployed anywhere—terminal, web UI, IDE extension, GitHub Action. This was why everyone was building them: portability and control.",
+        "notable_references": [
+          "TechCrunch (Jul 15, 2025): 'AI coding tools are shifting to a surprising place: The terminal'",
+          "Industry analysts (2025): Predicted '95% of LLM-computer interaction' moving to terminal interfaces",
+          "Medium (Oct 2025): 'The Great AI Coding CLI Showdown: Why Developers Are Ditching Their IDEs'",
+          "Awesome Testing, The New Stack coverage"
+        ]
+      },
+      "metrics": {
+        "video_id": "RvQII_5Puzw",
+        "category": "Engineering",
+        "company": "MetalSole"
+      },
+      "links": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://youtube.com/watch?v=RvQII_5Puzw"
+        }
+      ]
+    },
+    {
       "id": "evt_subagents",
       "title": "Subagents & Parallel Development",
       "date_display": "November 6, 2025",
       "date_start": "2025-11-06",
-      "group_ids": ["grp_q4_2025"],
-      "image_urls": ["https://img.youtube.com/vi/FUAqVZAKFf4/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/FUAqVZAKFf4/maxresdefault.jpg"
+      ],
       "description": "Claude Code's subagent architecture enabled parallel development—spinning up multiple specialized AI instances to work on different tasks simultaneously, each with their own context and permissions.",
       "extended_details": {
         "landscape": "Subagents represented a fundamental shift from single-agent to multi-agent development. Claude Code's Task Tool allowed running up to 10 parallel tasks, with queuing for additional requests. Each subagent operated with its own context window, tool permissions, and system prompts.\n\nBuilt-in subagents included Plan (for codebase research before planning) and Explore (fast, read-only codebase search). Custom subagents could be defined as Markdown files with YAML frontmatter, stored in `.claude/agents/` for project-specific or `~/.claude/agents/` for global availability.",
@@ -781,12 +1415,47 @@
       ]
     },
     {
+      "id": "ms_gpt51",
+      "title": "GPT-5.1 (Instant & Thinking)",
+      "date_display": "November 12, 2025",
+      "date_start": "2025-11-12",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "description": "OpenAI released GPT-5.1 in two variants: Instant for faster responses with high steerability, and Thinking for tasks requiring deeper reasoning.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true
+      }
+    },
+    {
+      "id": "ms_gemini_3_pro",
+      "title": "Gemini 3 Pro & Deep Think",
+      "date_display": "November 18, 2025",
+      "date_start": "2025-11-18",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "description": "Google released Gemini 3 Pro, beating GPT-5 Pro on Humanity's Last Exam (41% vs 31.64%), alongside Gemini 3 Deep Think for multi-hypothesis reasoning.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true,
+        "humanitys_last_exam": "41%"
+      }
+    },
+    {
       "id": "evt_gemini_3",
       "title": "Gemini 3: Google's Response",
       "date_display": "November 22, 2025",
       "date_start": "2025-11-22",
-      "group_ids": ["grp_q4_2025"],
-      "image_urls": ["https://img.youtube.com/vi/ZVpBfSz_8bE/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/ZVpBfSz_8bE/maxresdefault.jpg"
+      ],
       "description": "Google released Gemini 3 with a new coding app called Antigravity, record benchmark scores, and access to 650 million monthly active users through the Gemini app.",
       "extended_details": {
         "landscape": "On November 18, 2025, Google released Gemini 3 as their most intelligent model, immediately available in the Gemini app and AI search. The release came with Google Antigravity—a multi-pane agentic coding interface similar to Cursor 2.0.\n\nThe Gemini app had grown to 650 million monthly active users, with 13 million software developers using the model. Gemini 3 Pro supported up to 1M token context with 65K token output across text, images, video, audio, and PDFs.\n\nAI Ultra subscribers got access to Gemini 3 Deep Think—using iterative reasoning rounds to explore multiple hypotheses simultaneously.",
@@ -814,12 +1483,99 @@
       ]
     },
     {
+      "id": "ms_claude_opus_45",
+      "title": "Claude Opus 4.5",
+      "date_display": "November 24, 2025",
+      "date_start": "2025-11-24",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "description": "Anthropic released Claude Opus 4.5 with industry-leading 80.9% on SWE-bench Verified, reclaiming the coding crown from Gemini 3 just days after its release.",
+      "metrics": {
+        "category": "Models",
+        "company": "Anthropic",
+        "milestone": true,
+        "swe_bench": "80.9%"
+      }
+    },
+    {
+      "id": "evt_opus_45_system",
+      "title": "Opus 4.5 Sees the Whole System",
+      "date_display": "December 2, 2025",
+      "date_start": "2025-12-02",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/jEWf9B6_JgI/maxresdefault.jpg"
+      ],
+      "description": "A step change in model capability becomes visible. Older models (Sonnet 3.7, 4.0) spent hours in 'death spirals' unable to solve an architectural bug. Gemini 3 and Opus 4.5, released just days later, both solved it in one shot—and fixed related bugs that weren't even referenced. These new models didn't just fix code; they understood the system architecture that caused the problem. This marks the beginning of 'system-level AI coding.'",
+      "extended_details": {
+        "landscape": "Claude Opus 4.5, released November 24, 2025, arrived in the midst of intense competition. Just days before, Google had released Gemini 3 (November 18). OpenAI would rush GPT-5.2 to market on December 11 after internal 'code red' concerns about market share.\n\nOpus 4.5's benchmarks were remarkable: 80.9% on SWE-bench Verified—'the first AI model to score above 80% on the gold standard benchmark for real-world software engineering tasks.' On OSWorld (real-world computer tasks), it reached 66.3%.",
+        "historical_context": "The progression from Opus 4.1 (August 2025) to Opus 4.5 represented more than incremental improvement. Opus 4.1 had scored 74.5% on SWE-bench Verified. The jump to 80.9% crossed a threshold: the model could now handle problems that previously stymied AI systems entirely.\n\nThe ability to understand system architecture—not just individual functions—was the key breakthrough. Previous models got stuck in 'death spirals' when bugs had architectural causes. Opus 4.5 could see 'the whole system' and trace problems to their roots.",
+        "public_sentiment": "Developers were impressed but also uncertain about the implications. The gap between models that couldn't solve a problem after hours of trying and models that solved it 'in one shot' was stark. The New Stack reported: 'Anthropic's New Claude Opus 4.5 Reclaims the Coding Crown from Gemini 3.'\n\nThe price reduction was also notable: Opus 4.5 at $5/$25 per million tokens, compared to Opus 4.1's $15/$75. Frontier capability was becoming more accessible.",
+        "story_being_told": "The narrative was about a qualitative shift in AI capability. 'System-level AI coding' meant AI could work with codebases as interconnected wholes, not just individual files. This had implications for everything from refactoring to debugging to new feature development.",
+        "notable_references": [
+          "Anthropic (Nov 24, 2025): 'Introducing Claude Opus 4.5'—80.9% on SWE-bench Verified",
+          "The New Stack (Nov 2025): 'Anthropic's New Claude Opus 4.5 Reclaims the Coding Crown'",
+          "Simon Willison (Nov 24, 2025): Analysis of Opus 4.5 and 'why evaluating new LLMs is increasingly difficult'",
+          "Azure, TechCrunch, CNBC coverage"
+        ]
+      },
+      "metrics": {
+        "video_id": "jEWf9B6_JgI",
+        "category": "Models",
+        "company": "MetalSole"
+      },
+      "links": [
+        {
+          "title": "Watch on YouTube",
+          "url": "https://youtube.com/watch?v=jEWf9B6_JgI"
+        }
+      ]
+    },
+    {
+      "id": "ms_gemini_3_deep_think_rollout",
+      "title": "Gemini 3 Deep Think Rollout",
+      "date_display": "December 4, 2025",
+      "date_start": "2025-12-04",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "description": "Google expanded Gemini 3 Deep Think access to Ultra subscribers, enabling multi-hypothesis reasoning for complex problem solving.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true
+      }
+    },
+    {
+      "id": "ms_gpt52_family",
+      "title": "GPT-5.2 Family",
+      "date_display": "December 11, 2025",
+      "date_start": "2025-12-11",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "description": "OpenAI released GPT-5.2 in a 'code red' rush to compete with Gemini 3, including Instant, Thinking, and Codex variants optimized for agentic coding.",
+      "metrics": {
+        "category": "Models",
+        "company": "OpenAI",
+        "milestone": true,
+        "swe_bench": "80.0%"
+      }
+    },
+    {
       "id": "evt_gpt52_vs_opus",
       "title": "GPT-5.2 vs Opus 4.5: The December Showdown",
       "date_display": "December 13, 2025",
       "date_start": "2025-12-13",
-      "group_ids": ["grp_q4_2025"],
-      "image_urls": ["https://img.youtube.com/vi/iUzrE3-FHgA/maxresdefault.jpg"],
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "image_urls": [
+        "https://img.youtube.com/vi/iUzrE3-FHgA/maxresdefault.jpg"
+      ],
       "description": "OpenAI rushed GPT-5.2 to market after internal 'code red' over competition from Google and Anthropic. The release capped an intense six weeks of frontier model releases.",
       "extended_details": {
         "landscape": "On December 11, 2025, OpenAI released GPT-5.2 after The Information reported an internal \"code red\" memo from Sam Altman amid ChatGPT traffic decline and market share concerns.\n\nThe release capped an intense period: Gemini 3 Pro (November 18), Claude Opus 4.5 (November 24), and now GPT-5.2. Benchmark comparisons showed:\n- **SWE-bench Verified**: Opus 4.5 (80.9%) vs GPT-5.2 (80.0%)\n- **Terminal-bench 2.0**: Opus 4.5 (59.3%) vs GPT-5.2 (~47.6%)\n- **ARC-AGI-2**: GPT-5.2 (52.9-54.2%) vs Opus 4.5 (37.6%)\n- **AIME 2025**: GPT-5.2 (100%) vs Opus 4.5 (~92.8%)",
@@ -846,6 +1602,22 @@
           "url": "https://youtube.com/watch?v=iUzrE3-FHgA"
         }
       ]
+    },
+    {
+      "id": "ms_gemini_3_flash",
+      "title": "Gemini 3 Flash",
+      "date_display": "December 17, 2025",
+      "date_start": "2025-12-17",
+      "group_ids": [
+        "grp_q4_2025"
+      ],
+      "description": "Google released Gemini 3 Flash as the new default model, achieving 78% on SWE-bench while being 3x faster than Gemini 2.5 Pro.",
+      "metrics": {
+        "category": "Models",
+        "company": "Google",
+        "milestone": true,
+        "swe_bench": "78%"
+      }
     }
   ]
 }
