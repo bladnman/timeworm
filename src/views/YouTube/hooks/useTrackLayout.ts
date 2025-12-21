@@ -44,11 +44,9 @@ interface EventWithPosition {
  * Smart track layout with clustering for dense areas.
  *
  * Strategy:
- * 1. Calculate x position for all events
- * 2. Group overlapping events (those within cardWidth + gap of each other)
- * 3. For small groups (2-3): stack them with slight vertical offset
- * 4. For large groups (4+): create a cluster badge
- * 5. Alternate lanes above/below the track for visual balance
+ * 1. Separate milestones from regular events
+ * 2. Milestones: Always above, in their own swim lane with independent stacking
+ * 3. Regular events: Group overlapping ones, alternate above/below, cluster if dense
  */
 export const useTrackLayout = (
   data: TimelineData | null,
@@ -67,9 +65,12 @@ export const useTrackLayout = (
     } = config;
 
     const minSeparation = cardWidth + gap;
+    const items: TrackLayoutItem[] = [];
+    let maxStackAbove = 0;
+    let maxStackBelow = 0;
 
-    // Step 1: Calculate positions and sort by x
-    const eventsWithPos: EventWithPosition[] = data.events
+    // Step 1: Separate milestones and regular events
+    const allEvents: EventWithPosition[] = data.events
       .map((event) => {
         const xPos = getPosition(event.date_start);
         const year = new Date(event.date_start).getFullYear();
@@ -78,35 +79,73 @@ export const useTrackLayout = (
       })
       .sort((a, b) => a.xPos - b.xPos);
 
-    // Step 2: Group overlapping events
-    const groups: EventWithPosition[][] = [];
+    const milestones = allEvents.filter(e => e.isMilestone);
+    const regularEvents = allEvents.filter(e => !e.isMilestone);
+
+    // Step 2: Process milestones - all go above with their own stacking
+    // Group overlapping milestones for stacking
+    const milestoneGroups: EventWithPosition[][] = [];
+    let currentMilestoneGroup: EventWithPosition[] = [];
+
+    for (const item of milestones) {
+      if (currentMilestoneGroup.length === 0) {
+        currentMilestoneGroup.push(item);
+      } else {
+        const groupStart = currentMilestoneGroup[0].xPos;
+        if (item.xPos - groupStart < minSeparation) {
+          currentMilestoneGroup.push(item);
+        } else {
+          milestoneGroups.push(currentMilestoneGroup);
+          currentMilestoneGroup = [item];
+        }
+      }
+    }
+    if (currentMilestoneGroup.length > 0) {
+      milestoneGroups.push(currentMilestoneGroup);
+    }
+
+    // Add milestones - all above, base stack at 5 (100px from axis)
+    const milestoneBaseStack = 5;
+    for (const group of milestoneGroups) {
+      for (let i = 0; i < group.length; i++) {
+        const stackIndex = milestoneBaseStack + i;
+        items.push({
+          type: 'event',
+          id: group[i].event.id,
+          xPos: group[i].xPos,
+          lane: 'above',
+          stackIndex,
+          event: group[i].event,
+          isMilestone: true,
+        });
+        maxStackAbove = Math.max(maxStackAbove, stackIndex + 1);
+      }
+    }
+
+    // Step 3: Process regular events - group overlapping, alternate lanes
+    const regularGroups: EventWithPosition[][] = [];
     let currentGroup: EventWithPosition[] = [];
 
-    for (const item of eventsWithPos) {
+    for (const item of regularEvents) {
       if (currentGroup.length === 0) {
         currentGroup.push(item);
       } else {
-        // Check if this event overlaps with the first event in current group
         const groupStart = currentGroup[0].xPos;
         if (item.xPos - groupStart < minSeparation) {
           currentGroup.push(item);
         } else {
-          groups.push(currentGroup);
+          regularGroups.push(currentGroup);
           currentGroup = [item];
         }
       }
     }
     if (currentGroup.length > 0) {
-      groups.push(currentGroup);
+      regularGroups.push(currentGroup);
     }
 
-    // Step 3: Convert groups to layout items
-    const items: TrackLayoutItem[] = [];
+    // Add regular events with alternating lanes
     let laneIndex = 0;
-    let maxStackAbove = 0;
-    let maxStackBelow = 0;
-
-    for (const group of groups) {
+    for (const group of regularGroups) {
       const lane: 'above' | 'below' = laneIndex % 2 === 0 ? 'above' : 'below';
       const groupXPos = group[0].xPos;
 
@@ -126,47 +165,19 @@ export const useTrackLayout = (
           endYear,
         });
       } else {
-        // Separate regular events and milestones within the group
-        const regularEvents = group.filter(g => !g.isMilestone);
-        const milestones = group.filter(g => g.isMilestone);
-
-        // Add regular events with stack offsets (closer to axis)
-        for (let i = 0; i < regularEvents.length; i++) {
+        // Stack individual events
+        for (let i = 0; i < group.length; i++) {
           const stackIndex = i;
           items.push({
             type: 'event',
-            id: regularEvents[i].event.id,
-            xPos: regularEvents[i].xPos,
+            id: group[i].event.id,
+            xPos: group[i].xPos,
             lane,
             stackIndex,
-            event: regularEvents[i].event,
+            event: group[i].event,
             isMilestone: false,
           });
 
-          // Track max stack depth
-          if (lane === 'above') {
-            maxStackAbove = Math.max(maxStackAbove, stackIndex + 1);
-          } else {
-            maxStackBelow = Math.max(maxStackBelow, stackIndex + 1);
-          }
-        }
-
-        // Add milestones with higher stack offset (further from axis)
-        // Push milestones at least 5 levels (100px) from axis for clear visual separation
-        const milestoneBaseStack = Math.max(regularEvents.length + 4, 5);
-        for (let i = 0; i < milestones.length; i++) {
-          const stackIndex = milestoneBaseStack + i;
-          items.push({
-            type: 'event',
-            id: milestones[i].event.id,
-            xPos: milestones[i].xPos,
-            lane,
-            stackIndex,
-            event: milestones[i].event,
-            isMilestone: true,
-          });
-
-          // Track max stack depth
           if (lane === 'above') {
             maxStackAbove = Math.max(maxStackAbove, stackIndex + 1);
           } else {
