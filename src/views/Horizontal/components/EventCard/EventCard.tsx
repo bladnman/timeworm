@@ -7,6 +7,7 @@ interface EventCardProps {
   event: TimelineEvent;
   isSelected?: boolean;
   compact?: boolean;
+  isMilestone?: boolean;
   onClick: () => void;
 }
 
@@ -20,10 +21,12 @@ export const EventCard = memo(function EventCard({
   event,
   isSelected = false,
   compact = false,
+  isMilestone = false,
   onClick,
 }: EventCardProps) {
   const [imageError, setImageError] = useState(false);
-  const hasImage = event.image_urls?.length > 0 && !imageError;
+  // Milestones never show images
+  const hasImage = !isMilestone && event.image_urls?.length > 0 && !imageError;
   const imageUrl = hasImage ? event.image_urls[0] : null;
 
   return (
@@ -32,6 +35,7 @@ export const EventCard = memo(function EventCard({
         [styles.selected]: isSelected,
         [styles.compact]: compact,
         [styles.withImage]: hasImage,
+        [styles.milestone]: isMilestone,
       })}
       onClick={onClick}
       role="button"

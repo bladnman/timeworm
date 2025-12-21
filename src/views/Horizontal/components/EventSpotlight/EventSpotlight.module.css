@@ -283,3 +283,29 @@
 .navigateButton:hover {
   background: rgb(56 189 248 / 0.8);
 }
+
+/* Milestone-specific styles */
+.milestoneContent {
+  /* No image, so details start at top */
+}
+
+.milestoneBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-text-accent);
+  color: var(--color-bg-canvas);
+}
+
+.milestoneIcon {
+  font-size: var(--text-lg);
+}
+
+.milestoneLabel {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

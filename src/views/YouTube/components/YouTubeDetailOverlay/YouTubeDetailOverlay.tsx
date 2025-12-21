@@ -45,7 +45,8 @@ const panelVariants = {
 export const YouTubeDetailOverlay = ({ event, onClose }: YouTubeDetailOverlayProps) => {
   // Get video_id from metrics
   const videoId = event?.metrics?.video_id;
-  const thumbnailUrl = event?.image_urls?.[0];
+  const isMilestone = event?.metrics?.milestone === true;
+  const thumbnailUrl = !isMilestone ? event?.image_urls?.[0] : undefined;
 
   return (
     <AnimatePresence>
@@ -73,9 +74,14 @@ export const YouTubeDetailOverlay = ({ event, onClose }: YouTubeDetailOverlayPro
               </svg>
             </button>
 
-            {/* Video embed or thumbnail */}
+            {/* Video embed, thumbnail, or milestone banner */}
             <div className={styles.videoSection}>
-              {videoId ? (
+              {isMilestone ? (
+                <div className={styles.milestoneBanner}>
+                  <span className={styles.milestoneIcon}>◆</span>
+                  <span className={styles.milestoneLabel}>Milestone</span>
+                </div>
+              ) : videoId ? (
                 <YouTubeEmbed
                   videoId={videoId}
                   title={event.title}
@@ -106,11 +112,11 @@ export const YouTubeDetailOverlay = ({ event, onClose }: YouTubeDetailOverlayPro
               {Object.keys(event.metrics).length > 0 && (
                 <div className={styles.metaSection}>
                   {Object.entries(event.metrics)
-                    .filter(([key]) => key !== 'video_id') // Don't show video_id in metrics
+                    .filter(([key]) => key !== 'video_id' && key !== 'milestone') // Don't show video_id or milestone flag
                     .map(([key, value]) => (
                       <div key={key} className={styles.metaRow}>
                         <span className={styles.metaLabel}>{key}</span>
-                        <span className={styles.metaValue}>{value}</span>
+                        <span className={styles.metaValue}>{String(value)}</span>
                       </div>
                     ))}
                 </div>

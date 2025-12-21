@@ -17,7 +17,11 @@ export interface TimelineGroup {
 }
 
 export interface TimelineEventMetric {
-  [key: string]: string;
+  [key: string]: string | boolean | undefined;
+  milestone?: boolean;
+  category?: string;
+  company?: string;
+  video_id?: string;
 }
 
 export interface TimelineEventLink {

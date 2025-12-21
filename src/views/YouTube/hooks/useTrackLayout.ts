@@ -13,6 +13,7 @@ export interface LayoutItem {
 export interface LayoutEvent extends LayoutItem {
   type: 'event';
   event: TimelineEvent;
+  isMilestone: boolean;
 }
 
 export interface LayoutCluster extends LayoutItem {
@@ -36,6 +37,7 @@ interface EventWithPosition {
   event: TimelineEvent;
   xPos: number;
   year: number;
+  isMilestone: boolean;
 }
 
 /**
@@ -71,7 +73,8 @@ export const useTrackLayout = (
       .map((event) => {
         const xPos = getPosition(event.date_start);
         const year = new Date(event.date_start).getFullYear();
-        return { event, xPos, year };
+        const isMilestone = event.metrics?.milestone === true;
+        return { event, xPos, year, isMilestone };
       })
       .sort((a, b) => a.xPos - b.xPos);
 
@@ -123,16 +126,44 @@ export const useTrackLayout = (
           endYear,
         });
       } else {
-        // Add individual events with stack offsets
-        for (let i = 0; i < group.length; i++) {
+        // Separate regular events and milestones within the group
+        const regularEvents = group.filter(g => !g.isMilestone);
+        const milestones = group.filter(g => g.isMilestone);
+
+        // Add regular events with stack offsets (closer to axis)
+        for (let i = 0; i < regularEvents.length; i++) {
           const stackIndex = i;
           items.push({
             type: 'event',
-            id: group[i].event.id,
-            xPos: group[i].xPos,
+            id: regularEvents[i].event.id,
+            xPos: regularEvents[i].xPos,
             lane,
             stackIndex,
-            event: group[i].event,
+            event: regularEvents[i].event,
+            isMilestone: false,
+          });
+
+          // Track max stack depth
+          if (lane === 'above') {
+            maxStackAbove = Math.max(maxStackAbove, stackIndex + 1);
+          } else {
+            maxStackBelow = Math.max(maxStackBelow, stackIndex + 1);
+          }
+        }
+
+        // Add milestones with higher stack offset (further from axis)
+        // Push milestones at least 5 levels (100px) from axis for clear visual separation
+        const milestoneBaseStack = Math.max(regularEvents.length + 4, 5);
+        for (let i = 0; i < milestones.length; i++) {
+          const stackIndex = milestoneBaseStack + i;
+          items.push({
+            type: 'event',
+            id: milestones[i].event.id,
+            xPos: milestones[i].xPos,
+            lane,
+            stackIndex,
+            event: milestones[i].event,
+            isMilestone: true,
           });
 
           // Track max stack depth

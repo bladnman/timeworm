@@ -28,7 +28,8 @@ export const EventSpotlight = memo(function EventSpotlight({
 
   const event = events[currentIndex];
   const hasMultiple = events.length > 1;
-  const hasImage = event?.image_urls?.length > 0 && !imageError;
+  const isMilestone = event?.metrics?.milestone === true;
+  const hasImage = !isMilestone && event?.image_urls?.length > 0 && !imageError;
 
   // Reset image error when changing events
   useEffect(() => {
@@ -112,7 +113,15 @@ export const EventSpotlight = memo(function EventSpotlight({
         )}
 
         {/* Main content */}
-        <div className={styles.content}>
+        <div className={classNames(styles.content, { [styles.milestoneContent]: isMilestone })}>
+          {/* Milestone banner */}
+          {isMilestone && (
+            <div className={styles.milestoneBanner}>
+              <span className={styles.milestoneIcon}>◆</span>
+              <span className={styles.milestoneLabel}>Milestone</span>
+            </div>
+          )}
+
           {/* Image */}
           {hasImage && (
             <div className={styles.imageContainer}>
@@ -139,12 +148,14 @@ export const EventSpotlight = memo(function EventSpotlight({
             {/* Metrics */}
             {event.metrics && Object.keys(event.metrics).length > 0 && (
               <div className={styles.metrics}>
-                {Object.entries(event.metrics).map(([key, value]) => (
-                  <div key={key} className={styles.metricRow}>
-                    <span className={styles.metricLabel}>{key}</span>
-                    <span className={styles.metricValue}>{value}</span>
-                  </div>
-                ))}
+                {Object.entries(event.metrics)
+                  .filter(([key]) => key !== 'milestone') // Don't display milestone flag
+                  .map(([key, value]) => (
+                    <div key={key} className={styles.metricRow}>
+                      <span className={styles.metricLabel}>{key}</span>
+                      <span className={styles.metricValue}>{String(value)}</span>
+                    </div>
+                  ))}
               </div>
             )}
 

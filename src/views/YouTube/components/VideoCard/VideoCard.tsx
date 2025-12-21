@@ -7,6 +7,7 @@ interface VideoCardProps {
   event: TimelineEvent;
   isSelected?: boolean;
   compact?: boolean;
+  isMilestone?: boolean;
   onClick: () => void;
 }
 
@@ -20,10 +21,12 @@ export const VideoCard = memo(function VideoCard({
   event,
   isSelected = false,
   compact = false,
+  isMilestone = false,
   onClick,
 }: VideoCardProps) {
   const [imageError, setImageError] = useState(false);
-  const hasImage = event.image_urls?.length > 0 && !imageError;
+  // Milestones never show images
+  const hasImage = !isMilestone && event.image_urls?.length > 0 && !imageError;
   const imageUrl = hasImage ? event.image_urls[0] : null;
 
   return (
@@ -32,6 +35,7 @@ export const VideoCard = memo(function VideoCard({
         [styles.selected]: isSelected,
         [styles.compact]: compact,
         [styles.withImage]: hasImage,
+        [styles.milestone]: isMilestone,
       })}
       onClick={onClick}
       role="button"

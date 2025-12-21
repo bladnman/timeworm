@@ -96,3 +96,36 @@
 .compact .title {
   -webkit-line-clamp: 1;
 }
+
+/* Milestone variant - border-based styling, no image */
+.milestone {
+  background: var(--color-bg-surface);
+  border: 2px solid var(--color-text-accent);
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 0 8px rgb(56 189 248 / 0.2);
+}
+
+.milestone:hover {
+  background: var(--color-bg-surface-hover);
+  border-color: var(--color-text-accent);
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 16px -4px rgb(0 0 0 / 0.2),
+    0 0 12px rgb(56 189 248 / 0.3);
+}
+
+.milestone .content {
+  padding: var(--space-3) var(--space-4);
+}
+
+.milestone .date {
+  color: var(--color-text-accent);
+  font-weight: 600;
+}
+
+.milestone .title {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  -webkit-line-clamp: 3;
+}

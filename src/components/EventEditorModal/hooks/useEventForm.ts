@@ -6,7 +6,7 @@
 
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useTimeline } from '../../../hooks/useTimeline';
-import type { TimelineEventLink } from '../../../types/timeline';
+import type { TimelineEventLink, TimelineEventMetric } from '../../../types/timeline';
 
 export type SaveStatus = 'idle' | 'pending' | 'saving' | 'saved' | 'error';
 
@@ -23,6 +23,18 @@ interface FormState {
   errors?: Record<string, string>;
 }
 
+// Convert TimelineEventMetric (which may have boolean values) to Record<string, string> for form
+const metricsToFormMetrics = (metrics?: TimelineEventMetric): Record<string, string> => {
+  if (!metrics) return {};
+  const result: Record<string, string> = {};
+  for (const [key, value] of Object.entries(metrics)) {
+    if (value !== undefined) {
+      result[key] = String(value);
+    }
+  }
+  return result;
+};
+
 const createFormFromEvent = (event: {
   title: string;
   date_start: string;
@@ -31,7 +43,7 @@ const createFormFromEvent = (event: {
   description: string;
   group_ids: string[];
   image_urls?: string[];
-  metrics?: Record<string, string>;
+  metrics?: TimelineEventMetric;
   links?: TimelineEventLink[];
 }): FormState => ({
   title: event.title,
@@ -41,7 +53,7 @@ const createFormFromEvent = (event: {
   description: event.description,
   group_ids: event.group_ids,
   image_urls: event.image_urls ?? [],
-  metrics: event.metrics ?? {},
+  metrics: metricsToFormMetrics(event.metrics),
   links: event.links ?? [],
   errors: {},
 });
