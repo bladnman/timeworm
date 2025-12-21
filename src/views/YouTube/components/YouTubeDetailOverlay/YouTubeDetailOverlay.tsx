@@ -8,6 +8,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import type { TimelineEvent } from '../../../../types/timeline';
 import { YouTubeEmbed } from '../YouTubeEmbed/YouTubeEmbed';
+import { MarkdownText } from '../../../../components/MarkdownText/MarkdownText';
 import styles from './YouTubeDetailOverlay.module.css';
 
 interface YouTubeDetailOverlayProps {
@@ -42,8 +43,8 @@ const panelVariants = {
 };
 
 export const YouTubeDetailOverlay = ({ event, onClose }: YouTubeDetailOverlayProps) => {
-  // Get videoId from metrics
-  const videoId = event?.metrics?.videoId;
+  // Get video_id from metrics
+  const videoId = event?.metrics?.video_id;
   const thumbnailUrl = event?.image_urls?.[0];
 
   return (
@@ -105,13 +106,69 @@ export const YouTubeDetailOverlay = ({ event, onClose }: YouTubeDetailOverlayPro
               {Object.keys(event.metrics).length > 0 && (
                 <div className={styles.metaSection}>
                   {Object.entries(event.metrics)
-                    .filter(([key]) => key !== 'videoId') // Don't show videoId in metrics
+                    .filter(([key]) => key !== 'video_id') // Don't show video_id in metrics
                     .map(([key, value]) => (
                       <div key={key} className={styles.metaRow}>
                         <span className={styles.metaLabel}>{key}</span>
                         <span className={styles.metaValue}>{value}</span>
                       </div>
                     ))}
+                </div>
+              )}
+
+              {/* Extended Details */}
+              {event.extended_details && (
+                <div className={styles.extendedDetails}>
+                  {event.extended_details.landscape && (
+                    <section className={styles.detailSection}>
+                      <h3 className={styles.sectionTitle}>The Landscape</h3>
+                      <MarkdownText
+                        content={event.extended_details.landscape}
+                        className={styles.sectionContent}
+                      />
+                    </section>
+                  )}
+
+                  {event.extended_details.historical_context && (
+                    <section className={styles.detailSection}>
+                      <h3 className={styles.sectionTitle}>Historical Context</h3>
+                      <MarkdownText
+                        content={event.extended_details.historical_context}
+                        className={styles.sectionContent}
+                      />
+                    </section>
+                  )}
+
+                  {event.extended_details.public_sentiment && (
+                    <section className={styles.detailSection}>
+                      <h3 className={styles.sectionTitle}>Public Sentiment</h3>
+                      <MarkdownText
+                        content={event.extended_details.public_sentiment}
+                        className={styles.sectionContent}
+                      />
+                    </section>
+                  )}
+
+                  {event.extended_details.story_being_told && (
+                    <section className={styles.detailSection}>
+                      <h3 className={styles.sectionTitle}>The Story Being Told</h3>
+                      <MarkdownText
+                        content={event.extended_details.story_being_told}
+                        className={styles.sectionContent}
+                      />
+                    </section>
+                  )}
+
+                  {event.extended_details.notable_references && event.extended_details.notable_references.length > 0 && (
+                    <section className={styles.detailSection}>
+                      <h3 className={styles.sectionTitle}>Notable References</h3>
+                      <ul className={styles.referencesList}>
+                        {event.extended_details.notable_references.map((ref, index) => (
+                          <li key={index} className={styles.referenceItem}>{ref}</li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
                 </div>
               )}
 

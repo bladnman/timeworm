@@ -141,6 +141,54 @@
   font-weight: 500;
 }
 
+/* Extended Details */
+.extendedDetails {
+  margin-top: var(--space-6);
+  border-top: 1px solid #383838;
+  padding-top: var(--space-6);
+}
+
+.detailSection {
+  margin-bottom: var(--space-6);
+}
+
+.detailSection:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: #FF0000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--space-3);
+}
+
+.sectionContent {
+  font-size: var(--text-sm);
+  color: #AAAAAA;
+  line-height: 1.7;
+}
+
+.referencesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.referenceItem {
+  font-size: var(--text-sm);
+  color: #AAAAAA;
+  line-height: 1.6;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid #282828;
+}
+
+.referenceItem:last-child {
+  border-bottom: none;
+}
+
 /* Links */
 .link {
   display: inline-flex;

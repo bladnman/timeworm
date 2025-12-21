@@ -25,6 +25,14 @@ export interface TimelineEventLink {
   url: string;
 }
 
+export interface TimelineEventExtendedDetails {
+  landscape?: string;
+  historical_context?: string;
+  public_sentiment?: string;
+  story_being_told?: string;
+  notable_references?: string[];
+}
+
 export interface TimelineEvent {
   id: string;
   title: string;
@@ -36,6 +44,7 @@ export interface TimelineEvent {
   description: string;
   metrics: TimelineEventMetric;
   links?: TimelineEventLink[];
+  extended_details?: TimelineEventExtendedDetails;
 }
 
 export interface TimelineData {
