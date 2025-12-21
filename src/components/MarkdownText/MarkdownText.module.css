@@ -1,0 +1,36 @@
+/* MarkdownText */
+.markdown {
+  font-size: inherit;
+  color: inherit;
+  line-height: 1.6;
+}
+
+.paragraph {
+  margin: 0 0 1em;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.list {
+  margin: 0 0 1em;
+  padding-left: 1.5em;
+}
+
+.list:last-child {
+  margin-bottom: 0;
+}
+
+.list li {
+  margin-bottom: 0.5em;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+.markdown strong {
+  font-weight: 600;
+  color: #FFFFFF;
+}
