@@ -748,6 +748,21 @@
       ]
     },
     {
+      "id": "ms_claude_code_pro",
+      "title": "Claude Code Joins Pro Plan",
+      "date_display": "June 5, 2025",
+      "date_start": "2025-06-05",
+      "group_ids": [
+        "grp_q2_2025"
+      ],
+      "description": "Anthropic announced that Claude Code would be included with its $20/month Pro subscription, expanding access beyond the Max tiers.",
+      "metrics": {
+        "category": "Tools",
+        "company": "Anthropic",
+        "milestone": true
+      }
+    },
+    {
       "id": "ms_o3_pro",
       "title": "o3-pro",
       "date_display": "June 10, 2025",
